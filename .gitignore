@@ -1,0 +1,32 @@
+# runtime artifacts
+opencode.json
+*.db
+*.db-shm
+*.db-wal
+node_modules/
+
+# browser session logs
+.playwright-mcp/
+
+# codex upstream clones (own git repos)
+_codex/*-repo/*/
+
+# trove research captures (binary)
+_trove/_captures/
+_trove/**/*.pdf
+
+# depot media binaries
+_depot/art/
+_depot/photo/
+_depot/draw/
+
+# scripts build artifacts + generated output
+.opencode/_scripts/_golib/bin/
+.opencode/_scripts/_bin/target/
+.opencode/_scripts/_rs/target/
+.opencode/_scripts/report/
+.opencode/_rustlib/target/
+
+# runtime crash artifacts + state
+*.db.*
+.opencode/.burst-state.json
