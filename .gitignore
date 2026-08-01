@@ -55,3 +55,6 @@ _depot/draw/
 _trove/**/*.pdf
 
 
+
+# node_modules stay out everywhere (after substrate un-ignore)
+**/node_modules/
