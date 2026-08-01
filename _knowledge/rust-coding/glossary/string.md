@@ -1,1 +1,0 @@
-A growable, UTF-8 encoded text type. Wrapper over `Vec<u8>`. Cannot be indexed by byte position (UTF-8 variable width). Iterated by `.chars()` or `.bytes()`. Supports `+` concatenation (moves LHS) and `format!()` macro.

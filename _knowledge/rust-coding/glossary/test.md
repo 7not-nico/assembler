@@ -1,1 +1,0 @@
-A function marked with `#[test]` that verifies code behavior. Assertions (`assert!`, `assert_eq!`) panic on failure. Run with `cargo test`. Supports `#[should_panic]` for expected failures and `#[ignore]` for optional tests.

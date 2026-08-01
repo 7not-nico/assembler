@@ -1,1 +1,0 @@
-Type parameterization using `<T>`. Functions, structs, and enums can be generic over one or more types. The compiler monomorphizes — generates concrete code for each type used at compile time. Zero runtime overhead.

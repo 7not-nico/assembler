@@ -1,1 +1,0 @@
-Reference-counted smart pointer for multiple ownership. `Rc::clone()` increments reference count (cheap operation). `Rc::strong_count()` returns current count. Data dropped when count reaches zero. Single-threaded only (`!Send` and `!Sync`).

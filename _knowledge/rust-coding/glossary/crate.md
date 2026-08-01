@@ -1,1 +1,0 @@
-A compilation unit in Rust. Binary crate produces an executable. Library crate provides reusable functionality. `Cargo.toml` defines crate metadata. `src/main.rs` is the crate root for a binary. `src/lib.rs` is the crate root for a library.

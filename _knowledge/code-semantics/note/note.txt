@@ -1,5 +1,0 @@
-This is about how the programmer structures the CODE internally
-not to be taken literrally.
-Programmin convention to organize CODE.
-
-Playwright Find can move in the page

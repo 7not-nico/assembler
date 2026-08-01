@@ -1,1 +1,0 @@
-Heap-allocated smart pointer. `Box::new(value)` moves value to heap, pointer stays on stack. Required for recursive types (cons list), trait objects (`Box<dyn Trait>`), and large data moves. Implements Deref and Drop.

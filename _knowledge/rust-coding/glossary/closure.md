@@ -1,1 +1,0 @@
-An anonymous function that captures its environment. Syntax `|params| body`. Capture mode inferred: `Fn` (immutable borrow), `FnMut` (mutable borrow), `FnOnce` (ownership). Use `move` keyword to force ownership transfer.

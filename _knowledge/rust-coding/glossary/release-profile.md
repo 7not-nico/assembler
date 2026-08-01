@@ -1,1 +1,0 @@
-Cargo configuration for build optimization levels. `[profile.dev]` for development, `[profile.release]` for production. Settings include `opt-level`, `debug`, `lto`. Custom profiles override defaults in Cargo.toml.

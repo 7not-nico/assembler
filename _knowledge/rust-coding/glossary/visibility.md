@@ -1,1 +1,0 @@
-Rust visibility rules: items are private by default (accessible only within the current module). `pub` makes items public (accessible outside the module). `pub(crate)` restricts to the current crate. Child modules can access parent items without `pub`.

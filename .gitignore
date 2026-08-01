@@ -35,6 +35,15 @@ _depot/draw/
 # backup snapshot dirs (rule/skill pre-rewrite copies)
 .backups/
 
-# atelier — folder placeholder only, contents excluded
+# compound aggregator domains — _{abstract-noun}/ folders
+# contents live in their own repos; the root repo holds placeholders only
 _atelier/*
+_codex/*
+_knowledge/*
+_trove/*
+_depot/*
 !_atelier/.gitkeep
+!_codex/.gitkeep
+!_knowledge/.gitkeep
+!_trove/.gitkeep
+!_depot/.gitkeep

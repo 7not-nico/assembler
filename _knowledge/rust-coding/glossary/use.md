@@ -1,1 +1,0 @@
-Keyword to bring a path into scope. `use crate::module::Item` — absolute path. `use self::module::Item` — relative path starting from current module. `use super::module::Item` — relative path from parent. `as` for renaming: `use module::Item as Alias`.

@@ -1,1 +1,0 @@
-A key-value hash table. Keys must implement `Eq` and `Hash`. Values retrieved by key. Entry API handles insert-or-update patterns. Each key has one value at a time. Iterates over `(key, value)` pairs.
