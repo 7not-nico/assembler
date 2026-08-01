@@ -40,11 +40,16 @@ _depot/draw/
 # the substrate _folders — bitacora, templates, impressions, scripts —
 # with their contents, plus top-level placeholders
 /_*/
+/_*/*
 !/_*/
-!/_*/**/_bitacora/**
-!/_*/**/_templates/**
-!/_*/**/_impressions/**
-!/_*/**/_scripts/**
+!/_*/_bitacora/
+!/_*/_bitacora/**
+!/_*/_templates/
+!/_*/_templates/**
+!/_*/_impressions/
+!/_*/_impressions/**
+!/_*/_scripts/
+!/_*/_scripts/**
 !/_*/.gitkeep
 
 # build artifacts inside tracked _folders stay out
