@@ -1,0 +1,7 @@
+# CMD: bash -c pkg-config\ --modversion\ cmocka\ \&\&\ pacman\ -Qq\ cmocka 
+# DATE: 2026-08-01T00:06:20-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+2.0.2
+cmocka
+# exit: 0

@@ -1,0 +1,23 @@
+# CMD: sh -c cd\ /home/eddyr/assembler\ \&\&\ mv\ .playwright-mcp\ .opencode/\ \&\&\ mv\ arxiv_pdfs\ _findings/papers/\ \&\&\ mv\ shenanigan\ _projects/\ \&\&\ mv\ assembler-architecture.md\ .opencode/_bitacora/reference/\ \&\&\ echo\ \'===\ FINAL\ ROOT\ ===\'\ \&\&\ ls\ -la\ \|\ grep\ -vE\ \'\^total\'\ \&\&\ echo\ \'---\ stray\ check\ ---\'\ \&\&\ ls\ \*.pdf\ \*.html\ \*.webm\ \*.json\ \*.yml\ 2\>/dev/null\ \|\|\ echo\ \'no\ stray\ files\' 
+# DATE: 2026-07-31T12:28:39-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== FINAL ROOT ===
+drwxr-xr-x 1 eddyr eddyr  230 Jul 31 12:28 .
+drwx------ 1 eddyr eddyr 2630 Jul 31 10:33 ..
+-rw-r--r-- 1 eddyr eddyr 6789 Jul 31 12:24 AGENTS.md
+drwxr-xr-x 1 eddyr eddyr  110 Jul 27 06:50 _assets
+drwxr-xr-x 1 eddyr eddyr  614 Jul 31 09:27 _code-dives
+drwxr-xr-x 1 eddyr eddyr 2076 Jul 31 12:27 _findings
+-rw-r--r-- 1 eddyr eddyr   51 Jul  4 13:07 .gitignore
+drwxr-xr-x 1 eddyr eddyr  136 Jul 22 18:46 .ipynb_checkpoints
+drwxr-xr-x 1 eddyr eddyr  218 Jul 31 00:50 _knowledge
+drwxr-xr-x 1 eddyr eddyr  600 Jul 31 12:28 .opencode
+-rw-r--r-- 1 eddyr eddyr 2352 Jul 29 06:50 opencode.json
+drwxr-xr-x 1 eddyr eddyr  144 Jul 31 12:28 _projects
+drwxr-xr-x 1 eddyr eddyr    0 Jul 29 16:55 _py
+drwxr-xr-x 1 eddyr eddyr  468 Jul 31 12:27 sandbox
+--- stray check ---
+opencode.json
+no stray files
+# exit: 0

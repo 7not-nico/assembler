@@ -1,0 +1,6 @@
+# CMD: bash /home/eddyr/assembler/_codex/_templates/start-browser.sh 
+# DATE: 2026-07-31T21:32:03-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+UP   port=9222 profile=/home/eddyr/.cache/ms-playwright-mcp/mcp-chrome-3f2da58
+# exit: 0

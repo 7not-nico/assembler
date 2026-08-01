@@ -1,0 +1,6 @@
+# CMD: bash -c curl\ -s\ --max-time\ 3\ http://127.0.0.1:9222/json/version\ 2\>\&1\ \|\ head\ -3\;\ echo\ \"exit=\$\?\" 
+# DATE: 2026-07-31T23:57:07-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+exit=0
+# exit: 0

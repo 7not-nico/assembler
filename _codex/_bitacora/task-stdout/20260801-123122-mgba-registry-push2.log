@@ -1,0 +1,9 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/_templates\ \&\&\ ruby\ script/push-registry.rb\ 2\>\&1\ \|\ tail\ -2\ \&\&\ echo\ \"---\ TEMPLATE.%\ count\ ---\"\ \&\&\ sqlite3\ schema/templates.db\ \"SELECT\ count\(\*\)\ FROM\ templates\ WHERE\ id\ LIKE\ \'TEMPLATE.%\'\;\" 
+# DATE: 2026-08-01T12:31:22-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+  TPL precedence-chain.md [convention pos=nil tags=12 comp=0]
+Pushed 24 templates, 0 reports into /home/eddyr/assembler/_codex/_templates/script/../schema/templates.db
+--- TEMPLATE.% count ---
+15
+# exit: 0

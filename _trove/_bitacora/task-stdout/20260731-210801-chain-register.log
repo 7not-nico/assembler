@@ -1,0 +1,15 @@
+# CMD: ruby _scripts/register-invariants.rb 
+# DATE: 2026-07-31T21:08:01-06:00
+# CWD: /home/eddyr/assembler/_trove
+# --------------------
+ok      hilbert-series-noncommutative-invariant-theory.pdf         1512.06411     2015-12-20
+ok      homological-properties-invariant-rings-permutation-groups.pdf 2511.07718     2025-11-11
+ok      variation-git-quotients.pdf                                alg-geom/9402008 1994-02-09
+ok      compgit-package.pdf                                        2506.19431     2025-06-24
+ok      quandle-homology-cocycle-knot-invariants.pdf               math/0112026   2001-12-03
+ok      instantons-concordance-invariants-knots.pdf                1910.11129     2019-10-19
+ok      cohomological-invariants-weyl-groups-mod-2.pdf             1112.6290      2011-12-29
+ok      kontsevich-characteristic-classes-topological-invariants.pdf 2302.03021     2023-02-06
+ok      quantum-invariants-figure8-knot.pdf                        math/0506456   2005-06-22
+result ok=9 db=/home/eddyr/assembler/_trove/findings.db
+# exit: 0

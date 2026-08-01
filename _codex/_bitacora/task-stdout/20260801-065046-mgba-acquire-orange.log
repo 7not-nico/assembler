@@ -1,0 +1,15 @@
+# CMD: bash -c bash\ mgba-repo/scripts/playwright-fetch-rom.sh\ \"https://romsfun.com/download/pokemon-orange-4-52949/1\"\ 90\ 2\>\&1\ \|\ tail\ -12 
+# DATE: 2026-08-01T06:50:46-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/pokemon-orange-4-52949/1
+LINK https://sto.romsfast.com/Mods/GBC/Pok%C3%A9mon%20Orange%20(v1.0).zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRhzdl1y
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/pok-mon-orange-v1-0.zip (Pokémon Orange (v1.0).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/pok-mon-orange-v1-0.zip
+OK   Pokémon Orange (v1.0).gbc (2097152 B) title="PKMNORANGEPKOR" mbc=0x10
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/pok-mon-orange-v1-0.gbc
+/home/eddyr/assembler/_codex/mgba-repo/roms/pok-mon-orange-v1-0.gbc: Game Boy Color ROM image: "PKMNORANGE" (Rev.50) [CGB ONLY] [MBC3+TIMER+RAM+BATT], ROM: 16Mbit, RAM: 256Kbit
+LAUNCH /home/eddyr/assembler/_codex/mgba-repo/build/sdl/mgba /home/eddyr/assembler/_codex/mgba-repo/roms/pok-mon-orange-v1-0.gbc
+RUN   pid=20893 cpu=alive window=DISPLAY:0 log=/tmp/opencode/mgba-launch.log
+# exit: 0

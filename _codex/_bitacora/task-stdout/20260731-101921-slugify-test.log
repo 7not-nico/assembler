@@ -1,0 +1,10 @@
+# CMD: sh -c for\ n\ in\ \'Super\ Mario\ World\ \(USA\).zip\'\ \'Super\ Mario\ World\ \(U\)\ \[\!\].smc\'\ \'foo\ bar-baz\ \(v1\)\ \[b\]\!.sfc\'\ \'plain.sfc\'\ \'NO\ EXT\'\;\ do\ echo\ \"\$n\ -\>\ \$\(bash\ /home/eddyr/assembler/_code-dives/_templates/slugify.sh\ \"\$n\"\)\"\;\ done 
+# DATE: 2026-07-31T10:19:21-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+Super Mario World (USA).zip -> super-mario-world-usa.zip
+Super Mario World (U) [!].smc -> super-mario-world-u.smc
+foo bar-baz (v1) [b]!.sfc -> foo-bar-baz-v1-b.sfc
+plain.sfc -> plain.sfc
+NO EXT -> no-ext
+# exit: 0

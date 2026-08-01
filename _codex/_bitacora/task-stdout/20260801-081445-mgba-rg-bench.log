@@ -1,0 +1,8 @@
+# CMD: bash -c $'\npattern="struct GB"; dir=/home/eddyr/assembler/_codex/mgba-repo/mgba/src; iters=20\nt0=$(date +%s%N); for i in $(seq 1 $iters); do grep -rn "$pattern" "$dir" >/dev/null 2>&1; done; t1=$(date +%s%N); grep_ns=$((t1-t0))\nt0=$(date +%s%N); for i in $(seq 1 $iters); do rg -n "$pattern" "$dir" >/dev/null 2>&1; done; t1=$(date +%s%N); rg_ns=$((t1-t0))\necho "grep: total=${grep_ns} ns, avg=$((grep_ns/iters)) ns"\necho "rg:   total=${rg_ns} ns, avg=$((rg_ns/iters)) ns"\necho "speedup: $(echo "scale=1; $grep_ns / $rg_ns" | bc)x"\n' 
+# DATE: 2026-08-01T08:14:45-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+grep: total=682246008 ns, avg=34112300 ns
+rg:   total=192419033 ns, avg=9620951 ns
+speedup: 3.5x
+# exit: 0

@@ -1,0 +1,56 @@
+# CMD: bash -c mkdir\ -p\ mgba-repo/\{invariant\,guideline\,precept\,backup\,study\,fixture\,pattern\,procedure\,scripts\,roms\}\ \&\&\ ls\ mgba-repo/ 
+# DATE: 2026-07-31T23:49:35-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+AGENTS.md
+AGENTS.template.md
+anchor-workflow-template.md
+atomic-script-template.sh
+backup
+backup-template.md
+bitacora-template.md
+browse-playwright-template.md
+concept-template.md
+copy-skills.sh
+dive-agents-template.md
+fixture
+fixtures-template
+fixture-template.md
+format-template.md
+glossary-template.md
+_golib
+guideline
+guideline-template.md
+invariant
+invariant-template.md
+_lib
+mgba
+naming-conventions-template.md
+note-template.md
+pattern
+pattern-template.md
+practice-template.md
+precedence-chain.md
+precept
+precept-template.md
+procedure
+procedure-template.md
+push-script-template.rb
+reference-template.md
+report
+research-template.md
+roms
+run-logged.sh
+_rustlib
+scaffold-knowledge.sh
+schema
+schema-template.sql
+script
+scripts
+slugify.sh
+start-browser-headless.sh
+start-browser.sh
+study
+study-template.md
+write-report-template.md
+# exit: 0

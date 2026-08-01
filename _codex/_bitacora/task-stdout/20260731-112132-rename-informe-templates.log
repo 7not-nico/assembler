@@ -1,0 +1,19 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_knowledge/_templates\ \&\&\ mv\ reportare/informe-template.md\ reportare/reportare-template.md\ \&\&\ mv\ write-informe-template.md\ write-reportare-template.md\ \&\&\ ls\ reportare/\ write-reportare-template.md 
+# DATE: 2026-07-31T11:21:32-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+write-reportare-template.md
+
+reportare/:
+20260731-003332.md
+20260731-004058.md
+20260731-004633.md
+20260731-004827.md
+20260731-005130.md
+20260731-005632.md
+20260731-005830.md
+20260731-010123.md
+20260731-011644.md
+20260731-012848.md
+reportare-template.md
+# exit: 0

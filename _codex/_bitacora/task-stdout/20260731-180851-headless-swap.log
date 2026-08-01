@@ -1,0 +1,4 @@
+# CMD: sh -c pkill\ -f\ \'remote-debugging-port=9222\'\ 2\>/dev/null\;\ sleep\ 1\;\ rm\ -f\ /home/eddyr/.cache/ms-playwright-mcp/mcp-chrome-3f2da58/Singleton\*\;\ bash\ /home/eddyr/assembler/_codex/_templates/start-browser-headless.sh\ \&\&\ curl\ -s\ http://127.0.0.1:9223/json/version\ \|\ head\ -c\ 80 
+# DATE: 2026-07-31T18:08:51-06:00
+# CWD: /home/eddyr/assembler
+# --------------------

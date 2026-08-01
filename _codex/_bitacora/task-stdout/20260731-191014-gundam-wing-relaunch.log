@@ -1,0 +1,8 @@
+# CMD: bash /home/eddyr/assembler/_codex/snes9x-repo/scripts/launch-rom.sh /home/eddyr/assembler/_codex/snes9x-repo/roms/mobile-suit-gundam-wing-endless-duel-japan-t-en-by-aeon-genesis-v1-00-fastrom-hack-by-combokyo-v1-0-n.sfc 
+# DATE: 2026-07-31T19:10:14-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+/home/eddyr/assembler/_codex/snes9x-repo/roms/mobile-suit-gundam-wing-endless-duel-japan-t-en-by-aeon-genesis-v1-00-fastrom-hack-by-combokyo-v1-0-n.sfc: Super NES ROM image "GUNDAMW ENDLESSDUEL" (Japan), LoROM, FastROM, ROM size: 2048KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/mobile-suit-gundam-wing-endless-duel-japan-t-en-by-aeon-genesis-v1-00-fastrom-hack-by-combokyo-v1-0-n.sfc
+RUN   pid=363672 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

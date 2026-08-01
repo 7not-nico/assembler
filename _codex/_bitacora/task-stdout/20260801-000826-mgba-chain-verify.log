@@ -1,0 +1,52 @@
+# CMD: bash -c echo\ \"==\ layers\ ==\"\;\ ls\ mgba-repo/\ \|\ grep\ -E\ \"\^\(invariant\|guideline\|precept\|backup\|study\|fixture\|pattern\|procedure\|scripts\|roms\)\$\"\;\ echo\ \"==\ invariant\ files\ ==\"\;\ ls\ mgba-repo/invariant/\;\ echo\ \"==\ layer\ files\ ==\"\;\ ls\ mgba-repo/precept/\ mgba-repo/pattern/\ mgba-repo/procedure/\ mgba-repo/study/\ mgba-repo/fixture/\ mgba-repo/backup/\ 2\>/dev/null\;\ echo\ \"==\ scripts\ ==\"\;\ ls\ mgba-repo/scripts/\ \|\ wc\ -l\;\ echo\ \"==\ roms\ ==\"\;\ ls\ mgba-repo/roms/\;\ echo\ \"==\ bitacora\ ==\"\;\ ls\ _bitacora/task-report/\ \|\ tail\ -3\;\ ls\ _bitacora/task-todo/\ \|\ tail\ -3 
+# DATE: 2026-08-01T00:08:26-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+== layers ==
+backup
+fixture
+guideline
+invariant
+pattern
+precept
+procedure
+roms
+scripts
+study
+== invariant files ==
+build-from-source.md
+precedence-chain.md
+record-consistency.md
+source-pristine.md
+== layer files ==
+mgba-repo/backup/:
+
+mgba-repo/fixture/:
+test-cart.gb
+test-cart.zip
+
+mgba-repo/pattern/:
+browser-acquisition-pipeline.md
+
+mgba-repo/precept/:
+acquire-gb-rom.md
+
+mgba-repo/procedure/:
+acquire-gb-rom.md
+
+mgba-repo/study/:
+gb-core-architecture.md
+== scripts ==
+7
+== roms ==
+test-cart.gb
+tetris-japan-en.gb
+tetris-japan-en.sav
+== bitacora ==
+20260731-221000-chrono-trigger.md
+20260731-222222-precedence-chain-run.md
+20260801-000106-mgba-dive.md
+20260731-222222-precedence-chain-run.md
+20260731-234226-mgba-dive.md
+20260801-000809-mgba-chain-run.md
+# exit: 0

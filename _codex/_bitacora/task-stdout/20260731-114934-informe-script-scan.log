@@ -1,0 +1,14 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_knowledge/_templates\ \&\&\ grep\ -n\ -i\ \'informe\'\ scaffold-knowledge.sh\ script/push-registry.rb\ schema-template.sql\ AGENTS.template.md\ 2\>/dev/null\ \|\ head\ -40 
+# DATE: 2026-07-31T11:49:34-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+scaffold-knowledge.sh:35:cp "$ROOT/_templates"/write-informe-template.md "$DEST/precept/write-informe.md" 2>/dev/null || true
+script/push-registry.rb:34:  db.execute("ALTER TABLE informes ADD COLUMN date TEXT")
+script/push-registry.rb:37:  db.execute("ALTER TABLE informes ADD COLUMN error_text TEXT")
+script/push-registry.rb:100:# Informes: session reports
+script/push-registry.rb:102:Dir.glob(File.join(TPL_DIR, 'informes', '*.md')).each do |fp|
+script/push-registry.rb:103:  next if File.basename(fp) == 'informe-template.md'
+script/push-registry.rb:118:    'INSERT INTO informes (id, project, date, errors, findings, error_text, file_path) VALUES (?,?,?,?,?,?,?)
+script/push-registry.rb:122:    [name, project, date, errors, findings, error_text, File.join('_templates', 'informes', name)]
+script/push-registry.rb:128:puts "Pushed #{count} templates, #{icount} informes into #{DB_PATH}"
+# exit: 0

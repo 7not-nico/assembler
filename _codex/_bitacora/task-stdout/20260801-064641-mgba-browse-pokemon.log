@@ -1,0 +1,20 @@
+# CMD: bash -c bash\ mgba-repo/scripts/browse-romsfun.sh\ \"Pokemon\"\ game-boy-color\ 60\ 2\>\&1\ \|\ grep\ -E\ \"\^GAME\|\^VARIANTS\|\^\[0-9\]+\ \"\ \|\ head\ -30 
+# DATE: 2026-08-01T06:46:41-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+GAME https://romsfun.com/roms/game-boy-color/pokemon-tcg-generations.html | Pokemon TCG Generations
+GAME https://romsfun.com/roms/game-boy-color/pokemon-peridot.html | Pokemon Peridot (Pokemon Crystal Hack)
+GAME https://romsfun.com/roms/game-boy-color/pokemon-celebrations.html | Pokemon Celebrations
+GAME https://romsfun.com/roms/game-boy-color/pokemon-tcg-neo.html | Pokemon TCG: Neo
+GAME https://romsfun.com/roms/game-boy-color/pokemon-yellow-version.html | Pokemon – Yellow Version
+GAME https://romsfun.com/roms/game-boy-color/pokemon-pinball-generations.html | Pokémon Pinball Generations
+GAME https://romsfun.com/roms/game-boy-color/pokemon-pinball-sprite-fixes.html | Pokemon Pinball – Sprite Fixes
+GAME https://romsfun.com/roms/game-boy-color/pokemon-crystal-legacy.html | Pokemon Crystal Legacy
+GAME https://romsfun.com/roms/game-boy-color/pokemon-crystal-clear.html | Pokemon: Crystal Clear
+GAME https://romsfun.com/roms/game-boy-color/pokemon-orange-4.html | Pokemon Orange
+VARIANTS:
+1 https://romsfun.com/download/pokemon-tcg-generations-290037/1 | Pokemon TCG (Generations v1.7.2)
+2 https://romsfun.com/download/pokemon-tcg-generations-290037/2 | Pokemon TCG (Generations v1.7.1)
+3 https://romsfun.com/download/pokemon-tcg-generations-290037/3 | Pokemon TCG (Generations v1.7.1)[Little Cup]
+4 https://romsfun.com/download/pokemon-tcg-generations-290037/4 | Pokemon-TCG-Generations
+# exit: 0

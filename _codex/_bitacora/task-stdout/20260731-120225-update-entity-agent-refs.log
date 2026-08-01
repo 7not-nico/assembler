@@ -1,0 +1,9 @@
+# CMD: sh -c cd\ /home/eddyr/assembler\ \&\&\ for\ f\ in\ .opencode/entities/nexus/NEX.TOOL.CHOICE.md\ .opencode/entities/identities/IDENTITY.SCRIPT.md\ .opencode/entities/specifications/SPEC.CODE.RING.TOPOLOGY.md\ .opencode/entities/specifications/SPEC.LANGUAGE.ROLE.MAP.md\ .opencode/agents/linguist.md\ .opencode/agents/joker.md\ .opencode/agents/assembler.md\ _knowledge/code-semantics/doc/workflow.md\ _knowledge/go-coding/reference/spec/SPEC.CODE.RING.TOPOLOGY.md\ .opencode/todo/rewrite-agents-communication.md\;\ do\ sed\ -i\ \'s\|_scripts/\|.opencode/_scripts/\|g\'\ \"\$f\"\;\ done\ \&\&\ grep\ -rn\ \'_scripts\'\ .opencode/entities/nexus/NEX.TOOL.CHOICE.md\ .opencode/entities/identities/IDENTITY.SCRIPT.md\ .opencode/agents/assembler.md\ _knowledge/code-semantics/doc/workflow.md\ \|\ head 
+# DATE: 2026-07-31T12:02:25-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+.opencode/entities/nexus/NEX.TOOL.CHOICE.md:69:All AMANDA projects. Layer choice applies to all five deployment layers: `.opencode/tools/` (CLI + IPC), `.opencode/tools/mcp-*/` (MCP), `.opencode/plugins/` (Plugin), and `.opencode/_scripts/` (Script).
+.opencode/entities/identities/IDENTITY.SCRIPT.md:1:**Script** — a functional investigation layer. Ruby scripts in `.opencode/_scripts/` with pure functional core in `_rb/` modules. Interpreted, no compilation step. Atomic ring audits (`r*-*.rb`) grouped by I/O severity. Read-only state analysis. Parallel execution via `r0-run-parallel.rb`.
+.opencode/agents/assembler.md:56:Scripts are handled in Functional Ruby inside /.opencode/_scripts/
+_knowledge/code-semantics/doc/workflow.md:8:'survey-scripts': create surveys under .opencode/_scripts/survey/ following the survey workflow template
+# exit: 0

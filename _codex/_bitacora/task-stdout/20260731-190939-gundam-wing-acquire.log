@@ -1,0 +1,34 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/gundam-wing-endless-duel-144267/1\'\ 90 
+# DATE: 2026-07-31T19:09:39-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/gundam-wing-endless-duel-144267/1
+LINK https://sto.romsfast.com/TRANS/Nintendo%20-%20Super%20Famicom/Mobile%20Suit%20Gundam%20Wing%20-%20Endless%20Duel%20(Japan)%20(T-En%20by%20Aeon%20Genesis%20v1.00)%20(FastROM%20hack%20by%20ComboKyo%20v1.0)%20(n).zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRRxdVF0
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/mobile-suit-gundam-wing-endless-duel-japan-t-en-by-aeon-genesis-v1-00-fastrom-hack-by-combokyo-v1-0-n.zip (Mobile Suit Gundam Wing - Endless Duel (Japan) (T-En by Aeon Genesis v1.00) (FastROM hack by ComboKyo v1.0) (n).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/mobile-suit-gundam-wing-endless-duel-japan-t-en-by-aeon-genesis-v1-00-fastrom-hack-by-combokyo-v1-0-n.zip
+WARN unexpected ROM size: 2097152
+OK   Mobile Suit Gundam Wing - Endless Duel (Japan) [T-En by Aeon Genesis v1.00] [FastROM hack by ComboKyo v1.0] [n].sfc (2097152 B) title="DDDDDDDDDDDDD"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/mobile-suit-gundam-wing-endless-duel-japan-t-en-by-aeon-genesis-v1-00-fastrom-hack-by-combokyo-v1-0-n.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/mobile-suit-gundam-wing-endless-duel-japan-t-en-by-aeon-genesis-v1-00-fastrom-hack-by-combokyo-v1-0-n.sfc: Super NES ROM image "GUNDAMW ENDLESSDUEL" (Japan), LoROM, FastROM, ROM size: 2048KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/mobile-suit-gundam-wing-endless-duel-japan-t-en-by-aeon-genesis-v1-00-fastrom-hack-by-combokyo-v1-0-n.sfc
+FAIL  emulator exited early — crash or missing window
+Alsa available rates: 1 to 384000
+Alsa available buffer sizes: 1ms to 21845ms
+Alsa period ranges: 2 to 150 blocks
+joystick: No joystick found.
+X connection to :0 broken (explicit kill or server shutdown).
+
+
+Snes9x 1.63 for unix
+Port 1: Pad #1. Port 2: <none>. 
+No ROM file header found.
+Map_LoROMMap
+"GUNDAMW ENDLESSDUEL" (NTSC) version 1.0
+ROM: LoROM: 16 Mbit, SRAM: 0 Kbit
+ID: AEDJ, CRC32: 69863c2b, Checksum OK
+Selected xinerama head 0 (0,0 1920x1080)
+Created XShmImage, size 978944
+	Image conversion needed before blit.
+Using internal pixel format 565
+# exit: 1

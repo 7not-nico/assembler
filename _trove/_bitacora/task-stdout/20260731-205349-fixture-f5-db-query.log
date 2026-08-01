@@ -1,0 +1,6 @@
+# CMD: sqlite3 findings.db SELECT\ COUNT\(\*\)\ AS\ n\,\ MIN\(published_at\)\ AS\ oldest\,\ MAX\(published_at\)\ AS\ newest\ FROM\ papers\ WHERE\ subdomain=\'invariant-theory\'\; 
+# DATE: 2026-07-31T20:53:49-06:00
+# CWD: /home/eddyr/assembler/_trove
+# --------------------
+8|1994-02-09|2025-11-11
+# exit: 0

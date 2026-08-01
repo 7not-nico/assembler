@@ -1,0 +1,21 @@
+# CMD: bash -c $'\necho "== ring 1 bitacora =="\necho "todo: $(ls _codex/_bitacora/task-todo/ | wc -l) files; report: $(ls _codex/_bitacora/task-report/ | wc -l) files"\necho "latest todo: $(ls _codex/_bitacora/task-todo/ | tail -1)"; echo "latest report: $(ls _codex/_bitacora/task-report/ | tail -1)"\necho "== ring 3 proof run =="\necho "--- probe-headers ---"; bash mgba-repo/fixture/probe-headers-test.sh 2>&1 | grep -cE "^PASS|^OK"\necho "--- slugify ---"; bash mgba-repo/fixture/slugify-test.sh 2>&1 | grep -c "^PASS"\necho "--- banking ---"; cd mgba-repo/build/test && ./test-gb-banking 2>&1 | grep -E "PASSED|FAILED"\necho "--- ctest summary ---"; ctest --test-dir mgba-repo/build 2>&1 | grep -E "tests passed|Total Test"\n' 
+# DATE: 2026-08-01T07:57:24-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+== ring 1 bitacora ==
+ls: cannot access '_codex/_bitacora/task-todo/': No such file or directory
+ls: cannot access '_codex/_bitacora/task-report/': No such file or directory
+todo: 0 files; report: 0 files
+ls: cannot access '_codex/_bitacora/task-todo/': No such file or directory
+latest todo: 
+ls: cannot access '_codex/_bitacora/task-report/': No such file or directory
+latest report: 
+== ring 3 proof run ==
+--- probe-headers ---
+15
+--- slugify ---
+6
+--- banking ---
+[  PASSED  ] 7 test(s).
+--- ctest summary ---
+# exit: 1

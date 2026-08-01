@@ -1,0 +1,7 @@
+# CMD: bash -c bash\ mgba-repo/scripts/acquire-rom.sh\ \"Pokemon\ Crystal\"\ game-boy-color\ 90\ 2\>\&1\ \|\ tail\ -20 
+# DATE: 2026-08-01T06:24:34-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+ERROR shared browser not running — start it: bash ../../_templates/start-browser.sh
+
+# exit: 0

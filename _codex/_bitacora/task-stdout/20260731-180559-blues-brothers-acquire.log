@@ -1,0 +1,15 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/the-blues-brothers-2-146925/4\'\ 60 
+# DATE: 2026-07-31T18:05:59-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/the-blues-brothers-2-146925/4
+LINK https://statics.romsfun.com/SNES/Blues%20Brothers%2C%20The%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRV3d190
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/blues-brothers-the-usa.zip (Blues Brothers, The (USA).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/blues-brothers-the-usa.zip
+OK   Blues Brothers, The (USA).sfc (524288 B) title="BLUES BROTHERS"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/blues-brothers-the-usa.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/blues-brothers-the-usa.sfc: Super NES ROM image "BLUES BROTHERS" (USA), LoROM, FastROM, ROM size: 512KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/blues-brothers-the-usa.sfc
+RUN   pid=326756 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

@@ -1,0 +1,9 @@
+# CMD: sh -c echo\ DISPLAY=\$DISPLAY\;\ echo\ WAYLAND_DISPLAY=\$WAYLAND_DISPLAY\;\ echo\ XDG_SESSION_TYPE=\$XDG_SESSION_TYPE\;\ ls\ /home/eddyr/assembler/_code-dives/snes9x-repo/roms/ 
+# DATE: 2026-07-31T10:32:42-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+DISPLAY=:0
+WAYLAND_DISPLAY=wayland-1
+XDG_SESSION_TYPE=wayland
+super-mario-world-usa.sfc
+# exit: 0

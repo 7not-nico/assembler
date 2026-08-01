@@ -1,0 +1,13 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'bomberman\ 4\'\ 45 
+# DATE: 2026-07-31T18:32:49-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=bomberman%2B4
+GAME https://romsfun.com/roms/super-nintendo/super-bomberman-4.html | SUPER BOMBERMAN 4
+GAME https://romsfun.com/roms/super-nintendo/super-famicom-box-4s-attraction.html | Super Famicom Box 4S Attraction
+OPEN https://romsfun.com/roms/super-nintendo/super-bomberman-4.html
+DL https://romsfun.com/download/super-bomberman-4-7063
+VARIANTS:
+1 https://romsfun.com/download/super-bomberman-4-7063/1 | Super Bomberman 4 (Japan) (T-En by Svambo v1.0)
+2 https://romsfun.com/download/super-bomberman-4-7063/2 | Super Bomber Man 4 (Japan)
+# exit: 0

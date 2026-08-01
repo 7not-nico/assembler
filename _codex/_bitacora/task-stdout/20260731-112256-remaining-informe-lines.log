@@ -1,0 +1,13 @@
+# CMD: sh -c grep\ -n\ \'informe\'\ /home/eddyr/assembler/_code-dives/_templates/AGENTS.md\ /home/eddyr/assembler/_knowledge/_templates/AGENTS.md 
+# DATE: 2026-07-31T11:22:56-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+/home/eddyr/assembler/_code-dives/_templates/AGENTS.md:13:- **Registry and semantic search** — templates and informes stay queryable by meaning.
+/home/eddyr/assembler/_code-dives/_templates/AGENTS.md:27:    registers templates (parses **Layer:**/**Purpose:**) and informes
+/home/eddyr/assembler/_code-dives/_templates/AGENTS.md:31:    embeds template purpose+content and informe content into
+/home/eddyr/assembler/_code-dives/_templates/AGENTS.md:53:                              informes (id, project, errors, findings)
+/home/eddyr/assembler/_knowledge/_templates/AGENTS.md:13:- **Registry and semantic search** — templates and informes stay queryable by meaning.
+/home/eddyr/assembler/_knowledge/_templates/AGENTS.md:27:    registers templates (parses **Layer:**/**Purpose:**) and informes
+/home/eddyr/assembler/_knowledge/_templates/AGENTS.md:31:    embeds template purpose+content and informe content into
+/home/eddyr/assembler/_knowledge/_templates/AGENTS.md:53:                              informes (id, project, errors, findings)
+# exit: 0

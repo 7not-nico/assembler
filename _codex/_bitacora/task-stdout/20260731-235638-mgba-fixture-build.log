@@ -1,0 +1,11 @@
+# CMD: bash -c $'\nTMP=$(mktemp -d)\ncd "$TMP"\ntruncate -s 32768 test-cart.gb\nprintf "TEST CART 01" | dd of=test-cart.gb bs=1 seek=$((0x134)) conv=notrunc 2>/dev/null\nprintf "\\x01" | dd of=test-cart.gb bs=1 seek=$((0x147)) conv=notrunc 2>/dev/null\nzip -q test-cart.zip test-cart.gb\nmkdir -p /home/eddyr/assembler/_codex/mgba-repo/fixture\ncp test-cart.zip /home/eddyr/assembler/_codex/mgba-repo/fixture/test-cart.zip\ncp test-cart.gb /home/eddyr/assembler/_codex/mgba-repo/fixture/test-cart.gb\necho "FIXTURE /home/eddyr/assembler/_codex/mgba-repo/fixture/test-cart.zip"\nls -la /home/eddyr/assembler/_codex/mgba-repo/fixture/\ncd /; rm -rf "$TMP"\n' 
+# DATE: 2026-07-31T23:56:38-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+FIXTURE /home/eddyr/assembler/_codex/mgba-repo/fixture/test-cart.zip
+total 8
+drwxr-xr-x 1 eddyr eddyr    50 Jul 31 23:56 .
+drwxr-xr-x 1 eddyr eddyr  1572 Jul 31 23:50 ..
+-rw-r--r-- 1 eddyr eddyr 32768 Jul 31 23:56 test-cart.gb
+-rw-r--r-- 1 eddyr eddyr   250 Jul 31 23:56 test-cart.zip
+# exit: 0

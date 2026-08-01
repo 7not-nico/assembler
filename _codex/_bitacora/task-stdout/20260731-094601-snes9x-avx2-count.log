@@ -1,0 +1,7 @@
+# CMD: sh -c objdump\ -d\ snes9x\ \|\ grep\ -cE\ \'y\(\?:pblend\|pmul\|psll\|psrl\|pextr\|pinsr\|movdqa\|vpxor\|vpmul\)\' 
+# DATE: 2026-07-31T09:46:01-06:00
+# CWD: /home/eddyr/assembler/_code-dives/snes9x-repo/snes9x/unix
+# --------------------
+grep: warning: ? at start of expression
+0
+# exit: 1

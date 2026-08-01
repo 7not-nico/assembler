@@ -1,0 +1,16 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/final-fantasy-vi-2-8071/14\'\ 60 
+# DATE: 2026-07-31T16:35:06-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/final-fantasy-vi-2-8071/14
+LINK https://sto.romsfast.com/TRANS/Nintendo%20-%20Super%20Famicom/Final%20Fantasy%20VI%20(USA)%20(Woolsey%20Uncensored%20Edition%20by%20Rodimus%20Primal%20v3.06)%20(n).zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRVxfVlz
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/final-fantasy-vi-usa-woolsey-uncensored-edition-by-rodimus-primal-v3-06-n.zip (Final Fantasy VI (USA) (Woolsey Uncensored Edition by Rodimus Primal v3.06) (n).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/final-fantasy-vi-usa-woolsey-uncensored-edition-by-rodimus-primal-v3-06-n.zip
+WARN unexpected ROM size: 4194304
+OK   Final (4194304 B)
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/final-fantasy-vi-usa-woolsey-uncensored-edition-by-rodimus-primal-v3-06-n.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/final-fantasy-vi-usa-woolsey-uncensored-edition-by-rodimus-primal-v3-06-n.sfc: Super NES ROM image "FINAL FANTASY 3" (USA), HiROM, FastROM, ROM size: 4096KB, RAM size: 8KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/final-fantasy-vi-usa-woolsey-uncensored-edition-by-rodimus-primal-v3-06-n.sfc
+RUN   pid=280374 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

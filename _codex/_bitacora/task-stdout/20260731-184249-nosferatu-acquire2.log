@@ -1,0 +1,16 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/nosferatu-145343/2\'\ 90 
+# DATE: 2026-07-31T18:42:49-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/nosferatu-145343/2
+LINK https://statics.romsfun.com/SNES/Nosferatu%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRV5cV50
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/nosferatu-usa.zip (Nosferatu (USA).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/nosferatu-usa.zip
+WARN unexpected ROM size: 2097152
+OK   Nosferatu (USA).sfc (2097152 B) title="NOSFERATU"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/nosferatu-usa.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/nosferatu-usa.sfc: Super NES ROM image "NOSFERATU" (USA), LoROM, FastROM, ROM size: 2048KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/nosferatu-usa.sfc
+RUN   pid=348109 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

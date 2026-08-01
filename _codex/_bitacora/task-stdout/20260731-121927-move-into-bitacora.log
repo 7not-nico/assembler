@@ -1,0 +1,17 @@
+# CMD: sh -c cd\ /home/eddyr/assembler\ \&\&\ mkdir\ -p\ .opencode/_bitacora\ \&\&\ for\ pair\ in\ \'report:report\'\ \'report:report\'\ \'reports:reports\'\ \'todo:todo\'\ \'audit:audit\'\ \'plans:plans\'\;\ do\ src=\$\{pair%%:\*\}\;\ dst=\$\{pair##\*:\}\;\ done\;\ rsync\ -a\ --ignore-existing\ report/\ .opencode/_bitacora/report/\ \&\&\ rsync\ -a\ --ignore-existing\ .opencode/report/\ .opencode/_bitacora/report/\ \&\&\ rsync\ -a\ --ignore-existing\ .opencode/reports/\ .opencode/_bitacora/reports/\ \&\&\ rsync\ -a\ --ignore-existing\ .opencode/todo/\ .opencode/_bitacora/todo/\ \&\&\ rsync\ -a\ --ignore-existing\ .opencode/audit/\ .opencode/_bitacora/audit/\ \&\&\ rsync\ -a\ --ignore-existing\ .opencode/plans/\ .opencode/_bitacora/plans/\ \&\&\ rm\ -rf\ report\ .opencode/report\ .opencode/reports\ .opencode/todo\ .opencode/audit\ .opencode/plans\ \&\&\ ls\ /home/eddyr/assembler/.opencode/_bitacora/\ \&\&\ echo\ \'---\ old\ paths\ gone:\'\ \&\&\ for\ p\ in\ report\ .opencode/report\ .opencode/reports\ .opencode/todo\ .opencode/audit\ .opencode/plans\;\ do\ ls\ -d\ \$p\ 2\>/dev/null\ \|\|\ echo\ \"gone:\ \$p\"\;\ done 
+# DATE: 2026-07-31T12:19:27-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+audit
+plans
+report
+reports
+todo
+--- old paths gone:
+gone: report
+gone: .opencode/report
+gone: .opencode/reports
+gone: .opencode/todo
+gone: .opencode/audit
+gone: .opencode/plans
+# exit: 0

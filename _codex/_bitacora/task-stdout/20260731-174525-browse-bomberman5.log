@@ -1,0 +1,15 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'bomberman\ 5\'\ 45 
+# DATE: 2026-07-31T17:45:25-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=bomberman%2B5
+GAME https://romsfun.com/roms/super-nintendo/super-bomberman-5.html | Super Bomberman 5
+GAME https://romsfun.com/roms/super-nintendo/spark-world.html | Spark World
+OPEN https://romsfun.com/roms/super-nintendo/super-bomberman-5.html
+DL https://romsfun.com/download/super-bomberman-5-7200
+VARIANTS:
+1 https://romsfun.com/download/super-bomberman-5-7200/1 | Super Bomberman 5 (Japan) (T-En by Psyklax Beta) (Add by Svambo v1.0) (i)
+2 https://romsfun.com/download/super-bomberman-5-7200/2 | Super Bomberman 5 (Japan) (T-En by Psyklax Beta) (i)
+3 https://romsfun.com/download/super-bomberman-5-7200/3 | Super Bomber Man 5 (Japan) (Caravan Event Ban)
+4 https://romsfun.com/download/super-bomberman-5-7200/4 | Super Bomber Man 5 (Japan)
+# exit: 0

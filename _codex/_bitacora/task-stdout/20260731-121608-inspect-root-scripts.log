@@ -1,0 +1,24 @@
+# CMD: sh -c ls\ -la\ /home/eddyr/assembler/scripts/\ \|\ head\ -20\;\ echo\ ---\;\ du\ -sh\ /home/eddyr/assembler/scripts/\;\ echo\ ---\;\ ls\ /home/eddyr/assembler/.opencode/_scripts/\ \|\ head\ -8 
+# DATE: 2026-07-31T12:16:08-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+total 0
+drwxr-xr-x 1 eddyr eddyr   64 Jul 30 22:55 .
+drwxr-xr-x 1 eddyr eddyr 2956 Jul 31 11:58 ..
+drwxr-xr-x 1 eddyr eddyr   46 Jul 30 22:55 dataflow
+drwxr-xr-x 1 eddyr eddyr    0 Jul 27 12:30 decision
+drwxr-xr-x 1 eddyr eddyr   48 Jul 27 12:30 guides
+drwxr-xr-x 1 eddyr eddyr   58 Jul 27 12:30 report
+drwxr-xr-x 1 eddyr eddyr   36 Jul 27 12:30 todo
+---
+24K	/home/eddyr/assembler/scripts/
+---
+AGENTS.md
+archive
+_bin
+composition
+dataflow
+decision
+docs
+equivalence
+# exit: 0

@@ -1,0 +1,8 @@
+# CMD: bash -c sed\ -i\ \"s\|printf\(\\\"step\ init\\\\\\\\n\\\"\)\;\|printf\(\\\"init=%p\ loadROM=%p\ board=%p\\\\\\\\n\\\"\,\ \(void\*\)core-\>init\,\ \(void\*\)core-\>loadROM\,\ \(void\*\)core-\>board\)\;\|\"\ mbc-banking-test.c\ \&\&\ DEFS=\$\(sed\ -n\ \"s/\^C_DEFINES\ =\ //p\"\ ../build/test/CMakeFiles/test-gb-mbc.dir/flags.make\ \|\ sed\ \"s/-DLUA_VERSION_ONLY=\[\^\ \]\*//\"\)\;\ gcc\ -std=c11\ \$DEFS\ -o\ mbc-banking-test\ mbc-banking-test.c\ -I\ ../build/include\ -I\ ../../mgba/include\ -L\ ../build\ -lmgba\ -Wl\,-rpath\,../build\ 2\>\&1\ \|\ head\ -3\;\ stdbuf\ -o0\ -e0\ ./mbc-banking-test\;\ echo\ \"exit=\$\?\" 
+# DATE: 2026-08-01T07:08:25-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo/fixture
+# --------------------
+init=(nil) loadROM=0x7fd9c82b3240 board=(nil)
+bash: line 1: 31338 Segmentation fault         (core dumped) stdbuf -o0 -e0 ./mbc-banking-test
+exit=139
+# exit: 0

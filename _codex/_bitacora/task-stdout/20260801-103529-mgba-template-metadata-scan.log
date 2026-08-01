@@ -1,0 +1,32 @@
+# CMD: bash -c $'\ncd /home/eddyr/assembler/_codex/_templates\necho "== files =="; ls *.md *.sh *.rb *.sql 2>/dev/null | tr "\\n" " "; echo\necho "== layer headers =="; rg -l "^\\*\\*Layer:\\*\\*" *.md | tr "\\n" " "; echo\necho "== purpose headers =="; rg -l "^\\*\\*Purpose:\\*\\*" *.md | tr "\\n" " "; echo\necho "== files missing layer =="; for f in *.md; do rg -q "^\\*\\*Layer:\\*\\*" "$f" || echo "  $f"; done\necho "== files missing purpose =="; for f in *.md; do rg -q "^\\*\\*Purpose:\\*\\*" "$f" || echo "  $f"; done\n' 
+# DATE: 2026-08-01T10:35:29-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+== files ==
+AGENTS.md AGENTS.template.md anchor-workflow-template.md atomic-script-template.sh backup-template.md bitacora-template.md browse-playwright-template.md concept-template.md dive-agents-template.md fixture-template.md format-template.md glossary-template.md guideline-template.md invariant-template.md naming-conventions-template.md note-template.md pattern-template.md practice-template.md precedence-chain.md precept-template.md procedure-template.md push-script-template.rb reference-template.md research-template.md schema-template.sql study-template.md write-reportare-template.md write-report-template.md 
+== layer headers ==
+fixture-template.md pattern-template.md practice-template.md write-reportare-template.md concept-template.md study-template.md note-template.md write-report-template.md browse-playwright-template.md invariant-template.md research-template.md naming-conventions-template.md reference-template.md backup-template.md guideline-template.md bitacora-template.md glossary-template.md precept-template.md procedure-template.md anchor-workflow-template.md precedence-chain.md format-template.md 
+== purpose headers ==
+practice-template.md note-template.md naming-conventions-template.md research-template.md reference-template.md concept-template.md glossary-template.md anchor-workflow-template.md format-template.md 
+== files missing layer ==
+  AGENTS.md
+  AGENTS.template.md
+  dive-agents-template.md
+== files missing purpose ==
+  AGENTS.md
+  AGENTS.template.md
+  backup-template.md
+  bitacora-template.md
+  browse-playwright-template.md
+  dive-agents-template.md
+  fixture-template.md
+  guideline-template.md
+  invariant-template.md
+  pattern-template.md
+  precedence-chain.md
+  precept-template.md
+  procedure-template.md
+  study-template.md
+  write-reportare-template.md
+  write-report-template.md
+# exit: 0

@@ -1,0 +1,16 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/super-bomberman-4-7063/1\'\ 60 
+# DATE: 2026-07-31T18:33:13-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/super-bomberman-4-7063/1
+LINK https://sto.romsfast.com/TRANS/Nintendo%20-%20Super%20Famicom/Super%20Bomberman%204%20(Japan)%20(T-En%20by%20Svambo%20v1.0).zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRV2fVBw
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/super-bomberman-4-japan-t-en-by-svambo-v1-0.zip (Super Bomberman 4 (Japan) (T-En by Svambo v1.0).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/super-bomberman-4-japan-t-en-by-svambo-v1-0.zip
+WARN unexpected ROM size: 2097152
+OK   Super Bomberman 4 (Japan) [T-En by Svambo v1.0].sfc (2097152 B) title="SUPER BOMBERMAN 4"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/super-bomberman-4-japan-t-en-by-svambo-v1-0.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/super-bomberman-4-japan-t-en-by-svambo-v1-0.sfc: Super NES ROM image "SUPER BOMBERMAN 4" (Japan), HiROM, FastROM, ROM size: 2048KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/super-bomberman-4-japan-t-en-by-svambo-v1-0.sfc
+RUN   pid=342440 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

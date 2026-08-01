@@ -1,0 +1,10 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'prehistorik\'\ 45 
+# DATE: 2026-07-31T19:06:25-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=prehistorik
+ERROR page.goto: net::ERR_ABORTED at https://romsfun.com/roms/super-nintendo/?s=prehistorik
+Call log:
+[2m  - navigating to "https://romsfun.com/roms/super-nintendo/?s=prehistorik", waiting until "domcontentloaded"[22m
+
+# exit: 1

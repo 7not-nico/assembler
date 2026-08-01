@@ -1,0 +1,13 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'bubsy\'\ 45 
+# DATE: 2026-07-31T20:43:51-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=bubsy
+GAME https://romsfun.com/roms/super-nintendo/bubsy-ii-2.html | Bubsy II
+GAME https://romsfun.com/roms/super-nintendo/bubsy-in-claws-encounters-of-the-furred-kind.html | Bubsy in: Claws Encounters of the Furred Kind
+OPEN https://romsfun.com/roms/super-nintendo/bubsy-ii-2.html
+DL https://romsfun.com/download/bubsy-ii-2-143489
+VARIANTS:
+1 https://romsfun.com/download/bubsy-ii-2-143489/1 | Bubsy II (Europe)
+2 https://romsfun.com/download/bubsy-ii-2-143489/2 | Bubsy II (USA)
+# exit: 0

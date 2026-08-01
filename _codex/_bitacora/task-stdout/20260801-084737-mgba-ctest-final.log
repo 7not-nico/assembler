@@ -1,0 +1,7 @@
+# CMD: bash -c ctest\ --test-dir\ /home/eddyr/assembler/_codex/mgba-repo/build\ 2\>\&1\ \|\ grep\ -E\ \"tests\ passed\|tests\ failed\|Total\ Test\" 
+# DATE: 2026-08-01T08:47:37-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+100% tests passed out of 33
+Total Test time (real) =   1.61 sec
+# exit: 0

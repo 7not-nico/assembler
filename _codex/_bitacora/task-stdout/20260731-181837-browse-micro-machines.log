@@ -1,0 +1,15 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'micro\ machines\'\ 45 
+# DATE: 2026-07-31T18:18:37-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=micro%2Bmachines
+GAME https://romsfun.com/roms/super-nintendo/micro-machines-7.html | Micro Machines
+GAME https://romsfun.com/roms/super-nintendo/micro-machines-2-turbo-tournament.html | Micro Machines 2: Turbo Tournament
+GAME https://romsfun.com/roms/super-nintendo/mini-yonku-lets-go-power-wgp-2.html | Mini Yonku Let's & Go!! Power WGP 2
+OPEN https://romsfun.com/roms/super-nintendo/micro-machines-7.html
+DL https://romsfun.com/download/micro-machines-7-145107
+VARIANTS:
+1 https://romsfun.com/download/micro-machines-7-145107/1 | Micro Machines (Europe)
+2 https://romsfun.com/download/micro-machines-7-145107/2 | Micro Machines (USA)
+3 https://romsfun.com/download/micro-machines-7-145107/3 | Micro Machines
+# exit: 0

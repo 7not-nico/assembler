@@ -1,0 +1,18 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'bust\ a\ move\'\ 45 
+# DATE: 2026-07-31T21:14:03-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=bust%2Ba%2Bmove
+GAME https://romsfun.com/roms/super-nintendo/bust-a-move.html | Bust-A-Move
+GAME https://romsfun.com/roms/super-nintendo/corn-buster.html | Corn Buster
+GAME https://romsfun.com/roms/super-nintendo/natsume-championship-wrestling.html | Natsume Championship Wrestling
+GAME https://romsfun.com/roms/super-nintendo/dolucky-no-puzzle-tour-94.html | Dolucky no Puzzle Tour '94
+GAME https://romsfun.com/roms/super-nintendo/the-legend-of-the-mystical-ninja-2.html | The Legend of the Mystical Ninja
+GAME https://romsfun.com/roms/super-nintendo/zen-nihon-pro-wres.html | Zen-Nihon Pro Wres
+OPEN https://romsfun.com/roms/super-nintendo/bust-a-move.html
+DL https://romsfun.com/download/bust-a-move-143501
+VARIANTS:
+1 https://romsfun.com/download/bust-a-move-143501/1 | Bust-A-Move (USA)
+2 https://romsfun.com/download/bust-a-move-143501/2 | Puzzle Bobble - Bust-A-Move (Europe) (Rev 1)
+3 https://romsfun.com/download/bust-a-move-143501/3 | Puzzle Bobble - Bust-A-Move (Europe)
+# exit: 0

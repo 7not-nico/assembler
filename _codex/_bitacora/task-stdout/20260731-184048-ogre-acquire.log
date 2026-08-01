@@ -1,0 +1,16 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/ogre-battle-the-march-of-the-black-queen-145359/3\'\ 60 
+# DATE: 2026-07-31T18:40:48-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/ogre-battle-the-march-of-the-black-queen-145359/3
+LINK https://statics.romsfun.com/SNES/Ogre%20Battle%20-%20The%20March%20of%20the%20Black%20Queen%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRV5cF19
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/ogre-battle-the-march-of-the-black-queen-usa.zip (Ogre Battle - The March of the Black Queen (USA).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/ogre-battle-the-march-of-the-black-queen-usa.zip
+WARN unexpected ROM size: 1572864
+OK   Ogre Battle - The March of the Black Queen (USA).sfc (1572864 B) title="Ogre Battle USA"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/ogre-battle-the-march-of-the-black-queen-usa.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/ogre-battle-the-march-of-the-black-queen-usa.sfc: Super NES ROM image "Ogre Battle USA" (USA), LoROM, ROM size: 2048KB, RAM size: 8KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/ogre-battle-the-march-of-the-black-queen-usa.sfc
+RUN   pid=346913 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

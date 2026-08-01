@@ -1,0 +1,16 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/mega-man-x-7236/3\'\ 60 
+# DATE: 2026-07-31T18:35:10-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/mega-man-x-7236/3
+LINK https://statics.romsfun.com/SNES/Mega%20Man%20X%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRV5dVh3
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/mega-man-x-usa.zip (Mega Man X (USA).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/mega-man-x-usa.zip
+WARN unexpected ROM size: 1572864
+OK   Mega Man X (USA).sfc (1572864 B) title="MEGAMAN X"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/mega-man-x-usa.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/mega-man-x-usa.sfc: Super NES ROM image "MEGAMAN X" (USA), LoROM, FastROM, ROM size: 2048KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/mega-man-x-usa.sfc
+RUN   pid=343617 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

@@ -1,0 +1,13 @@
+# CMD: sh -c ls\ /home/eddyr/assembler/.opencode/_bitacora/\ 2\>/dev/null\;\ echo\ ---\;\ ls\ /home/eddyr/assembler/.opencode/todo/\ \|\ wc\ -l\;\ echo\ ---\;\ ls\ /home/eddyr/assembler/.opencode/todo/\ \|\ head\ -5 
+# DATE: 2026-07-31T12:18:19-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+---
+28
+---
+batch-math-ratio.md
+batch-ratio-papers.md
+classification-ratio.md
+code-infrastructure.md
+crossref-audit.md
+# exit: 0

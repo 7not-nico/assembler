@@ -1,0 +1,8 @@
+# CMD: bash -c stdbuf\ -o0\ -e0\ ./mbc-banking-test\;\ echo\ \"exit=\$\?\" 
+# DATE: 2026-08-01T07:00:38-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo/fixture
+# --------------------
+step init
+bash: line 1: 27298 Segmentation fault         (core dumped) stdbuf -o0 -e0 ./mbc-banking-test
+exit=139
+# exit: 0

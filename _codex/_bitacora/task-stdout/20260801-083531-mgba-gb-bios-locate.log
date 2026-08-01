@@ -1,0 +1,17 @@
+# CMD: bash -c rg\ -n\ \"GBSkipBIOS\|GBMapBIOS\|GBUnmapBIOS\|GBLoadBIOS\|biosVf\|GBBaseBIOS\"\ /home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/gb.c\ \|\ head\ -12 
+# DATE: 2026-08-01T08:35:31-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+106:	gb->biosVf = NULL;
+504:void GBLoadBIOS(struct GB* gb, struct VFile* vf) {
+505:	gb->biosVf = vf;
+546:	GBUnmapBIOS(gb);
+549:	if (gb->biosVf) {
+550:		gb->biosVf->close(gb->biosVf);
+551:		gb->biosVf = 0;
+661:	if (gb->biosVf) {
+662:		if (!GBIsCompatibleBIOS(gb->biosVf, gb->model)) {
+663:			gb->biosVf->close(gb->biosVf);
+664:			gb->biosVf = NULL;
+666:			GBMapBIOS(gb);
+# exit: 0

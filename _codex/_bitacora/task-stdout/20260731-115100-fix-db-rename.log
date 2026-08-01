@@ -1,0 +1,13 @@
+# CMD: sh -c $'cd /home/eddyr/assembler/_knowledge/_templates && bun -e \'\nimport {Database} from "bun:sqlite"\nconst db = new Database("schema/templates.db")\nconst tables = db.query("SELECT name FROM sqlite_master WHERE type=\\"table\\"").all().map(r=>r.name)\nconsole.log("tables:", tables)\nif (tables.includes("informes") && !tables.includes("reports")) {\n  db.exec("ALTER TABLE informes RENAME TO reports")\n  console.log("renamed informes -> reports")\n}\nconst idx = db.query("SELECT name FROM sqlite_master WHERE type=\\"index\\"").all().map(r=>r.name)\nconsole.log("indexes:", idx)\nif (idx.includes("idx_informes_project")) { db.exec("DROP INDEX idx_informes_project; CREATE INDEX idx_reports_project ON reports(project)") }\nif (idx.includes("idx_informes_date")) { db.exec("DROP INDEX idx_informes_date; CREATE INDEX idx_reports_date ON reports(date)") }\nconsole.log("final:", db.query("SELECT name FROM sqlite_master WHERE type=\\"table\\"").all().map(r=>r.name), db.query("SELECT name FROM sqlite_master WHERE type=\\"index\\"").all().map(r=>r.name))\nconsole.log("rows:", db.query("SELECT count(*) c FROM reports").get().c)\n\'' 
+# DATE: 2026-07-31T11:51:00-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+tables: [ "templates", "reports" ]
+indexes: [ "sqlite_autoindex_templates_1", "sqlite_autoindex_reports_1", "idx_templates_layer",
+  "idx_informes_project", "idx_templates_chain", "idx_informes_date"
+]
+final: [ "templates", "reports" ] [ "sqlite_autoindex_templates_1", "sqlite_autoindex_reports_1",
+  "idx_templates_layer", "idx_templates_chain", "idx_reports_project", "idx_reports_date"
+]
+rows: 10
+# exit: 0

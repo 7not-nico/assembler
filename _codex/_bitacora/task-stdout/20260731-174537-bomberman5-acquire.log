@@ -1,0 +1,17 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/super-bomberman-5-7200/1\'\ 60 
+# DATE: 2026-07-31T17:45:37-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/super-bomberman-5-7200/1
+LINK https://sto.romsfast.com/TRANS/Nintendo%20-%20Super%20Famicom/Super%20Bomberman%205%20(Japan)%20(T-En%20by%20Psyklax%20Beta)%20(Add%20by%20Svambo%20v1.0)%20(i).zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRV0dVp8
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/super-bomberman-5-japan-t-en-by-psyklax-beta-add-by-svambo-v1-0-i.zip (Super Bomberman 5 (Japan) (T-En by Psyklax Beta) (Add by Svambo v1.0) (i).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/super-bomberman-5-japan-t-en-by-psyklax-beta-add-by-svambo-v1-0-i.zip
+WARN unexpected ROM size: 2097152
+WARN no SNES title region found — header may be invalid
+OK   Super Bomberman 5 (Japan) [T-En by Psyklax Beta] [Add by Svambo v1.0] [i].sfc (2097152 B) title=""
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/super-bomberman-5-japan-t-en-by-psyklax-beta-add-by-svambo-v1-0-i.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/super-bomberman-5-japan-t-en-by-psyklax-beta-add-by-svambo-v1-0-i.sfc: Super NES ROM image "Hu SUPER BOMBERMAN 5" (Japan), HiROM, FastROM, ROM size: 2048KB, RAM size: 8KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/super-bomberman-5-japan-t-en-by-psyklax-beta-add-by-svambo-v1-0-i.sfc
+RUN   pid=315757 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

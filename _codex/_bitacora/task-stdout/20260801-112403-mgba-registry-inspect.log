@@ -1,0 +1,20 @@
+# CMD: bash -c ls\ /home/eddyr/assembler/_codex/_templates/script/\ /home/eddyr/assembler/_codex/_templates/schema/\ 2\>/dev/null\;\ echo\ ---\;\ rg\ -n\ \"Layer\|Purpose\|frontmatter\|\^---\"\ /home/eddyr/assembler/_codex/_templates/script/\*.rb\ 2\>/dev/null\ \|\ head\ -12 
+# DATE: 2026-08-01T11:24:03-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+/home/eddyr/assembler/_codex/_templates/schema/:
+templates.db
+templates.sql
+templates-vector.db
+
+/home/eddyr/assembler/_codex/_templates/script/:
+bench.ts
+push-registry.rb
+semantic-embed.ts
+semantic-search.ts
+stress.ts
+---
+3:# Layer: script/ — Ruby loader targets schema tables
+58:  layer   = (content[/^\*\*Layer:\*\*\s*(.+)$/, 1] || 'bootstrap').strip.split(' ').first
+59:  purpose = content[/^\*\*Purpose:\*\*\s*(.+)$/, 1]&.strip ||
+# exit: 0

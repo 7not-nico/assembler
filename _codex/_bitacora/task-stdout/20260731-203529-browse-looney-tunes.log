@@ -1,0 +1,6 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'looney\ tunes\ basketball\'\ 45 
+# DATE: 2026-07-31T20:35:29-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+ERROR shared browser not running — start it: bash ../../_templates/start-browser.sh
+# exit: 1

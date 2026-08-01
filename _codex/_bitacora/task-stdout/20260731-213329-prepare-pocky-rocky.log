@@ -1,0 +1,6 @@
+# CMD: bash /home/eddyr/assembler/_codex/snes9x-repo/scripts/prepare-rom.sh /home/eddyr/assembler/.opencode/.playwright-mcp/pocky-rocky-usa.zip 
+# DATE: 2026-07-31T21:33:29-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/pocky-rocky-usa.sfc
+# exit: 0

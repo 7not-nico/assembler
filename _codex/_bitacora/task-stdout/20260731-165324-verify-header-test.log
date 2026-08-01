@@ -1,0 +1,11 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/verify-rom.sh\ /home/eddyr/assembler/.opencode/.playwright-mcp/donkey-kong-country-usa.zip\ \&\&\ bash\ scripts/verify-rom.sh\ /home/eddyr/assembler/.opencode/.playwright-mcp/super-metroid-japan-usa-en-ja.zip 
+# DATE: 2026-07-31T16:53:24-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+WARN unexpected ROM size: 4194304
+WARN no SNES title region found — header may be invalid
+OK   Donkey (4194304 B) title=""
+WARN unexpected ROM size: 3145728
+WARN no SNES title region found — header may be invalid
+OK   Super (3145728 B) title=""
+# exit: 0

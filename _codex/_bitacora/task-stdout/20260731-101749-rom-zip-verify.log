@@ -1,0 +1,22 @@
+# CMD: sh -c file\ /home/eddyr/assembler/.playwright-mcp/Super-Mario-World-USA-.zip\ /home/eddyr/assembler/.playwright-mcp/Super-Mario-World-U-.zip\;\ echo\ ---\;\ unzip\ -l\ /home/eddyr/assembler/.playwright-mcp/Super-Mario-World-USA-.zip\ 2\>\&1\ \|\ head\ -10\;\ echo\ ---\;\ unzip\ -l\ /home/eddyr/assembler/.playwright-mcp/Super-Mario-World-U-.zip\ 2\>\&1\ \|\ head\ -10 
+# DATE: 2026-07-31T10:17:49-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+/home/eddyr/assembler/.playwright-mcp/Super-Mario-World-USA-.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+/home/eddyr/assembler/.playwright-mcp/Super-Mario-World-U-.zip:   Zip archive data, made by v2.0, extract using at least v2.0, last modified Mar 27 1996 00:16:08, uncompressed size 524800, method=deflate
+---
+Archive:  /home/eddyr/assembler/.playwright-mcp/Super-Mario-World-USA-.zip
+TORRENTZIPPED-644DCC3B
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+   524288  12-24-1996 23:32   Super Mario World (USA).sfc
+---------                     -------
+   524288                     1 file
+---
+Archive:  /home/eddyr/assembler/.playwright-mcp/Super-Mario-World-U-.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+   524800  03-27-1996 00:16   Super Mario World (U) [!].smc
+---------                     -------
+   524800                     1 file
+# exit: 0

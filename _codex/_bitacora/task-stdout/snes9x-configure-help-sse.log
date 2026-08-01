@@ -1,0 +1,4 @@
+  --build=BUILD     configure for building on BUILD [guessed]
+  --enable-sse41          enable SSE4.1 if available (default: no)
+  --enable-avx2           enable AVX2 if available (default: no)
+  --enable-neon           enable NEON if available (default: no)

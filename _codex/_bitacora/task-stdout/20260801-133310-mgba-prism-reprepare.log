@@ -1,0 +1,8 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ bash\ scripts/prepare-rom.sh\ /home/eddyr/assembler/.opencode/.playwright-mcp/pokemon-prism-v0-95-build-254-hotfix-5.zip\ 2\>\&1\ \&\&\ echo\ \'---\ crash\ ---\'\ \&\&\ bash\ scripts/prepare-rom.sh\ /home/eddyr/assembler/.opencode/.playwright-mcp/crash-bandicoot-the-huge-adventure-usa.zip\ 2\>\&1 
+# DATE: 2026-08-01T13:33:10-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/pokemon-prism-v0-95-build-254-hotfix-5.gbc
+--- crash ---
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/crash-bandicoot-the-huge-adventure-usa.gba
+# exit: 0

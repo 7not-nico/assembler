@@ -1,0 +1,9 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_code-dives/_bitacora\ \&\&\ mv\ report\ task-report\ \&\&\ mv\ todo\ task-todo\ \&\&\ mv\ stdout\ task-stdout\ \&\&\ ls\ \&\&\ sed\ -i\ \'s\|_bitacora/stdout\|_bitacora/task-stdout\|g\'\ /home/eddyr/assembler/_code-dives/_templates/run-logged.sh\ \&\&\ grep\ -n\ \'task-stdout\'\ /home/eddyr/assembler/_code-dives/_templates/run-logged.sh 
+# DATE: 2026-07-31T12:38:32-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+task-report
+task-stdout
+task-todo
+4:# Writes {timestamp}-{name}.log into _bitacora/task-stdout/ with a # CMD: header
+13:STDOUT_DIR="$(cd "$(dirname "$0")/../_bitacora/task-stdout" && pwd)"

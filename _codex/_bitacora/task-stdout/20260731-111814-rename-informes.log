@@ -1,0 +1,30 @@
+# CMD: sh -c mv\ /home/eddyr/assembler/_knowledge/_templates/informes\ /home/eddyr/assembler/_knowledge/_templates/reportare\ \&\&\ mv\ /home/eddyr/assembler/_code-dives/_templates/informes\ /home/eddyr/assembler/_code-dives/_templates/reportare\ \&\&\ ls\ /home/eddyr/assembler/_knowledge/_templates/reportare\ /home/eddyr/assembler/_code-dives/_templates/reportare 
+# DATE: 2026-07-31T11:18:14-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+/home/eddyr/assembler/_code-dives/_templates/reportare:
+20260731-003332.md
+20260731-004058.md
+20260731-004633.md
+20260731-004827.md
+20260731-005130.md
+20260731-005632.md
+20260731-005830.md
+20260731-010123.md
+20260731-011644.md
+20260731-012848.md
+informe-template.md
+
+/home/eddyr/assembler/_knowledge/_templates/reportare:
+20260731-003332.md
+20260731-004058.md
+20260731-004633.md
+20260731-004827.md
+20260731-005130.md
+20260731-005632.md
+20260731-005830.md
+20260731-010123.md
+20260731-011644.md
+20260731-012848.md
+informe-template.md
+# exit: 0

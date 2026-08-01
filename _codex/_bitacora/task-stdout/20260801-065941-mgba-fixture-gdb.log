@@ -1,0 +1,19 @@
+# CMD: bash -c command\ -v\ gdb\ \&\&\ gdb\ -batch\ -ex\ run\ -ex\ bt\ ./mbc-banking-test\ 2\>\&1\ \|\ tail\ -20 
+# DATE: 2026-08-01T06:59:41-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo/fixture
+# --------------------
+/usr/bin/gdb
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.archlinux.org>
+Enable debuginfod for this session? (y or [n]) [answered N; input not from terminal]
+Debuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000000000 in ?? ()
+#0  0x0000000000000000 in ??? ()
+#1  0x000055555555532e in main ()
+# exit: 0

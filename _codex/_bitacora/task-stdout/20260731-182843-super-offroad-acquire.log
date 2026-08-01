@@ -1,0 +1,15 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/super-off-road-2-146622/3\'\ 60 
+# DATE: 2026-07-31T18:28:43-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/super-off-road-2-146622/3
+LINK https://statics.romsfun.com/SNES/Super%20Off%20Road%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRV2c1tw
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/super-off-road-usa.zip (Super Off Road (USA).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/super-off-road-usa.zip
+OK   Super Off Road (USA).sfc (524288 B) title="SUPER OFFROAD"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/super-off-road-usa.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/super-off-road-usa.sfc: Super NES ROM image "SUPER OFFROAD" (USA), LoROM, ROM size: 512KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/super-off-road-usa.sfc
+RUN   pid=339817 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

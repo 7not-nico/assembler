@@ -1,0 +1,19 @@
+# CMD: sh -c $'cd /home/eddyr/assembler && bun -e \'\nimport { Database } from "bun:sqlite"\nconst db = new Database(".opencode/patlib.db")\nconst id = "SPEC.AGENTS.SELF.CONTAINED"\nconst title = "Agent Instructions Self-Containment — No Preceding-Instruction References"\nconst body = "**Agent Instructions Self-Containment** — an AGENTS.md file describes only its own domain and its own processes. It never mentions the existence, content, or responsibilities of a preceding agent\\"s instructions. Cross-references to other agent instruction files create stale pointers — the preceding project changes, the reference breaks, and a broken window appears.\\n\\n## Rule\\n\\n- Self-description only — an AGENTS.md file states its own domain, structure, toolchain, and conventions. It names no other AGENTS.md file and describes no other agent\\"s responsibilities.\\n- No existence mentions — a file never records that another agent instructions file exists, whether upstream or downstream. The reader discovers the hierarchy through the filesystem, not through references.\\n- No responsibility descriptions — a file never lists what a preceding agent does, provides, or governs. Each project states its own ownership alone.\\n- Ownership phrase — the Delegation section, when present, contains a single self-ownership statement: \\"This project owns {domain}.\\" No provider, no governor, no parent is named.\\n- No preceding-agent rationale — decisions reference the project\\"s own rules only. A rule that exists because \\"the parent governs it\\" belongs in the parent, not in the child.\\n\\n## Applicability\\n\\nAll AGENTS.md files in the workspace: root, project, subproject, and dive-project instruction files."\nconst summary = "An AGENTS.md file describes only its own domain and processes. It never mentions the existence, content, or responsibilities of a preceding agent\\"s instructions — cross-references create stale pointers and broken windows."\ndb.query("INSERT INTO specifications (id, title, body, source, summary, tags, created, modified) VALUES (?, ?, ?, ?, ?, ?, datetime(\\"now\\"), datetime(\\"now\\"))").run(id, title, body, "assembler", summary, "agents,instructions,self-containment,broken-window,specification")\nconsole.log("inserted", db.query("SELECT id FROM specifications WHERE id=?").get(id))\n\' && bun run .opencode/tools/semantic-embed.ts --type specifications && bun run .opencode/tools/semantic-search.ts --query "agents md self containment preceding references" --k 2 --type specifications' 
+# DATE: 2026-07-31T11:53:29-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+inserted {
+  id: "SPEC.AGENTS.SELF.CONTAINED",
+}
+embedded 1 specifications
+
+1 entities embedded of type 'specifications'
+RANK  SCORE    TYPE        ID
+----------------------------------------------------------------------
+1     0.8356    specifications SPEC.AGENTS.SELF.CONTAINED
+       Agent Instructions Self-Containment — No Preceding-Instruction References
+2     0.6389    specifications SPEC.PROTOCOL.SCHEMA.STRUCTURE
+       Protocol Schema — Protocol Metadata and Body Conventions
+----------------------------------------------------------------------
+2 semantic matches for "agents md self containment preceding references" (23 indexed)
+# exit: 0

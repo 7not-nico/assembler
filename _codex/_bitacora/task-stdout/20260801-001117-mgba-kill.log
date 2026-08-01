@@ -1,0 +1,11 @@
+# CMD: bash -c pkill\ -x\ mgba\;\ sleep\ 1\;\ pgrep\ -x\ mgba\ \|\|\ echo\ \"no\ mgba\ processes\ remain\"\;\ ls\ mgba-repo/roms/ 
+# DATE: 2026-08-01T00:11:17-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+no mgba processes remain
+kirby-s-dream-land-2-usa-europe-sgb-enhanced.gb
+kirby-s-dream-land-2-usa-europe-sgb-enhanced.sav
+test-cart.gb
+tetris-japan-en.gb
+tetris-japan-en.sav
+# exit: 0

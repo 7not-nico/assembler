@@ -1,0 +1,8 @@
+# CMD: bash -c cmake\ -S\ mgba\ -B\ build\ -DBUILD_QT=OFF\ -DBUILD_SDL=ON\ -DCMAKE_BUILD_TYPE=Release\ -DBUILD_SUITE=ON\ -DCMAKE_C_FLAGS=\"-O3\ -march=native\"\ -DCMAKE_CXX_FLAGS=\"-O3\ -march=native\"\ 2\>\&1\ \|\ grep\ -E\ \"Build\ type\|Test\ suite\|Configuring\ done\" 
+# DATE: 2026-08-01T06:33:57-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo
+# --------------------
+-- Build type: Release
+-- 	Test suite: ON
+-- Configuring done (0.2s)
+# exit: 0

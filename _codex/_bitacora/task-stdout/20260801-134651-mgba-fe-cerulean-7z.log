@@ -1,0 +1,17 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ https://romsfun.com/download/fire-emblem-cerulean-crescent-304182/1\ 90\ 2\>\&1 
+# DATE: 2026-08-01T13:46:51-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/fire-emblem-cerulean-crescent-304182/1
+LINK https://sto.romsfast.com/Mods/GBA/Fire%20Emblem%20(Cerulean%20Crescent%20v2.11).7z?token=cHxfalBlRlhND3BzWDhQZ1BUQhB2dlh2
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/fire-emblem-cerulean-crescent-v2-11.7z (Fire Emblem (Cerulean Crescent v2.11).7z)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/fire-emblem-cerulean-crescent-v2-11.7z
+WARN unexpected ROM size: 2026-03-31
+WARN no title region found — header may be invalid
+OK   2026-03-31 19:16:19 ....A     32789028               Fire Emblem (Cerulean Crescent v2.11)/Fire Emblem (Cerulean Crescent v2.11).gba (2026-03-31 B) title=""
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/fire-emblem-cerulean-crescent-v2-11.gba
+/home/eddyr/assembler/_codex/mgba-repo/roms/fire-emblem-cerulean-crescent-v2-11.gba: Game Boy Advance ROM image: "FIREEMBLEM2E" (BE8E01, Rev.00)
+LAUNCH /home/eddyr/assembler/_codex/mgba-repo/build/sdl/mgba /home/eddyr/assembler/_codex/mgba-repo/roms/fire-emblem-cerulean-crescent-v2-11.gba
+RUN   pid=249537 cpu=alive window=DISPLAY:0 log=/tmp/opencode/mgba-launch.log
+# exit: 0

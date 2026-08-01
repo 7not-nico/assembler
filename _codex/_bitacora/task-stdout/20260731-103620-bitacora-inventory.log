@@ -1,0 +1,28 @@
+# CMD: sh -c ls\ -la\ /home/eddyr/assembler/_code-dives/_bitacora/\ /home/eddyr/assembler/_code-dives/_bitacora/report/\ /home/eddyr/assembler/_code-dives/_bitacora/todo/\;\ echo\ ---\;\ ls\ /home/eddyr/assembler/_code-dives/snes9x-repo/ 
+# DATE: 2026-07-31T10:36:20-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+/home/eddyr/assembler/_code-dives/_bitacora/:
+total 0
+drwxr-xr-x 1 eddyr eddyr   32 Jul 31 09:38 .
+drwxr-xr-x 1 eddyr eddyr  614 Jul 31 09:27 ..
+drwxr-xr-x 1 eddyr eddyr   82 Jul 31 09:36 report
+drwxr-xr-x 1 eddyr eddyr 2244 Jul 31 10:36 stdout
+drwxr-xr-x 1 eddyr eddyr   34 Jul 31 09:24 todo
+
+/home/eddyr/assembler/_code-dives/_bitacora/report/:
+total 24
+drwxr-xr-x 1 eddyr eddyr    82 Jul 31 09:36 .
+drwxr-xr-x 1 eddyr eddyr    32 Jul 31 09:38 ..
+-rw-r--r-- 1 eddyr eddyr 16844 Jul 31 09:35 snes9x-build.log
+-rw-r--r-- 1 eddyr eddyr  3123 Jul 31 09:48 snes9x-compile-metrics.md
+
+/home/eddyr/assembler/_code-dives/_bitacora/todo/:
+total 4
+drwxr-xr-x 1 eddyr eddyr  34 Jul 31 09:24 .
+drwxr-xr-x 1 eddyr eddyr  32 Jul 31 09:38 ..
+-rw-r--r-- 1 eddyr eddyr 557 Jul 31 09:36 snes9x-compile.md
+---
+roms
+snes9x
+# exit: 0

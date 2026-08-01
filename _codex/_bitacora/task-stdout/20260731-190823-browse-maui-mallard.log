@@ -1,0 +1,12 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'maui\ mallard\'\ 45 
+# DATE: 2026-07-31T19:08:23-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=maui%2Bmallard
+GAME https://romsfun.com/roms/super-nintendo/maui-mallard-in-cold-shadow.html | Maui Mallard in Cold Shadow
+GAME https://romsfun.com/roms/super-nintendo/donald-duck-maui-mallard-in-cold-shadow.html | Donald Duck – Maui Mallard In Cold Shadow
+OPEN https://romsfun.com/roms/super-nintendo/maui-mallard-in-cold-shadow.html
+DL https://romsfun.com/download/maui-mallard-in-cold-shadow-145035
+VARIANTS:
+1 https://romsfun.com/download/maui-mallard-in-cold-shadow-145035/1 | Maui Mallard in Cold Shadow (USA)
+# exit: 0

@@ -1,0 +1,14 @@
+# CMD: bash -c ls\ -la\ build/sdl/mgba\ \&\&\ file\ build/sdl/mgba\ \|\ cut\ -c1-120\ \&\&\ build/sdl/mgba\ --version\ \&\&\ echo\ \"==\ GB\ suite\ ==\"\ \&\&\ cd\ build/test\ \&\&\ for\ t\ in\ test-gb-mbc\ test-gb-memory\ test-gb-rtc\ test-gb-core\ test-gb-gbx\;\ do\ printf\ \"%-16s\ \"\ \$t\;\ ./\$t\ 2\>\&1\ \|\ grep\ -E\ \"PASSED\|FAILED\"\ \|\ head\ -1\;\ done 
+# DATE: 2026-08-01T06:34:42-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo
+# --------------------
+-rwxr-xr-x 1 eddyr eddyr 50784 Aug  1 06:34 build/sdl/mgba
+build/sdl/mgba: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux
+build/sdl/mgba 0.11-1-71aa6c7 (71aa6c7dab7654bfdbbd57e696f704671a97e55d)
+== GB suite ==
+test-gb-mbc      [  PASSED  ] 7 test(s).
+test-gb-memory   [  PASSED  ] 3 test(s).
+test-gb-rtc      [  PASSED  ] 15 test(s).
+test-gb-core     [  PASSED  ] 5 test(s).
+test-gb-gbx      [  PASSED  ] 31 test(s).
+# exit: 0

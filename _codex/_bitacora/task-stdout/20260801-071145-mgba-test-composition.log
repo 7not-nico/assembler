@@ -1,0 +1,66 @@
+# CMD: bash -c sed\ -n\ \"820\,880p\"\ mgba-repo/mgba/CMakeLists.txt 
+# DATE: 2026-08-01T07:11:45-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+		if(USE_LUA STREQUAL "JIT")
+			include_directories(AFTER ${LUAJIT_INCLUDE_DIR})
+			list(APPEND FEATURE_DEFINES LUA_VERSION_ONLY=\"${LUAJIT_VERSION_MAJOR}.${LUAJIT_VERSION_MINOR}\")
+			list(APPEND DEPENDENCY_LIB ${LUAJIT_LIBRARY})
+			set(CPACK_DEBIAN_PACKAGE_DEPENDS "${CPACK_DEBIAN_PACKAGE_DEPENDS},libluajit${LUA_VERSION_MAJOR}.${LUA_VERSION_MINOR}-0")
+		else()
+			include_directories(AFTER ${LUA_INCLUDE_DIR})
+			list(APPEND FEATURE_DEFINES LUA_VERSION_ONLY=\"${LUA_VERSION_MAJOR}.${LUA_VERSION_MINOR}\")
+			list(APPEND DEPENDENCY_LIB ${LUA_LIBRARY})
+			set(CPACK_DEBIAN_PACKAGE_DEPENDS "${CPACK_DEBIAN_PACKAGE_DEPENDS},liblua${LUA_VERSION_MAJOR}.${LUA_VERSION_MINOR}-0")
+		endif()
+	endif()
+
+	if(BUILD_PYTHON)
+		find_package(PythonLibs ${USE_PYTHON_VERSION})
+		list(APPEND DEPENDENCY_LIB ${PYTHON_LIBRARIES})
+		include_directories(AFTER ${PYTHON_INCLUDE_DIRS})
+		list(APPEND ENABLES PYTHON)
+	endif()
+	add_subdirectory(src/script)
+endif()
+
+add_subdirectory(src/arm)
+add_subdirectory(src/core)
+add_subdirectory(src/gb)
+add_subdirectory(src/gba)
+add_subdirectory(src/sm83)
+add_subdirectory(src/util)
+
+list(APPEND GUI_SRC ${EXTRA_GUI_SRC})
+list(APPEND UTIL_BASE_SRC ${CMAKE_CURRENT_BINARY_DIR}/version.c)
+list(APPEND UTIL_SRC ${CMAKE_CURRENT_BINARY_DIR}/version.c)
+
+set(TEST_SRC ${CORE_TEST_SRC})
+if(M_CORE_GB)
+	add_definitions(-DM_CORE_GB)
+	list(APPEND CORE_SRC ${SM83_SRC} ${GB_SRC})
+	list(APPEND DEBUGGER_SRC ${SM83_DEBUGGER_SRC} ${GB_DEBUGGER_SRC})
+	list(APPEND TEST_SRC ${SM83_TEST_SRC} ${GB_TEST_SRC})
+endif()
+
+if(M_CORE_GBA)
+	add_definitions(-DM_CORE_GBA)
+	list(APPEND CORE_SRC ${ARM_SRC} ${GBA_SRC})
+	list(APPEND DEBUGGER_SRC ${ARM_DEBUGGER_SRC} ${GBA_DEBUGGER_SRC})
+	list(APPEND TEST_SRC ${ARM_TEST_SRC} ${GBA_TEST_SRC})
+endif()
+
+if(ENABLE_DEBUGGERS)
+	list(APPEND FEATURE_SRC ${DEBUGGER_SRC})
+	list(APPEND TEST_SRC ${DEBUGGER_TEST_SRC})
+	list(APPEND ENABLES DEBUGGERS)
+endif()
+
+if(ENABLE_SCRIPTING)
+	list(APPEND FEATURE_SRC ${SCRIPT_SRC})
+	list(APPEND TEST_SRC ${SCRIPT_TEST_SRC})
+endif()
+
+if(ENABLE_VFS)
+	list(APPEND ENABLES VFS DIRECTORIES)
+# exit: 0

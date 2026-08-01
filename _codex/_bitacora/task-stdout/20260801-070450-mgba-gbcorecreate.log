@@ -1,0 +1,10 @@
+# CMD: bash -c grep\ -n\ \"GBCoreCreate\\\|\\.init\ =\\\|-\>init\ =\"\ mgba-repo/mgba/src/gb/core.c\ \|\ head\ -12\;\ echo\ ---\;\ sed\ -n\ \"1300\,1360p\"\ mgba-repo/mgba/src/gb/core.c\ \|\ grep\ -n\ \"init\\\|loadROM\\\|reset\"\ \|\ head\ -8 
+# DATE: 2026-08-01T07:04:50-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+1353:struct mCore* GBCoreCreate(void) {
+1361:	core->init = _GBCoreInit;
+1559:	struct mCore* core = GBCoreCreate();
+1560:	core->init = _GBVLPInit;
+---
+# exit: 0

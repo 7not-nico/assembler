@@ -1,0 +1,15 @@
+# CMD: sh -c mkdir\ -p\ /home/eddyr/assembler/_code-dives/snes9x-repo/scripts\ \&\&\ mv\ /home/eddyr/assembler/_code-dives/_templates/fetch-rom.sh\ /home/eddyr/assembler/_code-dives/_templates/playwright-fetch-rom.sh\ /home/eddyr/assembler/_code-dives/snes9x-repo/scripts/\ \&\&\ ls\ /home/eddyr/assembler/_code-dives/_templates/\*.sh\ /home/eddyr/assembler/_code-dives/snes9x-repo/scripts/ 
+# DATE: 2026-07-31T10:37:29-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+/home/eddyr/assembler/_code-dives/_templates/copy-skills.sh
+/home/eddyr/assembler/_code-dives/_templates/copy-templates.sh
+/home/eddyr/assembler/_code-dives/_templates/fetch-repo.sh
+/home/eddyr/assembler/_code-dives/_templates/run-logged.sh
+/home/eddyr/assembler/_code-dives/_templates/scaffold-knowledge.sh
+/home/eddyr/assembler/_code-dives/_templates/slugify.sh
+
+/home/eddyr/assembler/_code-dives/snes9x-repo/scripts/:
+fetch-rom.sh
+playwright-fetch-rom.sh
+# exit: 0

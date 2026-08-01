@@ -1,0 +1,28 @@
+# CMD: bash -c cmake\ -S\ mgba\ -B\ build\ -DBUILD_QT=OFF\ -DBUILD_SDL=ON\ -DCMAKE_BUILD_TYPE=Release\ -DBUILD_SUITE=ON\ -DCMAKE_C_FLAGS=\"-O3\ -march=native\"\ -DCMAKE_CXX_FLAGS=\"-O3\ -march=native\"\ \>/dev/null\ 2\>\&1\ \&\&\ cmake\ --build\ build\ --target\ test-gb-banking\ -j\$\(nproc\)\ 2\>\&1\ \|\ tail\ -4\ \&\&\ cd\ build/test\ \&\&\ ./test-gb-banking\;\ echo\ \"exit=\$\?\" 
+# DATE: 2026-08-01T07:16:21-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo
+# --------------------
+[100%] Built target mgba
+[100%] Building C object test/CMakeFiles/test-gb-banking.dir/__/__/gb/test/banking.c.o
+[100%] Linking C executable test-gb-banking
+[100%] Built target test-gb-banking
+[==========] GBBanking: Running 7 test(s).
+[ RUN      ] detectMbc1
+[       OK ] detectMbc1
+[ RUN      ] defaultBank1
+[       OK ] defaultBank1
+[ RUN      ] switchBank3
+[       OK ] switchBank3
+[ RUN      ] bank0Quirk
+[       OK ] bank0Quirk
+[ RUN      ] sramGateOff
+GB MBC: MBC1 unknown address: A000:AB
+[       OK ] sramGateOff
+[ RUN      ] sramGateOn
+[       OK ] sramGateOn
+[ RUN      ] headerByte
+[       OK ] headerByte
+[==========] GBBanking: 7 test(s) run.
+[  PASSED  ] 7 test(s).
+exit=0
+# exit: 0

@@ -1,0 +1,21 @@
+# CMD: bash -c time\ cmake\ --build\ build\ --target\ test-gb-mbc\ test-gb-memory\ test-gb-rtc\ test-gb-core\ test-gb-gbx\ -j\$\(nproc\)\ 2\>\&1\ \|\ tail\ -12 
+# DATE: 2026-08-01T00:06:41-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo
+# --------------------
+[100%] Linking C executable test-gb-rtc
+[100%] Built target test-gb-rtc
+[  0%] Built target mgba-version-info
+[ 98%] Built target mgba
+[ 98%] Building C object test/CMakeFiles/test-gb-core.dir/__/__/gb/test/core.c.o
+[100%] Linking C executable test-gb-core
+[100%] Built target test-gb-core
+[  0%] Built target mgba-version-info
+[ 98%] Built target mgba
+[ 98%] Building C object test/CMakeFiles/test-gb-gbx.dir/__/__/gb/test/gbx.c.o
+[100%] Linking C executable test-gb-gbx
+[100%] Built target test-gb-gbx
+
+real	0m2.644s
+user	0m2.128s
+sys	0m0.527s
+# exit: 0

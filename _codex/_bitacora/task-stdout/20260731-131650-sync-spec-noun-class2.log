@@ -1,0 +1,11 @@
+# CMD: sh -c $'cd /home/eddyr/assembler && bun -e \'\nimport { Database } from "bun:sqlite"\nconst db = new Database(".opencode/patlib.db")\nconst fs = require("fs")\nconst body = fs.readFileSync(".opencode/entities/specifications/SPEC.NAMING.WORD.CLASS.md", "utf8").split("---")[0].trim()\ndb.query("UPDATE specifications SET body=?, modified=datetime(\\"now\\") WHERE id=\\"SPEC.NAMING.WORD.CLASS\\"").run(body)\nconsole.log("synced")\n\' && bun run .opencode/tools/semantic-embed.ts --type specifications --force && bun run .opencode/tools/semantic-drift.ts --check 2>&1 | tail -2' 
+# DATE: 2026-07-31T13:16:50-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+synced
+embedded 25 specifications
+
+25 entities embedded of type 'specifications' (force)
+TOTAL: 0 missing, 0 stale across 28 tables
+no drift
+# exit: 0

@@ -1,0 +1,13 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'prehistorik\'\ 45 
+# DATE: 2026-07-31T19:06:41-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=prehistorik
+GAME https://romsfun.com/roms/super-nintendo/prehistorik-man.html | Prehistorik Man
+OPEN https://romsfun.com/roms/super-nintendo/prehistorik-man.html
+DL https://romsfun.com/download/prehistorik-man-145581
+VARIANTS:
+1 https://romsfun.com/download/prehistorik-man-145581/1 | Prehistorik Man (Europe) (En,Fr,De)
+2 https://romsfun.com/download/prehistorik-man-145581/2 | Prehistorik Man (USA) (En,Fr,Es)
+3 https://romsfun.com/download/prehistorik-man-145581/3 | P-Man (Japan)
+# exit: 0

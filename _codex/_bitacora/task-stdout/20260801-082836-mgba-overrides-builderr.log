@@ -1,0 +1,14 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ cmake\ --build\ build\ --target\ test-gb-overrides\ -j\$\(nproc\)\ 2\>\&1\ \|\ rg\ -B2\ -A6\ \"error\"\ \|\ head\ -25 
+# DATE: 2026-08-01T08:28:36-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+In file included from /home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/test/overrides.c:13:
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/test/overrides.c: In function ‘main’:
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/test/overrides.c:104:26: error: ‘defaultsRunsClean’ undeclared (first use in this function)
+  104 |         cmocka_unit_test(defaultsRunsClean))
+      |                          ^~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/util/test/suite.h:22:25: note: in definition of macro ‘M_TEST_SUITE_DEFINE_EX’
+   22 |                         __VA_ARGS__ \
+      |                         ^~~~~~~~~~~
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/test/overrides.c:101:1: note: in expansion of macro ‘M_TEST_SUITE_DEFINE_SETUP_TEARDOWN’
+# exit: 0

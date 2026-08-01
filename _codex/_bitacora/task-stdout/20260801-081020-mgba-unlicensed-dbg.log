@@ -1,0 +1,14 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ cmake\ --build\ build\ --target\ test-gb-unlicensed\ -j\$\(nproc\)\ \>/dev/null\ 2\>\&1\ \&\&\ cd\ build/test\ \&\&\ ./test-gb-unlicensed\ 2\>\&1\ \|\ grep\ -E\ \"DBG\|PASSED\|FAILED\"\ \|\ head\ -10 
+# DATE: 2026-08-01T08:10:20-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+DBG mmc2: type=560 bytes 184=CE 1C4=ED 194=66
+[  FAILED  ] sachenMMC2Fingerprint
+DBG clean: type=561 bytes 104=CE 144=00 114=00 184=CE
+[  FAILED  ] noFalsePositive
+[  PASSED  ] 1 test(s).
+[  FAILED  ] GBUnlicensed: 2 test(s), listed below:
+[  FAILED  ] sachenMMC2Fingerprint
+[  FAILED  ] noFalsePositive
+ 2 FAILED TEST(S)
+# exit: 0

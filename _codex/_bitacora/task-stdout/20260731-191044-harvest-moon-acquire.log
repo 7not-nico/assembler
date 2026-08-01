@@ -1,0 +1,16 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/harvest-moon-8125/3\'\ 90 
+# DATE: 2026-07-31T19:10:44-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/harvest-moon-8125/3
+LINK https://statics.romsfun.com/SNES/Harvest%20Moon%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRRxdl1x
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/harvest-moon-usa.zip (Harvest Moon (USA).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/harvest-moon-usa.zip
+WARN unexpected ROM size: 2097152
+OK   Harvest Moon (USA).sfc (2097152 B) title="HARVEST MOON"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/harvest-moon-usa.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/harvest-moon-usa.sfc: Super NES ROM image "HARVEST MOON" (USA), LoROM, FastROM, ROM size: 2048KB, RAM size: 8KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/harvest-moon-usa.sfc
+RUN   pid=364596 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

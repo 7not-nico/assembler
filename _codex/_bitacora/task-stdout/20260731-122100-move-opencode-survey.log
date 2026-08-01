@@ -1,0 +1,15 @@
+# CMD: sh -c cd\ /home/eddyr/assembler\ \&\&\ du\ -sh\ .opencode/survey\ \&\&\ ls\ .opencode/survey\ \|\ wc\ -l\ \&\&\ mkdir\ -p\ .opencode/_bitacora/survey\ \&\&\ rsync\ -a\ --ignore-existing\ .opencode/survey/\ .opencode/_bitacora/survey/\ \&\&\ rm\ -rf\ .opencode/survey\ \&\&\ ls\ -d\ .opencode/survey\ 2\>/dev/null\ \|\|\ echo\ \'survey\ gone\'\;\ echo\ ---\;\ ls\ .opencode/_bitacora/ 
+# DATE: 2026-07-31T12:21:00-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+4.0K	.opencode/survey
+1
+survey gone
+---
+audits
+plans
+report
+reports
+survey
+todos
+# exit: 0

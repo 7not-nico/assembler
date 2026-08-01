@@ -1,0 +1,20 @@
+# CMD: sh -c $'cd /home/eddyr/assembler && bun -e \'\nimport {Database} from "bun:sqlite"\nconst db = new Database(".opencode/patlib.db")\nfor (const t of ["terms","concepts","identities"]) {\n  const rows = db.query("SELECT id,title FROM \\"$t\\" WHERE id LIKE \\"%RING%\\" OR title LIKE \\"%Ring%\\" OR title LIKE \\"%ring%\\" LIMIT 10").all()\n  console.log(t, rows)\n}\nconsole.log("spec:", db.query("SELECT id,title FROM specifications WHERE id=\\"SPEC.CODE.RING.TOPOLOGY\\"").get())\n\'' 
+# DATE: 2026-07-31T12:05:43-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+1 | 
+2 | import {Database} from "bun:sqlite"
+3 | const db = new Database(".opencode/patlib.db")
+4 | for (const t of ["terms","concepts","identities"]) {
+5 |   const rows = db.query("SELECT id,title FROM \"$t\" WHERE id LIKE \"%RING%\" OR title LIKE \"%Ring%\" OR title LIKE \"%ring%\" LIMIT 10").all()
+                      ^
+SQLiteError: no such table: $t
+      errno: 1,
+ byteOffset: -1,
+
+      at prepare (bun:sqlite:345:37)
+      at query (bun:sqlite:367:28)
+      at /home/eddyr/assembler/[eval]:5:19
+
+Bun v1.3.14-canary.1+0d9b296af (Linux x64)
+# exit: 1

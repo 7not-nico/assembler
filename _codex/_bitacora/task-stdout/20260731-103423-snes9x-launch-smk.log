@@ -1,0 +1,22 @@
+# CMD: /home/eddyr/assembler/_code-dives/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_code-dives/snes9x-repo/roms/super-mario-kart-usa.sfc 
+# DATE: 2026-07-31T10:34:23-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+Alsa available rates: 1 to 384000
+Alsa available buffer sizes: 1ms to 21845ms
+Alsa period ranges: 2 to 150 blocks
+joystick: No joystick found.
+X connection to :0 broken (explicit kill or server shutdown).
+
+
+Snes9x 1.63 for unix
+Port 1: Pad #1. Port 2: <none>. 
+No ROM file header found.
+Map_HiROMMap
+"SUPER MARIO KART" (NTSC) version 1.0
+ROM+RAM+BAT+DSP-1: HiROM: 4 Mbit, SRAM: 16 Kbit
+ID: , CRC32: cd80db86, Checksum OK
+Selected xinerama head 0 (0,0 1920x1080)
+Created XShmImage, size 978944
+	Image conversion needed before blit.
+Using internal pixel format 565

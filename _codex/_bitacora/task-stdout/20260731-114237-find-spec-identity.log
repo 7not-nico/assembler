@@ -1,0 +1,10 @@
+# CMD: sh -c ls\ /home/eddyr/assembler/.opencode/entities/identities/\ \|\ grep\ -iE\ \'spec\|SPEC\'\;\ echo\ ---\;\ grep\ -rl\ \'specification\'\ /home/eddyr/assembler/.opencode/entities/identities/\ \|\ head\ -5 
+# DATE: 2026-07-31T11:42:37-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+IDENTITY.SPECIFICATION.md
+---
+/home/eddyr/assembler/.opencode/entities/identities/IDENTITY.MAXIM.md
+/home/eddyr/assembler/.opencode/entities/identities/IDENTITY.SPECIFICATION.md
+/home/eddyr/assembler/.opencode/entities/identities/IDENTITY.REFERENCE.md
+# exit: 0

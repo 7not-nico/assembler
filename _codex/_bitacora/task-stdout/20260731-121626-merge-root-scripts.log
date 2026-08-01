@@ -1,0 +1,17 @@
+# CMD: sh -c rsync\ -a\ --ignore-existing\ /home/eddyr/assembler/scripts/\ /home/eddyr/assembler/.opencode/_scripts/\ \&\&\ rm\ -rf\ /home/eddyr/assembler/scripts\ \&\&\ ls\ -d\ /home/eddyr/assembler/scripts\ 2\>\&1\ \|\|\ echo\ \'root\ scripts/\ removed\'\;\ echo\ ---\;\ ls\ /home/eddyr/assembler/.opencode/_scripts/dataflow/\ /home/eddyr/assembler/.opencode/_scripts/guides/ 
+# DATE: 2026-07-31T12:16:26-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+ls: cannot access '/home/eddyr/assembler/scripts': No such file or directory
+root scripts/ removed
+---
+/home/eddyr/assembler/.opencode/_scripts/dataflow/:
+flow-parse-validate-pipeline.md
+flow-semantic-search.md
+ref-script-dependency-graph.md
+semantic-engine.md
+
+/home/eddyr/assembler/.opencode/_scripts/guides/:
+functional-programming.md
+operational-procedure.md
+# exit: 0

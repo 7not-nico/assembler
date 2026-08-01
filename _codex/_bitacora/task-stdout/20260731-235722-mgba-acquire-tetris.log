@@ -1,0 +1,16 @@
+# CMD: bash -c bash\ mgba-repo/scripts/acquire-rom.sh\ \"Tetris\"\ game-boy\ 90\ 2\>\&1\ \|\ tail\ -25 
+# DATE: 2026-07-31T23:57:22-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+PICK https://romsfun.com/download/tetris-3-49360/1
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/tetris-3-49360/1
+LINK https://statics.romsfun.com/GameBoy/Tetris%20(Japan)%20(En).zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRd2cF1w
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/tetris-japan-en.zip (Tetris (Japan) (En).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/tetris-japan-en.zip
+OK   Tetris (Japan) (En).gb (32768 B) title="TETRIS" mbc=0x00
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/tetris-japan-en.gb
+/home/eddyr/assembler/_codex/mgba-repo/roms/tetris-japan-en.gb: Game Boy ROM image: "TETRIS" (Rev.00) [ROM ONLY], ROM: 256Kbit
+LAUNCH /home/eddyr/assembler/_codex/mgba-repo/build/sdl/mgba /home/eddyr/assembler/_codex/mgba-repo/roms/tetris-japan-en.gb
+RUN   pid=16131 cpu=alive window=DISPLAY:0 log=/tmp/opencode/mgba-launch.log
+# exit: 0

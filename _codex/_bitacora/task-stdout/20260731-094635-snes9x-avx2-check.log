@@ -1,0 +1,6 @@
+# CMD: sh -c objdump\ -d\ snes9x\ \|\ grep\ -cE\ \'v\(pblend\|pmul\|pxor\|pand\|por\|psll\|psrl\|movdqa\|movdqu\|pinsr\|pextr\|paddd\)\' 
+# DATE: 2026-07-31T09:46:35-06:00
+# CWD: /home/eddyr/assembler/_code-dives/snes9x-repo/snes9x/unix
+# --------------------
+6547
+# exit: 0

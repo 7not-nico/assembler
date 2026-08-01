@@ -1,0 +1,9 @@
+# CMD: bash -c DEFS=\$\(sed\ -n\ \"s/\^C_DEFINES\ =\ //p\"\ ../build/test/CMakeFiles/test-gb-mbc.dir/flags.make\ \|\ sed\ \"s/-DLUA_VERSION_ONLY=\[\^\ \]\*//\"\)\;\ gcc\ -std=c11\ \$DEFS\ -o\ mbc-banking-test\ mbc-banking-test.c\ -I\ ../build/include\ -I\ ../../mgba/include\ -L\ ../build\ -lmgba\ -Wl\,-rpath\,../build\ 2\>\&1\ \|\ head\ -5\;\ echo\ \"compile\ done\"\;\ stdbuf\ -o0\ -e0\ ./mbc-banking-test\;\ echo\ \"exit=\$\?\" 
+# DATE: 2026-08-01T07:07:54-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo/fixture
+# --------------------
+compile done
+step init
+bash: line 1: 31013 Segmentation fault         (core dumped) stdbuf -o0 -e0 ./mbc-banking-test
+exit=139
+# exit: 0

@@ -1,0 +1,51 @@
+# CMD: bash -c ls\ mgba/src/gb/\ mgba/src/sm83/\ \&\&\ echo\ ---\ \&\&\ wc\ -l\ mgba/src/gb/\*.c\ mgba/src/gb/\*.h\ mgba/src/sm83/\*.c\ mgba/src/sm83/\*.h\ 2\>/dev/null\ \|\ sort\ -rn\ \|\ head\ -25 
+# DATE: 2026-07-31T23:52:37-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo
+# --------------------
+mgba/src/gb/:
+audio.c
+cheats.c
+CMakeLists.txt
+core.c
+debugger
+extra
+gb.c
+input.c
+io.c
+mbc
+mbc.c
+memory.c
+overrides.c
+renderers
+serialize.c
+sio
+sio.c
+test
+timer.c
+video.c
+
+mgba/src/sm83/:
+CMakeLists.txt
+debugger
+decoder.c
+isa-sm83.c
+sm83.c
+---
+ 11048 total
+  1572 mgba/src/gb/core.c
+  1278 mgba/src/gb/gb.c
+  1218 mgba/src/gb/video.c
+  1157 mgba/src/gb/audio.c
+  1080 mgba/src/gb/memory.c
+   939 mgba/src/gb/overrides.c
+   817 mgba/src/sm83/isa-sm83.c
+   727 mgba/src/gb/io.c
+   667 mgba/src/gb/mbc.c
+   609 mgba/src/sm83/decoder.c
+   310 mgba/src/gb/serialize.c
+   199 mgba/src/sm83/sm83.c
+   190 mgba/src/gb/cheats.c
+   150 mgba/src/gb/timer.c
+   106 mgba/src/gb/sio.c
+    29 mgba/src/gb/input.c
+# exit: 0

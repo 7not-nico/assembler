@@ -1,0 +1,12 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ nosferatu\ 45 
+# DATE: 2026-07-31T18:41:29-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=nosferatu
+GAME https://romsfun.com/roms/super-nintendo/nosferatu.html | Nosferatu
+OPEN https://romsfun.com/roms/super-nintendo/nosferatu.html
+DL https://romsfun.com/download/nosferatu-145343
+VARIANTS:
+1 https://romsfun.com/download/nosferatu-145343/1 | Nosferatu (Japan)
+2 https://romsfun.com/download/nosferatu-145343/2 | Nosferatu (USA)
+# exit: 0

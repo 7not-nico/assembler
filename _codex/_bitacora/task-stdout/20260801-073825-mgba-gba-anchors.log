@@ -1,0 +1,71 @@
+# CMD: bash -c grep\ -n\ \"struct\ GBAAudio\\b\\\|struct\ GBAVideo\\b\\\|struct\ GBAMemory\\b\\\|struct\ GBADMA\\b\\\|struct\ GBATimer\\b\"\ mgba-repo/mgba/include/mgba/internal/gba/\*.h\;\ echo\ ---\;\ grep\ -n\ \"enum\ GBAIRQ\\\|GBA_IRQ_VBLANK\\\|GBA_ARM7TDMI_FREQUENCY\"\ mgba-repo/mgba/include/mgba/internal/gba/gba.h\;\ echo\ ---\;\ grep\ -n\ \"\^void\ GBALoad32\\\|\^uint32_t\ GBALoad32\\\|\^void\ GBAStore32\\\|\^void\ GBAMemoryInit\\\|\^void\ GBAAdjustWaitstates\"\ mgba-repo/mgba/src/gba/memory.c\;\ echo\ ---\;\ grep\ -n\ \"\^void\ GBAVideoInit\\\|\^void\ GBAudioInit\\\|\^void\ GBADMAInit\\\|\^void\ GBAIOInit\\\|\^void\ GBABIOSInit\\\|\^void\ GBASavedataInit\"\ mgba-repo/mgba/src/gba/\*.c\ \|\ head\ -10 
+# DATE: 2026-08-01T07:38:25-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:27:struct GBADMA;
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:59:struct GBAAudio {
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:255:void GBAAudioInit(struct GBAAudio* audio, size_t samples);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:256:void GBAAudioReset(struct GBAAudio* audio);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:257:void GBAAudioDeinit(struct GBAAudio* audio);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:259:void GBAAudioResizeBuffer(struct GBAAudio* audio, size_t samples);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:261:void GBAAudioScheduleFifoDma(struct GBAAudio* audio, int number, struct GBADMA* info);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:263:void GBAAudioWriteSOUND1CNT_LO(struct GBAAudio* audio, uint16_t value);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:264:void GBAAudioWriteSOUND1CNT_HI(struct GBAAudio* audio, uint16_t value);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:265:void GBAAudioWriteSOUND1CNT_X(struct GBAAudio* audio, uint16_t value);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:266:void GBAAudioWriteSOUND2CNT_LO(struct GBAAudio* audio, uint16_t value);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:267:void GBAAudioWriteSOUND2CNT_HI(struct GBAAudio* audio, uint16_t value);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:268:void GBAAudioWriteSOUND3CNT_LO(struct GBAAudio* audio, uint16_t value);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:269:void GBAAudioWriteSOUND3CNT_HI(struct GBAAudio* audio, uint16_t value);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:270:void GBAAudioWriteSOUND3CNT_X(struct GBAAudio* audio, uint16_t value);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:271:void GBAAudioWriteSOUND4CNT_LO(struct GBAAudio* audio, uint16_t value);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:272:void GBAAudioWriteSOUND4CNT_HI(struct GBAAudio* audio, uint16_t value);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:273:void GBAAudioWriteSOUNDCNT_LO(struct GBAAudio* audio, uint16_t value);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:274:void GBAAudioWriteSOUNDCNT_HI(struct GBAAudio* audio, uint16_t value);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:275:void GBAAudioWriteSOUNDCNT_X(struct GBAAudio* audio, uint16_t value);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:276:void GBAAudioWriteSOUNDBIAS(struct GBAAudio* audio, uint16_t value);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:278:void GBAAudioWriteWaveRAM(struct GBAAudio* audio, int address, uint32_t value);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:279:uint32_t GBAAudioReadWaveRAM(struct GBAAudio* audio, int address);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:280:uint32_t GBAAudioWriteFIFO(struct GBAAudio* audio, int address, uint32_t value);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:281:void GBAAudioSampleFIFO(struct GBAAudio* audio, int fifoId, int32_t cycles);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:283:void GBAAudioSample(struct GBAAudio* audio, int32_t timestamp);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:286:void GBAAudioSerialize(const struct GBAAudio* audio, struct GBASerializedState* state);
+mgba-repo/mgba/include/mgba/internal/gba/audio.h:287:void GBAAudioDeserialize(struct GBAAudio* audio, const struct GBASerializedState* state);
+mgba-repo/mgba/include/mgba/internal/gba/dma.h:41:struct GBADMA {
+mgba-repo/mgba/include/mgba/internal/gba/dma.h:66:struct GBADMA;
+mgba-repo/mgba/include/mgba/internal/gba/gba.h:69:	struct GBAMemory memory;
+mgba-repo/mgba/include/mgba/internal/gba/gba.h:70:	struct GBAVideo video;
+mgba-repo/mgba/include/mgba/internal/gba/gba.h:71:	struct GBAAudio audio;
+mgba-repo/mgba/include/mgba/internal/gba/gba.h:82:	struct GBATimer timers[4];
+mgba-repo/mgba/include/mgba/internal/gba/memory.h:102:struct GBAMemory {
+mgba-repo/mgba/include/mgba/internal/gba/memory.h:128:	struct GBADMA dma[4];
+mgba-repo/mgba/include/mgba/internal/gba/memory.h:176:void GBAMemorySerialize(const struct GBAMemory* memory, struct GBASerializedState* state);
+mgba-repo/mgba/include/mgba/internal/gba/memory.h:177:void GBAMemoryDeserialize(struct GBAMemory* memory, const struct GBASerializedState* state);
+mgba-repo/mgba/include/mgba/internal/gba/timer.h:22:struct GBATimer {
+mgba-repo/mgba/include/mgba/internal/gba/video.h:217:struct GBAVideo {
+mgba-repo/mgba/include/mgba/internal/gba/video.h:234:void GBAVideoInit(struct GBAVideo* video);
+mgba-repo/mgba/include/mgba/internal/gba/video.h:235:void GBAVideoReset(struct GBAVideo* video);
+mgba-repo/mgba/include/mgba/internal/gba/video.h:236:void GBAVideoDeinit(struct GBAVideo* video);
+mgba-repo/mgba/include/mgba/internal/gba/video.h:239:void GBAVideoAssociateRenderer(struct GBAVideo* video, struct GBAVideoRenderer* renderer);
+mgba-repo/mgba/include/mgba/internal/gba/video.h:241:uint16_t GBAVideoWriteDISPSTAT(struct GBAVideo* video, uint16_t value);
+mgba-repo/mgba/include/mgba/internal/gba/video.h:244:void GBAVideoSerialize(const struct GBAVideo* video, struct GBASerializedState* state);
+mgba-repo/mgba/include/mgba/internal/gba/video.h:245:void GBAVideoDeserialize(struct GBAVideo* video, const struct GBASerializedState* state);
+---
+22:#define GBA_ARM7TDMI_FREQUENCY 0x1000000U
+24:enum GBAIRQ {
+25:	GBA_IRQ_VBLANK = 0x0,
+151:void GBARaiseIRQ(struct GBA* gba, enum GBAIRQ irq, uint32_t cyclesLate);
+---
+42:void GBAMemoryInit(struct GBA* gba) {
+476:uint32_t GBALoad32(struct ARMCore* cpu, uint32_t address, int* cycleCounter) {
+825:void GBAStore32(struct ARMCore* cpu, uint32_t address, int32_t value, int* cycleCounter) {
+1686:void GBAAdjustWaitstates(struct GBA* gba, uint16_t parameters) {
+---
+mgba-repo/mgba/src/gba/dma.c:35:void GBADMAInit(struct GBA* gba) {
+mgba-repo/mgba/src/gba/io.c:282:void GBAIOInit(struct GBA* gba) {
+mgba-repo/mgba/src/gba/savedata.c:46:void GBASavedataInit(struct GBASavedata* savedata, struct VFile* vf) {
+mgba-repo/mgba/src/gba/savedata.c:267:void GBASavedataInitFlash(struct GBASavedata* savedata) {
+mgba-repo/mgba/src/gba/savedata.c:299:void GBASavedataInitEEPROM(struct GBASavedata* savedata) {
+mgba-repo/mgba/src/gba/savedata.c:327:void GBASavedataInitSRAM(struct GBASavedata* savedata) {
+mgba-repo/mgba/src/gba/savedata.c:352:void GBASavedataInitSRAM512(struct GBASavedata* savedata) {
+mgba-repo/mgba/src/gba/video.c:59:void GBAVideoInit(struct GBAVideo* video) {
+# exit: 0

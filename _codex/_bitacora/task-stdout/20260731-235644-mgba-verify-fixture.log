@@ -1,0 +1,10 @@
+# CMD: bash -c bash\ mgba-repo/scripts/verify-rom.sh\ mgba-repo/fixture/test-cart.zip\;\ echo\ \"---\"\;\ bash\ mgba-repo/scripts/prepare-rom.sh\ mgba-repo/fixture/test-cart.zip\;\ echo\ \"---\"\;\ ls\ mgba-repo/roms/ 
+# DATE: 2026-07-31T23:56:44-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+OK   test-cart.gb (32768 B) title="TEST CART 01" mbc=0x01
+---
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/test-cart.gb
+---
+test-cart.gb
+# exit: 0

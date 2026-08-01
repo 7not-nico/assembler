@@ -1,0 +1,18 @@
+# CMD: bash -c command\ -v\ rg\ \&\&\ echo\ \"---\ rg\ ---\"\ \&\&\ rg\ -c\ \"sachenMMC2Fingerprint\"\ /home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/test/unlicensed.c\ \&\&\ echo\ \"---\ grep\ ---\"\ \&\&\ grep\ -c\ \"sachenMMC2Fingerprint\"\ /home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/test/unlicensed.c\ \&\&\ echo\ \"---\ rg\ across\ gb\ tests\ ---\"\ \&\&\ rg\ -l\ \"M_TEST_DEFINE\"\ /home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/test/ 
+# DATE: 2026-08-01T08:11:59-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+/usr/bin/rg
+--- rg ---
+2
+--- grep ---
+2
+--- rg across gb tests ---
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/test/unlicensed.c
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/test/banking.c
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/test/mbc.c
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/test/memory.c
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/test/core.c
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/test/rtc.c
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/test/gbx.c
+# exit: 0

@@ -1,0 +1,19 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ ROM=\$\(bash\ scripts/prepare-rom.sh\ /home/eddyr/assembler/.opencode/.playwright-mcp/smw2-plus-2-complete.zip\ \|\ tee\ /dev/stderr\ \|\ sed\ -n\ \'s/\^ROM\ \ //p\'\)\ \&\&\ bash\ scripts/launch-rom.sh\ \"\$ROM\"\ \&\&\ ls\ -la\ roms/ 
+# DATE: 2026-07-31T14:37:42-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/smw2-2-complete.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/smw2-2-complete.sfc: data
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/smw2-2-complete.sfc
+Alsa available rates: 1 to 384000
+Alsa available buffer sizes: 1ms to 21845ms
+Alsa period ranges: 2 to 150 blocks
+joystick: No joystick found.
+RUN   pid=227151 cpu=alive window=DISPLAY:0
+total 4100
+drwxr-xr-x 1 eddyr eddyr     228 Jul 31 14:37 .
+drwxr-xr-x 1 eddyr eddyr      66 Jul 31 14:33 ..
+-rw-r--r-- 1 eddyr eddyr 1048576 Dec 24  1996 legend-of-zelda-the-a-link-to-the-past-usa.sfc
+-rw-r--r-- 1 eddyr eddyr 2097664 Aug  5  2021 smw2-2-complete.sfc
+-rw-r--r-- 1 eddyr eddyr  524288 Dec 24  1996 super-mario-kart-usa.sfc
+-rw-r--r-- 1 eddyr eddyr  524288 Dec 24  1996 super-mario-world-usa.sfc

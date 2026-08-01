@@ -1,0 +1,47 @@
+# CMD: sh -c for\ d\ in\ a01-harness-llm\ common\ harness_papers\ kirby-shooter\ one-timers\ pythontts-cli\ reference\ sandbox\ shenanigan\ stud\ study-sessions\;\ do\ echo\ \"==\ \$d\ ==\"\;\ ls\ /home/eddyr/assembler/\$d\ 2\>/dev/null\ \|\ head\ -3\;\ done 
+# DATE: 2026-07-31T12:26:50-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+== a01-harness-llm ==
+AGENTS.md
+assets
+concept
+== common ==
+bitacora
+commonmark
+homophones
+== harness_papers ==
+code_as_agent_harness.pdf
+from_prompts_to_contracts.pdf
+harness_handbook.pdf
+== kirby-shooter ==
+dist
+index.html
+src
+== one-timers ==
+comparisons-specs
+CR-news-outlets
+future-patterns-terms
+== pythontts-cli ==
+AGENTS.md
+manifests
+opencode-piper-tts
+== reference ==
+entity-schema.md
+query-patlib.md
+== sandbox ==
+entities
+_lib
+README.md
+== shenanigan ==
+download-techrxiv.md
+README.md
+== stud ==
+a-1.txt
+a-2.txt
+a-3.txt
+== study-sessions ==
+category-theory
+constructive-drawing
+japanese-language
+# exit: 0

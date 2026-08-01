@@ -1,0 +1,11 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo/roms\ \&\&\ ruby\ snes9x_launcher.rb 
+# DATE: 2026-07-31T15:57:49-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo/roms
+# --------------------
+no ROM matches "0"
+ROMs in /home/eddyr/assembler/_codex/snes9x-repo/roms:
+ 1  legend-of-zelda-the-a-link-to-the-past-usa.sfc
+ 2  smw2-2-complete.sfc
+ 3  super-mario-kart-usa.sfc
+ 4  super-mario-world-usa.sfc
+pick (1-4): # exit: 1

@@ -1,0 +1,53 @@
+# CMD: bash -c find\ build\ -name\ mgba\ -type\ f\ -o\ -name\ \"mgba\*\"\ -type\ f\ 2\>/dev/null\ \|\ head\;\ echo\ ---\;\ find\ build\ -maxdepth\ 3\ -type\ d\ \|\ sort 
+# DATE: 2026-07-31T23:52:19-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo
+# --------------------
+build/sdl/mgba
+---
+build
+build/CMakeFiles
+build/CMakeFiles/4.4.2
+build/CMakeFiles/4.4.2/CompilerIdC
+build/CMakeFiles/4.4.2/CompilerIdCXX
+build/CMakeFiles/CMakeScratch
+build/CMakeFiles/mgba.dir
+build/CMakeFiles/mgba.dir/src
+build/CMakeFiles/mgba-version-info.dir
+build/CMakeFiles/pkgRedirects
+build/CMakeFiles/README_DE.dir
+build/CMakeFiles/README.dir
+build/CMakeFiles/README_ES.dir
+build/CMakeFiles/README_JP.dir
+build/CMakeFiles/README_ZH_CN.dir
+build/discord-rpc
+build/discord-rpc/CMakeFiles
+build/discord-rpc/src
+build/discord-rpc/src/CMakeFiles
+build/include
+build/include/mgba
+build/include/mgba-util
+build/sdl
+build/sdl/CMakeFiles
+build/sdl/CMakeFiles/mgba-sdl.dir
+build/src
+build/src/arm
+build/src/arm/CMakeFiles
+build/src/core
+build/src/core/CMakeFiles
+build/src/debugger
+build/src/debugger/CMakeFiles
+build/src/feature
+build/src/feature/CMakeFiles
+build/src/gb
+build/src/gba
+build/src/gba/CMakeFiles
+build/src/gb/CMakeFiles
+build/src/script
+build/src/script/CMakeFiles
+build/src/sm83
+build/src/sm83/CMakeFiles
+build/src/util
+build/src/util/CMakeFiles
+build/test
+build/test/CMakeFiles
+# exit: 0

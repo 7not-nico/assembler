@@ -1,0 +1,15 @@
+# CMD: bash -c $'\nTS=$(date +%Y%m%d-%H%M%S)\ncd mgba-repo\nmkdir -p backup/mgba-src backup/binaries\n# source restore point (no artifacts, no .git)\nrsync -a --exclude .git mgba/ backup/mgba-src/ 2>/dev/null || cp -a mgba/. backup/mgba-src/\n# current binary + version info\ncp -a build/sdl/mgba backup/binaries/${TS}-mgba\ncp -a build/libmgba.so.0.11.0 backup/binaries/${TS}-libmgba.so.0.11.0 2>/dev/null\necho "BACKUP ${TS}"\ndu -sh backup/mgba-src backup/binaries\nls -la backup/binaries/\necho "--- current binary ---"\nbuild/sdl/mgba --version\n' 
+# DATE: 2026-08-01T06:33:39-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+BACKUP 20260801-063339
+81M	backup/mgba-src
+2.9M	backup/binaries
+total 2916
+drwxr-xr-x 1 eddyr eddyr     106 Aug  1 06:33 .
+drwxr-xr-x 1 eddyr eddyr      32 Aug  1 06:33 ..
+-rwxr-xr-x 1 eddyr eddyr 2931016 Jul 31 23:51 20260801-063339-libmgba.so.0.11.0
+-rwxr-xr-x 1 eddyr eddyr   50784 Jul 31 23:51 20260801-063339-mgba
+--- current binary ---
+build/sdl/mgba 0.11-1-71aa6c7 (71aa6c7dab7654bfdbbd57e696f704671a97e55d)
+# exit: 0

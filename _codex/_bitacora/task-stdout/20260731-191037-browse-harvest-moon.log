@@ -1,0 +1,17 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'harvest\ moon\'\ 45 
+# DATE: 2026-07-31T19:10:37-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=harvest%2Bmoon
+GAME https://romsfun.com/roms/super-nintendo/harvest-moon.html | Harvest Moon
+GAME https://romsfun.com/roms/super-nintendo/pocky-rocky-2.html | Pocky & Rocky 2
+OPEN https://romsfun.com/roms/super-nintendo/harvest-moon.html
+DL https://romsfun.com/download/harvest-moon-8125
+VARIANTS:
+1 https://romsfun.com/download/harvest-moon-8125/1 | Harvest Moon (Europe)
+2 https://romsfun.com/download/harvest-moon-8125/2 | Harvest Moon (Germany)
+3 https://romsfun.com/download/harvest-moon-8125/3 | Harvest Moon (USA)
+4 https://romsfun.com/download/harvest-moon-8125/4 | Harvest Moon
+5 https://romsfun.com/download/harvest-moon-8125/5 | Bokujou Monogatari (Japan) (Rev 1)
+6 https://romsfun.com/download/harvest-moon-8125/6 | Bokujou Monogatari (Japan)
+# exit: 0

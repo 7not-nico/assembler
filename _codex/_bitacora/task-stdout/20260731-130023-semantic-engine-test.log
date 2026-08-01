@@ -1,0 +1,31 @@
+# CMD: sh -c cd\ /home/eddyr/assembler\ \&\&\ echo\ \'===\ 1.\ drift\ ===\'\ \&\&\ bun\ run\ .opencode/tools/semantic-drift.ts\ --check\ 2\>\&1\ \|\ tail\ -3\ \&\&\ echo\ \'===\ 2.\ stats\ ===\'\ \&\&\ bun\ run\ .opencode/tools/semantic-stats.ts\ 2\>\&1\ \|\ tail\ -8\ \&\&\ echo\ \'===\ 3.\ search:\ container\ domains\ ===\'\ \&\&\ bun\ run\ .opencode/tools/semantic-search.ts\ --query\ \'container\ domains\ codex\ depot\ trove\ atelier\ knowledge\'\ --k\ 5\ 2\>\&1\ \|\ tail\ -12 
+# DATE: 2026-07-31T13:00:23-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== 1. drift ===
+----------------------------------------
+TOTAL: 0 missing, 0 stale across 28 tables
+no drift
+=== 2. stats ===
+linguistics               1       1     384
+manifests                 1       1     384
+ml                        1       1     384
+--------------------------------------------
+TOTAL: 564 embeddings
+
+Models:
+  Xenova/bge-small-en-v1.5
+=== 3. search: container domains ===
+1     0.7183    identities   IDENTITY.CODEX
+       Codex — Codebase Exploration Container
+2     0.7131    identities   IDENTITY.KNOWLEDGE
+       Knowledge — Domain Corpus Container
+3     0.7106    refs         REF.META.DIRECTORY
+       Domain Container — Learning Architecture as Directory Structure
+4     0.6552    refs         REF.META.STRATUM
+       Stratum — Planes, Domains, Entities, and YAML Metadata
+5     0.6519    illustrations ILL.META.TOPOLOGY
+       Assembler Topology — Multi-Project Tool Composition Walkthrough
+----------------------------------------------------------------------
+5 semantic matches for "container domains codex depot trove atelier knowledge" (564 indexed)
+# exit: 0

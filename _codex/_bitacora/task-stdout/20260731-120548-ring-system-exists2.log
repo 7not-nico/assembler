@@ -1,0 +1,26 @@
+# CMD: sh -c $'cd /home/eddyr/assembler && bun -e \'\nimport {Database} from "bun:sqlite"\nconst db = new Database(".opencode/patlib.db")\nconst tables = ["terms","concepts","identities","specifications"]\nfor (const t of tables) {\n  const rows = db.query("SELECT id,title FROM " + JSON.stringify(t) + " WHERE id LIKE \\"%RING%\\" OR title LIKE \\"%Ring%\\" LIMIT 10").all()\n  console.log(t, rows)\n}\n\'' 
+# DATE: 2026-07-31T12:05:48-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+terms []
+concepts []
+identities []
+specifications [
+  {
+    id: "SPEC.ENTITY.SEGMENT.COUNT",
+    title: "Entity Segment Count — Segment Count Per Ring Group",
+  },
+  {
+    id: "SPEC.KNOWLEDGE.VECTOR.SEMANTICS",
+    title: "Knowledge Vector — Edge Semantics in Rings",
+  },
+  {
+    id: "SPEC.KNOWLEDGE.IMMUTABILITY.GRADIENT",
+    title: "Knowledge Immutability Gradient — Inner Ring Stability",
+  },
+  {
+    id: "SPEC.CODE.RING.TOPOLOGY",
+    title: "Code Ring Topology — Script Classification and Verification Order",
+  }
+]
+# exit: 0

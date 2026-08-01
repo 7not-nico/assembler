@@ -1,0 +1,8 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/super-metroid-7227/2\'\ 60 
+# DATE: 2026-07-31T14:24:28-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+PROFILE /home/eddyr/.cache/ms-playwright-mcp/mcp-chrome-3f2da58
+CHROME /home/eddyr/.cache/ms-playwright/chromium-1232/chrome-linux64/chrome
+NAV  https://romsfun.com/download/super-metroid-7227/2
+LINK https://statics.romsfun.com/SNES/Super%20Metroid%20%28Japan%2C%20USA%29%20%28En%2CJa%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRJydF51

@@ -1,0 +1,49 @@
+# CMD: sh -c ls\ -la\ /home/eddyr/assembler/.opencode/_bitacora/\;\ echo\ ---\;\ for\ d\ in\ /home/eddyr/assembler/.opencode/_bitacora/\*/\;\ do\ echo\ \"==\ \$\(basename\ \$d\)\ ==\"\;\ ls\ \$d\ \|\ head\ -3\;\ echo\ \"\ \ \(\$\(ls\ \$d\ \|\ wc\ -l\)\ items\)\"\;\ done 
+# DATE: 2026-07-31T12:32:23-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+total 28
+drwxr-xr-x 1 eddyr eddyr  140 Jul 31 12:27 .
+drwxr-xr-x 1 eddyr eddyr  600 Jul 31 12:32 ..
+drwxr-xr-x 1 eddyr eddyr  112 Jul 31 12:28 reference
+drwxr-xr-x 1 eddyr eddyr   10 Jul 24 15:07 reports
+drwxr-xr-x 1 eddyr eddyr   24 Jul 23 06:44 task-audit
+drwxr-xr-x 1 eddyr eddyr   66 Jul 27 17:16 task-plan
+drwxr-xr-x 1 eddyr eddyr 4266 Jul 27 17:16 task-report
+drwxr-xr-x 1 eddyr eddyr   70 Jul 28 11:22 task-survey
+drwxr-xr-x 1 eddyr eddyr 1986 Jul 31 12:27 task-todo
+drwxr-xr-x 1 eddyr eddyr  368 Jul 27 18:41 todo
+---
+== reference ==
+assembler-architecture.md
+entity-schema.md
+query-patlib.md
+  (3 items)
+== reports ==
+notes
+  (1 items)
+== task-audit ==
+commands.log
+  (1 items)
+== task-plan ==
+2026-07-26-protocol-violations.md
+  (1 items)
+== task-report ==
+2026-07-24T000000.md
+2026-07-24T000001.md
+2026-07-24T234540.md
+  (82 items)
+== task-survey ==
+2026-07-28-assess-harness-survey.md
+  (1 items)
+== task-todo ==
+batch-math-ratio.md
+batch-ratio-papers.md
+classification-ratio.md
+  (39 items)
+== todo ==
+2026-07-24--execution-phases.md
+2026-07-24--language-recommendation.md
+2026-07-24--rust-native-plan.md
+  (7 items)
+# exit: 0

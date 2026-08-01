@@ -1,0 +1,9 @@
+# CMD: bash -c grep\ -rn\ \"CORE_TEST_SRC\"\ mgba-repo/mgba/CMakeLists.txt\ \|\ head\ -3\;\ echo\ ---\;\ grep\ -rn\ \"test/.\*\\.c\\\|TEST_SRC\ \"\ mgba-repo/mgba/src/core/CMakeLists.txt\ \|\ head\ -5 
+# DATE: 2026-08-01T07:12:14-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+853:set(TEST_SRC ${CORE_TEST_SRC})
+---
+23:	test/core.c)
+36:			test/scripting.c)
+# exit: 0

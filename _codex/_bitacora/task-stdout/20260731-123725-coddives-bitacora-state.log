@@ -1,0 +1,18 @@
+# CMD: sh -c ls\ -la\ /home/eddyr/assembler/_code-dives/_bitacora/\;\ echo\ ---\;\ grep\ -rn\ \'_bitacora\'\ /home/eddyr/assembler/_code-dives/_templates/run-logged.sh\ \|\ head\ -3\;\ echo\ ---\;\ grep\ -rn\ \'_bitacora\\\|stdout\'\ /home/eddyr/assembler/_code-dives/AGENTS.md\ \|\ head 
+# DATE: 2026-07-31T12:37:25-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+total 0
+drwxr-xr-x 1 eddyr eddyr   32 Jul 31 09:38 .
+drwxr-xr-x 1 eddyr eddyr  614 Jul 31 09:27 ..
+drwxr-xr-x 1 eddyr eddyr  146 Jul 31 10:37 report
+drwxr-xr-x 1 eddyr eddyr 7704 Jul 31 12:37 stdout
+drwxr-xr-x 1 eddyr eddyr   66 Jul 31 10:37 todo
+---
+4:# Writes {timestamp}-{name}.log into _bitacora/stdout/ with a # CMD: header
+13:STDOUT_DIR="$(cd "$(dirname "$0")/../_bitacora/stdout" && pwd)"
+---
+9:The `{repo}-repo/` folder holds each dive project. The `{repo}/` subfolder contains the shallow-cloned source code. The `scripts/` subfolder holds project-specific tooling. The project root holds dive material beside the code — including its own `AGENTS.md` when the dive needs project-specific rules. The `_templates/` folder contains the copied knowledge template structure and the shared tools. The `_bitacora/` folder holds the project record — the `report/`, `todo/`, and `stdout/` subfolders. Study notes and reference material live in their own folders per dive.
+24:- Reports and todos live in `_bitacora/`. The todo precedes work; the report follows completion. Both remain open while working. Every `_bitacora/` file carries the `{YYYYMMDD}-{HHMMSS}-` date-time prefix — report, todo, and stdout logs alike.
+26:- Commands pipe their output to log files. Every command the agent runs executes through `run-logged.sh {name} -- {command}` — the script writes a header with the exact command line (`# CMD:`), date, and working directory into `_bitacora/stdout/{timestamp}-{name}.log`, streams output live to the terminal, and appends the exit status. The terminal shows live output; the file preserves the record with its originating command. Long-running builds write their own log under `report/`; the report references each log file.
+# exit: 0

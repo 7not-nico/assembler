@@ -1,0 +1,7 @@
+# CMD: sh -c find\ /home/eddyr/assembler/_code-dives/snes9x-repo/snes9x\ -type\ f\ \\\(\ -iname\ \'\*.sfc\'\ -o\ -iname\ \'\*.smc\'\ -o\ -iname\ \'\*.zip\'\ -o\ -iname\ \'\*.fig\'\ \\\)\ 2\>/dev/null\ \|\ head\ -20\;\ echo\ ---\;\ ls\ /home/eddyr/assembler/_code-dives/snes9x-repo/snes9x/unix/tests\ 2\>/dev/null\ \|\ head\;\ echo\ ---\;\ find\ /home/eddyr/assembler/_code-dives\ -maxdepth\ 3\ -iname\ \'\*.sfc\'\ -o\ -iname\ \'\*.smc\'\ 2\>/dev/null\ \|\ head 
+# DATE: 2026-07-31T10:10:48-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+---
+---
+# exit: 0

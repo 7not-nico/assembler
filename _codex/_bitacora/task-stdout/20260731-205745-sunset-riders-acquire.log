@@ -1,0 +1,15 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/sunset-riders-2-7318/2\'\ 90 
+# DATE: 2026-07-31T20:57:45-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/sunset-riders-2-7318/2
+LINK https://statics.romsfun.com/SNES/Sunset%20Riders%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRR3cl9y
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/sunset-riders-usa.zip (Sunset Riders (USA).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/sunset-riders-usa.zip
+OK   Sunset Riders (USA).sfc (1048576 B) title="sunset riders"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/sunset-riders-usa.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/sunset-riders-usa.sfc: Super NES ROM image "sunset riders" (USA), LoROM, FastROM, ROM size: 1024KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/sunset-riders-usa.sfc
+RUN   pid=432071 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

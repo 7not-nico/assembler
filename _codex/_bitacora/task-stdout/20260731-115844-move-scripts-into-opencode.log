@@ -1,0 +1,12 @@
+# CMD: sh -c mv\ /home/eddyr/assembler/_scripts\ /home/eddyr/assembler/.opencode/_scripts\ \&\&\ ls\ /home/eddyr/assembler/.opencode/_scripts/\ \|\ head\ -5\ \&\&\ du\ -sh\ /home/eddyr/assembler/.opencode/_scripts/\ \&\&\ ls\ -d\ /home/eddyr/assembler/_scripts\ 2\>\&1\ \|\|\ true 
+# DATE: 2026-07-31T11:58:44-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+AGENTS.md
+archive
+_bin
+composition
+dataflow
+211M	/home/eddyr/assembler/.opencode/_scripts/
+ls: cannot access '/home/eddyr/assembler/_scripts': No such file or directory
+# exit: 0

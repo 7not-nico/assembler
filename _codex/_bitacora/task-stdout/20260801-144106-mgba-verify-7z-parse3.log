@@ -1,0 +1,7 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ bash\ scripts/verify-rom.sh\ /home/eddyr/assembler/.opencode/.playwright-mcp/fire-emblem-cerulean-crescent-v2-11.7z\ 2\>\&1\;\ echo\ exit=\$\? 
+# DATE: 2026-08-01T14:41:06-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+OK   Fire Emblem (Cerulean Crescent v2.11)/Fire Emblem (Cerulean Crescent v2.11).gba (32789028 B) title="FIREEMBLEM2E"
+exit=0
+# exit: 0

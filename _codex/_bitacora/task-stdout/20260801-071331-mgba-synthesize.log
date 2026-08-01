@@ -1,0 +1,17 @@
+# CMD: bash -c grep\ -n\ \"GBSynthesizeROM\"\ mgba-repo/mgba/src/gb/gb.c\ \|\ head\ -2\;\ sed\ -n\ \"/void\ GBSynthesizeROM/\,/\^\}/p\"\ mgba-repo/mgba/src/gb/gb.c\ \|\ head\ -40 
+# DATE: 2026-08-01T07:13:31-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+492:void GBSynthesizeROM(struct VFile* vf) {
+void GBSynthesizeROM(struct VFile* vf) {
+	if (!vf) {
+		return;
+	}
+	const struct GBCartridge cart = {
+		.logo = { _knownHeader[0], _knownHeader[1], _knownHeader[2], _knownHeader[3]}
+	};
+
+	vf->seek(vf, 0x100, SEEK_SET);
+	vf->write(vf, &cart, sizeof(cart));
+}
+# exit: 0

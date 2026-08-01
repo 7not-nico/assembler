@@ -1,0 +1,6 @@
+# CMD: bash _scripts/prepare-paper.sh /tmp/opencode/prep-test.pdf scratch test 
+# DATE: 2026-07-31T20:58:26-06:00
+# CWD: /home/eddyr/assembler/_trove
+# --------------------
+PAPER /home/eddyr/assembler/_trove/scratch/test/prep-test.pdf
+# exit: 0

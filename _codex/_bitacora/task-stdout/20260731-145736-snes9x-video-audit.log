@@ -1,0 +1,6 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix\ \&\&\ ls\ video/\ \&\&\ echo\ \'---\ scaler\ factors:\'\;\ grep\ -rn\ \'scale_factor\\\|scaleFactor\\\|ZoomFactor\\\|Hq2x\\\|scale\'\ video/\*.cpp\ video/\*.h\ 2\>/dev/null\ \|\ grep\ -iE\ \'scale\|zoom\'\ \|\ head\ -20 
+# DATE: 2026-07-31T14:57:36-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix
+# --------------------
+ls: cannot access 'video/': No such file or directory
+# exit: 0

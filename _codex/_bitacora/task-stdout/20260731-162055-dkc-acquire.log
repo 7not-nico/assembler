@@ -1,0 +1,16 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/donkey-kong-country-v1-id2-7028/5\'\ 60 
+# DATE: 2026-07-31T16:20:55-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/donkey-kong-country-v1-id2-7028/5
+LINK https://statics.romsfun.com/SNES/Donkey%20Kong%20Country%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRVxdFxy
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/donkey-kong-country-usa.zip (Donkey Kong Country (USA).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/donkey-kong-country-usa.zip
+WARN unexpected ROM size: 4194304
+OK   Donkey (4194304 B)
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/donkey-kong-country-usa.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/donkey-kong-country-usa.sfc: Applesoft BASIC program data, first line number 6
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/donkey-kong-country-usa.sfc
+RUN   pid=273933 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

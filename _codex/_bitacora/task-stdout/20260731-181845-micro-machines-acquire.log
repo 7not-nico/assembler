@@ -1,0 +1,15 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/micro-machines-7-145107/2\'\ 60 
+# DATE: 2026-07-31T18:18:45-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/micro-machines-7-145107/2
+LINK https://statics.romsfun.com/SNES/Micro%20Machines%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRV2dVty
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/micro-machines-usa.zip (Micro Machines (USA).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/micro-machines-usa.zip
+OK   Micro Machines (USA).sfc (524288 B) title="MICRO MACHINES"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/micro-machines-usa.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/micro-machines-usa.sfc: Super NES ROM image "MICRO MACHINES" (USA), LoROM, ROM size: 512KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/micro-machines-usa.sfc
+RUN   pid=333869 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

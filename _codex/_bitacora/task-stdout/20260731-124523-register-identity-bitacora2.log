@@ -1,0 +1,20 @@
+# CMD: sh -c $'cd /home/eddyr/assembler && bun -e \'\nimport { Database } from "bun:sqlite"\nconst db = new Database(".opencode/patlib.db")\nconst id = "IDENTITY.BITACORA"\nconst title = "Bitacora — Record Container Entity"\nconst body = "**Bitacora** — a record container entity at infrastructure ring R2. The bitacora aggregates task records — audit, plan, reference, report, survey, todo — under one container. Every subfolder follows the {?}-{concrete noun} naming convention. The bitacora is a compound aggregator: it names a container, and no single action produces it."\ndb.query("INSERT INTO identities (id, title, body, source, tags, created, modified) VALUES (?, ?, ?, ?, ?, datetime(\\"now\\"), datetime(\\"now\\"))").run(id, title, body, "SPEC.DIRECTORY.RING.TOPOLOGY", "bitacora,record,container,identity,infrastructure")\nconsole.log("inserted", db.query("SELECT id,title FROM identities WHERE id=?").get(id))\n\' && bun run .opencode/tools/semantic-embed.ts --type identities && bun run .opencode/tools/semantic-search.ts --query "bitacora record container ring infrastructure" --k 2 --type identities' 
+# DATE: 2026-07-31T12:45:23-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+inserted {
+  id: "IDENTITY.BITACORA",
+  title: "Bitacora — Record Container Entity",
+}
+embedded 1 identities
+
+1 entities embedded of type 'identities'
+RANK  SCORE    TYPE        ID
+----------------------------------------------------------------------
+1     0.8319    identities   IDENTITY.BITACORA
+       Bitacora — Record Container Entity
+2     0.5626    identities   IDENTITY.CLI
+       CLI — Human-Facing Tool Invocation Layer
+----------------------------------------------------------------------
+2 semantic matches for "bitacora record container ring infrastructure" (34 indexed)
+# exit: 0

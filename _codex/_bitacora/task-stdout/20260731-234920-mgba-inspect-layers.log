@@ -1,0 +1,22 @@
+# CMD: bash -c ls\ snes9x-repo/invariant/\ snes9x-repo/guideline/\ snes9x-repo/precept/ 
+# DATE: 2026-07-31T23:49:20-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+snes9x-repo/guideline/:
+invariant-layer.md
+
+snes9x-repo/invariant/:
+acquisition-consistency.md
+browser-singleton.md
+depth-24-buffer.md
+download-destination.md
+launch-detachment.md
+precedence-chain.md
+rom-integrity.md
+scale-centralization.md
+
+snes9x-repo/precept/:
+acquire-rom.md
+run-atomic.md
+use-shared-browser.md
+# exit: 0

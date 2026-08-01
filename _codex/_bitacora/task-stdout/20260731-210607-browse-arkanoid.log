@@ -1,0 +1,20 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'arkanoid\'\ 45 
+# DATE: 2026-07-31T21:06:07-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=arkanoid
+GAME https://romsfun.com/roms/super-nintendo/arkanoid-doh-it-again.html | Arkanoid: Doh It Again
+GAME https://romsfun.com/roms/super-nintendo/arkanoid-converted-by-popc0rn.html | Arkanoid – Converted by POPC0RN
+GAME https://romsfun.com/roms/super-nintendo/super-20-in-1.html | Super 20 In 1
+GAME https://romsfun.com/roms/super-nintendo/supapoon.html | Supapoon
+GAME https://romsfun.com/roms/super-nintendo/corn-buster.html | Corn Buster
+GAME https://romsfun.com/roms/super-nintendo/block-kuzushi.html | Block Kuzushi
+GAME https://romsfun.com/roms/super-nintendo/zig-zag-cat-dachou-club-mo-oosawagi-da.html | Zig Zag Cat: Dachou Club mo Oosawagi da
+OPEN https://romsfun.com/roms/super-nintendo/arkanoid-doh-it-again.html
+DL https://romsfun.com/download/arkanoid-doh-it-again-143284
+VARIANTS:
+1 https://romsfun.com/download/arkanoid-doh-it-again-143284/1 | Arkanoid - Doh It Again (Japan) (En)
+2 https://romsfun.com/download/arkanoid-doh-it-again-143284/2 | Arkanoid - Doh It Again (USA)
+3 https://romsfun.com/download/arkanoid-doh-it-again-143284/3 | Arkanoid - Doh It Again
+4 https://romsfun.com/download/arkanoid-doh-it-again-143284/4 | Arkanoid (Europe)
+# exit: 0

@@ -1,0 +1,10 @@
+# CMD: sh -c bash\ /home/eddyr/assembler/_code-dives/_templates/copy-templates.sh\ /home/eddyr/assembler/_code-dives/_templates\ \&\&\ head\ -3\ /home/eddyr/assembler/_code-dives/_templates/AGENTS.md 
+# DATE: 2026-07-31T11:14:57-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+COPY   /home/eddyr/assembler/_knowledge/_templates → /home/eddyr/assembler/_code-dives/_templates
+DONE   /home/eddyr/assembler/_code-dives/_templates
+# _templates — Agent Instructions
+
+## Domain
+# exit: 0

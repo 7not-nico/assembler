@@ -1,0 +1,12 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/.opencode/_bitacora\ \&\&\ mv\ reference\ task-reference\ \&\&\ ls\ \&\&\ echo\ ---\ \&\&\ grep\ -rn\ \'task-reference\'\ /home/eddyr/assembler/AGENTS.md\ \|\ head 
+# DATE: 2026-07-31T12:35:40-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+task-audit
+task-plan
+task-reference
+task-report
+task-survey
+task-todo
+---
+# exit: 0

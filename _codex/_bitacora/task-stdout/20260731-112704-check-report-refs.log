@@ -1,0 +1,11 @@
+# CMD: sh -c grep\ -n\ -iE\ \'reportare\|informe\|reports\'\ /home/eddyr/assembler/_knowledge/_templates/AGENTS.md 
+# DATE: 2026-07-31T11:27:04-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+13:- **Registry and semantic search** — templates and reportares stay queryable by meaning.
+14:- **Improvement loop** — `reportare/` records every session's errors and findings.
+27:    registers templates (parses **Layer:**/**Purpose:**) and reportares
+31:    embeds template purpose+content and reportare content into
+53:                              informes (id, project, errors, findings)
+85:## Session reports — improvement loop (obligatory)
+# exit: 0

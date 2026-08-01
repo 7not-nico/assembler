@@ -1,0 +1,14 @@
+# CMD: bash -c $'rg -n "F221034E|f221034e" /home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/overrides.c; echo "---"; rg -n "GB_MODEL_AGB|GB_MODEL_CGB =|GB_MODEL_DMG =|GB_MODEL =|enum GBModel" /home/eddyr/assembler/_codex/mgba-repo/mgba/include/mgba/gb/interface.h | head -8; echo "---count---"; rg -c "^\t\\{ 0x" /home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/overrides.c' 
+# DATE: 2026-08-01T08:23:39-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+---
+15:enum GBModel {
+23:	GB_MODEL_AGB  = 0xC0
+81:	enum GBModel model;
+97:bool GBIsCompatibleBIOS(struct VFile* vf, enum GBModel model);
+99:enum GBModel GBNameToModel(const char*);
+100:const char* GBModelToName(enum GBModel);
+---count---
+218
+# exit: 0

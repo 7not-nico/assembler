@@ -1,0 +1,12 @@
+# CMD: sh -c find\ /home/eddyr\ -maxdepth\ 4\ -name\ \'\*Super-Mario-World\*\'\ -newermt\ \'2026-07-31\ 10:00\'\ 2\>/dev/null\ \|\ head\ -5\;\ ls\ -la\ /home/eddyr/assembler/.playwright-mcp/\ 2\>/dev/null\ \|\ tail\ -5 
+# DATE: 2026-07-31T10:16:50-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+/home/eddyr/assembler/.playwright-mcp/Super-Mario-World-U-.zip
+/home/eddyr/assembler/.playwright-mcp/Super-Mario-World-USA-.zip
+-rw-r--r-- 1 eddyr eddyr  345695 Jul 31 10:16 Super-Mario-World-USA-.zip
+-rw-r--r-- 1 eddyr eddyr  347370 Jul 31 10:10 Super-Mario-World-U-.zip
+-rw-r--r-- 1 eddyr eddyr  839616 Jul 30 21:10 techrxiv-174495492-22752319-v1.pdf
+-rw-r--r-- 1 eddyr eddyr  322764 Jul 30 21:10 techrxiv-174900584-46814645-v1.pdf
+-rw-r--r-- 1 eddyr eddyr  137916 Jul 30 21:13 techrxiv-177006109-97957916-v1.pdf
+# exit: 0

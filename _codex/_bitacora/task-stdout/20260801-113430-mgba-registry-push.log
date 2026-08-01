@@ -1,0 +1,13 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/_templates\ \&\&\ ruby\ script/push-registry.rb\ 2\>\&1\ \|\ tail\ -6\ \&\&\ echo\ \"---\ frontmatter\ ids\ in\ db\ ---\"\ \&\&\ sqlite3\ schema/templates.db\ \"SELECT\ id\ FROM\ templates\ WHERE\ id\ LIKE\ \\\"TEMPLATE.%\\\"\ ORDER\ BY\ id\ LIMIT\ 8\;\"\ 2\>/dev/null\ \|\|\ sqlite3\ schema/templates.db\ \"SELECT\ count\(\*\)\ FROM\ templates\;\" 
+# DATE: 2026-08-01T11:34:30-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+  TPL reference-template.md [reference/ pos=11 tags=12 comp=0]
+  TPL research-template.md [research/ pos=4 tags=12 comp=0]
+  TPL study-template.md [study/ pos=nil tags=12 comp=3]
+  TPL write-report-template.md [precept/ pos=2 tags=12 comp=1]
+  TPL write-reportare-template.md [precept/ pos=2 tags=12 comp=1]
+Pushed 22 templates, 0 reports into /home/eddyr/assembler/_codex/_templates/script/../schema/templates.db
+--- frontmatter ids in db ---
+27
+# exit: 0

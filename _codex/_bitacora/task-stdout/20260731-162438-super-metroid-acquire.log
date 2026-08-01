@@ -1,0 +1,16 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/super-metroid-7227/2\'\ 60 
+# DATE: 2026-07-31T16:24:38-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/super-metroid-7227/2
+LINK https://statics.romsfun.com/SNES/Super%20Metroid%20%28Japan%2C%20USA%29%20%28En%2CJa%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRVxdl59
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/super-metroid-japan-usa-en-ja.zip (Super Metroid (Japan, USA) (En,Ja).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/super-metroid-japan-usa-en-ja.zip
+WARN unexpected ROM size: 3145728
+OK   Super (3145728 B)
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/super-metroid-japan-usa-en-ja.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/super-metroid-japan-usa-en-ja.sfc: Super NES ROM image "Super Metroid" (Japan), LoROM, FastROM, ROM size: 4096KB, RAM size: 8KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/super-metroid-japan-usa-en-ja.sfc
+RUN   pid=275582 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

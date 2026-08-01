@@ -1,0 +1,20 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'ogre\ battle\'\ 45 
+# DATE: 2026-07-31T18:39:22-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=ogre%2Bbattle
+GAME https://romsfun.com/roms/super-nintendo/densetsu-no-ogre-battle-the-march-of-the-black-queen.html | Densetsu no Ogre Battle: The March of the Black Queen
+GAME https://romsfun.com/roms/super-nintendo/ogre-battle-the-march-of-the-black-queen.html | Ogre Battle: The March of the Black Queen
+GAME https://romsfun.com/roms/super-nintendo/tactics-ogre-let-us-cling-together-4.html | Tactics Ogre: Let Us Cling Together
+GAME https://romsfun.com/roms/super-nintendo/battle-cross.html | Battle Cross
+GAME https://romsfun.com/roms/super-nintendo/super-mario-rpg-marios-endless-nightmare.html | Super Mario RPG: Mario’s Endless Nightmare
+GAME https://romsfun.com/roms/super-nintendo/final-fantasy-4-job-system.html | Final Fantasy 4: Job System
+GAME https://romsfun.com/roms/super-nintendo/trials-of-mana-world-complete-bugfix-compatibility.html | Trials of Mana (World) Complete Bugfix Compatibility
+GAME https://romsfun.com/roms/super-nintendo/illvanian-no-shiro-ruins-of-illvanian.html | Illvanian no Shiro: Ruins of Illvanian
+GAME https://romsfun.com/roms/super-nintendo/fighters-history-mizoguchi-kiki-ippatsu.html | Fighter's History: Mizoguchi Kiki Ippatsu!!
+GAME https://romsfun.com/roms/super-nintendo/tenshi-no-uta-shiroki-tsubasa-no-inori.html | Tenshi no Uta: Shiroki Tsubasa no Inori
+OPEN https://romsfun.com/roms/super-nintendo/densetsu-no-ogre-battle-the-march-of-the-black-queen.html
+DL https://romsfun.com/download/densetsu-no-ogre-battle-the-march-of-the-black-queen-153760
+VARIANTS:
+1 https://romsfun.com/download/densetsu-no-ogre-battle-the-march-of-the-black-queen-153760/1 | Densetsu no Ogre Battle - The March of the Black Queen (Japan) (NP) (T-En by FinS v1.2)
+# exit: 0

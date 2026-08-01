@@ -1,0 +1,8 @@
+# CMD: bash _templates/fetch-repo.sh https://github.com/mgba-emu/mgba . 
+# DATE: 2026-07-31T23:42:48-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+FETCH  https://github.com/mgba-emu/mgba → ./mgba-repo/mgba (depth 1)
+Cloning into './mgba-repo/mgba'...
+DONE   ./mgba-repo
+# exit: 0

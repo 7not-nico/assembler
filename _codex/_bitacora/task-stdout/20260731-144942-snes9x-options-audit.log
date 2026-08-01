@@ -1,0 +1,13 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ snes9x/unix/snes9x\ --help\ 2\>\&1\ \|\ grep\ -iE\ \'magnif\|scale\|zoom\|size\|aspect\'\ \;\ echo\ \'---\ env\ vars\ in\ source:\'\;\ grep\ -rn\ \'getenv\'\ snes9x/unix/\*.cpp\ snes9x/unix/\*.c\ snes9x/unix/\*.h\ 2\>/dev/null\ \|\ head\ -15 
+# DATE: 2026-07-31T14:49:42-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+-buffersize                     Sound generating buffer size in millisecond
+-rwbuffersize                   Rewind buffer size in MB
+-maxaspect                      Try to fill the display, in fullscreen
+--- env vars in source:
+snes9x/unix/unix.cpp:690:				retval = std::string(getenv("HOME"));
+snes9x/unix/unix.cpp:1626:	snprintf(default_dir, PATH_MAX + 1, "%s%s%s", getenv("HOME"), SLASH_STR, ".snes9x");
+snes9x/unix/unix.cpp:1775:		char	*server = getenv("S9XSERVER");
+snes9x/unix/unix.cpp:1783:	char	*port = getenv("S9XPORT");
+# exit: 0

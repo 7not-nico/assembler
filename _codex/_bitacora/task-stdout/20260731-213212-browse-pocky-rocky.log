@@ -1,0 +1,18 @@
+# CMD: bash /home/eddyr/assembler/_codex/snes9x-repo/scripts/browse-romsfun.sh pocky\ and\ rocky 90 
+# DATE: 2026-07-31T21:32:12-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=pocky%2Band%2Brocky
+GAME https://romsfun.com/roms/super-nintendo/pocky-rocky-2.html | Pocky & Rocky 2
+GAME https://romsfun.com/roms/super-nintendo/pocky-rocky.html | Pocky & Rocky
+OPEN https://romsfun.com/roms/super-nintendo/pocky-rocky-2.html
+DL https://romsfun.com/download/pocky-rocky-2-145533
+VARIANTS:
+1 https://romsfun.com/download/pocky-rocky-2-145533/1 | Pocky & Rocky 2 (Europe)
+2 https://romsfun.com/download/pocky-rocky-2-145533/2 | Pocky & Rocky 2 (USA) (Beta)
+3 https://romsfun.com/download/pocky-rocky-2-145533/3 | Pocky & Rocky 2 (USA)
+4 https://romsfun.com/download/pocky-rocky-2-145533/4 | Kiki Kaikai - Tsukiyo Soushi (Japan)
+5 https://romsfun.com/download/pocky-rocky-2-145533/5 | Pocky & Rocky 2 (Europe)
+6 https://romsfun.com/download/pocky-rocky-2-145533/6 | Pocky & Rocky 2 (USA) (Beta)
+7 https://romsfun.com/download/pocky-rocky-2-145533/7 | Pocky & Rocky 2 (USA)
+# exit: 0

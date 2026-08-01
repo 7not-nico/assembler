@@ -1,0 +1,65 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/_templates\ \&\&\ for\ f\ in\ backup-template\ bitacora-template\ browse-playwright-template\ dive-agents-template\ fixture-template\ guideline-template\ invariant-template\ pattern-template\ precedence-chain\ precept-template\ procedure-template\ study-template\;\ do\ echo\ \"==\ \$f\ ==\"\;\ sed\ -n\ \"1\,6p\"\ \$f.md\ \|\ rg\ -v\ \"\^\$\"\;\ done 
+# DATE: 2026-08-01T10:35:45-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+== backup-template ==
+# Backup convention — restore points
+**Layer:** backup/
+**Naming:** `{repo}-src/` (source tree, no artifacts) + `{repo}-binary-{YYYYMMDD}-{HHMMSS}` (timestamped binaries).
+**Composes with:** `study/{domain}-architecture.md` (change inventory references the anchor), `procedure/extend-*.md` (backup precedes source edits).
+== bitacora-template ==
+# {NNN}-{DESCRIPTION}.md
+**Layer:** bitacora/
+**Naming:** `{number}-{description}.md` — name describes the work.
+```
+== browse-playwright-template ==
+# browse-playwright.md
+**Layer:** procedure/
+**Naming:** `action-domain.md` — procedural chain, atomic per workflow, numbered steps.
+**Composes with:** `precept/search-before-navigate.md` (search first, browse second).
+== dive-agents-template ==
+# AMANDA {repo}-repo — Agent Instructions
+## Domain
+This project dives the {repo} codebase — {one-sentence domain}. The dive {compiles/studies/extends/verifies} the source and documents the findings.
+== fixture-template ==
+# {action}-{domain}-test.{ext} — atomic fixture
+**Layer:** fixture/
+**Naming:** `{action}-{domain}-test.{ext}` — atomic regression harness.
+**Composes with:** `study/{domain}-architecture.md`, `pattern/{morphism}.md`; rerun after any change in its domain.
+== guideline-template ==
+# {Layer}-layer — the guideline for {layer}/
+**Layer:** guideline/
+**Naming:** `guideline/{layer}.md` — the layer's own constitution: taxonomy, file form, composition rules.
+**Composes with:** every `{layer}/{domain}-{constraint}.md` file; `_codex/_templates/precedence-chain.md`.
+== invariant-template ==
+# {Domain}-{constraint} — {short title}
+**Layer:** invariant/
+**Naming:** `{domain}-{constraint}.md` — always-true state predicate.
+**Composes with:** {links to enforcing layers; forbidden to restate them}
+**Category:** {subsystem} × {kind} × {strength} × {detector}
+== pattern-template ==
+# {ACTION}-{DOMAIN}.md
+**Layer:** pattern/
+**Naming:** `action-domain.md` — code morphism, reusable structure.
+**Composes with:** `procedure/{ACTION}-{DOMAIN}.md` (same domain); derived from `study/` + `fixture/` proof.
+== precedence-chain ==
+# Precedence chain — codex (general)
+**Layer:** convention
+**Naming:** `precedence-chain.md` — the general codex chain, inherited by every dive.
+**Composes with:** per-dive AGENTS.md chains (dives may extend with dive-specific layers).
+== precept-template ==
+# {ACTION}-{DOMAIN}.md
+**Layer:** precept/
+**Naming:** `action-domain.md` — declarative action-domain, atomic, one rule per file.
+**Composes with:** `procedure/{ACTION}-{DOMAIN}.md` (same domain).
+== procedure-template ==
+# {ACTION}-{DOMAIN}.md
+**Layer:** procedure/
+**Naming:** `action-domain.md` — procedural chain, atomic per workflow, numbered steps.
+**Composes with:** `precept/{ACTION}-{DOMAIN}.md` (same domain).
+== study-template ==
+# {Domain} — architecture document
+**Layer:** study/
+**Naming:** `{domain}-architecture.md` or `{topic}.md` — how the codebase and its extensions work.
+**Composes with:** `backup/` (pre-edit restore point referenced), `pattern/{morphism}.md`, `procedure/{action}-{domain}.md`.
+# exit: 0

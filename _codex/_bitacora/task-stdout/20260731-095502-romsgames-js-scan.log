@@ -1,0 +1,18 @@
+# CMD: sh -c grep\ -oE\ \'\<script\[\^\>\]\*src=\"\[\^\"\]\*\"\'\ /tmp/opencode/roms-page.html\ \|\ head\ -10\;\ echo\ ---\;\ grep\ -oE\ \'\(downloadFormSubmit\|fetch\\\(\|XMLHttpRequest\|/api/\[a-z/\]+\|download/\[a-z0-9/_-\]+\)\'\ /tmp/opencode/roms-page.html\ \|\ sort\ -u\ \|\ head\ -20 
+# DATE: 2026-07-31T09:55:02-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+<script src="/js/darkmode.js?v6"
+<script src="/js/search.js?v4"
+<script async data-cfasync="false" src="https://cdn.pubfuture-ad.com/v2/unit/pt.js"
+<script async data-cfasync="false" src="https://cdn.snigelweb.com/adengine/romsgames.net/loader.js"
+<script async id="AV667938959a809a388e0bb2d7" type="text/javascript" src="https://tg1.aniview.com/api/adserver/spt?AV_TAGID=667938959a809a388e0bb2d7&AV_PUBLISHERID=5f280c598c04cd5e910ff0a1"
+<script src="/dist/jquery/jquery-3.7.1.min.js"
+<script src="/dist/jquery/jquery-ui-1.13.2.min.js"
+<script src="/js/autocomplete.js?v1"
+<script src="/js/navbar.js"
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1ZM4DE9XZ"
+---
+/api/adserver/spt
+downloadFormSubmit
+# exit: 0

@@ -1,0 +1,14 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'blues\ brothers\'\ 45 
+# DATE: 2026-07-31T18:05:34-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=blues%2Bbrothers
+GAME https://romsfun.com/roms/super-nintendo/the-blues-brothers-2.html | The Blues Brothers
+OPEN https://romsfun.com/roms/super-nintendo/the-blues-brothers-2.html
+DL https://romsfun.com/download/the-blues-brothers-2-146925
+VARIANTS:
+1 https://romsfun.com/download/the-blues-brothers-2-146925/1 | Blues Brothers, The (Europe) (Beta)
+2 https://romsfun.com/download/the-blues-brothers-2-146925/2 | Blues Brothers, The (Europe)
+3 https://romsfun.com/download/the-blues-brothers-2-146925/3 | Blues Brothers, The (Japan)
+4 https://romsfun.com/download/the-blues-brothers-2-146925/4 | Blues Brothers, The (USA)
+# exit: 0

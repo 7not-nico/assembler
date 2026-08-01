@@ -1,0 +1,17 @@
+# CMD: bash -c for\ f\ in\ /home/eddyr/assembler/_codex/_templates/write-report-template.md\ /home/eddyr/assembler/_codex/_templates/write-reportare-template.md\ /home/eddyr/assembler/_codex/_templates/AGENTS.template.md\;\ do\ echo\ \"==\ \$f\ ==\"\;\ sed\ -n\ \"1\,3p\"\ \"\$f\"\;\ done 
+# DATE: 2026-08-01T11:09:38-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+== /home/eddyr/assembler/_codex/_templates/write-report-template.md ==
+# write-informe.md
+
+**Layer:** precept/
+== /home/eddyr/assembler/_codex/_templates/write-reportare-template.md ==
+# write-informe.md
+
+**Layer:** precept/
+== /home/eddyr/assembler/_codex/_templates/AGENTS.template.md ==
+# {PROJECT-NAME} — AGENTS.md
+
+## Domain
+# exit: 0

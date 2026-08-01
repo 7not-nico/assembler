@@ -1,0 +1,24 @@
+# CMD: bash -c grep\ -rn\ \"mCoreConfigInit\"\ mgba-repo/mgba/src/core/\*.c\ \|\ head\ -2\;\ echo\ ---\;\ sed\ -n\ \"/void\ mCoreConfigInit/\,/\^\}/p\"\ mgba-repo/mgba/src/core/config.c\ 2\>/dev/null\ \|\ head\ -20\;\ echo\ ---\;\ grep\ -n\ \"ENABLE_VFS\\\|ENABLE_DIRECTORIES\\\|ENABLE_SCRIPTING\"\ mgba-repo/mgba/include/mgba/core/core.h\ \|\ head\ -12 
+# DATE: 2026-08-01T07:04:06-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+mgba-repo/mgba/src/core/config.c:151:void mCoreConfigInit(struct mCoreConfig* config, const char* port) {
+mgba-repo/mgba/src/core/core.c:418:	mCoreConfigInit(&core->config, port);
+---
+void mCoreConfigInit(struct mCoreConfig* config, const char* port) {
+	ConfigurationInit(&config->configTable);
+	ConfigurationInit(&config->defaultsTable);
+	ConfigurationInit(&config->overridesTable);
+	if (port) {
+		config->port = malloc(strlen("ports.") + strlen(port) + 1);
+		snprintf(config->port, strlen("ports.") + strlen(port) + 1, "ports.%s", port);
+	} else {
+		config->port = NULL;
+	}
+}
+---
+14:#ifdef ENABLE_VFS
+45:#if defined(ENABLE_VFS) && defined(ENABLE_DIRECTORIES)
+178:#ifdef ENABLE_VFS
+190:#if defined(ENABLE_VFS) && defined(ENABLE_DIRECTORIES)
+# exit: 0

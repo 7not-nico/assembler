@@ -1,0 +1,15 @@
+# CMD: bash -c rg\ -n\ \"title\|GBModel\|gbModel\|mbcType\|device\|GBCartridgeOverride\"\ /home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/overrides.c\ \|\ head\ -30 
+# DATE: 2026-08-01T08:18:32-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+91:static const struct GBCartridgeOverride _gbcOverrides[] = {
+527:static const struct GBCartridgeOverride _sgbOverrides[] = {
+669:static const struct GBCartridgeOverride _overrides[] = {
+756:bool GBOverrideColorFind(struct GBCartridgeOverride* override, enum GBColorLookup order) {
+777:bool GBOverrideFind(const struct Configuration* config, struct GBCartridgeOverride* override) {
+851:void GBOverrideSave(struct Configuration* config, const struct GBCartridgeOverride* override) {
+854:	const char* model = GBModelToName(override->model);
+906:void GBOverrideApply(struct GB* gb, const struct GBCartridgeOverride* override) {
+914:		gb->memory.mbcType = override->mbc;
+934:	struct GBCartridgeOverride override;
+# exit: 0

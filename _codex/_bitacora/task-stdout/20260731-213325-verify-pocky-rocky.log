@@ -1,0 +1,6 @@
+# CMD: bash /home/eddyr/assembler/_codex/snes9x-repo/scripts/verify-rom.sh /home/eddyr/assembler/.opencode/.playwright-mcp/pocky-rocky-usa.zip 
+# DATE: 2026-07-31T21:33:25-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+OK   Pocky & Rocky (USA).sfc (1048576 B) title="POCKY ROCKY"
+# exit: 0

@@ -1,0 +1,16 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/maui-mallard-in-cold-shadow-145035/1\'\ 90 
+# DATE: 2026-07-31T19:08:39-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/maui-mallard-in-cold-shadow-145035/1
+LINK https://statics.romsfun.com/SNES/Maui%20Mallard%20in%20Cold%20Shadow%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRRxdVh9
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/maui-mallard-in-cold-shadow-usa.zip (Maui Mallard in Cold Shadow (USA).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/maui-mallard-in-cold-shadow-usa.zip
+WARN unexpected ROM size: 3145728
+OK   Maui Mallard in Cold Shadow (USA).sfc (3145728 B) title="MAUI MALLARD IN COLD"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/maui-mallard-in-cold-shadow-usa.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/maui-mallard-in-cold-shadow-usa.sfc: Super NES ROM image "MAUI MALLARD IN COLD" (USA), LoROM, ROM size: 4096KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/maui-mallard-in-cold-shadow-usa.sfc
+RUN   pid=362705 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

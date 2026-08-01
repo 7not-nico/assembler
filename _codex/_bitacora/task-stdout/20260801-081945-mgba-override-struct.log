@@ -1,0 +1,22 @@
+# CMD: bash -c rg\ -n\ -A\ 12\ \"struct\ GBCartridgeOverride\"\ /home/eddyr/assembler/_codex/mgba-repo/mgba/include/mgba/gb/interface.h\ \|\ head\ -16\;\ rg\ -n\ \"GB_MODEL_AUTODETECT\|GB_MODEL_CGB\ =\|GB_MODEL_DMG\ =\|GB_MODEL_SGB\ =\"\ /home/eddyr/assembler/_codex/mgba-repo/mgba/include/mgba/gb/interface.h\ \|\ head\ -6 
+# DATE: 2026-08-01T08:19:45-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+79:struct GBCartridgeOverride {
+80-	int headerCrc32;
+81-	enum GBModel model;
+82-	enum GBMemoryBankControllerType mbc;
+83-
+84-	uint32_t gbColors[12];
+85-};
+86-
+87-struct GBColorPreset {
+88-	const char* name;
+89-	uint32_t colors[12];
+90-};
+91-
+--
+104:bool GBOverrideFind(const struct Configuration*, struct GBCartridgeOverride* override);
+105:bool GBOverrideColorFind(struct GBCartridgeOverride* override, enum GBColorLookup);
+16:	GB_MODEL_AUTODETECT = 0xFF,
+# exit: 0

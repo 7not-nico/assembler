@@ -1,0 +1,15 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/plok-145529/4\'\ 60 
+# DATE: 2026-07-31T16:16:40-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/plok-145529/4
+LINK https://statics.romsfun.com/SNES/Plok%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRJ4fFl1
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/plok-usa.zip (Plok (USA).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/plok-usa.zip
+OK   Plok (1048576 B)
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/plok-usa.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/plok-usa.sfc: Super NES ROM image "PLOK" (USA), LoROM, FastROM, ROM size: 1024KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/plok-usa.sfc
+RUN   pid=272049 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

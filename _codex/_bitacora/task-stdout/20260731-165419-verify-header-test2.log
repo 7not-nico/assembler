@@ -1,0 +1,11 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/verify-rom.sh\ /home/eddyr/assembler/.opencode/.playwright-mcp/donkey-kong-country-usa.zip\ \&\&\ bash\ scripts/verify-rom.sh\ /home/eddyr/assembler/.opencode/.playwright-mcp/super-metroid-japan-usa-en-ja.zip\ \&\&\ bash\ scripts/verify-rom.sh\ /home/eddyr/assembler/.opencode/.playwright-mcp/terranigma-europe.zip 
+# DATE: 2026-07-31T16:54:19-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+WARN unexpected ROM size: 4194304
+OK   Donkey Kong Country (USA).sfc (4194304 B) title="DONKEY KONG COUNTRY  "
+WARN unexpected ROM size: 3145728
+OK   Super Metroid (Japan, USA) (En,Ja).sfc (3145728 B) title="Super Metroid        "
+WARN unexpected ROM size: 4194304
+OK   Terranigma (Europe).sfc (4194304 B) title="TERRANIGMA P         "
+# exit: 0

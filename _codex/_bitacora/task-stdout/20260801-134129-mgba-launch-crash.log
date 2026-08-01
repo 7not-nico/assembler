@@ -1,0 +1,8 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ bash\ scripts/launch-rom.sh\ roms/crash-bandicoot-the-huge-adventure-usa.gba\ 2\>\&1 
+# DATE: 2026-08-01T13:41:29-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+roms/crash-bandicoot-the-huge-adventure-usa.gba: Game Boy Advance ROM image: "CRASH" (ACQE7D, Rev.00)
+LAUNCH /home/eddyr/assembler/_codex/mgba-repo/build/sdl/mgba roms/crash-bandicoot-the-huge-adventure-usa.gba
+RUN   pid=246195 cpu=alive window=DISPLAY:0 log=/tmp/opencode/mgba-launch.log
+# exit: 0

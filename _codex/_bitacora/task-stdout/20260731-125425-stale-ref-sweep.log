@@ -1,0 +1,19 @@
+# CMD: sh -c cd\ /home/eddyr/assembler\ \&\&\ grep\ -rln\ \'_code-dives\\\|_assets\\\|_findings\\\|_projects\\\|IDENTITY.CODE.DIVES\'\ --include=\'\*.md\'\ --include=\'\*.sh\'\ --include=\'\*.ts\'\ --include=\'\*.rb\'\ --include=\'\*.yaml\'\ --include=\'\*.json\'\ .\ 2\>/dev/null\ \|\ grep\ -v\ node_modules\ \|\ grep\ -v\ \'/.git/\'\ \|\ grep\ -v\ \'_codex/_bitacora\'\ \|\ grep\ -v\ \'/_codex/\'\ \|\ head\ -30 
+# DATE: 2026-07-31T12:54:25-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+./opencode.json
+./.opencode/skills/declare-grounded-entity/SKILL.md
+./.opencode/entities/identities/IDENTITY.KNOWLEDGE.md
+./.opencode/entities/identities/IDENTITY.CODE.DIVES.md
+./.opencode/entities/specifications/SPEC.DIRECTORY.RING.TOPOLOGY.md
+./.opencode/.burst-state.json
+./.opencode/_bitacora/task-report/2026-07-30-flynn-taxonomy-papers.md
+./.opencode/_bitacora/task-report/2026-07-30-mcp-techrxiv-papers.md
+./.opencode/_bitacora/task-report/database-inventory.md
+./.opencode/_bitacora/task-report/storage-audit.md
+./.opencode/_bitacora/task-todo/rewrite-agents-communication.md
+./_knowledge/go-coding/docs/skill-declare-grounded-entity.md
+./AGENTS.md
+./_trove/search-results.json
+# exit: 0

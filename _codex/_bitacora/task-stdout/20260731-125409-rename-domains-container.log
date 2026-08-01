@@ -1,0 +1,16 @@
+# CMD: sh -c cd\ /home/eddyr/assembler\ \&\&\ mv\ _code-dives\ _codex\ \&\&\ mv\ _assets\ _depot\ \&\&\ mv\ _findings\ _trove\ \&\&\ mv\ _projects\ _atelier\ \&\&\ ls\ -d\ _\*/\ \&\&\ echo\ ---\ \&\&\ ls\ _codex/\ \|\ head\ -6 
+# DATE: 2026-07-31T12:54:09-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+_atelier/
+_codex/
+_depot/
+_knowledge/
+_trove/
+---
+AGENTS.md
+api-ref
+_bitacora
+bore-scheduler-repo
+darkestdungeon-code
+decompiler

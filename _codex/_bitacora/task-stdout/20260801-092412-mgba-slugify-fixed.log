@@ -1,0 +1,20 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex\ \&\&\ bash\ mgba-repo/fixture/slugify-test.sh\;\ echo\ \"exit=\$\?\"\;\ echo\ \"---\ cleanup\ stale\ standalone\ binaries\ ---\"\;\ rm\ -f\ mgba-repo/fixture/mbc-banking-test\ mgba-repo/fixture/mbc-banking-test-dbg\ \&\&\ ls\ mgba-repo/fixture/ 
+# DATE: 2026-08-01T09:24:12-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+PASS  Super Mario World (USA).zip -> super-mario-world-usa.zip
+PASS  Kirby's Dream Land 2 (USA, Europe) (SGB Enhanced).gb -> kirby-s-dream-land-2-usa-europe-sgb-enhanced.gb
+PASS  Pokémon Orange (v1.0).gbc -> pok-mon-orange-v1-0.gbc
+PASS  Mega Man World 5 DX (v1.6.1)[Switch Buster DX v2.0.1].gb -> mega-man-world-5-dx-v1-6-1-switch-buster-dx-v2-0-1.gb
+PASS    LEADING AND TRAILING  .sfc -> leading-and-trailing.sfc
+PASS  already-slug.gb -> already-slug.gb
+exit=0
+--- cleanup stale standalone binaries ---
+carts
+gen-cart.sh
+mbc-banking-test.c
+probe-headers-test.sh
+slugify-test.sh
+test-cart.gb
+test-cart.zip
+# exit: 0

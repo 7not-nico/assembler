@@ -1,0 +1,15 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/micro-machines-2-turbo-tournament-145109/2\'\ 60 
+# DATE: 2026-07-31T18:24:43-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/micro-machines-2-turbo-tournament-145109/2
+LINK https://statics.romsfun.com/SNES/Micro%20Machines%202%20-%20Turbo%20Tournament%20%28Europe%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRV2cFF3
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/micro-machines-2-turbo-tournament-europe.zip (Micro Machines 2 - Turbo Tournament (Europe).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/micro-machines-2-turbo-tournament-europe.zip
+OK   Micro Machines 2 - Turbo Tournament (Europe).sfc (1048576 B) title="MICRO MACHINES 2"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/micro-machines-2-turbo-tournament-europe.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/micro-machines-2-turbo-tournament-europe.sfc: Super NES ROM image "MICRO MACHINES 2" (Europe), LoROM, FastROM, ROM size: 1024KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/micro-machines-2-turbo-tournament-europe.sfc
+RUN   pid=337014 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

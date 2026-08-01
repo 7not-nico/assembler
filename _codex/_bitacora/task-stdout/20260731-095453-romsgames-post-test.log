@@ -1,0 +1,6 @@
+# CMD: curl -sL -D /tmp/opencode/roms-headers.txt -o /tmp/opencode/roms-download.bin -X POST https://www.romsgames.net/super-nintendo-rom-super-mario-world/ --data mediaId=60107\&attach=nothing -w code=%\{http_code\}\ size=%\{size_download\}\ type=%\{content_type\}\\n 
+# DATE: 2026-07-31T09:54:53-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+code=404 size=15854 type=text/html
+# exit: 0

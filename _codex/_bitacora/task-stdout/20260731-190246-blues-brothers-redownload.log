@@ -1,0 +1,33 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/the-blues-brothers-2-146925/4\'\ 90 
+# DATE: 2026-07-31T19:02:46-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/the-blues-brothers-2-146925/4
+LINK https://statics.romsfun.com/SNES/Blues%20Brothers%2C%20The%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRV4c19z
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/blues-brothers-the-usa.zip (Blues Brothers, The (USA).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/blues-brothers-the-usa.zip
+OK   Blues Brothers, The (USA).sfc (524288 B) title="BLUES BROTHERS"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/blues-brothers-the-usa.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/blues-brothers-the-usa.sfc: Super NES ROM image "BLUES BROTHERS" (USA), LoROM, FastROM, ROM size: 512KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/blues-brothers-the-usa.sfc
+FAIL  emulator exited early — crash or missing window
+Alsa available rates: 1 to 384000
+Alsa available buffer sizes: 1ms to 21845ms
+Alsa period ranges: 2 to 150 blocks
+joystick: No joystick found.
+X connection to :0 broken (explicit kill or server shutdown).
+
+
+Snes9x 1.63 for unix
+Port 1: Pad #1. Port 2: <none>. 
+No ROM file header found.
+Map_LoROMMap
+"BLUES BROTHERS" (NTSC) version 1.0
+ROM: LoROM: 4 Mbit, SRAM: 0 Kbit
+ID: ____, CRC32: 82b97464, Checksum OK
+Selected xinerama head 0 (0,0 1920x1080)
+Created XShmImage, size 978944
+	Image conversion needed before blit.
+Using internal pixel format 565
+# exit: 1

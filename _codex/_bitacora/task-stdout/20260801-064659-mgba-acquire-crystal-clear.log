@@ -1,0 +1,15 @@
+# CMD: bash -c bash\ mgba-repo/scripts/playwright-fetch-rom.sh\ \"https://romsfun.com/download/pokemon-crystal-clear-235039/1\"\ 90\ 2\>\&1\ \|\ tail\ -14 
+# DATE: 2026-08-01T06:46:59-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/pokemon-crystal-clear-235039/1
+LINK https://sto.romsfast.com/Mods/GBC/Pokemon%20(Crystal%20Clear%20v2.6.0).zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRhzdFt0
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/pokemon-crystal-clear-v2-6-0.zip (Pokemon (Crystal Clear v2.6.0).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/pokemon-crystal-clear-v2-6-0.zip
+OK   Pokemon (Crystal Clear v2.6.0)/Pokemon (Crystal Clear v2.6.0).gbc (2097152 B) title="PM_CRYSTALBYTE" mbc=0x10
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/pokemon-crystal-clear-v2-6-0.gbc
+/home/eddyr/assembler/_codex/mgba-repo/roms/pokemon-crystal-clear-v2-6-0.gbc: Game Boy Color ROM image: "PM_CRYSTAL" (Rev.00) [CGB ONLY] [MBC3+TIMER+RAM+BATT], ROM: 16Mbit, RAM: 256Kbit
+LAUNCH /home/eddyr/assembler/_codex/mgba-repo/build/sdl/mgba /home/eddyr/assembler/_codex/mgba-repo/roms/pokemon-crystal-clear-v2-6-0.gbc
+RUN   pid=18822 cpu=alive window=DISPLAY:0 log=/tmp/opencode/mgba-launch.log
+# exit: 0

@@ -1,0 +1,45 @@
+# CMD: bash -c cmake\ -S\ mgba\ -B\ build\ -DBUILD_QT=OFF\ -DBUILD_SDL=ON\ -DCMAKE_BUILD_TYPE=Release\ 2\>\&1\ \|\ tail\ -40 
+# DATE: 2026-07-31T23:50:35-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo
+# --------------------
+-- Checking for one of the modules 'libelf'
+-- Build type: Release
+-- Platforms:
+-- 	Game Boy Advance: ON
+-- 	Game Boy: ON
+-- Features:
+-- 	Debuggers: ON
+-- 	CLI debugger: ON
+-- 	GDB stub: ON
+-- 	GIF/Video recording: ON
+-- 	Screenshot/advanced savestate support: ON
+-- 	ZIP support: libzip
+-- 	7-Zip support: ON
+-- 	SQLite3 game database: ON
+-- 	ELF loading support: ON
+-- 	Discord Rich Presence support: ON
+-- 	OpenGL support: libepoxy
+-- Scripting support: ON
+-- 	Lua: 5.5.0
+-- 	storage API: ON
+-- 	Font rendering: ON
+-- Frontends:
+-- 	Qt: OFF
+-- 	SDL (3): ON
+-- 	Headless: OFF
+-- 	Python bindings: OFF
+-- 	Examples: OFF
+-- Test tools:
+-- 	Profiling: OFF
+-- 	Test harness: OFF
+-- 	Test suite: OFF
+-- 	Video test suite: OFF
+-- Cores:
+-- 	Libretro core: OFF
+-- Libraries:
+-- 	Static: OFF
+-- 	Shared: ON
+-- Configuring done (2.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/eddyr/assembler/_codex/mgba-repo/build
+# exit: 0

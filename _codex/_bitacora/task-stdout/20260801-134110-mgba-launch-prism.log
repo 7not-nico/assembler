@@ -1,0 +1,8 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ bash\ scripts/launch-rom.sh\ roms/pokemon-prism-v0-95-build-254-hotfix-5.gbc\ 2\>\&1 
+# DATE: 2026-08-01T13:41:10-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+roms/pokemon-prism-v0-95-build-254-hotfix-5.gbc: Game Boy Color ROM image: "PM_PRISM" (Rev.00) [CGB ONLY] [MBC3+TIMER+RAM+BATT], ROM: 16Mbit, RAM: 256Kbit
+LAUNCH /home/eddyr/assembler/_codex/mgba-repo/build/sdl/mgba roms/pokemon-prism-v0-95-build-254-hotfix-5.gbc
+RUN   pid=245854 cpu=alive window=DISPLAY:0 log=/tmp/opencode/mgba-launch.log
+# exit: 0

@@ -1,0 +1,15 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/jelly-boy-144519/1\'\ 60 
+# DATE: 2026-07-31T16:49:01-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/jelly-boy-144519/1
+LINK https://statics.romsfun.com/SNES/Jelly%20Boy%20%28Europe%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRVwc111
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/jelly-boy-europe.zip (Jelly Boy (Europe).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/jelly-boy-europe.zip
+OK   Jelly (1048576 B)
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/jelly-boy-europe.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/jelly-boy-europe.sfc: Super NES ROM image "JELLYBOY" (Europe), LoROM, FastROM, ROM size: 1024KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/jelly-boy-europe.sfc
+RUN   pid=287010 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

@@ -1,0 +1,8 @@
+# CMD: bash _scripts/fetch-paper.sh https://arxiv.org/pdf/math/0506456v1 45 
+# DATE: 2026-07-31T20:59:16-06:00
+# CWD: /home/eddyr/assembler/_trove
+# --------------------
+FETCH https://arxiv.org/pdf/math/0506456v1
+SAVE /home/eddyr/assembler/_trove/.opencode/.playwright-mcp/0506456v1.pdf (0506456v1.pdf, 568868 B)
+SAVEDPATH=/home/eddyr/assembler/_trove/.opencode/.playwright-mcp/0506456v1.pdf
+# exit: 0

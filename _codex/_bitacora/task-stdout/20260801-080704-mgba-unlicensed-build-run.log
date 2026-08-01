@@ -1,0 +1,7 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ cmake\ --build\ build\ --target\ test-gb-unlicensed\ -j\$\(nproc\)\ 2\>\&1\ \|\ tail\ -3\ \&\&\ cd\ build/test\ \&\&\ ./test-gb-unlicensed\ 2\>\&1\ \|\ tail\ -6 
+# DATE: 2026-08-01T08:07:04-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+make: *** No rule to make target 'test-gb-unlicensed'.  Stop.
+bash: line 1: ./test-gb-unlicensed: No such file or directory
+# exit: 0

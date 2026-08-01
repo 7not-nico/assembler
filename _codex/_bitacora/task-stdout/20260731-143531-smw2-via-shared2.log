@@ -1,0 +1,9 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/smw22-139832/1\'\ 60 
+# DATE: 2026-07-31T14:35:31-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/smw22-139832/1
+LINK https://sto.romsfast.com/Mods/SNES/SMW2%20Plus%202%20(Complete).zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRJyc1p2
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/smw2-plus-2-complete-zip (SMW2 Plus 2 (Complete).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/smw2-plus-2-complete-zip

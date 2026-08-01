@@ -1,0 +1,34 @@
+# CMD: sh -c grep\ -rn\ \'informe\'\ /home/eddyr/assembler/_knowledge/_templates\ --include=\'\*.md\'\ --include=\'\*.sh\'\ --include=\'\*.rb\'\ -l\;\ echo\ ---\;\ ls\ /home/eddyr/assembler/_knowledge/_templates/\*informe\*\ /home/eddyr/assembler/_knowledge/_templates/reportare/\ 2\>/dev/null 
+# DATE: 2026-07-31T11:21:06-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+/home/eddyr/assembler/_knowledge/_templates/write-informe-template.md
+/home/eddyr/assembler/_knowledge/_templates/script/push-registry.rb
+/home/eddyr/assembler/_knowledge/_templates/scaffold-knowledge.sh
+/home/eddyr/assembler/_knowledge/_templates/AGENTS.md
+/home/eddyr/assembler/_knowledge/_templates/reportare/20260731-003332.md
+/home/eddyr/assembler/_knowledge/_templates/reportare/20260731-004058.md
+/home/eddyr/assembler/_knowledge/_templates/reportare/20260731-004633.md
+/home/eddyr/assembler/_knowledge/_templates/reportare/20260731-004827.md
+/home/eddyr/assembler/_knowledge/_templates/reportare/20260731-005130.md
+/home/eddyr/assembler/_knowledge/_templates/reportare/20260731-005632.md
+/home/eddyr/assembler/_knowledge/_templates/reportare/20260731-005830.md
+/home/eddyr/assembler/_knowledge/_templates/reportare/20260731-010123.md
+/home/eddyr/assembler/_knowledge/_templates/reportare/20260731-011644.md
+/home/eddyr/assembler/_knowledge/_templates/reportare/20260731-012848.md
+---
+/home/eddyr/assembler/_knowledge/_templates/write-informe-template.md
+
+/home/eddyr/assembler/_knowledge/_templates/reportare/:
+20260731-003332.md
+20260731-004058.md
+20260731-004633.md
+20260731-004827.md
+20260731-005130.md
+20260731-005632.md
+20260731-005830.md
+20260731-010123.md
+20260731-011644.md
+20260731-012848.md
+informe-template.md
+# exit: 0

@@ -1,0 +1,7 @@
+# CMD: sh -c bash\ -n\ /home/eddyr/assembler/_codex/snes9x-repo/scripts/playwright-fetch-rom.sh\ \&\&\ echo\ \'syntax\ ok\'\ \&\&\ wc\ -l\ /home/eddyr/assembler/_codex/snes9x-repo/scripts/playwright-fetch-rom.sh 
+# DATE: 2026-07-31T14:13:35-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+syntax ok
+130 /home/eddyr/assembler/_codex/snes9x-repo/scripts/playwright-fetch-rom.sh
+# exit: 0

@@ -1,0 +1,13 @@
+# CMD: bash -c rm\ -rf\ /tmp/opencode/copy-test\ \&\&\ bash\ /home/eddyr/assembler/_codex/_templates/shell/copy-templates.sh\ /tmp/opencode/copy-test\ 2\>\&1\ \|\ tail\ -6\ \&\&\ echo\ \"---\ key\ files\ ---\"\ \&\&\ ls\ /tmp/opencode/copy-test/\ \|\ rg\ -c\ \"run-logged\|slugify\|start-browser\|pattern-template\|precedence-chain\"\ \&\&\ rm\ -rf\ /tmp/opencode/copy-test 
+# DATE: 2026-08-01T08:40:28-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+COPY   /home/eddyr/assembler/_codex/_templates/dive-agents-template.md → /tmp/opencode/copy-test/dive-agents-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/shell/start-browser.sh → /tmp/opencode/copy-test/start-browser.sh
+COPY   /home/eddyr/assembler/_codex/_templates/shell/start-browser-headless.sh → /tmp/opencode/copy-test/start-browser-headless.sh
+COPY   /home/eddyr/assembler/_codex/_templates/shell/run-logged.sh → /tmp/opencode/copy-test/run-logged.sh
+COPY   /home/eddyr/assembler/_codex/_templates/shell/slugify.sh → /tmp/opencode/copy-test/slugify.sh
+DONE   /tmp/opencode/copy-test
+--- key files ---
+6
+# exit: 0

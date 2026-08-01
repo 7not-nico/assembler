@@ -1,0 +1,32 @@
+# CMD: bash -c ls\ mgba-repo/\ \|\ grep\ -iE\ \"template\|precedence\"\  
+# DATE: 2026-08-01T07:18:51-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+AGENTS.template.md
+anchor-workflow-template.md
+atomic-script-template.sh
+backup-template.md
+bitacora-template.md
+browse-playwright-template.md
+concept-template.md
+dive-agents-template.md
+fixtures-template
+fixture-template.md
+format-template.md
+glossary-template.md
+guideline-template.md
+invariant-template.md
+naming-conventions-template.md
+note-template.md
+pattern-template.md
+practice-template.md
+precedence-chain.md
+precept-template.md
+procedure-template.md
+push-script-template.rb
+reference-template.md
+research-template.md
+schema-template.sql
+study-template.md
+write-report-template.md
+# exit: 0

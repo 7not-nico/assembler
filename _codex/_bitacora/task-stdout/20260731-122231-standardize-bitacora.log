@@ -1,0 +1,14 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/.opencode/_bitacora\ \&\&\ mv\ audits\ audit\ \&\&\ mv\ plans\ plan\ \&\&\ mv\ todos\ todo\ \&\&\ mv\ reports\ task-report\ \&\&\ ls\ -la 
+# DATE: 2026-07-31T12:22:31-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+total 28
+drwxr-xr-x 1 eddyr eddyr   74 Jul 31 12:22 .
+drwxr-xr-x 1 eddyr eddyr  570 Jul 31 12:21 ..
+drwxr-xr-x 1 eddyr eddyr   24 Jul 23 06:44 audit
+drwxr-xr-x 1 eddyr eddyr   66 Jul 27 17:16 plan
+drwxr-xr-x 1 eddyr eddyr  316 Jul 27 17:16 report
+drwxr-xr-x 1 eddyr eddyr   70 Jul 28 11:22 surveys
+drwxr-xr-x 1 eddyr eddyr 4016 Jul 31 07:41 task-report
+drwxr-xr-x 1 eddyr eddyr 1934 Jul 27 17:16 todo
+# exit: 0

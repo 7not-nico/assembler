@@ -1,0 +1,8 @@
+# CMD: bash /home/eddyr/assembler/_codex/snes9x-repo/scripts/launch-rom.sh /home/eddyr/assembler/_codex/snes9x-repo/roms/blues-brothers-the-usa.sfc 
+# DATE: 2026-07-31T19:05:43-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+/home/eddyr/assembler/_codex/snes9x-repo/roms/blues-brothers-the-usa.sfc: Super NES ROM image "BLUES BROTHERS" (USA), LoROM, FastROM, ROM size: 512KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/blues-brothers-the-usa.sfc
+RUN   pid=360754 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

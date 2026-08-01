@@ -1,0 +1,12 @@
+# CMD: bash -c pkg-config\ --modversion\ cmocka\ 2\>/dev/null\;\ pacman\ -Qq\ cmocka\ 2\>/dev/null\;\ echo\ ---\;\ grep\ -rn\ \"TEST_SRC\"\ mgba-repo/mgba/CMakeLists.txt\ mgba-repo/mgba/src/CMakeLists.txt\ 2\>/dev/null\ \|\ head\ -8 
+# DATE: 2026-08-01T00:05:20-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+---
+mgba-repo/mgba/CMakeLists.txt:853:set(TEST_SRC ${CORE_TEST_SRC})
+mgba-repo/mgba/CMakeLists.txt:858:	list(APPEND TEST_SRC ${SM83_TEST_SRC} ${GB_TEST_SRC})
+mgba-repo/mgba/CMakeLists.txt:865:	list(APPEND TEST_SRC ${ARM_TEST_SRC} ${GBA_TEST_SRC})
+mgba-repo/mgba/CMakeLists.txt:870:	list(APPEND TEST_SRC ${DEBUGGER_TEST_SRC})
+mgba-repo/mgba/CMakeLists.txt:876:	list(APPEND TEST_SRC ${SCRIPT_TEST_SRC})
+mgba-repo/mgba/CMakeLists.txt:918:list(APPEND TEST_SRC ${UTIL_TEST_SRC})
+# exit: 0

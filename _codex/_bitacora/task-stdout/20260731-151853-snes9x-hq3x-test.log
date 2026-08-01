@@ -1,0 +1,5 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ pkill\ -x\ snes9x\ 2\>/dev/null\;\ sleep\ 1\;\ setsid\ nohup\ snes9x/unix/snes9x\ -v9\ roms/super-mario-world-usa.sfc\ \>/tmp/opencode/snes9x-test.log\ 2\>\&1\ \<\ /dev/null\ \&\ sleep\ 2\;\ hyprctl\ clients\ \|\ grep\ -A6\ \'Snes9x\'\ \|\ grep\ -E\ \'size:\|at:\' 
+# DATE: 2026-07-31T15:18:53-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+# exit: 1

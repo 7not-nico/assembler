@@ -1,0 +1,16 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/acquire-rom.sh\ actraiser\ 60 
+# DATE: 2026-07-31T16:54:52-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+PICK https://romsfun.com/download/act-raiser-8349/4
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/act-raiser-8349/4
+LINK https://statics.romsfun.com/SNES/ActRaiser%20%28USA%29%20%28Arcade%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRVzdFBw
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/actraiser-usa-arcade.zip (ActRaiser (USA) (Arcade).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/actraiser-usa-arcade.zip
+OK   ActRaiser (USA) (Arcade).sfc (1048576 B) title="ACTRAISER-ARCADE     "
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/actraiser-usa-arcade.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/actraiser-usa-arcade.sfc: Super NES ROM image "ACTRAISER-ARCADE" (USA), LoROM, ROM size: 1024KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/actraiser-usa-arcade.sfc
+RUN   pid=290041 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

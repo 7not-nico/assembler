@@ -1,0 +1,25 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'super\ mario\ all\ stars\'\ 45 
+# DATE: 2026-07-31T20:38:50-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=super%2Bmario%2Ball%2Bstars
+GAME https://romsfun.com/roms/super-nintendo/super-mario-all-stars.html | SUPER MARIO ALL-STARS
+GAME https://romsfun.com/roms/super-nintendo/super-mario-all-stars-super-mario-world.html | SUPER MARIO ALL-STARS + SUPER MARIO WORLD
+GAME https://romsfun.com/roms/super-nintendo/super-mario-bros-the-lost-mario-quest.html | Super Mario Bros. – The Lost Mario Quest
+GAME https://romsfun.com/roms/super-nintendo/super-mario-world-mario-100s-challenge.html | Super Mario World – Mario 100s Challenge
+GAME https://romsfun.com/roms/super-nintendo/super-mallow-world.html | Super Mallow World
+GAME https://romsfun.com/roms/super-nintendo/a-super-mario-thing.html | A Super Mario Thing
+GAME https://romsfun.com/roms/super-nintendo/super-mario-land-world.html | Super Mario Land World
+GAME https://romsfun.com/roms/super-nintendo/super-mario-bros-the-lost-levels-deluxe.html | Super Mario Bros: The Lost Levels Deluxe
+GAME https://romsfun.com/roms/super-nintendo/super-mario-bros-deluxe-2.html | Super Mario Bros Deluxe
+GAME https://romsfun.com/roms/super-nintendo/star-fox-ex.html | Star Fox: EX
+OPEN https://romsfun.com/roms/super-nintendo/super-mario-all-stars.html
+DL https://romsfun.com/download/super-mario-all-stars-7037
+VARIANTS:
+1 https://romsfun.com/download/super-mario-all-stars-7037/1 | Super Mario All-Stars (Europe)
+2 https://romsfun.com/download/super-mario-all-stars-7037/2 | Super Mario All-Stars (USA)
+3 https://romsfun.com/download/super-mario-all-stars-7037/3 | Super Mario All-Stars
+4 https://romsfun.com/download/super-mario-all-stars-7037/4 | Super Mario Collection (Japan) (Rev 1)
+5 https://romsfun.com/download/super-mario-all-stars-7037/5 | Super Mario Collection (Japan)
+6 https://romsfun.com/download/super-mario-all-stars-7037/6 | Super Mario All-Stars + Super Mario World (U)(Brick Fix)
+# exit: 0

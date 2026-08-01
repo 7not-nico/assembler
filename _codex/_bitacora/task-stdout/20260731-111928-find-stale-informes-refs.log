@@ -1,0 +1,17 @@
+# CMD: sh -c grep\ -n\ \'informes\'\ /home/eddyr/assembler/_knowledge/_templates/AGENTS.md\ /home/eddyr/assembler/_code-dives/_templates/AGENTS.md 
+# DATE: 2026-07-31T11:19:28-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+/home/eddyr/assembler/_knowledge/_templates/AGENTS.md:13:- **Registry and semantic search** — templates and informes stay queryable by meaning.
+/home/eddyr/assembler/_knowledge/_templates/AGENTS.md:14:- **Improvement loop** — `informes/` records every session's errors and findings.
+/home/eddyr/assembler/_knowledge/_templates/AGENTS.md:27:    registers templates (parses **Layer:**/**Purpose:**) and informes
+/home/eddyr/assembler/_knowledge/_templates/AGENTS.md:53:                              informes (id, project, errors, findings)
+/home/eddyr/assembler/_knowledge/_templates/AGENTS.md:87:Every session on a bootstrapped project writes an informe into `informes/` (precept `write-informe.md`):
+/home/eddyr/assembler/_knowledge/_templates/AGENTS.md:91:shape:    informes/informe-template.md
+/home/eddyr/assembler/_code-dives/_templates/AGENTS.md:13:- **Registry and semantic search** — templates and informes stay queryable by meaning.
+/home/eddyr/assembler/_code-dives/_templates/AGENTS.md:14:- **Improvement loop** — `informes/` records every session's errors and findings.
+/home/eddyr/assembler/_code-dives/_templates/AGENTS.md:27:    registers templates (parses **Layer:**/**Purpose:**) and informes
+/home/eddyr/assembler/_code-dives/_templates/AGENTS.md:53:                              informes (id, project, errors, findings)
+/home/eddyr/assembler/_code-dives/_templates/AGENTS.md:87:Every session on a bootstrapped project writes an informe into `informes/` (precept `write-informe.md`):
+/home/eddyr/assembler/_code-dives/_templates/AGENTS.md:91:shape:    informes/informe-template.md
+# exit: 0

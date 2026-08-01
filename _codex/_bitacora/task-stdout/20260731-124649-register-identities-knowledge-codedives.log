@@ -1,0 +1,22 @@
+# CMD: sh -c $'cd /home/eddyr/assembler && bun -e \'\nimport { Database } from "bun:sqlite"\nconst db = new Database(".opencode/patlib.db")\nconst kb = "**Knowledge** — the R1 knowledge domain — a corpus container holding project-local knowledge projects: rust-coding/, go-coding/, code-semantics/, hypr-docs/, mise-docs/, yazi-docs/. Each project defines itself — what it is, how it structures, and how it relates to the domain. Knowledge is a compound aggregator: it names a container, and no single action produces it. Project directories follow the domain conventions; the _templates/ folder holds the bootstrap system."\ndb.query("UPDATE identities SET title=?, body=?, source=?, modified=datetime(\\"now\\") WHERE id=\\"IDENTITY.KNOWLEDGE\\"").run("Knowledge — Domain Corpus Container", kb, "SPEC.DIRECTORY.RING.TOPOLOGY")\nconsole.log("updated knowledge")\nconst cd = "**Code Dives** — the R1 code-dives domain — a codebase exploration container holding dive projects. Each dive fetches a repository shallow into {repo}-repo/{repo}/, compiles it, and documents the findings. The _templates/ folder holds the shared toolchain — fetch, copy, logging, slugify. The _bitacora/ folder holds the project record with task-{concrete noun} subfolders. Code Dives is a compound aggregator: it names a container, and no single action produces it."\ndb.query("INSERT INTO identities (id, title, body, source, tags, created, modified) VALUES (?, ?, ?, ?, ?, datetime(\\"now\\"), datetime(\\"now\\"))").run("IDENTITY.CODE.DIVES", "Code Dives — Codebase Exploration Container", cd, "SPEC.DIRECTORY.RING.TOPOLOGY", "code-dives,domain,container,identity,exploration")\nconsole.log("inserted code-dives")\n\' && bun run .opencode/tools/semantic-embed.ts --type identities && bun run .opencode/tools/semantic-search.ts --query "knowledge domain corpus container code dives exploration" --k 4 --type identities' 
+# DATE: 2026-07-31T12:46:49-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+updated knowledge
+inserted code-dives
+embedded 1 identities
+
+1 entities embedded of type 'identities'
+RANK  SCORE    TYPE        ID
+----------------------------------------------------------------------
+1     0.7859    identities   IDENTITY.CODE.DIVES
+       Code Dives — Codebase Exploration Container
+2     0.6678    identities   IDENTITY.SKILL
+       Skill — {Action}-{Domain} Naming and Resolution
+3     0.6531    identities   IDENTITY.COGNITION
+       Cognition — Encyclopedic Domain Entity
+4     0.6471    identities   IDENTITY.KNOWLEDGE
+       Knowledge — Domain Corpus Container
+----------------------------------------------------------------------
+4 semantic matches for "knowledge domain corpus container code dives exploration" (35 indexed)
+# exit: 0

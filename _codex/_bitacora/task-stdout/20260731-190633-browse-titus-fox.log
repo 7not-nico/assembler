@@ -1,0 +1,7 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'titus\ the\ fox\'\ 45 
+# DATE: 2026-07-31T19:06:33-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=titus%2Bthe%2Bfox
+ERROR no game matches titus the fox
+# exit: 1

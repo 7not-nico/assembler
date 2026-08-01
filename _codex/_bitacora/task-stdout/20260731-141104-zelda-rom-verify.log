@@ -1,0 +1,7 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/.opencode/.playwright-mcp\ \&\&\ file\ \'Legend-of-Zelda-The---A-Link-to-the-Past-USA-.zip\'\ \&\&\ unzip\ -l\ \'Legend-of-Zelda-The---A-Link-to-the-Past-USA-.zip\' 
+# DATE: 2026-07-31T14:11:04-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+Legend-of-Zelda-The---A-Link-to-the-Past-USA-.zip: cannot open `Legend-of-Zelda-The---A-Link-to-the-Past-USA-.zip' (No such file or directory)
+unzip:  cannot find or open Legend-of-Zelda-The---A-Link-to-the-Past-USA-.zip, Legend-of-Zelda-The---A-Link-to-the-Past-USA-.zip.zip or Legend-of-Zelda-The---A-Link-to-the-Past-USA-.zip.ZIP.
+# exit: 9

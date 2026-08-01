@@ -1,0 +1,7 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/legend-of-zelda-the-a-link-to-the-past-7093/5\'\ 45 
+# DATE: 2026-07-31T14:16:35-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CHROME /home/eddyr/.cache/ms-playwright/chromium-1232/chrome-linux64/chrome
+NAV  https://romsfun.com/download/legend-of-zelda-the-a-link-to-the-past-7093/5
+LINK https://statics.romsfun.com/SNES/Legend%20of%20Zelda%2C%20The%20-%20A%20Link%20to%20the%20Past%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRJzcVBy

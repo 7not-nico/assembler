@@ -1,0 +1,21 @@
+# CMD: bash -c bash\ mgba-repo/fixture/probe-headers-test.sh\ 2\>\&1\ \|\ grep\ -vE\ \"\^GEN\|real\ ROM\|\^OK\ \ \ \ \(kirby\|mega\|tetris\|pok\|wario\)\"\;\ echo\ \"exit=\$\?\" 
+# DATE: 2026-08-01T07:59:19-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+PASS  none-32k  OK   none-32k.gb (32768 B) title="NOCART" mbc=0x00
+PASS  mbc1-64k  OK   mbc1-64k.gb (65536 B) title="MBC1CART" mbc=0x01
+PASS  mbc1-ram-bat-64k  OK   mbc1-ram-bat-64k.gb (65536 B) title="MBC1RAM" mbc=0x03
+PASS  mbc2-64k  OK   mbc2-64k.gb (65536 B) title="MBC2CART" mbc=0x05
+PASS  mbc3-rtc-1m  OK   mbc3-rtc-1m.gb (1048576 B) title="MBC3RTC" mbc=0x10
+PASS  mbc5-1m  OK   mbc5-1m.gb (1048576 B) title="MBC5CART" mbc=0x19
+PASS  mbc5-ram-bat-1m  OK   mbc5-ram-bat-1m.gb (1048576 B) title="MBC5RAM" mbc=0x1b
+PASS  mbc7-1m  OK   mbc7-1m.gb (1048576 B) title="MBC7CART" mbc=0x22
+PASS  mbc6-1m  OK   mbc6-1m.gb (1048576 B) title="MBC6CART" mbc=0x20
+PASS  mmm01-64k  OK   mmm01-64k.gb (65536 B) title="MMM01CRT" mbc=0x0b
+PASS  mbc5-rumble-1m  OK   mbc5-rumble-1m.gb (1048576 B) title="MBC5RMBL" mbc=0x1c
+PASS  huc1-64k  OK   huc1-64k.gb (65536 B) title="HUC1CART" mbc=0xff
+PASS  huc3-64k  OK   huc3-64k.gb (65536 B) title="HUC3CART" mbc=0xfe
+PASS  tama5-64k  OK   tama5-64k.gb (65536 B) title="TAMA5CRT" mbc=0xfd
+PASS  pocketcam-1m  OK   pocketcam-1m.gb (1048576 B) title="CAMCART" mbc=0xfc
+exit=0
+# exit: 0

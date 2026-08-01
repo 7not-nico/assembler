@@ -1,0 +1,15 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/super-tetris-3-146737/1\'\ 60 
+# DATE: 2026-07-31T16:41:23-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/super-tetris-3-146737/1
+LINK https://statics.romsfun.com/SNES/Super%20Tetris%203%20%28Japan%29%20%28En%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRVwdlFw
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/super-tetris-3-japan-en.zip (Super Tetris 3 (Japan) (En).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/super-tetris-3-japan-en.zip
+OK   Super (1048576 B)
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/super-tetris-3-japan-en.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/super-tetris-3-japan-en.sfc: Super NES ROM image "SUPER TETRIS 3" (Japan), LoROM, FastROM, ROM size: 1024KB, RAM size: 2KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/super-tetris-3-japan-en.sfc
+RUN   pid=283418 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

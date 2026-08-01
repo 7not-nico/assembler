@@ -1,0 +1,12 @@
+# CMD: bash -c mkdir\ -p\ mgba-repo/concept\ \&\&\ ls\ mgba-repo/\ \|\ grep\ -E\ \"concept\|study\|fixture\" 
+# DATE: 2026-08-01T06:38:13-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+concept
+concept-template.md
+fixture
+fixtures-template
+fixture-template.md
+study
+study-template.md
+# exit: 0

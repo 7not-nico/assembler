@@ -1,0 +1,8 @@
+# CMD: bash -c cmake\ -S\ mgba\ -B\ build\ -DBUILD_QT=OFF\ -DBUILD_SDL=ON\ -DCMAKE_BUILD_TYPE=Release\ -DBUILD_SUITE=ON\ 2\>\&1\ \|\ grep\ -E\ \"Test\ harness\|Test\ suite\|cmocka\|Configuring\ done\|error\" 
+# DATE: 2026-08-01T00:06:34-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo
+# --------------------
+-- 	Test harness: OFF
+-- 	Test suite: ON
+-- Configuring done (0.2s)
+# exit: 0

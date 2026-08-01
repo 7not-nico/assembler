@@ -1,0 +1,18 @@
+# CMD: bash -c sqlite3\ /home/eddyr/assembler/_codex/_templates/schema/templates.db\ \"SELECT\ id\,\ layer\,\ substr\(purpose\,1\,40\)\ FROM\ templates\ WHERE\ id\ LIKE\ \'TEMPLATE.%\'\ ORDER\ BY\ id\;\" 
+# DATE: 2026-08-01T12:21:53-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+TEMPLATE.BACKUP|backup/|Restore-point convention: source tree an
+TEMPLATE.BITACORA|bitacora/|Dive-record template: todo precedes work
+TEMPLATE.BROWSE.PLAYWRIGHT|procedure/|Browser step chain: search first, browse
+TEMPLATE.DIVE.AGENTS|agents|Scaffolds a dive's AGENTS.md: domain, st
+TEMPLATE.FIXTURE|fixture/|Atomic regression-harness template: purp
+TEMPLATE.GUIDELINE|guideline/|Layer-constitution template: taxonomy, f
+TEMPLATE.INVARIANT|invariant/|Always-true state predicate template: in
+TEMPLATE.PATTERN|pattern/|Atomic code-morphism template: structure
+TEMPLATE.PRECEPT|precept/|Declarative rule template: rule, scope, 
+TEMPLATE.PROCEDURE|procedure/|Numbered step-chain template: atomic per
+TEMPLATE.STUDY|study/|Per-concern architecture document: groun
+TEMPLATE.WRITE.REPORT|precept/|Session-report template: what was done, 
+TEMPLATE.WRITE.REPORTARE|precept/|Metrics-led report template: quantitativ
+# exit: 0

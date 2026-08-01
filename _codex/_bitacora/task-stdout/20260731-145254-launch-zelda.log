@@ -1,0 +1,8 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ pkill\ -x\ snes9x\ 2\>/dev/null\;\ bash\ scripts/launch-rom.sh\ roms/legend-of-zelda-the-a-link-to-the-past-usa.sfc 
+# DATE: 2026-07-31T14:52:54-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+roms/legend-of-zelda-the-a-link-to-the-past-usa.sfc: Super NES ROM image "THE LEGEND OF ZELDA" (USA), LoROM, ROM size: 1024KB, RAM size: 8KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x roms/legend-of-zelda-the-a-link-to-the-past-usa.sfc
+RUN   pid=233593 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

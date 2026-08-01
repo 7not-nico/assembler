@@ -1,0 +1,7 @@
+# CMD: bash -c echo\ \'run-logged\ works\'\;\ echo\ 42 
+# DATE: 2026-07-31T20:45:25-06:00
+# CWD: /home/eddyr/assembler/_trove
+# --------------------
+run-logged works
+42
+# exit: 0

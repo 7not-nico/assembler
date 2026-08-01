@@ -1,0 +1,11 @@
+# CMD: bash _scripts/acquire-paper.sh math/0506456 math invariant-theory 45 
+# DATE: 2026-07-31T21:06:37-06:00
+# CWD: /home/eddyr/assembler/_trove
+# --------------------
+FETCH https://arxiv.org/pdf/math/0506456
+SAVE /home/eddyr/assembler/_trove/.opencode/.playwright-mcp/0506456v1.pdf (0506456v1.pdf, 568868 B)
+SAVEDPATH=/home/eddyr/assembler/_trove/.opencode/.playwright-mcp/0506456v1.pdf
+OK   /home/eddyr/assembler/_trove/.opencode/.playwright-mcp/0506456v1.pdf (70 pages)
+PAPER /home/eddyr/assembler/_trove/math/invariant-theory/0506456v1.pdf
+ACQUIRED /home/eddyr/assembler/_trove/math/invariant-theory/0506456v1.pdf
+# exit: 0

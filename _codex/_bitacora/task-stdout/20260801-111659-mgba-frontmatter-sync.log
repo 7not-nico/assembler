@@ -1,0 +1,9 @@
+# CMD: bash -c $'\ncd /home/eddyr/assembler/_codex/_templates\necho "frontmatter templates: $(rg -l "^id: TEMPLATE" *.md | wc -l)"\nrg -l "^id: TEMPLATE" *.md | sort | tr "\\n" " "; echo\necho "--- sync to dive copies ---"\nfor f in $(rg -l "^id: TEMPLATE" *.md); do cp "$f" "/home/eddyr/assembler/_codex/mgba-repo/template/$f"; done\necho "dive copies with frontmatter: $(rg -l "^id: TEMPLATE" /home/eddyr/assembler/_codex/mgba-repo/template/*.md | wc -l)"\n' 
+# DATE: 2026-08-01T11:16:59-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+frontmatter templates: 15
+AGENTS.template.md backup-template.md bitacora-template.md browse-playwright-template.md dive-agents-template.md fixture-template.md guideline-template.md invariant-template.md pattern-template.md precedence-chain.md precept-template.md procedure-template.md study-template.md write-reportare-template.md write-report-template.md 
+--- sync to dive copies ---
+dive copies with frontmatter: 15
+# exit: 0

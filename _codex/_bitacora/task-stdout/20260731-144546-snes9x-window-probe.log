@@ -1,0 +1,28 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/launch-rom.sh\ roms/super-mario-world-usa.sfc\ \&\&\ sleep\ 1\ \&\&\ hyprctl\ clients\ \|\ grep\ -E\ \'class:\|size:\|floating\'\ \|\ head\ -20 
+# DATE: 2026-07-31T14:45:46-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+roms/super-mario-world-usa.sfc: Super NES ROM image "SUPER MARIOWORLD" (USA), LoROM, ROM size: 512KB, RAM size: 2KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x roms/super-mario-world-usa.sfc
+RUN   pid=230580 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+	size: 461,490
+	floating: 0
+	class: foot
+	size: 960,540
+	floating: 0
+	class: com.mitchellh.ghostty
+	size: 936,490
+	floating: 0
+	class: foot
+	size: 936,490
+	floating: 0
+	class: brave-browser
+	size: 936,490
+	floating: 0
+	class: chromium-browser
+	size: 960,540
+	floating: 0
+	class: foot
+	size: 960,540
+	floating: 0
+# exit: 0

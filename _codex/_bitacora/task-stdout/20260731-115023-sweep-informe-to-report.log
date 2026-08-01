@@ -1,0 +1,12 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_knowledge/_templates\ \&\&\ sed\ -i\ \'s/write-informe-template.md/write-report-template.md/g\;\ s/write-informe.md/write-report.md/g\'\ scaffold-knowledge.sh\ \&\&\ sed\ -i\ \'s/informes/reports/g\;\ s/informe/report/g\'\ script/push-registry.rb\ script/semantic-embed.ts\ schema/templates.sql\ \&\&\ grep\ -rn\ -i\ \'informe\'\ scaffold-knowledge.sh\ script/\ schema/\ \|\|\ echo\ CLEAN 
+# DATE: 2026-07-31T11:50:23-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+script/stress.ts:23:  "session report informes", "bootstrap new knowledge project", "copy skills to docs",
+script/stress.ts:28:  "scaffold knowledge chain", "write informe always", "naming conventions rules",
+script/bench.ts:21:  ["write a session report with errors and findings", ["write-informe-template.md"]],
+script/push-registry.rb:100:# Informes: session reports
+grep: schema/templates-vector.db: binary file matches
+grep: schema/templates.db: binary file matches
+schema/templates.sql:23:-- Informes: session reports (improvement loop)
+# exit: 0

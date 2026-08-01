@@ -1,0 +1,7 @@
+# CMD: sh -c cd\ /home/eddyr/assembler\ \&\&\ bun\ -e\ \'import\ \{Database\}\ from\ \"bun:sqlite\"\;\ const\ db=new\ Database\(\".opencode/patlib.db\"\)\;\ console.log\(db.query\(\"SELECT\ id\,title\ FROM\ specifications\ WHERE\ id=\?\"\).get\(\"SPEC.NAMING.WORD.CLASS\"\)\)\;\ console.log\(\"count:\"\,\ db.query\(\"SELECT\ count\(\*\)\ c\ FROM\ specifications\"\).get\(\).c\)\' 
+# DATE: 2026-07-31T11:47:42-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+null
+count: 21
+# exit: 0

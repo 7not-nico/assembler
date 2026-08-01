@@ -1,0 +1,14 @@
+# CMD: sh -c mkdir\ -p\ /home/eddyr/assembler/_findings/_bitacora/task-audit\ /home/eddyr/assembler/_findings/_bitacora/task-plan\ /home/eddyr/assembler/_findings/_bitacora/task-reference\ /home/eddyr/assembler/_findings/_bitacora/task-report\ /home/eddyr/assembler/_findings/_bitacora/task-survey\ /home/eddyr/assembler/_findings/_bitacora/task-todo\ \&\&\ ls\ -la\ /home/eddyr/assembler/_findings/_bitacora/ 
+# DATE: 2026-07-31T12:42:47-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+total 4
+drwxr-xr-x 1 eddyr eddyr  128 Jul 31 12:42 .
+drwxr-xr-x 1 eddyr eddyr 2094 Jul 31 12:42 ..
+drwxr-xr-x 1 eddyr eddyr    0 Jul 31 12:42 task-audit
+drwxr-xr-x 1 eddyr eddyr    0 Jul 31 12:42 task-plan
+drwxr-xr-x 1 eddyr eddyr    0 Jul 31 12:42 task-reference
+drwxr-xr-x 1 eddyr eddyr    0 Jul 31 12:42 task-report
+drwxr-xr-x 1 eddyr eddyr    0 Jul 31 12:42 task-survey
+drwxr-xr-x 1 eddyr eddyr    0 Jul 31 12:42 task-todo
+# exit: 0

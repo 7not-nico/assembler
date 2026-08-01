@@ -1,0 +1,8 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ mkdir\ -p\ backup\ \&\&\ rsync\ -a\ --exclude\ \'\*.o\'\ --exclude\ \'snes9x\'\ --exclude\ \'config.log\'\ --exclude\ \'config.status\'\ --exclude\ \'config.cache\'\ snes9x/\ backup/snes9x-src/\ \&\&\ cp\ snes9x/unix/snes9x\ backup/snes9x-binary-20260731-150334\ \&\&\ du\ -sh\ backup/\ \&\&\ ls\ backup/ 
+# DATE: 2026-07-31T15:03:34-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+34M	backup/
+snes9x-binary-20260731-150334
+snes9x-src
+# exit: 0

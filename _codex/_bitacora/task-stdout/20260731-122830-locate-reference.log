@@ -1,0 +1,8 @@
+# CMD: sh -c find\ /home/eddyr/assembler\ -name\ \'query-patlib.md\'\ -not\ -path\ \'\*/node_modules/\*\'\ -not\ -path\ \'\*/.git/\*\'\ 2\>/dev/null\;\ find\ /home/eddyr/assembler\ -maxdepth\ 3\ -name\ \'entity-schema.md\'\ 2\>/dev/null 
+# DATE: 2026-07-31T12:28:30-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+/home/eddyr/assembler/.opencode/_bitacora/reference/query-patlib.md
+/home/eddyr/assembler/_knowledge/rust-coding/precept/query-patlib.md
+/home/eddyr/assembler/_knowledge/rust-coding/procedure/query-patlib.md
+# exit: 0

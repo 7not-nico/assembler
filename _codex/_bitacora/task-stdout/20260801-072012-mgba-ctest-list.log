@@ -1,0 +1,7 @@
+# CMD: bash -c ctest\ --test-dir\ build\ -N\ 2\>\&1\ \|\ grep\ \"Test\ #\"\ \|\ sed\ \"s/.\*Test\ #//\;\ s/:.\*//\"\ \|\ tr\ \"\\n\"\ \"\ \"\;\ echo\;\ echo\ \"count:\ \$\(ctest\ --test-dir\ build\ -N\ 2\>\&1\ \|\ grep\ -c\ \"Test\ #\"\)\" 
+# DATE: 2026-08-01T07:20:12-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo
+# --------------------
+10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 
+count: 22
+# exit: 0

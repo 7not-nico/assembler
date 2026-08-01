@@ -1,0 +1,8 @@
+# CMD: bash /home/eddyr/assembler/_codex/snes9x-repo/scripts/launch-rom.sh /home/eddyr/assembler/_codex/snes9x-repo/roms/pocky-rocky-usa.sfc 
+# DATE: 2026-07-31T21:33:33-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+/home/eddyr/assembler/_codex/snes9x-repo/roms/pocky-rocky-usa.sfc: Super NES ROM image "POCKY ROCKY" (USA), LoROM, ROM size: 1024KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/pocky-rocky-usa.sfc
+RUN   pid=14300 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

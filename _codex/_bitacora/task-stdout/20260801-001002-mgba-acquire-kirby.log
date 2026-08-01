@@ -1,0 +1,16 @@
+# CMD: bash -c bash\ mgba-repo/scripts/acquire-rom.sh\ \"Kirby\'s\ Dream\ Land\"\ game-boy\ 90\ 2\>\&1\ \|\ tail\ -20 
+# DATE: 2026-08-01T00:10:02-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+PICK https://romsfun.com/download/kirbys-dream-land-2-49415/1
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/kirbys-dream-land-2-49415/1
+LINK https://statics.romsfun.com/GameBoy/Kirby's%20Dream%20Land%202%20(USA,%20Europe)%20(SGB%20Enhanced).zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRd5dllx
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/kirby-s-dream-land-2-usa-europe-sgb-enhanced.zip (Kirby's Dream Land 2 (USA, Europe) (SGB Enhanced).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/kirby-s-dream-land-2-usa-europe-sgb-enhanced.zip
+OK   Kirby's Dream Land 2 (USA, Europe) (SGB Enhanced).gb (524288 B) title="KIRBY2" mbc=0x03
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/kirby-s-dream-land-2-usa-europe-sgb-enhanced.gb
+/home/eddyr/assembler/_codex/mgba-repo/roms/kirby-s-dream-land-2-usa-europe-sgb-enhanced.gb: Game Boy ROM image: "KIRBY2" (Rev.00) [SGB] [MBC1+RAM+BATT], ROM: 4Mbit, RAM: 64Kbit
+LAUNCH /home/eddyr/assembler/_codex/mgba-repo/build/sdl/mgba /home/eddyr/assembler/_codex/mgba-repo/roms/kirby-s-dream-land-2-usa-europe-sgb-enhanced.gb
+RUN   pid=23003 cpu=alive window=DISPLAY:0 log=/tmp/opencode/mgba-launch.log
+# exit: 0

@@ -1,0 +1,16 @@
+# CMD: bash -c bash\ mgba-repo/scripts/acquire-rom.sh\ \"Pokemon\ Crystal\"\ game-boy-color\ 90\ 2\>\&1\ \|\ tail\ -20 
+# DATE: 2026-08-01T06:24:56-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+PICK https://romsfun.com/download/pokemon-peridot-76414/1
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/pokemon-peridot-76414/1
+LINK https://sto.romsfast.com/Mods/GBC/Pokemon%20(Peridot%20v2.2.3).zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRhxclB9
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/pokemon-peridot-v2-2-3.zip (Pokemon (Peridot v2.2.3).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/pokemon-peridot-v2-2-3.zip
+OK   Pokemon (Peridot v2.2.3)/Pokemon (Peridot v2.2.3).gbc (2097152 B) title="PM_PERIDOTBYTE" mbc=0x10
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/pokemon-peridot-v2-2-3.gbc
+/home/eddyr/assembler/_codex/mgba-repo/roms/pokemon-peridot-v2-2-3.gbc: Game Boy Color ROM image: "PM_PERIDOT" (Rev.00) [CGB ONLY] [MBC3+TIMER+RAM+BATT], ROM: 16Mbit, RAM: 256Kbit
+LAUNCH /home/eddyr/assembler/_codex/mgba-repo/build/sdl/mgba /home/eddyr/assembler/_codex/mgba-repo/roms/pokemon-peridot-v2-2-3.gbc
+RUN   pid=6642 cpu=alive window=DISPLAY:0 log=/tmp/opencode/mgba-launch.log
+# exit: 0

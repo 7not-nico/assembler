@@ -1,0 +1,14 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ https://romsfun.com/download/pokemon-prism-h-53026/1\ 90\ 2\>\&1 
+# DATE: 2026-08-01T13:29:31-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/pokemon-prism-h-53026/1
+LINK https://sto.romsfast.com/Mods/GBC/Pokemon%20Prism%20v0.95%20build%20254%20(Hotfix%205).zip?token=cHxfalBlRlhND3BzWDhQZ1BUQhB3dV51
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/pokemon-prism-v0-95-build-254-hotfix-5.zip (Pokemon Prism v0.95 build 254 (Hotfix 5).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/pokemon-prism-v0-95-build-254-hotfix-5.zip
+OK   Pokemon Prism v0.95 build 254 (Hotfix 5).gbc (2097152 B) title="PM_PRISMPRSM" mbc=0x10
+bash: /home/eddyr/assembler/_codex/mgba-repo/scripts/../../_templates/slugify.sh: No such file or directory
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/
+ERROR prepare failed — no ROM produced
+# exit: 1

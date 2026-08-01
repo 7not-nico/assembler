@@ -1,0 +1,80 @@
+# CMD: ls -la /home/eddyr/assembler 
+# DATE: 2026-07-31T12:26:34-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+total 38772
+drwxr-xr-x 1 eddyr eddyr    2930 Jul 31 12:19 .
+drwx------ 1 eddyr eddyr    2630 Jul 31 10:33 ..
+-rw-r--r-- 1 eddyr eddyr  606560 Jul 22 12:00 1411.7839-tracing-jit-abst-interp.pdf
+-rw-r--r-- 1 eddyr eddyr  775615 Jul 21 16:01 1610.08476-Gradual_Typing_Open_World.pdf
+-rw-r--r-- 1 eddyr eddyr 1098006 Jul 21 16:01 1811.02440-Gradual_Type_Theory.pdf
+-rw-r--r-- 1 eddyr eddyr  686949 Jul 22 12:00 2106.12496-meta-tracing-jit.pdf
+-rw-r--r-- 1 eddyr eddyr 1830380 Jul 21 16:01 2107.10164-JavaScript_Refactoring_ES6.pdf
+-rw-r--r-- 1 eddyr eddyr 1369074 Jul 21 16:01 2109.11397-Luau_Type_System.pdf
+-rw-r--r-- 1 eddyr eddyr 1189583 Jul 21 16:01 2307.09342-SAT_Encodings.pdf
+-rw-r--r-- 1 eddyr eddyr 1578079 Jul 22 12:00 2404.12621-wasm-runtime-survey.pdf
+-rw-r--r-- 1 eddyr eddyr 2419409 Jul 22 12:00 2411.11469-deegen-vm-generator.pdf
+-rw-r--r-- 1 eddyr eddyr  691140 Jul 21 16:01 2502.18454-SLM_Refactoring_Bugs.pdf
+-rw-r--r-- 1 eddyr eddyr  983622 Jul 22 12:00 2502.20543-druid-baseline-jit.pdf
+-rw-r--r-- 1 eddyr eddyr 6090701 Jul 21 16:01 2506.19481-Haskell_Refactoring_LLM.pdf
+-rw-r--r-- 1 eddyr eddyr  300358 Jul 22 12:00 2512.23768-vgc-python-gc.pdf
+-rw-r--r-- 1 eddyr eddyr 2468766 Jul 21 16:01 2605.02096-Foundation_Models_Refactoring.pdf
+-rw-r--r-- 1 eddyr eddyr  720238 Jul 21 16:01 2605.15001-Refactoring_Propositions.pdf
+drwxr-xr-x 1 eddyr eddyr     178 Jul 27 08:54 a01-harness-llm
+-rw-r--r-- 1 eddyr eddyr 1629916 Jul 28 14:27 ace_reason_nemotron.pdf
+-rw-r--r-- 1 eddyr eddyr   44360 Jul 22 02:07 acm-backus-snapshot.yml
+-rw-r--r-- 1 eddyr eddyr    6789 Jul 31 12:24 AGENTS.md
+-rw-r--r-- 1 eddyr eddyr   34741 Jul 21 16:39 arxiv-api-docs
+-rw-r--r-- 1 eddyr eddyr  122923 Jul 21 16:39 arxiv-api-user-manual
+-rw-r--r-- 1 eddyr eddyr  119509 Jul 21 20:28 arxiv-clean-code-papers.yml
+-rw-r--r-- 1 eddyr eddyr   23657 Jul 21 20:28 arxiv-clean-code-search.yml
+-rw-r--r-- 1 eddyr eddyr    2991 Jul 28 14:44 arxiv_page_snapshot.json
+drwxr-xr-x 1 eddyr eddyr     180 Jul 28 14:28 arxiv_pdfs
+-rw-r--r-- 1 eddyr eddyr   46693 Jul 22 14:56 arxiv-snapshot.txt
+-rw-r--r-- 1 eddyr eddyr    1279 Jul  5 16:55 assembler-architecture.md
+drwxr-xr-x 1 eddyr eddyr     110 Jul 27 06:50 _assets
+-rw-r--r-- 1 eddyr eddyr    9487 Jul 22 16:09 cat-carousel.html
+-rw-r--r-- 1 eddyr eddyr    1909 Jul 22 15:49 cat-collage.html
+-rw-r--r-- 1 eddyr eddyr    6722 Jul 22 15:58 cat-fight.html
+-rw-r--r-- 1 eddyr eddyr     538 Jul 22 15:48 cat.html
+-rw-r--r-- 1 eddyr eddyr  143949 Jul 21 16:01 cmp-lg9506002-Constraints_Type_Diagnosis.pdf
+drwxr-xr-x 1 eddyr eddyr     614 Jul 31 09:27 _code-dives
+-rw-r--r-- 1 eddyr eddyr  332312 Jul 22 17:10 coffee-wikipedia.png
+drwxr-xr-x 1 eddyr eddyr     210 Jul 25 09:41 common
+-rw-r--r-- 1 eddyr eddyr       0 Jul 20 12:16 darkestdungeon-code.db
+drwxr-xr-x 1 eddyr eddyr    1590 Jul 31 06:47 _findings
+-rw-r--r-- 1 eddyr eddyr      51 Jul  4 13:07 .gitignore
+drwxr-xr-x 1 eddyr eddyr     258 Jul 30 22:54 harness_papers
+drwxr-xr-x 1 eddyr eddyr     136 Jul 22 18:46 .ipynb_checkpoints
+drwxr-xr-x 1 eddyr eddyr      60 Jul 22 16:19 kirby-shooter
+drwxr-xr-x 1 eddyr eddyr     218 Jul 31 00:50 _knowledge
+-rw-r--r-- 1 eddyr eddyr   28672 Jul 23 20:40 mcp-search.db
+-rw-r--r-- 1 eddyr eddyr 4737494 Jul 28 14:27 nemotron3_nano_omni.pdf
+-rw-r--r-- 1 eddyr eddyr 1035079 Jul 28 14:27 nemotron3_nano.pdf
+-rw-r--r-- 1 eddyr eddyr 1828212 Jul 28 14:27 nemotron_nano_2.pdf
+-rw-r--r-- 1 eddyr eddyr 1278546 Jul 28 14:27 nemotron_nano_v2_vision.pdf
+drwxr-xr-x 1 eddyr eddyr     218 Jul 13 15:02 one-timers
+drwxr-xr-x 1 eddyr eddyr     570 Jul 31 12:21 .opencode
+-rw-r--r-- 1 eddyr eddyr    2352 Jul 29 06:50 opencode.json
+-rw-r--r-- 1 eddyr eddyr   32768 Jul 30 22:22 patlib.db-shm
+-rw-r--r-- 1 eddyr eddyr       0 Jul 30 22:10 patlib.db-wal
+-rw-r--r-- 1 eddyr eddyr    4219 Jul 21 06:52 platform-bun-index
+drwxr-xr-x 1 eddyr eddyr   62912 Jul 31 10:32 .playwright-mcp
+-rw-r--r-- 1 eddyr eddyr   19987 Jul 22 16:02 pokemon-fight.html
+-rw-r--r-- 1 eddyr eddyr   14467 Jul 22 16:04 pokemon-park.html
+drwxr-xr-x 1 eddyr eddyr       0 Jul 29 16:55 _py
+drwxr-xr-x 1 eddyr eddyr     182 Jul 11 15:44 pythontts-cli
+drwxr-xr-x 1 eddyr eddyr      62 Jul 29 08:20 reference
+drwxr-xr-x 1 eddyr eddyr      10 Jul 24 15:07 reports
+drwxr-xr-x 1 eddyr eddyr      72 Jul 27 19:25 sandbox
+-rw-r--r-- 1 eddyr eddyr  162260 Jul 27 04:49 search-results.json
+-rw-r--r-- 1 eddyr eddyr    1438 Jul 17 18:54 SESSION_PROGRESS.md
+drwxr-xr-x 1 eddyr eddyr      58 Jul 30 21:12 shenanigan
+drwxr-xr-x 1 eddyr eddyr     476 Jul 23 12:22 stud
+drwxr-xr-x 1 eddyr eddyr     200 Jul 21 21:04 study-sessions
+drwxr-xr-x 1 eddyr eddyr     368 Jul 27 18:41 todo
+-rw-r--r-- 1 eddyr eddyr     507 Jul 23 06:51 TODO.md
+-rw-r--r-- 1 eddyr eddyr    9673 Jul 21 20:56 vector-search-scoping-mtime-reindex-status.txt
+-rw-r--r-- 1 eddyr eddyr      97 Jul 22 17:11 view-coffee.html
+-rw-r--r-- 1 eddyr eddyr 5074510 Jul 24 09:00 Watters： What the HECK is going on？! [tfUx-acqlgk].webm
+# exit: 0

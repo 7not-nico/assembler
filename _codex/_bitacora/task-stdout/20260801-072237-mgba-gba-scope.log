@@ -1,0 +1,63 @@
+# CMD: bash -c ls\ mgba-repo/mgba/src/gba/\ mgba-repo/mgba/src/arm/\;\ echo\ ---\;\ wc\ -l\ mgba-repo/mgba/src/gba/\*.c\ mgba-repo/mgba/src/gba/\*.h\ mgba-repo/mgba/src/arm/\*.c\ mgba-repo/mgba/src/arm/\*.h\ 2\>/dev/null\ \|\ sort\ -rn\ \|\ head\ -18 
+# DATE: 2026-08-01T07:22:37-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+mgba-repo/mgba/src/arm/:
+arm.c
+CMakeLists.txt
+debugger
+decoder-arm.c
+decoder.c
+decoder-thumb.c
+isa-arm.c
+isa-thumb.c
+
+mgba-repo/mgba/src/gba/:
+audio.c
+bios.c
+cart
+cheats
+cheats.c
+CMakeLists.txt
+core.c
+debugger
+dma.c
+extra
+gba.c
+hle-bios.c
+hle-bios.h
+hle-bios.make
+hle-bios.s
+input.c
+io.c
+memory.c
+overrides.c
+renderers
+savedata.c
+serialize.c
+sharkport.c
+sio
+sio.c
+test
+timer.c
+video.c
+---
+ 14392 total
+  1969 mgba-repo/mgba/src/gba/memory.c
+  1849 mgba-repo/mgba/src/gba/core.c
+  1094 mgba-repo/mgba/src/gba/gba.c
+  1063 mgba-repo/mgba/src/gba/io.c
+   978 mgba-repo/mgba/src/gba/bios.c
+   800 mgba-repo/mgba/src/gba/savedata.c
+   784 mgba-repo/mgba/src/arm/isa-arm.c
+   601 mgba-repo/mgba/src/arm/decoder.c
+   556 mgba-repo/mgba/src/gba/audio.c
+   504 mgba-repo/mgba/src/gba/video.c
+   490 mgba-repo/mgba/src/gba/sio.c
+   466 mgba-repo/mgba/src/arm/decoder-arm.c
+   446 mgba-repo/mgba/src/gba/overrides.c
+   445 mgba-repo/mgba/src/gba/dma.c
+   417 mgba-repo/mgba/src/arm/isa-thumb.c
+   389 mgba-repo/mgba/src/gba/sharkport.c
+   386 mgba-repo/mgba/src/gba/cheats.c
+# exit: 0

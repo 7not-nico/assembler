@@ -1,0 +1,8 @@
+# CMD: bash -c sqlite3\ /home/eddyr/assembler/_codex/_templates/schema/templates.db\ \"SELECT\ id\,\ layer\,\ substr\(purpose\,1\,40\)\ FROM\ templates\ WHERE\ id\ LIKE\ \\\"TEMPLATE.%\\\"\ ORDER\ BY\ id\;\" 
+# DATE: 2026-08-01T12:21:37-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+Error: in prepare, no such column: "TEMPLATE.%" - should this be a string literal in single-quotes?
+  substr(purpose,1,40) FROM templates WHERE id LIKE "TEMPLATE.%" ORDER BY id;
+                                      error here ---^
+# exit: 1

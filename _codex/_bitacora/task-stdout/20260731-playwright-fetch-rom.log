@@ -1,0 +1,9 @@
+realpath: /home/eddyr/assembler/_code-dives/snes9x-repo/roms/super-mario-world.sfc: No such file or directory
+CHROME /home/eddyr/.cache/ms-playwright/chromium-1232/chrome-linux64/chrome
+NAV  https://www.romsgames.net/super-nintendo-rom-super-mario-world/
+BTN  mediaId=60107
+WAIT reCAPTCHA gate — solve the challenge in the browser window
+ERROR page.waitForEvent: Timeout 600000ms exceeded while waiting for event "download"
+=========================== logs ===========================
+waiting for event "download"
+============================================================

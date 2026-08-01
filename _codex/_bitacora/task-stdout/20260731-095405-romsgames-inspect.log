@@ -1,0 +1,6 @@
+# CMD: curl -sL https://www.romsgames.net/super-nintendo-rom-super-mario-world/ -o /tmp/opencode/roms-page.html -w %\{http_code\}\ %\{size_download\}\\n 
+# DATE: 2026-07-31T09:54:05-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+200 40230
+# exit: 0

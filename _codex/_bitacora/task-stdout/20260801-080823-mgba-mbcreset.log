@@ -1,0 +1,47 @@
+# CMD: bash -c grep\ -n\ \"GBMBCReset\\\|GBMemoryReset\\\|GBReset\"\ /home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/mbc.c\ /home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/memory.c\ /home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/gb.c\ \|\ head\ -8\;\ echo\ ---\;\ sed\ -n\ \"/void\ GBMBCReset/\,/\^\}/p\"\ /home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/mbc.c 
+# DATE: 2026-08-01T08:08:23-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/mbc.c:574:void GBMBCReset(struct GB* gb) {
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/memory.c:179:void GBMemoryReset(struct GB* gb) {
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/memory.c:234:	GBMBCReset(gb);
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/gb.c:230:	GBMBCReset(gb);
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/gb.c:249:	GBMBCReset(gb);
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/gb.c:562:	irqh->reset = GBReset;
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/gb.c:630:void GBReset(struct SM83Core* cpu) {
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/gb.c:659:	GBMemoryReset(gb);
+---
+void GBMBCReset(struct GB* gb) {
+	gb->memory.currentBank0 = 0;
+	gb->memory.romBank = &gb->memory.rom[GB_SIZE_CART_BANK0];
+	gb->memory.cartBus = 0xFF;
+	gb->memory.cartBusPc = 0;
+	gb->memory.cartBusDecay = 1;
+	gb->memory.lastRumble = 0;
+
+	memset(&gb->memory.mbcState, 0, sizeof(gb->memory.mbcState));
+	GBMBCInit(gb);
+	switch (gb->memory.mbcType) {
+	case GB_MBC1:
+		gb->memory.mbcState.mbc1.mode = 0;
+		gb->memory.mbcState.mbc1.bankLo = 1;
+		break;
+	case GB_MBC6:
+		GBMBCSwitchHalfBank(gb, 0, 2);
+		GBMBCSwitchHalfBank(gb, 1, 3);
+		GBMBCSwitchSramHalfBank(gb, 0, 0);
+		GBMBCSwitchSramHalfBank(gb, 0, 1);
+		break;
+	case GB_MMM01:
+		GBMBCSwitchBank0(gb, gb->memory.romSize / GB_SIZE_CART_BANK0 - 2);
+		GBMBCSwitchBank(gb, gb->memory.romSize / GB_SIZE_CART_BANK0 - 1);
+		break;
+	case GB_UNL_SINTAX:
+		gb->memory.mbcState.sintax.mode = 0xF;
+		break;
+	default:
+		break;
+	}
+	gb->memory.sramBank = gb->memory.sram;
+}
+# exit: 0

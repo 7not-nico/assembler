@@ -1,0 +1,20 @@
+# CMD: sh -c grep\ -n\ -B2\ -A12\ \'download-form\'\ /tmp/opencode/roms-page.html\ \|\ head\ -60 
+# DATE: 2026-07-31T09:55:19-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+233-    </div>
+234-  </div>
+235:  <form id="download-form" method="post" action="/super-nintendo-rom-super-mario-world/">
+236-    <input type="hidden" id="media-id" name="mediaId">
+237-    <input type="hidden" id="media-attach" name="attach" value="nothing">
+238-    <div id="recaptcha" class="g-recaptcha" data-sitekey="6LeN2WkpAAAAAL0KgW1d-dPYSQexkzKXMayQUyRh" data-callback="downloadFormSubmit" data-size="invisible"></div>
+239-  </form>
+240-<div class="mx-auto max-w-screen-2xl px-6 mt-4">
+241-  <h3 class="my-6 md:my-8 text-xl font-bold text-slate-500 dark:text-white text-center">
+242-    Popular Super Nintendo Games
+243-  </h3>
+244-  <div class="grid gap-6 lg:gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-center">
+245-      <a href="/super-nintendo-rom-super-mario-world/" class="relative p-2 md:p-4 pb-4 h-fit rounded-mxl md:rounded-xl shadow-lg md:hover:shadow-lift bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-800 md:hover:scale-105 md:hover:translate-y-[-8px] transform transition-all duration-300">
+246-        <img src="//cache.downloadroms.io/static/ed62123ca636b0969a3c3351f78cb1abccc648a0/super-mario-world.jpg" class="mb-3 rounded-lg relative w-full" alt="Super Mario World">
+247-        <div class="ml-2 text-sm font-light leading-tight text-gray-900 dark:text-main">
+# exit: 0

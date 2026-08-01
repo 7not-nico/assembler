@@ -1,0 +1,21 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ actraiser\ 45 
+# DATE: 2026-07-31T16:54:30-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=actraiser
+GAME https://romsfun.com/roms/super-nintendo/act-raiser.html | ActRaiser
+GAME https://romsfun.com/roms/super-nintendo/act-raiser-2.html | ActRaiser 2
+OPEN https://romsfun.com/roms/super-nintendo/act-raiser.html
+DL https://romsfun.com/download/act-raiser-8349
+VARIANTS:
+1 https://romsfun.com/download/act-raiser-8349/1 | ActRaiser (Europe)
+2 https://romsfun.com/download/act-raiser-8349/2 | ActRaiser (France)
+3 https://romsfun.com/download/act-raiser-8349/3 | ActRaiser (Germany)
+4 https://romsfun.com/download/act-raiser-8349/4 | ActRaiser (USA) (Arcade)
+5 https://romsfun.com/download/act-raiser-8349/5 | ActRaiser (USA)
+6 https://romsfun.com/download/act-raiser-8349/6 | Actraiser (Japan)
+7 https://romsfun.com/download/act-raiser-8349/7 | Actraiser (Japan) (T-En by Aeon Genesis v1.00)
+8 https://romsfun.com/download/act-raiser-8349/8 | Actraiser (Japan) (T-En by Aeon Genesis v1.00) (FastROM hack by Kandowontu v1.1)
+9 https://romsfun.com/download/act-raiser-8349/9 | ActRaiser
+10 https://romsfun.com/download/act-raiser-8349/10 | ActRaiser (USA)
+# exit: 0

@@ -1,0 +1,7 @@
+# CMD: bash -c gcc\ -o\ mbc-banking-test\ mbc-banking-test.c\ -I\ ../../mgba/include\ -L\ ../build\ -lmgba\ -Wl\,-rpath\,../build\ 2\>\&1\ \&\&\ ./mbc-banking-test\;\ echo\ \"exit=\$\?\" 
+# DATE: 2026-08-01T06:59:25-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo/fixture
+# --------------------
+bash: line 1: 26709 Segmentation fault         (core dumped) ./mbc-banking-test
+exit=139
+# exit: 0

@@ -1,0 +1,4 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ pkill\ -f\ \'snes9x.\*sfc\'\ 2\>/dev/null\;\ sleep\ 1\;\ bash\ scripts/launch-rom.sh\ roms/smw2-2-complete.sfc\;\ echo\ \'---\ script\ exited\,\ emulator\ check:\'\;\ pgrep\ -af\ \'snes9x.\*sfc\'\ \|\ head\ -3 
+# DATE: 2026-07-31T14:38:57-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------

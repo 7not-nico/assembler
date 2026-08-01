@@ -1,0 +1,15 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/keeper-144651/1\'\ 60 
+# DATE: 2026-07-31T17:40:55-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/keeper-144651/1
+LINK https://statics.romsfun.com/SNES/Keeper%20%28Japan%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRV1fFxy
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/keeper-japan.zip (Keeper (Japan).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/keeper-japan.zip
+OK   Keeper (Japan).sfc (524288 B) title="v"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/keeper-japan.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/keeper-japan.sfc: Super NES ROM image "KEEPER" (Japan), LoROM, ROM size: 512KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/keeper-japan.sfc
+RUN   pid=313251 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

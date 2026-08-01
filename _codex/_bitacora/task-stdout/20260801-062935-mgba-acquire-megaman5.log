@@ -1,0 +1,16 @@
+# CMD: bash -c bash\ mgba-repo/scripts/acquire-rom.sh\ \"Mega\ Man\ V\"\ game-boy\ 90\ 2\>\&1\ \|\ tail\ -20 
+# DATE: 2026-08-01T06:29:35-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+PICK https://romsfun.com/download/mega-man-world-5-dx-109876/1
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/mega-man-world-5-dx-109876/1
+LINK https://sto.romsfast.com/Mods/GB/Mega%20Man%20World%205%20DX%20(v1.6.1)%5BSwitch%20Buster%20DX%20v2.0.1%5D.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRhxfV5z
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/mega-man-world-5-dx-v1-6-1-switch-buster-dx-v2-0-1.zip (Mega Man World 5 DX (v1.6.1)[Switch Buster DX v2.0.1].zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/mega-man-world-5-dx-v1-6-1-switch-buster-dx-v2-0-1.zip
+OK   Mega Man World 5 DX (v1.6.1)[Switch Buster DX v2.0.1]/Mega Man World 5 DX (v1.6.1)[Switch Buster DX v2.0.1].gb (1048576 B) title="MEGAMAN5 DX" mbc=0x19
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/mega-man-world-5-dx-v1-6-1-switch-buster-dx-v2-0-1.gb
+/home/eddyr/assembler/_codex/mgba-repo/roms/mega-man-world-5-dx-v1-6-1-switch-buster-dx-v2-0-1.gb: Game Boy Color ROM image: "MEGAMAN5 DX" (Rev.00) [SGB+CGB] [MBC5], ROM: 8Mbit
+LAUNCH /home/eddyr/assembler/_codex/mgba-repo/build/sdl/mgba /home/eddyr/assembler/_codex/mgba-repo/roms/mega-man-world-5-dx-v1-6-1-switch-buster-dx-v2-0-1.gb
+RUN   pid=8764 cpu=alive window=DISPLAY:0 log=/tmp/opencode/mgba-launch.log
+# exit: 0

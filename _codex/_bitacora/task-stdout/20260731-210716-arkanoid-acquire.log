@@ -1,0 +1,15 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/arkanoid-doh-it-again-143284/2\'\ 90 
+# DATE: 2026-07-31T21:07:16-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/arkanoid-doh-it-again-143284/2
+LINK https://statics.romsfun.com/SNES/Arkanoid%20-%20Doh%20It%20Again%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRR2dlpy
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/arkanoid-doh-it-again-usa.zip (Arkanoid - Doh It Again (USA).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/arkanoid-doh-it-again-usa.zip
+OK   Arkanoid - Doh It Again (USA).sfc (524288 B) title="ARKANOID DOH IT AGAIN"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/arkanoid-doh-it-again-usa.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/arkanoid-doh-it-again-usa.sfc: Super NES ROM image "ARKANOID DOH IT AGAIN" (USA), LoROM, FastROM, ROM size: 512KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/arkanoid-doh-it-again-usa.sfc
+RUN   pid=437734 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

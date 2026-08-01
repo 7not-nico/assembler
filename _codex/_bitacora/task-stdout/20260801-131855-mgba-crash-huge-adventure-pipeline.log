@@ -1,0 +1,14 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ https://romsfun.com/download/crash-bandicoot-the-huge-adventure-29963/1\ 90\ 2\>\&1 
+# DATE: 2026-08-01T13:18:55-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/crash-bandicoot-the-huge-adventure-29963/1
+LINK https://statics.romsfun.com/GameBoyAdvance/Crash%20Bandicoot%20-%20The%20Huge%20Adventure%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQhB0cVpx
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/crash-bandicoot-the-huge-adventure-usa.zip (Crash Bandicoot - The Huge Adventure (USA).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/crash-bandicoot-the-huge-adventure-usa.zip
+OK   Crash Bandicoot - The Huge Adventure (USA).gba (8388608 B) title="CRASH"
+bash: /home/eddyr/assembler/_codex/mgba-repo/scripts/../../_templates/slugify.sh: No such file or directory
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/
+ERROR prepare failed — no ROM produced
+# exit: 1

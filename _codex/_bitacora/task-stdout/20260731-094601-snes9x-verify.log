@@ -1,0 +1,6 @@
+# CMD: ls -la snes9x 
+# DATE: 2026-07-31T09:46:01-06:00
+# CWD: /home/eddyr/assembler/_code-dives/snes9x-repo/snes9x/unix
+# --------------------
+-rwxr-xr-x 1 eddyr eddyr 2746376 Jul 31 09:41 snes9x
+# exit: 0

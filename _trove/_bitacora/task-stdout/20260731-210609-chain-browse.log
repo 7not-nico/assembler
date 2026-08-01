@@ -1,0 +1,8 @@
+# CMD: bash _scripts/browse-arxiv.sh figure\ 8\ knot\ quantum\ invariants 45 
+# DATE: 2026-07-31T21:06:09-06:00
+# CWD: /home/eddyr/assembler/_trove
+# --------------------
+SEARCH https://arxiv.org/search/?query=figure%2B8%2Bknot%2Bquantum%2Binvariants&searchtype=all
+PAPER https://arxiv.org/abs/2007.09311 | arXiv:2007.09311 | 2007.09311
+PAPER https://arxiv.org/abs/math/0506456 | arXiv:math/0506456 | math/0506456
+# exit: 0

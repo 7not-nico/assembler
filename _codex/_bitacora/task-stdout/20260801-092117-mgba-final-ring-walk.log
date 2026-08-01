@@ -1,0 +1,11 @@
+# CMD: bash -c $'\ncd /home/eddyr/assembler/_codex\necho "ring 0: invariant $(ls mgba-repo/invariant/ | wc -l) | scripts $(ls mgba-repo/scripts/ | wc -l) bash-n $(for s in mgba-repo/scripts/*.sh; do bash -n $s || echo BAD; done | wc -l)"\necho "ring 1: todo $(ls _bitacora/task-todo/ | wc -l) report $(ls _bitacora/task-report/ | wc -l) | precept $(ls mgba-repo/precept/ | wc -l)"\necho "ring 2: backup $(du -sh mgba-repo/backup/mgba-src 2>/dev/null | cut -f1) | study $(ls mgba-repo/study/ | wc -l) | concept $(ls mgba-repo/concept/ | wc -l)"\necho "ring 3: fixture $(ls mgba-repo/fixture/*.sh mgba-repo/fixture/*.c 2>/dev/null | wc -l) | pattern $(ls mgba-repo/pattern/ | wc -l) | procedure $(ls mgba-repo/procedure/ | wc -l)"\necho "tooling: shells in shell/ $(ls _templates/shell/*.sh | wc -l), root clean $(ls _templates/*.sh 2>/dev/null | wc -l)"\necho "suite: $(ctest --test-dir mgba-repo/build 2>&1 | grep -oE "[0-9]+% tests passed")"\n' 
+# DATE: 2026-08-01T09:21:17-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+ring 0: invariant 4 | scripts 7 bash-n 0
+ring 1: todo 9 report 18 | precept 1
+ring 2: backup 81M | study 22 | concept 5
+ring 3: fixture 4 | pattern 1 | procedure 1
+tooling: shells in shell/ 8, root clean 1
+suite: 100% tests passed
+# exit: 0

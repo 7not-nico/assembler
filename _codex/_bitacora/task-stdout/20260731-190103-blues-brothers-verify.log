@@ -1,0 +1,6 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/verify-rom.sh\ /home/eddyr/assembler/_codex/snes9x-repo/roms/blues-brothers-the-usa.sfc 
+# DATE: 2026-07-31T19:01:03-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+ERROR not a zip: Super NES ROM image "BLUES BROTHERS" (USA), LoROM, FastROM, ROM size: 512KB, RAM size: 1KB
+# exit: 1

@@ -1,0 +1,13 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'megaman\ x\'\ 45 
+# DATE: 2026-07-31T18:34:16-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=megaman%2Bx
+GAME https://romsfun.com/roms/super-nintendo/kaizou-choujin-shubibinman-zero.html | Kaizou Choujin Shubibinman Zero
+GAME https://romsfun.com/roms/super-nintendo/mario-vs-bowser-and-mighty-no-9.html | Mario vs. Bowser and Mighty No. 9
+OPEN https://romsfun.com/roms/super-nintendo/kaizou-choujin-shubibinman-zero.html
+DL https://romsfun.com/download/kaizou-choujin-shubibinman-zero-144625
+VARIANTS:
+1 https://romsfun.com/download/kaizou-choujin-shubibinman-zero-144625/1 | Kaizou Choujin Shubibinman Zero (Japan)
+2 https://romsfun.com/download/kaizou-choujin-shubibinman-zero-144625/2 | Shockman Zero (Japan) (T-En by Svambo v1.0) (n)
+# exit: 0

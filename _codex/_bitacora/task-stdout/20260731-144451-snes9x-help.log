@@ -1,0 +1,120 @@
+# CMD: snes9x/unix/snes9x --help 
+# DATE: 2026-07-31T14:44:51-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+
+
+Snes9x 1.63 for unix
+
+Snes9x 1.63
+
+usage: snes9x [options] <ROM image filename>
+
+-soundsync                      Synchronize sound as far as possible
+-playbackrate <Hz>              Set sound playback rate
+-inputrate <Hz>                 Set sound input rate
+-reversestereo                  Reverse stereo sound output
+-nostereo                       Disable stereo sound output
+-eightbit                       Use 8bit sound instead of 16bit
+-mute                           Mute sound
+
+-displaytime                    Display the time
+-displayframerate               Display the frame rate counter
+-displaykeypress                Display input of all controllers and peripherals
+-nohires                        (Not recommended) Disable support for hi-res and
+                                interlace modes
+-notransparency                 (Not recommended) Disable transparency effects
+-nowindows                      (Not recommended) Disable graphic window effects
+
+-nomp5                          Disable emulation of the Multiplayer 5 adapter
+-nomouse                        Disable emulation of the SNES mouse
+-nosuperscope                   Disable emulation of the Superscope
+-nojustifier                    Disable emulation of the Konami Justifier
+-nomacsrifle                    Disable emulation of the M.A.C.S. Rifle
+-port# <control>                Specify which controller to emulate in port 1/2
+    Controllers: none              No controller
+                 pad#              Joypad number 1-8
+                 mouse#            Mouse number 1-2
+                 superscope        Superscope (not useful with -port1)
+                 justifier         Blue Justifier (not useful with -port1)
+                 two-justifiers    Blue & Pink Justifiers
+                 mp5:####          MP5 with the 4 named pads (1-8 or n)
+                 macsrifle         M.A.C.S. Rifle
+
+-hirom                          Force Hi-ROM memory map
+-lorom                          Force Lo-ROM memory map
+-ntsc                           Force NTSC timing (60 frames/sec)
+-pal                            Force PAL timing (50 frames/sec)
+-nointerleave                   Assume the ROM image is not in interleaved
+                                format
+-interleaved                    Assume the ROM image is in interleaved format
+-interleaved2                   Assume the ROM image is in interleaved 2 format
+-interleavedgd24                Assume the ROM image is in interleaved gd24
+                                format
+-noheader                       Assume the ROM image doesn't have a header of a
+                                copier
+-header                         Assume the ROM image has a header of a copier
+-bsxbootup                      Boot up BS games from BS-X
+
+-nopatch                        Do not apply any available IPS/UPS patches
+-cheat                          Apply saved cheats
+-cheatcode <code>               Supply a cheat code in Game Genie,
+                                Pro-Action Replay, or Raw format (address=byte)
+
+-hdmatiming <1-199>             (Not recommended) Changes HDMA transfer timings
+                                event comes
+-invalidvramaccess              (Not recommended) Allow invalid VRAM access
+
+-frameskip <num>                Screen update frame skip rate
+-frametime <num>                Milliseconds per frame for frameskip auto-adjust
+-upanddown                      Override protection from pressing left+right or
+                                up+down together
+-conf <filename>                Use specified conf file (after standard files)
+-nostdconf                      Do not load the standard config files
+
+-multi                          Enable multi cartridge system
+-carta <filename>               ROM in slot A (use with -multi)
+-cartb <filename>               ROM in slot B (use with -multi)
+
+-nogamepad                      Disable gamepad reading
+-paddev1 <string>               Specify gamepad device 1
+-paddev2 <string>               Specify gamepad device 2
+-paddev3 <string>               Specify gamepad device 3
+-paddev4 <string>               Specify gamepad device 4
+-paddev5 <string>               Specify gamepad device 5
+-paddev6 <string>               Specify gamepad device 6
+-paddev7 <string>               Specify gamepad device 7
+-paddev8 <string>               Specify gamepad device 8
+
+-buffersize                     Sound generating buffer size in millisecond
+-sounddev <string>              Specify sound device
+
+-loadsnapshot                   Load snapshot file at start
+-playmovie <filename>           Start emulator playing the .smv file
+-recordmovie <filename>         Start emulator recording the .smv file
+-dumpstreams                    Save audio/video data to disk
+-dumpmaxframes <num>            Stop emulator after saving specified number of
+                                frames (use with -dumpstreams)
+
+-rwbuffersize                   Rewind buffer size in MB
+-rwgranularity                  Rewind granularity in frames
+
+-setrepeat                      Allow altering keyboard auto-repeat
+
+-fullscreen                     Switch to full-screen on start
+-xvideo                         Hardware accelerated scaling
+-maxaspect                      Try to fill the display, in fullscreen
+-xineramahead                   Xinerama head number for multi-monitor setups
+
+-v1                             Video mode: Blocky (default)
+-v2                             Video mode: TV
+-v3                             Video mode: Smooth
+-v4                             Video mode: SuperEagle
+-v5                             Video mode: 2xSaI
+-v6                             Video mode: Super2xSaI
+-v7                             Video mode: EPX
+-v8                             Video mode: hq2x
+
+
+ROM image can be compressed with zip, gzip, JMA, or compress.
+# exit: 1

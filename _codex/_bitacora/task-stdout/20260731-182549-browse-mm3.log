@@ -1,0 +1,25 @@
+# CMD: sh -c $'cd /home/eddyr/assembler/_codex/snes9x-repo && bash scripts/browse-romsfun.sh \'micro machines 3\' 45 2>&1 | head -12; echo \'=== full micro machines list:\'; CDP_PORT=9222 NODE_PATH=/home/eddyr/assembler/_codex/_templates/node_modules/playwright-core/.. node -e \'\nconst { chromium } = require("playwright-core");\n(async () => {\n  const b = await chromium.connectOverCDP("http://127.0.0.1:9222");\n  const ctx = b.contexts()[0];\n  const page = await ctx.newPage();\n  await page.goto("https://romsfun.com/roms/super-nintendo/?s=micro+machines", { waitUntil: "domcontentloaded", timeout: 30000 });\n  const links = await page.337546eval("a[href*=\\".html\\"]", as => as.map(a => a.href + " | " + a.textContent.trim()).filter(x => /micro|machine/i.test(x)).slice(0, 12));\n  console.log(links.join("\\n") || "none");\n  await page.close();\n  await b.close();\n})().catch(e => { console.error("ERROR " + e.message); process.exit(1); });\n\'' 
+# DATE: 2026-07-31T18:25:49-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=micro%2Bmachines%2B3
+GAME https://romsfun.com/roms/super-nintendo/micro-machines-2-turbo-tournament.html | Micro Machines 2: Turbo Tournament
+OPEN https://romsfun.com/roms/super-nintendo/micro-machines-2-turbo-tournament.html
+DL https://romsfun.com/download/micro-machines-2-turbo-tournament-145109
+VARIANTS:
+1 https://romsfun.com/download/micro-machines-2-turbo-tournament-145109/1 | Micro Machines 2 - Turbo Tournament (Europe) (Beta)
+2 https://romsfun.com/download/micro-machines-2-turbo-tournament-145109/2 | Micro Machines 2 - Turbo Tournament (Europe)
+=== full micro machines list:
+[eval]:8
+  const links = await page.337546eval("a[href*=\".html\"]", as => as.map(a => a.href + " | " + a.textContent.trim()).filter(x => /micro|machine/i.test(x)).slice(0, 12));
+                          ^^^^^^^^
+Expected a decimal digit
+
+SyntaxError: Invalid or unexpected token
+    at makeContextifyScript (node:internal/vm:194:14)
+    at compileScript (node:internal/process/execution:388:10)
+    at evalTypeScript (node:internal/process/execution:260:22)
+    at node:internal/main/eval_string:71:3
+
+Node.js v25.2.1
+# exit: 1

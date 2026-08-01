@@ -1,0 +1,8 @@
+# CMD: bash -c grep\ -rn\ \"mCoreInitConfig\"\ mgba-repo/mgba/src/core/\*.c\ \|\ head\ -3\;\ echo\ ---\;\ nm\ -D\ mgba-repo/build/libmgba.so.0.11.0\ \|\ grep\ -i\ mcoreinit 
+# DATE: 2026-08-01T07:01:11-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+mgba-repo/mgba/src/core/core.c:417:void mCoreInitConfig(struct mCore* core, const char* port) {
+---
+0000000000099d20 T mCoreInitConfig
+# exit: 0

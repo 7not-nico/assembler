@@ -1,0 +1,13 @@
+# CMD: sh -c file\ /home/eddyr/assembler/.playwright-mcp/Super-Mario-Kart-USA-.zip\ \&\&\ unzip\ -l\ /home/eddyr/assembler/.playwright-mcp/Super-Mario-Kart-USA-.zip 
+# DATE: 2026-07-31T10:34:13-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+/home/eddyr/assembler/.playwright-mcp/Super-Mario-Kart-USA-.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+Archive:  /home/eddyr/assembler/.playwright-mcp/Super-Mario-Kart-USA-.zip
+TORRENTZIPPED-DB742884
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+   524288  12-24-1996 23:32   Super Mario Kart (USA).sfc
+---------                     -------
+   524288                     1 file
+# exit: 0

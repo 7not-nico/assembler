@@ -1,0 +1,13 @@
+# CMD: bash -c ruby\ -c\ mgba-repo/roms/mgba_launcher.rb\ \&\&\ echo\ \"\"\ \|\ ruby\ mgba-repo/roms/mgba_launcher.rb\;\ echo\ \"==\ fragment\ launch\ ==\"\;\ ruby\ mgba-repo/roms/mgba_launcher.rb\ tetris 
+# DATE: 2026-08-01T06:28:49-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+Syntax OK
+ROMs in /home/eddyr/assembler/_codex/mgba-repo/roms:
+K: 1
+P: 1
+T: 2
+letter (A-Z, # for others, q to quit): == fragment launch ==
+LAUNCH tetris-japan-en.gb -4
+RUN  pid=8217  -4 tetris-japan-en.gb -> /tmp/opencode/mgba-launch.log
+# exit: 0

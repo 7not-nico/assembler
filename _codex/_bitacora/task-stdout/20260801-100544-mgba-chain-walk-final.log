@@ -1,0 +1,17 @@
+# CMD: bash -c $'\ncd /home/eddyr/assembler/_codex\necho "mcp:        browser $(curl -s --max-time 2 http://127.0.0.1:9222/json/version >/dev/null 2>&1 && echo UP || echo DOWN)"\necho "invariant:  $(ls mgba-repo/invariant/ | wc -l) files"\necho "scripts:    $(ls mgba-repo/scripts/ | wc -l) files, bash-n $(for s in mgba-repo/scripts/*.sh; do bash -n $s || echo BAD; done | wc -l) BAD"\necho "bitacora:   todo $(ls _bitacora/task-todo/ | wc -l) report $(ls _bitacora/task-report/ | wc -l) stdout $(ls _bitacora/task-stdout/ | wc -l)"\necho "precept:    $(ls mgba-repo/precept/ | wc -l) file"\necho "backup:     $(du -sh mgba-repo/backup/mgba-src 2>/dev/null | cut -f1) src, $(ls mgba-repo/backup/binaries | wc -l) binaries, $(ls mgba-repo/backup/study-monoliths | wc -l) monoliths"\necho "study:      $(ls mgba-repo/study/ | wc -l) files"\necho "fixture:    $(ls mgba-repo/fixture/*.sh | wc -l) harnesses + 15 carts + 13 source-suite checks"\necho "pattern:    $(ls mgba-repo/pattern/ | wc -l) file"\necho "procedure:  $(ls mgba-repo/procedure/ | wc -l) file"\necho "suite:      $(ctest --test-dir mgba-repo/build 2>&1 | grep -oE "[0-9]+% tests passed")"\necho "warnings:   $(cmake --build mgba-repo/build --target mgba -j$(nproc) 2>&1 | rg -c warning || echo 0)"\n' 
+# DATE: 2026-08-01T10:05:44-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+mcp:        browser UP
+invariant:  4 files
+scripts:    7 files, bash-n 0 BAD
+bitacora:   todo 9 report 18 stdout 358
+precept:    1 file
+backup:     81M src, 2 binaries, 2 monoliths
+study:      22 files
+fixture:    3 harnesses + 15 carts + 13 source-suite checks
+pattern:    1 file
+procedure:  1 file
+suite:      100% tests passed
+warnings:   0
+# exit: 0

@@ -1,0 +1,31 @@
+# CMD: sh -c for\ d\ in\ dataflow\ decision\ guides\ report\ todo\;\ do\ echo\ \"==\ \$d\ ==\"\;\ diff\ -rq\ /home/eddyr/assembler/scripts/\$d\ /home/eddyr/assembler/.opencode/_scripts/\$d\ 2\>\&1\ \|\ head\ -5\;\ done 
+# DATE: 2026-07-31T12:16:15-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+== dataflow ==
+Only in /home/eddyr/assembler/.opencode/_scripts/dataflow: flow-parse-validate-pipeline.md
+Only in /home/eddyr/assembler/scripts/dataflow: flow-semantic-search.md
+Only in /home/eddyr/assembler/.opencode/_scripts/dataflow: ref-script-dependency-graph.md
+Only in /home/eddyr/assembler/.opencode/_scripts/dataflow: semantic-engine.md
+== decision ==
+Only in /home/eddyr/assembler/.opencode/_scripts/decision: 001-ring-naming-convention.md
+Only in /home/eddyr/assembler/.opencode/_scripts/decision: 002-report-structure.md
+Only in /home/eddyr/assembler/.opencode/_scripts/decision: 003-documentation-layout.md
+Only in /home/eddyr/assembler/.opencode/_scripts/decision: 004-entity-audit-script-pattern.md
+Only in /home/eddyr/assembler/.opencode/_scripts/decision: 005-functional-programming-pattern.md
+== guides ==
+Only in /home/eddyr/assembler/.opencode/_scripts/guides: functional-programming.md
+Only in /home/eddyr/assembler/scripts/guides: operational-procedure.md
+== report ==
+Only in /home/eddyr/assembler/.opencode/_scripts/report/conclusions: 2026-07-26-session.md
+Only in /home/eddyr/assembler/.opencode/_scripts/report/conclusions: 2026-07-26T1945-session.md
+Only in /home/eddyr/assembler/.opencode/_scripts/report/conclusions: 2026-07-26T2050-session.md
+Only in /home/eddyr/assembler/.opencode/_scripts/report/conclusions: 2026-07-26T2100-final-session.md
+Only in /home/eddyr/assembler/.opencode/_scripts/report/conclusions: anchored-skills-2026-07-26T19:47:02-06:00.txt
+== todo ==
+Only in /home/eddyr/assembler/.opencode/_scripts/todo: 2026-07-25T20-44-59-06-00.md
+Only in /home/eddyr/assembler/.opencode/_scripts/todo: 2026-07-25T21:01:03-06:00.md
+Only in /home/eddyr/assembler/.opencode/_scripts/todo: 2026-07-25T22:47:03-06:00.md
+Only in /home/eddyr/assembler/.opencode/_scripts/todo: 2026-07-25T22:50:24-06:00.md
+Only in /home/eddyr/assembler/.opencode/_scripts/todo: 2026-07-25T22:58:30-06:00.md
+# exit: 0

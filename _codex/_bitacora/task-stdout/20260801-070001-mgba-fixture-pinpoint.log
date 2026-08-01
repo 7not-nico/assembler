@@ -1,0 +1,7 @@
+# CMD: bash -c sed\ -i\ \"s\|core-\>init\(core\)\;\|printf\(\\\"step\ init\\\\\\\\n\\\"\)\;\ core-\>init\(core\)\;\|\;\ s\|mCoreInitConfig\(core\,\ NULL\)\;\|printf\(\\\"step\ config\\\\\\\\n\\\"\)\;\ mCoreInitConfig\(core\,\ NULL\)\;\|\;\ s\|if\ \(\!core-\>loadROM\(core\,\ vf\)\)\|printf\(\\\"step\ load\\\\\\\\n\\\"\)\;\ if\ \(\!core-\>loadROM\(core\,\ vf\)\)\|\"\ mbc-banking-test.c\ \&\&\ gcc\ -o\ mbc-banking-test\ mbc-banking-test.c\ -I\ ../../mgba/include\ -L\ ../build\ -lmgba\ -Wl\,-rpath\,../build\ 2\>\&1\ \&\&\ ./mbc-banking-test\;\ echo\ \"exit=\$\?\" 
+# DATE: 2026-08-01T07:00:01-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo/fixture
+# --------------------
+bash: line 1: 26911 Segmentation fault         (core dumped) ./mbc-banking-test
+exit=139
+# exit: 0

@@ -1,0 +1,17 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/acquire-rom.sh\ earthbound\ 60 
+# DATE: 2026-07-31T17:13:47-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+PICK https://romsfun.com/download/earthbound-beginnings-2-311133/1
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/earthbound-beginnings-2-311133/1
+LINK https://sto.romsfast.com/Mods/SNES/EarthBound%20Beginnings%20(v1.2).zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRVydlp0
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/earthbound-beginnings-v1-2.zip (EarthBound Beginnings (v1.2).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/earthbound-beginnings-v1-2.zip
+WARN unexpected ROM size: 4194304
+OK   EarthBound Beginnings (v1.2).sfc (4194304 B) title="EARTH BOUND          "
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/earthbound-beginnings-v1-2.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/earthbound-beginnings-v1-2.sfc: Super NES ROM image "EARTH BOUND" (USA), HiROM, FastROM, ROM size: 4096KB, RAM size: 8KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/earthbound-beginnings-v1-2.sfc
+RUN   pid=298204 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

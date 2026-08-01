@@ -1,0 +1,8 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo/roms\ \&\&\ pkill\ -x\ snes9x\ 2\>/dev/null\;\ printf\ \'f\\n1\\n\'\ \|\ ruby\ snes9x_launcher.rb\ -l\ -v1 
+# DATE: 2026-07-31T17:39:38-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+letter (A-Z, # for others, q to quit):  1  final-fantasy-vi-usa-woolsey-uncensored-edition-by-rodimus-primal-v3-06-n.sfc
+pick (1-1): LAUNCH final-fantasy-vi-usa-woolsey-uncensored-edition-by-rodimus-primal-v3-06-n.sfc -v1
+RUN  pid=312327  -v1 final-fantasy-vi-usa-woolsey-uncensored-edition-by-rodimus-primal-v3-06-n.sfc -> /tmp/opencode/snes9x-launch.log
+# exit: 0

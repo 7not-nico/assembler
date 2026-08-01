@@ -1,0 +1,15 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ unzip\ -o\ \'/home/eddyr/assembler/.playwright-mcp/Legend-of-Zelda-The---A-Link-to-the-Past-USA-.zip\'\ -d\ roms/\ \&\&\ SLUG=\$\(bash\ ../_templates/slugify.sh\ \'Legend\ of\ Zelda\,\ The\ -\ A\ Link\ to\ the\ Past\ \(USA\).sfc\'\)\ \&\&\ mv\ \'roms/Legend\ of\ Zelda\,\ The\ -\ A\ Link\ to\ the\ Past\ \(USA\).sfc\'\ \"roms/\$SLUG\"\ \&\&\ ls\ -la\ roms/\ \&\&\ file\ \"roms/\$SLUG\" 
+# DATE: 2026-07-31T14:11:30-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+Archive:  /home/eddyr/assembler/.playwright-mcp/Legend-of-Zelda-The---A-Link-to-the-Past-USA-.zip
+TORRENTZIPPED-BCD57794
+  inflating: roms/Legend of Zelda, The - A Link to the Past (USA).sfc  
+total 2048
+drwxr-xr-x 1 eddyr eddyr     190 Jul 31 14:11 .
+drwxr-xr-x 1 eddyr eddyr      52 Jul 31 12:55 ..
+-rw-r--r-- 1 eddyr eddyr 1048576 Dec 24  1996 legend-of-zelda-the-a-link-to-the-past-usa.sfc
+-rw-r--r-- 1 eddyr eddyr  524288 Dec 24  1996 super-mario-kart-usa.sfc
+-rw-r--r-- 1 eddyr eddyr  524288 Dec 24  1996 super-mario-world-usa.sfc
+roms/legend-of-zelda-the-a-link-to-the-past-usa.sfc: Super NES ROM image "THE LEGEND OF ZELDA" (USA), LoROM, ROM size: 1024KB, RAM size: 8KB
+# exit: 0

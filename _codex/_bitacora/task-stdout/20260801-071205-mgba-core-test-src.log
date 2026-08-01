@@ -1,0 +1,5 @@
+# CMD: bash -c grep\ -n\ \"CORE_TEST_SRC\\\|file\(GLOB.\*test\"\ mgba-repo/mgba/src/core/CMakeLists.txt\ mgba-repo/mgba/src/gb/CMakeLists.txt\ mgba-repo/mgba/src/sm83/CMakeLists.txt\ 2\>/dev/null\ \|\ head\ -6 
+# DATE: 2026-08-01T07:12:05-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+# exit: 0

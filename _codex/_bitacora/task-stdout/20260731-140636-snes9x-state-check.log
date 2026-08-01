@@ -1,0 +1,18 @@
+# CMD: ls -la /home/eddyr/assembler/_codex/snes9x-repo/roms/ /home/eddyr/assembler/_codex/snes9x-repo/scripts/ 
+# DATE: 2026-07-31T14:06:36-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+/home/eddyr/assembler/_codex/snes9x-repo/roms/:
+total 1024
+drwxr-xr-x 1 eddyr eddyr     98 Jul 31 10:34 .
+drwxr-xr-x 1 eddyr eddyr     52 Jul 31 12:55 ..
+-rw-r--r-- 1 eddyr eddyr 524288 Dec 24  1996 super-mario-kart-usa.sfc
+-rw-r--r-- 1 eddyr eddyr 524288 Dec 24  1996 super-mario-world-usa.sfc
+
+/home/eddyr/assembler/_codex/snes9x-repo/scripts/:
+total 8
+drwxr-xr-x 1 eddyr eddyr   70 Jul 31 10:37 .
+drwxr-xr-x 1 eddyr eddyr   52 Jul 31 12:55 ..
+-rwxr-xr-x 1 eddyr eddyr 1433 Jul 31 09:55 fetch-rom.sh
+-rwxr-xr-x 1 eddyr eddyr 2901 Jul 31 10:39 playwright-fetch-rom.sh
+# exit: 0

@@ -1,0 +1,20 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ keeper\ 45 
+# DATE: 2026-07-31T17:40:37-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=keeper
+GAME https://romsfun.com/roms/super-nintendo/the-gatekeeper-strikes-again.html | The Gatekeeper Strikes Again!!!
+GAME https://romsfun.com/roms/super-nintendo/keeper.html | Keeper
+GAME https://romsfun.com/roms/super-nintendo/the-peace-keepers.html | The Peace Keepers
+GAME https://romsfun.com/roms/super-nintendo/world-cup-2026.html | World Cup 2026
+GAME https://romsfun.com/roms/super-nintendo/wizardry-v-saika-no-chuushin.html | Wizardry V: Saika no Chuushin
+GAME https://romsfun.com/roms/super-nintendo/musya.html | Musya
+GAME https://romsfun.com/roms/super-nintendo/daze-before-christmas.html | Daze Before Christmas
+GAME https://romsfun.com/roms/super-nintendo/shijou-saikyou-league-serie-a-ace-striker.html | Shijou Saikyou League Serie A: Ace Striker
+GAME https://romsfun.com/roms/super-nintendo/musya-the-classic-japanese-tale-of-horror.html | Musya: The Classic Japanese Tale of Horror
+GAME https://romsfun.com/roms/super-nintendo/magic-sword.html | Magic Sword
+OPEN https://romsfun.com/roms/super-nintendo/the-gatekeeper-strikes-again.html
+DL https://romsfun.com/download/the-gatekeeper-strikes-again-146945
+VARIANTS:
+1 https://romsfun.com/download/the-gatekeeper-strikes-again-146945/1 | The Gatekeeper Strikes Again
+# exit: 0

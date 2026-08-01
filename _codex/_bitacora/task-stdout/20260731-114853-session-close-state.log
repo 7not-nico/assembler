@@ -1,0 +1,21 @@
+# CMD: sh -c ls\ /home/eddyr/assembler/_knowledge/_templates/report/\ /home/eddyr/assembler/_knowledge/_templates/write-report-template.md\ 2\>/dev/null\;\ echo\ ---\;\ ls\ /home/eddyr/assembler/.opencode/entities/specifications/\ \|\ grep\ WORD 
+# DATE: 2026-07-31T11:48:53-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+/home/eddyr/assembler/_knowledge/_templates/write-report-template.md
+
+/home/eddyr/assembler/_knowledge/_templates/report/:
+20260731-003332.md
+20260731-004058.md
+20260731-004633.md
+20260731-004827.md
+20260731-005130.md
+20260731-005632.md
+20260731-005830.md
+20260731-010123.md
+20260731-011644.md
+20260731-012848.md
+report-template.md
+---
+SPEC.NAMING.WORD.CLASS.md
+# exit: 0

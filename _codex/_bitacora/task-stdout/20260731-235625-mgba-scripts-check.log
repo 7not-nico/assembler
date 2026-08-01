@@ -1,0 +1,22 @@
+# CMD: bash -c chmod\ +x\ mgba-repo/scripts/fetch-rom.sh\ mgba-repo/scripts/playwright-fetch-rom.sh\;\ for\ s\ in\ mgba-repo/scripts/\*.sh\;\ do\ bash\ -n\ \"\$s\"\ \&\&\ echo\ \"OK\ \ \ \$s\"\ \|\|\ echo\ \"FAIL\ \$s\"\;\ done\;\ ls\ -la\ mgba-repo/scripts/ 
+# DATE: 2026-07-31T23:56:25-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+OK   mgba-repo/scripts/acquire-rom.sh
+OK   mgba-repo/scripts/browse-romsfun.sh
+OK   mgba-repo/scripts/fetch-rom.sh
+OK   mgba-repo/scripts/launch-rom.sh
+OK   mgba-repo/scripts/playwright-fetch-rom.sh
+OK   mgba-repo/scripts/prepare-rom.sh
+OK   mgba-repo/scripts/verify-rom.sh
+total 28
+drwxr-xr-x 1 eddyr eddyr  212 Jul 31 23:56 .
+drwxr-xr-x 1 eddyr eddyr 1572 Jul 31 23:50 ..
+-rw-r--r-- 1 eddyr eddyr 1611 Jul 31 23:56 acquire-rom.sh
+-rw-r--r-- 1 eddyr eddyr 3320 Jul 31 23:55 browse-romsfun.sh
+-rwxr-xr-x 1 eddyr eddyr 2703 Jul 31 23:55 fetch-rom.sh
+-rw-r--r-- 1 eddyr eddyr 1028 Jul 31 23:56 launch-rom.sh
+-rwxr-xr-x 1 eddyr eddyr 1114 Jul 31 23:56 playwright-fetch-rom.sh
+-rw-r--r-- 1 eddyr eddyr  893 Jul 31 23:56 prepare-rom.sh
+-rw-r--r-- 1 eddyr eddyr 2614 Jul 31 23:56 verify-rom.sh
+# exit: 0

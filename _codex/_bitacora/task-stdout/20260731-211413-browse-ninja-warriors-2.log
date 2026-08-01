@@ -1,0 +1,14 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'ninja\ warriors\'\ 45\ \|\ grep\ -E\ \'GAME\|DL\|VARIANTS\' 
+# DATE: 2026-07-31T21:14:13-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+GAME https://romsfun.com/roms/super-nintendo/the-ninjawarriors-again-female-ninjas-monkies.html | The Ninjawarriors Again (Female Ninjas + Monkies)
+GAME https://romsfun.com/roms/super-nintendo/ninja-warriors.html | Ninja Warriors
+GAME https://romsfun.com/roms/super-nintendo/the-ninjawarriors-again-blood-patch-fastrom.html | The Ninjawarriors Again: Blood Patch + FastROM
+GAME https://romsfun.com/roms/super-nintendo/teenage-mutant-ninja-turtles-mutant-warriors.html | TEENAGE MUTANT NINJA TURTLES – MUTANT WARRIORS
+GAME https://romsfun.com/roms/super-nintendo/super-chinese-world-2-uchuuichi-butou-taikai.html | Super Chinese World 2: Uchuuichi Butou Taikai
+GAME https://romsfun.com/roms/super-nintendo/lord-of-darkness.html | Lord of Darkness
+GAME https://romsfun.com/roms/super-nintendo/maui-mallard-in-cold-shadow.html | Maui Mallard in Cold Shadow
+DL https://romsfun.com/download/the-ninjawarriors-again-female-ninjas-monkies-275885
+VARIANTS:
+# exit: 0

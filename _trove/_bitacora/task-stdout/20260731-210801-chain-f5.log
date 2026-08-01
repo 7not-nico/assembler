@@ -1,0 +1,14 @@
+# CMD: sqlite3 findings.db SELECT\ id\,\ title\,\ arxiv_id\,\ published_at\ FROM\ papers\ WHERE\ subdomain=\'invariant-theory\'\ ORDER\ BY\ published_at\; 
+# DATE: 2026-07-31T21:08:01-06:00
+# CWD: /home/eddyr/assembler/_trove
+# --------------------
+math/invariant-theory/variation-git-quotients.pdf|Variation of Geometric Invariant Theory Quotients|alg-geom/9402008|1994-02-09
+math/invariant-theory/quandle-homology-cocycle-knot-invariants.pdf|Quandle Homology Theory and Cocycle Knot Invariants|math/0112026|2001-12-03
+math/invariant-theory/quantum-invariants-figure8-knot.pdf|Asymptotics of the quantum invariants for surgeries on the figure 8 knot|math/0506456|2005-06-22
+math/invariant-theory/cohomological-invariants-weyl-groups-mod-2.pdf|Cohomological invariants of classical Weyl groups modulo 2|1112.6290|2011-12-29
+math/invariant-theory/hilbert-series-noncommutative-invariant-theory.pdf|Rationality of Hilbert series in noncommutative invariant theory|1512.06411|2015-12-20
+math/invariant-theory/instantons-concordance-invariants-knots.pdf|Instantons and some concordance invariants of knots|1910.11129|2019-10-19
+math/invariant-theory/kontsevich-characteristic-classes-topological-invariants.pdf|Kontsevich's Characteristic Classes as Topological Invariants of Configuration Space Bundles|2302.03021|2023-02-06
+math/invariant-theory/compgit-package.pdf|The CompGIT package: a computational tool for Geometric Invariant Theory quotients|2506.19431|2025-06-24
+math/invariant-theory/homological-properties-invariant-rings-permutation-groups.pdf|Homological properties of invariant rings of permutation groups|2511.07718|2025-11-11
+# exit: 0

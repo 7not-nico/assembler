@@ -1,0 +1,19 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_knowledge/_templates\ \&\&\ grep\ -rn\ \'informes\'\ schema/\ script/\ 2\>/dev/null\ \|\ head\;\ echo\ ---\;\ ls\ schema/ 
+# DATE: 2026-07-31T11:50:00-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+schema/templates.sql:24:CREATE TABLE IF NOT EXISTS informes (
+schema/templates.sql:38:CREATE INDEX IF NOT EXISTS idx_informes_project ON informes(project);
+schema/templates.sql:39:CREATE INDEX IF NOT EXISTS idx_informes_date ON informes(date);
+script/push-registry.rb:34:  db.execute("ALTER TABLE informes ADD COLUMN date TEXT")
+script/push-registry.rb:37:  db.execute("ALTER TABLE informes ADD COLUMN error_text TEXT")
+script/push-registry.rb:102:Dir.glob(File.join(TPL_DIR, 'informes', '*.md')).each do |fp|
+script/push-registry.rb:118:    'INSERT INTO informes (id, project, date, errors, findings, error_text, file_path) VALUES (?,?,?,?,?,?,?)
+script/push-registry.rb:122:    [name, project, date, errors, findings, error_text, File.join('_templates', 'informes', name)]
+script/push-registry.rb:128:puts "Pushed #{count} templates, #{icount} informes into #{DB_PATH}"
+script/semantic-embed.ts:39:// Collect artifacts: templates (name, layer, purpose) + informes (project, errors, findings)
+---
+templates.db
+templates.sql
+templates-vector.db
+# exit: 0

@@ -1,0 +1,15 @@
+# CMD: sh -c node\ -e\ \'console.log\(require.resolve\(\"playwright\"\)\)\'\ 2\>\&1\ \|\ head\ -2\;\ npm\ ls\ -g\ playwright\ playwright-core\ 2\>\&1\ \|\ head\ -5\;\ ls\ ~/.cache/ms-playwright\ 2\>/dev/null\ \|\ head\ -5\;\ ls\ /home/eddyr/assembler/.opencode/node_modules\ 2\>/dev/null\ \|\ grep\ -i\ playwright\ \|\ head\ -3 
+# DATE: 2026-07-31T10:05:03-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+node:internal/modules/cjs/loader:1423
+  throw err;
+/home/eddyr/.local/share/mise/installs/node/25.2.1/lib
+└── (empty)
+
+b
+chromium-1228
+chromium-1232
+chromium_headless_shell-1228
+chromium_headless_shell-1232
+# exit: 0

@@ -1,0 +1,10 @@
+# CMD: bash -c bash\ mgba-repo/scripts/browse-romsfun.sh\ \"Pokemon\ Orange\"\ game-boy-color\ 60\ 2\>\&1\ \|\ grep\ -E\ \"\^GAME\|\^VARIANTS\|\^\[0-9\]+\ \" 
+# DATE: 2026-08-01T06:50:06-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+GAME https://romsfun.com/roms/game-boy-color/pokemon-orange-4.html | Pokemon Orange
+GAME https://romsfun.com/roms/game-boy-color/pokemon-pinball-sprite-fixes.html | Pokemon Pinball – Sprite Fixes
+VARIANTS:
+1 https://romsfun.com/download/pokemon-orange-4-52949/1 | Pokémon Orange (v1.0)
+2 https://romsfun.com/download/pokemon-orange-4-52949/2 | Pokémon Orange (v1.0)[PSS]
+# exit: 0

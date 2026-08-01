@@ -1,0 +1,11 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ bash\ fixture/rtc-real-cart.sh\ 2\>\&1\;\ echo\ exit=\$\? 
+# DATE: 2026-08-01T15:20:27-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+SUITE test-gb-rtc  15/15 passed
+PROBE OK   pokemon-prism-v0-95-build-254-hotfix-5.gbc (2097152 B) title="PM_PRISMPRSM" mbc=0x10
+PASS  Prism header: MBC3+RTC (0x10) detected
+FILE Game Boy Color ROM image: "PM_PRISM" (Rev.00) [CGB ONLY] [MBC3+TIMER+RAM+BATT], ROM: 16Mbit, RAM: 256Kbit
+PASS  file verdict: MBC3+TIMER+RAM+BATT (CGB-only)
+exit=0
+# exit: 0

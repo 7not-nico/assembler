@@ -1,0 +1,27 @@
+# CMD: bash -c ls\ -la\ build/sdl/mgba\ \&\&\ file\ build/sdl/mgba\ \&\&\ build/sdl/mgba\ --version\ 2\>\&1\ \&\&\ echo\ ---\ \&\&\ build/sdl/mgba\ --help\ 2\>\&1\ \|\ head\ -20 
+# DATE: 2026-07-31T23:52:23-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo
+# --------------------
+-rwxr-xr-x 1 eddyr eddyr 50784 Jul 31 23:51 build/sdl/mgba
+build/sdl/mgba: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=ee6e3377877f60706aa2b2fc61735b99303488f2, for GNU/Linux 6.1.0, not stripped
+build/sdl/mgba 0.11-1-71aa6c7 (71aa6c7dab7654bfdbbd57e696f704671a97e55d)
+---
+usage: build/sdl/mgba [option ...] file
+
+Generic options:
+  -b, --bios FILE            GBA BIOS file to use
+  -c, --cheats FILE          Apply cheat codes from a file
+  -C, --config OPTION=VALUE  Override config value
+  -d, --debug                Use command-line debugger
+  -g, --gdb                  Start GDB session (default port 2345)
+  -l, --log-level N          Log level mask
+  -t, --savestate FILE       Load savestate when starting
+  -p, --patch FILE           Apply a specified patch file when running
+  -s, --frameskip N          Skip every N frames
+  --version                  Print version and exit
+
+Graphics options:
+  -1, -2, -3, -4, -5, -6, -7, -8  Scale viewport by 1-8 times
+  -f, --fullscreen                Start full-screen
+  --scale X                       Scale viewport by X times
+# exit: 0

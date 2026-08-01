@@ -1,0 +1,24 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ https://romsfun.com/download/fire-emblem-cerulean-crescent-304182/1\ 90\ 2\>\&1 
+# DATE: 2026-08-01T13:40:56-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/fire-emblem-cerulean-crescent-304182/1
+LINK https://sto.romsfast.com/Mods/GBA/Fire%20Emblem%20(Cerulean%20Crescent%20v2.11).7z?token=cHxfalBlRlhND3BzWDhQZ1BUQhB3fFxz
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/fire-emblem-cerulean-crescent-v2-11.7z (Fire Emblem (Cerulean Crescent v2.11).7z)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/fire-emblem-cerulean-crescent-v2-11.7z
+  End-of-central-directory signature not found.  Either this file is not
+  a zipfile, or it constitutes one disk of a multi-part archive.  In the
+  latter case the central directory and zipfile comment will be found on
+  the last disk(s) of this archive.
+unzip:  cannot find zipfile directory in one of /home/eddyr/assembler/.opencode/.playwright-mcp/fire-emblem-cerulean-crescent-v2-11.7z or
+        /home/eddyr/assembler/.opencode/.playwright-mcp/fire-emblem-cerulean-crescent-v2-11.7z.zip, and cannot find /home/eddyr/assembler/.opencode/.playwright-mcp/fire-emblem-cerulean-crescent-v2-11.7z.ZIP, period.
+[/home/eddyr/assembler/.opencode/.playwright-mcp/fire-emblem-cerulean-crescent-v2-11.7z]
+  End-of-central-directory signature not found.  Either this file is not
+  a zipfile, or it constitutes one disk of a multi-part archive.  In the
+  latter case the central directory and zipfile comment will be found on
+  the last disk(s) of this archive.
+zipinfo:  cannot find zipfile directory in one of /home/eddyr/assembler/.opencode/.playwright-mcp/fire-emblem-cerulean-crescent-v2-11.7z or
+          /home/eddyr/assembler/.opencode/.playwright-mcp/fire-emblem-cerulean-crescent-v2-11.7z.zip, and cannot find /home/eddyr/assembler/.opencode/.playwright-mcp/fire-emblem-cerulean-crescent-v2-11.7z.ZIP, period.
+ERROR no ROM image inside zip
+# exit: 1

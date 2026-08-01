@@ -1,0 +1,12 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'looney\ tunes\ basketball\'\ 45 
+# DATE: 2026-07-31T20:35:46-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=looney%2Btunes%2Bbasketball
+GAME https://romsfun.com/roms/super-nintendo/looney-tunes-b-ball.html | Looney Tunes B-Ball
+OPEN https://romsfun.com/roms/super-nintendo/looney-tunes-b-ball.html
+DL https://romsfun.com/download/looney-tunes-b-ball-8364
+VARIANTS:
+1 https://romsfun.com/download/looney-tunes-b-ball-8364/1 | Looney Tunes B-Ball (USA)
+2 https://romsfun.com/download/looney-tunes-b-ball-8364/2 | Looney Tunes Basketball (Europe)
+# exit: 0

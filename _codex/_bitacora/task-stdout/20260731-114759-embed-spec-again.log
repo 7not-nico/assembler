@@ -1,0 +1,18 @@
+# CMD: sh -c cd\ /home/eddyr/assembler\ \&\&\ bun\ run\ .opencode/tools/semantic-embed.ts\ --type\ specifications\ \&\&\ bun\ run\ .opencode/tools/semantic-search.ts\ --query\ \"folder\ word\ class\ instantiator\ aggregator\ naming\"\ --k\ 3\ --type\ specifications 
+# DATE: 2026-07-31T11:47:59-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+embedded 1 specifications
+
+1 entities embedded of type 'specifications'
+RANK  SCORE    TYPE        ID
+----------------------------------------------------------------------
+1     0.8998    specifications SPEC.NAMING.WORD.CLASS
+       Folder Word Class — Independent Instantiator vs Compound Aggregator
+2     0.6454    specifications SPEC.ENTITY.GROUP.NAMING
+       Entity Group Naming — Suffix and Directory Conventions
+3     0.6393    specifications SPEC.CODE.ELEMENT.NAME
+       Code Element Name — Naming Convention by Element Type
+----------------------------------------------------------------------
+3 semantic matches for "folder word class instantiator aggregator naming" (22 indexed)
+# exit: 0

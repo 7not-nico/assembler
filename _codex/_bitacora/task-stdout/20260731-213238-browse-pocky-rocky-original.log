@@ -1,0 +1,15 @@
+# CMD: bash -c $'cd /home/eddyr/assembler/_codex/snes9x-repo && export PW_CORE=/home/eddyr/assembler/_codex/_templates/node_modules/playwright-core && NODE_PATH="$PW_CORE/.." node <<"EOF"\nconst { chromium } = require("playwright-core");\n(async () => {\n  const browser = await chromium.connectOverCDP("http://127.0.0.1:9222");\n  const ctx = browser.contexts()[0];\n  const page = await ctx.newPage();\n  const gameUrl = "https://romsfun.com/roms/super-nintendo/pocky-rocky.html";\n  console.log("OPEN " + gameUrl);\n  await page.goto(gameUrl, { waitUntil: "domcontentloaded", timeout: 90000 });\n  const dl = await page.$eval("a[href*=\\"/download/\\"]", a => a.href).catch(() => null);\n  if (!dl) throw new Error("no download page on " + gameUrl);\n  console.log("DL " + dl);\n  await page.goto(dl, { waitUntil: "domcontentloaded", timeout: 90000 });\n  const variants = await page.$$eval("table a[href*=\\"/download/\\"]", as => as.map(a => a.href + " | " + a.textContent.trim()));\n  console.log("VARIANTS:");\n  variants.forEach((v, i) => console.log((i + 1) + " " + v));\n  await page.close();\n  await browser.close();\n})().catch(e => { console.error("ERROR " + e.message); process.exit(1); });\nEOF' 
+# DATE: 2026-07-31T21:32:38-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+OPEN https://romsfun.com/roms/super-nintendo/pocky-rocky.html
+DL https://romsfun.com/download/pocky-rocky-145531
+VARIANTS:
+1 https://romsfun.com/download/pocky-rocky-145531/1 | Pocky & Rocky (Europe) (Sample)
+2 https://romsfun.com/download/pocky-rocky-145531/2 | Pocky & Rocky (Europe)
+3 https://romsfun.com/download/pocky-rocky-145531/3 | Pocky & Rocky (USA)
+4 https://romsfun.com/download/pocky-rocky-145531/4 | Kiki Kaikai - Nazo no Kuro Manteau (Japan)
+5 https://romsfun.com/download/pocky-rocky-145531/5 | Pocky & Rocky (Europe) (Sample)
+6 https://romsfun.com/download/pocky-rocky-145531/6 | Pocky & Rocky (Europe)
+7 https://romsfun.com/download/pocky-rocky-145531/7 | Pocky & Rocky (USA)
+# exit: 0

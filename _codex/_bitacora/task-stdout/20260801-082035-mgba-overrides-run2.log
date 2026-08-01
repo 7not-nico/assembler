@@ -1,0 +1,16 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ cmake\ -S\ mgba\ -B\ build\ -DBUILD_QT=OFF\ -DBUILD_SDL=ON\ -DCMAKE_BUILD_TYPE=Release\ -DBUILD_SUITE=ON\ -DCMAKE_C_FLAGS=\"-O3\ -march=native\"\ -DCMAKE_CXX_FLAGS=\"-O3\ -march=native\"\ \>/dev/null\ 2\>\&1\ \&\&\ cmake\ --build\ build\ --target\ test-gb-overrides\ -j\$\(nproc\)\ 2\>\&1\ \|\ tail\ -3\ \&\&\ cd\ build/test\ \&\&\ ./test-gb-overrides\ 2\>\&1\ \|\ tail\ -8 
+# DATE: 2026-08-01T08:20:35-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+[ 98%] Building C object test/CMakeFiles/test-gb-overrides.dir/__/__/gb/test/overrides.c.o
+[100%] Linking C executable test-gb-overrides
+[100%] Built target test-gb-overrides
+[   LINE   ] --- /home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/test/overrides.c:92: error: Failure!
+[  FAILED  ] defaultsRunsClean
+[==========] GBOverrides: 3 test(s) run.
+[  PASSED  ] 2 test(s).
+[  FAILED  ] GBOverrides: 1 test(s), listed below:
+[  FAILED  ] defaultsRunsClean
+
+ 1 FAILED TEST(S)
+# exit: 0

@@ -1,0 +1,12 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'sunset\ riders\'\ 45 
+# DATE: 2026-07-31T20:57:37-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=sunset%2Briders
+GAME https://romsfun.com/roms/super-nintendo/sunset-riders-2.html | Sunset Riders
+OPEN https://romsfun.com/roms/super-nintendo/sunset-riders-2.html
+DL https://romsfun.com/download/sunset-riders-2-7318
+VARIANTS:
+1 https://romsfun.com/download/sunset-riders-2-7318/1 | Sunset Riders (Europe)
+2 https://romsfun.com/download/sunset-riders-2-7318/2 | Sunset Riders (USA)
+# exit: 0

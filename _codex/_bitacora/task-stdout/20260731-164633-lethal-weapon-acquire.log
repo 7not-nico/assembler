@@ -1,0 +1,15 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/lethal-weapon-2-144817/3\'\ 60 
+# DATE: 2026-07-31T16:46:33-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/lethal-weapon-2-144817/3
+LINK https://statics.romsfun.com/SNES/Lethal%20Weapon%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRVwcVBw
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/lethal-weapon-usa.zip (Lethal Weapon (USA).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/lethal-weapon-usa.zip
+OK   Lethal (1048576 B)
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/lethal-weapon-usa.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/lethal-weapon-usa.sfc: Super NES ROM image "LETHAL WEPON" (USA), LoROM, FastROM, ROM size: 1024KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/lethal-weapon-usa.sfc
+RUN   pid=285880 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

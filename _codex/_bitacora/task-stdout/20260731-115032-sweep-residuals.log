@@ -1,0 +1,16 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_knowledge/_templates\ \&\&\ sed\ -i\ \'s/session\ report\ informes/session\ report\ entries/\;\ s/write\ informe\ always/write\ report\ always/\'\ script/stress.ts\ \&\&\ sed\ -i\ \'s/write-informe-template.md/write-report-template.md/\'\ script/bench.ts\ \&\&\ sed\ -i\ \'s/#\ Informes:\ session\ reports/#\ Reports:\ session\ reports/\'\ script/push-registry.rb\ \&\&\ sed\ -i\ \'s/--\ Informes:\ session\ reports/--\ Reports:\ session\ reports/\'\ schema/templates.sql\ \&\&\ bun\ -e\ \'import\ \{Database\}\ from\ \"bun:sqlite\"\;\ const\ db=new\ Database\(\"schema/templates.db\"\)\;\ db.exec\(\"ALTER\ TABLE\ informes\ RENAME\ TO\ reports\;\ ALTER\ INDEX\ idx_informes_project\ RENAME\ TO\ idx_reports_project\;\ ALTER\ INDEX\ idx_informes_date\ RENAME\ TO\ idx_reports_date\;\"\)\;\ console.log\(db.query\(\"SELECT\ name\ FROM\ sqlite_master\ WHERE\ type=\\\"table\\\"\"\).all\(\).map\(r=\>r.name\)\)\;\'\ \&\&\ grep\ -rn\ -i\ \'informe\'\ scaffold-knowledge.sh\ script/\ schema/\*.sql\ schema/\*.ts\ 2\>/dev/null\ \|\|\ echo\ CLEAN 
+# DATE: 2026-07-31T11:50:32-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+1 | import {Database} from "bun:sqlite"; const db=new Database("schema/templates.db"); db.exec("ALTER TABLE informes RENAME TO reports; ALTER INDEX idx_informes_project RENAME TO idx_reports_project; ALTER INDEX idx_informes_date RENAME TO idx_reports_date;"); console.log(db.query("SELECT name FROM sqlite_master WHERE type=\"table\"").all().map(r=>r.name));
+                                                                                          ^
+SQLiteError: near "INDEX": syntax error
+      errno: 1,
+ byteOffset: 6,
+
+      at run (bun:sqlite:336:21)
+      at /home/eddyr/assembler/_knowledge/_templates/[eval]:1:87
+
+Bun v1.3.14-canary.1+0d9b296af (Linux x64)
+CLEAN
+# exit: 0

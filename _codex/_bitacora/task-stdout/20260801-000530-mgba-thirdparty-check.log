@@ -1,0 +1,14 @@
+# CMD: bash -c ls\ mgba-repo/mgba/src/third-party/\ 2\>/dev/null\;\ grep\ -rn\ \"find_package\(cmocka\\\|CMOCKA\"\ mgba-repo/mgba/CMakeLists.txt\ \|\ head\ -6 
+# DATE: 2026-08-01T00:05:30-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+discord-rpc
+inih
+libpng
+lzma
+sqlite3
+zlib
+502:set(USE_CMOCKA ${BUILD_SUITE})
+518:find_feature(USE_CMOCKA "cmocka")
+1081:if(NOT USE_CMOCKA)
+# exit: 0

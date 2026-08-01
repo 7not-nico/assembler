@@ -1,0 +1,35 @@
+# CMD: bash -c ctest\ --test-dir\ build\ --output-on-failure\ 2\>\&1\ \|\ tail\ -30 
+# DATE: 2026-08-01T07:19:59-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo
+# --------------------
+      Start 19: script-stdlib
+19/31 Test #19: script-stdlib ....................   Passed    0.04 sec
+      Start 20: script-storage
+20/31 Test #20: script-storage ...................   Passed    0.05 sec
+      Start 21: util-circle-buffer
+21/31 Test #21: util-circle-buffer ...............   Passed    0.04 sec
+      Start 22: util-color
+22/31 Test #22: util-color .......................   Passed    0.04 sec
+      Start 23: util-geometry
+23/31 Test #23: util-geometry ....................   Passed    0.04 sec
+      Start 24: util-hash
+24/31 Test #24: util-hash ........................   Passed    0.04 sec
+      Start 25: util-image
+25/31 Test #25: util-image .......................   Passed    0.05 sec
+      Start 26: util-sfo
+26/31 Test #26: util-sfo .........................   Passed    0.04 sec
+      Start 27: util-string-parser
+27/31 Test #27: util-string-parser ...............   Passed    0.04 sec
+      Start 28: util-string-utf8
+28/31 Test #28: util-string-utf8 .................   Passed    0.08 sec
+      Start 29: util-table
+29/31 Test #29: util-table .......................   Passed    0.05 sec
+      Start 30: util-text-codec
+30/31 Test #30: util-text-codec ..................   Passed    0.05 sec
+      Start 31: util-vfs
+31/31 Test #31: util-vfs .........................   Passed    0.05 sec
+
+100% tests passed out of 31
+
+Total Test time (real) =   1.41 sec
+# exit: 0

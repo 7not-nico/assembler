@@ -1,0 +1,7 @@
+# CMD: sh -c grep\ -oE\ \'\<script\[\^\>\]\*\>\[\^\<\]\{50\,\}\</script\>\'\ /tmp/opencode/roms-page.html\ \|\ grep\ -iE\ \'download\|media\'\ \|\ head\ -5\;\ echo\ ===\;\ grep\ -oE\ \'url\[\[:space:\]\]\*:\[\[:space:\]\]\*\[\^\,\]\{5\,60\}\|action\[\[:space:\]\]\*:\[\[:space:\]\]\*\[\^\,\]\{5\,60\}\|\[a-z\]+\\.php\[a-z0-9_=\?\&.-\]\*\'\ /tmp/opencode/roms-page.html\ \|\ sort\ -u\ \|\ head\ -15 
+# DATE: 2026-07-31T09:55:14-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+===
+matomo.php
+# exit: 0

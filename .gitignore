@@ -37,20 +37,21 @@ _depot/draw/
 
 # compound aggregator domains — _{abstract-noun}/ folders
 # domain project contents live in their own repos; the root repo tracks
-# the inner _{abstract-noun}/ folders (shared substrate: templates,
-# bitacoras, scripts) WITH their contents, plus top-level placeholders
+# the substrate _folders — bitacora, templates, impressions, scripts —
+# with their contents, plus top-level placeholders
 /_*/
 !/_*/
-!/_*/**/_*/
-!/_*/**/_*/**
+!/_*/**/_bitacora/**
+!/_*/**/_templates/**
+!/_*/**/_impressions/**
+!/_*/**/_scripts/**
 !/_*/.gitkeep
 
-# pdf research documents stay out even inside tracked _folders
+# build artifacts inside tracked _folders stay out
+**/_rustlib/target/
+**/_golib/ann
+
+# pdf research documents stay out
 _trove/**/*.pdf
 
-# rust build artifacts at any depth (template copies inside _folders)
-_rustlib/target/
-
-# compiled go ann workers (rebuildable via go build)
-**/_golib/ann
 

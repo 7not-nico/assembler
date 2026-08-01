@@ -1,0 +1,48 @@
+# CMD: sh -c find\ /home/eddyr/assembler\ -name\ AGENTS.md\ -not\ -path\ \'\*/node_modules/\*\'\ -not\ -path\ \'\*/.git/\*\'\ \|\ sort 
+# DATE: 2026-07-31T11:04:55-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+/home/eddyr/assembler/a01-harness-llm/AGENTS.md
+/home/eddyr/assembler/AGENTS.md
+/home/eddyr/assembler/_assets/AGENTS.md
+/home/eddyr/assembler/_assets/scripts/AGENTS.md
+/home/eddyr/assembler/_code-dives/AGENTS.md
+/home/eddyr/assembler/_code-dives/darkestdungeon-code/AGENTS.md
+/home/eddyr/assembler/_code-dives/Hyprland-repo/hyprland/AGENTS.md
+/home/eddyr/assembler/_code-dives/neovim-repo/neovim/AGENTS.md
+/home/eddyr/assembler/_code-dives/rimworld-code/.opencode/AGENTS.md
+/home/eddyr/assembler/_code-dives/semantic-weight/AGENTS.md
+/home/eddyr/assembler/_code-dives/snes9x-repo/AGENTS.md
+/home/eddyr/assembler/_code-dives/sqlite-repo/sqlite/AGENTS.md
+/home/eddyr/assembler/_code-dives/teenycode-repo/.opencode/AGENTS.md
+/home/eddyr/assembler/_code-dives/teenycode-repo/teenycode/AGENTS.md
+/home/eddyr/assembler/_code-dives/_templates/AGENTS.md
+/home/eddyr/assembler/_code-dives/yazi-repo/yazi/AGENTS.md
+/home/eddyr/assembler/common/bitacora/AGENTS.md
+/home/eddyr/assembler/common/homophones/AGENTS.md
+/home/eddyr/assembler/common/nerdfont/AGENTS.md
+/home/eddyr/assembler/common/palestra/AGENTS.md
+/home/eddyr/assembler/common/trump-voices/AGENTS.md
+/home/eddyr/assembler/_findings/.opencode/AGENTS.md
+/home/eddyr/assembler/_knowledge/code-semantics/AGENTS.md
+/home/eddyr/assembler/_knowledge/go-coding/AGENTS.md
+/home/eddyr/assembler/_knowledge/hypr-docs/AGENTS.md
+/home/eddyr/assembler/_knowledge/mise-docs/AGENTS.md
+/home/eddyr/assembler/_knowledge/rust-coding/AGENTS.md
+/home/eddyr/assembler/_knowledge/_templates/AGENTS.md
+/home/eddyr/assembler/_knowledge/yazi-docs/AGENTS.md
+/home/eddyr/assembler/one-timers/comparisons-specs/camera-comparison/AGENTS.md
+/home/eddyr/assembler/one-timers/comparisons-specs/gear-specs/AGENTS.md
+/home/eddyr/assembler/one-timers/CR-news-outlets/AGENTS.md
+/home/eddyr/assembler/one-timers/ludoteca/AGENTS.md
+/home/eddyr/assembler/one-timers/mcp-search-docs/AGENTS.md
+/home/eddyr/assembler/one-timers/medcodes/AGENTS.md
+/home/eddyr/assembler/one-timers/tablet-comparison/AGENTS.md
+/home/eddyr/assembler/pythontts-cli/AGENTS.md
+/home/eddyr/assembler/_scripts/AGENTS.md
+/home/eddyr/assembler/study-sessions/category-theory/AGENTS.md
+/home/eddyr/assembler/study-sessions/constructive-drawing/AGENTS.md
+/home/eddyr/assembler/study-sessions/linguistic/AGENTS.md
+/home/eddyr/assembler/study-sessions/reasoning/AGENTS.md
+/home/eddyr/assembler/study-sessions/thoughtlog/AGENTS.md
+# exit: 0

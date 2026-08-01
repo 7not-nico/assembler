@@ -1,0 +1,10 @@
+-- ch{NN}-{ASPECT}.{ext} — {purpose, e.g. practice config}
+-- Layer: fixtures/ — raw practice material, governed by reference conventions
+-- Source: {URL} ({YYYY-MM-DD}), {version}
+
+-- {fixture content — complete, runnable example}
+
+-- Header fields (per rust-coding convention):
+-- Source: {URL}
+-- Module: {what this fixture demonstrates}
+-- Compile: {how to verify it}

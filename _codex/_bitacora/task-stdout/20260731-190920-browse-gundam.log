@@ -1,0 +1,15 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'gundam\ wing\'\ 45 
+# DATE: 2026-07-31T19:09:20-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=gundam%2Bwing
+GAME https://romsfun.com/roms/super-nintendo/gundam-wing-endless-duel.html | Gundam Wing: Endless Duel
+GAME https://romsfun.com/roms/super-nintendo/sd-gundam-g-next.html | SD Gundam G Next
+GAME https://romsfun.com/roms/super-nintendo/cb-chara-wars-ushinawareta-gag.html | CB Chara Wars: Ushinawareta Gag
+OPEN https://romsfun.com/roms/super-nintendo/gundam-wing-endless-duel.html
+DL https://romsfun.com/download/gundam-wing-endless-duel-144267
+VARIANTS:
+1 https://romsfun.com/download/gundam-wing-endless-duel-144267/1 | Mobile Suit Gundam Wing - Endless Duel (Japan) (T-En by Aeon Genesis v1.00) (FastROM hack by ComboKyo v1.0) (n)
+2 https://romsfun.com/download/gundam-wing-endless-duel-144267/2 | Mobile Suit Gundam Wing - Endless Duel (Japan) (T-En by Aeon Genesis v1.00) (n)
+3 https://romsfun.com/download/gundam-wing-endless-duel-144267/3 | Shin Kidou Senki Gundam W - Endless Duel (Japan)
+# exit: 0

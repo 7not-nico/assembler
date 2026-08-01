@@ -1,0 +1,16 @@
+# CMD: sh -c grep\ -A3\ \'\^##\ Delegation\'\ /home/eddyr/assembler/_knowledge/_templates/AGENTS.md\ /home/eddyr/assembler/_code-dives/AGENTS.md\ /home/eddyr/assembler/_code-dives/snes9x-repo/AGENTS.md 
+# DATE: 2026-07-31T11:51:48-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+/home/eddyr/assembler/_knowledge/_templates/AGENTS.md:## Delegation
+/home/eddyr/assembler/_knowledge/_templates/AGENTS.md-
+/home/eddyr/assembler/_knowledge/_templates/AGENTS.md-Root provides patterns, terms, and shared substrate (`_lib/embed.ts`, `_lib/score.ts` — imported, never modified). This project owns the knowledge-project bootstrap system.
+--
+/home/eddyr/assembler/_code-dives/AGENTS.md:## Delegation
+/home/eddyr/assembler/_code-dives/AGENTS.md-
+/home/eddyr/assembler/_code-dives/AGENTS.md-Root provides patterns, terms, and shared substrate. This project owns codebase exploration and dive documentation. Root AGENTS.md governs report, todo, and entity conventions. Every `{repo}-repo/` with its own `AGENTS.md` governs its dive — the agent reads it before working inside, per the root project-delegation rule.
+--
+/home/eddyr/assembler/_code-dives/snes9x-repo/AGENTS.md:## Delegation
+/home/eddyr/assembler/_code-dives/snes9x-repo/AGENTS.md-
+/home/eddyr/assembler/_code-dives/snes9x-repo/AGENTS.md-The `_code-dives/AGENTS.md` and root `AGENTS.md` govern general conventions. This project owns the snes9x dive: build flags, ROM acquisition, and emulator verification.
+# exit: 0

@@ -1,0 +1,11 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_code-dives/_bitacora\ \&\&\ for\ d\ in\ report\ todo\;\ do\ for\ f\ in\ \"\$d\"/\*\;\ do\ \[\ -f\ \"\$f\"\ \]\ \&\&\ mv\ \"\$f\"\ \"\$d/\$\(date\ -r\ \"\$f\"\ +%Y%m%d-%H%M%S\)-\$\(basename\ \"\$f\"\)\"\;\ done\;\ done\;\ ls\ report\ todo 
+# DATE: 2026-07-31T10:37:11-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+report:
+20260731-093528-snes9x-build.log
+20260731-094819-snes9x-compile-metrics.md
+
+todo:
+20260731-093638-snes9x-compile.md
+# exit: 0

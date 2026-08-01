@@ -1,0 +1,24 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'super\ off\ road\'\ 45 
+# DATE: 2026-07-31T18:28:33-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=super%2Boff%2Broad
+GAME https://romsfun.com/roms/super-nintendo/super-off-road-2.html | Super Off Road
+GAME https://romsfun.com/roms/super-nintendo/super-off-road-the-baja.html | Super Off Road: The Baja
+GAME https://romsfun.com/roms/super-nintendo/super-little-miss-a-d-d-world.html | Super Little Miss A.D.D. World
+GAME https://romsfun.com/roms/super-nintendo/aiii-s-v-a-ressha-de-ikou-3-super-version.html | AIII S.V.: A-Ressha de Ikou 3: Super Version
+GAME https://romsfun.com/roms/super-nintendo/super-adventure-island.html | Super Adventure Island
+GAME https://romsfun.com/roms/super-nintendo/fifa-world-cup-mexico-70.html | FIFA World Cup Mexico 70
+GAME https://romsfun.com/roms/super-nintendo/bs-f-zero-deluxe.html | BS F-Zero Deluxe
+GAME https://romsfun.com/roms/super-nintendo/parlor-mini-6-pachinko-jikki-simulation-game.html | Parlor! Mini 6: Pachinko Jikki Simulation Game
+GAME https://romsfun.com/roms/super-nintendo/naruhodo-the-world.html | Naruhodo! The World
+GAME https://romsfun.com/roms/super-nintendo/goal-2.html | Goal!
+OPEN https://romsfun.com/roms/super-nintendo/super-off-road-2.html
+DL https://romsfun.com/download/super-off-road-2-146622
+VARIANTS:
+1 https://romsfun.com/download/super-off-road-2-146622/1 | Super Off Road (Europe)
+2 https://romsfun.com/download/super-off-road-2-146622/2 | Super Off Road (Japan) (En)
+3 https://romsfun.com/download/super-off-road-2-146622/3 | Super Off Road (USA)
+4 https://romsfun.com/download/super-off-road-2-146622/4 | Super Off Road - The Baja (USA) (Beta)
+5 https://romsfun.com/download/super-off-road-2-146622/5 | Super Off Road - The Baja (USA)
+# exit: 0

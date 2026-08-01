@@ -1,0 +1,10 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix\ \&\&\ time\ make\ -j\$\(nproc\)\ 2\>\&1\ \|\ grep\ -E\ \'error\|warning:\ unused\|\^real\|snes9x\$\|Linking\'\ \|\ head\ -8\;\ ls\ -la\ snes9x 
+# DATE: 2026-07-31T15:18:43-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix
+# --------------------
+
+real	0m1.788s
+user	0m1.648s
+sys	0m0.103s
+-rwxr-xr-x 1 eddyr eddyr 2746376 Jul 31 15:18 snes9x
+# exit: 0

@@ -1,0 +1,20 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/.opencode/_bitacora\ \&\&\ rsync\ -a\ --ignore-existing\ todo/\ task-todo/\ \&\&\ rm\ -rf\ todo\ \&\&\ rsync\ -a\ --ignore-existing\ reports/\ task-report/\ \&\&\ rm\ -rf\ reports\ \&\&\ ls\ -la\ \&\&\ echo\ ---\ \&\&\ for\ d\ in\ task-\*/\;\ do\ echo\ \"\$\(basename\ \$d\):\ \$\(ls\ \$d\ \|\ wc\ -l\)\ items\"\;\ done 
+# DATE: 2026-07-31T12:32:34-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+total 28
+drwxr-xr-x 1 eddyr eddyr  118 Jul 31 12:32 .
+drwxr-xr-x 1 eddyr eddyr  600 Jul 31 12:32 ..
+drwxr-xr-x 1 eddyr eddyr  112 Jul 31 12:28 reference
+drwxr-xr-x 1 eddyr eddyr   24 Jul 23 06:44 task-audit
+drwxr-xr-x 1 eddyr eddyr   66 Jul 27 17:16 task-plan
+drwxr-xr-x 1 eddyr eddyr 4276 Jul 24 15:07 task-report
+drwxr-xr-x 1 eddyr eddyr   70 Jul 28 11:22 task-survey
+drwxr-xr-x 1 eddyr eddyr 2354 Jul 27 18:41 task-todo
+---
+task-audit: 1 items
+task-plan: 1 items
+task-report: 83 items
+task-survey: 1 items
+task-todo: 46 items
+# exit: 0

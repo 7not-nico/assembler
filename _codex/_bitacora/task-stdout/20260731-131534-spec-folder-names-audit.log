@@ -1,0 +1,9 @@
+# CMD: sh -c cd\ /home/eddyr/assembler\ \&\&\ grep\ -n\ \'_code-dives\\\|_assets\\\|_findings\\\|_projects\\\|code-dives\\\|assets\\\|findings\\\|projects\'\ .opencode/entities/specifications/SPEC.NAMING.WORD.CLASS.md\ .opencode/entities/specifications/SPEC.DIRECTORY.RING.TOPOLOGY.md 
+# DATE: 2026-07-31T13:15:34-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+.opencode/entities/specifications/SPEC.NAMING.WORD.CLASS.md:7:- Noun class follows word class — an instantiator uses a concrete noun (`report`, `schema`, `script`, `todo`); an aggregator uses an abstract noun (`knowledge`, `bitacora`, `codex`, `trove`). A pluralized concrete noun marks a naming violation — `code-dives`, `assets`, `findings`, `projects` fail the aggregator class because they name many artifacts, not a container.
+.opencode/entities/specifications/SPEC.DIRECTORY.RING.TOPOLOGY.md:7:- Shared `node_modules/` — serves all subprojects; root-level resolution shadows child folders when versions diverge
+.opencode/entities/specifications/SPEC.DIRECTORY.RING.TOPOLOGY.md:24:- Domain projects — plain folders inside a domain: `_codex/snes9x-repo/`, `_knowledge/rust-coding/`, `_atelier/one-timers/`
+.opencode/entities/specifications/SPEC.DIRECTORY.RING.TOPOLOGY.md:31:- Ring order governs governance: R0 root instructions govern; R1 domains follow; R2 infrastructure serves the domain; R3 projects sit at the leaves.
+# exit: 0

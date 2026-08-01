@@ -1,0 +1,6 @@
+# CMD: bash -c mkdir\ -p\ mgba-repo/backup/study-monoliths\ \&\&\ mv\ mgba-repo/study/gb-core-architecture.md\ mgba-repo/study/gba-core-architecture.md\ mgba-repo/backup/study-monoliths/\ \&\&\ ls\ mgba-repo/study/\ \|\ wc\ -l\ \&\&\ ls\ mgba-repo/study/\ \|\ tr\ \"\\n\"\ \"\ \" 
+# DATE: 2026-08-01T07:36:39-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+21
+gba-apu.md gba-bios.md gba-cpu-arm7tdmi.md gba-dma.md gba-io.md gba-memory.md gba-ppu.md gb-apu.md gba-savedata.md gba-system.md gba-timer.md gb-cpu-sm83.md gb-io.md gb-mbc.md gb-memory.md gb-overrides.md gb-ppu.md gb-savedata.md gb-system.md gb-timer.md gb-timing.md # exit: 0

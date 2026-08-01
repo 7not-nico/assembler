@@ -1,0 +1,7 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ OUT=\$\(cmake\ --build\ build\ --target\ mgba\ -j\$\(nproc\)\ 2\>\&1\)\;\ echo\ \"warnings:\ \$\(printf\ \"%s\"\ \"\$OUT\"\ \|\ rg\ -c\ warning\)\"\;\ echo\ \"errors:\ \$\(printf\ \"%s\"\ \"\$OUT\"\ \|\ rg\ -c\ error\)\"\;\ printf\ \"%s\"\ \"\$OUT\"\ \|\ rg\ \"warning\|error\"\ \|\ head\ -3 
+# DATE: 2026-08-01T08:47:28-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+warnings: 
+errors: 
+# exit: 0

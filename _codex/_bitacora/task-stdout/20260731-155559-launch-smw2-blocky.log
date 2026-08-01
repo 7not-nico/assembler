@@ -1,0 +1,6 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ pkill\ -x\ snes9x\ 2\>/dev/null\;\ sleep\ 1\;\ setsid\ nohup\ snes9x/unix/snes9x\ -v1\ roms/smw2-2-complete.sfc\ \>/tmp/opencode/snes9x-launch.log\ 2\>\&1\ \<\ /dev/null\ \&\ sleep\ 2\;\ hyprctl\ clients\ \|\ grep\ -A6\ \'Snes9x\'\ \|\ grep\ -E\ \'size:\' 
+# DATE: 2026-07-31T15:55:59-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+	size: 256,239
+# exit: 0

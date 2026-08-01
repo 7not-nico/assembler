@@ -1,0 +1,15 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/prehistorik-man-145581/2\'\ 90 
+# DATE: 2026-07-31T19:06:49-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/prehistorik-man-145581/2
+LINK https://statics.romsfun.com/SNES/Prehistorik%20Man%20%28USA%29%20%28En%2CFr%2CEs%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRRxdFh0
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/prehistorik-man-usa-en-fr-es.zip (Prehistorik Man (USA) (En,Fr,Es).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/prehistorik-man-usa-en-fr-es.zip
+OK   Prehistorik Man (USA) (En,Fr,Es).sfc (1048576 B) title="PREHISTORIK MAN"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/prehistorik-man-usa-en-fr-es.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/prehistorik-man-usa-en-fr-es.sfc: Super NES ROM image "PREHISTORIK MAN" (USA), LoROM, FastROM, ROM size: 1024KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/prehistorik-man-usa-en-fr-es.sfc
+RUN   pid=361655 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

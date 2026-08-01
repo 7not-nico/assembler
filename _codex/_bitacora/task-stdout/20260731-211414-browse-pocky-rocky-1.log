@@ -1,0 +1,11 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/browse-romsfun.sh\ \'pocky\ rocky\'\ 45\ \|\ grep\ -A5\ \'pocky-rocky.html\' 
+# DATE: 2026-07-31T21:14:14-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+GAME https://romsfun.com/roms/super-nintendo/pocky-rocky.html | Pocky & Rocky
+OPEN https://romsfun.com/roms/super-nintendo/pocky-rocky-2.html
+DL https://romsfun.com/download/pocky-rocky-2-145533
+VARIANTS:
+1 https://romsfun.com/download/pocky-rocky-2-145533/1 | Pocky & Rocky 2 (Europe)
+2 https://romsfun.com/download/pocky-rocky-2-145533/2 | Pocky & Rocky 2 (USA) (Beta)
+# exit: 0

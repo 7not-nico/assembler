@@ -1,0 +1,34 @@
+# CMD: bash -c time\ cmake\ --build\ build\ -j\$\(nproc\)\ 2\>\&1\ \|\ tail\ -25 
+# DATE: 2026-07-31T23:50:46-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo
+# --------------------
+[ 91%] Building C object CMakeFiles/mgba.dir/src/feature/commandline.c.o
+[ 92%] Building C object CMakeFiles/mgba.dir/src/feature/proxy-backend.c.o
+[ 93%] Building C object CMakeFiles/mgba.dir/src/feature/thread-proxy.c.o
+[ 93%] Building C object CMakeFiles/mgba.dir/src/feature/video-backend.c.o
+[ 93%] Building C object CMakeFiles/mgba.dir/src/feature/video-logger.c.o
+[ 94%] Building C object CMakeFiles/mgba.dir/src/feature/updater.c.o
+[ 94%] Building C object CMakeFiles/mgba.dir/src/core/scripting.c.o
+[ 95%] Linking C shared library libmgba.so
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/script/engines/lua.c: In function ‘_luaGetTable’:
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/script/engines/lua.c:1410:24: warning: ‘intKey’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1410 |                 keyVal = mSCRIPT_MAKE_S64(intKey);
+      |                        ^
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/script/engines/lua.c:1380:17: note: ‘intKey’ was declared here
+ 1380 |         int64_t intKey;
+      |                 ^
+[ 95%] Built target mgba
+[ 96%] Building C object sdl/CMakeFiles/mgba-sdl.dir/main.c.o
+[ 97%] Building C object sdl/CMakeFiles/mgba-sdl.dir/sdl-events.c.o
+[ 97%] Building C object sdl/CMakeFiles/mgba-sdl.dir/gl-common.c.o
+[ 97%] Building C object sdl/CMakeFiles/mgba-sdl.dir/sdl-audio.c.o
+[ 97%] Building C object sdl/CMakeFiles/mgba-sdl.dir/gl-sdl.c.o
+[ 98%] Building C object sdl/CMakeFiles/mgba-sdl.dir/gles2-sdl.c.o
+[ 98%] Building C object sdl/CMakeFiles/mgba-sdl.dir/sw-sdl2.c.o
+[100%] Linking C executable mgba
+[100%] Built target mgba-sdl
+
+real	0m14.919s
+user	1m26.973s
+sys	0m5.741s
+# exit: 0

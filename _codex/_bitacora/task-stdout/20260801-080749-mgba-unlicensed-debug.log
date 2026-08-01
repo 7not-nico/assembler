@@ -1,0 +1,18 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo/build/test\ \&\&\ ./test-gb-unlicensed\ 2\>\&1\ \|\ grep\ -B1\ -A3\ \"FAILED\\\|Assertion\\\|Error\"\ \|\ head\ -30 
+# DATE: 2026-08-01T08:07:49-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+[   LINE   ] --- /home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/test/unlicensed.c:91: error: Failure!
+[  FAILED  ] sachenMMC2Fingerprint
+[ RUN      ] noFalsePositive
+[  ERROR   ] --- 561 == 561
+[   LINE   ] --- /home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/test/unlicensed.c:108: error: Failure!
+[  FAILED  ] noFalsePositive
+[==========] GBUnlicensed: 3 test(s) run.
+[  PASSED  ] 1 test(s).
+[  FAILED  ] GBUnlicensed: 2 test(s), listed below:
+[  FAILED  ] sachenMMC2Fingerprint
+[  FAILED  ] noFalsePositive
+
+ 2 FAILED TEST(S)
+# exit: 0

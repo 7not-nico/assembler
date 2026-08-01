@@ -1,0 +1,7 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ CDP_PORT=9223\ bash\ scripts/browse-romsfun.sh\ \'mario\ kart\'\ 40 
+# DATE: 2026-07-31T18:10:25-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=mario%2Bkart
+ERROR no game matches mario kart
+# exit: 1

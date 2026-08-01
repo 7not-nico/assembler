@@ -1,0 +1,11 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ cmake\ --build\ build\ --target\ test-gb-unlicensed\ -j\$\(nproc\)\ 2\>\&1\ \|\ tail\ -2\ \&\&\ cd\ build/test\ \&\&\ ./test-gb-unlicensed\ 2\>\&1\ \|\ tail\ -4 
+# DATE: 2026-08-01T08:12:28-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+[100%] Linking C executable test-gb-unlicensed
+[100%] Built target test-gb-unlicensed
+[ RUN      ] noFalsePositive
+[       OK ] noFalsePositive
+[==========] GBUnlicensed: 3 test(s) run.
+[  PASSED  ] 3 test(s).
+# exit: 0

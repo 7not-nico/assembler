@@ -1,0 +1,19 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_knowledge/_templates\ \&\&\ mv\ reports\ report\ \&\&\ ls\ report/\ write-report-template.md 
+# DATE: 2026-07-31T11:26:03-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+write-report-template.md
+
+report/:
+20260731-003332.md
+20260731-004058.md
+20260731-004633.md
+20260731-004827.md
+20260731-005130.md
+20260731-005632.md
+20260731-005830.md
+20260731-010123.md
+20260731-011644.md
+20260731-012848.md
+report-template.md
+# exit: 0

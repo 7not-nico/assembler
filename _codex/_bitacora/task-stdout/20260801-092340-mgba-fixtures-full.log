@@ -1,0 +1,20 @@
+# CMD: bash -c $'\ncd /home/eddyr/assembler/_codex\necho "== fixture/ inventory =="\nls mgba-repo/fixture/ | rg -v "^carts$"\necho "carts: $(ls mgba-repo/fixture/carts/*.gb 2>/dev/null | wc -l) synthetic"\necho "== probe-headers =="\nbash mgba-repo/fixture/probe-headers-test.sh 2>&1 | rg -c "^PASS"; bash mgba-repo/fixture/probe-headers-test.sh 2>&1 | rg "^FAIL" | head -3\necho "== slugify =="\nbash mgba-repo/fixture/slugify-test.sh 2>&1 | rg -c "^PASS"\necho "== banking suite (source-registered) =="\ncd mgba-repo/build/test && ./test-gb-banking 2>&1 | rg "PASSED|FAILED" | head -2\n' 
+# DATE: 2026-08-01T09:23:40-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+== fixture/ inventory ==
+gen-cart.sh
+mbc-banking-test
+mbc-banking-test.c
+mbc-banking-test-dbg
+probe-headers-test.sh
+slugify-test.sh
+test-cart.gb
+test-cart.zip
+carts: 15 synthetic
+== probe-headers ==
+15
+== slugify ==
+== banking suite (source-registered) ==
+[  PASSED  ] 7 test(s).
+# exit: 0

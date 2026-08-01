@@ -1,0 +1,9 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ g++\ -O2\ -o\ fixture/blit-scale-test\ fixture/blit-scale-test.c\ snes9x/filter/hq2x.cpp\ -I\ snes9x/filter\ \&\&\ ./fixture/blit-scale-test 
+# DATE: 2026-07-31T15:14:02-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+HQ2X   scale=2 -> 512x448  probe@(26,14):OK  extra_rows:0 (headroom 32)  fill:OK  PASS
+HQ3X   scale=3 -> 768x672  probe@(39,21):OK  extra_rows:0 (headroom 48)  fill:OK  PASS
+HQ4X   scale=4 -> 1024x896  probe@(52,28):OK  extra_rows:0 (headroom 64)  fill:OK  PASS
+RESULT PASS
+# exit: 0

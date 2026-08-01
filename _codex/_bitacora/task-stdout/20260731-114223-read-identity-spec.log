@@ -1,0 +1,6 @@
+# CMD: sh -c cat\ /home/eddyr/assembler/.opencode/entities/identities/IDENTITY.SPEC.md 
+# DATE: 2026-07-31T11:42:23-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+cat: /home/eddyr/assembler/.opencode/entities/identities/IDENTITY.SPEC.md: No such file or directory
+# exit: 1

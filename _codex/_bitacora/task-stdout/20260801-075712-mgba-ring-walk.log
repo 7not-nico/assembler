@@ -1,0 +1,23 @@
+# CMD: bash -c $'\ncd mgba-repo\necho "== ring 0 foundation =="\necho "invariant/ ($(ls invariant/ | wc -l) files)"; ls invariant/ | tr "\\n" " "; echo\necho "scripts/ ($(ls scripts/ | wc -l) files, bash -n: $(for s in scripts/*.sh; do bash -n $s || echo BAD; done | wc -l) OK)"\necho "== ring 1 record + governance =="\necho "bitacoro todo: $(ls ../_codex/_bitacora/task-todo/ | wc -l) files; report: $(ls ../_codex/_bitacora/task-report/ | wc -l) files"\necho "precept/ ($(ls precept/ | wc -l) files)"; ls precept/\necho "== ring 2 safety + understanding =="\necho "backup/ ($(du -sh backup/mgba-src 2>/dev/null | cut -f1) src + $(ls backup/binaries 2>/dev/null | wc -l) binaries)"\necho "study/ ($(ls study/ | wc -l) files)"; echo "concept/ ($(ls concept/ | wc -l) files)"\necho "== ring 3 proof + structure + steps =="\necho "fixture/ ($(ls fixture/*.sh fixture/*.c fixture/carts/*.gb 2>/dev/null | wc -l) artifacts)"; echo "pattern/ ($(ls pattern/ | wc -l))"; echo "procedure/ ($(ls procedure/ | wc -l))"\n' 
+# DATE: 2026-08-01T07:57:12-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+== ring 0 foundation ==
+invariant/ (4 files)
+build-from-source.md precedence-chain.md record-consistency.md source-pristine.md 
+scripts/ (7 files, bash -n: 0 OK)
+== ring 1 record + governance ==
+ls: cannot access '../_codex/_bitacora/task-todo/': No such file or directory
+ls: cannot access '../_codex/_bitacora/task-report/': No such file or directory
+bitacoro todo: 0 files; report: 0 files
+precept/ (1 files)
+acquire-gb-rom.md
+== ring 2 safety + understanding ==
+backup/ (81M src + 2 binaries)
+study/ (21 files)
+concept/ (5 files)
+== ring 3 proof + structure + steps ==
+fixture/ (12 artifacts)
+pattern/ (1)
+procedure/ (1)
+# exit: 0

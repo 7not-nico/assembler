@@ -1,0 +1,20 @@
+# CMD: bash _templates/copy-templates.sh mgba-repo 
+# DATE: 2026-07-31T23:42:54-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+COPY   /home/eddyr/assembler/_knowledge/_templates → mgba-repo
+COPY   /home/eddyr/assembler/_codex/_templates/pattern-template.md → mgba-repo/pattern-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/atomic-script-template.sh → mgba-repo/atomic-script-template.sh
+COPY   /home/eddyr/assembler/_codex/_templates/precedence-chain.md → mgba-repo/precedence-chain.md
+COPY   /home/eddyr/assembler/_codex/_templates/invariant-template.md → mgba-repo/invariant-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/guideline-template.md → mgba-repo/guideline-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/study-template.md → mgba-repo/study-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/fixture-template.md → mgba-repo/fixture-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/backup-template.md → mgba-repo/backup-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/dive-agents-template.md → mgba-repo/dive-agents-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/start-browser.sh → mgba-repo/start-browser.sh
+COPY   /home/eddyr/assembler/_codex/_templates/start-browser-headless.sh → mgba-repo/start-browser-headless.sh
+COPY   /home/eddyr/assembler/_codex/_templates/run-logged.sh → mgba-repo/run-logged.sh
+COPY   /home/eddyr/assembler/_codex/_templates/slugify.sh → mgba-repo/slugify.sh
+DONE   mgba-repo
+# exit: 0

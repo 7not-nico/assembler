@@ -1,0 +1,7 @@
+# CMD: sh -c cd\ /home/eddyr/assembler\ \&\&\ for\ f\ in\ opencode.json\ .opencode/skills/declare-grounded-entity/SKILL.md\ .opencode/entities/identities/IDENTITY.KNOWLEDGE.md\ .opencode/entities/identities/IDENTITY.CODE.DIVES.md\ .opencode/entities/specifications/SPEC.DIRECTORY.RING.TOPOLOGY.md\ AGENTS.md\ .opencode/_bitacora/task-todo/rewrite-agents-communication.md\ _knowledge/go-coding/docs/skill-declare-grounded-entity.md\ .opencode/.burst-state.json\;\ do\ sed\ -i\ \'s/_code-dives/_codex/g\;\ s/_assets/_depot/g\;\ s/_findings/_trove/g\;\ s/_projects/_atelier/g\;\ s/IDENTITY.CODE.DIVES/IDENTITY.CODEX/g\'\ \"\$f\"\;\ done\ \&\&\ echo\ \'live\ files\ done\'\ \&\&\ grep\ -rln\ \'_code-dives\\\|_assets\\\|_findings\\\|_projects\\\|IDENTITY.CODE.DIVES\'\ _codex\ --include=\'\*.md\'\ --include=\'\*.sh\'\ \|\ grep\ -v\ _bitacora\ \|\ head 
+# DATE: 2026-07-31T12:55:23-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+live files done
+_codex/snes9x-repo/AGENTS.md
+# exit: 0

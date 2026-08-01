@@ -1,0 +1,30 @@
+# CMD: bash -c ctest\ --test-dir\ build\ -R\ \"\^gb\"\ --output-on-failure\ 2\>\&1\ \|\ tail\ -25 
+# DATE: 2026-08-01T00:07:08-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo
+# --------------------
+test-gba-core
+test-gba-core
+Release/test-gba-core
+Release/test-gba-core
+Debug/test-gba-core
+Debug/test-gba-core
+MinSizeRel/test-gba-core
+MinSizeRel/test-gba-core
+RelWithDebInfo/test-gba-core
+RelWithDebInfo/test-gba-core
+Deployment/test-gba-core
+Deployment/test-gba-core
+Development/test-gba-core
+Development/test-gba-core
+Unable to find executable: test-gba-core
+7/7 Test #9: gba-core .........................***Not Run   0.00 sec
+
+71% tests passed, 2 tests failed out of 7
+
+Total Test time (real) =   0.24 sec
+
+The following tests FAILED:
+	  8 - gba-cheats (Not Run)
+	  9 - gba-core (Not Run)
+Errors while running CTest
+# exit: 0

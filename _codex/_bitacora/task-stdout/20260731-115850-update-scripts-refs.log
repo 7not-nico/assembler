@@ -1,0 +1,10 @@
+# CMD: sh -c cd\ /home/eddyr/assembler\ \&\&\ sed\ -i\ \'s\|_scripts/dataflow/\|.opencode/_scripts/dataflow/\|g\'\ AGENTS.md\ \&\&\ sed\ -i\ \'s\|_scripts/fixtures\|.opencode/_scripts/fixtures\|g\;\ s\|/home/eddyr/assembler/_scripts\|/home/eddyr/assembler/.opencode/_scripts\|g\;\ s\|_scripts/\|.opencode/_scripts/\|g\'\ .opencode/rules/code-style-ruby.md\ .opencode/skills/survey-scripts/SKILL.md\ \&\&\ grep\ -n\ \'_scripts\'\ AGENTS.md\ .opencode/rules/code-style-ruby.md\ .opencode/skills/survey-scripts/SKILL.md 
+# DATE: 2026-07-31T11:58:50-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+AGENTS.md:10:The `.opencode/_scripts/dataflow/` directory stores flow documentation. The `semantic-engine.md` file documents embed/search logic flow.
+.opencode/rules/code-style-ruby.md:1:Ruby is written in Functional Style using /home/eddyr/assembler/.opencode/_scripts
+.opencode/rules/code-style-ruby.md:2:code is save into /home/eddyr/assembler/.opencode/.opencode/_scripts/fixtures 
+.opencode/skills/survey-scripts/SKILL.md:3:description: Use this skill when creating surveys under .opencode/_scripts/survey/ — it follows the survey workflow: check template/ for boilerplate, knowledge/ for Ruby reference, survey/ examples for patterns, and writes reports into report/
+.opencode/skills/survey-scripts/SKILL.md:95:- `survey/` is for analysis scripts only. Actions (migrations, renames, writes) belong in `r*-*.rb` scripts under `.opencode/_scripts/`.
+# exit: 0

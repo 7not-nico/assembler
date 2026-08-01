@@ -1,0 +1,14 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ fixture/verify-title-test.sh 
+# DATE: 2026-07-31T18:03:12-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+mv: 'hi.zip' and '/tmp/tmp.XkaMmXg1co/hi.zip' are the same file
+PASS HiROM spaced -> "TEST HIRON TITLE"
+mv: 'lo.zip' and '/tmp/tmp.XkaMmXg1co/lo.zip' are the same file
+PASS LoROM -> "TEST LORON TITLE"
+mv: 'glob.zip' and '/tmp/tmp.XkaMmXg1co/glob.zip' are the same file
+PASS glob-char member -> "GLOB BRACKET TITLE"
+mv: 'junk.zip' and '/tmp/tmp.XkaMmXg1co/junk.zip' are the same file
+PASS garbage header -> ""
+RESULT PASS
+# exit: 0

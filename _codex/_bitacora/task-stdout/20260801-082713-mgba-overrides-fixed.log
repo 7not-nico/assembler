@@ -1,0 +1,11 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ cmake\ --build\ build\ --target\ test-gb-overrides\ -j\$\(nproc\)\ 2\>\&1\ \|\ tail\ -2\ \&\&\ cd\ build/test\ \&\&\ ./test-gb-overrides\ 2\>\&1\ \|\ tail\ -4 
+# DATE: 2026-08-01T08:27:13-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+make[1]: *** [CMakeFiles/Makefile2:1011: test/CMakeFiles/test-gb-overrides.dir/rule] Error 2
+make: *** [Makefile:407: test-gb-overrides] Error 2
+[  FAILED  ] GBOverrides: 1 test(s), listed below:
+[  FAILED  ] defaultsRunsClean
+
+ 1 FAILED TEST(S)
+# exit: 0

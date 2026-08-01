@@ -1,0 +1,7 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ cmake\ --build\ build\ --target\ test-gb-overrides\ -j\$\(nproc\)\ 2\>\&1\ \|\ tail\ -3\ \&\&\ cd\ build/test\ \&\&\ ./test-gb-overrides\ 2\>\&1\ \|\ tail\ -8 
+# DATE: 2026-08-01T08:20:26-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+make: *** No rule to make target 'test-gb-overrides'.  Stop.
+bash: line 1: ./test-gb-overrides: No such file or directory
+# exit: 0

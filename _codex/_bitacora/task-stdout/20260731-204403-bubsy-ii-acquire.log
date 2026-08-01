@@ -1,0 +1,16 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/bubsy-ii-2-143489/2\'\ 90 
+# DATE: 2026-07-31T20:44:03-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/bubsy-ii-2-143489/2
+LINK https://statics.romsfun.com/SNES/Bubsy%20II%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRR0fF1w
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/bubsy-ii-usa.zip (Bubsy II (USA).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/bubsy-ii-usa.zip
+WARN unexpected ROM size: 2097152
+OK   Bubsy II (USA).sfc (2097152 B) title="BUBSY II"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/bubsy-ii-usa.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/bubsy-ii-usa.sfc: PGP compressed data (BZIP2)
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/bubsy-ii-usa.sfc
+RUN   pid=424447 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

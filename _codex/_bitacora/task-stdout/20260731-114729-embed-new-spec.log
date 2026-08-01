@@ -1,0 +1,7 @@
+# CMD: bun run /home/eddyr/assembler/.opencode/tools/semantic-embed.ts --type specifications 
+# DATE: 2026-07-31T11:47:29-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+
+0 entities embedded of type 'specifications'
+# exit: 0

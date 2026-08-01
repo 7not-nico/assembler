@@ -1,0 +1,16 @@
+# CMD: sh -c mkdir\ -p\ /home/eddyr/assembler/_code-dives/snes9x-repo/roms\ \&\&\ cd\ /home/eddyr/assembler/_code-dives/snes9x-repo/roms\ \&\&\ unzip\ -o\ /home/eddyr/assembler/.playwright-mcp/Super-Mario-World-USA-.zip\ \&\&\ ls\ -la\ \&\&\ mv\ \'Super\ Mario\ World\ \(USA\).sfc\'\ \'super-mario-world-usa.sfc\'\ \&\&\ ls\ -la 
+# DATE: 2026-07-31T10:19:41-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+Archive:  /home/eddyr/assembler/.playwright-mcp/Super-Mario-World-USA-.zip
+TORRENTZIPPED-644DCC3B
+  inflating: Super Mario World (USA).sfc  
+total 512
+drwxr-xr-x 1 eddyr eddyr     54 Jul 31 10:19 .
+drwxr-xr-x 1 eddyr eddyr     20 Jul 31 10:19 ..
+-rw-r--r-- 1 eddyr eddyr 524288 Dec 24  1996 Super Mario World (USA).sfc
+total 512
+drwxr-xr-x 1 eddyr eddyr     50 Jul 31 10:19 .
+drwxr-xr-x 1 eddyr eddyr     20 Jul 31 10:19 ..
+-rw-r--r-- 1 eddyr eddyr 524288 Dec 24  1996 super-mario-world-usa.sfc
+# exit: 0

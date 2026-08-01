@@ -1,0 +1,16 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo\ \&\&\ bash\ scripts/playwright-fetch-rom.sh\ \'https://romsfun.com/download/blues-brothers-145491/2\'\ 90 
+# DATE: 2026-07-31T19:02:03-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/blues-brothers-145491/2
+LINK https://statics.romsfun.com/SNES/Phantom%202040%20%28USA%29%20%28Beta%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRV4c1tw
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/phantom-2040-usa-beta.zip (Phantom 2040 (USA) (Beta).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/phantom-2040-usa-beta.zip
+WARN unexpected ROM size: 2097152
+OK   Phantom 2040 (USA) (Beta).sfc (2097152 B) title="PHANTOM 2040"
+ROM  /home/eddyr/assembler/_codex/snes9x-repo/roms/phantom-2040-usa-beta.sfc
+/home/eddyr/assembler/_codex/snes9x-repo/roms/phantom-2040-usa-beta.sfc: Super NES ROM image "PHANTOM 2040" (USA), LoROM, FastROM, ROM size: 2048KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x /home/eddyr/assembler/_codex/snes9x-repo/roms/phantom-2040-usa-beta.sfc
+RUN   pid=358641 cpu=alive window=DISPLAY:0 log=/tmp/opencode/snes9x-launch.log
+# exit: 0

@@ -1,0 +1,39 @@
+# CMD: bash -c rg\ -n\ \"void\ GBSkipBIOS\|void\ GBMapBIOS\|void\ GBUnmapBIOS\"\ /home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/\*.c\;\ echo\ ---\;\ sed\ -n\ \"/void\ GBSkipBIOS/\,/\^\}/p\"\ /home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/gb.c\ \|\ head\ -30 
+# DATE: 2026-08-01T08:35:56-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/gb.c:713:void GBSkipBIOS(struct GB* gb) {
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/gb.c:871:void GBMapBIOS(struct GB* gb) {
+/home/eddyr/assembler/_codex/mgba-repo/mgba/src/gb/gb.c:883:void GBUnmapBIOS(struct GB* gb) {
+---
+void GBSkipBIOS(struct GB* gb) {
+	struct SM83Core* cpu = gb->cpu;
+	const struct GBCartridge* cart = (const struct GBCartridge*) &gb->memory.rom[0x100];
+	int nextDiv = 0;
+
+	switch (gb->model) {
+	case GB_MODEL_AUTODETECT: // Silence warnings
+		gb->model = GB_MODEL_DMG;
+		// Fall through
+	case GB_MODEL_DMG:
+		cpu->a = 1;
+		cpu->f.packed = 0xB0;
+		cpu->c = 0x13;
+		cpu->e = 0xD8;
+		cpu->h = 1;
+		cpu->l = 0x4D;
+		gb->timer.internalDiv = 0xABC;
+		nextDiv = 4;
+		break;
+	case GB_MODEL_SGB:
+		cpu->a = 1;
+		cpu->f.packed = 0x00;
+		cpu->c = 0x14;
+		cpu->e = 0x00;
+		cpu->h = 0xC0;
+		cpu->l = 0x60;
+		gb->timer.internalDiv = 0xD85;
+		nextDiv = 8;
+		break;
+	case GB_MODEL_MGB:
+# exit: 0

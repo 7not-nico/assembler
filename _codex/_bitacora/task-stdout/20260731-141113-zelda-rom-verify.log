@@ -1,0 +1,13 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/.playwright-mcp\ \&\&\ file\ \'Legend-of-Zelda-The---A-Link-to-the-Past-USA-.zip\'\ \&\&\ unzip\ -l\ \'Legend-of-Zelda-The---A-Link-to-the-Past-USA-.zip\' 
+# DATE: 2026-07-31T14:11:13-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+Legend-of-Zelda-The---A-Link-to-the-Past-USA-.zip: Zip archive data, at least v2.0 to extract, compression method=deflate
+Archive:  Legend-of-Zelda-The---A-Link-to-the-Past-USA-.zip
+TORRENTZIPPED-BCD57794
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+  1048576  12-24-1996 23:32   Legend of Zelda, The - A Link to the Past (USA).sfc
+---------                     -------
+  1048576                     1 file
+# exit: 0

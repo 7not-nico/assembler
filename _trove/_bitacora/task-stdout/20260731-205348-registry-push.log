@@ -1,0 +1,38 @@
+# CMD: ruby _templates/script/push-registry.rb 
+# DATE: 2026-07-31T20:53:48-06:00
+# CWD: /home/eddyr/assembler/_trove
+# --------------------
+  TPL anchor-workflow-template.md [format/ pos=1 tags=12 comp=0]
+  TPL backup-template.md [task-backup/ pos=nil tags=8 comp=1]
+  TPL bitacora-template.md [bitacora/ pos=7 tags=6 comp=0]
+  TPL browse-playwright-template.md [procedure/ pos=3 tags=5 comp=1]
+  TPL concept-template.md [concept/ pos=5 tags=12 comp=0]
+  TPL domain-agents-template.md [bootstrap pos=nil tags=9 comp=0]
+  TPL fixture-template.md [task-fixture/ pos=nil tags=8 comp=2]
+  TPL format-template.md [format/ pos=1 tags=12 comp=0]
+  TPL glossary-template.md [glossary/ pos=8 tags=12 comp=0]
+  TPL guideline-template.md [guideline/ pos=nil tags=9 comp=2]
+  TPL invariant-template.md [task-invariant/ pos=nil tags=8 comp=2]
+  TPL naming-conventions-template.md [reference/ pos=11 tags=12 comp=0]
+  TPL note-template.md [note/ pos=6 tags=12 comp=0]
+  TPL pattern-template.md [pattern/ pos=nil tags=5 comp=3]
+  TPL practice-template.md [practice/ pos=13 tags=12 comp=0]
+  TPL precept-template.md [precept/ pos=2 tags=5 comp=1]
+  TPL procedure-template.md [procedure/ pos=3 tags=6 comp=1]
+  TPL reference-template.md [reference/ pos=11 tags=12 comp=0]
+  TPL research-template.md [research/ pos=4 tags=12 comp=0]
+  TPL study-template.md [task-study/ pos=nil tags=9 comp=3]
+  TPL write-report-template.md [precept/ pos=2 tags=6 comp=1]
+  TPL write-reportare-template.md [precept/ pos=2 tags=6 comp=1]
+  INF 20260731-003332.md (`_knowledge/mise-docs/` — mise documentation study (scaffold end-to-end test + layer semantics validation), 2026-07-31, 4 err, 7 find)
+  INF 20260731-004058.md (`_knowledge/_templates/` — template system (naming conventions + code-block convention + write-informe precept), 2026-07-31, 0 err, 4 find)
+  INF 20260731-004633.md (`_knowledge/_templates/` — templates DB + Bun semantic engine, 2026-07-31, 3 err, 4 find)
+  INF 20260731-004827.md (`_knowledge/_templates/` — semantic search query + push-registry findings fix, 2026-07-31, 1 err, 2 find)
+  INF 20260731-005130.md (`_knowledge/_templates/` — semantic engine verification + AGENTS.md, 2026-07-31, 1 err, 4 find)
+  INF 20260731-005632.md (`_knowledge/_templates/` — semantic score improvement iteration (metrics), 2026-07-31, 2 err, 4 find)
+  INF 20260731-005830.md (`_knowledge/_templates/` — benchmark metadata correction, 2026-07-31, 0 err, 4 find)
+  INF 20260731-010123.md (`_knowledge/_templates/` — semantic engine stress test, 2026-07-31, 0 err, 5 find)
+  INF 20260731-011644.md (`_knowledge/_templates/` — Rust heavy vectorization + field extension, 2026-07-31, 4 err, 5 find)
+  INF 20260731-012848.md (`_knowledge/_templates/` — Go ANN worker (transport lesson resolved), 2026-07-31, 3 err, 5 find)
+Pushed 22 templates, 10 reports into /home/eddyr/assembler/_trove/_templates/script/../schema/templates.db
+# exit: 0

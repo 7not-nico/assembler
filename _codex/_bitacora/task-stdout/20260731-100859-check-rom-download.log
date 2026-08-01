@@ -1,0 +1,22 @@
+# CMD: sh -c ls\ -la\ /home/eddyr/assembler/_code-dives/snes9x-repo/roms/\ 2\>/dev/null\ \|\|\ echo\ \'no\ roms\ dir\'\;\ echo\ ---\;\ tail\ -5\ /home/eddyr/assembler/_code-dives/_bitacora/stdout/20260731-playwright-fetch-rom.log\;\ echo\ ---\;\ ls\ -la\ /home/eddyr/assembler/_code-dives/_bitacora/stdout/\ \|\ grep\ -i\ rom 
+# DATE: 2026-07-31T10:08:59-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+no roms dir
+---
+realpath: /home/eddyr/assembler/_code-dives/snes9x-repo/roms/super-mario-world.sfc: No such file or directory
+CHROME /home/eddyr/.cache/ms-playwright/chromium-1232/chrome-linux64/chrome
+NAV  https://www.romsgames.net/super-nintendo-rom-super-mario-world/
+BTN  mediaId=60107
+WAIT reCAPTCHA gate — solve the challenge in the browser window
+---
+-rw-r--r-- 1 eddyr eddyr   260 Jul 31 09:54 20260731-095405-romsgames-inspect.log
+-rw-r--r-- 1 eddyr eddyr  3316 Jul 31 09:54 20260731-095423-romsgames-download-links.log
+-rw-r--r-- 1 eddyr eddyr  2252 Jul 31 09:54 20260731-095431-romsgames-form.log
+-rw-r--r-- 1 eddyr eddyr   401 Jul 31 09:54 20260731-095453-romsgames-post-test.log
+-rw-r--r-- 1 eddyr eddyr  1107 Jul 31 09:55 20260731-095502-romsgames-js-scan.log
+-rw-r--r-- 1 eddyr eddyr   510 Jul 31 09:55 20260731-095514-romsgames-inline-js.log
+-rw-r--r-- 1 eddyr eddyr  1513 Jul 31 09:55 20260731-095519-romsgames-form-context.log
+-rw-r--r-- 1 eddyr eddyr   773 Jul 31 10:08 20260731-100859-check-rom-download.log
+-rw-r--r-- 1 eddyr eddyr   340 Jul 31 10:07 20260731-playwright-fetch-rom.log
+# exit: 0

@@ -1,0 +1,8 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo/roms\ \&\&\ pkill\ -x\ snes9x\ 2\>/dev/null\;\ sleep\ 1\;\ ruby\ snes9x_launcher.rb\ zelda\ -v9\ \&\&\ sleep\ 1\ \&\&\ hyprctl\ clients\ \|\ grep\ -A6\ \'Snes9x\'\ \|\ grep\ -E\ \'size:\' 
+# DATE: 2026-07-31T16:03:30-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo/roms
+# --------------------
+LAUNCH legend-of-zelda-the-a-link-to-the-past-usa.sfc -v9
+RUN  pid=266291  -v9 legend-of-zelda-the-a-link-to-the-past-usa.sfc -> /tmp/opencode/snes9x-launch.log
+	size: 384,358
+# exit: 0

@@ -1,0 +1,17 @@
+# CMD: sh -c cd\ /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix\ \&\&\ time\ make\ -j\$\(nproc\)\ 2\>\&1\ \|\ tail\ -8 
+# DATE: 2026-07-31T15:17:46-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix
+# --------------------
+x11.cpp:1619:100: warning: ‘KeySym XKeycodeToKeysym(Display*, KeyCode, int)’ is deprecated [-Wdeprecated-declarations]
+ 1619 |                                         KeyCode kc = XKeysymToKeycode(GUI.display, XKeycodeToKeysym(GUI.display, event.xkey.keycode, 0));
+      |                                                                                    ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from x11.cpp:19:
+/usr/include/X11/Xlib.h:1683:15: note: declared here
+ 1683 | extern KeySym XKeycodeToKeysym(
+      |               ^~~~~~~~~~~~~~~~
+make: *** [Makefile:77: x11.o] Error 1
+
+real	0m0.696s
+user	0m0.587s
+sys	0m0.054s
+# exit: 0

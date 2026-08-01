@@ -1,0 +1,20 @@
+# CMD: bash -c ls\ snes9x-repo/fixture/\ 2\>/dev/null\;\ echo\ ---\;\ ls\ mgba-repo/mgba/src/gb/test/\ mgba-repo/mgba/test/\ 2\>/dev/null\;\ echo\ ---\;\ grep\ -rn\ \"ENABLE_TEST\\\|BUILD_TEST\"\ mgba-repo/mgba/CMakeLists.txt\ mgba-repo/mgba/src/CMakeLists.txt\ 2\>/dev/null\ \|\ head\ -10 
+# DATE: 2026-08-01T00:04:53-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+blit-scale-test
+blit-scale-test.c
+verify-title-test.sh
+---
+mgba-repo/mgba/src/gb/test/:
+core.c
+gbx.c
+mbc.c
+memory.c
+rtc.c
+---
+mgba-repo/mgba/CMakeLists.txt:73:	set(BUILD_TEST OFF CACHE BOOL "Build testing harness")
+mgba-repo/mgba/CMakeLists.txt:1007:		set(BUILD_TEST OFF)
+mgba-repo/mgba/CMakeLists.txt:1084:if(BUILD_TEST OR BUILD_SUITE OR BUILD_CINEMA)
+mgba-repo/mgba/CMakeLists.txt:1381:	message(STATUS "	Test harness: ${BUILD_TEST}")
+# exit: 0

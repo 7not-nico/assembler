@@ -1,0 +1,16 @@
+# CMD: bash -c bash\ mgba-repo/scripts/acquire-rom.sh\ \"Wario\ Land\ 3\"\ game-boy-color\ 90\ 2\>\&1\ \|\ tail\ -12 
+# DATE: 2026-08-01T06:32:12-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+PICK https://romsfun.com/download/wario-land-3-110855/1
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/wario-land-3-110855/1
+LINK https://statics.romsfun.com/GameBoyColor/Wario%20Land%203%20%28World%29%20%28En%2CJa%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQRhwdVpw
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/wario-land-3-world-en-ja.zip (Wario Land 3 (World) (En,Ja).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/wario-land-3-world-en-ja.zip
+OK   Wario Land 3 (World) (En,Ja).gbc (2097152 B) title="WARIOLAND3AW8A" mbc=0x1b
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/wario-land-3-world-en-ja.gbc
+/home/eddyr/assembler/_codex/mgba-repo/roms/wario-land-3-world-en-ja.gbc: Game Boy Color ROM image: "WARIOLAND3" (Rev.00) [CGB ONLY] [MBC5+RAM+BATT], ROM: 16Mbit, RAM: 256Kbit
+LAUNCH /home/eddyr/assembler/_codex/mgba-repo/build/sdl/mgba /home/eddyr/assembler/_codex/mgba-repo/roms/wario-land-3-world-en-ja.gbc
+RUN   pid=10620 cpu=alive window=DISPLAY:0 log=/tmp/opencode/mgba-launch.log
+# exit: 0

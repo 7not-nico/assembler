@@ -1,0 +1,6 @@
+# CMD: curl -sL https://romsfun.com/roms/super-nintendo/ -o /tmp/opencode/romsfun-list.html -w code=%\{http_code\}\ size=%\{size_download\}\\n 
+# DATE: 2026-07-31T10:10:53-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+code=403 size=5398
+# exit: 0

@@ -1,0 +1,10 @@
+# CMD: sh -c cd\ /home/eddyr/assembler\ \&\&\ du\ -sh\ .opencode/TODO\ \&\&\ ls\ .opencode/TODO\ \|\ wc\ -l\ \&\&\ rsync\ -a\ --ignore-existing\ .opencode/TODO/\ .opencode/_bitacora/todo/\ \&\&\ rm\ -rf\ .opencode/TODO\ \&\&\ ls\ -d\ .opencode/TODO\ 2\>/dev/null\ \|\|\ echo\ \'TODO\ gone\'\;\ echo\ ---\;\ ls\ .opencode/_bitacora/todo/\ \|\ wc\ -l 
+# DATE: 2026-07-31T12:20:27-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+36K	.opencode/TODO
+9
+TODO gone
+---
+37
+# exit: 0

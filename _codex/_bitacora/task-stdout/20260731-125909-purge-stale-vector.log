@@ -1,0 +1,44 @@
+# CMD: sh -c $'cd /home/eddyr/assembler && bun -e \'\nimport {Database} from "bun:sqlite"\nconst vdb = new Database(".opencode/patlib-vector.db")\nconsole.log("stale vectors:", vdb.query("SELECT entity_id FROM embeddings WHERE entity_type=\\"identities\\" AND entity_id LIKE \\"%CODE.DIVES%\\"").all())\nvdb.query("DELETE FROM embeddings WHERE entity_type=\\"identities\\" AND entity_id=\\"IDENTITY.CODE.DIVES\\"").run()\nconsole.log("after:", vdb.query("SELECT count(*) c FROM embeddings WHERE entity_type=\\"identities\\"").get().c)\n\' && bun run .opencode/tools/semantic-drift.ts --check' 
+# DATE: 2026-07-31T12:59:09-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+stale vectors: [
+  {
+    entity_id: "IDENTITY.CODE.DIVES",
+  }
+]
+after: 35
+TABLE                DB  VEC MISS STALE
+----------------------------------------
+refs                 34   34    0     0
+precepts             12   12    0     0
+ruby                  0    0    0     0
+bash                  0    0    0     0
+ml                    1    1    0     0
+manifests             1    1    0     0
+specifications       25   25    0     0
+identities           35   35    0     0
+taxonomy              3    3    0     0
+chem                  0    0    0     0
+bio                   5    5    0     0
+definitions           3    3    0     0
+concepts             62   62    0     0
+cognitions           35   35    0     0
+patterns              7    7    0     0
+nexus                11   11    0     0
+maxims                9    9    0     0
+illustrations        79   79    0     0
+llm_spec_rules       12   12    0     0
+persons               8    8    0     0
+protocols            43   43    0     0
+linguistics           1    1    0     0
+abstractions          3    3    0     0
+commands             16   16    0     0
+rules                77   77    0     0
+apologias             1    1    0     0
+skills               66   66    0     0
+terms                15   15    0     0
+----------------------------------------
+TOTAL: 0 missing, 0 stale across 28 tables
+no drift
+# exit: 0

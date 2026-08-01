@@ -1,0 +1,5 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/_codex/mgba-repo\ \&\&\ sed\ -i\ \"s\|GBOverrideApplyDefaults\(gb\)\;\|GBOverrideApplyDefaults\(gb\)\;\ printf\(\\\"DBG\ crc=%08X\ mbc=%d\ model=%d\\\\\\\\n\\\"\,\ doCrc32\(\\\&gb-\>memory.rom\[0x100\]\,\ sizeof\(struct\ GBCartridge\)\)\,\ gb-\>memory.mbcType\,\ gb-\>model\)\;\|\"\ mgba/src/gb/test/overrides.c\ \&\&\ cmake\ --build\ build\ --target\ test-gb-overrides\ -j\$\(nproc\)\ \>/dev/null\ 2\>\&1\ \&\&\ cd\ build/test\ \&\&\ ./test-gb-overrides\ 2\>\&1\ \|\ grep\ -E\ \"DBG\|PASSED\|FAILED\" 
+# DATE: 2026-08-01T08:20:49-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+# exit: 2

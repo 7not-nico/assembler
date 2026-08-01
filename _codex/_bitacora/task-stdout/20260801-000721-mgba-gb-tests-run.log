@@ -1,0 +1,15 @@
+# CMD: bash -c cd\ build/test\ \&\&\ for\ t\ in\ test-gb-mbc\ test-gb-memory\ test-gb-rtc\ test-gb-core\ test-gb-gbx\;\ do\ echo\ \"==\ \$t\ ==\"\;\ ./\$t\ 2\>\&1\ \|\ grep\ -E\ \"PASSED\|FAILED\|SKIPPED\|ERROR\|tests\"\ \|\ head\ -8\;\ done 
+# DATE: 2026-08-01T00:07:21-06:00
+# CWD: /home/eddyr/assembler/_codex/mgba-repo
+# --------------------
+== test-gb-mbc ==
+[  PASSED  ] 7 test(s).
+== test-gb-memory ==
+[  PASSED  ] 3 test(s).
+== test-gb-rtc ==
+[  PASSED  ] 15 test(s).
+== test-gb-core ==
+[  PASSED  ] 5 test(s).
+== test-gb-gbx ==
+[  PASSED  ] 31 test(s).
+# exit: 0
