@@ -34,3 +34,7 @@ _depot/draw/
 
 # backup snapshot dirs (rule/skill pre-rewrite copies)
 .backups/
+
+# atelier — folder placeholder only, contents excluded
+_atelier/*
+!_atelier/.gitkeep
