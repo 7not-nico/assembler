@@ -1,0 +1,2 @@
+navigate into pages, broswser tabs.
+after searching the url and fetching the contents

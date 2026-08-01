@@ -1,0 +1,1 @@
+An annotation ensuring references remain valid. Denoted with `'a` syntax. The returned reference lives as long as the shorter of the input references. Compiler infers lifetimes via elision rules in common patterns. Prevents dangling references at compile time.

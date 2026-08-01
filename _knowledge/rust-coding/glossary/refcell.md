@@ -1,0 +1,1 @@
+Interior mutability smart pointer. `RefCell<T>` enforces borrow rules at runtime, not compile time. `borrow()` returns `Ref<T>`, `borrow_mut()` returns `RefMut<T>`. Panics at runtime if borrowing rules violated. Single-threaded only.

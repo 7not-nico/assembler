@@ -1,0 +1,35 @@
+# ch03-keymap.toml — practice keymap
+# Source: yazi-rs.github.io/docs/configuration/keymap (2026-07-31), 26.5.6
+
+# Quick directory jumps (prepend — higher priority than defaults)
+[[mgr.prepend_keymap]]
+on = ["g", "h"]
+run = "cd ~"
+desc = "Go to home directory"
+
+[[mgr.prepend_keymap]]
+on = ["g", "c"]
+run = "cd ~/.config"
+desc = "Go to config directory"
+
+[[mgr.prepend_keymap]]
+on = ["g", "t"]
+run = "cd /tmp"
+desc = "Go to tmp"
+
+# Multi-action bind with append
+[[mgr.append_keymap]]
+on = ["g", "b"]
+run = ["arrow -10", "arrow 10"]
+desc = "Jump around with g ⇒ b"
+
+# Disable a default key (noop — single-element array required)
+[[mgr.prepend_keymap]]
+on = ["g", "D"]
+run = ["noop"]
+
+# Ctrl bind
+[[mgr.prepend_keymap]]
+on = "<C-g>"
+run = "shell 'lazygit' --block"
+desc = "Open lazygit (blocking)"

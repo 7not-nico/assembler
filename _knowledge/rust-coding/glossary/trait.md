@@ -1,0 +1,1 @@
+A collection of method signatures defining shared behavior. Similar to interfaces in other languages. Types implement traits with `impl Trait for Type`. Default implementations can be provided. Trait bounds constrain generic types.

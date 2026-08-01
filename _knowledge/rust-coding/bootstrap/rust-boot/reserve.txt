@@ -1,0 +1,67 @@
+# Rust reserved keywords — three categories
+# source: https://doc.rust-lang.org/stable/reference/keywords.html
+# fetched: 2026-07-29
+# strict: 42 keywords, reserved: 14, weak: 5
+
+# strict keywords
+_
+as
+async
+await
+break
+const
+continue
+crate
+dyn
+else
+enum
+extern
+false
+fn
+for
+if
+impl
+in
+let
+loop
+match
+mod
+move
+mut
+pub
+ref
+return
+self
+Self
+static
+struct
+super
+trait
+true
+type
+unsafe
+use
+where
+while
+
+# reserved keywords (future use)
+abstract
+become
+box
+do
+final
+gen
+macro
+override
+priv
+try
+typeof
+unsized
+virtual
+yield
+
+# weak keywords (context-dependent)
+macro_rules
+raw
+safe
+union

@@ -1,0 +1,1 @@
+Conditional compilation via `#[cfg(feature = "name")]`. Defined in Cargo.toml `[features]` section. Enables optional functionality without breaking changes. Default features can be disabled by consumers: `default-features = false`.

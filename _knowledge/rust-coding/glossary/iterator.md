@@ -1,0 +1,1 @@
+A trait for lazy sequence traversal. `next(&mut self) -> Option<Self::Item>` is the only required method. Consuming adaptors (`sum`, `collect`) drive iteration. Iterator adaptors (`map`, `filter`) produce new iterators. Three modes: `iter()`, `iter_mut()`, `into_iter()`.

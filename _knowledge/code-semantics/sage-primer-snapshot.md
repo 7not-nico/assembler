@@ -1,0 +1,3368 @@
+- generic [active] [ref=f4e1]:
+  - generic: Hide navigation sidebar
+  - generic: Hide table of contents sidebar
+  - link "Skip to content" [ref=f4e4] [cursor=pointer]:
+    - /url: "#furo-main-content"
+  - generic [ref=f4e5]:
+    - banner [ref=f4e6]:
+      - generic [ref=f4e7]: Toggle site navigation sidebar
+      - link "Category Framework" [ref=f4e14] [cursor=pointer]:
+        - /url: ../../index.html
+      - generic [ref=f4e16]:
+        - button "Toggle Light / Dark / Auto color theme" [ref=f4e18] [cursor=pointer]
+        - generic [ref=f4e22] [cursor=pointer]: Toggle table of contents sidebar
+    - complementary [ref=f4e27]:
+      - generic [ref=f4e30]:
+        - link "Light Logo Version 10.8 Reference Manual" [ref=f4e31] [cursor=pointer]:
+          - /url: ../../../index.html
+          - img "Light Logo" [ref=f4e33]
+          - generic [ref=f4e34]: Version 10.8 Reference Manual
+        - combobox [ref=f4e36]:
+          - option "other version" [selected]
+          - option "develop"
+          - option "10.9"
+          - option "10.8"
+          - option "10.7"
+          - option "10.6"
+          - option "10.5"
+          - option "10.4"
+          - option "10.3"
+          - option "10.2"
+          - option "10.1"
+          - option "10.0"
+        - search [ref=f4e37]:
+          - textbox "Search" [ref=f4e38]
+        - list [ref=f4e41]:
+          - listitem [ref=f4e42]:
+            - link "Home - Category Framework" [ref=f4e43] [cursor=pointer]:
+              - /url: ../../index.html
+        - generic [ref=f4e44]:
+          - list [ref=f4e45]:
+            - listitem [ref=f4e46]:
+              - link "Sage categories quickref" [ref=f4e47] [cursor=pointer]:
+                - /url: all.html
+          - list [ref=f4e48]:
+            - listitem [ref=f4e49]:
+              - 'link "Elements, parents, and categories in Sage: a primer" [ref=f4e50] [cursor=pointer]':
+                - /url: "#"
+            - listitem [ref=f4e51]:
+              - link "Categories" [ref=f4e52] [cursor=pointer]:
+                - /url: category.html
+            - listitem [ref=f4e53]:
+              - link "Axioms" [ref=f4e54] [cursor=pointer]:
+                - /url: category_with_axiom.html
+            - listitem [ref=f4e55]:
+              - link "Functors" [ref=f4e56] [cursor=pointer]:
+                - /url: functor.html
+            - listitem [ref=f4e57]:
+              - 'link "Implementing a new parent: a tutorial" [ref=f4e58] [cursor=pointer]':
+                - /url: tutorial.html
+          - list [ref=f4e59]:
+            - listitem [ref=f4e60]:
+              - link "Base class for maps" [ref=f4e61] [cursor=pointer]:
+                - /url: map.html
+            - listitem [ref=f4e62]:
+              - link "Homsets" [ref=f4e63] [cursor=pointer]:
+                - /url: homset.html
+            - listitem [ref=f4e64]:
+              - link "Morphisms" [ref=f4e65] [cursor=pointer]:
+                - /url: morphism.html
+            - listitem [ref=f4e66]:
+              - link "Coercion via construction functors" [ref=f4e67] [cursor=pointer]:
+                - /url: pushout.html
+          - list [ref=f4e68]:
+            - listitem [ref=f4e69]:
+              - link "Group, ring, etc. actions on objects" [ref=f4e70] [cursor=pointer]:
+                - /url: action.html
+            - listitem [ref=f4e71]:
+              - link "Additive groups" [ref=f4e72] [cursor=pointer]:
+                - /url: additive_groups.html
+            - listitem [ref=f4e73]:
+              - link "Additive magmas" [ref=f4e74] [cursor=pointer]:
+                - /url: additive_magmas.html
+            - listitem [ref=f4e75]:
+              - link "Additive monoids" [ref=f4e76] [cursor=pointer]:
+                - /url: additive_monoids.html
+            - listitem [ref=f4e77]:
+              - link "Additive semigroups" [ref=f4e78] [cursor=pointer]:
+                - /url: additive_semigroups.html
+            - listitem [ref=f4e79]:
+              - link "Affine Weyl groups" [ref=f4e80] [cursor=pointer]:
+                - /url: affine_weyl_groups.html
+            - listitem [ref=f4e81]:
+              - link "Algebra ideals" [ref=f4e82] [cursor=pointer]:
+                - /url: algebra_ideals.html
+            - listitem [ref=f4e83]:
+              - link "Algebra modules" [ref=f4e84] [cursor=pointer]:
+                - /url: algebra_modules.html
+            - listitem [ref=f4e85]:
+              - link "Algebras" [ref=f4e86] [cursor=pointer]:
+                - /url: algebras.html
+            - listitem [ref=f4e87]:
+              - link "Algebras With Basis" [ref=f4e88] [cursor=pointer]:
+                - /url: algebras_with_basis.html
+            - listitem [ref=f4e89]:
+              - link "Aperiodic semigroups" [ref=f4e90] [cursor=pointer]:
+                - /url: aperiodic_semigroups.html
+            - listitem [ref=f4e91]:
+              - link "Associative algebras" [ref=f4e92] [cursor=pointer]:
+                - /url: associative_algebras.html
+            - listitem [ref=f4e93]:
+              - link "Bialgebras" [ref=f4e94] [cursor=pointer]:
+                - /url: bialgebras.html
+            - listitem [ref=f4e95]:
+              - link "Bialgebras with basis" [ref=f4e96] [cursor=pointer]:
+                - /url: bialgebras_with_basis.html
+            - listitem [ref=f4e97]:
+              - link "Bimodules" [ref=f4e98] [cursor=pointer]:
+                - /url: bimodules.html
+            - listitem [ref=f4e99]:
+              - link "Category of chain complexes" [ref=f4e100] [cursor=pointer]:
+                - /url: chain_complexes.html
+            - listitem [ref=f4e101]:
+              - link "Classical Crystals" [ref=f4e102] [cursor=pointer]:
+                - /url: classical_crystals.html
+            - listitem [ref=f4e103]:
+              - link "Coalgebras" [ref=f4e104] [cursor=pointer]:
+                - /url: coalgebras.html
+            - listitem [ref=f4e105]:
+              - link "Coalgebras with basis" [ref=f4e106] [cursor=pointer]:
+                - /url: coalgebras_with_basis.html
+            - listitem [ref=f4e107]:
+              - link "Commutative additive groups" [ref=f4e108] [cursor=pointer]:
+                - /url: commutative_additive_groups.html
+            - listitem [ref=f4e109]:
+              - link "Commutative additive monoids" [ref=f4e110] [cursor=pointer]:
+                - /url: commutative_additive_monoids.html
+            - listitem [ref=f4e111]:
+              - link "Commutative additive semigroups" [ref=f4e112] [cursor=pointer]:
+                - /url: commutative_additive_semigroups.html
+            - listitem [ref=f4e113]:
+              - link "Commutative algebra ideals" [ref=f4e114] [cursor=pointer]:
+                - /url: commutative_algebra_ideals.html
+            - listitem [ref=f4e115]:
+              - link "Commutative algebras" [ref=f4e116] [cursor=pointer]:
+                - /url: commutative_algebras.html
+            - listitem [ref=f4e117]:
+              - link "Commutative ring ideals" [ref=f4e118] [cursor=pointer]:
+                - /url: commutative_ring_ideals.html
+            - listitem [ref=f4e119]:
+              - link "Commutative rings" [ref=f4e120] [cursor=pointer]:
+                - /url: commutative_rings.html
+            - listitem [ref=f4e121]:
+              - link "Complete Discrete Valuation Rings (CDVR) and Fields (CDVF)" [ref=f4e122] [cursor=pointer]:
+                - /url: complete_discrete_valuation.html
+            - listitem [ref=f4e123]:
+              - link "Complex reflection groups" [ref=f4e124] [cursor=pointer]:
+                - /url: complex_reflection_groups.html
+            - listitem [ref=f4e125]:
+              - link "Common category for Generalized Coxeter Groups or Complex Reflection Groups" [ref=f4e126] [cursor=pointer]:
+                - /url: complex_reflection_or_generalized_coxeter_groups.html
+            - listitem [ref=f4e127]:
+              - link "Coxeter Group Algebras" [ref=f4e128] [cursor=pointer]:
+                - /url: coxeter_group_algebras.html
+            - listitem [ref=f4e129]:
+              - link "Coxeter Groups" [ref=f4e130] [cursor=pointer]:
+                - /url: coxeter_groups.html
+            - listitem [ref=f4e131]:
+              - link "Crystals" [ref=f4e132] [cursor=pointer]:
+                - /url: crystals.html
+            - listitem [ref=f4e133]:
+              - link "CW Complexes" [ref=f4e134] [cursor=pointer]:
+                - /url: cw_complexes.html
+            - listitem [ref=f4e135]:
+              - link "Dedekind Domains" [ref=f4e136] [cursor=pointer]:
+                - /url: dedekind_domains.html
+            - listitem [ref=f4e137]:
+              - link "Discrete Valuation Rings (DVR) and Fields (DVF)" [ref=f4e138] [cursor=pointer]:
+                - /url: discrete_valuation.html
+            - listitem [ref=f4e139]:
+              - link "Distributive Magmas and Additive Magmas" [ref=f4e140] [cursor=pointer]:
+                - /url: distributive_magmas_and_additive_magmas.html
+            - listitem [ref=f4e141]:
+              - link "Division rings" [ref=f4e142] [cursor=pointer]:
+                - /url: division_rings.html
+            - listitem [ref=f4e143]:
+              - link "Domains" [ref=f4e144] [cursor=pointer]:
+                - /url: domains.html
+            - listitem [ref=f4e145]:
+              - link "Enumerated sets" [ref=f4e146] [cursor=pointer]:
+                - /url: enumerated_sets.html
+            - listitem [ref=f4e147]:
+              - link "Euclidean domains" [ref=f4e148] [cursor=pointer]:
+                - /url: euclidean_domains.html
+            - listitem [ref=f4e149]:
+              - link "Fields" [ref=f4e150] [cursor=pointer]:
+                - /url: fields.html
+            - listitem [ref=f4e151]:
+              - link "Filtered Algebras" [ref=f4e152] [cursor=pointer]:
+                - /url: filtered_algebras.html
+            - listitem [ref=f4e153]:
+              - link "Filtered Algebras With Basis" [ref=f4e154] [cursor=pointer]:
+                - /url: filtered_algebras_with_basis.html
+            - listitem [ref=f4e155]:
+              - link "Filtered Hopf algebras with basis" [ref=f4e156] [cursor=pointer]:
+                - /url: filtered_hopf_algebras_with_basis.html
+            - listitem [ref=f4e157]:
+              - link "Filtered Modules" [ref=f4e158] [cursor=pointer]:
+                - /url: filtered_modules.html
+            - listitem [ref=f4e159]:
+              - link "Filtered Modules With Basis" [ref=f4e160] [cursor=pointer]:
+                - /url: filtered_modules_with_basis.html
+            - listitem [ref=f4e161]:
+              - link "Finite Complex Reflection Groups" [ref=f4e162] [cursor=pointer]:
+                - /url: finite_complex_reflection_groups.html
+            - listitem [ref=f4e163]:
+              - link "Finite Coxeter Groups" [ref=f4e164] [cursor=pointer]:
+                - /url: finite_coxeter_groups.html
+            - listitem [ref=f4e165]:
+              - link "Finite Crystals" [ref=f4e166] [cursor=pointer]:
+                - /url: finite_crystals.html
+            - listitem [ref=f4e167]:
+              - link "Finite dimensional algebras with basis" [ref=f4e168] [cursor=pointer]:
+                - /url: finite_dimensional_algebras_with_basis.html
+            - listitem [ref=f4e169]:
+              - link "Finite dimensional bialgebras with basis" [ref=f4e170] [cursor=pointer]:
+                - /url: finite_dimensional_bialgebras_with_basis.html
+            - listitem [ref=f4e171]:
+              - link "Finite dimensional coalgebras with basis" [ref=f4e172] [cursor=pointer]:
+                - /url: finite_dimensional_coalgebras_with_basis.html
+            - listitem [ref=f4e173]:
+              - link "Finite Dimensional Graded Lie Algebras With Basis" [ref=f4e174] [cursor=pointer]:
+                - /url: finite_dimensional_graded_lie_algebras_with_basis.html
+            - listitem [ref=f4e175]:
+              - link "Finite dimensional Hopf algebras with basis" [ref=f4e176] [cursor=pointer]:
+                - /url: finite_dimensional_hopf_algebras_with_basis.html
+            - listitem [ref=f4e177]:
+              - link "Finite Dimensional Lie Algebras With Basis" [ref=f4e178] [cursor=pointer]:
+                - /url: finite_dimensional_lie_algebras_with_basis.html
+            - listitem [ref=f4e179]:
+              - link "Finite dimensional modules with basis" [ref=f4e180] [cursor=pointer]:
+                - /url: finite_dimensional_modules_with_basis.html
+            - listitem [ref=f4e181]:
+              - link "Finite Dimensional Nilpotent Lie Algebras With Basis" [ref=f4e182] [cursor=pointer]:
+                - /url: finite_dimensional_nilpotent_lie_algebras_with_basis.html
+            - listitem [ref=f4e183]:
+              - link "Finite dimensional semisimple algebras with basis" [ref=f4e184] [cursor=pointer]:
+                - /url: finite_dimensional_semisimple_algebras_with_basis.html
+            - listitem [ref=f4e185]:
+              - link "Finite Enumerated Sets" [ref=f4e186] [cursor=pointer]:
+                - /url: finite_enumerated_sets.html
+            - listitem [ref=f4e187]:
+              - link "Finite fields" [ref=f4e188] [cursor=pointer]:
+                - /url: finite_fields.html
+            - listitem [ref=f4e189]:
+              - link "Finite groups" [ref=f4e190] [cursor=pointer]:
+                - /url: finite_groups.html
+            - listitem [ref=f4e191]:
+              - link "Finite lattice posets" [ref=f4e192] [cursor=pointer]:
+                - /url: finite_lattice_posets.html
+            - listitem [ref=f4e193]:
+              - link "Finite monoids" [ref=f4e194] [cursor=pointer]:
+                - /url: finite_monoids.html
+            - listitem [ref=f4e195]:
+              - link "Finite Permutation Groups" [ref=f4e196] [cursor=pointer]:
+                - /url: finite_permutation_groups.html
+            - listitem [ref=f4e197]:
+              - link "Finite posets" [ref=f4e198] [cursor=pointer]:
+                - /url: finite_posets.html
+            - listitem [ref=f4e199]:
+              - link "Finite semigroups" [ref=f4e200] [cursor=pointer]:
+                - /url: finite_semigroups.html
+            - listitem [ref=f4e201]:
+              - link "Finite sets" [ref=f4e202] [cursor=pointer]:
+                - /url: finite_sets.html
+            - listitem [ref=f4e203]:
+              - link "Finite Weyl Groups" [ref=f4e204] [cursor=pointer]:
+                - /url: finite_weyl_groups.html
+            - listitem [ref=f4e205]:
+              - link "Finitely Generated Lambda bracket Algebras" [ref=f4e206] [cursor=pointer]:
+                - /url: finitely_generated_lambda_bracket_algebras.html
+            - listitem [ref=f4e207]:
+              - link "Finitely Generated Lie Conformal Algebras" [ref=f4e208] [cursor=pointer]:
+                - /url: finitely_generated_lie_conformal_algebras.html
+            - listitem [ref=f4e209]:
+              - link "Finitely generated magmas" [ref=f4e210] [cursor=pointer]:
+                - /url: finitely_generated_magmas.html
+            - listitem [ref=f4e211]:
+              - link "Finitely generated semigroups" [ref=f4e212] [cursor=pointer]:
+                - /url: finitely_generated_semigroups.html
+            - listitem [ref=f4e213]:
+              - link "Function fields" [ref=f4e214] [cursor=pointer]:
+                - /url: function_fields.html
+            - listitem [ref=f4e215]:
+              - link "G-Sets" [ref=f4e216] [cursor=pointer]:
+                - /url: g_sets.html
+            - listitem [ref=f4e217]:
+              - link "Gcd domains" [ref=f4e218] [cursor=pointer]:
+                - /url: gcd_domains.html
+            - listitem [ref=f4e219]:
+              - link "Generalized Coxeter Groups" [ref=f4e220] [cursor=pointer]:
+                - /url: generalized_coxeter_groups.html
+            - listitem [ref=f4e221]:
+              - link "Graded Algebras" [ref=f4e222] [cursor=pointer]:
+                - /url: graded_algebras.html
+            - listitem [ref=f4e223]:
+              - link "Graded algebras with basis" [ref=f4e224] [cursor=pointer]:
+                - /url: graded_algebras_with_basis.html
+            - listitem [ref=f4e225]:
+              - link "Graded bialgebras" [ref=f4e226] [cursor=pointer]:
+                - /url: graded_bialgebras.html
+            - listitem [ref=f4e227]:
+              - link "Graded bialgebras with basis" [ref=f4e228] [cursor=pointer]:
+                - /url: graded_bialgebras_with_basis.html
+            - listitem [ref=f4e229]:
+              - link "Graded Coalgebras" [ref=f4e230] [cursor=pointer]:
+                - /url: graded_coalgebras.html
+            - listitem [ref=f4e231]:
+              - link "Graded coalgebras with basis" [ref=f4e232] [cursor=pointer]:
+                - /url: graded_coalgebras_with_basis.html
+            - listitem [ref=f4e233]:
+              - link "Graded Hopf algebras" [ref=f4e234] [cursor=pointer]:
+                - /url: graded_hopf_algebras.html
+            - listitem [ref=f4e235]:
+              - link "Graded Hopf algebras with basis" [ref=f4e236] [cursor=pointer]:
+                - /url: graded_hopf_algebras_with_basis.html
+            - listitem [ref=f4e237]:
+              - link "Graded Lie Algebras" [ref=f4e238] [cursor=pointer]:
+                - /url: graded_lie_algebras.html
+            - listitem [ref=f4e239]:
+              - link "Graded Lie Algebras With Basis" [ref=f4e240] [cursor=pointer]:
+                - /url: graded_lie_algebras_with_basis.html
+            - listitem [ref=f4e241]:
+              - link "Graded Lie Conformal Algebras" [ref=f4e242] [cursor=pointer]:
+                - /url: graded_lie_conformal_algebras.html
+            - listitem [ref=f4e243]:
+              - link "Graded modules" [ref=f4e244] [cursor=pointer]:
+                - /url: graded_modules.html
+            - listitem [ref=f4e245]:
+              - link "Graded modules with basis" [ref=f4e246] [cursor=pointer]:
+                - /url: graded_modules_with_basis.html
+            - listitem [ref=f4e247]:
+              - link "Graphs" [ref=f4e248] [cursor=pointer]:
+                - /url: graphs.html
+            - listitem [ref=f4e249]:
+              - link "Group Algebras" [ref=f4e250] [cursor=pointer]:
+                - /url: group_algebras.html
+            - listitem [ref=f4e251]:
+              - link "Groupoid" [ref=f4e252] [cursor=pointer]:
+                - /url: groupoid.html
+            - listitem [ref=f4e253]:
+              - link "Groups" [ref=f4e254] [cursor=pointer]:
+                - /url: groups.html
+            - listitem [ref=f4e255]:
+              - link "Hecke modules" [ref=f4e256] [cursor=pointer]:
+                - /url: hecke_modules.html
+            - listitem [ref=f4e257]:
+              - link "Highest Weight Crystals" [ref=f4e258] [cursor=pointer]:
+                - /url: highest_weight_crystals.html
+            - listitem [ref=f4e259]:
+              - link "Hopf algebras" [ref=f4e260] [cursor=pointer]:
+                - /url: hopf_algebras.html
+            - listitem [ref=f4e261]:
+              - link "Hopf algebras with basis" [ref=f4e262] [cursor=pointer]:
+                - /url: hopf_algebras_with_basis.html
+            - listitem [ref=f4e263]:
+              - link "H-trivial semigroups" [ref=f4e264] [cursor=pointer]:
+                - /url: h_trivial_semigroups.html
+            - listitem [ref=f4e265]:
+              - link "Infinite Enumerated Sets" [ref=f4e266] [cursor=pointer]:
+                - /url: infinite_enumerated_sets.html
+            - listitem [ref=f4e267]:
+              - link "Integral domains" [ref=f4e268] [cursor=pointer]:
+                - /url: integral_domains.html
+            - listitem [ref=f4e269]:
+              - link "J-trivial semigroups" [ref=f4e270] [cursor=pointer]:
+                - /url: j_trivial_semigroups.html
+            - listitem [ref=f4e271]:
+              - link "Kac-Moody Algebras" [ref=f4e272] [cursor=pointer]:
+                - /url: kac_moody_algebras.html
+            - listitem [ref=f4e273]:
+              - link "Kähler Algebras" [ref=f4e274] [cursor=pointer]:
+                - /url: kahler_algebras.html
+            - listitem [ref=f4e275]:
+              - link "Lambda Bracket Algebras" [ref=f4e276] [cursor=pointer]:
+                - /url: lambda_bracket_algebras.html
+            - listitem [ref=f4e277]:
+              - link "Lambda Bracket Algebras With Basis" [ref=f4e278] [cursor=pointer]:
+                - /url: lambda_bracket_algebras_with_basis.html
+            - listitem [ref=f4e279]:
+              - link "Lattice posets" [ref=f4e280] [cursor=pointer]:
+                - /url: lattice_posets.html
+            - listitem [ref=f4e281]:
+              - link "Left modules" [ref=f4e282] [cursor=pointer]:
+                - /url: left_modules.html
+            - listitem [ref=f4e283]:
+              - link "Lie Algebras" [ref=f4e284] [cursor=pointer]:
+                - /url: lie_algebras.html
+            - listitem [ref=f4e285]:
+              - link "Lie Algebras With Basis" [ref=f4e286] [cursor=pointer]:
+                - /url: lie_algebras_with_basis.html
+            - listitem [ref=f4e287]:
+              - link "Lie Conformal Algebras" [ref=f4e288] [cursor=pointer]:
+                - /url: lie_conformal_algebras.html
+            - listitem [ref=f4e289]:
+              - link "Lie Conformal Algebras With Basis" [ref=f4e290] [cursor=pointer]:
+                - /url: lie_conformal_algebras_with_basis.html
+            - listitem [ref=f4e291]:
+              - link "Lie Groups" [ref=f4e292] [cursor=pointer]:
+                - /url: lie_groups.html
+            - listitem [ref=f4e293]:
+              - link "Loop Crystals" [ref=f4e294] [cursor=pointer]:
+                - /url: loop_crystals.html
+            - listitem [ref=f4e295]:
+              - link "L-trivial semigroups" [ref=f4e296] [cursor=pointer]:
+                - /url: l_trivial_semigroups.html
+            - listitem [ref=f4e297]:
+              - link "Magmas" [ref=f4e298] [cursor=pointer]:
+                - /url: magmas.html
+            - listitem [ref=f4e299]:
+              - link "Magmas and Additive Magmas" [ref=f4e300] [cursor=pointer]:
+                - /url: magmas_and_additive_magmas.html
+            - listitem [ref=f4e301]:
+              - link "Non-unital non-associative algebras" [ref=f4e302] [cursor=pointer]:
+                - /url: magmatic_algebras.html
+            - listitem [ref=f4e303]:
+              - link "Manifolds" [ref=f4e304] [cursor=pointer]:
+                - /url: manifolds.html
+            - listitem [ref=f4e305]:
+              - link "Matrix algebras" [ref=f4e306] [cursor=pointer]:
+                - /url: matrix_algebras.html
+            - listitem [ref=f4e307]:
+              - link "Metric Spaces" [ref=f4e308] [cursor=pointer]:
+                - /url: metric_spaces.html
+            - listitem [ref=f4e309]:
+              - link "Modular abelian varieties" [ref=f4e310] [cursor=pointer]:
+                - /url: modular_abelian_varieties.html
+            - listitem [ref=f4e311]:
+              - link "Modules" [ref=f4e312] [cursor=pointer]:
+                - /url: modules.html
+            - listitem [ref=f4e313]:
+              - link "Modules With Basis" [ref=f4e314] [cursor=pointer]:
+                - /url: modules_with_basis.html
+            - listitem [ref=f4e315]:
+              - link "Monoid algebras" [ref=f4e316] [cursor=pointer]:
+                - /url: monoid_algebras.html
+            - listitem [ref=f4e317]:
+              - link "Monoids" [ref=f4e318] [cursor=pointer]:
+                - /url: monoids.html
+            - listitem [ref=f4e319]:
+              - link "Noetherian rings" [ref=f4e320] [cursor=pointer]:
+                - /url: noetherian_rings.html
+            - listitem [ref=f4e321]:
+              - link "Number fields" [ref=f4e322] [cursor=pointer]:
+                - /url: number_fields.html
+            - listitem [ref=f4e323]:
+              - link "Objects" [ref=f4e324] [cursor=pointer]:
+                - /url: objects.html
+            - listitem [ref=f4e325]:
+              - link "Ore modules" [ref=f4e326] [cursor=pointer]:
+                - /url: ore_modules.html
+            - listitem [ref=f4e327]:
+              - link "Partially ordered monoids" [ref=f4e328] [cursor=pointer]:
+                - /url: partially_ordered_monoids.html
+            - listitem [ref=f4e329]:
+              - link "Permutation groups" [ref=f4e330] [cursor=pointer]:
+                - /url: permutation_groups.html
+            - listitem [ref=f4e331]:
+              - link "Pointed sets" [ref=f4e332] [cursor=pointer]:
+                - /url: pointed_sets.html
+            - listitem [ref=f4e333]:
+              - link "Polyhedral subsets of free ZZ, QQ or RR-modules." [ref=f4e334] [cursor=pointer]:
+                - /url: polyhedra.html
+            - listitem [ref=f4e335]:
+              - link "Posets" [ref=f4e336] [cursor=pointer]:
+                - /url: posets.html
+            - listitem [ref=f4e337]:
+              - link "Principal ideal domains" [ref=f4e338] [cursor=pointer]:
+                - /url: principal_ideal_domains.html
+            - listitem [ref=f4e339]:
+              - link "Quotient fields" [ref=f4e340] [cursor=pointer]:
+                - /url: quotient_fields.html
+            - listitem [ref=f4e341]:
+              - link "Quantum Group Representations" [ref=f4e342] [cursor=pointer]:
+                - /url: quantum_group_representations.html
+            - listitem [ref=f4e343]:
+              - link "Regular Crystals" [ref=f4e344] [cursor=pointer]:
+                - /url: regular_crystals.html
+            - listitem [ref=f4e345]:
+              - link "Regular Supercrystals" [ref=f4e346] [cursor=pointer]:
+                - /url: regular_supercrystals.html
+            - listitem [ref=f4e347]:
+              - link "Right modules" [ref=f4e348] [cursor=pointer]:
+                - /url: right_modules.html
+            - listitem [ref=f4e349]:
+              - link "Ring ideals" [ref=f4e350] [cursor=pointer]:
+                - /url: ring_ideals.html
+            - listitem [ref=f4e351]:
+              - link "Rings" [ref=f4e352] [cursor=pointer]:
+                - /url: rings.html
+            - listitem [ref=f4e353]:
+              - link "Rngs" [ref=f4e354] [cursor=pointer]:
+                - /url: rngs.html
+            - listitem [ref=f4e355]:
+              - link "R-trivial semigroups" [ref=f4e356] [cursor=pointer]:
+                - /url: r_trivial_semigroups.html
+            - listitem [ref=f4e357]:
+              - link "Schemes" [ref=f4e358] [cursor=pointer]:
+                - /url: schemes.html
+            - listitem [ref=f4e359]:
+              - link "Semigroups" [ref=f4e360] [cursor=pointer]:
+                - /url: semigroups.html
+            - listitem [ref=f4e361]:
+              - link "Semirings" [ref=f4e362] [cursor=pointer]:
+                - /url: semirings.html
+            - listitem [ref=f4e363]:
+              - link "Semisimple Algebras" [ref=f4e364] [cursor=pointer]:
+                - /url: semisimple_algebras.html
+            - listitem [ref=f4e365]:
+              - link "Sets" [ref=f4e366] [cursor=pointer]:
+                - /url: sets_cat.html
+            - listitem [ref=f4e367]:
+              - link "Sets With a Grading" [ref=f4e368] [cursor=pointer]:
+                - /url: sets_with_grading.html
+            - listitem [ref=f4e369]:
+              - link "SetsWithPartialMaps" [ref=f4e370] [cursor=pointer]:
+                - /url: sets_with_partial_maps.html
+            - listitem [ref=f4e371]:
+              - link "Shephard Groups" [ref=f4e372] [cursor=pointer]:
+                - /url: shephard_groups.html
+            - listitem [ref=f4e373]:
+              - link "Simplicial Complexes" [ref=f4e374] [cursor=pointer]:
+                - /url: simplicial_complexes.html
+            - listitem [ref=f4e375]:
+              - link "Simplicial Sets" [ref=f4e376] [cursor=pointer]:
+                - /url: simplicial_sets.html
+            - listitem [ref=f4e377]:
+              - link "Super Algebras" [ref=f4e378] [cursor=pointer]:
+                - /url: super_algebras.html
+            - listitem [ref=f4e379]:
+              - link "Super algebras with basis" [ref=f4e380] [cursor=pointer]:
+                - /url: super_algebras_with_basis.html
+            - listitem [ref=f4e381]:
+              - link "Super Hopf algebras with basis" [ref=f4e382] [cursor=pointer]:
+                - /url: super_hopf_algebras_with_basis.html
+            - listitem [ref=f4e383]:
+              - link "Super Lie Conformal Algebras" [ref=f4e384] [cursor=pointer]:
+                - /url: super_lie_conformal_algebras.html
+            - listitem [ref=f4e385]:
+              - link "Super modules" [ref=f4e386] [cursor=pointer]:
+                - /url: super_modules.html
+            - listitem [ref=f4e387]:
+              - link "Super modules with basis" [ref=f4e388] [cursor=pointer]:
+                - /url: super_modules_with_basis.html
+            - listitem [ref=f4e389]:
+              - link "Supercommutative Algebras" [ref=f4e390] [cursor=pointer]:
+                - /url: supercommutative_algebras.html
+            - listitem [ref=f4e391]:
+              - link "Supercrystals" [ref=f4e392] [cursor=pointer]:
+                - /url: supercrystals.html
+            - listitem [ref=f4e393]:
+              - link "Topological Spaces" [ref=f4e394] [cursor=pointer]:
+                - /url: topological_spaces.html
+            - listitem [ref=f4e395]:
+              - link "Kac-Moody Algebras With Triangular Decomposition Basis" [ref=f4e396] [cursor=pointer]:
+                - /url: triangular_kac_moody_algebras.html
+            - listitem [ref=f4e397]:
+              - link "Unique factorization domains" [ref=f4e398] [cursor=pointer]:
+                - /url: unique_factorization_domains.html
+            - listitem [ref=f4e399]:
+              - link "Unital algebras" [ref=f4e400] [cursor=pointer]:
+                - /url: unital_algebras.html
+            - listitem [ref=f4e401]:
+              - link "Vector Bundles" [ref=f4e402] [cursor=pointer]:
+                - /url: vector_bundles.html
+            - listitem [ref=f4e403]:
+              - link "Vector Spaces" [ref=f4e404] [cursor=pointer]:
+                - /url: vector_spaces.html
+            - listitem [ref=f4e405]:
+              - link "Weyl Groups" [ref=f4e406] [cursor=pointer]:
+                - /url: weyl_groups.html
+          - list [ref=f4e407]:
+            - listitem [ref=f4e408]:
+              - link "Facade Sets" [ref=f4e409] [cursor=pointer]:
+                - /url: facade_sets.html
+          - list [ref=f4e410]:
+            - listitem [ref=f4e411]:
+              - link "Covariant Functorial Constructions" [ref=f4e412] [cursor=pointer]:
+                - /url: covariant_functorial_construction.html
+            - listitem [ref=f4e413]:
+              - link "Cartesian Product Functorial Construction" [ref=f4e414] [cursor=pointer]:
+                - /url: cartesian_product.html
+            - listitem [ref=f4e415]:
+              - link "Tensor Product Functorial Construction" [ref=f4e416] [cursor=pointer]:
+                - /url: tensor.html
+            - listitem [ref=f4e417]:
+              - link "Signed Tensor Product Functorial Construction" [ref=f4e418] [cursor=pointer]:
+                - /url: signed_tensor.html
+            - listitem [ref=f4e419]:
+              - link "Dual functorial construction" [ref=f4e420] [cursor=pointer]:
+                - /url: dual.html
+            - listitem [ref=f4e421]:
+              - 'link "Group algebras and beyond: the Algebra functorial construction" [ref=f4e422] [cursor=pointer]':
+                - /url: algebra_functor.html
+            - listitem [ref=f4e423]:
+              - link "Subquotient Functorial Construction" [ref=f4e424] [cursor=pointer]:
+                - /url: subquotients.html
+            - listitem [ref=f4e425]:
+              - link "Quotients Functorial Construction" [ref=f4e426] [cursor=pointer]:
+                - /url: quotients.html
+            - listitem [ref=f4e427]:
+              - link "Subobjects Functorial Construction" [ref=f4e428] [cursor=pointer]:
+                - /url: subobjects.html
+            - listitem [ref=f4e429]:
+              - link "Isomorphic Objects Functorial Construction" [ref=f4e430] [cursor=pointer]:
+                - /url: isomorphic_objects.html
+            - listitem [ref=f4e431]:
+              - link "Homset categories" [ref=f4e432] [cursor=pointer]:
+                - /url: homsets.html
+            - listitem [ref=f4e433]:
+              - link "Realizations Covariant Functorial Construction" [ref=f4e434] [cursor=pointer]:
+                - /url: realizations.html
+            - listitem [ref=f4e435]:
+              - link "With Realizations Covariant Functorial Construction" [ref=f4e436] [cursor=pointer]:
+                - /url: with_realizations.html
+          - list [ref=f4e437]:
+            - listitem [ref=f4e438]:
+              - link "Examples of algebras with basis" [ref=f4e439] [cursor=pointer]:
+                - /url: examples/algebras_with_basis.html
+            - listitem [ref=f4e440]:
+              - link "Examples of commutative additive monoids" [ref=f4e441] [cursor=pointer]:
+                - /url: examples/commutative_additive_monoids.html
+            - listitem [ref=f4e442]:
+              - link "Examples of commutative additive semigroups" [ref=f4e443] [cursor=pointer]:
+                - /url: examples/commutative_additive_semigroups.html
+            - listitem [ref=f4e444]:
+              - link "Examples of Coxeter groups" [ref=f4e445] [cursor=pointer]:
+                - /url: examples/coxeter_groups.html
+            - listitem [ref=f4e446]:
+              - link "Example of a crystal" [ref=f4e447] [cursor=pointer]:
+                - /url: examples/crystals.html
+            - listitem [ref=f4e448]:
+              - link "Examples of CW complexes" [ref=f4e449] [cursor=pointer]:
+                - /url: examples/cw_complexes.html
+            - listitem [ref=f4e450]:
+              - link "Example of facade set" [ref=f4e451] [cursor=pointer]:
+                - /url: examples/facade_sets.html
+            - listitem [ref=f4e452]:
+              - link "Examples of finite Coxeter groups" [ref=f4e453] [cursor=pointer]:
+                - /url: examples/finite_coxeter_groups.html
+            - listitem [ref=f4e454]:
+              - link "Example of a finite dimensional algebra with basis" [ref=f4e455] [cursor=pointer]:
+                - /url: examples/finite_dimensional_algebras_with_basis.html
+            - listitem [ref=f4e456]:
+              - link "Examples of a finite dimensional Lie algebra with basis" [ref=f4e457] [cursor=pointer]:
+                - /url: examples/finite_dimensional_lie_algebras_with_basis.html
+            - listitem [ref=f4e458]:
+              - link "Examples of finite enumerated sets" [ref=f4e459] [cursor=pointer]:
+                - /url: examples/finite_enumerated_sets.html
+            - listitem [ref=f4e460]:
+              - link "Examples of finite monoids" [ref=f4e461] [cursor=pointer]:
+                - /url: examples/finite_monoids.html
+            - listitem [ref=f4e462]:
+              - link "Examples of finite semigroups" [ref=f4e463] [cursor=pointer]:
+                - /url: examples/finite_semigroups.html
+            - listitem [ref=f4e464]:
+              - link "Examples of finite Weyl groups" [ref=f4e465] [cursor=pointer]:
+                - /url: examples/finite_weyl_groups.html
+            - listitem [ref=f4e466]:
+              - link "Examples of graded connected Hopf algebras with basis" [ref=f4e467] [cursor=pointer]:
+                - /url: examples/graded_connected_hopf_algebras_with_basis.html
+            - listitem [ref=f4e468]:
+              - link "Examples of graded modules with basis" [ref=f4e469] [cursor=pointer]:
+                - /url: examples/graded_modules_with_basis.html
+            - listitem [ref=f4e470]:
+              - link "Examples of graphs" [ref=f4e471] [cursor=pointer]:
+                - /url: examples/graphs.html
+            - listitem [ref=f4e472]:
+              - link "Examples of Hopf algebras with basis" [ref=f4e473] [cursor=pointer]:
+                - /url: examples/hopf_algebras_with_basis.html
+            - listitem [ref=f4e474]:
+              - link "Examples of infinite enumerated sets" [ref=f4e475] [cursor=pointer]:
+                - /url: examples/infinite_enumerated_sets.html
+            - listitem [ref=f4e476]:
+              - link "Examples of a Lie algebra" [ref=f4e477] [cursor=pointer]:
+                - /url: examples/lie_algebras.html
+            - listitem [ref=f4e478]:
+              - link "Examples of a Lie algebra with basis" [ref=f4e479] [cursor=pointer]:
+                - /url: examples/lie_algebras_with_basis.html
+            - listitem [ref=f4e480]:
+              - link "Examples of magmas" [ref=f4e481] [cursor=pointer]:
+                - /url: examples/magmas.html
+            - listitem [ref=f4e482]:
+              - link "Examples of manifolds" [ref=f4e483] [cursor=pointer]:
+                - /url: examples/manifolds.html
+            - listitem [ref=f4e484]:
+              - link "Examples of monoids" [ref=f4e485] [cursor=pointer]:
+                - /url: examples/monoids.html
+            - listitem [ref=f4e486]:
+              - link "Examples of posets" [ref=f4e487] [cursor=pointer]:
+                - /url: examples/posets.html
+            - listitem [ref=f4e488]:
+              - link "Examples of semigroups" [ref=f4e489] [cursor=pointer]:
+                - /url: examples/semigroups.html
+            - listitem [ref=f4e490]:
+              - link "Examples of semigroups in cython" [ref=f4e491] [cursor=pointer]:
+                - /url: examples/semigroups_cython.html
+            - listitem [ref=f4e492]:
+              - link "Examples of semirings" [ref=f4e493] [cursor=pointer]:
+                - /url: examples/semirings.html
+            - listitem [ref=f4e494]:
+              - link "Examples of sets" [ref=f4e495] [cursor=pointer]:
+                - /url: examples/sets_cat.html
+            - listitem [ref=f4e496]:
+              - link "Example of a set with grading" [ref=f4e497] [cursor=pointer]:
+                - /url: examples/sets_with_grading.html
+            - listitem [ref=f4e498]:
+              - link "Examples of parents endowed with multiple realizations" [ref=f4e499] [cursor=pointer]:
+                - /url: examples/with_realizations.html
+          - list [ref=f4e500]:
+            - listitem [ref=f4e501]:
+              - link "Specific category classes" [ref=f4e502] [cursor=pointer]:
+                - /url: category_types.html
+            - listitem [ref=f4e503]:
+              - link "Singleton categories" [ref=f4e504] [cursor=pointer]:
+                - /url: category_singleton.html
+            - listitem [ref=f4e505]:
+              - link "Fast functions for the category framework" [ref=f4e506] [cursor=pointer]:
+                - /url: category_cy_helper.html
+            - listitem [ref=f4e507]:
+              - link "Coercion methods for categories" [ref=f4e508] [cursor=pointer]:
+                - /url: coercion_methods.html
+            - listitem [ref=f4e509]:
+              - link "Poor Man’s map" [ref=f4e510] [cursor=pointer]:
+                - /url: poor_man_map.html
+    - generic [ref=f4e511]:
+      - generic [ref=f4e512]:
+        - generic [ref=f4e513]:
+          - generic [ref=f4e514]:
+            - link "View this page" [ref=f4e516] [cursor=pointer]:
+              - /url: https://github.com/sagemath/sage/blob/develop/src/sage/categories/primer.py
+            - link "Edit this page" [ref=f4e521] [cursor=pointer]:
+              - /url: https://github.com/sagemath/sage/edit/develop/src/sage/categories/primer.py
+          - main [ref=f4e525]:
+            - generic [ref=f4e526]:
+              - 'heading "Elements, parents, and categories in Sage: a primer" [level=1] [ref=f4e527]'
+              - generic [ref=f4e528]:
+                - heading "Abstract" [level=2] [ref=f4e529]
+                - blockquote [ref=f4e530]:
+                  - generic [ref=f4e531]:
+                    - paragraph [ref=f4e532]: "The purpose of categories in Sage is to translate the mathematical concept of categories (category of groups, of vector spaces, …) into a concrete software engineering design pattern for:"
+                    - list [ref=f4e533]:
+                      - listitem [ref=f4e534]:
+                        - paragraph [ref=f4e535]: organizing and promoting generic code
+                      - listitem [ref=f4e536]:
+                        - paragraph [ref=f4e537]: fostering consistency across the Sage library (naming conventions, doc, tests)
+                      - listitem [ref=f4e538]:
+                        - paragraph [ref=f4e539]: embedding more mathematical knowledge into the system
+                    - paragraph [ref=f4e540]: "This design pattern is largely inspired from Axiom and its followers (Aldor, Fricas, MuPAD, …). It differs from those by:"
+                    - list [ref=f4e541]:
+                      - listitem [ref=f4e542]:
+                        - paragraph [ref=f4e543]: blending in the Magma inspired concept of Parent/Element
+                      - listitem [ref=f4e544]:
+                        - paragraph [ref=f4e545]: being built on top of (and not into) the standard Python object oriented and class hierarchy mechanism. This did not require changing the language, and could in principle be implemented in any language supporting the creation of new classes dynamically.
+                    - paragraph [ref=f4e546]:
+                      - text: The general philosophy is that
+                      - emphasis [ref=f4e547]: Building mathematical information into the system yields more expressive, more conceptual and, at the end, easier to maintain and faster code
+                      - text: (within a programming realm; this would not necessarily apply to specialized libraries like gmp!).
+                - generic [ref=f4e548]:
+                  - heading "One line pitch for mathematicians" [level=3] [ref=f4e549]
+                  - paragraph [ref=f4e550]: Categories in Sage provide a library of interrelated bookshelves, with each bookshelf containing algorithms, tests, documentation, or some mathematical facts about the objects of a given category (e.g. groups).
+                - generic [ref=f4e551]:
+                  - heading "One line pitch for programmers" [level=3] [ref=f4e552]
+                  - paragraph [ref=f4e553]: Categories in Sage provide a large hierarchy of abstract classes for mathematical objects. To keep it maintainable, the inheritance information between the classes is not hardcoded but instead reconstructed dynamically from duplication free semantic information.
+              - generic [ref=f4e554]:
+                - 'heading "Introduction: Sage as a library of objects and algorithms" [level=2] [ref=f4e555]'
+                - paragraph [ref=f4e556]: "The Sage library, with more than one million lines of code, documentation, and tests, implements:"
+                - list [ref=f4e557]:
+                  - listitem [ref=f4e558]:
+                    - paragraph [ref=f4e559]: "Thousands of different kinds of objects (classes):"
+                    - paragraph [ref=f4e560]: Integers, polynomials, matrices, groups, number fields, elliptic curves, permutations, morphisms, languages, … and a few raccoons …
+                  - listitem [ref=f4e561]:
+                    - paragraph [ref=f4e562]: "Tens of thousands methods and functions:"
+                    - paragraph [ref=f4e563]: Arithmetic, integer and polynomial factorization, pattern matching on words, …
+                - generic [ref=f4e564]:
+                  - heading "Some challenges" [level=3] [ref=f4e565]
+                  - list [ref=f4e566]:
+                    - listitem [ref=f4e567]:
+                      - paragraph [ref=f4e568]: How to organize this library?
+                      - paragraph [ref=f4e569]: One needs some bookshelves to group together related objects and algorithms.
+                    - listitem [ref=f4e570]:
+                      - paragraph [ref=f4e571]: How to ensure consistency?
+                      - paragraph [ref=f4e572]: "Similar objects should behave similarly:"
+                      - generic [ref=f4e573]:
+                        - radio "Sage" [checked] [ref=f4e574]
+                        - generic [ref=f4e575] [cursor=pointer]: Sage
+                        - generic [ref=f4e578]:
+                          - generic [ref=f4e579]: "sage: Permutations(5).cardinality() 120 sage: GL(2,2).cardinality() # needs sage.libs.gap sage.modules 6 sage: A = random_matrix(ZZ, 6, 3, x=7) # needs sage.modules sage: L = LatticePolytope(A.rows()) # needs sage.geometry.polyhedron sage.modules sage: L.n_points() # oops! # random # needs sage.geometry.polyhedron sage.modules 37"
+                          - button "Copy to clipboard" [ref=f4e580] [cursor=pointer]:
+                            - img "Copy to clipboard" [ref=f4e581]
+                        - radio "Python" [ref=f4e585]
+                        - generic [ref=f4e586] [cursor=pointer]: Python
+                    - listitem [ref=f4e587]:
+                      - paragraph [ref=f4e588]: How to ensure robustness?
+                    - listitem [ref=f4e589]:
+                      - paragraph [ref=f4e590]: How to reduce duplication?
+                      - paragraph [ref=f4e591]: "Example: binary powering:"
+                      - generic [ref=f4e592]:
+                        - radio "Sage" [checked] [ref=f4e593]
+                        - generic [ref=f4e594] [cursor=pointer]: Sage
+                        - generic [ref=f4e597]:
+                          - generic [ref=f4e598]: "sage: m = 3 sage: m^8 == m*m*m*m*m*m*m*m == ((m^2)^2)^2 True"
+                          - button "Copy to clipboard" [ref=f4e599] [cursor=pointer]:
+                            - img "Copy to clipboard" [ref=f4e600]
+                        - radio "Python" [ref=f4e604]
+                        - generic [ref=f4e605] [cursor=pointer]: Python
+                      - paragraph
+                      - generic [ref=f4e606]:
+                        - radio "Sage" [checked] [ref=f4e607]
+                        - generic [ref=f4e608] [cursor=pointer]: Sage
+                        - generic [ref=f4e611]:
+                          - generic [ref=f4e612]: "sage: # needs sage.modules sage: m = random_matrix(QQ, 4, algorithm='echelonizable', ....: rank=3, upper_bound=60) sage: m^8 == m*m*m*m*m*m*m*m == ((m^2)^2)^2 True"
+                          - button "Copy to clipboard" [ref=f4e613] [cursor=pointer]:
+                            - img "Copy to clipboard" [ref=f4e614]
+                        - radio "Python" [ref=f4e618]
+                        - generic [ref=f4e619] [cursor=pointer]: Python
+                      - paragraph [ref=f4e620]:
+                        - text: We want to implement binary powering only once, as
+                        - emphasis [ref=f4e621]: generic
+                        - text: code that will apply in all cases.
+              - generic [ref=f4e622]:
+                - heading "A bit of help from abstract algebra" [level=2] [ref=f4e623]
+                - generic [ref=f4e624]:
+                  - heading "The hierarchy of categories" [level=3] [ref=f4e625]
+                  - paragraph [ref=f4e626]:
+                    - text: What makes binary powering work in the above examples? In both cases, we have
+                    - emphasis [ref=f4e627]: a set
+                    - text: endowed with a
+                    - emphasis [ref=f4e628]: multiplicative binary operation
+                    - text: which is
+                    - emphasis [ref=f4e629]: associative
+                    - text: and which has a unit element. Such a set is called a
+                    - emphasis [ref=f4e630]: monoid
+                    - text: ", and binary powering (to a nonnegative power) works generally for any monoid."
+                  - paragraph [ref=f4e631]: "Sage knows about monoids:"
+                  - generic [ref=f4e632]:
+                    - radio "Sage" [checked] [ref=f4e633]
+                    - generic [ref=f4e634] [cursor=pointer]: Sage
+                    - generic [ref=f4e637]:
+                      - generic [ref=f4e638]: "sage: Monoids() Category of monoids"
+                      - button "Copy to clipboard" [ref=f4e639] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e640]
+                    - radio "Python" [ref=f4e644]
+                    - generic [ref=f4e645] [cursor=pointer]: Python
+                  - paragraph [ref=f4e646]: "and sure enough, binary powering is defined there:"
+                  - generic [ref=f4e647]:
+                    - radio "Sage" [checked] [ref=f4e648]
+                    - generic [ref=f4e649] [cursor=pointer]: Sage
+                    - generic [ref=f4e652]:
+                      - generic [ref=f4e653]: "sage: m._pow_int.__module__ # needs sage.modules 'sage.categories.monoids'"
+                      - button "Copy to clipboard" [ref=f4e654] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e655]
+                    - radio "Python" [ref=f4e659]
+                    - generic [ref=f4e660] [cursor=pointer]: Python
+                  - paragraph [ref=f4e661]: "That’s our bookshelf! And it’s used in many places:"
+                  - generic [ref=f4e662]:
+                    - radio "Sage" [checked] [ref=f4e663]
+                    - generic [ref=f4e664] [cursor=pointer]: Sage
+                    - generic [ref=f4e667]:
+                      - generic [ref=f4e668]: "sage: GL(2, ZZ) in Monoids() # needs sage.modules True sage: NN in Monoids() True"
+                      - button "Copy to clipboard" [ref=f4e669] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e670]
+                    - radio "Python" [ref=f4e674]
+                    - generic [ref=f4e675] [cursor=pointer]: Python
+                  - paragraph [ref=f4e676]:
+                    - text: "For a less trivial bookshelf we can consider euclidean rings: once we know how to do euclidean division in some set"
+                    - generic [ref=f4e678]:
+                      - generic [ref=f4e679]: R
+                      - math [ref=f4e683]:
+                        - generic [ref=f4e684]: R
+                    - text: ", we can compute gcd’s in"
+                    - generic [ref=f4e686]:
+                      - generic [ref=f4e687]: R
+                      - math [ref=f4e691]:
+                        - generic [ref=f4e692]: R
+                    - text: generically using the Euclidean algorithm.
+                  - paragraph [ref=f4e693]: "We are in fact very lucky: abstract algebra provides us right away with a large and robust set of bookshelves which is the result of centuries of work of mathematicians to identify the important concepts. This includes for example:"
+                  - generic [ref=f4e694]:
+                    - radio "Sage" [checked] [ref=f4e695]
+                    - generic [ref=f4e696] [cursor=pointer]: Sage
+                    - generic [ref=f4e699]:
+                      - generic [ref=f4e700]: "sage: Sets() Category of sets sage: Groups() Category of groups sage: Rings() Category of rings sage: Fields() Category of fields sage: HopfAlgebras(QQ) Category of Hopf algebras over Rational Field"
+                      - button "Copy to clipboard" [ref=f4e701] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e702]
+                    - radio "Python" [ref=f4e706]
+                    - generic [ref=f4e707] [cursor=pointer]: Python
+                  - paragraph [ref=f4e708]:
+                    - text: Each of the above is called a
+                    - emphasis [ref=f4e709]: category
+                    - text: . It typically specifies what are the operations on the elements, as well as the axioms satisfied by those operations. For example the category of groups specifies that a group is a set endowed with a binary operation (the multiplication) which is associative and admits a unit and inverses.
+                  - paragraph [ref=f4e710]: "Each set in Sage knows which bookshelf of generic algorithms it can use, that is to which category it belongs:"
+                  - generic [ref=f4e711]:
+                    - radio "Sage" [checked] [ref=f4e712]
+                    - generic [ref=f4e713] [cursor=pointer]: Sage
+                    - generic [ref=f4e716]:
+                      - generic [ref=f4e717]: "sage: G = GL(2, ZZ) # needs sage.modules sage: G.category() # needs sage.modules Category of infinite groups"
+                      - button "Copy to clipboard" [ref=f4e718] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e719]
+                    - radio "Python" [ref=f4e723]
+                    - generic [ref=f4e724] [cursor=pointer]: Python
+                  - paragraph [ref=f4e725]: "In fact a group is a semigroup, and Sage knows about this:"
+                  - generic [ref=f4e726]:
+                    - radio "Sage" [checked] [ref=f4e727]
+                    - generic [ref=f4e728] [cursor=pointer]: Sage
+                    - generic [ref=f4e731]:
+                      - generic [ref=f4e732]: "sage: Groups().is_subcategory(Semigroups()) True sage: G in Semigroups() # needs sage.modules True"
+                      - button "Copy to clipboard" [ref=f4e733] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e734]
+                    - radio "Python" [ref=f4e738]
+                    - generic [ref=f4e739] [cursor=pointer]: Python
+                  - paragraph [ref=f4e740]: "Altogether, our group gets algorithms from a bunch of bookshelves:"
+                  - generic [ref=f4e741]:
+                    - radio "Sage" [checked] [ref=f4e742]
+                    - generic [ref=f4e743] [cursor=pointer]: Sage
+                    - generic [ref=f4e746]:
+                      - generic [ref=f4e747]: "sage: G.categories() # needs sage.modules [Category of infinite groups, Category of groups, Category of monoids, ..., Category of magmas, Category of infinite sets, ...]"
+                      - button "Copy to clipboard" [ref=f4e748] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e749]
+                    - radio "Python" [ref=f4e753]
+                    - generic [ref=f4e754] [cursor=pointer]: Python
+                  - paragraph [ref=f4e755]: "Those can be viewed graphically:"
+                  - generic [ref=f4e756]:
+                    - radio "Sage" [checked] [ref=f4e757]
+                    - generic [ref=f4e758] [cursor=pointer]: Sage
+                    - generic [ref=f4e761]:
+                      - generic [ref=f4e762]: "sage: g = Groups().category_graph() # needs sage.graphs sage: g.set_latex_options(format='dot2tex') # needs sage.graphs sage.modules sage.plot sage: view(g) # not tested # needs sage.graphs sage.modules sage.plot"
+                      - button "Copy to clipboard" [ref=f4e763] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e764]
+                    - radio "Python" [ref=f4e768]
+                    - generic [ref=f4e769] [cursor=pointer]: Python
+                  - paragraph [ref=f4e770]:
+                    - text: In case
+                    - code [ref=f4e771]: dot2tex
+                    - text: "is not available, you can use instead:"
+                  - generic [ref=f4e772]:
+                    - radio "Sage" [checked] [ref=f4e773]
+                    - generic [ref=f4e774] [cursor=pointer]: Sage
+                    - generic [ref=f4e777]:
+                      - generic [ref=f4e778]: "sage: g.show(vertex_shape=None, figsize=20) # needs sage.graphs sage.modules sage.plot"
+                      - button "Copy to clipboard" [ref=f4e779] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e780]
+                    - radio "Python" [ref=f4e784]
+                    - generic [ref=f4e785] [cursor=pointer]: Python
+                  - paragraph [ref=f4e786]: "Here is an overview of all categories in Sage:"
+                  - generic [ref=f4e787]:
+                    - radio "Sage" [checked] [ref=f4e788]
+                    - generic [ref=f4e789] [cursor=pointer]: Sage
+                    - generic [ref=f4e792]:
+                      - generic [ref=f4e793]: "sage: g = sage.categories.category.category_graph() # needs sage.graphs sage.groups sage.modules sage: g.set_latex_options(format='dot2tex') # needs sage.graphs sage.modules sage.plot sage: view(g) # not tested # needs sage.graphs sage.modules sage.plot"
+                      - button "Copy to clipboard" [ref=f4e794] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e795]
+                    - radio "Python" [ref=f4e799]
+                    - generic [ref=f4e800] [cursor=pointer]: Python
+                  - paragraph [ref=f4e801]: "Wrap-up: generic algorithms in Sage are organized in a hierarchy of bookshelves modelled upon the usual hierarchy of categories provided by abstract algebra."
+                - generic [ref=f4e802]:
+                  - heading "Elements, Parents, Categories" [level=3] [ref=f4e803]
+                  - paragraph [ref=f4e804]: Parent
+                  - paragraph [ref=f4e805]:
+                    - text: A
+                    - emphasis [ref=f4e806]: parent
+                    - text: is a Python instance modelling a set of mathematical elements together with its additional (algebraic) structure.
+                  - paragraph [ref=f4e807]:
+                    - text: Examples include the ring of integers, the group
+                    - generic [ref=f4e809]:
+                      - generic [ref=f4e811]:
+                        - generic [ref=f4e812]: S
+                        - generic [ref=f4e814]: "3"
+                      - math [ref=f4e818]:
+                        - generic [ref=f4e819]:
+                          - generic [ref=f4e820]: S
+                          - generic [ref=f4e821]: "3"
+                    - text: ", the set of prime numbers, the set of linear maps between two given vector spaces, and a given finite semigroup."
+                  - paragraph [ref=f4e822]: "These sets are often equipped with additional structure: the set of all integers forms a ring. The main way of encoding this information is specifying which categories a parent belongs to."
+                  - paragraph [ref=f4e823]: It is completely possible to have different Python instances modelling the same set of elements. For example, one might want to consider the ring of integers, or the poset of integers under their standard order, or the poset of integers under divisibility, or the semiring of integers under the operations of maximum and addition. Each of these would be a different instance, belonging to different categories.
+                  - paragraph [ref=f4e824]: "For a given model, there should be a unique instance in Sage representing that parent:"
+                  - generic [ref=f4e825]:
+                    - radio "Sage" [checked] [ref=f4e826]
+                    - generic [ref=f4e827] [cursor=pointer]: Sage
+                    - generic [ref=f4e830]:
+                      - generic [ref=f4e831]: "sage: IntegerRing() is IntegerRing() True"
+                      - button "Copy to clipboard" [ref=f4e832] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e833]
+                    - radio "Python" [ref=f4e837]
+                    - generic [ref=f4e838] [cursor=pointer]: Python
+                  - paragraph [ref=f4e839]: Element
+                  - paragraph [ref=f4e840]:
+                    - text: An
+                    - emphasis [ref=f4e841]: element
+                    - text: is a Python instance modelling a mathematical element of a set.
+                  - paragraph [ref=f4e842]:
+                    - text: Examples of element include
+                    - generic [ref=f4e844]:
+                      - generic [ref=f4e845]: "5"
+                      - math [ref=f4e849]:
+                        - generic [ref=f4e850]: "5"
+                    - text: in the integer ring,
+                    - generic [ref=f4e852]:
+                      - generic [ref=f4e853]:
+                        - generic [ref=f4e854]:
+                          - generic [ref=f4e855]: x
+                          - generic [ref=f4e857]: "3"
+                        - generic [ref=f4e860]: −
+                        - generic [ref=f4e862]: x
+                      - math [ref=f4e865]:
+                        - generic [ref=f4e866]:
+                          - generic [ref=f4e867]: x
+                          - generic [ref=f4e868]: "3"
+                        - generic [ref=f4e869]: −
+                        - generic [ref=f4e870]: x
+                    - text: in the polynomial ring in
+                    - generic [ref=f4e872]:
+                      - generic [ref=f4e873]: x
+                      - math [ref=f4e877]:
+                        - generic [ref=f4e878]: x
+                    - text: over the rationals,
+                    - generic [ref=f4e880]:
+                      - generic [ref=f4e881]:
+                        - generic [ref=f4e882]: "4"
+                        - generic [ref=f4e884]: +
+                        - generic [ref=f4e886]: O
+                        - generic [ref=f4e888]: (
+                        - generic [ref=f4e890]:
+                          - generic [ref=f4e891]: "3"
+                          - generic [ref=f4e893]: "3"
+                        - generic [ref=f4e896]: )
+                      - math [ref=f4e899]:
+                        - generic [ref=f4e900]: "4"
+                        - generic [ref=f4e901]: +
+                        - generic [ref=f4e902]: O
+                        - generic [ref=f4e903]: (
+                        - generic [ref=f4e904]:
+                          - generic [ref=f4e905]: "3"
+                          - generic [ref=f4e906]: "3"
+                        - generic [ref=f4e907]: )
+                    - text: in the 3-adics, the transposition
+                    - generic [ref=f4e909]:
+                      - generic [ref=f4e910]:
+                        - generic [ref=f4e911]: (
+                        - generic [ref=f4e913]: "1"
+                        - generic [ref=f4e915]: "2"
+                        - generic [ref=f4e917]: )
+                      - math [ref=f4e920]:
+                        - generic [ref=f4e921]: (
+                        - generic [ref=f4e922]: "1"
+                        - generic [ref=f4e923]: "2"
+                        - generic [ref=f4e924]: )
+                    - text: in
+                    - generic [ref=f4e926]:
+                      - generic [ref=f4e928]:
+                        - generic [ref=f4e929]: S
+                        - generic [ref=f4e931]: "3"
+                      - math [ref=f4e935]:
+                        - generic [ref=f4e936]:
+                          - generic [ref=f4e937]: S
+                          - generic [ref=f4e938]: "3"
+                    - text: ", and the identity morphism in the set of linear maps from"
+                    - generic [ref=f4e940]:
+                      - generic [ref=f4e942]:
+                        - generic [ref=f4e943]: Q
+                        - generic [ref=f4e946]: "3"
+                      - math [ref=f4e950]:
+                        - generic [ref=f4e951]:
+                          - generic [ref=f4e952]: Q
+                          - generic [ref=f4e954]: "3"
+                    - text: to
+                    - generic [ref=f4e956]:
+                      - generic [ref=f4e958]:
+                        - generic [ref=f4e959]: Q
+                        - generic [ref=f4e962]: "3"
+                      - math [ref=f4e966]:
+                        - generic [ref=f4e967]:
+                          - generic [ref=f4e968]: Q
+                          - generic [ref=f4e970]: "3"
+                    - text: .
+                  - paragraph [ref=f4e971]: "Every element in Sage has a parent. The standard idiom in Sage for creating elements is to create their parent, and then provide enough data to define the element:"
+                  - generic [ref=f4e972]:
+                    - radio "Sage" [checked] [ref=f4e973]
+                    - generic [ref=f4e974] [cursor=pointer]: Sage
+                    - generic [ref=f4e977]:
+                      - generic [ref=f4e978]: "sage: R = PolynomialRing(ZZ, name='x') sage: R([1,2,3]) 3*x^2 + 2*x + 1"
+                      - button "Copy to clipboard" [ref=f4e979] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e980]
+                    - radio "Python" [ref=f4e984]
+                    - generic [ref=f4e985] [cursor=pointer]: Python
+                  - paragraph [ref=f4e986]: "One can also create elements using various methods on the parent and arithmetic of elements:"
+                  - generic [ref=f4e987]:
+                    - radio "Sage" [checked] [ref=f4e988]
+                    - generic [ref=f4e989] [cursor=pointer]: Sage
+                    - generic [ref=f4e992]:
+                      - generic [ref=f4e993]: "sage: x = R.gen() sage: 1 + 2*x + 3*x^2 3*x^2 + 2*x + 1"
+                      - button "Copy to clipboard" [ref=f4e994] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e995]
+                    - radio "Python" [ref=f4e999]
+                    - generic [ref=f4e1000] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1001]: "Unlike parents, elements in Sage are not necessarily unique:"
+                  - generic [ref=f4e1002]:
+                    - radio "Sage" [checked] [ref=f4e1003]
+                    - generic [ref=f4e1004] [cursor=pointer]: Sage
+                    - generic [ref=f4e1007]:
+                      - generic [ref=f4e1008]: "sage: ZZ(5040) is ZZ(5040) False"
+                      - button "Copy to clipboard" [ref=f4e1009] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1010]
+                    - radio "Python" [ref=f4e1014]
+                    - generic [ref=f4e1015] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1016]:
+                    - text: "Many parents model algebraic structures, and their elements support arithmetic operations. One often further wants to do arithmetic by combining elements from different parents: adding together integers and rationals for example. Sage supports this feature using coercion (see"
+                    - link [ref=f4e1017] [cursor=pointer]:
+                      - /url: ../../../coercion/sage/structure/coerce.html#module-sage.structure.coerce
+                      - code [ref=f4e1018]: sage.structure.coerce
+                    - text: for more details).
+                  - paragraph [ref=f4e1019]: It is possible for a parent to also have simultaneously the structure of an element. Consider for example the monoid of all finite groups, endowed with the Cartesian product operation. Then, every finite group (which is a parent) is also an element of this monoid. This is not yet implemented, and the design details are not yet fixed but experiments are underway in this direction.
+                  - generic [ref=f4e1020]:
+                    - paragraph [ref=f4e1021]: Todo
+                    - paragraph [ref=f4e1022]:
+                      - text: Give a concrete example, typically using
+                      - link [ref=f4e1023] [cursor=pointer]:
+                        - /url: ../../../structure/sage/structure/element_wrapper.html#sage.structure.element_wrapper.ElementWrapper
+                        - code [ref=f4e1024]: ElementWrapper
+                      - text: .
+                  - paragraph [ref=f4e1025]: Category
+                  - paragraph [ref=f4e1026]:
+                    - text: A
+                    - emphasis [ref=f4e1027]: category
+                    - text: is a Python instance modelling a mathematical category.
+                  - paragraph [ref=f4e1028]:
+                    - text: Examples of categories include the category of finite semigroups, the category of all (Python) objects, the category of
+                    - generic [ref=f4e1030]:
+                      - generic [ref=f4e1031]: Z
+                      - math [ref=f4e1036]:
+                        - generic [ref=f4e1037]: Z
+                    - text: "-algebras, and the category of Cartesian products of"
+                    - generic [ref=f4e1040]:
+                      - generic [ref=f4e1041]: Z
+                      - math [ref=f4e1046]:
+                        - generic [ref=f4e1047]: Z
+                    - text: "-algebras:"
+                  - generic [ref=f4e1049]:
+                    - radio "Sage" [checked] [ref=f4e1050]
+                    - generic [ref=f4e1051] [cursor=pointer]: Sage
+                    - generic [ref=f4e1054]:
+                      - generic [ref=f4e1055]: "sage: FiniteSemigroups() Category of finite semigroups sage: Objects() Category of objects sage: Algebras(ZZ) Category of algebras over Integer Ring sage: Algebras(ZZ).CartesianProducts() Category of Cartesian products of algebras over Integer Ring"
+                      - button "Copy to clipboard" [ref=f4e1056] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1057]
+                    - radio "Python" [ref=f4e1061]
+                    - generic [ref=f4e1062] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1063]:
+                    - text: Mind the ‘s’ in the names of the categories above;
+                    - code [ref=f4e1064]: GroupAlgebra
+                    - text: and
+                    - code [ref=f4e1065]: GroupAlgebras
+                    - text: are distinct things.
+                  - paragraph [ref=f4e1066]:
+                    - text: Every parent belongs to a collection of categories. Moreover, categories are interrelated by the
+                    - emphasis [ref=f4e1067]: super categories
+                    - text: relation. For example, the category of rings is a super category of the category of fields, because every field is also a ring.
+                  - paragraph [ref=f4e1068]: "A category serves two roles:"
+                  - list [ref=f4e1069]:
+                    - listitem [ref=f4e1070]:
+                      - paragraph [ref=f4e1071]: "to provide a model for the mathematical concept of a category and the associated structures: homsets, morphisms, functorial constructions, axioms."
+                    - listitem [ref=f4e1072]:
+                      - paragraph [ref=f4e1073]: to organize and promote generic code, naming conventions, documentation, and tests across similar mathematical structures.
+                  - paragraph [ref=f4e1074]: CategoryObject
+                  - paragraph [ref=f4e1075]: Objects of a mathematical category are not necessarily parents. Parent has a superclass that provides a means of modeling such.
+                  - paragraph [ref=f4e1076]: For example, the category of schemes does not have a faithful forgetful functor to the category of sets, so it does not make sense to talk about schemes as parents.
+                  - paragraph [ref=f4e1077]: Morphisms, Homsets
+                  - paragraph [ref=f4e1078]:
+                    - text: As category theorists will expect,
+                    - emphasis [ref=f4e1079]: Morphisms
+                    - text: and
+                    - emphasis [ref=f4e1080]: Homsets
+                    - text: will play an ever more important role, as support for them will improve.
+                  - separator [ref=f4e1081]
+                  - paragraph [ref=f4e1082]: "Much of the mathematical information in Sage is encoded as relations between elements and their parents, parents and their categories, and categories and their super categories:"
+                  - generic [ref=f4e1083]:
+                    - radio "Sage" [checked] [ref=f4e1084]
+                    - generic [ref=f4e1085] [cursor=pointer]: Sage
+                    - generic [ref=f4e1088]:
+                      - generic [ref=f4e1089]: "sage: 1.parent() Integer Ring sage: ZZ Integer Ring sage: ZZ.category() Join of Category of Dedekind domains and Category of euclidean domains and Category of noetherian rings and Category of infinite enumerated sets and Category of metric spaces sage: ZZ.categories() [Join of Category of Dedekind domains and Category of euclidean domains and Category of noetherian rings and Category of infinite enumerated sets and Category of metric spaces, Category of Dedekind domains, Category of euclidean domains, Category of principal ideal domains, Category of unique factorization domains, Category of gcd domains, Category of integral domains, Category of domains, ... Category of commutative rings, Category of rings, ... Category of magmas and additive magmas, ... Category of monoids, Category of semigroups, Category of commutative magmas, Category of unital magmas, Category of magmas, Category of commutative additive groups, ..., Category of additive magmas, Category of infinite enumerated sets, Category of enumerated sets, Category of infinite sets, Category of metric spaces, Category of topological spaces, Category of sets, Category of sets with partial maps, Category of objects] sage: g = EuclideanDomains().category_graph() # needs sage.graphs sage: g.set_latex_options(format='dot2tex') # needs sage.graphs sage.plot sage: view(g) # not tested # needs sage.graphs sage.plot"
+                      - button "Copy to clipboard" [ref=f4e1090] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1091]
+                    - radio "Python" [ref=f4e1095]
+                    - generic [ref=f4e1096] [cursor=pointer]: Python
+              - generic [ref=f4e1097]:
+                - heading "A bit of help from computer science" [level=2] [ref=f4e1098]
+                - generic [ref=f4e1099]:
+                  - heading "Hierarchy of classes" [level=3] [ref=f4e1100]
+                  - paragraph [ref=f4e1101]: How are the bookshelves implemented in practice?
+                  - paragraph [ref=f4e1102]:
+                    - text: Sage uses the classical design paradigm of Object Oriented Programming (OOP). Its fundamental principle is that any object that a program is to manipulate should be modelled by an
+                    - emphasis [ref=f4e1103]: instance
+                    - text: of a
+                    - emphasis [ref=f4e1104]: class
+                    - text: ". The class implements:"
+                  - blockquote [ref=f4e1105]:
+                    - list [ref=f4e1107]:
+                      - listitem [ref=f4e1108]:
+                        - paragraph [ref=f4e1109]:
+                          - text: a
+                          - emphasis [ref=f4e1110]: data structure
+                          - text: ": which describes how the object is stored,"
+                      - listitem [ref=f4e1111]:
+                        - paragraph [ref=f4e1112]:
+                          - emphasis [ref=f4e1113]: methods
+                          - text: ": which describe the operations on the object."
+                  - paragraph [ref=f4e1114]: The instance itself contains the data for the given object, according to the specified data structure.
+                  - paragraph [ref=f4e1115]:
+                    - text: Hence, all the objects mentioned above should be instances of some classes. For example, an integer in Sage is an instance of the class
+                    - link [ref=f4e1116] [cursor=pointer]:
+                      - /url: ../../../rings_standard/sage/rings/integer.html#sage.rings.integer.Integer
+                      - code [ref=f4e1117]: Integer
+                    - text: "(and it knows about it!):"
+                  - generic [ref=f4e1118]:
+                    - radio "Sage" [checked] [ref=f4e1119]
+                    - generic [ref=f4e1120] [cursor=pointer]: Sage
+                    - generic [ref=f4e1123]:
+                      - generic [ref=f4e1124]: "sage: i = 12 sage: type(i) <class 'sage.rings.integer.Integer'>"
+                      - button "Copy to clipboard" [ref=f4e1125] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1126]
+                    - radio "Python" [ref=f4e1130]
+                    - generic [ref=f4e1131] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1132]:
+                    - text: Applying an operation is generally done by
+                    - emphasis [ref=f4e1133]: calling a method
+                    - text: ":"
+                  - generic [ref=f4e1134]:
+                    - radio "Sage" [checked] [ref=f4e1135]
+                    - generic [ref=f4e1136] [cursor=pointer]: Sage
+                    - generic [ref=f4e1139]:
+                      - generic [ref=f4e1140]: "sage: i.factor() 2^2 * 3 sage: # needs sage.symbolic sage: x = var('x') sage: p = 6*x^2 + 12*x + 6 sage: type(p) <class 'sage.symbolic.expression.Expression'> sage: p.factor() 6*(x + 1)^2 sage: # needs sage.symbolic sage: R.<x> = PolynomialRing(QQ, sparse=True) sage: pQ = R(p) sage: type(pQ) <class 'sage.rings.polynomial.polynomial_ring.PolynomialRing_field_with_category.element_class'> sage: pQ.factor() (6) * (x + 1)^2 sage: # needs sage.symbolic sage: pZ = ZZ['x'](p) sage: type(pZ) <class 'sage.rings.polynomial.polynomial_integer_dense_flint.Polynomial_integer_dense_flint'> sage: pZ.factor() 2 * 3 * (x + 1)^2"
+                      - button "Copy to clipboard" [ref=f4e1141] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1142]
+                    - radio "Python" [ref=f4e1146]
+                    - generic [ref=f4e1147] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1148]:
+                    - text: Factoring integers, expressions, or polynomials are distinct tasks, with completely different algorithms. Yet, from a user (or caller) point of view, all those objects can be manipulated alike. This illustrates the OOP concepts of
+                    - emphasis [ref=f4e1149]: polymorphism
+                    - text: ","
+                    - emphasis [ref=f4e1150]: data abstraction
+                    - text: ", and"
+                    - emphasis [ref=f4e1151]: encapsulation
+                    - text: .
+                  - paragraph [ref=f4e1152]: "Let us be curious, and see where some methods are defined. This can be done by introspection:"
+                  - generic [ref=f4e1153]:
+                    - radio "Sage" [checked] [ref=f4e1154]
+                    - generic [ref=f4e1155] [cursor=pointer]: Sage
+                    - generic [ref=f4e1158]:
+                      - generic [ref=f4e1159]: "sage: i._mul_?? # not tested"
+                      - button "Copy to clipboard" [ref=f4e1160] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1161]
+                    - radio "Python" [ref=f4e1165]
+                    - generic [ref=f4e1166] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1167]: "For plain Python methods, one can also just ask in which module they are implemented:"
+                  - generic [ref=f4e1168]:
+                    - radio "Sage" [checked] [ref=f4e1169]
+                    - generic [ref=f4e1170] [cursor=pointer]: Sage
+                    - generic [ref=f4e1173]:
+                      - generic [ref=f4e1174]: "sage: i._pow_.__module__ # not tested (Issue #24275) 'sage.categories.semigroups' sage: pQ._mul_.__module__ # needs sage.symbolic 'sage.rings.polynomial.polynomial_element_generic' sage: pQ._pow_.__module__ # not tested (Issue #24275) # needs sage.symbolic 'sage.categories.semigroups'"
+                      - button "Copy to clipboard" [ref=f4e1175] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1176]
+                    - radio "Python" [ref=f4e1180]
+                    - generic [ref=f4e1181] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1182]:
+                    - text: "We see that integers and polynomials have each their own multiplication method: the multiplication algorithms are indeed unrelated and deeply tied to their respective datastructures. On the other hand, as we have seen above, they share the same powering method because the set"
+                    - generic [ref=f4e1184]:
+                      - generic [ref=f4e1185]: Z
+                      - math [ref=f4e1190]:
+                        - generic [ref=f4e1191]: Z
+                    - text: of integers, and the set
+                    - generic [ref=f4e1194]:
+                      - generic [ref=f4e1195]:
+                        - generic [ref=f4e1196]: Q
+                        - generic [ref=f4e1199]: "["
+                        - generic [ref=f4e1201]: x
+                        - generic [ref=f4e1203]: "]"
+                      - math [ref=f4e1206]:
+                        - generic [ref=f4e1207]: Q
+                        - generic [ref=f4e1209]: "["
+                        - generic [ref=f4e1210]: x
+                        - generic [ref=f4e1211]: "]"
+                    - text: of polynomials are both semigroups. Namely, the class for integers and the class for polynomials both derive from an
+                    - emphasis [ref=f4e1212]: abstract class
+                    - text: for semigroup elements, which factors out the
+                    - emphasis [ref=f4e1213]: generic
+                    - text: methods like
+                    - code [ref=f4e1214]: _pow_
+                    - text: . This illustrates the use of
+                    - emphasis [ref=f4e1215]: hierarchy of classes
+                    - text: to share common code between classes having common behaviour.
+                  - paragraph [ref=f4e1216]: "OOP design is all about isolating the objects that one wants to model together with their operations, and designing an appropriate hierarchy of classes for organizing the code. As we have seen above, the design of the class hierarchy is easy since it can be modelled upon the hierarchy of categories (bookshelves). Here is for example a piece of the hierarchy of classes for an element of a group of permutations:"
+                  - generic [ref=f4e1217]:
+                    - radio "Sage" [checked] [ref=f4e1218]
+                    - generic [ref=f4e1219] [cursor=pointer]: Sage
+                    - generic [ref=f4e1222]:
+                      - generic [ref=f4e1223]: "sage: P = Permutations(4) sage: m = P.an_element() sage: for cls in m.__class__.mro(): print(cls) <class 'sage.combinat.permutation.StandardPermutations_n_with_category.element_class'> <class 'sage.combinat.permutation.StandardPermutations_n.Element'> <class 'sage.combinat.permutation.Permutation'> ... <class 'sage.categories.groups.Groups.element_class'> <class 'sage.categories.monoids.Monoids.element_class'> ... <class 'sage.categories.semigroups.Semigroups.element_class'> ..."
+                      - button "Copy to clipboard" [ref=f4e1224] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1225]
+                    - radio "Python" [ref=f4e1229]
+                    - generic [ref=f4e1230] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1231]: On the top, we see concrete classes that describe the data structure for matrices and provide the operations that are tied to this data structure. Then follow abstract classes that are attached to the hierarchy of categories and provide generic algorithms.
+                  - paragraph [ref=f4e1232]: "The full hierarchy is best viewed graphically:"
+                  - generic [ref=f4e1233]:
+                    - radio "Sage" [checked] [ref=f4e1234]
+                    - generic [ref=f4e1235] [cursor=pointer]: Sage
+                    - generic [ref=f4e1238]:
+                      - generic [ref=f4e1239]: "sage: g = class_graph(m.__class__) # needs sage.combinat sage.graphs sage: g.set_latex_options(format='dot2tex') # needs sage.combinat sage.graphs sage.plot sage: view(g) # not tested # needs sage.combinat sage.graphs sage.plot"
+                      - button "Copy to clipboard" [ref=f4e1240] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1241]
+                    - radio "Python" [ref=f4e1245]
+                    - generic [ref=f4e1246] [cursor=pointer]: Python
+                - generic [ref=f4e1247]:
+                  - heading "Parallel hierarchy of classes for parents" [level=3] [ref=f4e1248]
+                  - paragraph [ref=f4e1249]: "Let us recall that we do not just want to compute with elements of mathematical sets, but with the sets themselves:"
+                  - generic [ref=f4e1250]:
+                    - radio "Sage" [checked] [ref=f4e1251]
+                    - generic [ref=f4e1252] [cursor=pointer]: Sage
+                    - generic [ref=f4e1255]:
+                      - generic [ref=f4e1256]: "sage: ZZ.one() 1 sage: R = QQ['x,y'] sage: R.krull_dimension() 2 sage: A = R.quotient( R.ideal(x^2 - 2) ) sage: A.krull_dimension() # todo: not implemented"
+                      - button "Copy to clipboard" [ref=f4e1257] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1258]
+                    - radio "Python" [ref=f4e1262]
+                    - generic [ref=f4e1263] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1264]: "Here are some typical operations that one may want to carry on various kinds of sets:"
+                  - list [ref=f4e1265]:
+                    - listitem [ref=f4e1266]:
+                      - paragraph [ref=f4e1267]: "The set of permutations of 5, the set of rational points of an elliptic curve: counting, listing, random generation"
+                    - listitem [ref=f4e1268]:
+                      - paragraph [ref=f4e1269]: "A language (set of words): rationality testing, counting elements, generating series"
+                    - listitem [ref=f4e1270]:
+                      - paragraph [ref=f4e1271]: "A finite semigroup: left/right ideals, center, representation theory"
+                    - listitem [ref=f4e1272]:
+                      - paragraph [ref=f4e1273]: "A vector space, an algebra: Cartesian product, tensor product, quotient"
+                  - paragraph [ref=f4e1274]:
+                    - text: Hence, following the OOP fundamental principle, parents should also be modelled by instances of some (hierarchy of) classes. For example, our group
+                    - generic [ref=f4e1276]:
+                      - generic [ref=f4e1277]: G
+                      - math [ref=f4e1281]:
+                        - generic [ref=f4e1282]: G
+                    - text: "is an instance of the following class:"
+                  - generic [ref=f4e1283]:
+                    - radio "Sage" [checked] [ref=f4e1284]
+                    - generic [ref=f4e1285] [cursor=pointer]: Sage
+                    - generic [ref=f4e1288]:
+                      - generic [ref=f4e1289]: "sage: G = GL(2, ZZ) # needs sage.modules sage: type(G) # needs sage.libs.gap sage.modules <class 'sage.groups.matrix_gps.linear_gap.LinearMatrixGroup_gap_with_category'>"
+                      - button "Copy to clipboard" [ref=f4e1290] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1291]
+                    - radio "Python" [ref=f4e1295]
+                    - generic [ref=f4e1296] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1297]: "Here is a piece of the hierarchy of classes above it:"
+                  - generic [ref=f4e1298]:
+                    - radio "Sage" [checked] [ref=f4e1299]
+                    - generic [ref=f4e1300] [cursor=pointer]: Sage
+                    - generic [ref=f4e1303]:
+                      - generic [ref=f4e1304]: "sage: for cls in G.__class__.mro(): print(cls) # needs sage.libs.gap sage.modules <class 'sage.groups.matrix_gps.linear_gap.LinearMatrixGroup_gap_with_category'> ... <class 'sage.categories.groups.Groups.parent_class'> <class 'sage.categories.monoids.Monoids.parent_class'> <class 'sage.categories.semigroups.Semigroups.parent_class'> ..."
+                      - button "Copy to clipboard" [ref=f4e1305] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1306]
+                    - radio "Python" [ref=f4e1310]
+                    - generic [ref=f4e1311] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1312]: "Note that the hierarchy of abstract classes is again attached to categories and parallel to that we had seen for the elements. This is best viewed graphically:"
+                  - generic [ref=f4e1313]:
+                    - radio "Sage" [checked] [ref=f4e1314]
+                    - generic [ref=f4e1315] [cursor=pointer]: Sage
+                    - generic [ref=f4e1318]:
+                      - generic [ref=f4e1319]: "sage: # needs sage.combinat sage.graphs sage.modules sage.plot sage: g = class_graph(m.__class__) sage: g.relabel(lambda x: x.replace(\"_\",r\"\\_\")) sage: g.set_latex_options(format='dot2tex') sage: view(g) # not tested"
+                      - button "Copy to clipboard" [ref=f4e1320] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1321]
+                    - radio "Python" [ref=f4e1325]
+                    - generic [ref=f4e1326] [cursor=pointer]: Python
+                  - generic [ref=f4e1327]:
+                    - paragraph [ref=f4e1328]: Note
+                    - paragraph [ref=f4e1329]: This is a progress upon systems like Axiom or MuPAD where a parent is modelled by the class of its elements; this oversimplification leads to confusion between methods on parents and elements, and makes parents special; in particular it prevents potentially interesting constructions like “groups of groups”.
+              - generic [ref=f4e1330]:
+                - heading "Sage categories" [level=2] [ref=f4e1331]
+                - paragraph [ref=f4e1332]:
+                  - text: Why this business of categories? And to start with, why don’t we just have a good old hierarchy of classes
+                  - code [ref=f4e1333]: Group
+                  - text: ","
+                  - code [ref=f4e1334]: Semigroup
+                  - text: ","
+                  - code [ref=f4e1335]: Magma
+                  - text: ", … ?"
+                - generic [ref=f4e1336]:
+                  - heading "Dynamic hierarchy of classes" [level=3] [ref=f4e1337]
+                  - paragraph [ref=f4e1338]: "As we have just seen, when we manipulate groups, we actually manipulate several kinds of objects:"
+                  - list [ref=f4e1339]:
+                    - listitem [ref=f4e1340]:
+                      - paragraph [ref=f4e1341]: groups
+                    - listitem [ref=f4e1342]:
+                      - paragraph [ref=f4e1343]: group elements
+                    - listitem [ref=f4e1344]:
+                      - paragraph [ref=f4e1345]: morphisms between groups
+                    - listitem [ref=f4e1346]:
+                      - paragraph [ref=f4e1347]: and even the category of groups itself!
+                  - paragraph [ref=f4e1348]: "Thus, on the group bookshelf, we want to put generic code for each of the above. We therefore need three, parallel hierarchies of abstract classes:"
+                  - list [ref=f4e1349]:
+                    - listitem [ref=f4e1350]:
+                      - paragraph [ref=f4e1351]: Group, Monoid, Semigroup, Magma, …
+                    - listitem [ref=f4e1352]:
+                      - paragraph [ref=f4e1353]: GroupElement, MonoidElement, SemigroupElement, MagmaElement, …
+                    - listitem [ref=f4e1354]:
+                      - paragraph [ref=f4e1355]: GroupMorphism, MonoidMorphism, SemigroupMorphism, MagmaMorphism, …
+                  - paragraph [ref=f4e1356]: (and in fact many more as we will see).
+                  - paragraph [ref=f4e1357]: "We could implement the above hierarchies as usual:"
+                  - generic [ref=f4e1359]:
+                    - generic [ref=f4e1360]: "class Group(Monoid): # generic methods that apply to all groups class GroupElement(MonoidElement): # generic methods that apply to all group elements class GroupMorphism(MonoidMorphism): # generic methods that apply to all group morphisms"
+                    - button "Copy to clipboard" [ref=f4e1361] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e1362]
+                  - paragraph [ref=f4e1366]: "And indeed that’s how it was done in Sage before 2009, and there are still many traces of this. The drawback of this approach is duplication: the fact that a group is a monoid is repeated three times above!"
+                  - paragraph [ref=f4e1367]:
+                    - text: Instead, Sage now uses the following syntax, where the
+                    - link [ref=f4e1368] [cursor=pointer]:
+                      - /url: groups.html#sage.categories.groups.Groups
+                      - code [ref=f4e1369]: Groups
+                    - text: bookshelf is structured into units with
+                    - emphasis [ref=f4e1370]: nested classes
+                    - text: ":"
+                  - generic [ref=f4e1372]:
+                    - generic [ref=f4e1373]: "class Groups(Category): def super_categories(self): return [Monoids(), ...] class ParentMethods: # generic methods that apply to all groups class ElementMethods: # generic methods that apply to all group elements class MorphismMethods: # generic methods that apply to all group morphisms (not yet implemented) class SubcategoryMethods: # generic methods that apply to all subcategories of Groups()"
+                    - button "Copy to clipboard" [ref=f4e1374] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e1375]
+                  - paragraph [ref=f4e1379]:
+                    - text: With this syntax, the information that a group is a monoid is specified only once, in the
+                    - link [ref=f4e1380] [cursor=pointer]:
+                      - /url: category.html#sage.categories.category.Category.super_categories
+                      - code [ref=f4e1381]: Category.super_categories()
+                    - text: method. And indeed, when the category of inverse unital magmas was introduced, there was a
+                    - emphasis [ref=f4e1382]: single point of truth
+                    - text: "to update in order to reflect the fact that a group is an inverse unital magma:"
+                  - generic [ref=f4e1383]:
+                    - radio "Sage" [checked] [ref=f4e1384]
+                    - generic [ref=f4e1385] [cursor=pointer]: Sage
+                    - generic [ref=f4e1388]:
+                      - generic [ref=f4e1389]: "sage: Groups().super_categories() [Category of monoids, Category of inverse unital magmas]"
+                      - button "Copy to clipboard" [ref=f4e1390] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1391]
+                    - radio "Python" [ref=f4e1395]
+                    - generic [ref=f4e1396] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1397]:
+                    - text: The price to pay (there is no free lunch) is that some magic is required to construct the actual hierarchy of classes for parents, elements, and morphisms. Namely,
+                    - code [ref=f4e1398]: Groups.ElementMethods
+                    - text: should be seen as just a bag of methods, and the actual class
+                    - code [ref=f4e1399]: Groups().element_class
+                    - text: is constructed from it by adding the appropriate super classes according to
+                    - code [ref=f4e1400]: Groups().super_categories()
+                    - text: ":"
+                  - generic [ref=f4e1401]:
+                    - radio "Sage" [checked] [ref=f4e1402]
+                    - generic [ref=f4e1403] [cursor=pointer]: Sage
+                    - generic [ref=f4e1406]:
+                      - generic [ref=f4e1407]: "sage: Groups().element_class <class 'sage.categories.groups.Groups.element_class'> sage: Groups().element_class.__bases__ (<class 'sage.categories.monoids.Monoids.element_class'>, <class 'sage.categories.magmas.Magmas.Unital.Inverse.element_class'>)"
+                      - button "Copy to clipboard" [ref=f4e1408] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1409]
+                    - radio "Python" [ref=f4e1413]
+                    - generic [ref=f4e1414] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1415]: "We now see that the hierarchy of classes for parents and elements is parallel to the hierarchy of categories:"
+                  - generic [ref=f4e1416]:
+                    - radio "Sage" [checked] [ref=f4e1417]
+                    - generic [ref=f4e1418] [cursor=pointer]: Sage
+                    - generic [ref=f4e1421]:
+                      - generic [ref=f4e1422]: "sage: Groups().all_super_categories() [Category of groups, Category of monoids, Category of semigroups, ... Category of magmas, Category of sets, ...] sage: for cls in Groups().element_class.mro(): print(cls) <class 'sage.categories.groups.Groups.element_class'> <class 'sage.categories.monoids.Monoids.element_class'> <class 'sage.categories.semigroups.Semigroups.element_class'> ... <class 'sage.categories.magmas.Magmas.element_class'> ... sage: for cls in Groups().parent_class.mro(): print(cls) <class 'sage.categories.groups.Groups.parent_class'> <class 'sage.categories.monoids.Monoids.parent_class'> <class 'sage.categories.semigroups.Semigroups.parent_class'> ... <class 'sage.categories.magmas.Magmas.parent_class'> ..."
+                      - button "Copy to clipboard" [ref=f4e1423] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1424]
+                    - radio "Python" [ref=f4e1428]
+                    - generic [ref=f4e1429] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1430]:
+                    - text: Another advantage of building the hierarchy of classes dynamically is that, for parametrized categories, the hierarchy may depend on the parameters. For example an algebra over
+                    - generic [ref=f4e1432]:
+                      - generic [ref=f4e1433]: Q
+                      - math [ref=f4e1438]:
+                        - generic [ref=f4e1439]: Q
+                    - text: is a
+                    - generic [ref=f4e1442]:
+                      - generic [ref=f4e1443]: Q
+                      - math [ref=f4e1448]:
+                        - generic [ref=f4e1449]: Q
+                    - text: "-vector space, but an algebra over"
+                    - generic [ref=f4e1452]:
+                      - generic [ref=f4e1453]: Z
+                      - math [ref=f4e1458]:
+                        - generic [ref=f4e1459]: Z
+                    - text: is not (it is just a
+                    - generic [ref=f4e1462]:
+                      - generic [ref=f4e1463]: Z
+                      - math [ref=f4e1468]:
+                        - generic [ref=f4e1469]: Z
+                    - text: "-module)!"
+                  - generic [ref=f4e1471]:
+                    - paragraph [ref=f4e1472]: Note
+                    - paragraph [ref=f4e1473]: At this point this whole infrastructure may feel like overdesigning, right? We felt like this too! But we will see later that, once one gets used to it, this approach scales very naturally.
+                    - paragraph [ref=f4e1474]:
+                      - text: From a computer science point of view, this infrastructure implements, on top of standard multiple inheritance, a dynamic composition mechanism of mixin classes (
+                      - link "Wikipedia article Mixin" [ref=f4e1475] [cursor=pointer]:
+                        - /url: https://en.wikipedia.org/wiki/Mixin
+                      - text: ), governed by mathematical properties.
+                    - paragraph [ref=f4e1476]:
+                      - text: For implementation details on how the hierarchy of classes for parents and elements is constructed, see
+                      - link [ref=f4e1477] [cursor=pointer]:
+                        - /url: category.html#sage.categories.category.Category
+                        - code [ref=f4e1478]: Category
+                      - text: .
+                - generic [ref=f4e1479]:
+                  - 'heading "On the category hierarchy: subcategories and super categories" [level=3] [ref=f4e1480]'
+                  - paragraph [ref=f4e1481]:
+                    - text: We have seen above that, for example, the category of sets is a super category of the category of groups. This models the fact that a group can be unambiguously considered as a set by forgetting its group operation. In object-oriented parlance, we want the relation “a group
+                    - emphasis [ref=f4e1482]: is a
+                    - text: set”, so that groups can directly inherit code implemented on sets.
+                  - paragraph [ref=f4e1483]:
+                    - text: Formally, a category
+                    - code [ref=f4e1484]: Cs()
+                    - text: is a
+                    - emphasis [ref=f4e1485]: super category
+                    - text: of a category
+                    - code [ref=f4e1486]: Ds()
+                    - text: if Sage considers any object of
+                    - code [ref=f4e1487]: Ds()
+                    - text: to be an object of
+                    - code [ref=f4e1488]: Cs()
+                    - text: ", up to an implicit application of a canonical functor from"
+                    - code [ref=f4e1489]: Ds()
+                    - text: to
+                    - code [ref=f4e1490]: Cs()
+                    - text: . This functor is normally an inclusion of categories or a forgetful functor. Reciprocally,
+                    - code [ref=f4e1491]: Ds()
+                    - text: is said to be a
+                    - emphasis [ref=f4e1492]: subcategory
+                    - text: of
+                    - code [ref=f4e1493]: Cs()
+                    - text: .
+                  - generic [ref=f4e1494]:
+                    - paragraph [ref=f4e1495]: Warning
+                    - paragraph [ref=f4e1496]:
+                      - text: This terminology deviates from the usual mathematical definition of
+                      - emphasis [ref=f4e1497]: subcategory
+                      - text: "and is subject to change. Indeed, the forgetful functor from the category of groups to the category of sets is not an inclusion of categories, as it is not injective: a given set may admit more than one group structure. See"
+                      - 'link "Issue #16183" [ref=f4e1498] [cursor=pointer]':
+                        - /url: https://github.com/sagemath/sage/issues/16183
+                      - text: for more details. The name
+                      - emphasis [ref=f4e1499]: supercategory
+                      - text: is also used with a different meaning in certain areas of mathematics.
+                - generic [ref=f4e1500]:
+                  - heading "Categories are instances and have operations" [level=3] [ref=f4e1501]
+                  - paragraph [ref=f4e1502]: "Note that categories themselves are naturally modelled by instances because they can have operations of their own. An important one is:"
+                  - generic [ref=f4e1503]:
+                    - radio "Sage" [checked] [ref=f4e1504]
+                    - generic [ref=f4e1505] [cursor=pointer]: Sage
+                    - generic [ref=f4e1508]:
+                      - generic [ref=f4e1509]: "sage: Groups().example() # needs sage.modules General Linear Group of degree 4 over Rational Field"
+                      - button "Copy to clipboard" [ref=f4e1510] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1511]
+                    - radio "Python" [ref=f4e1515]
+                    - generic [ref=f4e1516] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1517]: "which gives an example of object of the category. Besides illustrating the category, the example provides a minimal template for implementing a new object in the category:"
+                  - generic [ref=f4e1518]:
+                    - radio "Sage" [checked] [ref=f4e1519]
+                    - generic [ref=f4e1520] [cursor=pointer]: Sage
+                    - generic [ref=f4e1523]:
+                      - generic [ref=f4e1524]: "sage: S = Semigroups().example(); S An example of a semigroup: the left zero semigroup"
+                      - button "Copy to clipboard" [ref=f4e1525] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1526]
+                    - radio "Python" [ref=f4e1530]
+                    - generic [ref=f4e1531] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1532]: "Its source code can be obtained by introspection:"
+                  - generic [ref=f4e1533]:
+                    - radio "Sage" [checked] [ref=f4e1534]
+                    - generic [ref=f4e1535] [cursor=pointer]: Sage
+                    - generic [ref=f4e1538]:
+                      - generic [ref=f4e1539]: "sage: S?? # not tested"
+                      - button "Copy to clipboard" [ref=f4e1540] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1541]
+                    - radio "Python" [ref=f4e1545]
+                    - generic [ref=f4e1546] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1547]:
+                    - text: This example is also typically used for testing generic methods. See
+                    - link [ref=f4e1548] [cursor=pointer]:
+                      - /url: category.html#sage.categories.category.Category.example
+                      - code [ref=f4e1549]: Category.example()
+                    - text: for more.
+                  - paragraph [ref=f4e1550]: "Other operations on categories include querying the super categories or the axioms satisfied by the operations of a category:"
+                  - generic [ref=f4e1551]:
+                    - radio "Sage" [checked] [ref=f4e1552]
+                    - generic [ref=f4e1553] [cursor=pointer]: Sage
+                    - generic [ref=f4e1556]:
+                      - generic [ref=f4e1557]: "sage: Groups().super_categories() [Category of monoids, Category of inverse unital magmas] sage: Groups().axioms() frozenset({'Associative', 'Inverse', 'Unital'})"
+                      - button "Copy to clipboard" [ref=f4e1558] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1559]
+                    - radio "Python" [ref=f4e1563]
+                    - generic [ref=f4e1564] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1565]: "or constructing the intersection of two categories, or the smallest category containing them:"
+                  - generic [ref=f4e1566]:
+                    - radio "Sage" [checked] [ref=f4e1567]
+                    - generic [ref=f4e1568] [cursor=pointer]: Sage
+                    - generic [ref=f4e1571]:
+                      - generic [ref=f4e1572]: "sage: Groups() & FiniteSets() Category of finite groups sage: Algebras(QQ) | Groups() Category of monoids"
+                      - button "Copy to clipboard" [ref=f4e1573] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1574]
+                    - radio "Python" [ref=f4e1578]
+                    - generic [ref=f4e1579] [cursor=pointer]: Python
+                - generic [ref=f4e1580]:
+                  - heading "Specifications and generic documentation" [level=3] [ref=f4e1581]
+                  - paragraph [ref=f4e1582]: "Categories do not only contain code but also the specifications of the operations. In particular a list of mandatory and optional methods to be implemented can be found by introspection with:"
+                  - generic [ref=f4e1583]:
+                    - radio "Sage" [checked] [ref=f4e1584]
+                    - generic [ref=f4e1585] [cursor=pointer]: Sage
+                    - generic [ref=f4e1588]:
+                      - generic [ref=f4e1589]: "sage: Groups().required_methods() {'element': {'optional': ['_mul_'], 'required': []}, 'parent': {'optional': [], 'required': ['__contains__']}}"
+                      - button "Copy to clipboard" [ref=f4e1590] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1591]
+                    - radio "Python" [ref=f4e1595]
+                    - generic [ref=f4e1596] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1597]: "Documentation about those methods can be obtained with:"
+                  - generic [ref=f4e1598]:
+                    - radio "Sage" [checked] [ref=f4e1599]
+                    - generic [ref=f4e1600] [cursor=pointer]: Sage
+                    - generic [ref=f4e1603]:
+                      - generic [ref=f4e1604]: "sage: G = Groups() sage: G.element_class._mul_? # not tested sage: G.parent_class.one? # not tested"
+                      - button "Copy to clipboard" [ref=f4e1605] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1606]
+                    - radio "Python" [ref=f4e1610]
+                    - generic [ref=f4e1611] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1612]:
+                    - text: See also the
+                    - link [ref=f4e1613] [cursor=pointer]:
+                      - /url: ../../../misc/sage/misc/abstract_method.html#sage.misc.abstract_method.abstract_method
+                      - code [ref=f4e1614]: abstract_method()
+                    - text: decorator.
+                  - generic [ref=f4e1615]:
+                    - paragraph [ref=f4e1616]: Warning
+                    - paragraph [ref=f4e1617]: Well, more precisely, that’s how things should be, but there is still some work to do in this direction. For example, the inverse operation is not specified above. Also, we are still missing a good programmatic syntax to specify the input and output types of the methods. Finally, in many cases the implementer must provide at least one of two methods, each having a default implementation using the other one (e.g. listing or iterating for a finite enumerated set); there is currently no good programmatic way to specify this.
+                - generic [ref=f4e1618]:
+                  - heading "Generic tests" [level=3] [ref=f4e1619]
+                  - paragraph [ref=f4e1620]:
+                    - text: Another feature that parents and elements receive from categories is generic tests; their purpose is to check (at least to some extent) that the parent satisfies the required mathematical properties (is my semigroup indeed associative?) and is implemented according to the specifications (does the method
+                    - code [ref=f4e1621]: an_element
+                    - text: "indeed return an element of the parent?):"
+                  - generic [ref=f4e1622]:
+                    - radio "Sage" [checked] [ref=f4e1623]
+                    - generic [ref=f4e1624] [cursor=pointer]: Sage
+                    - generic [ref=f4e1627]:
+                      - generic [ref=f4e1628]: "sage: S = FiniteSemigroups().example(alphabet=('a', 'b')) sage: TestSuite(S).run(verbose = True) running ._test_an_element() . . . pass running ._test_associativity() . . . pass running ._test_cardinality() . . . pass running ._test_category() . . . pass running ._test_construction() . . . pass running ._test_elements() . . . Running the test suite of self.an_element() running ._test_category() . . . pass running ._test_eq() . . . pass running ._test_new() . . . pass running ._test_not_implemented_methods() . . . pass running ._test_pickling() . . . pass pass running ._test_elements_eq_reflexive() . . . pass running ._test_elements_eq_symmetric() . . . pass running ._test_elements_eq_transitive() . . . pass running ._test_elements_neq() . . . pass running ._test_enumerated_set_contains() . . . pass running ._test_enumerated_set_iter_cardinality() . . . pass running ._test_enumerated_set_iter_list() . . . pass running ._test_eq() . . . pass running ._test_new() . . . pass running ._test_not_implemented_methods() . . . pass running ._test_pickling() . . . pass running ._test_random() . . . pass running ._test_rank() . . . pass running ._test_some_elements() . . . pass"
+                      - button "Copy to clipboard" [ref=f4e1629] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1630]
+                    - radio "Python" [ref=f4e1634]
+                    - generic [ref=f4e1635] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1636]: "Tests can be run individually:"
+                  - generic [ref=f4e1637]:
+                    - radio "Sage" [checked] [ref=f4e1638]
+                    - generic [ref=f4e1639] [cursor=pointer]: Sage
+                    - generic [ref=f4e1642]:
+                      - generic [ref=f4e1643]: "sage: S._test_associativity()"
+                      - button "Copy to clipboard" [ref=f4e1644] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1645]
+                    - radio "Python" [ref=f4e1649]
+                    - generic [ref=f4e1650] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1651]: "Here is how to access the code of this test:"
+                  - generic [ref=f4e1652]:
+                    - radio "Sage" [checked] [ref=f4e1653]
+                    - generic [ref=f4e1654] [cursor=pointer]: Sage
+                    - generic [ref=f4e1657]:
+                      - generic [ref=f4e1658]: "sage: S._test_associativity?? # not tested"
+                      - button "Copy to clipboard" [ref=f4e1659] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1660]
+                    - radio "Python" [ref=f4e1664]
+                    - generic [ref=f4e1665] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1666]: "Here is how to run the test on all elements:"
+                  - generic [ref=f4e1667]:
+                    - radio "Sage" [checked] [ref=f4e1668]
+                    - generic [ref=f4e1669] [cursor=pointer]: Sage
+                    - generic [ref=f4e1672]:
+                      - generic [ref=f4e1673]: "sage: L = S.list() sage: S._test_associativity(elements=L)"
+                      - button "Copy to clipboard" [ref=f4e1674] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1675]
+                    - radio "Python" [ref=f4e1679]
+                    - generic [ref=f4e1680] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1681]:
+                    - text: See
+                    - link [ref=f4e1682] [cursor=pointer]:
+                      - /url: ../../../misc/sage/misc/sage_unittest.html#sage.misc.sage_unittest.TestSuite
+                      - code [ref=f4e1683]: TestSuite
+                    - text: for more information.
+                  - paragraph [ref=f4e1684]:
+                    - text: Let us see what happens when a test fails. Here we redefine the product of
+                    - generic [ref=f4e1686]:
+                      - generic [ref=f4e1687]: S
+                      - math [ref=f4e1691]:
+                        - generic [ref=f4e1692]: S
+                    - text: "to something definitely not associative:"
+                  - generic [ref=f4e1693]:
+                    - radio "Sage" [checked] [ref=f4e1694]
+                    - generic [ref=f4e1695] [cursor=pointer]: Sage
+                    - generic [ref=f4e1698]:
+                      - generic [ref=f4e1699]: "sage: S.product = lambda x, y: S(\"(\"+x.value +y.value+\")\")"
+                      - button "Copy to clipboard" [ref=f4e1700] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1701]
+                    - radio "Python" [ref=f4e1705]
+                    - generic [ref=f4e1706] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1707]: "And rerun the test:"
+                  - generic [ref=f4e1708]:
+                    - radio "Sage" [checked] [ref=f4e1709]
+                    - generic [ref=f4e1710] [cursor=pointer]: Sage
+                    - generic [ref=f4e1713]:
+                      - generic [ref=f4e1714]: "sage: S._test_associativity(elements=L) Traceback (most recent call last): ... File \".../sage/categories/semigroups.py\", line ..., in _test_associativity tester.assertTrue((x * y) * z == x * (y * z)) ... AssertionError: '((aa)a)' != '(a(aa))'"
+                      - button "Copy to clipboard" [ref=f4e1715] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1716]
+                    - radio "Python" [ref=f4e1720]
+                    - generic [ref=f4e1721] [cursor=pointer]: Python
+                  - paragraph [ref=f4e1722]:
+                    - text: We can recover instantly the actual values of
+                    - code [ref=f4e1723]: x
+                    - text: ","
+                    - code [ref=f4e1724]: "y"
+                    - text: ","
+                    - code [ref=f4e1725]: z
+                    - text: ", that is, a counterexample to the associativity of our broken semigroup, using post mortem introspection with the Python debugger"
+                    - code [ref=f4e1726]: pdb
+                    - text: "(this does not work yet in the notebook):"
+                  - generic [ref=f4e1727]:
+                    - radio "Sage" [checked] [ref=f4e1728]
+                    - generic [ref=f4e1729] [cursor=pointer]: Sage
+                    - generic [ref=f4e1732]:
+                      - generic [ref=f4e1733]: "sage: import pdb sage: pdb.pm() # not tested > /opt/sage-5.11.rc1/local/lib/python/unittest/case.py(424)assertTrue() -> raise self.failureException(msg) (Pdb) u > /opt/sage-5.11.rc1/local/lib/python2.7/site-packages/sage/categories/semigroups.py(145)_test_associativity() -> tester.assertTrue((x * y) * z == x * (y * z)) (Pdb) p x, y, z ('a', 'a', 'a') (Pdb) p (x * y) * z '((aa)a)' (Pdb) p x * (y * z) '(a(aa))'"
+                      - button "Copy to clipboard" [ref=f4e1734] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e1735]
+                    - radio "Python" [ref=f4e1739]
+                    - generic [ref=f4e1740] [cursor=pointer]: Python
+                - generic [ref=f4e1741]:
+                  - heading "Wrap-up" [level=3] [ref=f4e1742]
+                  - list [ref=f4e1743]:
+                    - listitem [ref=f4e1744]:
+                      - paragraph [ref=f4e1745]: Categories provide a natural hierarchy of bookshelves to organize not only code, but also specifications and testing tools.
+                    - listitem [ref=f4e1746]:
+                      - paragraph [ref=f4e1747]:
+                        - text: Everything about, say, algebras with a distinguished basis is gathered in
+                        - link [ref=f4e1748] [cursor=pointer]:
+                          - /url: algebras_with_basis.html#sage.categories.algebras_with_basis.AlgebrasWithBasis
+                          - code [ref=f4e1749]: AlgebrasWithBasis
+                        - text: or its super categories. This includes properties and algorithms for elements, parents, morphisms, but also, as we will see, for constructions like Cartesian products or quotients.
+                    - listitem [ref=f4e1750]:
+                      - paragraph [ref=f4e1751]: The mathematical relations between elements, parents, and categories translate dynamically into a traditional hierarchy of classes.
+                    - listitem [ref=f4e1752]:
+                      - paragraph [ref=f4e1753]: This design enforces robustness and consistency, which is particularly welcome given that Python is an interpreted language without static type checking.
+              - generic [ref=f4e1754]:
+                - heading "Case study" [level=2] [ref=f4e1755]
+                - paragraph [ref=f4e1756]:
+                  - text: In this section, we study an existing parent in detail; a good followup is to go through the
+                  - link [ref=f4e1757] [cursor=pointer]:
+                    - /url: tutorial.html#module-sage.categories.tutorial
+                    - code [ref=f4e1758]: sage.categories.tutorial
+                  - text: or the thematic tutorial on coercion and categories (“How to implement new algebraic structures in Sage”) to learn how to implement a new one!
+                - paragraph [ref=f4e1759]: "We consider the example of finite semigroup provided by the category:"
+                - generic [ref=f4e1760]:
+                  - radio "Sage" [checked] [ref=f4e1761]
+                  - generic [ref=f4e1762] [cursor=pointer]: Sage
+                  - generic [ref=f4e1765]:
+                    - generic [ref=f4e1766]: "sage: S = FiniteSemigroups().example(); S An example of a finite semigroup: the left regular band generated by ('a', 'b', 'c', 'd') sage: S? # not tested"
+                    - button "Copy to clipboard" [ref=f4e1767] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e1768]
+                  - radio "Python" [ref=f4e1772]
+                  - generic [ref=f4e1773] [cursor=pointer]: Python
+                - paragraph [ref=f4e1774]:
+                  - text: Where do all the operations on
+                  - code [ref=f4e1775]: S
+                  - text: and its elements come from?
+                - generic [ref=f4e1776]:
+                  - radio "Sage" [checked] [ref=f4e1777]
+                  - generic [ref=f4e1778] [cursor=pointer]: Sage
+                  - generic [ref=f4e1781]:
+                    - generic [ref=f4e1782]: "sage: x = S('a')"
+                    - button "Copy to clipboard" [ref=f4e1783] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e1784]
+                  - radio "Python" [ref=f4e1788]
+                  - generic [ref=f4e1789] [cursor=pointer]: Python
+                - paragraph [ref=f4e1790]:
+                  - code [ref=f4e1791]: _repr_
+                  - text: is a technical method which comes with the data structure (
+                  - link [ref=f4e1792] [cursor=pointer]:
+                    - /url: ../../../structure/sage/structure/element_wrapper.html#sage.structure.element_wrapper.ElementWrapper
+                    - code [ref=f4e1793]: ElementWrapper
+                  - text: "); since it’s implemented in Cython, we need to use Sage’s introspection tools to recover where it’s implemented:"
+                - generic [ref=f4e1794]:
+                  - radio "Sage" [checked] [ref=f4e1795]
+                  - generic [ref=f4e1796] [cursor=pointer]: Sage
+                  - generic [ref=f4e1799]:
+                    - generic [ref=f4e1800]: "sage: x._repr_.__module__ 'sage.structure.element_wrapper' sage: sage.misc.sageinspect.sage_getfile(x._repr_) '.../sage/structure/element_wrapper.pyx'"
+                    - button "Copy to clipboard" [ref=f4e1801] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e1802]
+                  - radio "Python" [ref=f4e1806]
+                  - generic [ref=f4e1807] [cursor=pointer]: Python
+                - paragraph [ref=f4e1808]:
+                  - code [ref=f4e1809]: _pow_int
+                  - text: "is a generic method for all finite semigroups:"
+                - generic [ref=f4e1810]:
+                  - radio "Sage" [checked] [ref=f4e1811]
+                  - generic [ref=f4e1812] [cursor=pointer]: Sage
+                  - generic [ref=f4e1815]:
+                    - generic [ref=f4e1816]: "sage: x._pow_int.__module__ 'sage.categories.semigroups'"
+                    - button "Copy to clipboard" [ref=f4e1817] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e1818]
+                  - radio "Python" [ref=f4e1822]
+                  - generic [ref=f4e1823] [cursor=pointer]: Python
+                - paragraph [ref=f4e1824]:
+                  - code [ref=f4e1825]: __mul__
+                  - text: is a generic method provided by the
+                  - link [ref=f4e1826] [cursor=pointer]:
+                    - /url: magmas.html#sage.categories.magmas.Magmas
+                    - code [ref=f4e1827]: Magmas
+                  - text: category (a
+                  - emphasis [ref=f4e1828]: magma
+                  - text: is a set with an inner law
+                  - generic [ref=f4e1830]:
+                    - generic [ref=f4e1831]: ∗
+                    - math [ref=f4e1835]:
+                      - generic [ref=f4e1836]: ∗
+                  - text: ", not necessarily associative). If the two arguments are in the same parent, it will call the method"
+                  - code [ref=f4e1837]: _mul_
+                  - text: ", and otherwise let the"
+                  - link [ref=f4e1838] [cursor=pointer]:
+                    - /url: ../../../coercion/sage/structure/coerce.html#module-sage.structure.coerce
+                    - code [ref=f4e1839]: coercion model
+                  - text: "try to discover how to do the multiplication:"
+                - generic [ref=f4e1840]:
+                  - radio "Sage" [checked] [ref=f4e1841]
+                  - generic [ref=f4e1842] [cursor=pointer]: Sage
+                  - generic [ref=f4e1845]:
+                    - generic [ref=f4e1846]: "sage: x.__mul__?? # not tested"
+                    - button "Copy to clipboard" [ref=f4e1847] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e1848]
+                  - radio "Python" [ref=f4e1852]
+                  - generic [ref=f4e1853] [cursor=pointer]: Python
+                - paragraph [ref=f4e1854]: "Since it is a speed critical method, it is implemented in Cython in a separate file:"
+                - generic [ref=f4e1855]:
+                  - radio "Sage" [checked] [ref=f4e1856]
+                  - generic [ref=f4e1857] [cursor=pointer]: Sage
+                  - generic [ref=f4e1860]:
+                    - generic [ref=f4e1861]: "sage: x._mul_.__module__ 'sage.categories.coercion_methods'"
+                    - button "Copy to clipboard" [ref=f4e1862] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e1863]
+                  - radio "Python" [ref=f4e1867]
+                  - generic [ref=f4e1868] [cursor=pointer]: Python
+                - paragraph [ref=f4e1869]:
+                  - code [ref=f4e1870]: _mul_
+                  - text: is a default implementation, also provided by the
+                  - link [ref=f4e1871] [cursor=pointer]:
+                    - /url: magmas.html#sage.categories.magmas.Magmas
+                    - code [ref=f4e1872]: Magmas
+                  - text: category, that delegates the work to the method
+                  - code [ref=f4e1873]: product
+                  - text: "of the parent (following the advice: if you do not know what to do, ask your parent); it’s also a speed critical method:"
+                - generic [ref=f4e1874]:
+                  - radio "Sage" [checked] [ref=f4e1875]
+                  - generic [ref=f4e1876] [cursor=pointer]: Sage
+                  - generic [ref=f4e1879]:
+                    - generic [ref=f4e1880]: "sage: x._mul_?? # not tested sage: x._mul_.__module__ 'sage.categories.coercion_methods' sage: x._mul_.__func__ is Magmas.ElementMethods._mul_parent True"
+                    - button "Copy to clipboard" [ref=f4e1881] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e1882]
+                  - radio "Python" [ref=f4e1886]
+                  - generic [ref=f4e1887] [cursor=pointer]: Python
+                - paragraph [ref=f4e1888]:
+                  - code [ref=f4e1889]: product
+                  - text: "is a mathematical method implemented by the parent:"
+                - generic [ref=f4e1890]:
+                  - radio "Sage" [checked] [ref=f4e1891]
+                  - generic [ref=f4e1892] [cursor=pointer]: Sage
+                  - generic [ref=f4e1895]:
+                    - generic [ref=f4e1896]: "sage: S.product.__module__ 'sage.categories.examples.finite_semigroups'"
+                    - button "Copy to clipboard" [ref=f4e1897] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e1898]
+                  - radio "Python" [ref=f4e1902]
+                  - generic [ref=f4e1903] [cursor=pointer]: Python
+                - paragraph [ref=f4e1904]:
+                  - code [ref=f4e1905]: cayley_graph
+                  - text: is a generic method on the parent, provided by the
+                  - link [ref=f4e1906] [cursor=pointer]:
+                    - /url: finite_semigroups.html#sage.categories.finite_semigroups.FiniteSemigroups
+                    - code [ref=f4e1907]: FiniteSemigroups
+                  - text: "category:"
+                - generic [ref=f4e1908]:
+                  - radio "Sage" [checked] [ref=f4e1909]
+                  - generic [ref=f4e1910] [cursor=pointer]: Sage
+                  - generic [ref=f4e1913]:
+                    - generic [ref=f4e1914]: "sage: S.cayley_graph.__module__ 'sage.categories.semigroups'"
+                    - button "Copy to clipboard" [ref=f4e1915] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e1916]
+                  - radio "Python" [ref=f4e1920]
+                  - generic [ref=f4e1921] [cursor=pointer]: Python
+                - paragraph [ref=f4e1922]:
+                  - code [ref=f4e1923]: multiplication_table
+                  - text: is a generic method on the parent, provided by the
+                  - link [ref=f4e1924] [cursor=pointer]:
+                    - /url: magmas.html#sage.categories.magmas.Magmas
+                    - code [ref=f4e1925]: Magmas
+                  - text: "category (it does not require associativity):"
+                - generic [ref=f4e1926]:
+                  - radio "Sage" [checked] [ref=f4e1927]
+                  - generic [ref=f4e1928] [cursor=pointer]: Sage
+                  - generic [ref=f4e1931]:
+                    - generic [ref=f4e1932]: "sage: S.multiplication_table.__module__ 'sage.categories.magmas'"
+                    - button "Copy to clipboard" [ref=f4e1933] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e1934]
+                  - radio "Python" [ref=f4e1938]
+                  - generic [ref=f4e1939] [cursor=pointer]: Python
+                - paragraph [ref=f4e1940]: "Consider now the implementation of the semigroup:"
+                - generic [ref=f4e1941]:
+                  - radio "Sage" [checked] [ref=f4e1942]
+                  - generic [ref=f4e1943] [cursor=pointer]: Sage
+                  - generic [ref=f4e1946]:
+                    - generic [ref=f4e1947]: "sage: S?? # not tested"
+                    - button "Copy to clipboard" [ref=f4e1948] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e1949]
+                  - radio "Python" [ref=f4e1953]
+                  - generic [ref=f4e1954] [cursor=pointer]: Python
+                - paragraph [ref=f4e1955]:
+                  - text: "This implementation specifies a data structure for the parents and the elements, and makes a promise: the implemented parent is a finite semigroup. Then it fulfills the promise by implementing the basic operation"
+                  - code [ref=f4e1956]: product
+                  - text: . It also implements the optional method
+                  - code [ref=f4e1957]: semigroup_generators
+                  - text: . In exchange,
+                  - generic [ref=f4e1959]:
+                    - generic [ref=f4e1960]: S
+                    - math [ref=f4e1964]:
+                      - generic [ref=f4e1965]: S
+                  - text: and its elements receive generic implementations of all the other operations.
+                  - generic [ref=f4e1967]:
+                    - generic [ref=f4e1968]: S
+                    - math [ref=f4e1972]:
+                      - generic [ref=f4e1973]: S
+                  - text: may override any of those by more efficient ones. It may typically implement the element method
+                  - code [ref=f4e1974]: is_idempotent
+                  - text: to always return
+                  - code [ref=f4e1975]: "True"
+                  - text: .
+                - paragraph [ref=f4e1976]: "A (not yet complete) list of mandatory and optional methods to be implemented can be found by introspection with:"
+                - generic [ref=f4e1977]:
+                  - radio "Sage" [checked] [ref=f4e1978]
+                  - generic [ref=f4e1979] [cursor=pointer]: Sage
+                  - generic [ref=f4e1982]:
+                    - generic [ref=f4e1983]: "sage: FiniteSemigroups().required_methods() {'element': {'optional': ['_mul_'], 'required': []}, 'parent': {'optional': ['semigroup_generators'], 'required': ['__contains__']}}"
+                    - button "Copy to clipboard" [ref=f4e1984] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e1985]
+                  - radio "Python" [ref=f4e1989]
+                  - generic [ref=f4e1990] [cursor=pointer]: Python
+                - paragraph [ref=f4e1991]:
+                  - code [ref=f4e1992]: product
+                  - text: does not appear in the list because a default implementation is provided in term of the method
+                  - code [ref=f4e1993]: _mul_
+                  - text: on elements. Of course, at least one of them should be implemented. On the other hand, a default implementation for
+                  - code [ref=f4e1994]: __contains__
+                  - text: is provided by
+                  - link [ref=f4e1995] [cursor=pointer]:
+                    - /url: ../../../structure/sage/structure/parent.html#sage.structure.parent.Parent
+                    - code [ref=f4e1996]: Parent
+                  - text: .
+                - paragraph [ref=f4e1997]: "Documentation about those methods can be obtained with:"
+                - generic [ref=f4e1998]:
+                  - radio "Sage" [checked] [ref=f4e1999]
+                  - generic [ref=f4e2000] [cursor=pointer]: Sage
+                  - generic [ref=f4e2003]:
+                    - generic [ref=f4e2004]: "sage: C = FiniteSemigroups().element_class sage: C._mul_? # not tested"
+                    - button "Copy to clipboard" [ref=f4e2005] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e2006]
+                  - radio "Python" [ref=f4e2010]
+                  - generic [ref=f4e2011] [cursor=pointer]: Python
+                - paragraph [ref=f4e2012]:
+                  - text: See also the
+                  - link [ref=f4e2013] [cursor=pointer]:
+                    - /url: ../../../misc/sage/misc/abstract_method.html#sage.misc.abstract_method.abstract_method
+                    - code [ref=f4e2014]: abstract_method()
+                  - text: decorator.
+                - paragraph [ref=f4e2015]: "Here is the code for the finite semigroups category:"
+                - generic [ref=f4e2016]:
+                  - radio "Sage" [checked] [ref=f4e2017]
+                  - generic [ref=f4e2018] [cursor=pointer]: Sage
+                  - generic [ref=f4e2021]:
+                    - generic [ref=f4e2022]: "sage: FiniteSemigroups?? # not tested"
+                    - button "Copy to clipboard" [ref=f4e2023] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e2024]
+                  - radio "Python" [ref=f4e2028]
+                  - generic [ref=f4e2029] [cursor=pointer]: Python
+              - generic [ref=f4e2030]:
+                - heading "Specifying the category of a parent" [level=2] [ref=f4e2031]
+                - paragraph [ref=f4e2032]: "Some parent constructors (not enough!) allow to specify the desired category for the parent. This can typically be used to specify additional properties of the parent that we know to hold a priori. For example, permutation groups are by default in the category of finite permutation groups (no surprise):"
+                - generic [ref=f4e2033]:
+                  - radio "Sage" [checked] [ref=f4e2034]
+                  - generic [ref=f4e2035] [cursor=pointer]: Sage
+                  - generic [ref=f4e2038]:
+                    - generic [ref=f4e2039]: "sage: P = PermutationGroup([[(1,2,3)]]); P # needs sage.groups Permutation Group with generators [(1,2,3)] sage: P.category() # needs sage.groups Category of finite enumerated permutation groups"
+                    - button "Copy to clipboard" [ref=f4e2040] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e2041]
+                  - radio "Python" [ref=f4e2045]
+                  - generic [ref=f4e2046] [cursor=pointer]: Python
+                - paragraph [ref=f4e2047]: "In this case, the group is commutative, so we can specify this:"
+                - generic [ref=f4e2048]:
+                  - radio "Sage" [checked] [ref=f4e2049]
+                  - generic [ref=f4e2050] [cursor=pointer]: Sage
+                  - generic [ref=f4e2053]:
+                    - generic [ref=f4e2054]: "sage: P = PermutationGroup([[(1,2,3)]], # needs sage.groups ....: category=PermutationGroups().Finite().Commutative()); P Permutation Group with generators [(1,2,3)] sage: P.category() # needs sage.groups Category of finite enumerated commutative permutation groups"
+                    - button "Copy to clipboard" [ref=f4e2055] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e2056]
+                  - radio "Python" [ref=f4e2060]
+                  - generic [ref=f4e2061] [cursor=pointer]: Python
+                - paragraph [ref=f4e2062]: "This feature can even be used, typically in experimental code, to add more structure to existing parents, and in particular to add methods for the parents or the elements, without touching the code base:"
+                - generic [ref=f4e2063]:
+                  - radio "Sage" [checked] [ref=f4e2064]
+                  - generic [ref=f4e2065] [cursor=pointer]: Sage
+                  - generic [ref=f4e2068]:
+                    - generic [ref=f4e2069]: "sage: class Foos(Category): ....: def super_categories(self): ....: return [PermutationGroups().Finite().Commutative()] ....: class ParentMethods: ....: def foo(self): print(\"foo\") ....: class ElementMethods: ....: def bar(self): print(\"bar\") sage: # needs sage.groups sage: P = PermutationGroup([[(1,2,3)]], category=Foos()) sage: P.foo() foo sage: p = P.an_element() sage: p.bar() bar"
+                    - button "Copy to clipboard" [ref=f4e2070] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e2071]
+                  - radio "Python" [ref=f4e2075]
+                  - generic [ref=f4e2076] [cursor=pointer]: Python
+                - paragraph [ref=f4e2077]: "In the long run, it would be thinkable to use this idiom to implement forgetful functors; for example the above group could be constructed as a plain set with:"
+                - generic [ref=f4e2078]:
+                  - radio "Sage" [checked] [ref=f4e2079]
+                  - generic [ref=f4e2080] [cursor=pointer]: Sage
+                  - generic [ref=f4e2083]:
+                    - generic [ref=f4e2084]: "sage: P = PermutationGroup([[(1,2,3)]], category=Sets()) # not implemented, needs sage.groups"
+                    - button "Copy to clipboard" [ref=f4e2085] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e2086]
+                  - radio "Python" [ref=f4e2090]
+                  - generic [ref=f4e2091] [cursor=pointer]: Python
+                - paragraph [ref=f4e2092]: At this stage though, this is still to be explored for robustness and practicality. For now, most parents that accept a category argument only accept a subcategory of the default one.
+              - generic [ref=f4e2093]:
+                - 'heading "Scaling further: functorial constructions, axioms, …" [level=2] [ref=f4e2094]'
+                - paragraph [ref=f4e2095]: In this section, we explore more advanced features of categories. Along the way, we illustrate that a large hierarchy of categories is desirable to model complicated mathematics, and that scaling to support such a large hierarchy is the driving motivation for the design of the category infrastructure.
+                - generic [ref=f4e2096]:
+                  - heading "Functorial constructions" [level=3] [ref=f4e2097]
+                  - paragraph [ref=f4e2098]:
+                    - text: Sage has support for a certain number of so-called
+                    - emphasis [ref=f4e2099]: covariant functorial constructions
+                    - text: "which can be used to construct new parents from existing ones while carrying over as much as possible of their algebraic structure. This includes:"
+                  - list [ref=f4e2100]:
+                    - listitem [ref=f4e2101]:
+                      - paragraph [ref=f4e2102]:
+                        - text: "Cartesian products: See"
+                        - code [ref=f4e2103]: cartesian_product
+                        - text: .
+                    - listitem [ref=f4e2104]:
+                      - paragraph [ref=f4e2105]:
+                        - text: "Tensor products: See"
+                        - link [ref=f4e2106] [cursor=pointer]:
+                          - /url: tensor.html#sage.categories.tensor.tensor
+                          - code [ref=f4e2107]: tensor
+                        - text: .
+                    - listitem [ref=f4e2108]:
+                      - paragraph [ref=f4e2109]: "Subquotients / quotients / subobjects / isomorphic objects: See:"
+                      - list [ref=f4e2110]:
+                        - listitem [ref=f4e2111]:
+                          - paragraph [ref=f4e2112]:
+                            - link [ref=f4e2113] [cursor=pointer]:
+                              - /url: sets_cat.html#sage.categories.sets_cat.Sets.SubcategoryMethods.Subquotients
+                              - code [ref=f4e2114]: Sets().Subquotients
+                            - text: ","
+                        - listitem [ref=f4e2115]:
+                          - paragraph [ref=f4e2116]:
+                            - link [ref=f4e2117] [cursor=pointer]:
+                              - /url: sets_cat.html#sage.categories.sets_cat.Sets.SubcategoryMethods.Quotients
+                              - code [ref=f4e2118]: Sets().Quotients
+                            - text: ","
+                        - listitem [ref=f4e2119]:
+                          - paragraph [ref=f4e2120]:
+                            - link [ref=f4e2121] [cursor=pointer]:
+                              - /url: sets_cat.html#sage.categories.sets_cat.Sets.SubcategoryMethods.Subobjects
+                              - code [ref=f4e2122]: Sets().Subobjects
+                            - text: ","
+                        - listitem [ref=f4e2123]:
+                          - paragraph [ref=f4e2124]:
+                            - link [ref=f4e2125] [cursor=pointer]:
+                              - /url: sets_cat.html#sage.categories.sets_cat.Sets.SubcategoryMethods.IsomorphicObjects
+                              - code [ref=f4e2126]: Sets().IsomorphicObjects
+                    - listitem [ref=f4e2127]:
+                      - paragraph [ref=f4e2128]:
+                        - text: "Dual objects: See"
+                        - link [ref=f4e2129] [cursor=pointer]:
+                          - /url: modules.html#sage.categories.modules.Modules.SubcategoryMethods.DualObjects
+                          - code [ref=f4e2130]: Modules().DualObjects
+                        - text: .
+                    - listitem [ref=f4e2131]:
+                      - paragraph [ref=f4e2132]:
+                        - text: "Algebras, as in group algebras, monoid algebras, …: See:"
+                        - link [ref=f4e2133] [cursor=pointer]:
+                          - /url: sets_cat.html#sage.categories.sets_cat.Sets.ParentMethods.algebra
+                          - code [ref=f4e2134]: Sets.ParentMethods.algebra()
+                        - text: .
+                  - paragraph [ref=f4e2135]:
+                    - text: Let for example
+                    - generic [ref=f4e2137]:
+                      - generic [ref=f4e2138]: A
+                      - math [ref=f4e2142]:
+                        - generic [ref=f4e2143]: A
+                    - text: and
+                    - generic [ref=f4e2145]:
+                      - generic [ref=f4e2146]: B
+                      - math [ref=f4e2150]:
+                        - generic [ref=f4e2151]: B
+                    - text: be two parents, and let us construct the Cartesian product
+                    - generic [ref=f4e2153]:
+                      - generic [ref=f4e2154]:
+                        - generic [ref=f4e2155]: A
+                        - generic [ref=f4e2157]: ×
+                        - generic [ref=f4e2159]: B
+                        - generic [ref=f4e2161]: ×
+                        - generic [ref=f4e2163]: B
+                      - math [ref=f4e2166]:
+                        - generic [ref=f4e2167]: A
+                        - generic [ref=f4e2168]: ×
+                        - generic [ref=f4e2169]: B
+                        - generic [ref=f4e2170]: ×
+                        - generic [ref=f4e2171]: B
+                    - text: ":"
+                  - generic [ref=f4e2172]:
+                    - radio "Sage" [checked] [ref=f4e2173]
+                    - generic [ref=f4e2174] [cursor=pointer]: Sage
+                    - generic [ref=f4e2177]:
+                      - generic [ref=f4e2178]: "sage: A = AlgebrasWithBasis(QQ).example(); A.rename('A') # needs sage.combinat sage.modules sage: B = HopfAlgebrasWithBasis(QQ).example(); B.rename('B') # needs sage.groups sage.modules sage: C = cartesian_product([A, B, B]); C # needs sage.combinat sage.groups sage.modules A (+) B (+) B"
+                      - button "Copy to clipboard" [ref=f4e2179] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e2180]
+                    - radio "Python" [ref=f4e2184]
+                    - generic [ref=f4e2185] [cursor=pointer]: Python
+                  - paragraph [ref=f4e2186]:
+                    - text: In which category should this new parent be? Since
+                    - generic [ref=f4e2188]:
+                      - generic [ref=f4e2189]: A
+                      - math [ref=f4e2193]:
+                        - generic [ref=f4e2194]: A
+                    - text: and
+                    - generic [ref=f4e2196]:
+                      - generic [ref=f4e2197]: B
+                      - math [ref=f4e2201]:
+                        - generic [ref=f4e2202]: B
+                    - text: are vector spaces, the result is, as a vector space, the direct sum
+                    - generic [ref=f4e2204]:
+                      - generic [ref=f4e2205]:
+                        - generic [ref=f4e2206]: A
+                        - generic [ref=f4e2208]: ⊕
+                        - generic [ref=f4e2210]: B
+                        - generic [ref=f4e2212]: ⊕
+                        - generic [ref=f4e2214]: B
+                      - math [ref=f4e2217]:
+                        - generic [ref=f4e2218]: A
+                        - generic [ref=f4e2219]: ⊕
+                        - generic [ref=f4e2220]: B
+                        - generic [ref=f4e2221]: ⊕
+                        - generic [ref=f4e2222]: B
+                    - text: ", hence the notation. Also, since both"
+                    - generic [ref=f4e2224]:
+                      - generic [ref=f4e2225]: A
+                      - math [ref=f4e2229]:
+                        - generic [ref=f4e2230]: A
+                    - text: and
+                    - generic [ref=f4e2232]:
+                      - generic [ref=f4e2233]: B
+                      - math [ref=f4e2237]:
+                        - generic [ref=f4e2238]: B
+                    - text: are monoids,
+                    - generic [ref=f4e2240]:
+                      - generic [ref=f4e2241]:
+                        - generic [ref=f4e2242]: A
+                        - generic [ref=f4e2244]: ×
+                        - generic [ref=f4e2246]: B
+                        - generic [ref=f4e2248]: ×
+                        - generic [ref=f4e2250]: B
+                      - math [ref=f4e2253]:
+                        - generic [ref=f4e2254]: A
+                        - generic [ref=f4e2255]: ×
+                        - generic [ref=f4e2256]: B
+                        - generic [ref=f4e2257]: ×
+                        - generic [ref=f4e2258]: B
+                    - text: "is naturally endowed with a monoid structure for pointwise multiplication:"
+                  - generic [ref=f4e2259]:
+                    - radio "Sage" [checked] [ref=f4e2260]
+                    - generic [ref=f4e2261] [cursor=pointer]: Sage
+                    - generic [ref=f4e2264]:
+                      - generic [ref=f4e2265]: "sage: C in Monoids() # needs sage.combinat sage.groups sage.modules True"
+                      - button "Copy to clipboard" [ref=f4e2266] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e2267]
+                    - radio "Python" [ref=f4e2271]
+                    - generic [ref=f4e2272] [cursor=pointer]: Python
+                  - paragraph [ref=f4e2273]: "the unit being the Cartesian product of the units of the operands:"
+                  - generic [ref=f4e2274]:
+                    - radio "Sage" [checked] [ref=f4e2275]
+                    - generic [ref=f4e2276] [cursor=pointer]: Sage
+                    - generic [ref=f4e2279]:
+                      - generic [ref=f4e2280]: "sage: C.one() # needs sage.combinat sage.groups sage.modules B[(0, word: )] + B[(1, ())] + B[(2, ())] sage: cartesian_product([A.one(), B.one(), B.one()]) # needs sage.combinat sage.groups sage.modules B[(0, word: )] + B[(1, ())] + B[(2, ())]"
+                      - button "Copy to clipboard" [ref=f4e2281] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e2282]
+                    - radio "Python" [ref=f4e2286]
+                    - generic [ref=f4e2287] [cursor=pointer]: Python
+                  - paragraph [ref=f4e2288]:
+                    - text: The pointwise product can be implemented generically for all magmas (i.e. sets endowed with a multiplicative operation) that are constructed as Cartesian products. It’s thus implemented in the
+                    - link [ref=f4e2289] [cursor=pointer]:
+                      - /url: magmas.html#sage.categories.magmas.Magmas
+                      - code [ref=f4e2290]: Magmas
+                    - text: "category:"
+                  - generic [ref=f4e2291]:
+                    - radio "Sage" [checked] [ref=f4e2292]
+                    - generic [ref=f4e2293] [cursor=pointer]: Sage
+                    - generic [ref=f4e2296]:
+                      - generic [ref=f4e2297]: "sage: C.product.__module__ # needs sage.combinat sage.groups sage.modules 'sage.categories.magmas'"
+                      - button "Copy to clipboard" [ref=f4e2298] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e2299]
+                    - radio "Python" [ref=f4e2303]
+                    - generic [ref=f4e2304] [cursor=pointer]: Python
+                  - paragraph [ref=f4e2305]:
+                    - text: More specifically, keeping on using nested classes to structure the code, the product method is put in the nested class
+                    - link [ref=f4e2306] [cursor=pointer]:
+                      - /url: magmas.html#sage.categories.magmas.Magmas.CartesianProducts.ParentMethods
+                      - code [ref=f4e2307]: Magmas.CartesianProducts.ParentMethods
+                    - text: ":"
+                  - generic [ref=f4e2309]:
+                    - generic [ref=f4e2310]: "class Magmas(Category): class ParentMethods: # methods for magmas class ElementMethods: # methods for elements of magmas class CartesianProduct(CartesianProductCategory): class ParentMethods: # methods for magmas that are constructed as Cartesian products def product(self, x, y): # ... class ElementMethods: # ..."
+                    - button "Copy to clipboard" [ref=f4e2311] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e2312]
+                  - generic [ref=f4e2316]:
+                    - paragraph [ref=f4e2317]: Note
+                    - paragraph [ref=f4e2318]:
+                      - text: The support for nested classes in Python is relatively recent. Their intensive use for the category infrastructure did reveal some glitches in their implementation, in particular around class naming and introspection. Sage currently works around the more annoying ones but some remain visible. See e.g.
+                      - link [ref=f4e2319] [cursor=pointer]:
+                        - /url: ../../../misc/sage/misc/test_nested_class.html#module-sage.misc.test_nested_class
+                        - code [ref=f4e2320]: sage.misc.test_nested_class
+                      - text: .
+                  - paragraph [ref=f4e2321]:
+                    - text: Let us now look at the categories of
+                    - code [ref=f4e2322]: C
+                    - text: ":"
+                  - generic [ref=f4e2323]:
+                    - radio "Sage" [checked] [ref=f4e2324]
+                    - generic [ref=f4e2325] [cursor=pointer]: Sage
+                    - generic [ref=f4e2328]:
+                      - generic [ref=f4e2329]: "sage: C.categories() # needs sage.combinat sage.groups sage.modules [Category of finite dimensional Cartesian products of algebras with basis over Rational Field, ... Category of Cartesian products of algebras over Rational Field, ... Category of Cartesian products of semigroups, Category of semigroups, ... Category of Cartesian products of magmas, ..., Category of magmas, ... Category of Cartesian products of additive magmas, ..., Category of additive magmas, Category of Cartesian products of sets, Category of sets, ...]"
+                      - button "Copy to clipboard" [ref=f4e2330] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e2331]
+                    - radio "Python" [ref=f4e2335]
+                    - generic [ref=f4e2336] [cursor=pointer]: Python
+                  - paragraph [ref=f4e2337]: This reveals the parallel hierarchy of categories for Cartesian products of semigroups magmas, … We are thus glad that Sage uses its knowledge that a monoid is a semigroup to automatically deduce that a Cartesian product of monoids is a Cartesian product of semigroups, and build the hierarchy of classes for parents and elements accordingly.
+                  - paragraph [ref=f4e2338]:
+                    - text: In general, the Cartesian product of
+                    - generic [ref=f4e2340]:
+                      - generic [ref=f4e2341]: A
+                      - math [ref=f4e2345]:
+                        - generic [ref=f4e2346]: A
+                    - text: and
+                    - generic [ref=f4e2348]:
+                      - generic [ref=f4e2349]: B
+                      - math [ref=f4e2353]:
+                        - generic [ref=f4e2354]: B
+                    - text: can potentially be an algebra, a coalgebra, a differential module, and be finite dimensional, or graded, or …. This can only be decided at runtime, by introspection into the properties of
+                    - generic [ref=f4e2356]:
+                      - generic [ref=f4e2357]: A
+                      - math [ref=f4e2361]:
+                        - generic [ref=f4e2362]: A
+                    - text: and
+                    - generic [ref=f4e2364]:
+                      - generic [ref=f4e2365]: B
+                      - math [ref=f4e2369]:
+                        - generic [ref=f4e2370]: B
+                    - text: ; furthermore, the number of possible combinations (e.g. finite dimensional differential algebra) grows exponentially with the number of properties.
+                - generic [ref=f4e2371]:
+                  - heading "Axioms" [level=3] [ref=f4e2372]
+                  - generic [ref=f4e2373]:
+                    - heading "First examples" [level=4] [ref=f4e2374]
+                    - paragraph [ref=f4e2375]: "We have seen that Sage is aware of the axioms satisfied by, for example, groups:"
+                    - generic [ref=f4e2376]:
+                      - radio "Sage" [checked] [ref=f4e2377]
+                      - generic [ref=f4e2378] [cursor=pointer]: Sage
+                      - generic [ref=f4e2381]:
+                        - generic [ref=f4e2382]: "sage: Groups().axioms() frozenset({'Associative', 'Inverse', 'Unital'})"
+                        - button "Copy to clipboard" [ref=f4e2383] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2384]
+                      - radio "Python" [ref=f4e2388]
+                      - generic [ref=f4e2389] [cursor=pointer]: Python
+                    - paragraph [ref=f4e2390]:
+                      - text: In fact, the category of groups can be
+                      - emphasis [ref=f4e2391]: defined
+                      - text: "by stating that a group is a magma, that is a set endowed with an internal binary multiplication, which satisfies the above axioms. Accordingly, we can construct the category of groups from the category of magmas:"
+                    - generic [ref=f4e2392]:
+                      - radio "Sage" [checked] [ref=f4e2393]
+                      - generic [ref=f4e2394] [cursor=pointer]: Sage
+                      - generic [ref=f4e2397]:
+                        - generic [ref=f4e2398]: "sage: Magmas().Associative().Unital().Inverse() Category of groups"
+                        - button "Copy to clipboard" [ref=f4e2399] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2400]
+                      - radio "Python" [ref=f4e2404]
+                      - generic [ref=f4e2405] [cursor=pointer]: Python
+                    - paragraph [ref=f4e2406]: "In general, we can construct new categories in Sage by specifying the axioms that are satisfied by the operations of the super categories. For example, starting from the category of magmas, we can construct all the following categories just by specifying the axioms satisfied by the multiplication:"
+                    - generic [ref=f4e2407]:
+                      - radio "Sage" [checked] [ref=f4e2408]
+                      - generic [ref=f4e2409] [cursor=pointer]: Sage
+                      - generic [ref=f4e2412]:
+                        - generic [ref=f4e2413]: "sage: Magmas() Category of magmas sage: Magmas().Unital() Category of unital magmas"
+                        - button "Copy to clipboard" [ref=f4e2414] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2415]
+                      - radio "Python" [ref=f4e2419]
+                      - generic [ref=f4e2420] [cursor=pointer]: Python
+                    - paragraph
+                    - generic [ref=f4e2421]:
+                      - radio "Sage" [checked] [ref=f4e2422]
+                      - generic [ref=f4e2423] [cursor=pointer]: Sage
+                      - generic [ref=f4e2426]:
+                        - generic [ref=f4e2427]: "sage: Magmas().Commutative().Unital() Category of commutative unital magmas sage: Magmas().Unital().Commutative() Category of commutative unital magmas"
+                        - button "Copy to clipboard" [ref=f4e2428] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2429]
+                      - radio "Python" [ref=f4e2433]
+                      - generic [ref=f4e2434] [cursor=pointer]: Python
+                    - paragraph
+                    - generic [ref=f4e2435]:
+                      - radio "Sage" [checked] [ref=f4e2436]
+                      - generic [ref=f4e2437] [cursor=pointer]: Sage
+                      - generic [ref=f4e2440]:
+                        - generic [ref=f4e2441]: "sage: Magmas().Associative() Category of semigroups"
+                        - button "Copy to clipboard" [ref=f4e2442] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2443]
+                      - radio "Python" [ref=f4e2447]
+                      - generic [ref=f4e2448] [cursor=pointer]: Python
+                    - paragraph
+                    - generic [ref=f4e2449]:
+                      - radio "Sage" [checked] [ref=f4e2450]
+                      - generic [ref=f4e2451] [cursor=pointer]: Sage
+                      - generic [ref=f4e2454]:
+                        - generic [ref=f4e2455]: "sage: Magmas().Associative().Unital() Category of monoids"
+                        - button "Copy to clipboard" [ref=f4e2456] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2457]
+                      - radio "Python" [ref=f4e2461]
+                      - generic [ref=f4e2462] [cursor=pointer]: Python
+                    - paragraph
+                    - generic [ref=f4e2463]:
+                      - radio "Sage" [checked] [ref=f4e2464]
+                      - generic [ref=f4e2465] [cursor=pointer]: Sage
+                      - generic [ref=f4e2468]:
+                        - generic [ref=f4e2469]: "sage: Magmas().Associative().Unital().Commutative() Category of commutative monoids"
+                        - button "Copy to clipboard" [ref=f4e2470] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2471]
+                      - radio "Python" [ref=f4e2475]
+                      - generic [ref=f4e2476] [cursor=pointer]: Python
+                    - paragraph
+                    - generic [ref=f4e2477]:
+                      - radio "Sage" [checked] [ref=f4e2478]
+                      - generic [ref=f4e2479] [cursor=pointer]: Sage
+                      - generic [ref=f4e2482]:
+                        - generic [ref=f4e2483]: "sage: Magmas().Associative().Unital().Inverse() Category of groups"
+                        - button "Copy to clipboard" [ref=f4e2484] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2485]
+                      - radio "Python" [ref=f4e2489]
+                      - generic [ref=f4e2490] [cursor=pointer]: Python
+                  - generic [ref=f4e2491]:
+                    - heading "Axioms and categories with axioms" [level=4] [ref=f4e2492]
+                    - paragraph [ref=f4e2493]:
+                      - text: Here,
+                      - code [ref=f4e2494]: Associative
+                      - text: ","
+                      - code [ref=f4e2495]: Unital
+                      - text: ","
+                      - code [ref=f4e2496]: Commutative
+                      - text: are axioms. In general, any category
+                      - code [ref=f4e2497]: Cs
+                      - text: in Sage can declare a new axiom
+                      - code [ref=f4e2498]: A
+                      - text: . Then, the
+                      - emphasis [ref=f4e2499]: category with axiom
+                      - code [ref=f4e2500]: Cs.A()
+                      - text: models the subcategory of the objects of
+                      - code [ref=f4e2501]: Cs
+                      - text: satisfying the axiom
+                      - code [ref=f4e2502]: A
+                      - text: . Similarly, for any subcategory
+                      - code [ref=f4e2503]: Ds
+                      - text: of
+                      - code [ref=f4e2504]: Cs
+                      - text: ","
+                      - code [ref=f4e2505]: Ds.A()
+                      - text: models the subcategory of the objects of
+                      - code [ref=f4e2506]: Ds
+                      - text: satisfying the axiom
+                      - code [ref=f4e2507]: A
+                      - text: . In most cases, it’s a
+                      - emphasis [ref=f4e2508]: full subcategory
+                      - text: (see
+                      - link "Wikipedia article Subcategory" [ref=f4e2509] [cursor=pointer]:
+                        - /url: https://en.wikipedia.org/wiki/Subcategory
+                      - text: ).
+                    - paragraph [ref=f4e2510]:
+                      - text: For example, the category of sets defines the
+                      - code [ref=f4e2511]: Finite
+                      - text: "axiom, and this axiom is available in the subcategory of groups:"
+                    - generic [ref=f4e2512]:
+                      - radio "Sage" [checked] [ref=f4e2513]
+                      - generic [ref=f4e2514] [cursor=pointer]: Sage
+                      - generic [ref=f4e2517]:
+                        - generic [ref=f4e2518]: "sage: Sets().Finite() Category of finite sets sage: Groups().Finite() Category of finite groups"
+                        - button "Copy to clipboard" [ref=f4e2519] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2520]
+                      - radio "Python" [ref=f4e2524]
+                      - generic [ref=f4e2525] [cursor=pointer]: Python
+                    - paragraph [ref=f4e2526]: "The meaning of each axiom is described in the documentation of the corresponding method, which can be obtained as usual by introspection:"
+                    - generic [ref=f4e2527]:
+                      - radio "Sage" [checked] [ref=f4e2528]
+                      - generic [ref=f4e2529] [cursor=pointer]: Sage
+                      - generic [ref=f4e2532]:
+                        - generic [ref=f4e2533]: "sage: C = Groups() sage: C.Finite? # not tested"
+                        - button "Copy to clipboard" [ref=f4e2534] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2535]
+                      - radio "Python" [ref=f4e2539]
+                      - generic [ref=f4e2540] [cursor=pointer]: Python
+                    - paragraph [ref=f4e2541]: "The purpose of categories with axioms is no different from other categories: to provide bookshelves of code, documentation, mathematical knowledge, tests, for their objects. The extra feature is that, when intersecting categories, axioms are automatically combined together:"
+                    - generic [ref=f4e2542]:
+                      - radio "Sage" [checked] [ref=f4e2543]
+                      - generic [ref=f4e2544] [cursor=pointer]: Sage
+                      - generic [ref=f4e2547]:
+                        - generic [ref=f4e2548]: "sage: C = Magmas().Associative() & Magmas().Unital().Inverse() & Sets().Finite(); C Category of finite groups sage: sorted(C.axioms()) ['Associative', 'Finite', 'Inverse', 'Unital']"
+                        - button "Copy to clipboard" [ref=f4e2549] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2550]
+                      - radio "Python" [ref=f4e2554]
+                      - generic [ref=f4e2555] [cursor=pointer]: Python
+                    - paragraph [ref=f4e2556]:
+                      - text: For a more advanced example, Sage knows that a ring is a set
+                      - generic [ref=f4e2558]:
+                        - generic [ref=f4e2559]: C
+                        - math [ref=f4e2563]:
+                          - generic [ref=f4e2564]: C
+                      - text: endowed with a multiplication which distributes over addition, such that
+                      - generic [ref=f4e2566]:
+                        - generic [ref=f4e2567]:
+                          - generic [ref=f4e2568]: (
+                          - generic [ref=f4e2570]: C
+                          - generic [ref=f4e2572]: ","
+                          - generic [ref=f4e2574]: +
+                          - generic [ref=f4e2576]: )
+                        - math [ref=f4e2579]:
+                          - generic [ref=f4e2580]: (
+                          - generic [ref=f4e2581]: C
+                          - generic [ref=f4e2582]: ","
+                          - generic [ref=f4e2583]: +
+                          - generic [ref=f4e2584]: )
+                      - text: is a commutative additive group and
+                      - generic [ref=f4e2586]:
+                        - generic [ref=f4e2587]:
+                          - generic [ref=f4e2588]: (
+                          - generic [ref=f4e2590]: C
+                          - generic [ref=f4e2592]: ","
+                          - generic [ref=f4e2594]: ∗
+                          - generic [ref=f4e2596]: )
+                        - math [ref=f4e2599]:
+                          - generic [ref=f4e2600]: (
+                          - generic [ref=f4e2601]: C
+                          - generic [ref=f4e2602]: ","
+                          - generic [ref=f4e2603]: ∗
+                          - generic [ref=f4e2604]: )
+                      - text: "is a monoid:"
+                    - generic [ref=f4e2605]:
+                      - radio "Sage" [checked] [ref=f4e2606]
+                      - generic [ref=f4e2607] [cursor=pointer]: Sage
+                      - generic [ref=f4e2610]:
+                        - generic [ref=f4e2611]: "sage: C = (CommutativeAdditiveGroups() & Monoids()).Distributive(); C Category of rings sage: sorted(C.axioms()) ['AdditiveAssociative', 'AdditiveCommutative', 'AdditiveInverse', 'AdditiveUnital', 'Associative', 'Distributive', 'Unital']"
+                        - button "Copy to clipboard" [ref=f4e2612] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2613]
+                      - radio "Python" [ref=f4e2617]
+                      - generic [ref=f4e2618] [cursor=pointer]: Python
+                    - paragraph [ref=f4e2619]: "The infrastructure allows for specifying further deduction rules, in order to encode mathematical facts like Wedderburn’s theorem:"
+                    - generic [ref=f4e2620]:
+                      - radio "Sage" [checked] [ref=f4e2621]
+                      - generic [ref=f4e2622] [cursor=pointer]: Sage
+                      - generic [ref=f4e2625]:
+                        - generic [ref=f4e2626]: "sage: DivisionRings() & Sets().Finite() Category of finite enumerated fields"
+                        - button "Copy to clipboard" [ref=f4e2627] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2628]
+                      - radio "Python" [ref=f4e2632]
+                      - generic [ref=f4e2633] [cursor=pointer]: Python
+                    - generic [ref=f4e2634]:
+                      - paragraph [ref=f4e2635]: Note
+                      - paragraph [ref=f4e2636]:
+                        - text: "When an axiom specifies the properties of some operations in Sage, the notations for those operations are tied to this axiom. For example, as we have seen above, we need two distinct axioms for associativity: the axiom “AdditiveAssociative” is about the properties of the addition"
+                        - generic [ref=f4e2638]:
+                          - generic [ref=f4e2639]: +
+                          - math [ref=f4e2643]:
+                            - generic [ref=f4e2644]: +
+                        - text: ", whereas the axiom “Associative” is about the properties of the multiplication"
+                        - generic [ref=f4e2646]:
+                          - generic [ref=f4e2647]: ∗
+                          - math [ref=f4e2651]:
+                            - generic [ref=f4e2652]: ∗
+                        - text: .
+                      - paragraph [ref=f4e2653]: We are touching here an inherent limitation of the current infrastructure. There is indeed no support for providing generic code that is independent of the notations. In particular, the category hierarchy about additive structures (additive monoids, additive groups, …) is completely duplicated by that for multiplicative structures (monoids, groups, …).
+                      - paragraph [ref=f4e2654]:
+                        - text: "As far as we know, none of the existing computer algebra systems has a good solution for this problem. The difficulty is that this is not only about a single notation but a bunch of operators and methods:"
+                        - code [ref=f4e2655]: +, -, zero, summation, sum, ...
+                        - text: in one case,
+                        - code [ref=f4e2656]: "*, /, one, product, prod, factor, ..."
+                        - text: in the other. Sharing something between the two hierarchies of categories would only be useful if one could write generic code that applies in both cases; for that one needs to somehow automatically substitute the right operations in the right spots in the code. That’s kind of what we are doing manually between e.g.
+                        - link [ref=f4e2657] [cursor=pointer]:
+                          - /url: additive_magmas.html#sage.categories.additive_magmas.AdditiveMagmas.ParentMethods.addition_table
+                          - code [ref=f4e2658]: AdditiveMagmas.ParentMethods.addition_table()
+                        - text: and
+                        - link [ref=f4e2659] [cursor=pointer]:
+                          - /url: magmas.html#sage.categories.magmas.Magmas.ParentMethods.multiplication_table
+                          - code [ref=f4e2660]: Magmas.ParentMethods.multiplication_table()
+                        - text: ", but doing this systematically is a different beast from what we have been doing so far with just usual inheritance."
+                  - generic [ref=f4e2661]:
+                    - heading "Single entry point and name space usage" [level=4] [ref=f4e2662]
+                    - paragraph [ref=f4e2663]:
+                      - text: A nice feature of the notation
+                      - code [ref=f4e2664]: Cs.A()
+                      - text: is that, from a single entry point (say the category
+                      - link [ref=f4e2665] [cursor=pointer]:
+                        - /url: magmas.html#sage.categories.magmas.Magmas
+                        - code [ref=f4e2666]: Magmas
+                      - text: as above), one can explore a whole range of related categories, typically with the help of introspection to discover which axioms are available, and without having to import new Python modules. This feature will be used in
+                      - 'link "Issue #15741" [ref=f4e2667] [cursor=pointer]':
+                        - /url: https://github.com/sagemath/sage/issues/15741
+                      - text: "to unclutter the global name space from, for example, the many variants of the category of algebras like:"
+                    - generic [ref=f4e2668]:
+                      - radio "Sage" [checked] [ref=f4e2669]
+                      - generic [ref=f4e2670] [cursor=pointer]: Sage
+                      - generic [ref=f4e2673]:
+                        - generic [ref=f4e2674]: "sage: FiniteDimensionalAlgebrasWithBasis(QQ) Category of finite dimensional algebras with basis over Rational Field"
+                        - button "Copy to clipboard" [ref=f4e2675] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2676]
+                      - radio "Python" [ref=f4e2680]
+                      - generic [ref=f4e2681] [cursor=pointer]: Python
+                    - paragraph [ref=f4e2682]: "There will of course be a deprecation step, but it’s recommended to prefer right away the more flexible notation:"
+                    - generic [ref=f4e2683]:
+                      - radio "Sage" [checked] [ref=f4e2684]
+                      - generic [ref=f4e2685] [cursor=pointer]: Sage
+                      - generic [ref=f4e2688]:
+                        - generic [ref=f4e2689]: "sage: Algebras(QQ).WithBasis().FiniteDimensional() Category of finite dimensional algebras with basis over Rational Field"
+                        - button "Copy to clipboard" [ref=f4e2690] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2691]
+                      - radio "Python" [ref=f4e2695]
+                      - generic [ref=f4e2696] [cursor=pointer]: Python
+                    - complementary [ref=f4e2697]:
+                      - paragraph [ref=f4e2698]: Design discussion
+                      - paragraph [ref=f4e2699]:
+                        - text: How far should this be pushed?
+                        - link [ref=f4e2700] [cursor=pointer]:
+                          - /url: fields.html#sage.categories.fields.Fields
+                          - code [ref=f4e2701]: Fields
+                        - text: should definitely stay, but should
+                        - link [ref=f4e2702] [cursor=pointer]:
+                          - /url: finite_groups.html#sage.categories.finite_groups.FiniteGroups
+                          - code [ref=f4e2703]: FiniteGroups
+                        - text: or
+                        - link [ref=f4e2704] [cursor=pointer]:
+                          - /url: division_rings.html#sage.categories.division_rings.DivisionRings
+                          - code [ref=f4e2705]: DivisionRings
+                        - text: be removed from the global namespace? Do we want to further completely deprecate the notation
+                        - code [ref=f4e2706]: FiniteGroups()
+                        - text: in favor of
+                        - code [ref=f4e2707]: Groups().Finite()
+                        - text: "?"
+                  - generic [ref=f4e2708]:
+                    - heading "On the potential combinatorial explosion of categories with axioms" [level=4] [ref=f4e2709]
+                    - paragraph [ref=f4e2710]:
+                      - text: Even for a very simple category like
+                      - code [ref=f4e2711]: Magmas
+                      - text: ", there are about"
+                      - generic [ref=f4e2713]:
+                        - generic [ref=f4e2715]:
+                          - generic [ref=f4e2716]: "2"
+                          - generic [ref=f4e2718]: "5"
+                        - math [ref=f4e2722]:
+                          - generic [ref=f4e2723]:
+                            - generic [ref=f4e2724]: "2"
+                            - generic [ref=f4e2725]: "5"
+                      - text: potential combinations of the axioms! Think about what this becomes for a category with two operations
+                      - generic [ref=f4e2727]:
+                        - generic [ref=f4e2728]: +
+                        - math [ref=f4e2732]:
+                          - generic [ref=f4e2733]: +
+                      - text: and
+                      - generic [ref=f4e2735]:
+                        - generic [ref=f4e2736]: ∗
+                        - math [ref=f4e2740]:
+                          - generic [ref=f4e2741]: ∗
+                      - text: ":"
+                    - generic [ref=f4e2742]:
+                      - radio "Sage" [checked] [ref=f4e2743]
+                      - generic [ref=f4e2744] [cursor=pointer]: Sage
+                      - generic [ref=f4e2747]:
+                        - generic [ref=f4e2748]: "sage: C = (Magmas() & AdditiveMagmas()).Distributive(); C Category of distributive magmas and additive magmas sage: CAA = C.Associative().AdditiveAssociative() sage: CAA.AdditiveCommutative().AdditiveUnital().AdditiveInverse() Category of rngs sage: CAA.AdditiveCommutative().AdditiveUnital().Unital() Category of semirings sage: CAA.AdditiveCommutative().AdditiveUnital().AdditiveInverse().Unital() Category of rings sage: Rings().Division() Category of division rings sage: Rings().Division().Commutative() Category of fields sage: Rings().Division().Finite() Category of finite enumerated fields"
+                        - button "Copy to clipboard" [ref=f4e2749] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2750]
+                      - radio "Python" [ref=f4e2754]
+                      - generic [ref=f4e2755] [cursor=pointer]: Python
+                    - paragraph [ref=f4e2756]: "or for more advanced categories:"
+                    - generic [ref=f4e2757]:
+                      - radio "Sage" [checked] [ref=f4e2758]
+                      - generic [ref=f4e2759] [cursor=pointer]: Sage
+                      - generic [ref=f4e2762]:
+                        - generic [ref=f4e2763]: "sage: g = HopfAlgebras(QQ).WithBasis().Graded().Connected().category_graph() # needs sage.graphs sage: g.set_latex_options(format='dot2tex') # needs sage.graphs sage.plot sage: view(g) # not tested # needs sage.graphs sage.plot"
+                        - button "Copy to clipboard" [ref=f4e2764] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2765]
+                      - radio "Python" [ref=f4e2769]
+                      - generic [ref=f4e2770] [cursor=pointer]: Python
+                  - generic [ref=f4e2771]:
+                    - heading "Difference between axioms and regressive covariant functorial constructions" [level=4] [ref=f4e2772]
+                    - paragraph [ref=f4e2773]:
+                      - text: Our running examples here will be the axiom
+                      - code [ref=f4e2774]: FiniteDimensional
+                      - text: and the regressive covariant functorial construction
+                      - code [ref=f4e2775]: Graded
+                      - text: . Let
+                      - code [ref=f4e2776]: Cs
+                      - text: be some subcategory of
+                      - code [ref=f4e2777]: Modules
+                      - text: ", say the category of modules itself:"
+                    - generic [ref=f4e2778]:
+                      - radio "Sage" [checked] [ref=f4e2779]
+                      - generic [ref=f4e2780] [cursor=pointer]: Sage
+                      - generic [ref=f4e2783]:
+                        - generic [ref=f4e2784]: "sage: Cs = Modules(QQ)"
+                        - button "Copy to clipboard" [ref=f4e2785] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2786]
+                      - radio "Python" [ref=f4e2790]
+                      - generic [ref=f4e2791] [cursor=pointer]: Python
+                    - paragraph [ref=f4e2792]:
+                      - text: Then,
+                      - code [ref=f4e2793]: Cs.FiniteDimensional()
+                      - text: (respectively
+                      - code [ref=f4e2794]: Cs.Graded()
+                      - text: ) is the subcategory of the objects
+                      - code [ref=f4e2795]: O
+                      - text: of
+                      - code [ref=f4e2796]: Cs
+                      - text: which are finite dimensional (respectively graded).
+                    - paragraph [ref=f4e2797]:
+                      - text: Let also
+                      - code [ref=f4e2798]: Ds
+                      - text: be a subcategory of
+                      - code [ref=f4e2799]: Cs
+                      - text: ", say:"
+                    - generic [ref=f4e2800]:
+                      - radio "Sage" [checked] [ref=f4e2801]
+                      - generic [ref=f4e2802] [cursor=pointer]: Sage
+                      - generic [ref=f4e2805]:
+                        - generic [ref=f4e2806]: "sage: Ds = Algebras(QQ)"
+                        - button "Copy to clipboard" [ref=f4e2807] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2808]
+                      - radio "Python" [ref=f4e2812]
+                      - generic [ref=f4e2813] [cursor=pointer]: Python
+                    - paragraph [ref=f4e2814]: "A finite dimensional algebra is also a finite dimensional module:"
+                    - generic [ref=f4e2815]:
+                      - radio "Sage" [checked] [ref=f4e2816]
+                      - generic [ref=f4e2817] [cursor=pointer]: Sage
+                      - generic [ref=f4e2820]:
+                        - generic [ref=f4e2821]: "sage: Algebras(QQ).FiniteDimensional().is_subcategory(Modules(QQ).FiniteDimensional()) True"
+                        - button "Copy to clipboard" [ref=f4e2822] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2823]
+                      - radio "Python" [ref=f4e2827]
+                      - generic [ref=f4e2828] [cursor=pointer]: Python
+                    - paragraph [ref=f4e2829]: "Similarly a graded algebra is also a graded module:"
+                    - generic [ref=f4e2830]:
+                      - radio "Sage" [checked] [ref=f4e2831]
+                      - generic [ref=f4e2832] [cursor=pointer]: Sage
+                      - generic [ref=f4e2835]:
+                        - generic [ref=f4e2836]: "sage: Algebras(QQ).Graded().is_subcategory( Modules(QQ).Graded() ) True"
+                        - button "Copy to clipboard" [ref=f4e2837] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2838]
+                      - radio "Python" [ref=f4e2842]
+                      - generic [ref=f4e2843] [cursor=pointer]: Python
+                    - paragraph [ref=f4e2844]:
+                      - text: This is the
+                      - emphasis [ref=f4e2845]: covariance
+                      - text: "property: for"
+                      - code [ref=f4e2846]: A
+                      - text: an axiom or a covariant functorial construction, if
+                      - code [ref=f4e2847]: Ds
+                      - text: is a subcategory of
+                      - code [ref=f4e2848]: Cs
+                      - text: ", then"
+                      - code [ref=f4e2849]: Ds.A()
+                      - text: is a subcategory of
+                      - code [ref=f4e2850]: Cs.A()
+                      - text: .
+                    - paragraph [ref=f4e2851]:
+                      - text: What happens if we consider reciprocally an object of
+                      - code [ref=f4e2852]: Cs.A()
+                      - text: which is also in
+                      - code [ref=f4e2853]: Ds
+                      - text: "? A finite dimensional module which is also an algebra is a finite dimensional algebra:"
+                    - generic [ref=f4e2854]:
+                      - radio "Sage" [checked] [ref=f4e2855]
+                      - generic [ref=f4e2856] [cursor=pointer]: Sage
+                      - generic [ref=f4e2859]:
+                        - generic [ref=f4e2860]: "sage: Modules(QQ).FiniteDimensional() & Algebras(QQ) Category of finite dimensional algebras over Rational Field"
+                        - button "Copy to clipboard" [ref=f4e2861] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2862]
+                      - radio "Python" [ref=f4e2866]
+                      - generic [ref=f4e2867] [cursor=pointer]: Python
+                    - paragraph [ref=f4e2868]:
+                      - text: On the other hand, a graded module
+                      - generic [ref=f4e2870]:
+                        - generic [ref=f4e2871]: O
+                        - math [ref=f4e2875]:
+                          - generic [ref=f4e2876]: O
+                      - text: which is also an algebra is not necessarily a graded algebra! Indeed, the grading on
+                      - generic [ref=f4e2878]:
+                        - generic [ref=f4e2879]: O
+                        - math [ref=f4e2883]:
+                          - generic [ref=f4e2884]: O
+                      - text: may not be compatible with the product on
+                      - generic [ref=f4e2886]:
+                        - generic [ref=f4e2887]: O
+                        - math [ref=f4e2891]:
+                          - generic [ref=f4e2892]: O
+                      - text: ":"
+                    - generic [ref=f4e2893]:
+                      - radio "Sage" [checked] [ref=f4e2894]
+                      - generic [ref=f4e2895] [cursor=pointer]: Sage
+                      - generic [ref=f4e2898]:
+                        - generic [ref=f4e2899]: "sage: Modules(QQ).Graded() & Algebras(QQ) Join of Category of algebras over Rational Field and Category of graded vector spaces over Rational Field"
+                        - button "Copy to clipboard" [ref=f4e2900] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2901]
+                      - radio "Python" [ref=f4e2905]
+                      - generic [ref=f4e2906] [cursor=pointer]: Python
+                    - paragraph [ref=f4e2907]:
+                      - text: The relevant difference between
+                      - code [ref=f4e2908]: FiniteDimensional
+                      - text: and
+                      - code [ref=f4e2909]: Graded
+                      - text: is that
+                      - code [ref=f4e2910]: FiniteDimensional
+                      - text: is a statement about the properties of
+                      - code [ref=f4e2911]: O
+                      - text: seen as a module (and thus does not depend on the given category), whereas
+                      - code [ref=f4e2912]: Graded
+                      - text: is a statement about the properties of
+                      - code [ref=f4e2913]: O
+                      - text: and all its operations in the given category.
+                    - paragraph [ref=f4e2914]:
+                      - text: In general, if a category satisfies a given axiom, any subcategory also satisfies that axiom. Another formulation is that, for an axiom
+                      - code [ref=f4e2915]: A
+                      - text: defined in a super category
+                      - code [ref=f4e2916]: Cs
+                      - text: of
+                      - code [ref=f4e2917]: Ds
+                      - text: ","
+                      - code [ref=f4e2918]: Ds.A()
+                      - text: is the intersection of the categories
+                      - code [ref=f4e2919]: Ds
+                      - text: and
+                      - code [ref=f4e2920]: Cs.A()
+                      - text: ":"
+                    - generic [ref=f4e2921]:
+                      - radio "Sage" [checked] [ref=f4e2922]
+                      - generic [ref=f4e2923] [cursor=pointer]: Sage
+                      - generic [ref=f4e2926]:
+                        - generic [ref=f4e2927]: "sage: As = Algebras(QQ).FiniteDimensional(); As Category of finite dimensional algebras over Rational Field sage: Bs = Algebras(QQ) & Modules(QQ).FiniteDimensional(); As Category of finite dimensional algebras over Rational Field sage: As is Bs True"
+                        - button "Copy to clipboard" [ref=f4e2928] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2929]
+                      - radio "Python" [ref=f4e2933]
+                      - generic [ref=f4e2934] [cursor=pointer]: Python
+                    - paragraph [ref=f4e2935]: "An immediate consequence is that, as we have already noticed, axioms commute:"
+                    - generic [ref=f4e2936]:
+                      - radio "Sage" [checked] [ref=f4e2937]
+                      - generic [ref=f4e2938] [cursor=pointer]: Sage
+                      - generic [ref=f4e2941]:
+                        - generic [ref=f4e2942]: "sage: As = Algebras(QQ).FiniteDimensional().WithBasis(); As Category of finite dimensional algebras with basis over Rational Field sage: Bs = Algebras(QQ).WithBasis().FiniteDimensional(); Bs Category of finite dimensional algebras with basis over Rational Field sage: As is Bs True"
+                        - button "Copy to clipboard" [ref=f4e2943] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2944]
+                      - radio "Python" [ref=f4e2948]
+                      - generic [ref=f4e2949] [cursor=pointer]: Python
+                    - paragraph [ref=f4e2950]: "On the other hand, axioms do not necessarily commute with functorial constructions, even if the current printout may missuggest so:"
+                    - generic [ref=f4e2951]:
+                      - radio "Sage" [checked] [ref=f4e2952]
+                      - generic [ref=f4e2953] [cursor=pointer]: Sage
+                      - generic [ref=f4e2956]:
+                        - generic [ref=f4e2957]: "sage: As = Algebras(QQ).Graded().WithBasis(); As Category of graded algebras with basis over Rational Field sage: Bs = Algebras(QQ).WithBasis().Graded(); Bs Category of graded algebras with basis over Rational Field sage: As is Bs False"
+                        - button "Copy to clipboard" [ref=f4e2958] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2959]
+                      - radio "Python" [ref=f4e2963]
+                      - generic [ref=f4e2964] [cursor=pointer]: Python
+                    - paragraph [ref=f4e2965]:
+                      - text: This is because
+                      - code [ref=f4e2966]: Bs
+                      - text: is the category of algebras endowed with basis, which are further graded; in particular the basis must respect the grading (i.e. be made of homogeneous elements). On the other hand,
+                      - code [ref=f4e2967]: As
+                      - text: is the category of graded algebras, which are further endowed with some basis; that basis need not respect the grading. In fact
+                      - code [ref=f4e2968]: As
+                      - text: "is really a join category:"
+                    - generic [ref=f4e2969]:
+                      - radio "Sage" [checked] [ref=f4e2970]
+                      - generic [ref=f4e2971] [cursor=pointer]: Sage
+                      - generic [ref=f4e2974]:
+                        - generic [ref=f4e2975]: "sage: type(As) <class 'sage.categories.category.JoinCategory_with_category'> sage: As._repr_(as_join=True) 'Join of Category of algebras with basis over Rational Field and Category of graded algebras over Rational Field'"
+                        - button "Copy to clipboard" [ref=f4e2976] [cursor=pointer]:
+                          - img "Copy to clipboard" [ref=f4e2977]
+                      - radio "Python" [ref=f4e2981]
+                      - generic [ref=f4e2982] [cursor=pointer]: Python
+                    - generic [ref=f4e2983]:
+                      - paragraph [ref=f4e2984]: Todo
+                      - paragraph [ref=f4e2985]: Improve the printing of functorial constructions and joins to raise this potentially dangerous ambiguity.
+                  - generic [ref=f4e2986]:
+                    - heading "Further reading on axioms" [level=4] [ref=f4e2987]
+                    - paragraph [ref=f4e2988]:
+                      - text: We refer to
+                      - link [ref=f4e2989] [cursor=pointer]:
+                        - /url: category_with_axiom.html#module-sage.categories.category_with_axiom
+                        - code [ref=f4e2990]: sage.categories.category_with_axiom
+                      - text: for how to implement axioms.
+                - generic [ref=f4e2991]:
+                  - heading "Wrap-up" [level=3] [ref=f4e2992]
+                  - paragraph [ref=f4e2993]: As we have seen, there is a combinatorial explosion of possible classes. Constructing by hand the full class hierarchy would not scale unless one would restrict to a very rigid subset. Even if it was possible to construct automatically the full hierarchy, this would not scale with respect to system resources.
+                  - paragraph [ref=f4e2994]: "When designing software systems with large hierarchies of abstract classes for business objects, the difficulty is usually to identify a proper set of key concepts. Here we are lucky, as the key concepts have been long identified and are relatively few:"
+                  - list [ref=f4e2995]:
+                    - listitem [ref=f4e2996]:
+                      - paragraph [ref=f4e2997]:
+                        - text: Operations (
+                        - generic [ref=f4e2999]:
+                          - generic [ref=f4e3000]: +
+                          - math [ref=f4e3004]:
+                            - generic [ref=f4e3005]: +
+                        - text: ","
+                        - generic [ref=f4e3007]:
+                          - generic [ref=f4e3008]: ∗
+                          - math [ref=f4e3012]:
+                            - generic [ref=f4e3013]: ∗
+                        - text: ", …)"
+                    - listitem [ref=f4e3014]:
+                      - paragraph [ref=f4e3015]: Axioms on those operations (associativity, …)
+                    - listitem [ref=f4e3016]:
+                      - paragraph [ref=f4e3017]: Constructions (Cartesian products, …)
+                  - paragraph [ref=f4e3018]: Better, those concepts are sufficiently well known so that a user can reasonably be expected to be familiar with the concepts that are involved for his own needs.
+                  - paragraph [ref=f4e3019]: Instead, the difficulty is concentrated in the huge number of possible combinations, an unpredictable large subset of which being potentially of interest; at the same time, only a small – but moving – subset has code naturally attached to it.
+                  - paragraph [ref=f4e3020]:
+                    - text: This has led to the current design, where one focuses on writing the relatively few classes for which there is actual code or mathematical information, and lets Sage
+                    - emphasis [ref=f4e3021]: compose dynamically and lazily
+                    - text: those building blocks to construct the minimal hierarchy of classes needed for the computation at hand. This allows for the infrastructure to scale smoothly as bookshelves are added, extended, or reorganized.
+              - generic [ref=f4e3022]:
+                - heading "Writing a new category" [level=2] [ref=f4e3023]
+                - paragraph [ref=f4e3024]:
+                  - text: Each category
+                  - generic [ref=f4e3026]:
+                    - generic [ref=f4e3027]: C
+                    - math [ref=f4e3031]:
+                      - generic [ref=f4e3032]: C
+                  - strong [ref=f4e3033]: must
+                  - text: be provided with a method
+                  - code [ref=f4e3034]: C.super_categories()
+                  - text: and
+                  - emphasis [ref=f4e3035]: can
+                  - text: be provided with a method
+                  - code [ref=f4e3036]: C._subcategory_hook_(D)
+                  - text: . Also, it may be needed to insert
+                  - generic [ref=f4e3038]:
+                    - generic [ref=f4e3039]: C
+                    - math [ref=f4e3043]:
+                      - generic [ref=f4e3044]: C
+                  - text: into the output of the
+                  - code [ref=f4e3045]: super_categories()
+                  - text: method of some other category. This determines the position of
+                  - generic [ref=f4e3047]:
+                    - generic [ref=f4e3048]: C
+                    - math [ref=f4e3052]:
+                      - generic [ref=f4e3053]: C
+                  - text: in the category graph.
+                - paragraph [ref=f4e3054]:
+                  - text: A category
+                  - emphasis [ref=f4e3055]: may
+                  - text: provide methods that can be used by all its objects, respectively by all elements of its objects.
+                - paragraph [ref=f4e3056]:
+                  - text: Each category
+                  - emphasis [ref=f4e3057]: should
+                  - text: come with a good example, in
+                  - code [ref=f4e3058]: sage.categories.examples
+                  - text: .
+                - generic [ref=f4e3059]:
+                  - heading "Inserting the new category into the category graph" [level=3] [ref=f4e3060]
+                  - paragraph [ref=f4e3061]:
+                    - code [ref=f4e3062]: C.super_categories()
+                    - emphasis [ref=f4e3063]: must
+                    - text: return a list of categories, namely the
+                    - emphasis [ref=f4e3064]: immediate
+                    - text: super categories of
+                    - generic [ref=f4e3066]:
+                      - generic [ref=f4e3067]: C
+                      - math [ref=f4e3071]:
+                        - generic [ref=f4e3072]: C
+                    - text: . Of course, if you know that your new category
+                    - generic [ref=f4e3074]:
+                      - generic [ref=f4e3075]: C
+                      - math [ref=f4e3079]:
+                        - generic [ref=f4e3080]: C
+                    - text: is an immediate super category of some existing category
+                    - generic [ref=f4e3082]:
+                      - generic [ref=f4e3083]: D
+                      - math [ref=f4e3087]:
+                        - generic [ref=f4e3088]: D
+                    - text: ", then you should also update the method"
+                    - code [ref=f4e3089]: D.super_categories
+                    - text: to include
+                    - generic [ref=f4e3091]:
+                      - generic [ref=f4e3092]: C
+                      - math [ref=f4e3096]:
+                        - generic [ref=f4e3097]: C
+                    - text: .
+                  - paragraph [ref=f4e3098]:
+                    - text: The immediate super categories of
+                    - generic [ref=f4e3100]:
+                      - generic [ref=f4e3101]: C
+                      - math [ref=f4e3105]:
+                        - generic [ref=f4e3106]: C
+                    - emphasis [ref=f4e3107]: should not
+                    - text: be
+                    - link [ref=f4e3108] [cursor=pointer]:
+                      - /url: category.html#sage.categories.category.JoinCategory
+                      - code [ref=f4e3109]: join categories
+                    - text: ". Furthermore, one always should have:"
+                  - generic [ref=f4e3111]:
+                    - generic [ref=f4e3112]: Cs().is_subcategory( Category.join(Cs().super_categories()) ) Cs()._cmp_key > other._cmp_key for other in Cs().super_categories()
+                    - button "Copy to clipboard" [ref=f4e3113] [cursor=pointer]:
+                      - img "Copy to clipboard" [ref=f4e3114]
+                  - paragraph [ref=f4e3118]:
+                    - text: This is checked by
+                    - link [ref=f4e3119] [cursor=pointer]:
+                      - /url: category.html#sage.categories.category.Category._test_category
+                      - code [ref=f4e3120]: _test_category()
+                    - text: .
+                  - paragraph [ref=f4e3121]:
+                    - text: In several cases, the category
+                    - generic [ref=f4e3123]:
+                      - generic [ref=f4e3124]: C
+                      - math [ref=f4e3128]:
+                        - generic [ref=f4e3129]: C
+                    - text: is directly provided with a generic implementation of
+                    - code [ref=f4e3130]: super_categories
+                    - text: ; a typical example is when
+                    - generic [ref=f4e3132]:
+                      - generic [ref=f4e3133]: C
+                      - math [ref=f4e3137]:
+                        - generic [ref=f4e3138]: C
+                    - text: implements an axiom or a functorial construction; in such a case,
+                    - generic [ref=f4e3140]:
+                      - generic [ref=f4e3141]: C
+                      - math [ref=f4e3145]:
+                        - generic [ref=f4e3146]: C
+                    - text: may implement
+                    - code [ref=f4e3147]: C.extra_super_categories()
+                    - text: to complement the super categories discovered by the generic implementation. This method needs not return immediate super categories; instead it’s usually best to specify the largest super category providing the desired mathematical information. For example, the category
+                    - link [ref=f4e3148] [cursor=pointer]:
+                      - /url: magmas.html#sage.categories.magmas.Magmas.Commutative.Algebras
+                      - code [ref=f4e3149]: Magmas.Commutative.Algebras
+                    - text: just states that the algebra of a commutative magma is a commutative magma. This is sufficient to let Sage deduce that it’s in fact a commutative algebra.
+                - generic [ref=f4e3150]:
+                  - heading "Methods for objects and elements" [level=3] [ref=f4e3151]
+                  - paragraph [ref=f4e3152]: Different objects of the same category share some algebraic features, and very often these features can be encoded in a method, in a generic way. For example, for every commutative additive monoid, it makes sense to ask for the sum of a list of elements. Sage’s category framework allows to provide a generic implementation for all objects of a category.
+                  - paragraph [ref=f4e3153]:
+                    - text: If you want to provide your new category with generic methods for objects (or elements of objects), then you simply add a nested class called
+                    - code [ref=f4e3154]: ParentMethods
+                    - text: (or
+                    - code [ref=f4e3155]: ElementMethods
+                    - text: "). The methods of that class will automatically become methods of the objects (or the elements). For instance:"
+                  - generic [ref=f4e3156]:
+                    - radio "Sage" [checked] [ref=f4e3157]
+                    - generic [ref=f4e3158] [cursor=pointer]: Sage
+                    - generic [ref=f4e3161]:
+                      - generic [ref=f4e3162]: "sage: P.<x,y> = ZZ[] sage: P.prod([x,y,2]) 2*x*y sage: P.prod.__module__ 'sage.categories.monoids' sage: P.prod.__func__ is raw_getattr(Monoids().ParentMethods, \"prod\") True"
+                      - button "Copy to clipboard" [ref=f4e3163] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e3164]
+                    - radio "Python" [ref=f4e3168]
+                    - generic [ref=f4e3169] [cursor=pointer]: Python
+                  - paragraph [ref=f4e3170]: "We recommend to study the code of one example:"
+                  - generic [ref=f4e3171]:
+                    - radio "Sage" [checked] [ref=f4e3172]
+                    - generic [ref=f4e3173] [cursor=pointer]: Sage
+                    - generic [ref=f4e3176]:
+                      - generic [ref=f4e3177]: "sage: C = CommutativeAdditiveMonoids() sage: C?? # not tested"
+                      - button "Copy to clipboard" [ref=f4e3178] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e3179]
+                    - radio "Python" [ref=f4e3183]
+                    - generic [ref=f4e3184] [cursor=pointer]: Python
+                - generic [ref=f4e3185]:
+                  - heading "On the order of super categories" [level=3] [ref=f4e3186]
+                  - paragraph [ref=f4e3187]:
+                    - text: The generic method
+                    - code [ref=f4e3188]: C.all_super_categories()
+                    - text: determines recursively the list of
+                    - emphasis [ref=f4e3189]: all
+                    - text: super categories of
+                    - generic [ref=f4e3191]:
+                      - generic [ref=f4e3192]: C
+                      - math [ref=f4e3196]:
+                        - generic [ref=f4e3197]: C
+                    - text: .
+                  - paragraph [ref=f4e3198]:
+                    - text: The order of the categories in this list does influence the inheritance of methods for parents and elements. Namely, if
+                    - generic [ref=f4e3200]:
+                      - generic [ref=f4e3201]: P
+                      - math [ref=f4e3205]:
+                        - generic [ref=f4e3206]: P
+                    - text: is an object in the category
+                    - generic [ref=f4e3208]:
+                      - generic [ref=f4e3209]: C
+                      - math [ref=f4e3213]:
+                        - generic [ref=f4e3214]: C
+                    - text: and if
+                    - generic [ref=f4e3216]:
+                      - generic [ref=f4e3218]:
+                        - generic [ref=f4e3219]: C
+                        - generic [ref=f4e3221]: "1"
+                      - math [ref=f4e3225]:
+                        - generic [ref=f4e3226]:
+                          - generic [ref=f4e3227]: C
+                          - generic [ref=f4e3228]: "1"
+                    - text: and
+                    - generic [ref=f4e3230]:
+                      - generic [ref=f4e3232]:
+                        - generic [ref=f4e3233]: C
+                        - generic [ref=f4e3235]: "2"
+                      - math [ref=f4e3239]:
+                        - generic [ref=f4e3240]:
+                          - generic [ref=f4e3241]: C
+                          - generic [ref=f4e3242]: "2"
+                    - text: are both super categories of
+                    - generic [ref=f4e3244]:
+                      - generic [ref=f4e3245]: C
+                      - math [ref=f4e3249]:
+                        - generic [ref=f4e3250]: C
+                    - text: defining some method
+                    - code [ref=f4e3251]: foo
+                    - text: in
+                    - code [ref=f4e3252]: ParentMethods
+                    - text: ", then"
+                    - generic [ref=f4e3254]:
+                      - generic [ref=f4e3255]: P
+                      - math [ref=f4e3259]:
+                        - generic [ref=f4e3260]: P
+                    - text: will use
+                    - generic [ref=f4e3262]:
+                      - generic [ref=f4e3264]:
+                        - generic [ref=f4e3265]: C
+                        - generic [ref=f4e3267]: "1"
+                      - math [ref=f4e3271]:
+                        - generic [ref=f4e3272]:
+                          - generic [ref=f4e3273]: C
+                          - generic [ref=f4e3274]: "1"
+                    - text: ’s version of
+                    - code [ref=f4e3275]: foo
+                    - text: if and only if
+                    - generic [ref=f4e3277]:
+                      - generic [ref=f4e3279]:
+                        - generic [ref=f4e3280]: C
+                        - generic [ref=f4e3282]: "1"
+                      - math [ref=f4e3286]:
+                        - generic [ref=f4e3287]:
+                          - generic [ref=f4e3288]: C
+                          - generic [ref=f4e3289]: "1"
+                    - text: appears in
+                    - code [ref=f4e3290]: C.all_super_categories()
+                    - text: before
+                    - generic [ref=f4e3292]:
+                      - generic [ref=f4e3294]:
+                        - generic [ref=f4e3295]: C
+                        - generic [ref=f4e3297]: "2"
+                      - math [ref=f4e3301]:
+                        - generic [ref=f4e3302]:
+                          - generic [ref=f4e3303]: C
+                          - generic [ref=f4e3304]: "2"
+                    - text: .
+                  - paragraph [ref=f4e3305]:
+                    - text: However this must be considered as an
+                    - emphasis [ref=f4e3306]: implementation detail
+                    - text: ": if"
+                    - generic [ref=f4e3308]:
+                      - generic [ref=f4e3310]:
+                        - generic [ref=f4e3311]: C
+                        - generic [ref=f4e3313]: "1"
+                      - math [ref=f4e3317]:
+                        - generic [ref=f4e3318]:
+                          - generic [ref=f4e3319]: C
+                          - generic [ref=f4e3320]: "1"
+                    - text: and
+                    - generic [ref=f4e3322]:
+                      - generic [ref=f4e3324]:
+                        - generic [ref=f4e3325]: C
+                        - generic [ref=f4e3327]: "2"
+                      - math [ref=f4e3331]:
+                        - generic [ref=f4e3332]:
+                          - generic [ref=f4e3333]: C
+                          - generic [ref=f4e3334]: "2"
+                    - text: "are incomparable categories, then the order in which they appear must be mathematically irrelevant: in particular, the methods"
+                    - code [ref=f4e3335]: foo
+                    - text: in
+                    - generic [ref=f4e3337]:
+                      - generic [ref=f4e3339]:
+                        - generic [ref=f4e3340]: C
+                        - generic [ref=f4e3342]: "1"
+                      - math [ref=f4e3346]:
+                        - generic [ref=f4e3347]:
+                          - generic [ref=f4e3348]: C
+                          - generic [ref=f4e3349]: "1"
+                    - text: and
+                    - generic [ref=f4e3351]:
+                      - generic [ref=f4e3353]:
+                        - generic [ref=f4e3354]: C
+                        - generic [ref=f4e3356]: "2"
+                      - math [ref=f4e3360]:
+                        - generic [ref=f4e3361]:
+                          - generic [ref=f4e3362]: C
+                          - generic [ref=f4e3363]: "2"
+                    - text: must have the same semantic. Code should not rely on any specific order, as it is subject to later change. Whenever one of the implementations is preferred in some common subcategory of
+                    - generic [ref=f4e3365]:
+                      - generic [ref=f4e3367]:
+                        - generic [ref=f4e3368]: C
+                        - generic [ref=f4e3370]: "1"
+                      - math [ref=f4e3374]:
+                        - generic [ref=f4e3375]:
+                          - generic [ref=f4e3376]: C
+                          - generic [ref=f4e3377]: "1"
+                    - text: and
+                    - generic [ref=f4e3379]:
+                      - generic [ref=f4e3381]:
+                        - generic [ref=f4e3382]: C
+                        - generic [ref=f4e3384]: "2"
+                      - math [ref=f4e3388]:
+                        - generic [ref=f4e3389]:
+                          - generic [ref=f4e3390]: C
+                          - generic [ref=f4e3391]: "2"
+                    - text: ", for example for efficiency reasons, the ambiguity should be resolved explicitly by defining a method"
+                    - code [ref=f4e3392]: foo
+                    - text: in this category. See the method
+                    - code [ref=f4e3393]: some_elements
+                    - text: in the code of the category
+                    - link [ref=f4e3394] [cursor=pointer]:
+                      - /url: finite_coxeter_groups.html#sage.categories.finite_coxeter_groups.FiniteCoxeterGroups
+                      - code [ref=f4e3395]: FiniteCoxeterGroups
+                    - text: for an example.
+                  - paragraph [ref=f4e3396]:
+                    - text: Since
+                    - 'link "Issue #11943" [ref=f4e3397] [cursor=pointer]':
+                      - /url: https://github.com/sagemath/sage/issues/11943
+                    - text: ","
+                    - code [ref=f4e3398]: C.all_super_categories()
+                    - text: is computed by the so-called
+                    - code [ref=f4e3399]: C3
+                    - text: algorithm used by Python to compute Method Resolution Order of new-style classes. Thus the order in
+                    - code [ref=f4e3400]: C.all_super_categories()
+                    - text: ","
+                    - code [ref=f4e3401]: C.parent_class.mro()
+                    - text: and
+                    - code [ref=f4e3402]: C.element_class.mro()
+                    - text: are guaranteed to be consistent.
+                  - paragraph [ref=f4e3403]:
+                    - text: Since
+                    - 'link "Issue #13589" [ref=f4e3404] [cursor=pointer]':
+                      - /url: https://github.com/sagemath/sage/issues/13589
+                    - text: ", the"
+                    - code [ref=f4e3405]: C3
+                    - text: algorithm is put under control of some total order on categories. This order is not necessarily meaningful, but it guarantees that
+                    - code [ref=f4e3406]: C3
+                    - text: always finds a consistent Method Resolution Order. For background, see
+                    - link [ref=f4e3407] [cursor=pointer]:
+                      - /url: ../../../misc/sage/misc/c3_controlled.html#module-sage.misc.c3_controlled
+                      - code [ref=f4e3408]: sage.misc.c3_controlled
+                    - text: . A visible effect is that the order in which categories are specified in
+                    - code [ref=f4e3409]: C.super_categories()
+                    - text: ", or in a join category, no longer influences the result of"
+                    - code [ref=f4e3410]: C.all_super_categories()
+                    - text: .
+                - generic [ref=f4e3411]:
+                  - heading "Subcategory hook (advanced optimization feature)" [level=3] [ref=f4e3412]
+                  - paragraph [ref=f4e3413]:
+                    - text: The default implementation of the method
+                    - code [ref=f4e3414]: C.is_subcategory(D)
+                    - text: is to look up whether
+                    - generic [ref=f4e3416]:
+                      - generic [ref=f4e3417]: D
+                      - math [ref=f4e3421]:
+                        - generic [ref=f4e3422]: D
+                    - text: appears in
+                    - code [ref=f4e3423]: C.all_super_categories()
+                    - text: . However, building the list of all the super categories of
+                    - generic [ref=f4e3425]:
+                      - generic [ref=f4e3426]: C
+                      - math [ref=f4e3430]:
+                        - generic [ref=f4e3431]: C
+                    - text: is an expensive operation that is sometimes best avoided. For example, if both
+                    - generic [ref=f4e3433]:
+                      - generic [ref=f4e3434]: C
+                      - math [ref=f4e3438]:
+                        - generic [ref=f4e3439]: C
+                    - text: and
+                    - generic [ref=f4e3441]:
+                      - generic [ref=f4e3442]: D
+                      - math [ref=f4e3446]:
+                        - generic [ref=f4e3447]: D
+                    - text: are categories defined over a base, but the bases differ, then one knows right away that they can not be subcategories of each other.
+                  - paragraph [ref=f4e3448]:
+                    - text: When such a short-path is known, one can implement a method
+                    - code [ref=f4e3449]: _subcategory_hook_
+                    - text: . Then,
+                    - code [ref=f4e3450]: C.is_subcategory(D)
+                    - text: first calls
+                    - code [ref=f4e3451]: D._subcategory_hook_(C)
+                    - text: . If this returns
+                    - code [ref=f4e3452]: Unknown
+                    - text: ", then"
+                    - code [ref=f4e3453]: C.is_subcategory(D)
+                    - text: tries to find
+                    - code [ref=f4e3454]: D
+                    - text: in
+                    - code [ref=f4e3455]: C.all_super_categories()
+                    - text: . Otherwise,
+                    - code [ref=f4e3456]: C.is_subcategory(D)
+                    - text: returns the result of
+                    - code [ref=f4e3457]: D._subcategory_hook_(C)
+                    - text: .
+                  - paragraph [ref=f4e3458]:
+                    - text: By default,
+                    - code [ref=f4e3459]: D._subcategory_hook_(C)
+                    - text: tests whether
+                    - code [ref=f4e3460]: issubclass(C.parent_class,D.parent_class)
+                    - text: ", which is very often giving the right answer:"
+                  - generic [ref=f4e3461]:
+                    - radio "Sage" [checked] [ref=f4e3462]
+                    - generic [ref=f4e3463] [cursor=pointer]: Sage
+                    - generic [ref=f4e3466]:
+                      - generic [ref=f4e3467]: "sage: Rings()._subcategory_hook_(Algebras(QQ)) True sage: HopfAlgebras(QQ)._subcategory_hook_(Algebras(QQ)) False sage: Algebras(QQ)._subcategory_hook_(HopfAlgebras(QQ)) True"
+                      - button "Copy to clipboard" [ref=f4e3468] [cursor=pointer]:
+                        - img "Copy to clipboard" [ref=f4e3469]
+                    - radio "Python" [ref=f4e3473]
+                    - generic [ref=f4e3474] [cursor=pointer]: Python
+        - contentinfo [ref=f4e3475]:
+          - generic [ref=f4e3476]:
+            - link "Next Categories" [ref=f4e3477] [cursor=pointer]:
+              - /url: category.html
+              - generic [ref=f4e3478]:
+                - generic [ref=f4e3479]: Next
+                - generic [ref=f4e3481]: Categories
+            - link "Previous Sage categories quickref" [ref=f4e3484] [cursor=pointer]:
+              - /url: all.html
+              - generic [ref=f4e3487]:
+                - generic [ref=f4e3488]: Previous
+                - generic [ref=f4e3490]: Sage categories quickref
+          - generic [ref=f4e3492]:
+            - generic [ref=f4e3493]: Copyright © 2005--2025, The Sage Development Team
+            - text: Made with
+            - link "Sphinx" [ref=f4e3494] [cursor=pointer]:
+              - /url: https://www.sphinx-doc.org/
+            - text: and
+            - link "@pradyunsg" [ref=f4e3495] [cursor=pointer]:
+              - /url: https://pradyunsg.me
+            - text: "'s"
+            - link "Furo" [ref=f4e3496] [cursor=pointer]:
+              - /url: https://github.com/pradyunsg/furo
+      - complementary [ref=f4e3497]:
+        - generic [ref=f4e3498]:
+          - generic [ref=f4e3499]: On this page
+          - list [ref=f4e3502]:
+            - listitem [ref=f4e3503]:
+              - list [ref=f4e3504]:
+                - listitem [ref=f4e3505]:
+                  - link "Abstract" [ref=f4e3506] [cursor=pointer]:
+                    - /url: "#abstract"
+                  - list [ref=f4e3507]:
+                    - listitem [ref=f4e3508]:
+                      - link "One line pitch for mathematicians" [ref=f4e3509] [cursor=pointer]:
+                        - /url: "#one-line-pitch-for-mathematicians"
+                    - listitem [ref=f4e3510]:
+                      - link "One line pitch for programmers" [ref=f4e3511] [cursor=pointer]:
+                        - /url: "#one-line-pitch-for-programmers"
+                - listitem [ref=f4e3512]:
+                  - 'link "Introduction: Sage as a library of objects and algorithms" [ref=f4e3513] [cursor=pointer]':
+                    - /url: "#introduction-sage-as-a-library-of-objects-and-algorithms"
+                  - list [ref=f4e3514]:
+                    - listitem [ref=f4e3515]:
+                      - link "Some challenges" [ref=f4e3516] [cursor=pointer]:
+                        - /url: "#some-challenges"
+                - listitem [ref=f4e3517]:
+                  - link "A bit of help from abstract algebra" [ref=f4e3518] [cursor=pointer]:
+                    - /url: "#a-bit-of-help-from-abstract-algebra"
+                  - list [ref=f4e3519]:
+                    - listitem [ref=f4e3520]:
+                      - link "The hierarchy of categories" [ref=f4e3521] [cursor=pointer]:
+                        - /url: "#the-hierarchy-of-categories"
+                    - listitem [ref=f4e3522]:
+                      - link "Elements, Parents, Categories" [ref=f4e3523] [cursor=pointer]:
+                        - /url: "#elements-parents-categories"
+                - listitem [ref=f4e3524]:
+                  - link "A bit of help from computer science" [ref=f4e3525] [cursor=pointer]:
+                    - /url: "#a-bit-of-help-from-computer-science"
+                  - list [ref=f4e3526]:
+                    - listitem [ref=f4e3527]:
+                      - link "Hierarchy of classes" [ref=f4e3528] [cursor=pointer]:
+                        - /url: "#hierarchy-of-classes"
+                    - listitem [ref=f4e3529]:
+                      - link "Parallel hierarchy of classes for parents" [ref=f4e3530] [cursor=pointer]:
+                        - /url: "#parallel-hierarchy-of-classes-for-parents"
+                - listitem [ref=f4e3531]:
+                  - link "Sage categories" [ref=f4e3532] [cursor=pointer]:
+                    - /url: "#sage-categories"
+                  - list [ref=f4e3533]:
+                    - listitem [ref=f4e3534]:
+                      - link "Dynamic hierarchy of classes" [ref=f4e3535] [cursor=pointer]:
+                        - /url: "#dynamic-hierarchy-of-classes"
+                    - listitem [ref=f4e3536]:
+                      - 'link "On the category hierarchy: subcategories and super categories" [ref=f4e3537] [cursor=pointer]':
+                        - /url: "#on-the-category-hierarchy-subcategories-and-super-categories"
+                    - listitem [ref=f4e3538]:
+                      - link "Categories are instances and have operations" [ref=f4e3539] [cursor=pointer]:
+                        - /url: "#categories-are-instances-and-have-operations"
+                    - listitem [ref=f4e3540]:
+                      - link "Specifications and generic documentation" [ref=f4e3541] [cursor=pointer]:
+                        - /url: "#specifications-and-generic-documentation"
+                    - listitem [ref=f4e3542]:
+                      - link "Generic tests" [ref=f4e3543] [cursor=pointer]:
+                        - /url: "#generic-tests"
+                    - listitem [ref=f4e3544]:
+                      - link "Wrap-up" [ref=f4e3545] [cursor=pointer]:
+                        - /url: "#wrap-up"
+                - listitem [ref=f4e3546]:
+                  - link "Case study" [ref=f4e3547] [cursor=pointer]:
+                    - /url: "#case-study"
+                - listitem [ref=f4e3548]:
+                  - link "Specifying the category of a parent" [ref=f4e3549] [cursor=pointer]:
+                    - /url: "#specifying-the-category-of-a-parent"
+                - listitem [ref=f4e3550]:
+                  - 'link "Scaling further: functorial constructions, axioms, …" [ref=f4e3551] [cursor=pointer]':
+                    - /url: "#scaling-further-functorial-constructions-axioms"
+                  - list [ref=f4e3552]:
+                    - listitem [ref=f4e3553]:
+                      - link "Functorial constructions" [ref=f4e3554] [cursor=pointer]:
+                        - /url: "#functorial-constructions"
+                    - listitem [ref=f4e3555]:
+                      - link "Axioms" [ref=f4e3556] [cursor=pointer]:
+                        - /url: "#axioms"
+                      - list [ref=f4e3557]:
+                        - listitem [ref=f4e3558]:
+                          - link "First examples" [ref=f4e3559] [cursor=pointer]:
+                            - /url: "#first-examples"
+                        - listitem [ref=f4e3560]:
+                          - link "Axioms and categories with axioms" [ref=f4e3561] [cursor=pointer]:
+                            - /url: "#axioms-and-categories-with-axioms"
+                        - listitem [ref=f4e3562]:
+                          - link "Single entry point and name space usage" [ref=f4e3563] [cursor=pointer]:
+                            - /url: "#single-entry-point-and-name-space-usage"
+                        - listitem [ref=f4e3564]:
+                          - link "On the potential combinatorial explosion of categories with axioms" [ref=f4e3565] [cursor=pointer]:
+                            - /url: "#on-the-potential-combinatorial-explosion-of-categories-with-axioms"
+                        - listitem [ref=f4e3566]:
+                          - link "Difference between axioms and regressive covariant functorial constructions" [ref=f4e3567] [cursor=pointer]:
+                            - /url: "#difference-between-axioms-and-regressive-covariant-functorial-constructions"
+                        - listitem [ref=f4e3568]:
+                          - link "Further reading on axioms" [ref=f4e3569] [cursor=pointer]:
+                            - /url: "#further-reading-on-axioms"
+                    - listitem [ref=f4e3570]:
+                      - link "Wrap-up" [ref=f4e3571] [cursor=pointer]:
+                        - /url: "#id3"
+                - listitem [ref=f4e3572]:
+                  - link "Writing a new category" [ref=f4e3573] [cursor=pointer]:
+                    - /url: "#writing-a-new-category"
+                  - list [ref=f4e3574]:
+                    - listitem [ref=f4e3575]:
+                      - link "Inserting the new category into the category graph" [ref=f4e3576] [cursor=pointer]:
+                        - /url: "#inserting-the-new-category-into-the-category-graph"
+                    - listitem [ref=f4e3577]:
+                      - link "Methods for objects and elements" [ref=f4e3578] [cursor=pointer]:
+                        - /url: "#methods-for-objects-and-elements"
+                    - listitem [ref=f4e3579]:
+                      - link "On the order of super categories" [ref=f4e3580] [cursor=pointer]:
+                        - /url: "#on-the-order-of-super-categories"
+                    - listitem [ref=f4e3581]:
+                      - link "Subcategory hook (advanced optimization feature)" [ref=f4e3582] [cursor=pointer]:
+                        - /url: "#subcategory-hook-advanced-optimization-feature"

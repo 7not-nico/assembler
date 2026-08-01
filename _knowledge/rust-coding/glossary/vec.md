@@ -1,0 +1,1 @@
+A growable, heap-allocated array. Stores elements of a single type. Created with `Vec::new()` or `vec![]` macro. Accessed by index or `.get()`. Iterated with `for` loops. Owns its elements — drops them when Vec goes out of scope.
