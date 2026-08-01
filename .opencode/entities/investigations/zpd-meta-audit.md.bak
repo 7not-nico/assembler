@@ -1,0 +1,15 @@
+**ZPD-Metacognition gap** — ZPD and metacognition treated as parallel constructs that never converge into a unified framework across 40+ sources, 25+ countries. ZPD functions as a theoretical backdrop — invoked in introductions, never operationalized in measurement. Metacognition drives the intervention design, assessed via standard inventories (MAI, SRL microanalysis) that ignore dynamic assessment principles. Only Russia (Zaretsky multi-vector model) and France (Proust CSEN framework) build theory that bridges the two. Every region produces either ZPD research or metacognition research, never both in the same instrument.
+
+Pattern: ZPD-intro → metacognitive-intervention → standard-assessment → no-bridge
+
+Implication: a measurement protocol that operationalizes ZPD boundaries as a within-task metacognitive assessment variable, not a retrospective label.
+
+Data: schemas/seed.sql — 50 sources, 6 meta-analyses, 25 researchers, 20 gaps.
+
+---
+id: MANIFEST.ZPD-META-AUDIT
+title: ZPD + Metacognition — Global Research Index
+summary: 40 sources, 25+ countries, 6 meta-analyses, 25 researchers; ZPD and metacognition never converge in a unified measurement framework
+tags: [ZPD, metacognition, research-index, cross-country, literature-review]
+tables: [fundamentals, zpd-theoretical, meta-analyses, regions, gaps, cross-cutting-gaps, key-researchers]
+---

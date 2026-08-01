@@ -1,0 +1,152 @@
+# Cortical Hierarchy Category Coding — Meta-Audit
+
+Survey of categorical neural representations across the full cortical hierarchy (V1 → PFC/OFC).
+
+## Per-Region Summary
+
+| Region | Status | Sources | Key Finding |
+|--------|--------|---------|-------------|
+| V1-V3 | PASS | 10 | Animacy/size decodable from V1 populations. Color categorization emerges. Categorical representations rare — high-dimensional code dominates |
+| V4 | PASS | 10 | Mid-level hub: shape-texture continuum, color categories, category × attention interaction. 35% foveal units category-selective |
+| LOC/ITC | PASS | 10 | Shape-dominant: weak single-neuron category tuning, strong at population level. Category trumps shape as organizing principle |
+| MTL | PASS | 10 | Concept cells with semantic tuning curves. Region-based feature coding bridges vision to categories. Abstract semantic hierarchy |
+| LIP/Parietal | PASS | 10 | Strongest category signals in the hierarchy. Causal role in perceptual decisions. Curved task-dependent manifolds |
+| MFC/dACC | PASS | 10 | Separate decision axes for memory vs categorization. Task-set representations. Theta-phase locking to MTL for memory retrieval |
+| PFC/OFC | PASS | 10 | OFC neurons categorically encode single decision variables (confidence, value). dlPFC for rule-based, vmPFC for prototype learning. Abstract category representations |
+
+## Fundamentals
+
+- Categorical coding at single-neuron level is **rare** outside primary sensory areas
+- Population-level category information is **ubiquitous** even where single neurons show no category tuning
+- **Hierarchy gradient**: dimensionality increases, clustering decreases from sensory → frontal
+- **Two coding regimes**: low-dimensional categorical in sensory areas, high-dimensional mixed-selectivity in cognitive areas
+
+## By Region
+
+### V1-V3
+- Animacy/real-world size decodable from V1 populations (PMC10312552)
+- Color categorization boundaries present in V1/V2/V4 (Sah 1996)
+- Spatial frequency → categorical representations in ~180ms (PMC6057270)
+- Categorical clustering of color space emerges in V4v/VO1 (JNeurosci 33:15454)
+- Overall: categorical structure rare, high-dimensional separability maximal (bioRxiv 2024)
+
+### V4
+- 35% foveal units show category selectivity (faces vs houses) — SciAdv
+- Shape-texture coding continuum (JNeurosci 2019)
+- Categorical working memory codes for color (bioRxiv 2021)
+- Task context modulates feature selectivity (JNeurosci 42:6408)
+- Functional domains for color, luminance, orientation (PMC4912377)
+
+### LOC/ITC
+- Human LOC: shape-dominant, ~3% single-channel category-only, 48% shape×category interaction (NatureComms 2024)
+- Animate-inanimate primary organizing dimension, not aspect ratio (PMC10124953)
+- Shape similarity > semantic membership for IT representations (PLOS CompBio 2013)
+- Orthogonal shape/category gradients: shape in V1, category in anterior VTC (SciRep 2020)
+
+### MTL (amygdala, hippocampus, EC, PHC)
+- Concept cells: sparse, invariant semantic representations (NatureComms 2025)
+- Region-based feature coding: neurons respond to feature-space regions, not categories per se (PMC11811184)
+- Semantic tuning curves: graded, sigmoidal responses along semantic dimensions (bioRxiv 2025)
+- Abstract hierarchy: fruit → food → natural things encoded at population level (PLOS Bio 2019)
+- Concept cells flexibly encode abstract relations between concepts (PMC8545952)
+
+### LIP / Parietal
+- LIP shows strongest, earliest category signals — stronger than PFC (NatureNeuro 2012)
+- Causal role: inactivation impairs categorical decisions (Science 2019, PMC10255012)
+- Curved decision manifolds: task-dependent rotation in state space (PMC8273140)
+- LIP vs MIP: LIP more involved in categorization itself, MIP in motor response (JNeurosci 2013)
+- MST also shows robust category encoding (JNeurosci 2022)
+
+### MFC (dACC, pre-SMA)
+- Separate population subspaces for memory-based vs categorization-based decisions (Science 2020)
+- Pre-SMA encodes categorical boundaries for time intervals (NatureComms 2018)
+- dACC neurons encode cognitive load, conflict adaptation (PMC3416924)
+- MFC-HA theta-phase locking selectively engaged during memory retrieval (Science 2020)
+- Pre-SMA encodes integrated utility signal for value-based choice (NatureHumBehav 2023)
+
+### PFC / OFC
+- OFC neurons form ~9 categorical clusters, each encoding a single decision variable (Nature 2019)
+- Decision variables: confidence, integrated value, reward size, previous outcome — categorically encoded (PLOS CompBio 2019)
+- dlPFC: rule-based categorization; vmPFC: prototype learning, attention to diagnostic features (JNeurosci 44:34)
+- Lateral PFC: abstract category representations for visual stimuli (Science 291:312)
+- Value and choice are separable, stable population representations in OFC (NatureComms 2020)
+
+## Meta-analyses
+
+| Citation | Scope | Key Finding |
+|----------|-------|-------------|
+| Posani et al. 2024 (bioRxiv) | 43 cortical regions in mice | Categorical only in primary sensory; high-dimensional code elsewhere; max separability everywhere |
+| Fusi, Miller & Rigotti 2016 (Curr Opin Neurobiol) | Review: mixed selectivity | High-dimensional representations enable flexible linear readout |
+| Kourtzi & Connor 2011 (Annu Rev Neurosci) | Object representations | Shape, category, and adaptive coding across ventral stream |
+| Freedman & Assad 2011 (Nat Neurosci) | Common mechanism review | Category and perceptual decisions share neural substrate in parietal |
+| Moneta, Grossman & Schuck 2024 (TINS) | OFC/vmPFC | Task states and values integrated; mixed selectivity common |
+
+## Gaps
+
+- **Within-area microarchitecture**: how do categorical clusters form at columnar scale in humans? (only inferred from fMRI)
+- **Cross-species homology**: human LOC ↔ macaque ITC/TE/TEO mapping still debated
+- **Development**: how do categorical representations emerge during learning? (adult studies only)
+- **Causal interactions**: most evidence correlational; inactivation/perturbation only in monkey LIP and PFC
+- **Naturalistic stimuli**: most studies use controlled lab stimuli — how do categories work in natural vision?
+- **Single-neuron human data**: only available from epilepsy patients (MTL, MFC, LOC) — surgical constraints
+- **Within-category structure**: how are exemplars organized within a category representation?
+
+## Key Researchers by Region
+
+| Region | Key Labs |
+|--------|----------|
+| V1-V4 | DiCarlo (MIT), Connor (JHU), Pasupathy (U Washington), Livingstone (Harvard) |
+| LOC/ITC | Op de Beeck (KU Leuven), Janssen (KU Leuven), Grill-Spector (Stanford), Kanwisher (MIT) |
+| MTL | Rutishauser (Cedars-Sinai), Quian Quiroga (Leicester), Kreiman (Harvard), Mormann (Bonn) |
+| LIP/Parietal | Freedman (U Chicago), Shadlen (Columbia), Huk (UT Austin), Gold (UPenn) |
+| MFC | Rushworth (Oxford), Kolling (Oxford), Procyk (Lyon), Holroyd (UC Santa Cruz) |
+| PFC/OFC | Padoa-Schioppa (WashU), Wallis (UC Berkeley), Miller (MIT), Kepecs (WashU), Schoenbaum (NIDA) |
+
+## Schema
+
+```sql
+CREATE TABLE IF NOT EXISTS regions (
+  id TEXT PRIMARY KEY,            -- e.g. 'v1-v3', 'v4', 'loc-itc', 'mtl', 'lip-parietal', 'mfc', 'pfc-ofc'
+  name TEXT NOT NULL,
+  hierarchy_level INTEGER NOT NULL,  -- 1=earliest sensory → 7=highest frontal
+  status TEXT NOT NULL             -- PASS, WARN, FAIL
+);
+
+CREATE TABLE IF NOT EXISTS sources (
+  id TEXT PRIMARY KEY,
+  region_id TEXT NOT NULL REFERENCES regions(id),
+  title TEXT NOT NULL,
+  url TEXT NOT NULL,
+  year INTEGER,
+  species TEXT,                    -- human, macaque, mouse, rat
+  methodology TEXT,                -- single-unit, fMRI, MEG, EEG, optogenetic, lesion
+  key_finding TEXT,
+  category_tuning_strength TEXT,   -- none, weak, moderate, strong
+  population_level BOOLEAN,        -- true if category only at population level
+  single_neuron_level BOOLEAN      -- true if category at single-neuron level
+);
+
+CREATE TABLE IF NOT EXISTS researchers (
+  id TEXT PRIMARY KEY,
+  name TEXT NOT NULL,
+  region_id TEXT NOT NULL REFERENCES regions(id),
+  institution TEXT,
+  focus_area TEXT
+);
+
+CREATE TABLE IF NOT EXISTS gaps (
+  id TEXT PRIMARY KEY,
+  area TEXT NOT NULL,              -- topic of the gap
+  description TEXT NOT NULL,
+  severity TEXT,                   -- high, medium, low
+  suggested_approach TEXT
+);
+
+CREATE TABLE IF NOT EXISTS meta_analyses (
+  id TEXT PRIMARY KEY,
+  citation TEXT NOT NULL,
+  scope TEXT NOT NULL,
+  key_finding TEXT NOT NULL,
+  url TEXT
+);
+```

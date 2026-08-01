@@ -1,0 +1,1 @@
+inferences by an LLM. do not required to be printed to standard output. we can managed by a 'black box' paradigm, the agent queries into a DB for example, but we dont need to see the DB, we only need to know the posible data in there, and how is its structured.

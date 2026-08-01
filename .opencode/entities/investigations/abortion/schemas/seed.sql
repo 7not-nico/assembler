@@ -1,0 +1,118 @@
+-- Abortion Investigation Seed Data
+
+INSERT INTO regions (id, name, coverage_note) VALUES
+  ('NA', 'North America', 'USA and Canada; post-Dobbs legal patchwork'),
+  ('EU', 'Europe', 'EU + UK + Switzerland; wide national variation'),
+  ('LATAM', 'Latin America', 'Green wave countries (Argentina, Colombia, Mexico) + total-ban states'),
+  ('MENA', 'Middle East and North Africa', 'Islamic jurisprudence dominant; colonial-era penal codes'),
+  ('SSA', 'Sub-Saharan Africa', 'Highest unsafe-abortion burden; Maputo Protocol uneven'),
+  ('SA', 'South Asia', 'India, Nepal, Pakistan, Bangladesh, Sri Lanka, Maldives'),
+  ('EA', 'East Asia', 'China, Japan, South Korea; sex-selective abortion prominent');
+
+INSERT INTO sources (id, region_id, title, institution, key_content, language, url, year) VALUES
+  ('NA.ROE', 'NA', 'Roe v. Wade 410 US 113', 'US Supreme Court', 'Constitutional right to privacy protects abortion; overturned 2022', 'EN', NULL, 1973),
+  ('NA.DOBBS', 'NA', 'Dobbs v. Jackson Women''s Health 597 US ___', 'US Supreme Court', 'No federal right to abortion; returned to state regulation', 'EN', NULL, 2022),
+  ('NA.KFF', 'NA', 'Abortion in the United States Dashboard', 'KFF', '13 states total ban, 7 with 6-12 week limits, 18 at viability, 9+DC no limit', 'EN', 'https://www.kff.org/womens-health-policy/abortion-in-the-u-s-dashboard', 2026),
+  ('NA.CANADA.LEGAL', 'NA', 'Abortion in Canada', 'Government of Canada', 'Decriminalized 1988; publicly funded; no gestational limit', 'EN', 'https://www.canada.ca/en/public-health/services/sexual-health/abortion-canada.html', 2024),
+  ('NA.ANESTHESIA.CO', 'NA', 'Refusals to Provide Anesthesia for Abortion Care', 'Anesthesia & Analgesia (2024)', '69% OB-Gyn program directors faced opposition; 30% from anesthesiologists', 'EN', NULL, 2024),
+  ('NA.UN.WGDAWG', 'NA', 'UN Working Group on Discrimination guidance on CO', 'UN WGDAWG (2025)', 'CO must not impede access; referral duty; emergency exceptions; ~80 countries allow CO', 'EN', NULL, 2025),
+  ('EU.FRANCE', 'EU', 'France constitutionalizes abortion (2024)', 'French Parliament', 'First country to enshrine abortion in constitution; decriminalized 1975', 'EN', NULL, 2024),
+  ('EU.POLAND', 'EU', 'Poland Constitutional Tribunal ruling (2020)', 'Polish Constitutional Tribunal', 'Abortion for fetal impairment ruled unconstitutional; near-total ban', 'EN', NULL, 2020),
+  ('EU.IRISH.REF', 'EU', 'Irish abortion referendum (2018)', 'Government of Ireland', '66% vote to repeal 8th Amendment; legalized up to 12 weeks', 'EN', NULL, 2018),
+  ('EU.GERMANY', 'EU', 'German abortion law', 'Federal Constitutional Court', '12-week limit with mandatory counseling; unborn life independent protection', 'EN', NULL, 1975),
+  ('EU.UK', 'EU', 'UK Abortion Act 1967', 'UK Parliament', '24-week limit; doctors authorize; s.4 conscientious objection clause', 'EN', NULL, 1967),
+  ('EU.ITALY.CO', 'EU', 'Conscientious objection in Italy', 'Multiple sources', '~70% of Italian gynecologists register as conscientious objectors', 'EN', NULL, NULL),
+  ('EU.UK.CO.LAW', 'EU', 'UK conscientious objection law', 'BPAS / GMC', 'Abortion Act s.4 statutory CO; Supreme Court 2014 limited scope', 'EN', NULL, 2014),
+  ('LATAM.ARGENTINA', 'LATAM', 'Argentina abortion legalization', 'Argentine Congress', 'Legal up to 14 weeks; Green Wave movement catalyst', 'ES', NULL, 2020),
+  ('LATAM.COLOMBIA', 'LATAM', 'Colombia constitutional ruling', 'Colombian Constitutional Court', 'Legal on demand up to 24 weeks; landmark decriminalization', 'ES', NULL, 2022),
+  ('LATAM.MEXICO', 'LATAM', 'Mexico decriminalization', 'Supreme Court of Mexico', 'Federal penal code no longer criminalizes abortion', 'ES', NULL, 2023),
+  ('LATAM.ELSALVADOR', 'LATAM', 'El Salvador total ban', 'Legislative Assembly', 'Total ban since 1998; no exceptions for rape, incest, life threat', 'ES', NULL, 1998),
+  ('LATAM.CO.REG', 'LATAM', 'CO regulation in Latin America', 'REDAAS / multiple', 'CO used to block access even where legal; Colombia mandates non-objecting providers', 'ES', NULL, NULL),
+  ('MENA.LIMITS', 'MENA', 'Limits of the Law: Abortion in MENA', 'HHR Journal / CMI', 'All MENA countries permit to save mother''s life; colonial-era laws', 'EN', NULL, 2019),
+  ('MENA.SAUDI', 'MENA', 'Islamic ethics and reproductive health policy in Saudi Arabia', 'BMC / PMC', '120-day rule; 6 policy gaps; mental health exception not operationalized', 'EN', NULL, 2025),
+  ('MENA.TUNISIA', 'MENA', 'Tunisia abortion law', 'Global Abortion Policies Database', 'Most liberal in MENA; legal on request first trimester', 'EN', NULL, NULL),
+  ('MENA.ISLAMIC.ETHICS.2', 'MENA', 'Abortion as ethical-religious problem in Islam', 'Pharos Journal (2024)', 'Comprehensive survey across Sunni and Shia schools', 'EN', NULL, 2024),
+  ('SSA.BAYESIAN', 'SSA', 'Pooled prevalence induced abortion SSA', 'Archives of Public Health', '16.5% prevalence; 33 countries n=367,881', 'EN', NULL, 2025),
+  ('SSA.SOUTH.AFRICA', 'SSA', 'Choice on Termination of Pregnancy Act (1996)', 'South African Parliament', 'Legal up to 12 weeks on request; most liberal in SSA', 'EN', NULL, 1996),
+  ('SSA.MAPUTO', 'SSA', 'Maputo Protocol (2003)', 'African Union', 'Recognizes abortion as human right in specific circumstances', 'EN', NULL, 2003),
+  ('SSA.CO.STIGMA', 'SSA', 'Conscientious objection in context: SSA', 'Ibis / Global Public Health (2016)', 'Social, economic, political pressures drive CO claims; stigma discourages provision', 'EN', NULL, 2016),
+  ('SA.INDIA', 'SA', 'Medical Termination of Pregnancy Act (amended 2021)', 'Parliament of India', 'Legal up to 24 weeks; sex-selective abortion banned', 'EN', NULL, 2021),
+  ('SA.NEPAL', 'SA', 'Nepal abortion law', 'Parliament of Nepal / CRR', 'Legal on request up to 12 weeks; decriminalization via litigation', 'EN', NULL, NULL),
+  ('EA.CHINA.SEX.SELECT', 'EA', 'Sex-selective abortions over 4 decades in China', 'Population Health Metrics', '~30M sex-selective abortions 1980-2020', 'EN', NULL, 2025),
+  ('EA.KOREA', 'EA', 'South Korea decriminalization', 'Constitutional Court of Korea', 'Abortion ban unconstitutional (2019); decriminalized 2020', 'EN', NULL, 2020),
+  ('EA.JAPAN', 'EA', 'Abortion in Japan', 'Japan Times / Mainichi Newspapers', 'Legal with spousal consent up to 22 weeks', 'EN', NULL, NULL);
+
+INSERT INTO researchers (id, name, region_id, institution, specialisation) VALUES
+  ('R.MARK.LEVELS', 'Mark Levels', 'EU', 'Radboud University', 'Cross-national European abortion law comparison'),
+  ('R.SUSHEELA.SINGH', 'Susheela Singh', 'SA', 'Guttmacher Institute', 'Abortion incidence and service provision South Asia'),
+  ('R.PRABHAT.JHA', 'Prabhat Jha', 'SA', 'University of Toronto', 'Sex-selective abortion, missing women'),
+  ('R.QUANBAO.JIANG', 'Quanbao Jiang', 'EA', 'Xi''an Jiaotong University', 'Sex-selective abortion trends China'),
+  ('R.ROSIE.VAUGHAN', 'Rosie Peppin Vaughan', 'EA', 'UCL Institute of Education', 'Women''s education and sex-selective abortion'),
+  ('R.THERESE.HESKETH', 'Therese Hesketh', 'EA', 'UCL / Zhejiang University', 'Son preference, sex ratio consequences'),
+  ('R.KENNETH.JUMA', 'Kenneth Juma', 'SSA', 'African Population and Health Research Center', 'Abortion research SSA scoping review'),
+  ('R.BONIFACE.USHIE', 'Boniface Ushie', 'SSA', 'African Population and Health Research Center', 'Abortion priorities and adolescent SRH'),
+  ('R.SETEGN.FENTA', 'Setegn Muche Fenta', 'SSA', 'Bahir Dar University', 'Bayesian multilevel modelling abortion prevalence'),
+  ('R.RACHEL.SIEDER', 'Rachel Sieder', 'LATAM', 'CMI Norway', 'Abortion rights lawfare, legal mobilization'),
+  ('R.SARRAH.SHAHAWY', 'Sarrah Shahawy', 'MENA', 'Harvard / HHR', 'Abortion in MENA region'),
+  ('R.MOHAMMED.GHALY', 'Mohammed Ghaly', 'MENA', 'CILE / HBKU', 'Islamic bioethics, reproductive ethics'),
+  ('R.M.AL.KHATIB', 'M. Al-Khatib', 'MENA', 'CILE / HBKU', 'Abortion in Hanbali jurisprudence'),
+  ('R.JOELLE.PROUST', 'Joelle Proust', 'EU', 'ENS Paris / CSEN', 'Metacognition policy, philosophy of mind'),
+  ('R.FIONA.DE.LONDRAS', 'Fiona de Londras', 'Global', 'University of Birmingham', 'Conscientious objection impact on abortion outcomes'),
+  ('R.JULIAN.SAVULESCU', 'Julian Savulescu', 'Global', 'Oxford / NUS', 'Bioethics: doctors no right to refuse; conscientious commitment'),
+  ('R.UDO.SCHUKLENK', 'Udo Schuklenk', 'Global', 'Queen''s University', 'Conscientious objection in health care'),
+  ('R.ALBERTO.GIUBILINI', 'Alberto Giubilini', 'Global', 'Oxford Uehiro Centre', 'Conscientious commitment; illegal abortion provision justification'),
+  ('R.WENDY.CHAVKIN', 'Wendy Chavkin', 'Global', 'Columbia / Ibis', 'International comparative CO regulation');
+
+INSERT INTO meta_analyses (id, title, scope, key_finding, effect_size) VALUES
+  ('MA.PEW', 'Global abortion attitudes 2023-24', '27 countries, n=27,285', 'Median 66% support legal abortion; wide regional variation', '66% median'),
+  ('MA.GUTTMACHER', 'Abortion service provision South Asia', '4-country facility survey 2012-2015', '58-90% of abortions illegal even under broad criteria', '58-90% illegal'),
+  ('MA.BAYESIAN', 'Pooled prevalence induced abortion SSA', '33 countries, n=367,881', '16.5% prevalence; region, education, wealth significant', '16.5%'),
+  ('MA.LEVELS', 'Western Europe abortion law trends 1960-2010', '20 Western European countries', 'Consistent liberalization; procedural barriers persist', 'qualitative'),
+  ('MA.CHINA.SEX', 'Sex-selective abortions China 1980-2020', 'National official statistics', '30M sex-selective abortions; peaked 1990-2010', '30M'),
+  ('MA.ISLAMIC', 'Abortion in Islamic jurisprudence', '4 Sunni schools + Shia', 'Hanafi most permissive pre-120-days; Maliki absolute prohibition', 'qualitative'),
+  ('MA.SSA.SCOPING', 'SSA abortion research landscape', 'Electronic databases 2011-2021', 'Uneven distribution; acute data shortages impede policy', 'qualitative'),
+  ('MA.CONSECIENTIOUS', 'Impact of conscientious objection on abortion outcomes', 'Systematic review / Health Policy (2023)', 'CO associated with delay, stigma, refusal, inaccessibility', 'multi-study synthesis');
+
+INSERT INTO gaps (id, region, status, notes) VALUES
+  ('GAP.EE', 'Eastern Europe', 'surfaced_disabled', 'Post-Soviet abortion regimes understudied in English literature'),
+  ('GAP.CAUCASUS', 'Caucasus', 'sources_absent', 'Georgia, Armenia, Azerbaijan: no indexed sources'),
+  ('GAP.CARIBBEAN', 'Caribbean', 'sources_absent', 'Jamaica, Trinidad, Barbados: rarely surface in English databases'),
+  ('GAP.CENTRAL.ASIA', 'Central Asia', 'sources_absent', 'Kazakhstan, Uzbekistan: likely liberal but no indexed sources'),
+  ('GAP.OCEANIA', 'Pacific Islands', 'sources_absent', 'PNG, Fiji, Solomons: absent from search results'),
+  ('GAP.SSA.FRANCOPHONE', 'Francophone West Africa', 'surfaced_disabled', 'French-language sources exist but under-indexed in English databases'),
+  ('GAP.MENA.DATA', 'MENA', 'native_surveys_absent', 'Most MENA states do not collect or publish incidence data'),
+  ('GAP.DISABILITY', 'Global', 'searched_disabled', 'Cross-national comparison of disability-selective abortion laws absent'),
+  ('GAP.CONSCIENTIOUS', 'Global', 'surfaced_disabled', 'Partial data exists (de Londras 2023, Chavkin 2013, UN WGDAWG 2025) but no comprehensive cross-regional CO rate survey with standardized methodology'),
+  ('GAP.ADOLESCENT', 'Global', 'surfaced_disabled', 'Minors consent laws and mandatory reporting understudied comparatively'),
+  ('GAP.INDIGENOUS', 'Global', 'searched_disabled', 'No comparative study of Indigenous abortion access across settler-colonial states'),
+  ('GAP.TELEMED', 'Global', 'surfaced_disabled', 'Post-COVID telemedicine expansion not systematically compared across regions'),
+  ('GAP.SSB.SOUTHEAST', 'Southeast Asia', 'surfaced_disabled', 'Thailand legalized 2021; Philippines/Indonesia restrictive; cross-national comparison needed'),
+  ('GAP.POST.ROE', 'USA', 'surfaced_disabled', 'Post-Dobbs tracking: 11 ballot measures 2024; continuous tracking required'),
+  ('GAP.EU.ENLARGEMENT', 'EU enlargement', 'searched_disabled', 'EU enlargement effects on abortion law in candidate countries'),
+  ('GAP.LATAM.ANDES', 'Peru, Bolivia, Ecuador', 'surfaced_disabled', 'Moderate restrictions understudied relative to Green Wave'),
+  ('GAP.SEX.SELECT.EA', 'South/East Asia', 'surfaced_disabled', 'Direct measurement of sex-selective abortion nearly impossible'),
+  ('GAP.ISRAEL', 'Israel', 'surfaced_disabled', 'Liberal law via termination committee; demographic politics dimension'),
+  ('GAP.SAFRICA.MENSTRUAL', 'Global', 'searched_disabled', 'Self-managed abortion data by country not indexed'),
+  ('GAP.OECD', 'OECD', 'surfaced_disabled', 'Abortion data exists but not systematically indexed by ethical framework'),
+  ('GAP.CO.OATH.TRACKING', 'Global', 'searched_disabled', 'No indexed global registry of which medical oaths include/omit abortion clauses');
+
+INSERT INTO fundamentals (id, concept, source, key_idea) VALUES
+  ('F.BODILY.AUTONOMY', 'Bodily autonomy as rights foundation', 'Roe v. Wade (1973) / Casey (1992)', 'Right to privacy under 14th Amendment extends to abortion; state may not unduly burden pre-viability'),
+  ('F.FETAL.PERSONHOOD', 'Fetal right to life', 'Dobbs v. Jackson Women''s Health (2022)', 'Constitution does not guarantee abortion right; fetal life interests returned to state determination'),
+  ('F.ISLAMIC.ENSOULMENT', '120-day ensoulment rule', 'Quran / Hadith (Bukhari)', 'Soul breathed into fetus at 120 days; abortion before this point permitted on certain grounds by most schools'),
+  ('F.CATHOLIC.NATURAL.LAW', 'Natural law absolute prohibition', 'Evangelium Vitae (1995) / Donum Vitae (1987)', 'Human life from conception; direct abortion intrinsically evil; no exception for rape or anomaly'),
+  ('F.PUBLIC.HEALTH', 'Unsafe abortion as health crisis', 'WHO (2023)', '45% of abortions globally unsafe; ~13% of maternal deaths from unsafe abortion; restrictive laws correlate with higher unsafe rates'),
+  ('F.GREEN.WAVE', 'Latin American feminist legal mobilization', 'CEDAW / Inter-American Court', 'Strategic lawfare using human-rights frameworks; Argentina/Colombia/Mexico liberalization via legislative + judicial channels'),
+  ('F.MAPUTO.PROTOCOL', 'Maputo Protocol (2003)', 'African Union', 'First binding recognition of abortion as human right for rape, incest, health risk; uneven ratification'),
+  ('F.HIPPOCRATIC.OATH', 'Hippocratic Oath prohibition on abortion', 'Hippocratic Corpus (c. 5th-3rd c. BCE)', 'Original oath explicitly bans giving abortive pessary; reflected minority Pythagorean view, not ancient consensus; clause removed from modern versions');
+
+INSERT INTO oath_traditions (id, oath_name, body, stance, key_detail) VALUES
+  ('OATH.HIPPOCRATIC.ORIG', 'Hippocratic Oath (original)', 'Hippocratic Corpus', 'Prohibits', '"I will not give a woman a pessary to cause an abortion" — minority Pythagorean view, not ancient consensus'),
+  ('OATH.HIPPOCRATIC.MOD', 'Hippocratic Oath (modern versions)', 'Various medical schools', 'Silent', 'Abortion clause removed from nearly all modern adaptations'),
+  ('OATH.GENEVA', 'Declaration of Geneva (1948/2017)', 'World Medical Association', 'Silent', '"I will maintain the utmost respect for human life" — deliberately ambiguous; no explicit abortion stance'),
+  ('OATH.AMA', 'AMA Code of Medical Ethics', 'American Medical Association', 'Neutral', 'Recognizes abortion as legal medical procedure; physician may refuse but must arrange continuity of care'),
+  ('OATH.ACOG', 'ACOG Committee Opinion', 'American College of OB-Gyn', 'Supportive', '"Safe, legal abortion is a necessary component of women''s health"; CO must not impede access'),
+  ('OATH.ISLAMIC', 'Islamic medical ethics (Fiqh)', 'Various schools of jurisprudence', 'Conditional', 'Abortion permitted before 120 days on certain grounds per most schools'),
+  ('OATH.CATHOLIC', 'Catholic medical ethics', 'Vatican (Evangelium Vitae)', 'Prohibits', 'Direct abortion intrinsically evil; Catholic hospitals often ban abortion even where legal'),
+  ('OATH.UK.STATUTE', 'UK Abortion Act 1967 s.4', 'UK Parliament', 'Statutory CO right', '"No person shall be under any duty to participate" — emergency exception for saving life; referral required'),
+  ('OATH.WHO', 'WHO Abortion Care Guideline', 'World Health Organization', 'CO must not impede', 'CO permitted but must not delay/deny access; states must regulate to ensure coverage');
