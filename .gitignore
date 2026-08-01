@@ -26,6 +26,7 @@ _depot/draw/
 .opencode/_scripts/_rs/target/
 .opencode/_scripts/report/
 .opencode/_rustlib/target/
+.opencode/_rustlib/_disabled/target/
 
 # runtime crash artifacts + state
 *.db.*

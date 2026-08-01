@@ -1,0 +1,16 @@
+[package]
+name = "assembler-core"
+version = "0.2.0"
+edition = "2021"
+description = "Functional core for AMANDA assembler — vector math, semantic search"
+
+[lib]
+name = "assembler_core"
+path = "src/lib.rs"
+
+[[bin]]
+name = "assemble"
+path = "src/main.rs"
+
+[dependencies]
+serde_json = "1"
