@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# rs — invoke the assembler-cli binary (Go primary, Rust legacy fallback)
+GO_BIN="$(dirname "$0")/_golib/bin/assembler-cli"
+RUST_BIN="$(dirname "$0")/_bin/target/release/assembler-cli"
+if [ -x "$GO_BIN" ]; then
+  exec "$GO_BIN" "$@"
+fi
+exec "$RUST_BIN" "$@"

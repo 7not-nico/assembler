@@ -1,0 +1,6 @@
+**Leonardo da Vinci** — an Italian painter, draftsman, sculptor, architect, engineer, and scientist of the **High Renaissance** — widely regarded as the archetypal **Renaissance Man**. Born April 15, 1452, in **Anchiano, near Vinci, Republic of Florence**; died May 2, 1519, at **Clos-Lucé, France**. Apprenticed in the workshop of **Andrea del Verrocchio** in Florence. Operated principally in **Florence** (1472–1482, 1500–1508), **Milan** (1482–1499, 1508–1513) under the patronage of **Ludovico Sforza**, and later in **Rome** (1513–1516) and **France** under King Francis I. His most celebrated paintings — **Mona Lisa** (c. 1503–1519), **The Last Supper** (c. 1495–1498), and **Virgin of the Rocks** — exemplify the **sfumato** technique and masterful **chiaroscuro**. The **Vitruvian Man** (c. 1490) embodies his integration of art and science. His notebooks (nearly 2,500 drawings) document pioneering investigations in anatomy, botany, geology, hydraulics, aeronautics, optics, and engineering — including designs for flying machines, war engines, and hydraulic systems. Surviving finished paintings are few, yet his influence on Western art and scientific illustration is unparalleled.
+
+
+---
+reference:
+---

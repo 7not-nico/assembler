@@ -1,0 +1,8 @@
+id: CMD.ZCONVERT.TOOL
+title: ZConvert Tool
+description: Convert a Hybrid or Shebang CLI tool to Plugin IPC pattern
+source: assembler
+tags: [tools, conversion, pattern, migration]
+related: []
+created: 2026-07-09T00:41:04.715Z
+modified: 2026-07-09T00:41:04.715Z

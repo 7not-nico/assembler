@@ -1,0 +1,8 @@
+id: CMD.SCAN.TOOLCLASS
+title: Scan Toolclass
+description: Scan .opencode/tools/*.ts files for // @toolclass annotations and generate tools.md manifest
+source: assembler
+tags: [tools, manifest, classification, automata]
+related: []
+created: 2026-07-09T00:41:04.715Z
+modified: 2026-07-09T00:41:04.715Z

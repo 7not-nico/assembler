@@ -1,0 +1,6 @@
+id: CMD.SEARCH.PAPERS
+title: search-papers
+description: Search arxiv.org for academic papers and optionally download PDFs
+source: assembler
+tags: [search,research,academia,papers,arxiv]
+related: [CMD.XSEARCH.RESEARCH]

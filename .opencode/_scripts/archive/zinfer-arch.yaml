@@ -1,0 +1,8 @@
+id: CMD.ZINFER.ARCH
+title: ZInfer Arch
+description: Audit .opencode/ structure and infer architectural consistency
+source: assembler
+tags: [audit, architecture, inference, consistency]
+related: []
+created: 2026-07-09T00:41:04.715Z
+modified: 2026-07-09T00:41:04.715Z

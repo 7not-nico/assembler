@@ -1,0 +1,6 @@
+**Plato** (c. 428–347 BCE) — an ancient Greek philosopher of Classical Athens and the foundational thinker of the Western philosophical tradition. A student of **Socrates** and teacher of **Aristotle**, Plato founded the **Academy**, the first institution of higher learning in the Western world. His works are almost entirely written as dialogues featuring Socrates as the central character, exploring ethics, metaphysics, epistemology, politics, and aesthetics. Plato's most enduring contribution is the **Theory of Forms** (or Ideas), which posits that the material world is a shadow or imitation of a non-physical, eternal, unchanging realm of Forms — abstract, perfect archetypes (e.g., **Justice itself**, **Beauty itself**) that are the only true objects of knowledge. This framework underlies his **Allegory of the Cave** in the *Republic*, the dialogue that also develops his theory of the tripartite soul (reason, spirit, appetite) and the ideal state ruled by philosopher-kings. Other major works include the *Phaedo* (immortality of the soul), the *Symposium* (love), and the *Timaeus* (cosmology). Platonism — the philosophical tradition inspired by his thought — profoundly influenced **Neoplatonism**, **Augustine**, **Renaissance humanism**, and virtually all subsequent Western philosophy.
+
+
+---
+reference:
+---

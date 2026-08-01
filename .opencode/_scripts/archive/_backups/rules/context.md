@@ -1,0 +1,1 @@
+**Context-preservation** — compression serves clarity, not brevity. Its first mention of any concept is full prose — compress only on reuse within the same message. Reasoning, explanations, and questions stay in standard grammar — not compressed, nor omitted.

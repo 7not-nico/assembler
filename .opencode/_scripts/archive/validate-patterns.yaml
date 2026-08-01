@@ -1,0 +1,8 @@
+id: CMD.VALIDATE.PATTERNS
+title: Validate Patterns
+description: Audit _lib/ and tools/ method implementations against library best practices and anti-patterns
+source: assembler
+tags: [validation, tools, patterns, audit]
+related: []
+created: 2026-07-09T00:41:04.715Z
+modified: 2026-07-09T00:41:04.715Z
