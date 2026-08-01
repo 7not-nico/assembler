@@ -1,0 +1,8 @@
+id: CMD.ADD.CONTENT
+title: Add Content
+description: Scaffold a new content .md file for any entity type in a bootstrapped DB project
+source: assembler
+tags: [scaffolding, content, db-workflow, template]
+related: []
+created: 2026-07-09T00:41:04.715Z
+modified: 2026-07-09T00:41:04.715Z

@@ -1,0 +1,8 @@
+id: CMD.STUB.FILE
+title: Stub File
+description: Scaffold a content stub .md file with frontmatter or backmatter following patlib format
+source: assembler
+tags: [scaffolding, content, frontmatter, template]
+related: []
+created: 2026-07-09T00:41:04.715Z
+modified: 2026-07-09T00:41:04.715Z

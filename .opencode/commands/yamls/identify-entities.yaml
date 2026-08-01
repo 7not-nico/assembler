@@ -1,0 +1,8 @@
+id: CMD.IDENTIFY.ENTITIES
+title: Identify Entities
+description: Identify entity types and define content folders for a DB workflow project
+source: assembler
+tags: [db-workflow, scaffolding, bootstrap, entities]
+related: []
+created: 2026-07-09T00:41:04.715Z
+modified: 2026-07-09T00:41:04.715Z

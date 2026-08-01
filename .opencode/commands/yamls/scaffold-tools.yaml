@@ -1,0 +1,19 @@
+id: CMD.SCAFFOLD.TOOLS
+title: Scaffold Tools
+description: Scaffold operational tools for a bootstrapped DB project
+source: assembler
+tags: [tools, scaffolding, bootstrap, db-workflow]
+related:
+  - REF.SCHEMA.DATABASE.PRAGMA
+  - REF.SCHEMA.DATABASE.OWNERSHIP
+  - REF.LIB.DIRECTORY.LAYER
+  - PROT.LIB.MODULE.CONTRACT
+  - REF.LIB.PURITY.BOUNDARY
+  - REF.LIB.CONTRACT.VIOLATIONS
+  - REF.LIB.PATH.RESOLUTION
+  - REF.LIB.MUTATION.STRATEGY
+  - PROT.TOOL.INVOCATION.MODEL
+  - REF.TOOL.NODE_MODULES.SHARED
+  - REF.META.PROJECT.STRUCTURE
+created: 2026-07-09T00:41:04.715Z
+modified: 2026-07-20T18:55:00.000Z

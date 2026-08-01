@@ -1,0 +1,8 @@
+id: CMD.DEFINE.PROPERTIES
+title: Define Properties
+description: Define database schema via CREATE TABLE statements for a DB workflow project
+source: assembler
+tags: [db-workflow, schema, bootstrap, migration]
+related: []
+created: 2026-07-09T00:41:04.715Z
+modified: 2026-07-09T00:41:04.715Z

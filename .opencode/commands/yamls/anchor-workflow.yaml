@@ -1,0 +1,8 @@
+id: CMD.ANCHOR.WORKFLOW
+title: Anchor Workflow
+description: Anchor all work to seven skills — compose-web, report-outcomes, use-playwright-core, knowledge-ruby, read-maxims-protocols, acquire-assets, declare-grounded-entity — plus patlib MCP per RUL.QUERY.PATLIB.CONTEXT and CAPTCHA handling per RUL.CAPTCHA.GATE
+source: assembler
+tags: [workflow, anchor, skills, mcp, research, captcha, entity]
+related: [RUL.QUERY.PATLIB.CONTEXT, RUL.CAPTCHA.GATE, CMD.ACQUIRE.ASSET, SKL.DECLARE.GROUNDED.ENTITY]
+created: 2026-07-26T00:00:00.000Z
+modified: 2026-07-27T12:59:00.000Z

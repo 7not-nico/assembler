@@ -1,0 +1,8 @@
+id: CMD.XSEARCH.WEB
+title: XSearch Web
+description: Search the web via Exa with a query string; prioritize educational/authoritative sources, avoid commercial
+source: assembler
+tags: [search, exa, web-query, research, educational-sources]
+related: [CMD.XRESEARCH.GEO, SKL.SEARCH.GEO]
+created: 2026-07-09T00:41:04.715Z
+modified: 2026-07-12T12:00:00.000Z

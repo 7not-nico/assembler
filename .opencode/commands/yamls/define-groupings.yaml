@@ -1,0 +1,8 @@
+id: CMD.DEFINE.GROUPINGS
+title: Define Groupings
+description: Define optional entity groupings that share directory, table routing, and field profiles
+source: assembler
+tags: [db-workflow, entity-grouping, profile, schema]
+related: []
+created: 2026-07-09T00:41:04.715Z
+modified: 2026-07-09T00:41:04.715Z

@@ -1,0 +1,8 @@
+id: CMD.CAPTURE.WEB
+title: Capture Web
+description: Recursively crawl a doc site and capture all child pages as a single EPUB using Playwright MCP and pandoc
+source: assembler
+tags: [web, capture, epub, pandoc, playwright-mcp, documentation, crawl, recursive]
+related: []
+created: 2026-07-20T21:38:00.000Z
+modified: 2026-07-20T21:38:00.000Z

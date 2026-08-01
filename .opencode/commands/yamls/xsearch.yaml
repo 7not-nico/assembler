@@ -1,0 +1,6 @@
+id: CMD.XSEARCH.RESEARCH
+title: xsearch
+description: Execute a single-query web search for a topic and log the findings to patlib
+source: assembler
+tags: [search,research,automation,web]
+related: [IDENTITY.COMMAND, TERM.OPENCODE.COMMANDS]
