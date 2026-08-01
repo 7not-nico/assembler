@@ -1,0 +1,6 @@
+id: RUL.SYSTEM.CLASSIFICATION
+title: System-classification
+group: assembler
+category: classification
+tags: [convention, taxonomy, classification]
+related: [MAX.DRY]

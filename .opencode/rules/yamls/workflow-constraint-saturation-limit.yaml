@@ -1,0 +1,4 @@
+id: RUL.CONSTRAINT.SATURATION.LIMIT
+title: Constraint-saturation-limit
+group: RUL.WORKFLOW.PRINCIPLE
+tags: [convention, constraint, capacity, threshold, instruction, llm-spec]

@@ -1,0 +1,4 @@
+id: RUL.VECTOR.QUERY.KEYWORD
+title: Vector query keyword
+group: RUL.VECTOR.QUERY.LENGTH
+tags: [convention, vector-search, patlib, query, keyword]

@@ -1,0 +1,5 @@
+id: RUL.RING.NONREPETITION
+title: Ring-layer-scope
+group: assembler
+tags: [entity, ring, scope, authorship, convention]
+related: [MAX.KNOWLEDGE.CLASSIFICATION, MAX.DRY]

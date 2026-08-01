@@ -1,0 +1,4 @@
+id: RUL.NAND
+title: NAND
+group: RUL.LOGIC.GATE
+tags: [logic, boolean, operator, universal-gate, convention, alternative-denial]

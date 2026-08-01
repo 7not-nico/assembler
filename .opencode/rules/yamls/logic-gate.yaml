@@ -1,0 +1,6 @@
+id: RUL.LOGIC.GATE
+title: Logic-gate
+group: assembler
+category: gate
+tags: [logic, boolean]
+related: [MAX.ORTHOGONALITY]

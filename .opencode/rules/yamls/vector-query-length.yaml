@@ -1,0 +1,4 @@
+id: RUL.VECTOR.QUERY.LENGTH
+title: Vector query length
+group: RUL.WORKFLOW.PRINCIPLE
+tags: [convention, vector-search, patlib, query, optimization, length]

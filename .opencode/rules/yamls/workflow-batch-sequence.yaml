@@ -1,0 +1,4 @@
+id: RUL.BATCH.SEQUENCE
+title: Batch-sequence
+group: RUL.WORKFLOW.PRINCIPLE
+tags: [convention, workflow, batching, sequence, atomicity, focus]

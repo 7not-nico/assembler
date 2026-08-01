@@ -1,0 +1,6 @@
+id: RUL.CODE.SIGNATURE
+title: Function-signature
+group: assembler
+category: convention
+tags: [convention, naming, code-style, typescript, purity, architecture, code]
+related: [MAX.ORTHOGONALITY]

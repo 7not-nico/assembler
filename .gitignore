@@ -30,3 +30,6 @@ _depot/draw/
 # runtime crash artifacts + state
 *.db.*
 .opencode/.burst-state.json
+
+# backup snapshot dirs (rule/skill pre-rewrite copies)
+.backups/

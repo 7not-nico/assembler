@@ -1,0 +1,6 @@
+id: RUL.WORKFLOW.PRINCIPLE
+title: Workflow-principle
+group: assembler
+category: principle
+tags: [convention, workflow]
+related: [MAX.ORTHOGONALITY]
