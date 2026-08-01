@@ -1,0 +1,15 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\necho "=== untracked aggregator noise before fix check ==="\ngit status --short | grep -cE "^.. _(atelier|codex|knowledge|trove|depot|sandbox)/" || echo 0\necho "=== webm ignored now? ==="; git check-ignore "_sandbox/Watters： What the HECK is going on？! [tfUx-acqlgk].webm" 2>&1 || echo "STILL NOT IGNORED"\necho "=== substrate still visible? ==="; git ls-files | grep -cE "_codex/_bitacora/|_codex/_templates/|_trove/_bitacora/"\ngit add .gitignore\ngit commit -m "Ignore aggregator root children — close untracked leak, roots keep placeholders" 2>&1 | head -2\ngit push 2>&1 | tail -2' 
+# DATE: 2026-08-01T17:48:12-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== untracked aggregator noise before fix check ===
+3
+=== webm ignored now? ===
+"_sandbox/Watters\357\274\232 What the HECK is going on\357\274\237! [tfUx-acqlgk].webm"
+=== substrate still visible? ===
+505
+[main e382222] Ignore aggregator root children — close untracked leak, roots keep placeholders
+ 1 file changed, 9 insertions(+), 4 deletions(-)
+To https://github.com/7not-nico/assembler.git
+   9858072..e382222  main -> main
+# exit: 0

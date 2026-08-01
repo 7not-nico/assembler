@@ -1,0 +1,8 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\necho "pack before: $(git count-objects -vH | grep size-pack)"\ngit reflog expire --expire=now --all\ngit gc --prune=now 2>&1 | tail -2\necho "pack after: $(git count-objects -vH | grep size-pack)"\necho "repo total: $(du -sh .git | cut -f1)"' 
+# DATE: 2026-08-01T17:50:48-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+pack before: size-pack: 2.94 GiB
+pack after: size-pack: 15.97 MiB
+repo total: 17M
+# exit: 0

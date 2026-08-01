@@ -1,0 +1,12 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\ngit add _codex/_templates/_golib/ann.go _knowledge/_templates/_golib/ann.go _trove/_templates/_golib/ann.go\ngit commit -m "Track Go ANN worker sources in _templates substrate" 2>&1 | head -2\ngit push 2>&1 | tail -2\necho "=== final status ==="; git status --short | wc -l; echo "entries (expect 0 clean or tracked-only)"' 
+# DATE: 2026-08-01T17:49:06-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+[main 9e30662] Track Go ANN worker sources in _templates substrate
+ 3 files changed, 423 insertions(+)
+To https://github.com/7not-nico/assembler.git
+   e382222..9e30662  main -> main
+=== final status ===
+3
+entries (expect 0 clean or tracked-only)
+# exit: 0
