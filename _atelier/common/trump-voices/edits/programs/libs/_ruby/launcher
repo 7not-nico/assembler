@@ -1,0 +1,108 @@
+#!/usr/bin/env ruby
+# @toolclass SGNL
+# depends-on: libs/paths
+
+require_relative "deps/loader"
+require_relative "deps/paths"
+
+C = {
+  bold: "\e[1m", reset: "\e[0m",
+  cyan: "\e[36m", green: "\e[32m", yellow: "\e[33m",
+  red: "\e[31m", blue: "\e[34m", magenta: "\e[35m",
+}
+
+RUBY_EXCLUDE = %w[launcher paths compose voices]
+
+MANIFEST_PATH = File.join(__dir__, "manifest.yaml")
+
+LoadManifest = -> { YAML.load_file(MANIFEST_PATH) rescue {} }
+
+LIBS_DIR = __dir__
+COMPOSING_DIR = File.join(LIBS_DIR, "composing")
+
+Discover = -> {
+  ts = Dir.entries(PROGRAMS_DIR)
+    .reject { |f| %w[launcher libs manifest.yaml].include?(f) || f.start_with?(".") }
+    .select { |f|
+      path = File.join(PROGRAMS_DIR, f)
+      next unless File.file?(path)
+      f.end_with?(".ts") || (!f.include?(".") && File.executable?(path))
+    }
+  rb = Dir.entries(LIBS_DIR)
+    .reject { |f| %w[composing deps].include?(f) || RUBY_EXCLUDE.include?(f.sub(/\.rb$/, "")) || f.start_with?(".") }
+    .select { |f| File.file?(File.join(LIBS_DIR, f)) && f.end_with?(".rb") }
+  if Dir.exist?(COMPOSING_DIR)
+    cb = Dir.entries(COMPOSING_DIR)
+      .reject { |f| f.start_with?(".") }
+      .select { |f| File.file?(File.join(COMPOSING_DIR, f)) && f.end_with?(".rb") }
+    rb.concat(cb)
+  end
+  (ts + rb).sort
+}
+
+Pick = ->(programs, manifest, target) {
+  if target.match?(/^\d+$/)
+    idx = target.to_i - 1
+    idx >= 0 && idx < programs.length ? programs[idx] : nil
+  else
+    programs.find { |p| p == target || p.sub(/\.\w+$/, "") == target }
+  end
+}
+
+RenderMenu = ->(programs, manifest) {
+  lines = ["#{C[:cyan]}#{C[:bold]}── edits ──────────────────────#{C[:reset]}"]
+  lines.concat programs.each_with_index.map { |p, i|
+    key = p.sub(/\.rb$/, "")
+    desc = manifest.dig(key, "title")
+    num = "#{C[:yellow]}#{i + 1}#{C[:reset]}"
+    name = "#{C[:green]}#{key}#{C[:reset]}"
+    desc ? "  #{num}. #{name} #{desc}" : "  #{num}. #{name}"
+  }
+  lines << "  #{C[:yellow]}q#{C[:reset]}. #{C[:bold]}quit#{C[:reset]}"
+  lines << "#{C[:cyan]}───────────────────────────────#{C[:reset]}"
+  lines.join("\n")
+}
+
+Run = ->(script, args) {
+  if script.end_with?(".rb")
+    path = File.join(LIBS_DIR, script)
+    path = File.join(COMPOSING_DIR, script) unless File.exist?(path)
+    exec "ruby", path, *args
+  else
+    exec "bun", File.join(PROGRAMS_DIR, script), *args
+  end
+}
+
+programs = Discover.call
+manifest = LoadManifest.call
+target = ARGV[0]
+
+if target == "--help" || target == "-h"
+  $stderr.puts RenderMenu.call(programs, manifest)
+  exit 0
+end
+
+if target
+  script = Pick.call(programs, manifest, target)
+  if script.nil?
+    $stderr.puts "#{C[:red]}unknown: #{target}#{C[:reset]}"
+    $stderr.puts RenderMenu.call(programs, manifest)
+    exit 1
+  end
+  Run.call(script, ARGV.drop(1))
+end
+
+loop do
+  $stderr.puts RenderMenu.call(programs, manifest)
+  $stderr.print "#{C[:blue]}select#{C[:reset]}: "
+  input = $stdin.gets&.strip
+  exit 0 if input.nil? || input == "q"
+
+  script = Pick.call(programs, manifest, input)
+  if script.nil?
+    $stderr.puts "#{C[:red]}invalid: #{input}#{C[:reset]}"
+    next
+  end
+
+  Run.call(script, [])
+end

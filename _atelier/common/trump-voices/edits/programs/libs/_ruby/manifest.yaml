@@ -1,0 +1,49 @@
+whisper-edit:
+  title: Direct whisper edit — cut phrases from chunk WAVs
+  summary: Reads whisper JSON + chunk WAVs directly. Lists phrases, picks by index, composes. Bypasses revise-boundaries/extract. Works with any video.
+  usage: whisper-edit <video>
+
+full-edit:
+  title: Direct full.wav edit — mix and match any phrases
+  summary: Cuts phrases from full.wav using whisper JSON timestamps. Pick any subset, mix and match, one composition. Works with the current full.wav.
+  usage: full-edit <video> [phrase-ids...]
+
+dory-pep-talk:
+  title: Dory's just keep swimming pep talk
+  summary: Dory's iconic pep talk from Finding Nemo, single-chunk take
+  usage: dory-pep-talk
+
+aliens:
+  title: The little green aliens scene
+  summary: Three squeaky aliens discover Buzz, react with echo
+  usage: aliens
+
+buzz-argument:
+  title: Woody vs Buzz argument scene
+  summary: Deep Woody questions, squeaky alien responses, full argument
+  usage: buzz-argument
+
+buzz-funny:
+  title: Buzz-alien funny duet
+  summary: Pitches down Woody, pitches up aliens, joins with silence
+  usage: buzz-funny
+
+fa-zhou-speech:
+  title: Fa Zhou blossom speech
+  summary: Gentle reverb, rising volume, poetic wisdom from Mulan
+  usage: fa-zhou-speech
+
+oogway-vs-kai:
+  title: Oogway vs Kai battle scene
+  summary: Kai challenges Oogway, Oogway drops wisdom, both with reverb
+  usage: oogway-vs-kai
+
+shifu-argument:
+  title: Master Shifu red panda argument
+  summary: Shifu explains dragon warrior succession, gets called squirrel, corrects them
+  usage: shifu-argument
+
+woody-speech:
+  title: Woody's you-are-a-toy speech
+  summary: Full speech with fading volume, dramatic delivery
+  usage: woody-speech

@@ -12,4 +12,5 @@ _codex/      code dives
 _knowledge/  knowledge projects
 _trove/      research captures
 _depot/      depot content
+_sandbox/    experiments
 ```
