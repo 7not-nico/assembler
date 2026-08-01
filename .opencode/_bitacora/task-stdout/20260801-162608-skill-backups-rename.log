@@ -1,0 +1,15 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\necho "=== non-dotted backups dirs ==="\nfind . -maxdepth 4 -type d -name "backups" 2>/dev/null | grep -v node_modules | grep -v "/.git/"\necho "=== rename ==="\nfor d in $(find . -maxdepth 4 -type d -name "backups" 2>/dev/null | grep -v node_modules | grep -v "/.git/"); do\n  parent=$(dirname "$d"); mv "$d" "$parent/.backups" && echo "mv $d -> $parent/.backups"\ndone\necho "=== ignored now? ==="\ngit check-ignore .opencode/skills/.backups/ 2>&1 || echo "NOT IGNORED"\ngit status --short | grep -c "^D" || echo "0 deletions tracked"' 
+# DATE: 2026-08-01T16:26:08-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== non-dotted backups dirs ===
+./.opencode/skills/backups
+./.opencode/skills/compose-web/backups
+=== rename ===
+mv ./.opencode/skills/backups -> ./.opencode/skills/.backups
+mv ./.opencode/skills/compose-web/backups -> ./.opencode/skills/compose-web/.backups
+=== ignored now? ===
+.opencode/skills/.backups/
+0
+0 deletions tracked
+# exit: 0

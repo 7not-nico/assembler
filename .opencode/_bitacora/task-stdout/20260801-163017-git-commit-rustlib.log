@@ -1,0 +1,8 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\ngit add .opencode/_rustlib\necho "staged: $(git diff --cached --name-only | wc -l)"\necho "target staged: $(git diff --cached --name-only | grep -c "/target/" || echo 0)"\ngit commit -m "Rustlib archive — source + disabled toolchain" 2>&1 | head -2\ngit push 2>&1 | tail -2' 
+# DATE: 2026-08-01T16:30:17-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+staged: 1453
+target staged: 1391
+[master 477c543] Rustlib archive — source + disabled toolchain
+ 1453 files changed, 6241 insertions(+)

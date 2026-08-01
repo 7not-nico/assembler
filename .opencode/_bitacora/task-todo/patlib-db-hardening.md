@@ -1,0 +1,14 @@
+- [x] move patlib.db from root to .opencode/patlib.db
+- [x] move mcp-search.db from root to .opencode/mcp-search.db
+- [x] enable PRAGMA journal_mode=WAL on both DBs
+- [x] enable PRAGMA busy_timeout=5000 on both DBs
+- [x] add WAL pragmas to initDB() in _lib/db.ts
+- [x] add WAL pragmas to initMCPDB() in _lib/db.ts
+- [x] catch duplicate column name errors in initDB()
+- [x] remove stale root patlib.db
+- [x] verify all entity tables queryable
+- [x] verify all entity tables queryable
+- [x] verify RUL.CODE.SIGNATURE in DB
+- [x] verify MAX.KNOWLEDGE.CLASSIFICATION in DB
+- [ ] automate: write-sync runs on every tool start
+- [ ] automate: initDB() runs integrity_check on startup

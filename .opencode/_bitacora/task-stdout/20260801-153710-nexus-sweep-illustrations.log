@@ -1,0 +1,20 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\necho "=== old NEX names in illustrations ==="\nfor old in NEX.META.ENTITY.PROPOSAL NEX.TOOL.LAYER.CHOICE NEX.TOOL.AUDIT.SEQUENCE NEX.LIB.HANDLER.STACK NEX.META.DECISION.CANVAS NEX.PLUGIN.WRITE.LAYER NEX.SCHEMA.SEED.PIPELINE; do\n  n=$(grep -rl -- "$old" .opencode/entities/illustrations 2>/dev/null | wc -l)\n  [ "$n" -gt 0 ] && echo "STALE $old ($n files)"\ndone\ndeclare -A MAP=(\n [NEX.META.ENTITY.PROPOSAL]=NEX.META.PROPOSAL\n [NEX.TOOL.LAYER.CHOICE]=NEX.TOOL.CHOICE\n [NEX.TOOL.AUDIT.SEQUENCE]=NEX.TOOL.SEQUENCE\n [NEX.LIB.HANDLER.STACK]=NEX.LIB.STACK\n [NEX.META.DECISION.CANVAS]=NEX.META.CANVAS\n [NEX.PLUGIN.WRITE.LAYER]=NEX.PLUGIN.LAYER\n [NEX.SCHEMA.SEED.PIPELINE]=NEX.SCHEMA.PIPELINE\n)\nfor old in $(printf "%s\\n" "${!MAP[@]}" | awk "{ print length, \\$0 }" | sort -rn | cut -d" " -f2-); do\n  new=${MAP[$old]}\n  esc=$(printf "%s" "$old" | sed "s/\\./\\\\\\\\./g")\n  files=$(grep -rl -- "$old" .opencode/entities/illustrations .opencode/skills 2>/dev/null)\n  if [ -n "$files" ]; then\n    echo "$files" | xargs -r sed -i "s/$esc/$new/g"\n    echo "MAP $old -> $new ($(echo "$files" | wc -l) files)"\n  fi\ndone' 
+# DATE: 2026-08-01T15:37:10-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== old NEX names in illustrations ===
+STALE NEX.META.ENTITY.PROPOSAL (1 files)
+STALE NEX.TOOL.LAYER.CHOICE (3 files)
+STALE NEX.TOOL.AUDIT.SEQUENCE (2 files)
+STALE NEX.LIB.HANDLER.STACK (5 files)
+STALE NEX.META.DECISION.CANVAS (1 files)
+STALE NEX.PLUGIN.WRITE.LAYER (1 files)
+STALE NEX.SCHEMA.SEED.PIPELINE (2 files)
+MAP NEX.SCHEMA.SEED.PIPELINE -> NEX.SCHEMA.PIPELINE (2 files)
+MAP NEX.META.ENTITY.PROPOSAL -> NEX.META.PROPOSAL (11 files)
+MAP NEX.META.DECISION.CANVAS -> NEX.META.CANVAS (3 files)
+MAP NEX.TOOL.AUDIT.SEQUENCE -> NEX.TOOL.SEQUENCE (16 files)
+MAP NEX.PLUGIN.WRITE.LAYER -> NEX.PLUGIN.LAYER (1 files)
+MAP NEX.TOOL.LAYER.CHOICE -> NEX.TOOL.CHOICE (3 files)
+MAP NEX.LIB.HANDLER.STACK -> NEX.LIB.STACK (5 files)
+# exit: 0

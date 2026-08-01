@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS notes (
+  id TEXT PRIMARY KEY,
+  body TEXT NOT NULL,
+  updated TEXT NOT NULL
+);

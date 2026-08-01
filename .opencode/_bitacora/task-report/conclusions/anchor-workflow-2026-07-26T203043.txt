@@ -1,0 +1,37 @@
+Anchored skills — documented and synced
+========================================
+Date: 2026-07-26T20:30:43-06:00
+Command: CMD.ANCHOR.WORKFLOW
+Source: assembler
+
+Five anchored skills — every task:
+
+1. compose-web-research (SKL.COMPOSE.WEB.RESEARCH)
+   — parallel-search_web_search (2-3 queries) → web_fetch (if needed)
+   → Context7 resolve+query (library docs) → Playwright (dynamic pages)
+   → mcp-log-search
+
+2. report-outcomes (SKL.REPORT.OUTCOMES)
+   — conclusions to report/conclusions/, errors to report/errors/,
+     walkthroughs to report/walkthroughs/, todo to todo/
+   — per MAX.ATOMIC.CONCERN
+
+3. use-playwright-core (SKL.USE.PLAYWRIGHT.CORE)
+   — navigate → snapshot → find/click/type → evaluate/screenshot
+   — for dynamic or JS-rendered content
+
+4. ruby-knowledge (SKL.RUBY.KNOWLEDGE)
+   — for Ruby functional programming, read atomic files from knowledge/
+
+5. guide-maxims-protocols (SKL.GUIDE.MAXIMS.PROTOCOLS)
+   — consult MAX.* for principles, PROT.* for contracts
+   — before every design and implementation decision
+
+Prerequisite (per RUL.QUERY.PATLIB.CONTEXT):
+   — before any task: patlib_search / patlib_get / patlib_validate
+   — for entity context via mcp-patlib
+
+Files:
+  .opencode/commands/anchor-workflow.md     — command markdown
+  .opencode/commands/yamls/anchor-workflow.yaml — command YAML
+  patlib.db — CMD.ANCHOR.WORKFLOW synced

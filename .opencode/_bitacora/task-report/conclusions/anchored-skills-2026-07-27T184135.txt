@@ -1,0 +1,17 @@
+anchored-skills setup — 2026-07-27T18:41:35-06:00
+
+Status: LOADED
+Engine: 7 anchored skills + read-maxims-protocols + query-patlib-context
+
+Skills loaded:
+1. compose-web — web research pipeline (search → fetch → Context7 → Playwright → log)
+2. report-outcomes — structured output to report/{conclusions,errors,walkthroughs}/ + todo/
+3. use-playwright-core — browser navigation, interaction, form filling, screenshot
+4. knowledge-ruby — Ruby functional programming from knowledge/ atoms
+5. read-maxims-protocols — MAX.* (philosophy) → PROT.* (contracts) before decisions
+6. acquire-assets — JSTOR image download via Playwright + curl + assets.db
+7. declare-grounded-entity — research → derive → acquire papers → write → sync
+
+Patlib context engine: patlib_search/patlib_get/patlib_validate per RUL.QUERY.PATLIB.CONTEXT
+
+Pending: task assignment

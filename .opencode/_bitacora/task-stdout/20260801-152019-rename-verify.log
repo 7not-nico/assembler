@@ -1,0 +1,28 @@
+# CMD: bash -c $'cd /home/eddyr/assembler/.opencode/_scripts\necho "=== ILLUSTRATIONS AUDIT ==="; ./rs audit illustrations 2>&1 | tail -1\necho "=== PROTOCOL AUDIT ==="; ./rs audit protocols 2>&1 | tail -1\necho "=== STALE-REFS COUNT NOW ==="; ./rs check stale-refs 2>&1 | grep -c "potential stale"\necho "=== REMAINING PROT STALE (top 15) ==="; ./rs check stale-refs 2>&1 | grep -oE "PROT\\.[A-Z][A-Z0-9.]*" | sort | uniq -c | sort -rn | head -15\necho "=== JUDGMENT MAP CHECK ==="; grep -rn "PROT.TERM.IDENTITY\\b" /home/eddyr/assembler/.opencode/entities /home/eddyr/assembler/.opencode/skills 2>/dev/null | head -3; grep -rln "PROT.TOOL.CLASSIFICATION\\b" /home/eddyr/assembler/.opencode/skills 2>/dev/null | head -3' 
+# DATE: 2026-08-01T15:20:19-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== ILLUSTRATIONS AUDIT ===
+audit FAIL — 2 faults, 0 cycles
+=== PROTOCOL AUDIT ===
+audit ok — 43 entities of type 'protocols', 0 faults
+=== STALE-REFS COUNT NOW ===
+2323
+=== REMAINING PROT STALE (top 15) ===
+     22 PROT.LLM.SPECIFICATION
+     13 PROT.LIB.DIRECTORY.LAYER
+     12 PROT.META.IDENTITY.
+     11 PROT.TOOL.MORPHISM
+     11 PROT.LIB.PURITY.BOUNDARY
+     10 PROT.LIB.BOUNDARY
+      9 PROT.COGNITION.IDENTITY.SCHEMA
+      8 PROT.TOOL.MORPHISM.COMPOSITE
+      8 PROT.SKILL.IDENTITY
+      8 PROT.MAXIM.IDENTITY.SCHEMA
+      8 PROT.COGNITION.IDENTITY
+      7 PROT.TOOL.PROJECT.SCOPE
+      7 PROT.SEARCH.VECTOR.INDEX.
+      7 PROT.META.ENTITY.ROUTING
+      7 PROT.MAXIM.IDENTITY
+=== JUDGMENT MAP CHECK ===
+# exit: 0

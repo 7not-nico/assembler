@@ -1,0 +1,24 @@
+# CMD: bash -c cd\ /home/eddyr/assembler\ \&\&\ echo\ \"===\ NEGATION\ +\ STATE-LABEL\ SCAN\ ===\"\;\ grep\ -niE\ \"\\b\(no\ \|not\ \|never\ \|none\ \|nothing\ \|neither\ \|nor\ \|without\ \|lacks\?\ \|absent\ \|disabled\|deactivated\|excluded\|empty\ \|only\|CLI-only\|stay\ out\|out\ of\|free\|rests\|deactivated\)\"\ AGENTS.md\ \|\|\ echo\ \"clean\ —\ zero\ negators\,\ zero\ state\ labels\"\;\ echo\ \"===\ TOKEN\ SCAN\ ===\"\;\ for\ tok\ in\ write-sync\ mcp-log-search\ a01-harness-llm\ pythontts-cli\ scaffold-knowledge.sh\ semantic-drift\ semantic-eval\ Xenova\ patlib-vector.db\ assemble\ task-stdout\ query-patlib.md\ entity-schema.md\ audit-events\ session-saver\ read-selection\;\ do\ grep\ -q\ \"\$tok\"\ AGENTS.md\ \&\&\ echo\ \"OK\ \ \ \$tok\"\ \|\|\ echo\ \"MISS\ \$tok\"\;\ done 
+# DATE: 2026-08-01T13:47:41-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== NEGATION + STATE-LABEL SCAN ===
+clean — zero negators, zero state labels
+=== TOKEN SCAN ===
+OK   write-sync
+OK   mcp-log-search
+OK   a01-harness-llm
+OK   pythontts-cli
+OK   scaffold-knowledge.sh
+OK   semantic-drift
+OK   semantic-eval
+OK   Xenova
+OK   patlib-vector.db
+OK   assemble
+OK   task-stdout
+OK   query-patlib.md
+OK   entity-schema.md
+OK   audit-events
+OK   session-saver
+OK   read-selection
+# exit: 0

@@ -1,0 +1,13 @@
+# CMD: bash -c $'cd /home/eddyr/assembler/.opencode/entities/protocols\nsed -i "16s/PROT.CONCEPT.SCHEMA/PROT.RULE.SCHEMA/" PROT.META.IDENTITY.md\necho "=== line 16 now ==="; sed -n "16p" PROT.META.IDENTITY.md\necho "=== consistency check (76-78) ==="; sed -n "76,78p" PROT.META.IDENTITY.md\necho "=== residual X.SCHEMA in doc ==="; grep -c "X.SCHEMA" PROT.META.IDENTITY.md' 
+# DATE: 2026-08-01T15:52:48-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== line 16 now ===
+The protocol (PROT.*) entity type follows this pattern with its own concrete identity protocol below. Other entity identity protocols — PROT.MAXIM.SCHEMA, PROT.RULE.SCHEMA — follow the same metadata + body pattern with type-specific fields and sections.
+=== consistency check (76-78) ===
+- `IDENTITY.PROTOCOL` — protocol entity identity
+- `PROT.MAXIM.SCHEMA` — maxim identity protocol (metadata + body)
+- `PROT.RULE.SCHEMA` — rule identity protocol (metadata + body)
+=== residual X.SCHEMA in doc ===
+0
+# exit: 1

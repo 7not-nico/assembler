@@ -1,0 +1,32 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/.opencode/_scripts\ \&\&\ ./rs\ check\ stale-refs\ 2\>\&1\ \|\ tee\ /tmp/opencode/stale-refs-full.txt\ \|\ grep\ -c\ \"does\ not\ match\\\|potential\ stale\"\ \;\ echo\ \"---\ total\ lines\ above\ ---\"\;\ grep\ -oE\ \"PROT\\.\[A-Z\]\[A-Z0-9.\]\*\"\ /tmp/opencode/stale-refs-full.txt\ \|\ sort\ \|\ uniq\ -c\ \|\ sort\ -rn\ \|\ head\ -25 
+# DATE: 2026-08-01T15:18:28-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+2765
+--- total lines above ---
+     52 PROT.TOOL.CUSTOM.DEFINITION
+     34 PROT.LIB.MODULE.CONTRACT
+     32 PROT.TOOL.INVOCATION.MODEL
+     31 PROT.TOOL.CLASSIFICATION.AUTOMATON
+     27 PROT.SCHEMA.MIGRATION.AUGMENT
+     24 PROT.TOOL.PLUGIN.HOOKS
+     22 PROT.LLM.SPECIFICATION
+     21 PROT.META.PROTOCOL.IDENTITY
+     19 PROT.SKILL.STATECLASS.PROFILE
+     19 PROT.SCHEMA.SEED.FORMAT
+     17 PROT.TERM.IDENTITY.SCHEMA
+     17 PROT.PLUGIN.DIRECTION.WRITE
+     17 PROT.META.PROTOCOL.DOMAIN
+     16 PROT.SEARCH.VECTOR.EMBEDDING
+     15 PROT.PLUGIN.VALIDATION.LIFECYCLE
+     13 PROT.TOOL.CLASSIFICATION
+     13 PROT.TERM.IDENTITY
+     13 PROT.LIB.DIRECTORY.LAYER
+     12 PROT.MCP.STDIO.TRANSPORT
+     11 PROT.TOOL.MORPHISM
+     11 PROT.TOOL.MCP.DISCOVERY
+     11 PROT.LIB.PURITY.BOUNDARY
+     10 PROT.SEARCH.VECTOR.INDEX.
+     10 PROT.LIB.BOUNDARY
+      9 PROT.TOOL.MODEL.
+# exit: 0

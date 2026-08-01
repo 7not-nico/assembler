@@ -1,0 +1,4 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\nfor t in CONCEPT DEFINITION ILLUSTRATION ML RULE TAX; do\n  old="PROT.$t.IDENTITY"; new="PROT.$t.SCHEMA"\n  esc=$(printf "%s" "$old" | sed "s/\\./\\\\\\\\./g")\n  hits=$(grep -rl -- "$old" .opencode/entities .opencode/skills _knowledge _codex _atelier .opencode/rules 2>/dev/null | wc -l)\n  if [ "$hits" -gt 0 ]; then\n    grep -rl -- "$old" .opencode/entities .opencode/skills _knowledge _codex _atelier .opencode/rules 2>/dev/null | xargs -r sed -i "s/$esc/$new/g"\n    echo "MAP $old -> $new ($hits files)"\n  fi\ndone' 
+# DATE: 2026-08-01T15:25:36-06:00
+# CWD: /home/eddyr/assembler
+# --------------------

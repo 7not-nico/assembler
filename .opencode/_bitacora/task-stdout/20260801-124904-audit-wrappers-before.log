@@ -1,0 +1,24 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/.opencode/_scripts\ \&\&\ for\ w\ in\ r1-protocol-audit\ r1-maxim-audit\ r1-illustration-audit\ r1-nexus-audit\ r1-pattern-audit\ r1-person-audit\;\ do\ echo\ \"==\ \$w\ ==\"\;\ ./\$w.rb\ 2\>\&1\ \|\ head\ -2\;\ echo\ \"exit:\ \$\{PIPESTATUS\[0\]\}\"\;\ done 
+# DATE: 2026-08-01T12:49:04-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+== r1-protocol-audit ==
+error: unrecognized subcommand 'audit'
+
+exit: 2
+== r1-maxim-audit ==
+bash: line 1: ./r1-maxim-audit.rb: Permission denied
+exit: 126
+== r1-illustration-audit ==
+bash: line 1: ./r1-illustration-audit.rb: Permission denied
+exit: 126
+== r1-nexus-audit ==
+bash: line 1: ./r1-nexus-audit.rb: Permission denied
+exit: 126
+== r1-pattern-audit ==
+bash: line 1: ./r1-pattern-audit.rb: Permission denied
+exit: 126
+== r1-person-audit ==
+bash: line 1: ./r1-person-audit.rb: Permission denied
+exit: 126
+# exit: 0

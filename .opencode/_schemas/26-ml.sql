@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS ml (
+  id TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  body TEXT NOT NULL,
+  source TEXT,
+  related TEXT,
+  tags TEXT,
+  reference TEXT,
+  created TEXT NOT NULL,
+  modified TEXT NOT NULL
+);
+ALTER TABLE ml ADD COLUMN type TEXT;
+ALTER TABLE ml ADD COLUMN precedes TEXT;
+ALTER TABLE ml ADD COLUMN paradigm TEXT;
+ALTER TABLE ml ADD COLUMN subfield TEXT;
+ALTER TABLE ml ADD COLUMN category TEXT;

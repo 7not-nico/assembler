@@ -1,0 +1,9 @@
+# CMD: bash -c $'cd /home/eddyr/assembler/.opencode\nP=entities/protocols\n# concept refs\nfor f in $P/PROT.DEFINITION.SCHEMA.md $P/PROT.ML.SCHEMA.md $P/PROT.COGNITION.SCHEMA.md $P/PROT.TERM.SCHEMA.md; do\n  sed -i "s/\\`X\\.SCHEMA\\` — concept entity protocol/\\`PROT.CONCEPT.SCHEMA\\` — concept entity protocol/g" "$f"\ndone\n# definition refs\nfor f in $P/PROT.COGNITION.SCHEMA.md $P/PROT.CONCEPT.SCHEMA.md $P/PROT.TAX.SCHEMA.md $P/PROT.TERM.SCHEMA.md; do\n  sed -i "s/\\`X\\.SCHEMA\\` — definition entity protocol/\\`PROT.DEFINITION.SCHEMA\\` — definition entity protocol/g" "$f"\ndone\n# rule refs\nfor f in $P/PROT.MAXIM.SCHEMA.md $P/PROT.META.IDENTITY.md; do\n  sed -i "s/\\`X\\.SCHEMA\\` — rule identity protocol/\\`PROT.RULE.SCHEMA\\` — rule identity protocol/g" "$f"\ndone\necho "=== residual backtick X.SCHEMA ==="; grep -rn "\\`X\\.SCHEMA\\`" entities skills 2>/dev/null | wc -l\necho "=== residual X.SCHEMA total (incl substring false-pos) ==="; grep -rn "X\\.SCHEMA" entities skills 2>/dev/null | grep -v "NEX.SCHEMA.PIPELINE\\|PROT.TAX.SCHEMA\\|PROT.ML.SCHEMA\\|PROT.RULE.SCHEMA\\|PROT.CONCEPT.SCHEMA\\|PROT.DEFINITION.SCHEMA\\|IDENTITY.TAX" | wc -l' 
+# DATE: 2026-08-01T15:36:27-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== residual backtick X.SCHEMA ===
+0
+=== residual X.SCHEMA total (incl substring false-pos) ===
+4
+# exit: 0

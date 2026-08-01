@@ -1,0 +1,11 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\ngit add .opencode/skills\necho "staged: $(git diff --cached --name-only | wc -l) files"\necho "backups staged: $(git diff --cached --name-only | grep -c "backups" || echo 0)"\ngit commit -m "Skills — capability definitions" 2>&1 | head -2\ngit push 2>&1 | tail -2' 
+# DATE: 2026-08-01T16:25:09-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+staged: 227 files
+backups staged: 23
+[master 9c4ad97] Skills — capability definitions
+ 227 files changed, 24629 insertions(+)
+To https://github.com/7not-nico/assembler.git
+   ae8915f..9c4ad97  master -> master
+# exit: 0

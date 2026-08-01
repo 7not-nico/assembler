@@ -1,0 +1,14 @@
+# CMD: bash -c $'cd /home/eddyr/assembler/.opencode\n# identity files: X.SCHEMA -> PROT.{TYPE}.SCHEMA\nfor t in CONCEPT DEFINITION ML RULE TAX; do\n  f="entities/identities/IDENTITY.$t.md"\n  [ -f "$f" ] && sed -i "s/X\\.SCHEMA/PROT.$t.SCHEMA/g" "$f" && echo "FIX identities/IDENTITY.$t.md"\ndone\n# skill\nsed -i "s/X\\.SCHEMA/PROT.RULE.SCHEMA/g" skills/audit-rule/SKILL.md && echo "FIX skills/audit-rule/SKILL.md"\n# schema protocol cross-refs by description\ngrep -rl "X.SCHEMA — concept entity protocol" entities/protocols 2>/dev/null | xargs -r sed -i "s/X\\.SCHEMA — concept entity protocol/PROT.CONCEPT.SCHEMA — concept entity protocol/g"\ngrep -rl "X.SCHEMA — definition entity protocol" entities/protocols 2>/dev/null | xargs -r sed -i "s/X\\.SCHEMA — definition entity protocol/PROT.DEFINITION.SCHEMA — definition entity protocol/g"\ngrep -rl "X.SCHEMA — rule identity protocol" entities/protocols 2>/dev/null | xargs -r sed -i "s/X\\.SCHEMA — rule identity protocol/PROT.RULE.SCHEMA — rule identity protocol/g"\n# META.IDENTITY line 16 (ambiguous -> CONCEPT, flagged)\nsed -i "16s/X\\.SCHEMA/PROT.CONCEPT.SCHEMA/" entities/protocols/PROT.META.IDENTITY.md && echo "FIX PROT.META.IDENTITY.md:16 (reconstructed)"\necho "=== residual X.SCHEMA ==="; grep -rn "X\\.SCHEMA" entities skills 2>/dev/null | wc -l' 
+# DATE: 2026-08-01T15:32:23-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+FIX identities/IDENTITY.CONCEPT.md
+FIX identities/IDENTITY.DEFINITION.md
+FIX identities/IDENTITY.ML.md
+FIX identities/IDENTITY.RULE.md
+FIX identities/IDENTITY.TAX.md
+FIX skills/audit-rule/SKILL.md
+FIX PROT.META.IDENTITY.md:16 (reconstructed)
+=== residual X.SCHEMA ===
+21
+# exit: 0

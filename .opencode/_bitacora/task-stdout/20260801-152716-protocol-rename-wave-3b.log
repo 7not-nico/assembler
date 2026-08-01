@@ -1,0 +1,12 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\n[ -s /tmp/opencode/all-md.txt ] || find . -name "*.md" -not -path "*/.git/*" -not -path "*/node_modules/*" -not -path "*/target/*" > /tmp/opencode/all-md.txt\nfiles=$(wc -l < /tmp/opencode/all-md.txt)\necho "file list: $files"\nfor t in CONCEPT DEFINITION ILLUSTRATION ML RULE TAX; do\n  old="PROT.$t.IDENTITY"; new="PROT.$t.SCHEMA"\n  matches=$(grep -l -- "$old" $(cat /tmp/opencode/all-md.txt) 2>/dev/null)\n  hits=$(echo "$matches" | grep -c . )\n  if [ "$hits" -gt 0 ]; then\n    echo "$matches" | xargs -r sed -i "s/${old%%.}/X/" 2>/dev/null || true\n    esc=$(printf "%s" "$old" | sed "s/\\./\\\\\\\\./g")\n    echo "$matches" | xargs -r sed -i "s/$esc/$new/g"\n    echo "MAP $old -> $new ($hits files)"\n  fi\ndone' 
+# DATE: 2026-08-01T15:27:16-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+file list: 3697
+MAP PROT.CONCEPT.IDENTITY -> PROT.CONCEPT.SCHEMA (12 files)
+MAP PROT.DEFINITION.IDENTITY -> PROT.DEFINITION.SCHEMA (12 files)
+MAP PROT.ILLUSTRATION.IDENTITY -> PROT.ILLUSTRATION.SCHEMA (7 files)
+MAP PROT.ML.IDENTITY -> PROT.ML.SCHEMA (1 files)
+MAP PROT.RULE.IDENTITY -> PROT.RULE.SCHEMA (9 files)
+MAP PROT.TAX.IDENTITY -> PROT.TAX.SCHEMA (7 files)
+# exit: 0

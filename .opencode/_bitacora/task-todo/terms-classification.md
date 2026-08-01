@@ -1,0 +1,10 @@
+- [ ] classify 76 terms into COG / CON / DEF / TERM per MAX.KNOWLEDGE.CLASSIFICATION
+- [ ] add cognitions, concepts, definitions to ENTITY_TYPES in vector-query.ts
+- [ ] add cognitions, concepts, definitions to entityTable() in vector-query.ts
+- [ ] add cognitions, concepts, definitions to TYPE_SOURCE_DIRS in mcp-patlib-vector
+- [ ] update PROT.TERM.SCHEMA with type field (internal/external)
+- [ ] move files: entities/terms/ → entities/{cognitions,concepts,definitions,terms}/
+- [ ] update file ID prefixes: TERM.* → COG.* / CON.* / DEF.* / keep TERM.*
+- [ ] update cross-references in entities that reference reclassified terms
+- [ ] sync all to patlib.db via write-sync
+- [ ] reindex all via reindex-vectors --all

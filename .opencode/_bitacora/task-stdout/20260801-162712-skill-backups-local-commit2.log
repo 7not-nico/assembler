@@ -1,0 +1,13 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\ngit add -u .opencode/skills\necho "staged: $(git diff --cached --name-only | wc -l)"\ngit diff --cached --name-only | head -3\ngit commit -m "Skill backups renamed to .backups (gitignored) — local only, not pushed" 2>&1 | head -2\necho "=== ahead of origin (should be 1) ==="; git log origin/master..master --oneline | wc -l' 
+# DATE: 2026-08-01T16:27:12-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+staged: 23
+.opencode/skills/backups/2026-07-09T025254/audit-rule/SKILL.md
+.opencode/skills/backups/2026-07-09T210749/audit-term/SKILL.md
+.opencode/skills/backups/2026-07-09T211540/audit-pattern/SKILL.md
+[master 822c827] Skill backups renamed to .backups (gitignored) — local only, not pushed
+ 23 files changed, 896 deletions(-)
+=== ahead of origin (should be 1) ===
+1
+# exit: 0

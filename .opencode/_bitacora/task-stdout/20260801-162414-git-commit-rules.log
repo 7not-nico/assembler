@@ -1,0 +1,12 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\ngit reset -q HEAD -- .opencode/rules/.backups\ngit add .gitignore\necho "staged: $(git diff --cached --name-only | wc -l) files"\ngit diff --cached --name-only | grep -c "backups" || echo "0 backups staged"\ngit commit -m "Rules — convention set; .backups excluded via gitignore" 2>&1 | head -2\ngit push 2>&1 | tail -2' 
+# DATE: 2026-08-01T16:24:14-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+staged: 162 files
+0
+0 backups staged
+[master ae8915f] Rules — convention set; .backups excluded via gitignore
+ 162 files changed, 860 insertions(+)
+To https://github.com/7not-nico/assembler.git
+   3aad16f..ae8915f  master -> master
+# exit: 0

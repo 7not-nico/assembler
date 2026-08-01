@@ -1,0 +1,24 @@
+# CMD: bash -c $'cd /home/eddyr/assembler/.opencode/_scripts\necho "=== ILLUSTRATIONS ==="; ./rs audit illustrations 2>&1 | tail -1\necho "=== PROTOCOLS ==="; ./rs audit protocols 2>&1 | tail -1\necho "=== STALE-REFS NOW ==="; ./rs check stale-refs 2>&1 | grep -c "potential stale"\necho "=== REMAINING STALE PROT (top 12) ==="; ./rs check stale-refs 2>&1 | grep -oE "PROT\\.[A-Z][A-Z0-9.]*" | sort | uniq -c | sort -rn | head -12' 
+# DATE: 2026-08-01T15:24:26-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== ILLUSTRATIONS ===
+audit ok — 80 entities of type 'illustrations', 0 faults
+=== PROTOCOLS ===
+audit ok — 43 entities of type 'protocols', 0 faults
+=== STALE-REFS NOW ===
+2266
+=== REMAINING STALE PROT (top 12) ===
+     22 PROT.LLM.SPECIFICATION
+     13 PROT.LIB.DIRECTORY.LAYER
+     11 PROT.TOOL.MORPHISM
+     11 PROT.META.IDENTITY.
+     11 PROT.LIB.PURITY.BOUNDARY
+     10 PROT.LIB.BOUNDARY
+      7 PROT.SEARCH.VECTOR.INDEX.
+      7 PROT.META.ENTITY.ROUTING
+      7 PROT.LIB.MUTATION.STRATEGY
+      7 PROT.ILLUSTRATION.IDENTITY
+      7 PROT.DEFINITION.IDENTITY
+      7 PROT.CONCEPT.IDENTITY
+# exit: 0

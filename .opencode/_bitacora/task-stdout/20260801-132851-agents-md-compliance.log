@@ -1,0 +1,23 @@
+# CMD: bash -c cd\ /home/eddyr/assembler\ \&\&\ for\ tok\ in\ write-sync\ mcp-log-search\ a01-harness-llm\ pythontts-cli\ scaffold-knowledge.sh\ semantic-drift\ semantic-eval\ Xenova\ patlib-vector.db\ assemble\ task-stdout\ query-patlib.md\ entity-schema.md\ audit-events\ session-saver\ read-selection\;\ do\ grep\ -q\ \"\$tok\"\ AGENTS.md\ \&\&\ echo\ \"OK\ \ \ \$tok\"\ \|\|\ echo\ \"MISS\ \$tok\"\;\ done\;\ echo\ \"---IMPERATIVE-SCAN---\"\;\ grep\ -nE\ \"\^\(See\|Restore\|Restart\|Run\|Copy\|Create\|Move\)\ \"\ AGENTS.md\ \|\|\ echo\ \"no\ leading\ imperatives\" 
+# DATE: 2026-08-01T13:28:51-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+OK   write-sync
+OK   mcp-log-search
+OK   a01-harness-llm
+OK   pythontts-cli
+OK   scaffold-knowledge.sh
+OK   semantic-drift
+OK   semantic-eval
+OK   Xenova
+OK   patlib-vector.db
+OK   assemble
+OK   task-stdout
+OK   query-patlib.md
+OK   entity-schema.md
+OK   audit-events
+OK   session-saver
+OK   read-selection
+---IMPERATIVE-SCAN---
+no leading imperatives
+# exit: 0

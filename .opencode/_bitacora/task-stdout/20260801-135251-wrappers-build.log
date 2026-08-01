@@ -1,0 +1,8 @@
+# CMD: cargo build --release 
+# DATE: 2026-08-01T13:52:51-06:00
+# CWD: /home/eddyr/assembler/.opencode/_scripts/_bin
+# --------------------
+   Compiling assembler-scripts v0.1.0 (/home/eddyr/assembler/.opencode/_scripts/_rs)
+   Compiling assembler-cli v0.1.0 (/home/eddyr/assembler/.opencode/_scripts/_bin)
+    Finished `release` profile [optimized] target(s) in 4.51s
+# exit: 0

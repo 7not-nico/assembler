@@ -1,0 +1,5 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\necho "deletions: $(git status --short | grep -c "^ D" || echo 0)"\ngit add -A\ngit status --short | head -5\necho "---"\ngit status --short | wc -l\ngit commit -m "Skill backups renamed to .backups (gitignored) — local only, not pushed" 2>&1 | head -2\necho "=== remote unchanged? ==="; git log origin/master..master --oneline | head -3' 
+# DATE: 2026-08-01T16:26:21-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+deletions: 23

@@ -1,0 +1,56 @@
+-- ARCHIVAL: rules migrated to _lib/spec-rules.ts pure TS constant
+-- Table no longer loaded or queried at runtime.
+CREATE TABLE IF NOT EXISTS llm_spec_rules (
+  id TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  description TEXT,
+  severity TEXT NOT NULL DEFAULT 'error',
+  check_type TEXT NOT NULL,
+  patterns TEXT,
+  threshold REAL,
+  scope TEXT DEFAULT 'document',
+  suggestion TEXT,
+  enabled INTEGER NOT NULL DEFAULT 1,
+  created TEXT NOT NULL DEFAULT (datetime('now')),
+  modified TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
+INSERT OR IGNORE INTO llm_spec_rules
+  (id, title, severity, check_type, patterns, threshold, scope, suggestion)
+VALUES
+  ('POSITIVE_FRAMING', 'Positive framing required', 'error', 'proximity',
+   '{"trigger":"\\b(don''t|never|must not|should not|avoid|forbidden|prohibited)\\b","expected":"\\b(instead|alternatively|rather|redirect|prefer|use)\\b"}',
+   5, 'document', 'Replace negative with positive instruction. Add "instead" redirect.'),
+  ('RATIO_3_1', '3:1 positive-to-negative ratio', 'error', 'ratio',
+   '{"positive":["\\b(do|use|prefer|apply|follow|always|required|must|should)\\b"],"negative":["\\b(don''t|never|must not|should not|avoid|forbidden)\\b"]}',
+   3, 'document', 'Add more positive instructions to reach ≥3:1 ratio.'),
+  ('DECLARATIVE_REGISTER', 'Declarative register over imperative', 'warn', 'forbidden_pattern',
+   '["\\b(NEVER|DO NOT|ALWAYS AVOID|MUST NOT|CANNOT)\\b"]',
+   null, 'line', 'Use "X: disabled" or declarative phrasing instead.'),
+  ('FORBIDDEN_PRIMING', 'No forbidden-concept priming', 'error', 'forbidden_pattern',
+   '["do not use \\w+","never use \\w+","avoid using \\w+"]',
+   null, 'line', 'Describe the boundary, not the prohibited entity. Use "X: excluded".'),
+  ('CONSTRAINT_BUDGET', 'Constraint budget ≤6 per segment', 'error', 'count',
+   '["\\b(constraint|rule|must|required|forbidden|disabled|allowed|permitted|banned|restricted)\\b"]',
+   6, 'segment', 'Reduce to ≤6 constraints per segment.'),
+  ('STRUCTURAL_PREFERENCE', 'Prefer structural over semantic constraints', 'warn', 'ratio',
+   '{"positive":["\\b(length|format|keyword|character|line|word|json|markdown|list|numbered|bullet)\\b"],"negative":["\\b(tone|style|concise|detailed|formal|friendly|professional|casual|voice|register)\\b"]}',
+   1, 'document', 'Replace semantic constraints with structural ones (length, format).'),
+  ('HARD_STOP_REDIRECT', 'Hard stop requires positive redirect', 'error', 'proximity',
+   '{"trigger":"\\b(forbidden|prohibited|disabled|not allowed|banned|restricted)\\b","expected":"\\b(instead|alternatively|rather|instead of|prefer|replace|substitute)\\b"}',
+   5, 'document', 'Add positive redirect after each hard stop.'),
+  ('CONJUNCTION_OPERATOR', 'No conjunction composition operators', 'warn', 'forbidden_pattern',
+   '["&&","∩"]',
+   null, 'line', 'Use declarative listing instead of conjunction operators.'),
+  ('NEGATION_OPERATOR', 'No negation operators', 'warn', 'forbidden_pattern',
+   '["(?<![a-z])NOT(?![a-z])","!","¬"]',
+   null, 'line', 'Use "X: disabled" or "X: excluded" declarative form.'),
+  ('XOR_OPERATOR', 'XOR is structurally unreliable', 'warn', 'forbidden_pattern',
+   '["\\bXOR\\b"]',
+   null, 'line', 'Replace XOR with explicit IF/ELSE or declarative listing.'),
+  ('IMPLICATION_OPERATOR', 'Implication is model-specific', 'warn', 'forbidden_pattern',
+   '["=>"]',
+   null, 'line', 'Only use if empirically validated on target model. Default to declarative.'),
+  ('CONNECTIVE_FRAGILITY', 'High-entropy connectives flagged', 'warn', 'forbidden_pattern',
+   '["\\b(therefore|however|but)\\b"]',
+   null, 'line', 'Connectives derail 41% of reasoning chains. Use separate sentences.');

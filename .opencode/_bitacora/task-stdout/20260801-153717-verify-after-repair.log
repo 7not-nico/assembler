@@ -1,0 +1,18 @@
+# CMD: bash -c $'cd /home/eddyr/assembler/.opencode/_scripts\necho "=== backtick X.SCHEMA ==="; grep -rn "\\`X\\.SCHEMA\\`" ../entities ../skills 2>/dev/null | wc -l\necho "=== audits ==="\nfor t in protocols maxims illustrations nexus patterns persons; do printf "%-14s " "$t:"; ./rs audit "$t" 2>&1 | tail -1; done\necho "=== stale-refs count ==="; ./rs check stale-refs 2>&1 | grep -c "potential stale"\necho "=== bare-X scan (knowledge/codex/atelier, ID contexts) ==="\ngrep -rnE "^(source|related|precedes|illustrates):.*\\bX\\b" ../_knowledge ../_codex ../_atelier 2>/dev/null | head -5\necho "bare-X metadata scan done"' 
+# DATE: 2026-08-01T15:37:17-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== backtick X.SCHEMA ===
+0
+=== audits ===
+protocols:     audit ok — 43 entities of type 'protocols', 0 faults
+maxims:        audit ok — 9 entities of type 'maxims', 0 faults
+illustrations: audit ok — 80 entities of type 'illustrations', 0 faults
+nexus:         audit ok — 11 entities of type 'nexus', 0 faults
+patterns:      audit ok — 8 entities of type 'patterns', 0 faults
+persons:       audit FAIL — 8 faults, 0 cycles
+=== stale-refs count ===
+2187
+=== bare-X scan (knowledge/codex/atelier, ID contexts) ===
+bare-X metadata scan done
+# exit: 0

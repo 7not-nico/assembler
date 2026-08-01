@@ -1,0 +1,14 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\ngit reset --soft HEAD~2\ngit commit -q -m "Rustlib archive — source + disabled toolchain (build artifacts excluded)" 2>&1 | head -1\necho "=== history now ==="; git log --oneline -3\necho "ahead of origin: $(git log origin/master..master --oneline | wc -l)"\necho "target files in new HEAD: $(git ls-tree -r HEAD --name-only | grep -c "_disabled/target/" || echo 0)"\necho "new pack size:"; git count-objects -vH | grep size-pack' 
+# DATE: 2026-08-01T16:34:10-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== history now ===
+ce5fd82 Rustlib archive — source + disabled toolchain (build artifacts excluded)
+f62d3bd Scripts toolchain — Go primary (golib), Rust/Ruby legacy, surveys
+b52f919 Tools + lib — semantic engine (embed, score, search, drift, eval)
+ahead of origin: 1
+target files in new HEAD: 0
+0
+new pack size:
+size-pack: 2.93 GiB
+# exit: 0

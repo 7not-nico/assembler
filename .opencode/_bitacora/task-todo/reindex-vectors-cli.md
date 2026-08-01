@@ -1,0 +1,9 @@
+- [ ] create .opencode/tools/reindex-vectors.ts — shebang CLI, not plugin
+- [ ] parse args: --type <name>, --all, --force
+- [ ] parallel batch: chunk(items, 16) → Promise.all(scopes.map(embedBatch))
+- [ ] import shared libs (read-entities, embedder from mcp-patlib-vector, vector-query)
+- [ ] verify: 0 duplication with mcp-patlib-vector server
+- [ ] test: bun run reindex-vectors.ts --type patterns
+- [ ] test: bun run reindex-vectors.ts --all
+- [ ] verify: vector DB has embeddings >0 per type
+- [ ] promote to MCP after stabilization

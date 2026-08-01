@@ -1,0 +1,11 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\ngit add .opencode/_scripts\necho "staged: $(git diff --cached --name-only | wc -l)"\necho "build artifacts: $(git diff --cached --name-only | grep -cE "/(target|bin|report)/" || echo 0)"\ngit commit -m "Scripts toolchain — Go primary (golib), Rust/Ruby legacy, surveys" 2>&1 | head -2\ngit push 2>&1 | tail -2' 
+# DATE: 2026-08-01T16:29:07-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+staged: 678
+build artifacts: 2
+[master f62d3bd] Scripts toolchain — Go primary (golib), Rust/Ruby legacy, surveys
+ 678 files changed, 28121 insertions(+)
+To https://github.com/7not-nico/assembler.git
+   b52f919..f62d3bd  master -> master
+# exit: 0

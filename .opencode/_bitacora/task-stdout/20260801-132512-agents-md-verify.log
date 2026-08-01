@@ -1,0 +1,16 @@
+# CMD: bash -c sed\ -n\ \"17\,27p\"\ /home/eddyr/assembler/AGENTS.md 
+# DATE: 2026-08-01T13:25:12-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+## Reports and todos
+
+The agent writes bitacora files ALWAYS — every session, every task. Todo precedes work; report follows completion. Both stay open while working. All records live under `.opencode/_bitacora/` — every subfolder follows the `{?}-{concrete noun}` naming convention: `task-audit/`, `task-plan/`, `task-reference/`, `task-report/`, `task-stdout/`, `task-survey/`, `task-todo/`.
+The `.opencode/_bitacora/task-todo/{topic}.md` file holds persistent task lists, one per project/topic. Work creates the todo BEFORE tasks start — it plans the task sequence. Work uses the todo DURING tasks — status updates (`- [ ]` / `- [x]`) mark progress as tasks complete. Each task begins from its todo entry.
+The `.opencode/_bitacora/task-report/{timestamp}-{topic}.md` file stores the factual record — metrics, findings, decisions, before/after data — and the task reports: what was done, decisions, open edges, todo state summary. Completion writes the report.
+The `.opencode/_bitacora/task-audit/`, `.opencode/_bitacora/task-plan/`, and `.opencode/_bitacora/task-survey/` folders hold audit logs, plan documents, and survey records.
+Every command the agent runs passes through `bash .opencode/_bitacora/bitacora-log.sh {name} -- {command}`. The script writes the log file into `.opencode/_bitacora/task-stdout/`. The file name takes the form `{YYYYMMDD}-{HHMMSS}-{name}.log`. The `# CMD:` header holds the exact command line. Output streams live to the terminal and into the file. The script appends the exit status. Reports reference each log file.
+Report and todo updates accompany task completion; they are deliverables, not afterthoughts. A task without a todo entry and a completed-task report is unfinished work.
+
+## Tooling
+
+# exit: 0
