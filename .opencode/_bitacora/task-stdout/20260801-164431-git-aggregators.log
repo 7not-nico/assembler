@@ -1,0 +1,18 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\ngit rm -r -q --cached _knowledge 2>&1 | tail -1\ngit add .gitignore AGGREGATORS.md _atelier/.gitkeep _codex/.gitkeep _knowledge/.gitkeep _trove/.gitkeep _depot/.gitkeep\necho "staged: $(git diff --cached --name-only | wc -l)"\ngit diff --cached --name-only | head -8\ngit commit -m "Aggregator domains — _{abstract-noun}/ placeholders, contents to own repos; AGGREGATORS.md note" 2>&1 | head -2\ngit push 2>&1 | tail -2' 
+# DATE: 2026-08-01T16:44:31-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+staged: 623
+.gitignore
+AGGREGATORS.md
+_codex/.gitkeep
+_depot/.gitkeep
+_knowledge/.gitkeep
+_knowledge/_templates/AGENTS.md
+_knowledge/_templates/AGENTS.template.md
+_knowledge/_templates/_golib/ann
+[master a4a180a] Aggregator domains — _{abstract-noun}/ placeholders, contents to own repos; AGGREGATORS.md note
+ 623 files changed, 25 insertions(+), 32145 deletions(-)
+To https://github.com/7not-nico/assembler.git
+   935ebc3..a4a180a  master -> master
+# exit: 0

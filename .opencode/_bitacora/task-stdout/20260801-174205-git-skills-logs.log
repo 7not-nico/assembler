@@ -1,0 +1,4 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\ngit add .opencode/skills/reason-invariants .opencode/skills/structure-stdout .opencode/_bitacora/task-stdout\necho "staged: $(git diff --cached --name-only | wc -l)"\ngit diff --cached --name-only | cut -d/ -f3 | sort | uniq -c\ngit commit -m "Skills: reason-invariants, structure-stdout; bitacora stdout logs (git session)" 2>&1 | head -2\ngit push 2>&1 | tail -2' 
+# DATE: 2026-08-01T17:42:05-06:00
+# CWD: /home/eddyr/assembler
+# --------------------

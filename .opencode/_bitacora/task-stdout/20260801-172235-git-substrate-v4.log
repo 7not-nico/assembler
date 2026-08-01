@@ -1,0 +1,20 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\ngit ls-files | grep -E "_rustlib/target/|_golib/ann" | xargs -d "\\n" git rm -r -q --cached 2>&1 | tail -1\necho "remaining tracked artifacts: $(git ls-files | grep -cE "_rustlib/target/|_golib/ann" || echo 0)"\necho "=== final staged ==="; git diff --cached --name-only | wc -l\ngit diff --cached --name-only | grep -cE "_rustlib/target/|_golib/ann" || echo "0 artifacts"\ngit diff --cached --name-only | cut -d/ -f1 | sort | uniq -c | sort -rn\ngit commit -m "Aggregator substrate — track bitacora/templates/impressions/scripts contents; strip build artifacts" 2>&1 | head -2\ngit push 2>&1 | tail -2' 
+# DATE: 2026-08-01T17:22:35-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+remaining tracked artifacts: 0
+0
+=== final staged ===
+1281
+392
+    801 _codex
+    308 _trove
+    139 _knowledge
+     27 _atelier
+      5 _depot
+      1 .gitignore
+[master 7b7709e] Aggregator substrate — track bitacora/templates/impressions/scripts contents; strip build artifacts
+ 1281 files changed, 487919 insertions(+), 2993 deletions(-)
+To https://github.com/7not-nico/assembler.git
+   c466705..7b7709e  master -> master
+# exit: 0

@@ -1,0 +1,16 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\ngit add .gitignore AGGREGATORS.md _sandbox/.gitkeep\n# add every inner _folder (depth >= 2) inside aggregators, targeted (no root scans)\nfind _atelier _codex _knowledge _trove _depot _sandbox -mindepth 2 -type d -name "_*" 2>/dev/null | while read d; do git add "$d" 2>/dev/null; done\necho "staged: $(git diff --cached --name-only | wc -l)"\necho "=== top dirs of staged ==="; git diff --cached --name-only | cut -d/ -f1 | sort | uniq -c | sort -rn\necho "=== large staged files (>1MB) ==="; git diff --cached --name-only | head -0' 
+# DATE: 2026-08-01T16:53:09-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+staged: 460
+=== top dirs of staged ===
+    214 _codex
+    107 _trove
+    107 _knowledge
+     25 _atelier
+      4 _depot
+      1 _sandbox
+      1 .gitignore
+      1 AGGREGATORS.md
+=== large staged files (>1MB) ===
+# exit: 0

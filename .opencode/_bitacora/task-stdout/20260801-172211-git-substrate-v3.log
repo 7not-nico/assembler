@@ -1,0 +1,16 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\ngit ls-files | grep -E "^_(atelier|codex|knowledge|trove|depot|sandbox)/" \\\n  | grep -vE "/(_bitacora|_templates|_impressions|_scripts)/" \\\n  | grep -vE "^_+[^/]*/\\.gitkeep$" | xargs -d "\\n" git rm -r -q --cached 2>&1 | tail -1\necho "stripped. remaining tracked aggregator files outside substrate:"\ngit ls-files | grep -E "^_(atelier|codex|knowledge|trove|depot|sandbox)/" | grep -vE "/(_bitacora|_templates|_impressions|_scripts)/" | grep -vE "^_+[^/]*/\\.gitkeep$" | wc -l\necho "=== staged summary ==="; git diff --cached --name-only | wc -l\ngit diff --cached --name-only | grep -cE "_rustlib/target/|_golib/ann" || echo "0 artifacts"\ngit diff --cached --name-only | cut -d/ -f1 | sort | uniq -c | sort -rn' 
+# DATE: 2026-08-01T17:22:11-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+stripped. remaining tracked aggregator files outside substrate:
+0
+=== staged summary ===
+987
+98
+    703 _codex
+    210 _trove
+     41 _knowledge
+     27 _atelier
+      5 _depot
+      1 .gitignore
+# exit: 0

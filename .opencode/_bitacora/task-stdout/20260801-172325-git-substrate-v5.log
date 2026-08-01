@@ -1,0 +1,18 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\nprintf "\\n# node_modules stay out everywhere (after substrate un-ignore)\\n**/node_modules/\\n" >> .gitignore\necho "tracked node_modules dirs:"; git ls-files | grep -oE "^_[^/]+/[^/]+/node_modules" | sort -u\ngit ls-files | grep "node_modules" | xargs -d "\\n" git rm -r -q --cached 2>&1 | tail -1\necho "remaining tracked node_modules: $(git ls-files | grep -c node_modules || echo 0)"\ngit add .gitignore\ngit commit -m "Strip node_modules from tracked _templates; reorder ignore precedence" 2>&1 | head -2\ngit push 2>&1 | tail -2\necho "=== HEAD check ==="; git ls-tree -r HEAD --name-only | grep -cE "node_modules|_rustlib/target/|_golib/ann" || echo "0 artifacts"\necho "pack: $(git count-objects -vH | grep size-pack)"' 
+# DATE: 2026-08-01T17:23:25-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+tracked node_modules dirs:
+_codex/_templates/node_modules
+_trove/_templates/node_modules
+remaining tracked node_modules: 0
+0
+[master 5374e4b] Strip node_modules from tracked _templates; reorder ignore precedence
+ 227 files changed, 3 insertions(+), 469772 deletions(-)
+To https://github.com/7not-nico/assembler.git
+   7b7709e..5374e4b  master -> master
+=== HEAD check ===
+0
+0 artifacts
+pack: size-pack: 2.94 GiB
+# exit: 0

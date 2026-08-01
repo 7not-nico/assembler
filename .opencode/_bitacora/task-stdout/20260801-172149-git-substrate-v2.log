@@ -1,0 +1,14 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\n# tracked aggregator files outside the 4 substrate kinds (+ top gitkeeps)\ngit ls-files | grep -E "^_(atelier|codex|knowledge|trove|depot|sandbox)/" \\\n  | grep -vE "/(_bitacora|_templates|_impressions|_scripts)/" \\\n  | grep -vE "^_+[^/]*/\\.gitkeep$" > /tmp/opencode/strip.txt\necho "files to strip: $(wc -l < /tmp/opencode/strip.txt)"\ngit rm -r -q --cached $(cat /tmp/opencode/strip.txt | tr "\\n" " ") 2>&1 | tail -1\n# re-add the 4 kinds (artifacts excluded by ignore)\nfor k in _bitacora _templates _impressions _scripts; do\n  find _atelier _codex _knowledge _trove _depot _sandbox -type d -name "$k" 2>/dev/null | while read d; do git add "$d" 2>/dev/null; done\ndone\ngit add .gitignore\necho "staged now: $(git diff --cached --name-only | wc -l)"\necho "artifacts staged: $(git diff --cached --name-only | grep -cE "_rustlib/target/|_golib/ann" || echo 0)"\ngit diff --cached --name-only | cut -d/ -f1 | sort | uniq -c | sort -rn' 
+# DATE: 2026-08-01T17:21:49-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+files to strip: 144
+fatal: pathspec '_atelier/common/_notes/chrome' did not match any files
+staged now: 843
+artifacts staged: 0
+0
+    594 _codex
+    208 _trove
+     40 _knowledge
+      1 .gitignore
+# exit: 0

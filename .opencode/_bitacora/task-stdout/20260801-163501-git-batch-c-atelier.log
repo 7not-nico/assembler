@@ -1,0 +1,7 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\ngit add _atelier\necho "staged: $(git diff --cached --name-only | wc -l)"\ngit commit -m "Atelier — project folders (harness, common, one-timers, study-sessions)" 2>&1 | head -2\ngit push 2>&1 | tail -2' 
+# DATE: 2026-08-01T16:35:01-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+staged: 3967
+[master 68e9c8b] Atelier — project folders (harness, common, one-timers, study-sessions)
+ 3967 files changed, 136534 insertions(+)

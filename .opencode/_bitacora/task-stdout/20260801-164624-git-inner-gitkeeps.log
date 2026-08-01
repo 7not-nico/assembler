@@ -1,0 +1,18 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\ngit add .gitignore $(find _atelier _codex _knowledge _trove _depot -name .gitkeep 2>/dev/null)\necho "staged: $(git diff --cached --name-only | wc -l)"\ngit commit -m "Inner _-folder placeholders inside aggregator domains" 2>&1 | head -2\ngit push 2>&1 | tail -2' 
+# DATE: 2026-08-01T16:46:24-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+The following paths are ignored by one of your .gitignore files:
+_atelier
+_codex
+_depot
+_knowledge
+_trove
+hint: Use -f if you really want to add them.
+hint: Disable this message with "git config set advice.addIgnoredFile false"
+staged: 1
+[master e51e5d1] Inner _-folder placeholders inside aggregator domains
+ 1 file changed, 5 insertions(+), 11 deletions(-)
+To https://github.com/7not-nico/assembler.git
+   a4a180a..e51e5d1  master -> master
+# exit: 0

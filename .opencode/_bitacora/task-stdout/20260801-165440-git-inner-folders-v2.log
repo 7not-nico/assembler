@@ -1,0 +1,15 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\ngit reset -q\ngit add .gitignore AGGREGATORS.md _sandbox/.gitkeep\nfind _atelier _codex _knowledge _trove _depot _sandbox -mindepth 2 -type d -name "_*" 2>/dev/null | while read d; do git add "$d" 2>/dev/null; done\necho "staged: $(git diff --cached --name-only | wc -l)"\necho "rlib/ann/target staged: $(git diff --cached --name-only | grep -cE "rlib|/ann$|/target/" || echo 0)"\necho "largest staged:"; git diff --cached --name-only | xargs -I{} du -k "{}" 2>/dev/null | sort -rn | head -3\ngit commit -m "Aggregator inner _-folders — shared substrate tracked (templates, bitacoras, scripts); _sandbox domain added" 2>&1 | head -2\ngit push 2>&1 | tail -2' 
+# DATE: 2026-08-01T16:54:40-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+staged: 456
+rlib/ann/target staged: 388
+largest staged:
+5304	_trove/_templates/_rustlib/target/release/deps/libserde_core-5660f51f2269494c.rlib
+5304	_knowledge/_templates/_rustlib/target/release/deps/libserde_core-5660f51f2269494c.rlib
+5304	_codex/_templates/_rustlib/target/release/deps/libserde_core-5660f51f2269494c.rlib
+[master c466705] Aggregator inner _-folders — shared substrate tracked (templates, bitacoras, scripts); _sandbox domain added
+ 456 files changed, 4182 insertions(+), 4 deletions(-)
+To https://github.com/7not-nico/assembler.git
+   0b8798a..c466705  master -> master
+# exit: 0
