@@ -186,3 +186,21 @@ Three new Java fixtures cover the remaining cloth-config layers (all through bit
 **Bug fixed**: serializers fixture `SERIALIZER_FORMATS` sed didn't strip `.java` suffix (showed `.java,Dummy.java,…`); fixed `s/ConfigSerializer\.java//` + leading/trailing comma trim.
 
 **Full cloth suite** (5 fixtures, all pass): config=150, api=16, animators=13, serializers=7, entries=30. Covers the cloned repo's complete layer surface: structural count, API factory surface, animator hierarchy, serializer formats, entry rows.
+
+## Follow-up: fixture-cloth-docs — Context7 docs-vs-code conformance (same session)
+
+**Context7 as documentation oracle**: resolved `/websites/shedaniel_gitbook_io_cloth-config` (62 snippets, High rep). Extracted the documented API:
+- Option creation: `entryBuilder.startStrField(...).setDefaultValue().setTooltip().setSaveConsumer().build()`
+- Screen setup: `ConfigBuilder.create().setParentScreen().setTitle()`
+
+**`fixture-cloth-docs.sh`** — three conformance checks encoding the gitbook contract against the clone:
+
+| Check | Contract | Result |
+|---|---|---|
+| C1 | 9 documented option methods present in ConfigEntryBuilder.java | 9/9 |
+| C2 | 4 builder-chain setters (setDefaultValue/setTooltip/setSaveConsumer/build) in impl/builders | 4/4 |
+| C3 | ConfigBuilder.create() + setParentScreen + setTitle | 3/3 |
+
+`RESULT=pass:docs-conformant` (else `fail:drift`), log via original wrapper, SHA ada4e7e1.
+
+**Design value**: the fixture encodes the *documented* contract — future cloth-config upgrades that break the gitbook API (renames, removed setters) are caught by the fixture as drift. Cloth suite now 6: config=150, api=16, animators=13, serializers=7, entries=30, docs=conformant.

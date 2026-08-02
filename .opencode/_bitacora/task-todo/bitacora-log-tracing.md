@@ -35,6 +35,7 @@ Status: completed
   - [x] trace-useful.sh — useful-log tracer: collapses PATH-scan ENOENT bursts, surfaces real exec tree; 15 raw → 4 useful events (buggy-script)
   - [x] cloth-config fixtures: fixture-cloth-config.sh (structural, pass:150), fixture-cloth-api.sh (API surface, pass:16); awk ternary paren fix, threshold corrections
   - [x] cloth suite expanded to 5: + fixture-cloth-animators.sh (pass:13), fixture-cloth-serializers.sh (pass:7), fixture-cloth-entries.sh (pass:30); serializer FORMATS comma-trim fix
+  - [x] fixture-cloth-docs.sh — Context7 docs-vs-code conformance: 9/9 documented methods, 4/4 chain setters, 3/3 screen API; RESULT=pass:docs-conformant
   - [x] fixture-trace-useful.sh — mode-aware (deferred under bitacora / standalone full trace); fixed nested-tracexec EPERM hang (was clearing BITACORA_SELF_TRACED → ptrace EPERM stall)
   - [x] trace-strace.sh — syscall-level tracer (strace 7.0): per-process exits expose masked failures (127 command-not-found, 2 ls error); PATH scans collapsed, locale/ld.so noise dropped; label parsed from error write (child never execs)
   - [x] fixture-trace-strace.sh — mode-aware; standalone pass:4 (PIDS=4, FAILED=117, exit127+exit2 surfaced, scans collapsed)
