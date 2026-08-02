@@ -166,3 +166,9 @@ Errors found: awk ternary-in-printf needs parens (`printf "%.2f", (f > 0 ? s / f
 **Native flags duplicating tracer python logic** (all present in local 0.17.0): `--show-cwd`, `--decode-errno`, `--diff-env`, `--diff-fd`, `--show-interpreter`, `--show-cmdline`, `--successful-only`, `--timestamp`.
 
 **eBPF nesting test**: `tracexec ebpf log` → `Failed to increase rlimit for memlock` (CapEff=0); `sudo -n` → password required. Kernel 7.1.5-1-cachyos is eBPF-capable (≥5.17) but this session lacks capabilities — eBPF nesting experiment blocked on sudo. Hypothesis: `tracexec ebpf collect` under bitacora-log's ptrace tracexec should work (no ptrace in eBPF path) — needs a privileged run to verify.
+
+## Follow-up: trace-native refactor (native flags) + fixture fix
+
+**Refactor per docs study**: `trace-native.sh` replaces python re-parsing with tracexec's native log frontend — `--show-cwd --decode-errno --diff-env --diff-fd --show-interpreter --show-comm` (+ optional `--successful-only`). Verified: errno decoded natively, interpreter shown, env diff (`M"SHLVL"`), fd diff (`stderr="/dev/null"`), cwd (`at "..."`). `--successful-only` drops the 11-line PATH-scan noise → 5-event clean tree.
+
+**Fixture bug fixed**: `fixture-trace-native.sh` CWD_LINES regex required a closing quote `at "/home/eddyr/assembler"` but the fixture's `cd $(dirname $0)` makes the traced cwd `…/fixtures`, so the actual line is `at "/home/eddyr/assembler/.opencode/_scripts/fixtures"` — no match. Fix: drop the closing quote → prefix match. Standalone `RESULT=pass:1` (CWD_LINES=4), deferred `pass:deferred` (log f17e825f).
