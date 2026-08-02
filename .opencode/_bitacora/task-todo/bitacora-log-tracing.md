@@ -21,6 +21,7 @@ Status: completed
 - [x] --trace FORMAT flag: persist full export (json/json-stream/perfetto) for deep analysis
 - [x] Fix perfetto binary-protobuf summary gap (honest note + TRACE_FILE key)
 - [x] Fixture suite: 10 synthetic + 10 _scripts code fixtures + Ruby toolchain fixture
+- [x] fixture-ruby-sim.sh — composes the 3 _sandbox Ruby programs (random-sum, random-stats, monte-carlo) through the wrapper; SKIP gracefully on fresh clone (gitignored _sandbox); verified pass:3 (log 211147)
 - [x] Verify: Go CLI, Ruby analyzers, pipes, multi-toolchain (bash→ruby→assembler-cli) chains
 - [x] Document session in bitacora (todo + report)
 - [x] Bug-tracing .sh toolchain (3 scripts in _sandbox/)

@@ -91,3 +91,15 @@ Three tracers in `_sandbox/`, each distinct:
 
 **Composition verified**: all 3 tracers + bitacora-log.sh — provenance header + live stream + EXEC genealogy + SHA in one log each (trace-bug: 210058, trace-stream: 210321).
 
+## Follow-up: fixture-ruby-sim (same session)
+
+`fixture-ruby-sim.sh` composes the 3 `_sandbox` Ruby simulation programs through the wrapper:
+
+| Run | Contract line | Exit |
+|---|---|---|
+| random-sum.rb | `RUN_random-sum=203` | 0 |
+| random-stats.rb | `RUN_random-stats=sum:67;mean:9.57;std:1.68;n:7` | 0 |
+| monte-carlo.rb | `RUN_monte-carlo=chi2:96.1;p:0.021;mean:48.89;trials:500` | 0 |
+
+`RESULT=pass:3`, exit 0, log `20260801-211147-fixture-ruby-sim.log`, SHA `7e7c7ea6…`. EXEC genealogy captures all 3 ruby invocations (PIDs 541363/541370/541377) in both the `--version` probe phase and the real run. Graceful `RESULT=skip:none` when gitignored `_sandbox/` absent (fresh clone).
+
