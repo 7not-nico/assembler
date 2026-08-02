@@ -75,6 +75,6 @@ Protocol use excluded for:
 - `ILL.PROTOCOL.STRUCTURE` — protocol file creation walkthrough
 - `PROT.META.IDENTITY` — abstract governance rules (redirect target)
 - `TERM.PROTOCOL` — definition of protocol vs pattern vs term
-- `PROT.META.ENTITY.ROUTING` — ID prefix routing for entity types
+- `SPEC.ENTITY.ROUTING.TABLE` — ID prefix routing for entity types
 - `PROT.LLM.SPECIFICATION` — contract + gotcha framing rules for LLM-facing content
 - `PROT.META.NAMING.SCHEMA` — naming convention and prefix set

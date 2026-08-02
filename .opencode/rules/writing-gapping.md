@@ -1,6 +1,4 @@
-The second clause of a parallel structure omits the repeated verb.
-
-Example: `db.writes config; file, output` not `db.writes config; file.writes output`
+The second clause of a parallel structure omits the verb that repeats.
 
 Scope: second clause only, use recoverably identical verb.
 

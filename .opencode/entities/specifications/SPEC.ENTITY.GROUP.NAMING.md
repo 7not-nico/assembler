@@ -2,7 +2,7 @@
 
 ## Rules
 
-- Entity group names use the `-ic` suffix: Axiomatic (pertaining to axioms), Encyclopedic (pertaining to comprehensive knowledge), Architectonic (pertaining to systematic structure). Chronicle (from Greek *chronika* "of time") follows the same semantic pattern. Composition is the exception — named for its composing role rather than its formal nature.
+- Entity group names use the `-ic` suffix: Axiomatic (pertaining to axioms), Encyclopedic (pertaining to comprehensive knowledge), Architectonic (pertaining to systematic structure). Chronicle (from Greek *chronika* "of time") follows the same semantic pattern. Composition is the exception — its name describes its role, not its formal nature.
 - Entity directory names under `entities/` are plural nouns — `abstractions/`, `cognitions/`, `protocols/`, `terms/`; except for sciences (`biology/`, `chemistry/`) which are fields of study (singular).
 - Nexus is both singular and plural (Latin 4th declension).
 

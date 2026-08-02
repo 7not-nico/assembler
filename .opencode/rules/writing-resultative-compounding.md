@@ -1,4 +1,4 @@
-Verb and result fuse into a hyphenated compound.
+Verb and result fuse into a compound with a hyphen.
 
 Pattern: `verb-result` (action + outcome)
 

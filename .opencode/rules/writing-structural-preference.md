@@ -1,5 +1,5 @@
-Structured formatting (lists, tables, code blocks, key-value pairs) carries multi-element content; prose paragraphs carry narrative, explanation, or sequence.
+A list, table, code block, or key-value pair carries multi-element content; a prose paragraph carries narrative, explanation, or sequence.
 
-Scope: block-level. ≥3 related items → structured format. Prose reserved for narrative, explanation, or sequence.
+Scope: block-level. ≥3 items that relate → a table or list. Prose carries narrative, explanation, or sequence.
 
 Composes with `RUL.WRITING.CONVENTION` — one of 22 writing conventions.

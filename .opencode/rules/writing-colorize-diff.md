@@ -1,6 +1,6 @@
-Each proposed change presents as a rule with description, scope, composes with, and a colorized diff block.
+Each change presents as a rule with description, scope, composes with, and a diff block in color.
 
-Scope: block-level. Applies to every proposed change during review.
+Scope: block-level. Applies to every change under review.
 
 Format:
 

@@ -1,4 +1,4 @@
-Functions use `camelCase` naming.
+Functions use the `camelCase` name form.
 
 Scope: file-level.
 

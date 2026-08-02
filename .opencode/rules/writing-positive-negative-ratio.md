@@ -1,4 +1,4 @@
-Instruction blocks maintain ≥3:1 positive-to-negative ratio. Negative proportion >40% triggers instruction-breakdown; >60% → static generation loops.
+Instruction blocks maintain ≥3:1 positive-to-negative ratio. Negative proportion >40% triggers instruction-breakdown; >60% → static output loops.
 
 Scope: instruction-block-level. Measure ratio across all directives in a single prompt or instruction block.
 

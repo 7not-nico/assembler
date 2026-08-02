@@ -1,30 +1,30 @@
-**Entity Reclassification** — ID change requires full cross-reference audit. Grep all files, update every match.
+**Entity Reclassification** — an ID change requires a full cross-reference audit. Grep all files, update every match.
 
 ## Model
 
 - Every entity ID (TERM.FOO, SPEC.DRY, etc.) may appear as a cross-reference in any other entity file.
 - Cross-references use the full ID string in frontmatter fields (`related:`, `source:`, `patterns:`, `terms:`).
 - Cross-references also appear in body text (`## See also` lists, prose references).
-- Changing an entity's ID produces stale references that produce sync errors, search failures, and broken navigation.
+- An entity ID change produces stale references that produce sync errors, search failures, and broken navigation.
 
 ## Rules
 
-- Entity reclassification requires a grep of all `.md` files in `entities/` for the exact old ID string.
-- Each match is updated to the new ID. Partial matches (e.g. TERM.FOO matching within TERM.FOOBAR) also require inspection.
-- After updating, all entity types are synced and cross-references are verified via patlib lookup.
-- Illustration files with embedded example IDs are updated despite being prose examples.
-- Protocol files containing the old ID in example text or rule descriptions are updated to match.
-- Longest IDs are processed first to avoid partial replacement artifacts (TERM.QUANTITATIVE before TERM.QUANTI).
+- To reclassify an entity, grep all `.md` files in `entities/` for the exact old ID string.
+- Update each match to the new ID. Partial matches (e.g. TERM.FOO matching within TERM.FOOBAR) also need a look.
+- After the update, sync all entity types and verify cross-references via patlib lookup.
+- Illustration files with embedded example IDs receive the update despite being prose examples.
+- Protocol files that contain the old ID in example text or rule descriptions receive the update to match.
+- Process longest IDs first to avoid artifacts of partial replacement (TERM.QUANTITATIVE before TERM.QUANTI).
 
 ## Applicability
 
-Any entity ID change: reclassification (TERM→COG, TERM→CON), rename, umbrella restructuring. Does not apply to content-only edits where the ID remains unchanged.
+Any entity ID change: reclassification (TERM→COG, TERM→CON), rename, umbrella restructure. Does not apply to content-only edits where the ID remains unchanged.
 
 ---
 id: SPEC.ENTITY.RECLASSIFY.AUDIT
 title: Entity Reclassification — Rename Requires Cross-Reference Audit
 source: assembler
-summary: "Changing an entity's type prefix (TERM → COG) or ID creates stale cross-references. Every reclassification must grep all entity files for the old ID and update each match."
+summary: "An entity ID change (type prefix TERM → COG, or full rename) creates stale cross-references. Every reclassification greps all entity files for the old ID and updates each match."
 specifies: Cross-reference audit required before entity reclassification
 tags: [entity, reclassification, cross-reference, audit, consistency, migration, specification]
 status: active

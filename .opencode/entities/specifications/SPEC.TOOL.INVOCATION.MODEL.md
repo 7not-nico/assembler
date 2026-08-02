@@ -3,8 +3,8 @@
 ## Contexts
 
 Two invocation contexts: Shebang CLI and Custom IPC Tool.
-Shebang CLI is scoped to subprojects, human-audience, invoked via `bun run <file>`, no export, requires shebang, outputs to stdout, discovered manually, uses `read-*`/`write-*`/`audit-*` I/O prefixes.
-Custom IPC Tool is scoped to root, agent-audience, auto-discovered by OpenCode, uses `export default tool({...})`, no shebang, returns value via toolResult, auto-discovered, name signals direction.
+Shebang CLI serves subprojects and humans — invocation runs via `bun run <file>`, no export, requires shebang, outputs to stdout, discovery happens manually, uses `read-*`/`write-*`/`audit-*` I/O prefixes.
+Custom IPC Tool serves root and agents — OpenCode discovers it automatically, uses `export default tool({...})`, no shebang, returns value via toolResult, auto-discovery, name signals direction.
 
 ## Rules
 

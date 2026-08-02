@@ -1,4 +1,4 @@
-The codebase organizes its work into atomic units. Each unit carries one responsibility, operates independently, and composes with other units. Work proceeds by combining units.
+The codebase organizes its work into atomic units. Each unit carries one responsibility, operates independently, and composes with other units. Work proceeds when units compose.
 
 Scope: codebase-level.
 

@@ -1,4 +1,4 @@
-The system flags shared code. Duplicated logic surfaces for extraction, so one behavior lives in one place.
+The system flags code that recurs. Duplicate logic seeks one home, so one behavior lives in one place.
 
 Scope: system-level.
 

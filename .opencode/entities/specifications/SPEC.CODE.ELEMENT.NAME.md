@@ -1,4 +1,4 @@
-**Code Element Name** — naming convention per element type based on abstract/concrete noun classification, derivation order, and agentive suffix pattern.
+**Code Element Name** — each element type follows one name convention. The convention sets noun class (abstract or concrete), element order, and agentive suffix pattern.
 
 ## Noun classification
 
@@ -26,11 +26,11 @@ One word, singular concrete noun, lowercase. Names a specific, observable thing 
 
 ### Method
 
-One or two words, camelCase. When two words: first word is an optional concrete noun (the subject matter), second word is an agentive noun formed by verb root + `{vowel}r` suffix — names "one who performs the action" on that subject. When one word: agentive noun alone — subject is implicit in the struct receiver.
+One or two words, camelCase. When two words: first word is an optional concrete noun (the subject matter), second word is an agentive noun from verb root + `{vowel}r` suffix — names "one who performs the action" on that subject. When one word: agentive noun alone — subject is implicit in the struct receiver.
 
 **Pattern:** `[subjectNoun] + agentiveNoun`
 
-**Subject noun omitted when:** the concrete noun equals an existing function name (shadowing prevention). The struct receiver provides the implied subject context.
+**Subject noun omitted when:** the concrete noun equals an existing function name (shadow prevention). The struct receiver provides the implied subject context.
 
 **Agentive suffix `{vowel}r`** — the verb root plus a vowel (`a`, `e`, `i`, `o`, `u`, `y`) followed by `r`:
 
@@ -48,7 +48,7 @@ Invalid: `parseData` (verb-led imperative), `dataParsing` (gerund), `dataValidat
 
 ### Variable
 
-One word, singular concrete descriptor, lowercase. No verbs. Declared at file top.
+One word, singular concrete descriptor, lowercase. No verbs. The declaration sits at file top.
 
 - Valid: `index`, `count`, `handle`, `path`, `label`, `limit`, `port`, `size`
 - Invalid: `counter` (agentive noun), `itemList` (two words), `theIndex` (article prefix), `getIndex` (verb prefix)
@@ -62,7 +62,7 @@ One word, singular abstract descriptor, Upper case (PascalCase). No verbs.
 
 ## Derivation order
 
-Element derivation follows outer→inner priority order. Outer concepts precede inner concrete references.
+Elements derive in outer→inner priority order. Outer concepts precede inner concrete references.
 
 - Step 1 — Struct (abstract noun): "What concept owns this domain?"
 - Step 2 — Function (concrete noun): "What concrete thing exists in this domain?"
@@ -82,11 +82,11 @@ Method:     entryParser     (subject "entry" ≠ function "record")
 Method:     parser          (subject dropped — "data" implied by struct)
 ```
 
-Function `record` publishes claim on that noun. Method avoids by picking `entry` or dropping subject entirely. `Data.parser()` reads as "data parser" — subject implied by receiver type.
+Function `record` publishes claim on that noun. Method avoids the claim — it picks `entry` or drops the subject entirely. `Data.parser()` reads as "data parser" — subject implied by receiver type.
 
-## Shadowing prevention
+## Shadow prevention
 
-Shadowing occurs when a method's first segment (concrete noun) matches an existing function name. Method first segment must differ from every function name.
+A shadow occurs when a method's first segment (concrete noun) matches an existing function name. Method first segment must differ from every function name.
 
 Two exits when intended subject noun equals a function name:
 
@@ -125,7 +125,7 @@ Methods at minimum one word (when subject dropped) or two words (when subject pr
 
 ## Exception
 
-Agentive nouns formed by verb root + `{vowel}r` suffix constitute the sole derived noun class permitted in code element names. All other derived nouns remain prohibited.
+Agentive nouns from verb root + `{vowel}r` suffix constitute the sole derived noun class that code element names allow. All other derived nouns remain prohibited.
 
 ## Applicability
 

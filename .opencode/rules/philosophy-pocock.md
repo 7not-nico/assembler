@@ -1,5 +1,5 @@
-**Pocock Principles** — structured progression with referencability, combining directed and undirected modes.
+**Pocock Principles** — progress in clear steps with referencability; it combines directed and undirected modes.
 
-Scope: session-level. Applies to layered learning workflows.
+Scope: session-level. Applies to study workflows that stack in layers.
 
 Composes with `RUL.PHILOSOPHY.PRINCIPLE` — one of 5 philosophy principle sets.

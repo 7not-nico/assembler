@@ -1,4 +1,4 @@
-Files carry a contract header describing module boundary.
+Files carry a contract header that states the module boundary.
 
 Scope: file-level.
 

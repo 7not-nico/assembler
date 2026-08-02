@@ -14,7 +14,7 @@ Five body sections: `## Protocol` (required, contract with positive instructions
 - `## Gotchas` pairs every hard stop with a positive redirect
 - `## Enforcement` moves deterministic checks out of prompt into tool or convention
 - Tags use inline array format `[tag1, tag2]`
-- Protocol body states general contracts only, no concrete named references
+- Protocol body states general contracts only, no references to concrete names
 
 ---
 id: SPEC.PROTOCOL.SCHEMA.STRUCTURE

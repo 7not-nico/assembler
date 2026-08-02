@@ -1,4 +1,4 @@
-DRY, orthogonality, broken window, deliberate programming, tracer bullets, and related craftsmanship maxims.
+DRY, orthogonality, broken window, deliberate code, tracer bullets, and craftsmanship maxims that relate.
 
 Scope: session-level. Applies to engineering and quality decisions.
 

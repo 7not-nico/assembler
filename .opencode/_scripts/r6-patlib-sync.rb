@@ -6,12 +6,13 @@
 require_relative "_rb/loader"
 require_relative "_rb/frontmatter"
 require_relative "_rb/patlib"
+require_relative "_rb/paths"
 require "sqlite3"
 require "yaml"
 require "pathname"
 require "json"
 
-Root = Pathname.new(__dir__).parent
+Root = ROOT
 DbPath = Root.join(".opencode", "patlib.db").to_s
 EntityDir = Root.join(".opencode", "entities").to_s
 RuleYaml = Root.join(".opencode", "rules", "yamls").to_s

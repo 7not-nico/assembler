@@ -45,7 +45,7 @@ Rule 8 — `state-profile` field declares the skill memory model per PROT.SKILL.
 
 ### Registration
 
-Rule 9 — Skill authors create one `SKILL.md` per directory. Frontmatter fields: name (required, matches directory), description (required, starts with "Use this skill when"), state-profile (required), related (optional), patterns (optional), terms (optional).
+Rule 9 — Skill authors create one `SKILL.md` per directory. Frontmatter fields: name (required, matches directory), description (required, starts with "Use this skill when"), state-profile (required), nexus (optional, one NEX.* entity the skill composes).
 
 Rule 10 — `write-sync --type skills` compiles skill directories into patlib. Each directory produces one skills table entry.
 

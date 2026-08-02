@@ -1,4 +1,4 @@
-Functional Rust powers the core logic. Pure functions and immutable data carry the emulation core, so the heavy computation stays predictable and parallel-safe.
+Functional Rust powers the core logic. Pure functions and immutable data carry the core emulator, so heavy compute stays predictable and parallel-safe.
 
 Scope: language-level.
 

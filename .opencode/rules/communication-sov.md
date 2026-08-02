@@ -2,7 +2,7 @@ Every sentence follows a subject-first structure (Subject → Object → Verb). 
 
 Scope: sentence-level. Prose mode only — applies to explanatory text, instructions, and declarative statements.
 
-Composes with `RUL.COMMUNICATION.SYSTEM` — one of 12 communication principles.
+Composes with `RUL.COMMUNICATION.SYSTEM` — one of 13 communication principles.
 
 Distinct from `RUL.LAMBDA.LINGUISTICS`: SOV uses full verbal phrases; lambda notation uses subject.object.action compact form. Bridge `RUL.COMMUNICATION.PROSE.NOTATION` resolves scope.
 

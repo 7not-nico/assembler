@@ -31,4 +31,4 @@ Not applicable for pairs (use direct `related` link) or unrelated clusters.
 
 - `ILL.TERM.UMBRELLA.GROUP` — umbrella term walkthrough — PNN hierarchy setup
 - TERM.PHYSICS.DEFINED.NEURAL.NETWORKS — example umbrella (PNN, PINN, HPN)
-- PROT.META.ENTITY.ROUTING — related naming convention for entity IDs
+- SPEC.ENTITY.ROUTING.TABLE — related naming convention for entity IDs

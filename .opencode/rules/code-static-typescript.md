@@ -1,4 +1,4 @@
-Static TypeScript constructs imperative shells. Typed boundaries wrap the imperative interaction layer, so side effects live behind a checked interface.
+Static TypeScript constructs imperative shells. Typed boundaries wrap the imperative layer, so side effects live behind an interface that checks types.
 
 Scope: language-level.
 

@@ -1,11 +1,11 @@
-**Entity Distinction** — three principle entity types (protocol, pattern, maxim) use generalized terms only. Concrete named references belong in illustrations alone.
+**Entity Distinction** — three principle entity types (protocol, pattern, maxim) use generalized terms only. References to concrete names belong in illustrations alone.
 
 ## Content boundary
 
 - Protocol body uses generalized terms only — plugin names, file paths, scores, and concrete evaluations belong in illustrations.
 - Pattern body uses generalized terms only — concrete names, file paths, and specific instances belong in the paired illustration.
 - Maxim body uses generalized terms only — concrete examples belong in the paired illustration.
-- Illustration body names specific entities — every illustration references at least one concrete file, protocol ID, or code path. An illustration without named references requires reclassification.
+- Illustration body names specific entities — every illustration references at least one concrete file, protocol ID, or code path. An illustration without name references requires a class change.
 
 ## Decision tree
 

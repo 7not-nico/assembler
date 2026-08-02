@@ -2,7 +2,7 @@
 
 ## Rationale
 
-Structural-preference (`RUL.WRITING.CONVENTION`) prefers structured formats for multi-element content. Line-junction notation encodes relational semantics — emphasis, exception, qualification, precedence — directly into formatting. Formatting replaces explanatory prose for relationships the structure already expresses.
+Structural-preference (`RUL.WRITING.CONVENTION`) prefers structured formats for multi-element content. Line-junction notation encodes relational semantics — emphasis, exception, qualification, precedence — directly into format. Format replaces explanatory prose for relationships the structure already expresses.
 
 The `-` emphasis marker replaces generic list bullets with a semantic affordance. The `;` exception marker exempts the right side from the left side's rule — asymmetric, the left states the rule, the right states what falls outside it. The `,` qualification marker adds a condition or restriction to the left content. The top→bottom chain replaces manual "first, then" prose sequences.
 

@@ -21,7 +21,7 @@ Every DB-backed project derives its operational tools from manifests and schema 
 4. **Consume three inputs at step 4** — entities manifest, properties manifest, and `db.sql` schema. All three are required for tool generation.
 5. **Generate tools that satisfy all generated compliance constraints** — each generated tool must pass `PROT.TOOL.GENERATION.COMPLIANCE` checks.
 6. **Keep the scaffolding process deterministic** — same manifests produce identical tools every run.
-7. **Use ID prefix for entity routing** — the first segment of the dot-separated ID maps to the table name per `PROT.META.ENTITY.ROUTING`.
+7. **Use ID prefix for entity routing** — the first segment of the dot-separated ID maps to the table name per `SPEC.ENTITY.ROUTING.TABLE`.
 
 ## Rationale
 
@@ -37,7 +37,7 @@ Every DB-backed project derives its operational tools from manifests and schema 
 | Tool generation skips a step | Manifests for a previous step absent | Run all prior steps in order — each step depends on the previous step's manifest |
 | Generated tool fails compliance audit | Tool generated while `audit-tool` reports violations | Regenerate with PROT.TOOL.GENERATION.COMPLIANCE enforcement. Generated tools must pass the same audit as hand-written tools |
 | Hand-crafted tool when generation exists | Tool matches a generated tool pattern while written manually | Regenerate from manifests — hand-crafting duplicates knowledge already encoded in manifests |
-| Entity routing mismatch in generated tool | Generated tool uses wrong table name for an entity prefix | Use ID prefix routing from PROT.META.ENTITY.ROUTING — the first segment maps to the table name |
+| Entity routing mismatch in generated tool | Generated tool uses wrong table name for an entity prefix | Use ID prefix routing from SPEC.ENTITY.ROUTING.TABLE — the first segment maps to the table name |
 
 ## Enforcement
 
@@ -53,6 +53,6 @@ Any AMANDA project that uses the bootstrap-db pipeline. Excluded for projects wi
 - `PROT.TOOL.DEFINITION` — Custom IPC Tool pattern that generated tools must follow
 - `PROT.TOOL.AUTOMATON` — `// @toolclass` annotation for generated tools
 - `PROT.LIB.DIRECTORY.LAYER` — lib path convention for generated `lib/db.ts`
-- `PROT.META.ENTITY.ROUTING` — ID prefix routing for entity tables
+- `SPEC.ENTITY.ROUTING.TABLE` — ID prefix routing for entity tables
 - `bootstrap-db` skill — pipeline steps 1–3
 - `scaffold-tools` skill — pipeline step 4 implementation

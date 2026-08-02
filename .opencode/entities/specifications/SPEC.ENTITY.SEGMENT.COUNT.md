@@ -1,10 +1,10 @@
-**Entity Segment Count** — entity ID segment count is determined by prefix convention per topological group.
+**Entity Segment Count** — entity ID segment count follows the prefix convention per topological group.
 
 ## Rule
 
 - Axiomatic group (MAX, PRE, SPEC): PREFIX.DOMAIN.SUBJECT.ASPECT — 4 segments. Identity is the exception: IDENTITY.{NAME} — 2 segments (domainless per IDENTITY.SCHEMA naming).
 - Composition group (PROT, PAT, NEX, ILL, REF): PREFIX.DOMAIN.ASPECT — 3 segments.
-- Encyclopedic group (COG, CON, DEF, TAX, TERM, BIO, CHE): PREFIX.DOMAIN.SUBJECT — 3 segments, all required.
+- Encyclopedic group (COG, CON, DEF, TAX, TERM, BIO, CHE): PREFIX.DOMAIN.SUBJECT — 3 segments, all mandatory.
 - Architectonic group (RUL, CMD, SKL, TOOL): PREFIX.DOMAIN.SUBJECT — 3 segments.
 - Chronicle group (PER, INV, APO, MAN, ARC, NTE): PREFIX.DOMAIN.SUBJECT — 3 segments.
 

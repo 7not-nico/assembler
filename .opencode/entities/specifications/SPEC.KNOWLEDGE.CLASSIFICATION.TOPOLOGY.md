@@ -54,18 +54,18 @@ Ring 1: Investigation, Apologia, Manifest
 Ring 2: Archive, Note
 ```
 
-- Chronicle source points to any ring of any other grouping.
+- Chronicle source points to any ring of any other group.
 
 
 ## Applicability
 
-All entity classification and relationship decisions.
+All decisions about entity classes and relationships.
 
 ---
 id: SPEC.KNOWLEDGE.CLASSIFICATION.TOPOLOGY
 title: Knowledge Classification — Groups, Layers, Vectors
 source: assembler
-summary: "Five topological spaces with ordinal rings. Encyclopedic source points to the closest preceding entity — same ring when chain continues, inner ring when chain ends. Chronicles source any grouping not itself. Composition entities carry the morphism pipeline. Axiomatic entities are the formal foundation. Architectonic entities govern execution."
+summary: "Five topological spaces with ordinal rings. Encyclopedic source points to the closest preceding entity — same ring when chain continues, inner ring when chain ends. Chronicles source any group except their own. Composition entities carry the morphism pipeline. Axiomatic entities are the formal foundation. Architectonic entities govern what runs."
 tags: [ontology, classification, knowledge, entity-type, layers, vectors, specification]
 status: active
 ---

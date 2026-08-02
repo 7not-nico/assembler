@@ -11,19 +11,19 @@ The shared aspect becomes a first-class entity with:
 1. **Prefix** — `ASPECT.*` (e.g., `IDENTITY.*`), distinct from all existing prefixes
 2. **Directory** — `.opencode/entities/aspect/` (e.g., `.opencode/entities/identities/`)
 3. **Persistence** — `CREATE TABLE IF NOT EXISTS aspects (...)` in `_schemas/`
-4. **Parser** — `parseAspectFile` is added to `_lib/parse.ts`
-5. **Sync** — a `syncTable(...)` block is added to `sync.ts`
+4. **Parser** — `parseAspectFile` joins `_lib/parse.ts`
+5. **Sync** — a `syncTable(...)` block joins `sync.ts`
 6. **Registration** — `ENTITY_TYPES` and `ID_PREFIX_TO_ENTITY_TYPE` in `mcp-types.ts`; `PrefixToType` in `patlib.rb`; ring mapping in `rings.rb`
-7. **Enum** — the `type` enum in `patlib_search` and `patlib_get` is extended with the new type
+7. **Enum** — the `type` enum in `patlib_search` and `patlib_get` gains the new type
 
 ## After
 
 - Original entity files reference the extracted entity by ID only — no inline content
-- Source entity files remain; the extracted entity is a deduplication, not a deletion
+- Source entity files remain — the shared aspect deduplicates, never deletes
 
 ## Scope
 
-Entity system topology only — data extraction (e.g., extracting a shared field value to a lookup table) is not aspect extraction.
+Entity system topology only — data extraction (e.g., a shared field value that moves to a lookup table) is not aspect extraction.
 
 ---
 id: SPEC.ENTITY.ASPECT.EXTRACTION

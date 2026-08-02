@@ -1,4 +1,4 @@
-Declarative register ("X: required", "apply all constraints") frames instruction writing; imperative forms ("NEVER do X", "don't use Y") carry no instruction weight.
+Declarative register ("X: required", "apply all constraints") frames instruction prose; imperative forms ("NEVER do X", "don't use Y") carry no instruction weight.
 
 Scope: instruction-level. Apply to every constraint or directive in LLM-facing instructions.
 
