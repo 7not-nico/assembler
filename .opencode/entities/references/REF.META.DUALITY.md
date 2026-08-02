@@ -32,7 +32,7 @@ Excluded for flat entity types with no nesting hierarchy or single-attribute dom
 
 - `ILL.META.DUALITY.RECURSE` — bivalent entity recursion walkthrough
 - `PROT.META.DOMAIN.DIRECTORY` — single-level domain containers; extraction sibling to Bivalent Entity
-- `PROT.META.ENTITY.ROUTING` — first segment routing; Bivalent Entity extends routing to all subsequent segments
+- `SPEC.ENTITY.ROUTING.TABLE` — first segment routing; Bivalent Entity extends routing to all subsequent segments
 - `PROT.TERM.SCHEMA` — flat hierarchy via related links; Bivalent Entity allows deeper nesting where umbrella is limited to one level
 - `PROT.PROVENANCE.CLASSIFICATION` — domain membership is ascribed (design decision), excluded inherent
 - `RUL.ZERO.COPULA` — related linguistic compression; both patterns reduce structural overhead

@@ -73,7 +73,7 @@ Every AMANDA project storing data as files with YAML metadata. This pattern defi
 
 - `ILL.META.STRATUM.MAP` — concrete walkthrough through all four strata
 - `PROT.META.ENTITY.DUALITY` — recursion: entities become domains, domains become planes
-- `PROT.META.ENTITY.ROUTING` — ID prefix determines domain and table routing
+- `SPEC.ENTITY.ROUTING.TABLE` — ID prefix determines domain and table routing
 - `PROT.SCHEMA.COLON.QUOTING` — YAML frontmatter constraint
 - `PROT.META.DOMAIN.DIRECTORY` — domain extraction and lifecycle
 - `PROT.META.PROJECT.TOPOLOGY` — metadata-first principle; this pattern formalizes it

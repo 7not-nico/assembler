@@ -26,4 +26,4 @@ Every AMANDA project using YAML frontmatter or backmatter. Any project that upgr
 - `ILL.SCHEMA.COLON.FIX` — walkthrough of diagnosing and fixing an unquoted colon
 - `IDENTITY.YAML`
 - `MAX.CODE.DRY.PRINCIPLE`
-- `PROT.META.ENTITY.ROUTING`
+- `SPEC.ENTITY.ROUTING.TABLE`

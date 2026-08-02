@@ -55,7 +55,7 @@ When adding new content to `.opencode/`, determine the layer. Query existing ent
 - Entity directories (patterns, terms, protocols, abstractions, apologias, rules, skills, commands) belong at root only — subprojects reference them; local hosting excluded. Create new entities at root scope per `REF.META.ENTITY.ROOT`
 - Subproject receives its own `.db` when domain data needs queryable persistence across sessions per `REF.SCHEMA.DATABASE.OWNERSHIP` — flat files suffice for ephemeral or configuration data
 - Subproject structure follows tiered convention per `REF.META.PROJECT.STRUCTURE` — mandatory tools/, lib/, AGENTS.md, opencode.json; schemas/ required when `.db` exists; package.json required when external dependencies exist
-- Every tool is a morphism per `PROT.TOOL.MORPHISM` — shared objects in lib/, proprietary objects in the tool file; LLM/Architect composes; identity declared via `// @toolclass`
+- Every tool is a morphism per `PROT.TOOL.COMPOSITE` — shared objects in lib/, proprietary objects in the tool file; LLM/Architect composes; identity declared via `// @toolclass`
 
 **Layer reference**
 
