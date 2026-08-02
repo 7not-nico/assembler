@@ -172,3 +172,17 @@ Errors found: awk ternary-in-printf needs parens (`printf "%.2f", (f > 0 ? s / f
 **Refactor per docs study**: `trace-native.sh` replaces python re-parsing with tracexec's native log frontend — `--show-cwd --decode-errno --diff-env --diff-fd --show-interpreter --show-comm` (+ optional `--successful-only`). Verified: errno decoded natively, interpreter shown, env diff (`M"SHLVL"`), fd diff (`stderr="/dev/null"`), cwd (`at "..."`). `--successful-only` drops the 11-line PATH-scan noise → 5-event clean tree.
 
 **Fixture bug fixed**: `fixture-trace-native.sh` CWD_LINES regex required a closing quote `at "/home/eddyr/assembler"` but the fixture's `cd $(dirname $0)` makes the traced cwd `…/fixtures`, so the actual line is `at "/home/eddyr/assembler/.opencode/_scripts/fixtures"` — no match. Fix: drop the closing quote → prefix match. Standalone `RESULT=pass:1` (CWD_LINES=4), deferred `pass:deferred` (log f17e825f).
+
+## Follow-up: cloth suite expanded to 5 fixtures (same session)
+
+Three new Java fixtures cover the remaining cloth-config layers (all through bitacora-log.original.sh, trace-free):
+
+| Fixture | Layer | Key probes | Result |
+|---|---|---|---|
+| `fixture-cloth-animators.sh` | api/animator | ANIMATOR_FILES=13, INTERFACES=3, ABSTRACT=1, NAMED=12 | pass:13 |
+| `fixture-cloth-serializers.sh` | autoconfig/serializer | SERIALIZER_FILES=7, IMPLS=5, FORMATS=Dummy,Gson,Jankson,Toml4j,Yaml | pass:7 |
+| `fixture-cloth-entries.sh` | gui/entries | ENTRY_FILES=30, ABSTRACT=7, CONCRETE=22, LIST_SUBS=23, SLIDERS=2 | pass:30 |
+
+**Bug fixed**: serializers fixture `SERIALIZER_FORMATS` sed didn't strip `.java` suffix (showed `.java,Dummy.java,…`); fixed `s/ConfigSerializer\.java//` + leading/trailing comma trim.
+
+**Full cloth suite** (5 fixtures, all pass): config=150, api=16, animators=13, serializers=7, entries=30. Covers the cloned repo's complete layer surface: structural count, API factory surface, animator hierarchy, serializer formats, entry rows.
