@@ -131,3 +131,20 @@ Keyed contract: `EXEC_EVENTS`, `USEFUL_EVENTS`, `COLLAPSED_SCANS`, `FAILS`, `TRA
 
 Errors found: awk ternary-in-printf needs parens (`printf "%.2f", (f > 0 ? s / f : 0)`); assertion thresholds corrected to actuals (16 not >20).
 
+## Follow-up: trace-strace.sh (same session)
+
+**Complementary layer**: tracexec sees exec events only; strace sees every syscall — per-process exit codes expose failures masked by `exit 0`.
+
+| Feature | Detail |
+|---|---|
+| Process exits | `pid=X exit=127 FAIL missing_command (command not found)`, `pid=Y exit=2 FAIL ls /nonexistent-dir` — despite script exit 0 |
+| PATH scans | collapsed per binary: `missing_command: 20 probes` (100+ lines → 4) |
+| Noise dropped | locale `/usr/share/locale/*.mo`, `/etc/ld.so.preload` loader probes |
+| Real failures | first-occurrence per (syscall, path), deduped, 15-line cap |
+
+**Key finding — bash `command not found` child never execs**: bash resolves the PATH lookup in the parent (newfstatat probes), forks, then the child writes `"script.sh: line N: <cmd>: command not found"` to stderr and exits 127. The label must parse from the error write, not execve. Raw child syscalls: `close(255)` → redirect stderr to `/dev/null` → `write(2, "...")` → `exit_group(127)`.
+
+**Parser bugs fixed**: (1) exit capture lost when error-scan `continue` skipped exit_group lines; (2) PATH-scan regex matched inline `AT_FDCWD<path>` garbage — replaced with first-quoted-path extraction.
+
+**Fixture**: `fixture-trace-strace.sh` — mode-aware; standalone `RESULT=pass:4` (PIDS=4, FAILED=117, exit127 labeled, exit2 ls surfaced, scans collapsed), deferred `pass:deferred` (log 213449).
+
