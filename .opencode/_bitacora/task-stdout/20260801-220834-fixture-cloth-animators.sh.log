@@ -1,0 +1,25 @@
+# CMD: .opencode/_scripts/fixtures/fixture-cloth-animators.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T22:08:34-06:00
+# PID: 584914
+# DUR: 123ms
+# exit: 0
+# GIT: assembler@3d539f6
+# BRANCH: main
+# SESSION: a60e9dd4
+# TASK: cloth-suite
+# CLI: .opencode/_scripts/fixtures/fixture-cloth-animators.sh ANIMATOR_FILES=13
+# ARGS: (none)
+# CWD: /home/eddyr/assembler
+# --------------------
+ANIMATOR_FILES=13
+ANIMATOR_INTERFACES=3
+ANIMATOR_ABSTRACT=1
+ANIMATOR_CONCRETE=0
+ANIMATOR_NAMED=12
+RESULT=pass:13
+# OUT_LINES: 6
+# OUT_BYTES: 113
+# ERR_LINES: 0
+# SHA: ae8b18812476a388e230b32d078b4776695352caedbab75d1046c9b768cec345

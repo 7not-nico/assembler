@@ -1,0 +1,33 @@
+# CMD: .opencode/_scripts/fixtures/fixture-cloth-config.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T22:08:34-06:00
+# PID: 584439
+# DUR: 131ms
+# exit: 0
+# GIT: assembler@3d539f6
+# BRANCH: main
+# SESSION: f5401523
+# TASK: cloth-suite
+# CLI: .opencode/_scripts/fixtures/fixture-cloth-config.sh COMMIT=a7639ae
+# ARGS: (none)
+# CWD: /home/eddyr/assembler
+# --------------------
+COMMIT=a7639ae
+DEPTH=1
+JAVA_TOTAL=150
+JAVA_COMMON=145
+JAVA_FABRIC=2
+JAVA_FORGE=3
+API_JAVA=37
+API_INTERFACES=20
+API_ABSTRACT=5
+BUILDERS=27
+ENTRIES=30
+ANIMATORS=13
+SERIALIZERS=7
+RESULT=pass:150
+# OUT_LINES: 14
+# OUT_BYTES: 192
+# ERR_LINES: 0
+# SHA: f0fd9ea325f83059e1da843f12ceb65ea76c005afb2c0186cef3a3da6ce9d001

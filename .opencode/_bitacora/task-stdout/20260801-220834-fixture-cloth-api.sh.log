@@ -1,0 +1,27 @@
+# CMD: .opencode/_scripts/fixtures/fixture-cloth-api.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T22:08:34-06:00
+# PID: 584705
+# DUR: 127ms
+# exit: 0
+# GIT: assembler@3d539f6
+# BRANCH: main
+# SESSION: 9c2dca5f
+# TASK: cloth-suite
+# CLI: .opencode/_scripts/fixtures/fixture-cloth-api.sh FACTORY_METHODS=16
+# ARGS: (none)
+# CWD: /home/eddyr/assembler
+# --------------------
+FACTORY_METHODS=16
+START_METHODS=14
+START_RATIO=0.88
+BUILDER_TYPES=27
+LIST_ENTRY_SUBS=23
+IMPL_ABSTRACT=6
+FORGE_LOADERS=2
+RESULT=pass:16
+# OUT_LINES: 8
+# OUT_BYTES: 136
+# ERR_LINES: 0
+# SHA: ea2e75c859d673e7d06072790da9a6c434211de934702d7cdeb06892213f6c45
