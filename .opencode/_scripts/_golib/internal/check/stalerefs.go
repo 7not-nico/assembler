@@ -14,7 +14,9 @@ import (
 	"assembler/scripts/golib/internal/violation"
 )
 
-var entityPattern = regexp.MustCompile(`\b(PROT|PAT|NEX|ILL|REF|MAX|SPEC|PER|COG|CON|DEF|TERM|SKL|CMD|RUL|PRE|ABS|LING|BIO|CHE|TAX|ML|INV|APO|MAN|ARC|NOTE)\.[A-Z][A-Z0-9.]*`)
+// Segments must end in an alphanumeric — trailing sentence periods ("PROT.X.") are
+// not captured, so existing IDs with a following dot no longer false-positive.
+var entityPattern = regexp.MustCompile(`\b(PROT|PAT|NEX|ILL|REF|MAX|SPEC|PER|COG|CON|DEF|TERM|SKL|CMD|RUL|PRE|ABS|LING|BIO|CHE|TAX|ML|INV|APO|MAN|ARC|NOTE)\.[A-Z][A-Z0-9]*(?:\.[A-Z0-9]+)*`)
 
 var falsePositivePatterns = []string{
 	"pat.no.env", "pat.file.as", "pat.no.relative", "pat.no.shared",
