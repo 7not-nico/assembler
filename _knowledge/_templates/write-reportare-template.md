@@ -1,8 +1,8 @@
 ---
-id: TEMPLATE.WRITE.REPORT
-title: Write-Report Template — Session Report Form
+id: TEMPLATE.WRITE.REPORTARE
+title: Write-Reportare Template — Metrics-Led Report Form
 layer: precept/
-purpose: "Session-report template: what was done, decisions, errors, findings, metrics."
+purpose: "Metrics-led report template: quantitative values before narrative."
 naming: YYYYMMDD-HHMMSS-topic.md
 tags: [template, report, metrics]
 status: active

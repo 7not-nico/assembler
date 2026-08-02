@@ -113,7 +113,7 @@ end
 
 # Reports: session reports
 icount = 0
-Dir.glob(File.join(TPL_DIR, 'reports', '*.md')).each do |fp|
+Dir.glob(File.join(TPL_DIR, 'report', '*.md')).each do |fp|
   next if File.basename(fp) == 'report-template.md'
   name    = File.basename(fp)
   content = File.read(fp)

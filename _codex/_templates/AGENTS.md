@@ -100,7 +100,8 @@ Errors and findings feed template fixes — each session improves the next. `tem
 
 - bootstrap: AGENTS.template.md, scaffold-knowledge.sh, copy-skills.sh
 - layers: format, precept, procedure, research, concept, note, bitacora, glossary, schema, reference, fixtures, practice
-- codex dive layers: pattern-template.md, atomic-script-template.sh, precedence-chain.md, invariant-template.md, guideline-template.md, study-template.md, fixture-template.md, backup-template.md, dive-agents-template.md
+- codex dive layers: pattern-template.md, atomic-script-template.sh, precedence-chain.md, invariant-template.md, guideline-template.md, study-template.md, fixture-template.md, backup-template.md, dive-agents-template.md, dive-naming-conventions-template.md
+- codex dive precepts: precept-verify-qalc-template.md, precept-record-metrics-template.md, precept-run-fixtures-template.md, precept-atomic-documents-template.md, precept-use-ripgrep-template.md, precept-use-shared-browser-template.md
 - conventions: naming-conventions, write-report, browse-playwright, anchor-workflow
 - infrastructure: schema-template.sql, push-script-template.rb, report-template.md
 - tooling: run-logged.sh, slugify.sh, start-browser.sh, start-browser-headless.sh (copied into dives by copy-templates.sh)

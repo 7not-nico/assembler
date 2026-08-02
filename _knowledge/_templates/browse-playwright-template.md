@@ -1,3 +1,12 @@
+---
+id: TEMPLATE.BROWSE.PLAYWRIGHT
+title: Browse-Playwright Template — Browser Navigation Chain
+layer: procedure/
+purpose: "Browser step chain: search first, browse second, snapshot before acting."
+naming: action-domain.md
+tags: [template, browse, playwright]
+status: active
+---
 # browse-playwright.md
 
 **Layer:** procedure/

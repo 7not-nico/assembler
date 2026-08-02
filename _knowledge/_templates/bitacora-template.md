@@ -1,3 +1,12 @@
+---
+id: TEMPLATE.BITACORA
+title: Bitacora Template — Dive Record Form
+layer: bitacora/
+purpose: "Dive-record template: todo precedes work, report follows, timestamped."
+naming: YYYYMMDD-HHMMSS-name.md
+tags: [template, bitacora, record]
+status: active
+---
 # {NNN}-{DESCRIPTION}.md
 
 **Layer:** bitacora/

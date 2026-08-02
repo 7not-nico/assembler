@@ -1,3 +1,12 @@
+---
+id: TEMPLATE.PRECEPT
+title: Precept Template — Action-Domain Rule Form
+layer: precept/
+purpose: "Declarative rule template: rule, scope, order, example — one rule per file."
+naming: action-domain.md
+tags: [template, precept, rule]
+status: active
+---
 # {ACTION}-{DOMAIN}.md
 
 **Layer:** precept/

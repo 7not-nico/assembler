@@ -1,3 +1,12 @@
+---
+id: TEMPLATE.AGENTS
+title: AGENTS Template — Project Instructions Bootstrap
+layer: agents
+purpose: "Bootstraps a project's AGENTS.md: domain, structure, toolchain, records."
+naming: AGENTS.md
+tags: [template, agents, bootstrap]
+status: active
+---
 # {PROJECT-NAME} — AGENTS.md
 
 ## Domain

@@ -1,3 +1,12 @@
+---
+id: TEMPLATE.PROCEDURE
+title: Procedure Template — Numbered Step Chain Form
+layer: procedure/
+purpose: "Numbered step-chain template: atomic per workflow, informed by the morphism."
+naming: action-domain.md
+tags: [template, procedure, steps]
+status: active
+---
 # {ACTION}-{DOMAIN}.md
 
 **Layer:** procedure/

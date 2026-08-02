@@ -51,13 +51,27 @@ CHAIN = {
 
 count = 0
 
-# Templates: *-template.md files at root of _templates/
-Dir.glob(File.join(TPL_DIR, '*-template.md')).each do |fp|
+# Templates: *-template.md files at root of _templates/ (+ AGENTS.template.md, precedence-chain.md)
+TEMPLATE_GLOBS = ['*-template.md', 'AGENTS.template.md', 'precedence-chain.md']
+Dir.glob(TEMPLATE_GLOBS.flat_map { |g| File.join(TPL_DIR, g) }).uniq.each do |fp|
   name    = File.basename(fp)
   content = File.read(fp)
-  layer   = (content[/^\*\*Layer:\*\*\s*(.+)$/, 1] || 'bootstrap').strip.split(' ').first
-  purpose = content[/^\*\*Purpose:\*\*\s*(.+)$/, 1]&.strip ||
-            content[/^# (.+)$/, 1]&.strip || name
+
+  # frontmatter (superior metadata stratum) preferred over inline body lines
+  fm = {}
+  if content =~ /\A---\s*\n(.*?)\n---/m
+    $1.each_line do |line|
+      if line =~ /^([a-z_]+):\s*(.+)$/
+        fm[$1] = $2.strip.sub(/\A"|"\z/, '')
+      end
+    end
+  end
+
+  id      = fm['id'] || name
+  layer   = (fm['layer'] || content[/^\*\*Layer:\*\*\s*(.+)$/, 1] || 'bootstrap').strip.split(' ').first
+  purpose = fm['purpose'] || content[/^\*\*Purpose:\*\*\s*(.+)$/, 1] ||
+            content[/^# (.+)$/, 1] || name
+  purpose = purpose.to_s.strip
   chain_pos = CHAIN[layer]
 
   # tags: top-level ## headings + key terms in purpose (discriminative keywords)
@@ -90,7 +104,7 @@ Dir.glob(File.join(TPL_DIR, '*-template.md')).each do |fp|
      chain_pos=excluded.chain_pos, tags=excluded.tags, composes=excluded.composes,
      governs=excluded.governs, input=excluded.input, output=excluded.output,
      updated=datetime(\'now\')',
-    [name, layer, purpose, File.join('_templates', name), 'template', chain_pos,
+    [id, layer, purpose, File.join('_templates', name), 'template', chain_pos,
      tags.to_json, composes.to_json, governs.to_json, input, output]
   )
   puts "  TPL #{name} [#{layer} pos=#{chain_pos.inspect} tags=#{tags.length} comp=#{composes.length}]"
@@ -99,7 +113,7 @@ end
 
 # Reports: session reports
 icount = 0
-Dir.glob(File.join(TPL_DIR, 'reports', '*.md')).each do |fp|
+Dir.glob(File.join(TPL_DIR, 'report', '*.md')).each do |fp|
   next if File.basename(fp) == 'report-template.md'
   name    = File.basename(fp)
   content = File.read(fp)

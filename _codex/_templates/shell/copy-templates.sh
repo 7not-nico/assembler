@@ -25,7 +25,11 @@ echo "COPY   $KNOWLEDGE_SOURCE → $TARGET"
 # codex-specific dive templates (at _templates root) + tooling (in shell/)
 CODEX_FILES=(pattern-template.md atomic-script-template.sh precedence-chain.md
              invariant-template.md guideline-template.md
-             study-template.md fixture-template.md backup-template.md dive-agents-template.md)
+             study-template.md fixture-template.md backup-template.md dive-agents-template.md
+             dive-naming-conventions-template.md
+             precept-verify-qalc-template.md precept-record-metrics-template.md
+             precept-run-fixtures-template.md precept-atomic-documents-template.md
+             precept-use-ripgrep-template.md precept-use-shared-browser-template.md)
 SHELL_FILES=(start-browser.sh start-browser-headless.sh run-logged.sh slugify.sh)
 for f in "${CODEX_FILES[@]}"; do
   if [ -f "$CODEX_TEMPLATES/$f" ]; then
