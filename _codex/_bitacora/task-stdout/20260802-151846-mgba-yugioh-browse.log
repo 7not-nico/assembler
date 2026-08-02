@@ -1,0 +1,13 @@
+# CMD: bash _codex/mgba-repo/scripts/browse-romsfun.sh Yu-Gi-Oh\ 2006 game-boy-advance 60 
+# DATE: 2026-08-02T15:18:46-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+SEARCH https://romsfun.com/roms/game-boy-advance/?s=Yu-Gi-Oh%2B2006
+GAME https://romsfun.com/roms/game-boy-advance/yu-gi-oh-ultimate-masters-world-championship-tournament-2006.html | Yu-Gi-Oh! Ultimate Masters: World Championship Tournament 2006
+OPEN https://romsfun.com/roms/game-boy-advance/yu-gi-oh-ultimate-masters-world-championship-tournament-2006.html
+DL https://romsfun.com/download/yu-gi-oh-ultimate-masters-world-championship-tournament-2006-139236
+VARIANTS:
+1 https://romsfun.com/download/yu-gi-oh-ultimate-masters-world-championship-tournament-2006-139236/1 | Yu-Gi-Oh! - Ultimate Masters - World Championship Tournament 2006 (USA) (En,Ja,Fr,De,Es,It)
+2 https://romsfun.com/download/yu-gi-oh-ultimate-masters-world-championship-tournament-2006-139236/2 | Yu-Gi-Oh! - Ultimate Masters Edition - World Championship Tournament 2006 (Europe) (En,Ja,Fr,De,Es,It)
+3 https://romsfun.com/download/yu-gi-oh-ultimate-masters-world-championship-tournament-2006-139236/3 | Yu-Gi-Oh! Duel Monsters Expert 2006 (Japan) (En,Ja,Fr,De,Es,It)
+# exit: 0

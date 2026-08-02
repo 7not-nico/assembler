@@ -1,0 +1,133 @@
+# CMD: bash .opencode/_bitacora/bitacora-create.sh todo playwright-dispatcher-ref 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T15:59:48-06:00
+# PID: 204590
+# DUR: 407ms
+# exit: 0
+# GIT: assembler@0ef722d
+# BRANCH: main
+# SESSION: a5ae55d4
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_bitacora/bitacora-create.sh todo playwright-dispatcher-ref 
+# CWD: /home/eddyr/assembler
+# --------------------
+CREATE /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--playwright-dispatcher-ref.md
+# OUT_LINES: 1
+# OUT_BYTES: 100
+# ERR_LINES: 0
+# EXEC: 204590|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh playwright-dispatch-instantiate -- bash .opencode/_bitacora/bitacora-create.sh todo playwright-dispatcher-ref
+# EXEC: 204591|/usr/bin/date|date +%s%N
+# EXEC: 204594|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 204597|/usr/bin/git|git remote get-url origin
+# EXEC: 204595|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 204598|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 204600|/usr/bin/git|git branch --show-current
+# EXEC: 204603|/usr/bin/head|head -1
+# EXEC: 204602|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 204604|/usr/bin/tr|tr -d \n
+# EXEC: 204605|/usr/bin/bun|bun --version
+# EXEC: 204607|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 204608|/usr/bin/head|head -1
+# EXEC: 204609|/usr/bin/tr|tr -d \n
+# EXEC: 204610|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 204612|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 204613|/usr/bin/head|head -1
+# EXEC: 204614|/usr/bin/tr|tr -d \n
+# EXEC: 204615|/usr/bin/python3|python3 --version
+# EXEC: 204617|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 204618|/usr/bin/head|head -1
+# EXEC: 204619|/usr/bin/tr|tr -d \n
+# EXEC: 204620|/usr/bin/ruby|ruby --version
+# EXEC: 204623|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 204624|/usr/bin/head|head -1
+# EXEC: 204625|/usr/bin/tr|tr -d \n
+# EXEC: 204626|/usr/bin/rustc|rustc --version
+# EXEC: 204629|/usr/bin/timeout|timeout 2 go version
+# EXEC: 204630|/usr/bin/head|head -1
+# EXEC: 204631|/usr/bin/tr|tr -d \n
+# EXEC: 204632|/usr/bin/go|go version
+# EXEC: 204639|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 204640|/usr/bin/head|head -1
+# EXEC: 204641|/usr/bin/tr|tr -d \n
+# EXEC: 204642|/usr/bin/git|git --version
+# EXEC: 204644|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 204645|/usr/bin/head|head -1
+# EXEC: 204646|/usr/bin/tr|tr -d \n
+# EXEC: 204647|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 204649|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 204650|/usr/bin/head|head -1
+# EXEC: 204651|/usr/bin/tr|tr -d \n
+# EXEC: 204652|/usr/bin/date|date --version
+# EXEC: 204654|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 204655|/usr/bin/head|head -1
+# EXEC: 204656|/usr/bin/tr|tr -d \n
+# EXEC: 204657|/usr/bin/wc|wc --version
+# EXEC: 204659|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 204660|/usr/bin/head|head -1
+# EXEC: 204661|/usr/bin/tr|tr -d \n
+# EXEC: 204662|/usr/bin/cat|cat --version
+# EXEC: 204664|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 204665|/usr/bin/head|head -1
+# EXEC: 204666|/usr/bin/tr|tr -d \n
+# EXEC: 204667|/usr/bin/tee|tee --version
+# EXEC: 204669|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 204670|/usr/bin/head|head -1
+# EXEC: 204671|/usr/bin/tr|tr -d \n
+# EXEC: 204672|/usr/bin/mktemp|mktemp --version
+# EXEC: 204675|/usr/bin/head|head -1
+# EXEC: 204674|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 204676|/usr/bin/tr|tr -d \n
+# EXEC: 204677|/usr/bin/rm|rm --version
+# EXEC: 204679|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 204680|/usr/bin/head|head -1
+# EXEC: 204681|/usr/bin/tr|tr -d \n
+# EXEC: 204682|/usr/bin/timeout|timeout --version
+# EXEC: 204684|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 204685|/usr/bin/head|head -1
+# EXEC: 204686|/usr/bin/tr|tr -d \n
+# EXEC: 204687|/usr/bin/tr|tr --version
+# EXEC: 204689|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 204690|/usr/bin/head|head -1
+# EXEC: 204691|/usr/bin/tr|tr -d \n
+# EXEC: 204692|/usr/bin/head|head --version
+# EXEC: 204694|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 204695|/usr/bin/head|head -1
+# EXEC: 204696|/usr/bin/tr|tr -d \n
+# EXEC: 204697|/usr/bin/cut|cut --version
+# EXEC: 204699|/usr/bin/date|date +%s%N
+# EXEC: 204700|/usr/bin/sha256sum|sha256sum
+# EXEC: 204701|/usr/bin/cut|cut -c1-8
+# EXEC: 204703|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-155947-playwright-dispatch-instantiate.log
+# EXEC: 204704|/usr/bin/date|date -Is
+# EXEC: 204705|/usr/bin/mktemp|mktemp
+# EXEC: 204706|/usr/bin/mktemp|mktemp
+# EXEC: 204707|/usr/bin/bash|bash .opencode/_bitacora/bitacora-create.sh todo playwright-dispatcher-ref
+# EXEC: 204709|/usr/bin/dirname|dirname .opencode/_bitacora/bitacora-create.sh
+# EXEC: 204710|/usr/bin/bash|bash /home/eddyr/assembler/.opencode/_bitacora/bitacora-slugify.sh playwright-dispatcher-ref
+# EXEC: 204712|/usr/bin/tr|tr [:upper:] [:lower:]
+# EXEC: 204713|/usr/bin/tr|tr -c [:alnum:] -
+# EXEC: 204714|/usr/bin/sed|sed -E s/-+/-/g; s/^-+//; s/-+$//
+# EXEC: 204715|/usr/bin/date|date +%Y%m%d-%H%M%S
+# EXEC: 204716|/usr/bin/date|date +%Y-%m-%d
+# EXEC: 204717|/usr/bin/cat|cat
+# EXEC: 204719|/usr/bin/wc|wc -l
+# EXEC: 204720|/usr/bin/tr|tr -d  
+# EXEC: 204722|/usr/bin/wc|wc -c
+# EXEC: 204723|/usr/bin/tr|tr -d  
+# EXEC: 204725|/usr/bin/wc|wc -l
+# EXEC: 204726|/usr/bin/tr|tr -d  
+# EXEC: 204727|/usr/bin/date|date +%s%N
+# EXEC: 204729|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-155947-playwright-dispatch-instantiate.log
+# EXEC: 204731|/usr/bin/cat|cat /tmp/tmp.LWE2dmDqEc
+# EXEC: 204732|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-155947-playwright-dispatch-instantiate.log
+# EXEC: 204733|/usr/bin/cat|cat /tmp/tmp.Nh2sieJrLu
+# EXEC: 204734|/usr/bin/cat|cat /tmp/tmp.Nh2sieJrLu
+# EXEC: 204735|/usr/bin/rm|rm -f /tmp/tmp.LWE2dmDqEc /tmp/tmp.Nh2sieJrLu
+# EXEC: 204737|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-155947-playwright-dispatch-instantiate.log
+# EXEC: 204739|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-155947-playwright-dispatch-instantiate.log
+# EXEC: 204741|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-155947-playwright-dispatch-instantiate.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sed=/usr/bin/sed (GNU sed) 4.10 sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 111
+# SHA: 199209af165d4606cf2967fdfc0d597521e7de8c4c7b79bbe833686aecf1073d
+# exit: 0

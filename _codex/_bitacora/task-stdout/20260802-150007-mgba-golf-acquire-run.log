@@ -1,0 +1,23 @@
+# CMD: bash _codex/mgba-repo/scripts/acquire-rom.sh Mario\ Golf\ Advance\ Tour game-boy-advance 90 
+# DATE: 2026-08-02T15:00:07-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+PICK https://romsfun.com/download/mario-golf-advance-tour-3909/8
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/mario-golf-advance-tour-3909/8
+LINK https://statics.romsfun.com/GameBoyAdvance/Mario%20Golf%20-%20Advance%20Tour%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQxF5dFh0
+ERROR locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('a[href*="token="]').first()[22m
+[2m    - locator resolved to <a rel="nofollow" id="download-link" href="https://statics.romsfun.com/GameBoyAdvance/Mario%20Golf%20-%20Advance%20Tour%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQxF5dFh0" class="inline-flex items-center justify-center px-6 py-4 bg-romfun-pink text-white rounded-full hover:bg-romfun-pink-dark transition font-semibold shadow-lg hover:shadow-xl transform hover:scale-105">…</a>[22m
+[2m  - attempting click action[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+[2m    - element is visible, enabled and stable[22m
+[2m    - scrolling into view if needed[22m
+[2m    - done scrolling[22m
+[2m    - performing click action[22m
+[2m    - click action done[22m
+[2m    - waiting for scheduled navigations to finish[22m
+
+ERROR download failed — no file saved
+# exit: 1

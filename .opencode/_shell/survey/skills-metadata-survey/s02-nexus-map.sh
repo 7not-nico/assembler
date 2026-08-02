@@ -69,7 +69,7 @@ for dir in "$SKILLS"/*/; do
       use-entity-audit) proposed="NEX.TOOL.SEQUENCE"; from="derive";;
       vet-proposal|judge-semantic|declare-grounded-entity) proposed="NEX.META.PROPOSAL"; from="derive";;
       guide-architecture|propose-mcp|propose-tool) proposed="NEX.TOOL.CHOICE"; from="derive";;
-      knowledge-ruby|compose-web) proposed="NEX.INVESTIGATION.STAGE"; from="derive";;
+      knowledge-languages|compose-web) proposed="NEX.INVESTIGATION.STAGE"; from="derive";;
       refactor-skill) proposed="NEX.TOOL.SEQUENCE"; from="derive";;
       stage-create) proposed="NEX.META.ORCHESTRATION"; from="derive";;
       scaffold-tools|bootstrap-db) proposed="NEX.META.PROPOSAL"; from="derive";;

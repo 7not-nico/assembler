@@ -1,0 +1,9 @@
+# CMD: bash -c $'\nkill 170394 2>/dev/null && echo "KILLED mod pid 170394" || echo "mod pid 170394 already gone"\nrm -f roms/sonic-advance-3-playable-shadow-undub.gba && echo "REMOVED mod ROM"\nrm -f .opencode/.playwright-mcp/sonic-advance-3-playable-shadow-undub.zip && echo "REMOVED mod zip"\nls -la roms/' 
+# DATE: 2026-08-02T15:15:14-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+mod pid 170394 already gone
+REMOVED mod ROM
+REMOVED mod zip
+ls: cannot access 'roms/': No such file or directory
+# exit: 2

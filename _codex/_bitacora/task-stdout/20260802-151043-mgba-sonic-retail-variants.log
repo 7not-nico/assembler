@@ -1,0 +1,27 @@
+# CMD: bash -c $'\nHERE="$PWD/_codex/mgba-repo"\nPW_CORE=""\nfor dir in "$HERE" "$HERE/_templates"; do\n  [ -d "$dir/node_modules/playwright-core" ] && PW_CORE="$dir/node_modules/playwright-core" && break\ndone\nexport NODE_PATH="$PW_CORE/.."\nnode <<\'EOF\' 2>&1\nconst { chromium } = require("playwright-core")\n;(async () => {\n  const browser = await chromium.connectOverCDP("http://127.0.0.1:9222")\n  const page = await browser.contexts()[0].newPage()\n  const gameUrl = "https://romsfun.com/roms/game-boy-advance/sonic-advance-3.html"\n  await page.goto(gameUrl, { waitUntil: "domcontentloaded", timeout: 60000 })\n  const dl = await page.$eval("a[href*=\\"/download/\\"]", a => a.href).catch(() => null)\n  console.log("DL " + (dl || "MISSING"))\n  if (!dl) throw new Error("no download page on " + gameUrl)\n  await page.goto(dl, { waitUntil: "domcontentloaded", timeout: 60000 })\n  const variants = await page.$$eval("table a[href*=\\"/download/\\"]", as => as.map(a => a.href + " | " + a.textContent.trim()))\n  console.log("VARIANTS:")\n  variants.forEach((v, i) => console.log((i + 1) + " " + v))\n  await page.close()\n  await browser.close()\n})().catch(e => { console.error("ERROR " + e.message); process.exit(1) })\nEOF' 
+# DATE: 2026-08-02T15:10:43-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+node:internal/modules/cjs/loader:1423
+  throw err;
+  ^
+
+Error: Cannot find module 'playwright-core'
+Require stack:
+- /home/eddyr/assembler/[stdin]
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1420:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)
+    at Module._load (node:internal/modules/cjs/loader:1226:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1503:12)
+    at require (node:internal/modules/helpers:152:16)
+    at [stdin]:1:22
+    at runScriptInThisContext (node:internal/vm:219:10) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/home/eddyr/assembler/[stdin]' ]
+}
+
+Node.js v25.2.1
+# exit: 1

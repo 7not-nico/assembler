@@ -1,0 +1,16 @@
+# CMD: bash _codex/mgba-repo/scripts/acquire-rom.sh Sonic\ Advance\ 3 game-boy-advance 90 
+# DATE: 2026-08-02T15:08:17-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+PICK https://romsfun.com/download/sonic-advance-3-playable-shadow-310286/1
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/sonic-advance-3-playable-shadow-310286/1
+LINK https://sto.romsfast.com/Mods/GBA/Sonic%20Advance%203%20-%20Playable%20Shadow%20(Undub).zip?token=cHxfalBlRlhND3BzWDhQZ1BUQxF5cVl0
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/sonic-advance-3-playable-shadow-undub.zip (Sonic Advance 3 - Playable Shadow (Undub).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/sonic-advance-3-playable-shadow-undub.zip
+OK   Sonic Advance 3 - Playable Shadow (Undub).gba (16777216 B) title="SONICADVANC3"
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/sonic-advance-3-playable-shadow-undub.gba
+/home/eddyr/assembler/_codex/mgba-repo/roms/sonic-advance-3-playable-shadow-undub.gba: Game Boy Advance ROM image: "SONICADVANC3" (B3SE78, Rev.00)
+LAUNCH /home/eddyr/assembler/_codex/mgba-repo/build/sdl/mgba /home/eddyr/assembler/_codex/mgba-repo/roms/sonic-advance-3-playable-shadow-undub.gba
+RUN   pid=170394 cpu=alive window=DISPLAY:0 log=/tmp/opencode/mgba-launch.log
+# exit: 0

@@ -1,0 +1,136 @@
+# CMD: bash -c $'\nmkdir -p .opencode/skills/module\nmv .opencode/skills/use-playwright-core .opencode/skills/use-playwright-ai-mode .opencode/skills/use-playwright-debug .opencode/skills/use-playwright-network-storage .opencode/skills/use-playwright-vision .opencode/skills/module/\nmv .opencode/skills/playwright-dispatcher/SKILL.md .opencode/skills/module/SKILL.md\nrmdir .opencode/skills/playwright-dispatcher\necho "--- module/ ---"\nls .opencode/skills/module' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T16:04:29-06:00
+# PID: 207710
+# DUR: 403ms
+# exit: 0
+# GIT: assembler@0ef722d
+# BRANCH: main
+# SESSION: 920f29cf
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\nmkdir -p .opencode/skills/module\nmv .opencode/skills/use-playwright-core .opencode/skills/use-playwright-ai-mode .opencode/skills/use-playwright-debug .opencode/skills/use-playwright-network-storage .opencode/skills/use-playwright-vision .opencode/skills/module/\nmv .opencode/skills/playwright-dispatcher/SKILL.md .opencode/skills/module/SKILL.md\nrmdir .opencode/skills/playwright-dispatcher\necho "--- module/ ---"\nls .opencode/skills/module' 
+# CWD: /home/eddyr/assembler
+# --------------------
+--- module/ ---
+SKILL.md
+use-playwright-ai-mode
+use-playwright-core
+use-playwright-debug
+use-playwright-network-storage
+use-playwright-vision
+# OUT_LINES: 7
+# OUT_BYTES: 142
+# ERR_LINES: 0
+# EXEC: 207710|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh module-restructure -- bash -c 
+# EXEC: 207711|/usr/bin/date|date +%s%N
+# EXEC: 207714|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 207717|/usr/bin/git|git remote get-url origin
+# EXEC: 207715|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 207718|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 207720|/usr/bin/git|git branch --show-current
+# EXEC: 207723|/usr/bin/head|head -1
+# EXEC: 207722|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 207724|/usr/bin/tr|tr -d \n
+# EXEC: 207725|/usr/bin/bun|bun --version
+# EXEC: 207727|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 207728|/usr/bin/head|head -1
+# EXEC: 207729|/usr/bin/tr|tr -d \n
+# EXEC: 207730|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 207733|/usr/bin/head|head -1
+# EXEC: 207732|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 207734|/usr/bin/tr|tr -d \n
+# EXEC: 207735|/usr/bin/python3|python3 --version
+# EXEC: 207737|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 207739|/usr/bin/tr|tr -d \n
+# EXEC: 207738|/usr/bin/head|head -1
+# EXEC: 207740|/usr/bin/ruby|ruby --version
+# EXEC: 207743|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 207744|/usr/bin/head|head -1
+# EXEC: 207745|/usr/bin/tr|tr -d \n
+# EXEC: 207746|/usr/bin/rustc|rustc --version
+# EXEC: 207749|/usr/bin/timeout|timeout 2 go version
+# EXEC: 207750|/usr/bin/head|head -1
+# EXEC: 207751|/usr/bin/tr|tr -d \n
+# EXEC: 207752|/usr/bin/go|go version
+# EXEC: 207758|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 207759|/usr/bin/head|head -1
+# EXEC: 207760|/usr/bin/tr|tr -d \n
+# EXEC: 207761|/usr/bin/git|git --version
+# EXEC: 207763|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 207764|/usr/bin/head|head -1
+# EXEC: 207765|/usr/bin/tr|tr -d \n
+# EXEC: 207766|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 207768|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 207769|/usr/bin/head|head -1
+# EXEC: 207770|/usr/bin/tr|tr -d \n
+# EXEC: 207771|/usr/bin/date|date --version
+# EXEC: 207774|/usr/bin/head|head -1
+# EXEC: 207773|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 207775|/usr/bin/tr|tr -d \n
+# EXEC: 207776|/usr/bin/wc|wc --version
+# EXEC: 207779|/usr/bin/head|head -1
+# EXEC: 207778|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 207780|/usr/bin/tr|tr -d \n
+# EXEC: 207781|/usr/bin/cat|cat --version
+# EXEC: 207783|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 207784|/usr/bin/head|head -1
+# EXEC: 207785|/usr/bin/tr|tr -d \n
+# EXEC: 207786|/usr/bin/tee|tee --version
+# EXEC: 207788|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 207789|/usr/bin/head|head -1
+# EXEC: 207790|/usr/bin/tr|tr -d \n
+# EXEC: 207791|/usr/bin/mktemp|mktemp --version
+# EXEC: 207793|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 207794|/usr/bin/head|head -1
+# EXEC: 207795|/usr/bin/tr|tr -d \n
+# EXEC: 207796|/usr/bin/rm|rm --version
+# EXEC: 207798|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 207799|/usr/bin/head|head -1
+# EXEC: 207800|/usr/bin/tr|tr -d \n
+# EXEC: 207801|/usr/bin/timeout|timeout --version
+# EXEC: 207803|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 207804|/usr/bin/head|head -1
+# EXEC: 207805|/usr/bin/tr|tr -d \n
+# EXEC: 207806|/usr/bin/tr|tr --version
+# EXEC: 207808|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 207809|/usr/bin/head|head -1
+# EXEC: 207810|/usr/bin/tr|tr -d \n
+# EXEC: 207811|/usr/bin/head|head --version
+# EXEC: 207813|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 207814|/usr/bin/head|head -1
+# EXEC: 207815|/usr/bin/tr|tr -d \n
+# EXEC: 207816|/usr/bin/cut|cut --version
+# EXEC: 207818|/usr/bin/date|date +%s%N
+# EXEC: 207819|/usr/bin/sha256sum|sha256sum
+# EXEC: 207820|/usr/bin/cut|cut -c1-8
+# EXEC: 207822|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160429-module-restructure.log
+# EXEC: 207823|/usr/bin/date|date -Is
+# EXEC: 207824|/usr/bin/mktemp|mktemp
+# EXEC: 207825|/usr/bin/mktemp|mktemp
+# EXEC: 207826|/usr/bin/bash|bash -c 
+# EXEC: 207827|/usr/bin/mkdir|mkdir -p .opencode/skills/module
+# EXEC: 207828|/usr/bin/mv|mv .opencode/skills/use-playwright-core .opencode/skills/use-playwright-ai-mode .opencode/skills/use-playwright-debug .opencode/skills/use-playwright-network-storage .opencode/skills/use-playwright-vision .opencode/skills/module/
+# EXEC: 207829|/usr/bin/mv|mv .opencode/skills/playwright-dispatcher/SKILL.md .opencode/skills/module/SKILL.md
+# EXEC: 207830|/usr/bin/rmdir|rmdir .opencode/skills/playwright-dispatcher
+# EXEC: 207826|/usr/bin/ls|ls .opencode/skills/module
+# EXEC: 207832|/usr/bin/wc|wc -l
+# EXEC: 207833|/usr/bin/tr|tr -d  
+# EXEC: 207835|/usr/bin/wc|wc -c
+# EXEC: 207836|/usr/bin/tr|tr -d  
+# EXEC: 207838|/usr/bin/wc|wc -l
+# EXEC: 207839|/usr/bin/tr|tr -d  
+# EXEC: 207840|/usr/bin/date|date +%s%N
+# EXEC: 207842|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160429-module-restructure.log
+# EXEC: 207844|/usr/bin/cat|cat /tmp/tmp.T2WnACNdLA
+# EXEC: 207845|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160429-module-restructure.log
+# EXEC: 207846|/usr/bin/cat|cat /tmp/tmp.luYBJD3LQa
+# EXEC: 207847|/usr/bin/cat|cat /tmp/tmp.luYBJD3LQa
+# EXEC: 207848|/usr/bin/rm|rm -f /tmp/tmp.T2WnACNdLA /tmp/tmp.luYBJD3LQa
+# EXEC: 207850|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160429-module-restructure.log
+# EXEC: 207853|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160429-module-restructure.log
+# EXEC: 207857|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160429-module-restructure.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 ls=ls (GNU coreutils) 9.11 mkdir=mkdir (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 mv=mv (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 rmdir=rmdir (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 108
+# SHA: b221488d618b32ae4e48a3eba2ad036693e113612120028a31dbadc1a3846ac6
+# exit: 0

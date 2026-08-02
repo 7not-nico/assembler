@@ -1,0 +1,10 @@
+# CMD: bash -c diff\ \<\(rg\ \'\^##\ \'\ _codex/mgba-repo/AGENTS.md\)\ \<\(rg\ \'\^##\ \'\ _codex/_templates/dive-agents-template.md\)\ \&\&\ echo\ \'HEADINGS\ PARITY\ OK\'\ \;\ rg\ -c\ \'concept/\'\ _codex/mgba-repo/AGENTS.md\ \;\ rg\ -n\ \'distill\ the\ named\ ideas\|study-monoliths\|Templates\ for\ the\ dive\ layers\'\ _codex/mgba-repo/AGENTS.md 
+# DATE: 2026-08-02T14:53:33-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+HEADINGS PARITY OK
+4
+14:- `backup/` holds pre-edit restore points — `mgba-src/` (source, no artifacts) + `binaries/` (timestamped) + `study-monoliths/` (pre-split study docs).
+62:MCP precedes all — the connected servers (browser, acquire, patlib) form the tooling substrate before any dive layer runs. Invariants follow — the state facts the dive must preserve exist before any work. Scripts then execute the work under those invariants. Bitacora then opens the record: the todo plans the work before it starts. Precepts then govern. Backup precedes study — restore points exist before any source work. Study, concept, and fixture precede pattern: understand the architecture, distill the named ideas, prove the components, then derive the morphism. Pattern precedes procedure: the structure informs the steps.
+92:Every session writes timestamped files into `_codex/_bitacora/`. The todo precedes work; the report follows completion; every command output flows through `run-logged.sh` into `_bitacora/task-stdout/`. Reports carry metrics — build, tests, acquisitions, fixtures. Knowledge lands in its layer: invariant (state fact) → precept (rule) → concept (knowledge) → procedure (steps) → pattern (morphism) → study (architecture) → fixture (proof). Templates for the dive layers live in `_codex/_templates/` and propagate via `copy-templates.sh`.
+# exit: 0

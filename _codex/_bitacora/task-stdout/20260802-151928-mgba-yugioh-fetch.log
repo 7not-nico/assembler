@@ -1,0 +1,15 @@
+# CMD: bash _codex/mgba-repo/scripts/playwright-fetch-rom.sh https://romsfun.com/download/yu-gi-oh-ultimate-masters-world-championship-tournament-2006-139236/1 90 
+# DATE: 2026-08-02T15:19:28-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/yu-gi-oh-ultimate-masters-world-championship-tournament-2006-139236/1
+LINK https://statics.romsfun.com/GameBoyAdvance/Yu-Gi-Oh%21%20-%20Ultimate%20Masters%20-%20World%20Championship%20Tournament%202006%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%2CIt%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQxF4dV99
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/yu-gi-oh-ultimate-masters-world-championship-tournament-2006-usa-en-ja-fr-de-es-it.zip (Yu-Gi-Oh! - Ultimate Masters - World Championship Tournament 2006 (USA) (En,Ja,Fr,De,Es,It).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/yu-gi-oh-ultimate-masters-world-championship-tournament-2006-usa-en-ja-fr-de-es-it.zip
+OK   Yu-Gi-Oh! - Ultimate Masters - World Championship Tournament 2006 (USA) (En,Ja,Fr,De,Es,It).gba (33554432 B) title="YUGIOHWCT06"
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/yu-gi-oh-ultimate-masters-world-championship-tournament-2006-usa-en-ja-fr-de-es-it.gba
+/home/eddyr/assembler/_codex/mgba-repo/roms/yu-gi-oh-ultimate-masters-world-championship-tournament-2006-usa-en-ja-fr-de-es-it.gba: Game Boy Advance ROM image: "YUGIOHWCT06" (BY6EA4, Rev.00)
+LAUNCH /home/eddyr/assembler/_codex/mgba-repo/build/sdl/mgba /home/eddyr/assembler/_codex/mgba-repo/roms/yu-gi-oh-ultimate-masters-world-championship-tournament-2006-usa-en-ja-fr-de-es-it.gba
+RUN   pid=178221 cpu=alive window=DISPLAY:0 log=/tmp/opencode/mgba-launch.log
+# exit: 0

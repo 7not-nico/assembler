@@ -1,0 +1,230 @@
+# CMD: bash -c git\ status\ --short\ \&\&\ echo\ \"===\ DIFF\ STAT\ ===\"\ \&\&\ git\ diff\ --stat\ \&\&\ echo\ \"===\ LOG\ ===\"\ \&\&\ git\ log\ --oneline\ -10 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T16:09:34-06:00
+# PID: 211990
+# DUR: 419ms
+# exit: 0
+# GIT: assembler@0ef722d
+# BRANCH: main
+# SESSION: 3f504379
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c git\ status\ --short\ \&\&\ echo\ \"===\ DIFF\ STAT\ ===\"\ \&\&\ git\ diff\ --stat\ \&\&\ echo\ \"===\ LOG\ ===\"\ \&\&\ git\ log\ --oneline\ -10 
+# CWD: /home/eddyr/assembler
+# --------------------
+ M .opencode/_bitacora/task-todo/skills-format-standardize.md
+ M .opencode/_scripts/guides/operational-procedure.md
+ M .opencode/_scripts/migrate-skill-metadata.sh
+ M .opencode/_shell/survey/skills-metadata-survey/s02-nexus-map.sh
+ M .opencode/commands/anchor-workflow.md
+ M .opencode/entities/protocols/PROT.KNOWLEDGE.SCHEMA.md
+ D .opencode/skills/knowledge-ruby/SKILL.md
+ M .opencode/skills/survey-scripts/SKILL.md
+ M .opencode/skills/use-context-seven/SKILL.md
+ D .opencode/skills/use-playwright-ai-mode/SKILL.md
+ D .opencode/skills/use-playwright-core/SKILL.md
+ D .opencode/skills/use-playwright-debug/SKILL.md
+ D .opencode/skills/use-playwright-network-storage/SKILL.md
+ D .opencode/skills/use-playwright-vision/SKILL.md
+?? .opencode/_bitacora/task-report/20260802-125500-skills-tables-codeblocks.md
+?? .opencode/_bitacora/task-report/20260802-153057-bitacora-workflow-skill.md
+?? .opencode/_bitacora/task-report/20260802-155604-language-dispatcher-skill.md
+?? .opencode/_bitacora/task-report/20260802-160738-playwright-dispatcher-ref.md
+?? .opencode/_bitacora/task-stdout/20260802-152330-skill-bitacora-instantiate.log
+?? .opencode/_bitacora/task-stdout/20260802-153056-skill-bitacora-close.log
+?? .opencode/_bitacora/task-stdout/20260802-153456-skill-bitacora-verify.log
+?? .opencode/_bitacora/task-stdout/20260802-154135-lang-dispatch-instantiate.log
+?? .opencode/_bitacora/task-stdout/20260802-155603-lang-dispatch-remove-old.log
+?? .opencode/_bitacora/task-stdout/20260802-155604-lang-dispatch-close.log
+?? .opencode/_bitacora/task-stdout/20260802-155947-playwright-dispatch-instantiate.log
+?? .opencode/_bitacora/task-stdout/20260802-160009-lang-ref-rename.log
+?? .opencode/_bitacora/task-stdout/20260802-160429-module-restructure.log
+?? .opencode/_bitacora/task-stdout/20260802-160529-dispatcher-root-restructure.log
+?? .opencode/_bitacora/task-stdout/20260802-160737-playwright-dispatch-close.log
+?? .opencode/_bitacora/task-stdout/20260802-160933-git-push-instantiate.log
+?? .opencode/_bitacora/task-stdout/20260802-160934-git-inspect.log
+?? .opencode/_bitacora/task-todo/2026-08-02--bitacora-workflow-skill.md
+?? .opencode/_bitacora/task-todo/2026-08-02--git-push-skill-dispatchers.md
+?? .opencode/_bitacora/task-todo/2026-08-02--language-dispatcher-skill.md
+?? .opencode/_bitacora/task-todo/2026-08-02--playwright-dispatcher-ref.md
+?? .opencode/skills/bitacora-workflow/
+?? .opencode/skills/knowledge-languages/
+?? .opencode/skills/playwright-dispatcher/
+?? _codex/_bitacora/task-report/20260802-144908-mgba-agents-align.md
+?? _codex/_bitacora/task-report/20260802-150805-mgba-sonic-acquire.md
+?? _codex/_bitacora/task-report/20260802-151814-mgba-yugioh-acquire.md
+?? _codex/_bitacora/task-stdout/20260802-144908-mgba-agents-align-stamp.log
+?? _codex/_bitacora/task-stdout/20260802-145333-mgba-agents-align-verify.log
+?? _codex/_bitacora/task-stdout/20260802-145445-mgba-agents-align-final.log
+?? _codex/_bitacora/task-stdout/20260802-145517-mgba-agents-align-gitignore.log
+?? _codex/_bitacora/task-stdout/20260802-145911-mgba-golf-acquire-stamp.log
+?? _codex/_bitacora/task-stdout/20260802-145912-mgba-golf-browser-check.log
+?? _codex/_bitacora/task-stdout/20260802-145912-mgba-golf-roms-listing.log
+?? _codex/_bitacora/task-stdout/20260802-145926-mgba-golf-browser-start.log
+?? _codex/_bitacora/task-stdout/20260802-150007-mgba-golf-acquire-run.log
+?? _codex/_bitacora/task-stdout/20260802-150203-mgba-golf-zipzone-check.log
+?? _codex/_bitacora/task-stdout/20260802-150227-mgba-golf-fetch-retry.log
+?? _codex/_bitacora/task-stdout/20260802-150345-mgba-golf-qalc.log
+?? _codex/_bitacora/task-stdout/20260802-150354-mgba-golf-qalc-mbit.log
+?? _codex/_bitacora/task-stdout/20260802-150805-mgba-sonic-stamp.log
+?? _codex/_bitacora/task-stdout/20260802-150807-mgba-sonic-browser-check.log
+?? _codex/_bitacora/task-stdout/20260802-150817-mgba-sonic-acquire.log
+?? _codex/_bitacora/task-stdout/20260802-150858-mgba-sonic-browse.log
+?? _codex/_bitacora/task-stdout/20260802-151027-mgba-sonic-browse-retail.log
+?? _codex/_bitacora/task-stdout/20260802-151043-mgba-sonic-retail-variants.log
+?? _codex/_bitacora/task-stdout/20260802-151053-mgba-sonic-retail-variants.log
+?? _codex/_bitacora/task-stdout/20260802-151134-mgba-sonic-usa-fetch.log
+?? _codex/_bitacora/task-stdout/20260802-151430-mgba-sonic-usa-fetch-retry.log
+?? _codex/_bitacora/task-stdout/20260802-151514-mgba-sonic-swap-cleanup.log
+?? _codex/_bitacora/task-stdout/20260802-151524-mgba-sonic-swap-cleanup2.log
+?? _codex/_bitacora/task-stdout/20260802-151534-mgba-sonic-sav-cleanup.log
+?? _codex/_bitacora/task-stdout/20260802-151535-mgba-sonic-qalc.log
+?? _codex/_bitacora/task-stdout/20260802-151814-mgba-yugioh-stamp.log
+?? _codex/_bitacora/task-stdout/20260802-151815-mgba-yugioh-browser-check.log
+?? _codex/_bitacora/task-stdout/20260802-151846-mgba-yugioh-browse.log
+?? _codex/_bitacora/task-stdout/20260802-151928-mgba-yugioh-fetch.log
+?? _codex/_bitacora/task-stdout/20260802-152034-mgba-yugioh-qalc.log
+?? _codex/_bitacora/task-todo/20260802-144908-mgba-agents-align.md
+?? _codex/_bitacora/task-todo/20260802-145911-mgba-golf-acquire.md
+?? _codex/_bitacora/task-todo/20260802-150805-mgba-sonic-acquire.md
+?? _codex/_bitacora/task-todo/20260802-151814-mgba-yugioh-acquire.md
+=== DIFF STAT ===
+ .../task-todo/skills-format-standardize.md         |   2 +-
+ .opencode/_scripts/guides/operational-procedure.md |   4 +-
+ .opencode/_scripts/migrate-skill-metadata.sh       |   2 +-
+ .../survey/skills-metadata-survey/s02-nexus-map.sh |   2 +-
+ .opencode/commands/anchor-workflow.md              |   2 +-
+ .../entities/protocols/PROT.KNOWLEDGE.SCHEMA.md    |   4 +-
+ .opencode/skills/knowledge-ruby/SKILL.md           | 101 ---------------------
+ .opencode/skills/survey-scripts/SKILL.md           |  24 ++---
+ .opencode/skills/use-context-seven/SKILL.md        |   6 +-
+ .opencode/skills/use-playwright-ai-mode/SKILL.md   |  25 -----
+ .opencode/skills/use-playwright-core/SKILL.md      |  40 --------
+ .opencode/skills/use-playwright-debug/SKILL.md     |  33 -------
+ .../skills/use-playwright-network-storage/SKILL.md |  47 ----------
+ .opencode/skills/use-playwright-vision/SKILL.md    |  33 -------
+ 14 files changed, 24 insertions(+), 301 deletions(-)
+=== LOG ===
+0ef722d bitacora: 2026-08-02 session records — semantic engine, skills, comm rules
+9a49155 templates: sync _knowledge + _codex template registries
+3aab3f2 semantic-engine: mcp-semantic MCP server + shared libs + probe workflow
+7db0461 skills: cut 188 stale skills, rewrite 17 to agentskills.io format
+38c28e2 spec-rules: language-ring topology + communication rules overhaul
+d7b08f8 fixture-cloth-docs: Context7 docs-vs-code conformance (pass:docs-conformant)
+b38279e bitacora: cloth-suite stdout logs (original wrapper runs)
+d199505 fixture-cloth-*: animators/serializers/entries layer probes — suite 5
+3d539f6 bitacora: commit session audit trail — stdout logs + reports + todos
+fb8f7c0 fixture-original-wrapper: asserts trace-free full-provenance baseline
+# OUT_LINES: 103
+# OUT_BYTES: 7007
+# ERR_LINES: 0
+# EXEC: 211990|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh git-inspect -- bash -c git status --short && echo "=== DIFF STAT ===" && git diff --stat && echo "=== LOG ===" && git log --oneline -10
+# EXEC: 211996|/usr/bin/date|date +%s%N
+# EXEC: 212009|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 212021|/usr/bin/git|git remote get-url origin
+# EXEC: 212016|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 212031|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 212039|/usr/bin/git|git branch --show-current
+# EXEC: 212053|/usr/bin/head|head -1
+# EXEC: 212052|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 212058|/usr/bin/tr|tr -d \n
+# EXEC: 212060|/usr/bin/bun|bun --version
+# EXEC: 212075|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 212076|/usr/bin/head|head -1
+# EXEC: 212078|/usr/bin/tr|tr -d \n
+# EXEC: 212087|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 212113|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 212114|/usr/bin/head|head -1
+# EXEC: 212115|/usr/bin/tr|tr -d \n
+# EXEC: 212116|/usr/bin/python3|python3 --version
+# EXEC: 212118|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 212119|/usr/bin/head|head -1
+# EXEC: 212120|/usr/bin/tr|tr -d \n
+# EXEC: 212121|/usr/bin/ruby|ruby --version
+# EXEC: 212124|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 212125|/usr/bin/head|head -1
+# EXEC: 212126|/usr/bin/tr|tr -d \n
+# EXEC: 212127|/usr/bin/rustc|rustc --version
+# EXEC: 212134|/usr/bin/head|head -1
+# EXEC: 212133|/usr/bin/timeout|timeout 2 go version
+# EXEC: 212135|/usr/bin/tr|tr -d \n
+# EXEC: 212136|/usr/bin/go|go version
+# EXEC: 212142|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 212143|/usr/bin/head|head -1
+# EXEC: 212144|/usr/bin/tr|tr -d \n
+# EXEC: 212145|/usr/bin/git|git --version
+# EXEC: 212149|/usr/bin/tr|tr -d \n
+# EXEC: 212147|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 212148|/usr/bin/head|head -1
+# EXEC: 212150|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 212152|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 212153|/usr/bin/head|head -1
+# EXEC: 212154|/usr/bin/tr|tr -d \n
+# EXEC: 212155|/usr/bin/date|date --version
+# EXEC: 212157|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 212158|/usr/bin/head|head -1
+# EXEC: 212159|/usr/bin/tr|tr -d \n
+# EXEC: 212160|/usr/bin/wc|wc --version
+# EXEC: 212162|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 212163|/usr/bin/head|head -1
+# EXEC: 212164|/usr/bin/tr|tr -d \n
+# EXEC: 212165|/usr/bin/cat|cat --version
+# EXEC: 212167|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 212168|/usr/bin/head|head -1
+# EXEC: 212169|/usr/bin/tr|tr -d \n
+# EXEC: 212170|/usr/bin/tee|tee --version
+# EXEC: 212172|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 212173|/usr/bin/head|head -1
+# EXEC: 212174|/usr/bin/tr|tr -d \n
+# EXEC: 212175|/usr/bin/mktemp|mktemp --version
+# EXEC: 212177|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 212178|/usr/bin/head|head -1
+# EXEC: 212179|/usr/bin/tr|tr -d \n
+# EXEC: 212180|/usr/bin/rm|rm --version
+# EXEC: 212183|/usr/bin/head|head -1
+# EXEC: 212182|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 212184|/usr/bin/tr|tr -d \n
+# EXEC: 212185|/usr/bin/timeout|timeout --version
+# EXEC: 212189|/usr/bin/tr|tr -d \n
+# EXEC: 212187|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 212188|/usr/bin/head|head -1
+# EXEC: 212190|/usr/bin/tr|tr --version
+# EXEC: 212192|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 212193|/usr/bin/head|head -1
+# EXEC: 212194|/usr/bin/tr|tr -d \n
+# EXEC: 212195|/usr/bin/head|head --version
+# EXEC: 212199|/usr/bin/tr|tr -d \n
+# EXEC: 212197|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 212198|/usr/bin/head|head -1
+# EXEC: 212200|/usr/bin/cut|cut --version
+# EXEC: 212202|/usr/bin/date|date +%s%N
+# EXEC: 212203|/usr/bin/sha256sum|sha256sum
+# EXEC: 212204|/usr/bin/cut|cut -c1-8
+# EXEC: 212206|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160934-git-inspect.log
+# EXEC: 212207|/usr/bin/date|date -Is
+# EXEC: 212208|/usr/bin/mktemp|mktemp
+# EXEC: 212209|/usr/bin/mktemp|mktemp
+# EXEC: 212210|/usr/bin/bash|bash -c git status --short && echo "=== DIFF STAT ===" && git diff --stat && echo "=== LOG ===" && git log --oneline -10
+# EXEC: 212211|/usr/bin/git|git status --short
+# EXEC: 212217|/usr/bin/git|git diff --stat
+# EXEC: 212210|/usr/bin/git|git log --oneline -10
+# EXEC: 212224|/usr/bin/wc|wc -l
+# EXEC: 212225|/usr/bin/tr|tr -d  
+# EXEC: 212227|/usr/bin/wc|wc -c
+# EXEC: 212228|/usr/bin/tr|tr -d  
+# EXEC: 212230|/usr/bin/wc|wc -l
+# EXEC: 212231|/usr/bin/tr|tr -d  
+# EXEC: 212232|/usr/bin/date|date +%s%N
+# EXEC: 212234|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160934-git-inspect.log
+# EXEC: 212236|/usr/bin/cat|cat /tmp/tmp.Ko4wnq3Itl
+# EXEC: 212237|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160934-git-inspect.log
+# EXEC: 212238|/usr/bin/cat|cat /tmp/tmp.uOqN86MMs0
+# EXEC: 212239|/usr/bin/cat|cat /tmp/tmp.uOqN86MMs0
+# EXEC: 212240|/usr/bin/rm|rm -f /tmp/tmp.Ko4wnq3Itl /tmp/tmp.uOqN86MMs0
+# EXEC: 212242|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160934-git-inspect.log
+# EXEC: 212244|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160934-git-inspect.log
+# EXEC: 212246|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160934-git-inspect.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 106
+# SHA: fe72b862c0034dd33e920cb9ba1160d86b6c37020c0159abab0824e10b4b1877
+# exit: 0

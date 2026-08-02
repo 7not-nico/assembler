@@ -1,0 +1,12 @@
+# CMD: bash -c rg\ -n\ \'codex\|mgba\|_bitacora\'\ .gitignore\ 2\>/dev/null\;\ echo\ \'---\ check-ignore\ ---\'\;\ git\ -C\ /home/eddyr/assembler\ check-ignore\ -v\ _codex/mgba-repo/AGENTS.md\;\ echo\ \'---\ tracked\?\ ---\'\;\ git\ -C\ /home/eddyr/assembler\ ls-files\ _codex/mgba-repo/\ \|\ head\ -3 
+# DATE: 2026-08-02T14:55:17-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+11:# codex upstream clones (own git repos)
+12:_codex/*-repo/*/
+45:!/_*/_bitacora/
+46:!/_*/_bitacora/**
+--- check-ignore ---
+.gitignore:43:/_*/*	_codex/mgba-repo/AGENTS.md
+--- tracked? ---
+# exit: 0

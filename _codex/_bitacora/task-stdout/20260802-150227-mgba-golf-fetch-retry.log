@@ -1,0 +1,15 @@
+# CMD: bash _codex/mgba-repo/scripts/playwright-fetch-rom.sh https://romsfun.com/download/mario-golf-advance-tour-3909/8 90 
+# DATE: 2026-08-02T15:02:27-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/mario-golf-advance-tour-3909/8
+LINK https://statics.romsfun.com/GameBoyAdvance/Mario%20Golf%20-%20Advance%20Tour%20%28USA%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQxF5dV18
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/mario-golf-advance-tour-usa.zip (Mario Golf - Advance Tour (USA).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/mario-golf-advance-tour-usa.zip
+OK   Mario Golf - Advance Tour (USA).gba (16777216 B) title="!ML GhL G"
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/mario-golf-advance-tour-usa.gba
+/home/eddyr/assembler/_codex/mgba-repo/roms/mario-golf-advance-tour-usa.gba: Game Boy Advance ROM image: "MARIOGOLFGBA" (BMGE01, Rev.00)
+LAUNCH /home/eddyr/assembler/_codex/mgba-repo/build/sdl/mgba /home/eddyr/assembler/_codex/mgba-repo/roms/mario-golf-advance-tour-usa.gba
+RUN   pid=166287 cpu=alive window=DISPLAY:0 log=/tmp/opencode/mgba-launch.log
+# exit: 0

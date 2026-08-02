@@ -1,0 +1,12 @@
+# CMD: bash -c $'\nHERE="$PWD/_codex/mgba-repo/scripts"\nPW_CORE=""\nfor dir in "$HERE" "$(cd "$HERE/../../_templates" && pwd)"; do\n  [ -d "$dir/node_modules/playwright-core" ] && PW_CORE="$dir/node_modules/playwright-core" && break\ndone\necho "PW_CORE=$PW_CORE"\nexport NODE_PATH="$PW_CORE/.."\nnode <<\'EOF\' 2>&1\nconst { chromium } = require("playwright-core")\n;(async () => {\n  const browser = await chromium.connectOverCDP("http://127.0.0.1:9222")\n  const page = await browser.contexts()[0].newPage()\n  const gameUrl = "https://romsfun.com/roms/game-boy-advance/sonic-advance-3.html"\n  await page.goto(gameUrl, { waitUntil: "domcontentloaded", timeout: 60000 })\n  const dl = await page.$eval("a[href*=\\"/download/\\"]", a => a.href).catch(() => null)\n  console.log("DL " + (dl || "MISSING"))\n  if (!dl) throw new Error("no download page on " + gameUrl)\n  await page.goto(dl, { waitUntil: "domcontentloaded", timeout: 60000 })\n  const variants = await page.$$eval("table a[href*=\\"/download/\\"]", as => as.map(a => a.href + " | " + a.textContent.trim()))\n  console.log("VARIANTS:")\n  variants.forEach((v, i) => console.log((i + 1) + " " + v))\n  await page.close()\n  await browser.close()\n})().catch(e => { console.error("ERROR " + e.message); process.exit(1) })\nEOF' 
+# DATE: 2026-08-02T15:10:53-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+PW_CORE=/home/eddyr/assembler/_codex/_templates/node_modules/playwright-core
+DL https://romsfun.com/download/sonic-advance-3-3797
+VARIANTS:
+1 https://romsfun.com/download/sonic-advance-3-3797/1 | Sonic Advance 3 (Europe) (En,Ja,Fr,De,Es,It) (Beta)
+2 https://romsfun.com/download/sonic-advance-3-3797/2 | Sonic Advance 3 (Europe) (En,Ja,Fr,De,Es,It)
+3 https://romsfun.com/download/sonic-advance-3-3797/3 | Sonic Advance 3 (Japan) (En,Ja,Fr,De,Es,It)
+4 https://romsfun.com/download/sonic-advance-3-3797/4 | Sonic Advance 3 (USA) (En,Ja,Fr,De,Es,It)
+# exit: 0

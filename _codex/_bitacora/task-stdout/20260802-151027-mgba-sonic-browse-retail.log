@@ -1,0 +1,7 @@
+# CMD: bash _codex/mgba-repo/scripts/browse-romsfun.sh sonic-advance-3 game-boy-advance 60 
+# DATE: 2026-08-02T15:10:27-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+SEARCH https://romsfun.com/roms/game-boy-advance/?s=sonic-advance-3
+ERROR no game matches sonic-advance-3 in game-boy-advance
+# exit: 1

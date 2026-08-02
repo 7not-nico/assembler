@@ -1,0 +1,35 @@
+# CMD: ls -la _codex/mgba-repo/roms/ 
+# DATE: 2026-08-02T14:59:12-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+total 70424
+drwxr-xr-x 1 eddyr eddyr     1842 Aug  1 13:47 .
+drwxr-xr-x 1 eddyr eddyr      476 Aug  1 07:19 ..
+-rw-r--r-- 1 eddyr eddyr  8388608 Dec 24  1996 crash-bandicoot-the-huge-adventure-usa.gba
+-rw-r--r-- 1 eddyr eddyr  8388608 Dec 24  1996 Crash Bandicoot - The Huge Adventure (USA).gba
+-rw-r--r-- 1 eddyr eddyr        0 Aug  1 13:41 crash-bandicoot-the-huge-adventure-usa.sav
+-rw-r--r-- 1 eddyr eddyr        0 Aug  1 13:20 Crash Bandicoot - The Huge Adventure (USA).sav
+-rw-r--r-- 1 eddyr eddyr 32789028 Mar 31 19:16 fire-emblem-cerulean-crescent-v2-11.gba
+-rw-r--r-- 1 eddyr eddyr    32768 Aug  1 13:59 fire-emblem-cerulean-crescent-v2-11.sav
+-rw-r--r-- 1 eddyr eddyr   524288 Dec 24  1996 kirby-s-dream-land-2-usa-europe-sgb-enhanced.gb
+-rw-r--r-- 1 eddyr eddyr     8192 Aug  1 00:10 kirby-s-dream-land-2-usa-europe-sgb-enhanced.sav
+-rw-r--r-- 1 eddyr eddyr  1048576 Jun  3 03:16 mega-man-world-5-dx-v1-6-1-switch-buster-dx-v2-0-1.gb
+-rw-r--r-- 1 eddyr eddyr        0 Aug  1 06:29 mega-man-world-5-dx-v1-6-1-switch-buster-dx-v2-0-1.sav
+-rw-r--r-- 1 eddyr eddyr  8061080 Apr  1 20:57 metroid-re-fusion-v1-51.gba
+-rw-r--r-- 1 eddyr eddyr    32768 Aug  1 11:21 metroid-re-fusion-v1-51.sav
+-rw-r--r-- 1 eddyr eddyr     3475 Aug  1 06:28 mgba_launcher.rb
+-rw-r--r-- 1 eddyr eddyr  2097152 Mar 24 02:19 pokemon-crystal-clear-v2-6-0.gbc
+-rw-r--r-- 1 eddyr eddyr    32816 Aug  1 06:50 pokemon-crystal-clear-v2-6-0.sav
+-rw-r--r-- 1 eddyr eddyr  2097152 May 10 05:50 pokemon-peridot-v2-2-3.gbc
+-rw-r--r-- 1 eddyr eddyr    32816 Aug  1 06:25 pokemon-peridot-v2-2-3.sav
+-rw-r--r-- 1 eddyr eddyr  2097152 Aug 25  2023 pokemon-prism-v0-95-build-254-hotfix-5.gbc
+-rw-r--r-- 1 eddyr eddyr  2097152 Aug 25  2023 Pokemon Prism v0.95 build 254 (Hotfix 5).gbc
+-rw-r--r-- 1 eddyr eddyr    32816 Aug  1 14:39 pokemon-prism-v0-95-build-254-hotfix-5.sav
+-rw-r--r-- 1 eddyr eddyr  2097152 Jul 16  2024 pok-mon-orange-v1-0.gbc
+-rw-r--r-- 1 eddyr eddyr    32816 Aug  1 11:07 pok-mon-orange-v1-0.sav
+-rw-r--r-- 1 eddyr eddyr    32768 Jul 31 23:56 test-cart.gb
+-rw-r--r-- 1 eddyr eddyr    32768 Dec 24  1996 tetris-japan-en.gb
+-rw-r--r-- 1 eddyr eddyr        0 Jul 31 23:57 tetris-japan-en.sav
+-rw-r--r-- 1 eddyr eddyr  2097152 Dec 24  1996 wario-land-3-world-en-ja.gbc
+-rw-r--r-- 1 eddyr eddyr    32768 Aug  1 13:23 wario-land-3-world-en-ja.sav
+# exit: 0

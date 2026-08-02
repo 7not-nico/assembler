@@ -1,0 +1,63 @@
+# CMD: bash -c ls\ -la\ .opencode/.playwright-mcp/\ \|\ rg\ -i\ \'mario\|golf\|zip\'\ \;\ echo\ \'---\ recent\ ---\'\;\ ls\ -lt\ .opencode/.playwright-mcp/\ \|\ head\ -6 
+# DATE: 2026-08-02T15:02:03-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+-rw-r--r-- 1 eddyr eddyr   541864 Jul 31 16:55 actraiser-usa-arcade.zip
+-rw-r--r-- 1 eddyr eddyr   233142 Jul 31 21:07 arkanoid-doh-it-again-usa.zip
+-rw-r--r-- 1 eddyr eddyr   308594 Jul 31 19:02 blues-brothers-the-usa.zip
+-rw-r--r-- 1 eddyr eddyr  1163695 Jul 31 20:44 bubsy-ii-usa.zip
+-rw-r--r-- 1 eddyr eddyr  3376982 Jul 31 22:09 chrono-trigger-enhansa-edition-v1-1-5.zip
+-rw-r--r-- 1 eddyr eddyr  4452331 Aug  1 13:19 crash-bandicoot-the-huge-adventure-usa.zip
+-rw-r--r-- 1 eddyr eddyr  2575597 Jul 31 16:21 donkey-kong-country-usa.zip
+-rw-r--r-- 1 eddyr eddyr  2602741 Jul 31 17:13 earthbound-beginnings-v1-2.zip
+-rw-r--r-- 1 eddyr eddyr  2265648 Jul 31 16:35 final-fantasy-vi-usa-woolsey-uncensored-edition-by-rodimus-primal-v3-06-n.zip
+-rw-r--r-- 1 eddyr eddyr   926375 Jul 31 19:10 harvest-moon-usa.zip
+-rw-r--r-- 1 eddyr eddyr   699723 Jul 31 16:49 jelly-boy-europe.zip
+-rw-r--r-- 1 eddyr eddyr   369113 Jul 31 17:41 keeper-japan.zip
+-rw-r--r-- 1 eddyr eddyr   331784 Aug  1 00:10 kirby-s-dream-land-2-usa-europe-sgb-enhanced.zip
+-rw-r--r-- 1 eddyr eddyr   702836 Jul 31 14:10 Legend-of-Zelda-The---A-Link-to-the-Past-USA-.zip
+-rw-r--r-- 1 eddyr eddyr   676880 Jul 31 16:46 lethal-weapon-usa.zip
+-rw-r--r-- 1 eddyr eddyr  1621951 Jul 31 20:36 looney-tunes-b-ball-usa.zip
+-rw-r--r-- 1 eddyr eddyr  2149711 Jul 31 19:08 maui-mallard-in-cold-shadow-usa.zip
+-rw-r--r-- 1 eddyr eddyr   348816 Aug  1 06:29 mega-man-world-5-dx-v1-6-1-switch-buster-dx-v2-0-1.zip
+-rw-r--r-- 1 eddyr eddyr  1002109 Jul 31 18:35 mega-man-x2-usa.zip
+-rw-r--r-- 1 eddyr eddyr  1295716 Jul 31 18:36 mega-man-x3-usa.zip
+-rw-r--r-- 1 eddyr eddyr   938210 Jul 31 18:35 mega-man-x-usa.zip
+-rw-r--r-- 1 eddyr eddyr  4620518 Aug  1 07:31 metroid-re-fusion-v1-51.zip
+-rw-r--r-- 1 eddyr eddyr   823992 Jul 31 18:24 micro-machines-2-turbo-tournament-europe.zip
+-rw-r--r-- 1 eddyr eddyr   387609 Jul 31 18:18 micro-machines-usa.zip
+-rw-r--r-- 1 eddyr eddyr  1193688 Jul 31 19:09 mobile-suit-gundam-wing-endless-duel-japan-t-en-by-aeon-genesis-v1-00-fastrom-hack-by-combokyo-v1-0-n.zip
+-rw-r--r-- 1 eddyr eddyr  1348156 Jul 31 18:42 nosferatu-usa.zip
+-rw-r--r-- 1 eddyr eddyr  1249664 Jul 31 18:40 ogre-battle-the-march-of-the-black-queen-usa.zip
+-rw-r--r-- 1 eddyr eddyr   641272 Jul 31 16:16 plok-usa.zip
+-rw-r--r-- 1 eddyr eddyr   706042 Jul 31 21:33 pocky-rocky-usa.zip
+-rw-r--r-- 1 eddyr eddyr  1436927 Aug  1 06:47 pokemon-crystal-clear-v2-6-0.zip
+-rw-r--r-- 1 eddyr eddyr  2296285 Aug  1 06:25 pokemon-peridot-v2-2-3.zip
+-rw-r--r-- 1 eddyr eddyr  1593168 Aug  1 13:29 pokemon-prism-v0-95-build-254-hotfix-5.zip
+-rw-r--r-- 1 eddyr eddyr  1088016 Aug  1 06:51 pok-mon-orange-v1-0.zip
+-rw-r--r-- 1 eddyr eddyr   725833 Jul 31 21:56 pop-n-twinbee-rainbow-bell-adventures-europe.zip
+-rw-r--r-- 1 eddyr eddyr   853973 Jul 31 19:06 prehistorik-man-usa-en-fr-es.zip
+-rw-r--r-- 1 eddyr eddyr  1241011 Jul 31 14:35 smw2-plus-2-complete.zip
+-rw-r--r-- 1 eddyr eddyr   769298 Jul 31 20:57 sunset-riders-usa.zip
+-rw-r--r-- 1 eddyr eddyr   912178 Jul 31 18:33 super-bomberman-4-japan-t-en-by-svambo-v1-0.zip
+-rw-r--r-- 1 eddyr eddyr  1182509 Jul 31 17:45 super-bomberman-5-japan-t-en-by-psyklax-beta-add-by-svambo-v1-0-i.zip
+-rw-r--r-- 1 eddyr eddyr   971288 Jul 31 20:39 super-mario-all-stars-usa.zip
+-rw-r--r-- 1 eddyr eddyr   351251 Jul 31 10:32 Super-Mario-Kart-USA-.zip
+-rw-r--r-- 1 eddyr eddyr   345695 Jul 31 10:17 Super-Mario-World-USA-.zip
+-rw-r--r-- 1 eddyr eddyr   347370 Jul 31 10:10 Super-Mario-World-U-.zip
+-rw-r--r-- 1 eddyr eddyr  1569844 Jul 31 16:24 super-metroid-japan-usa-en-ja.zip
+-rw-r--r-- 1 eddyr eddyr   229133 Jul 31 18:28 super-off-road-usa.zip
+-rw-r--r-- 1 eddyr eddyr   761489 Jul 31 16:41 super-tetris-3-japan-en.zip
+-rw-r--r-- 1 eddyr eddyr  2961839 Jul 31 16:15 terranigma-europe.zip
+-rw-r--r-- 1 eddyr eddyr    19478 Jul 31 23:57 tetris-japan-en.zip
+-rw-r--r-- 1 eddyr eddyr   885664 Jul 31 21:50 the-ninjawarriors-again-female-ninjas-monkies-hack.zip
+-rw-r--r-- 1 eddyr eddyr   569310 Jul 31 22:05 u-n-squadron-usa.zip
+-rw-r--r-- 1 eddyr eddyr   641019 Aug  1 06:32 wario-land-3-world-en-ja.zip
+--- recent ---
+total 130864
+-rw-r--r-- 1 eddyr eddyr      288 Aug  1 21:43 console-2026-08-02T03-43-10-911Z.log
+-rw-r--r-- 1 eddyr eddyr      880 Aug  1 21:43 page-2026-08-02T03-43-11-301Z.yml
+-rw-r--r-- 1 eddyr eddyr    13283 Aug  1 21:42 page-2026-08-02T03-42-53-468Z.yml
+-rw-r--r-- 1 eddyr eddyr    66226 Aug  1 21:42 page-2026-08-02T03-42-39-093Z.yml
+-rw-r--r-- 1 eddyr eddyr 15266487 Aug  1 13:47 fire-emblem-cerulean-crescent-v2-11.7z
+# exit: 0

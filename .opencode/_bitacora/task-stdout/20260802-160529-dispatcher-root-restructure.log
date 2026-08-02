@@ -1,0 +1,160 @@
+# CMD: bash -c $'\nmkdir -p .opencode/skills/playwright-dispatcher/skill .opencode/skills/playwright-dispatcher/ref\nmv .opencode/skills/module/SKILL.md .opencode/skills/playwright-dispatcher/SKILL.md\nmv .opencode/skills/module/ref/core.md .opencode/skills/playwright-dispatcher/ref/core.md\nmv .opencode/skills/module/use-playwright-core .opencode/skills/module/use-playwright-ai-mode .opencode/skills/module/use-playwright-debug .opencode/skills/module/use-playwright-network-storage .opencode/skills/module/use-playwright-vision .opencode/skills/playwright-dispatcher/skill/\nrmdir .opencode/skills/module/ref .opencode/skills/module\necho "--- playwright-dispatcher/ ---"\nls -R .opencode/skills/playwright-dispatcher' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T16:05:30-06:00
+# PID: 208589
+# DUR: 404ms
+# exit: 0
+# GIT: assembler@0ef722d
+# BRANCH: main
+# SESSION: bf545abc
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\nmkdir -p .opencode/skills/playwright-dispatcher/skill .opencode/skills/playwright-dispatcher/ref\nmv .opencode/skills/module/SKILL.md .opencode/skills/playwright-dispatcher/SKILL.md\nmv .opencode/skills/module/ref/core.md .opencode/skills/playwright-dispatcher/ref/core.md\nmv .opencode/skills/module/use-playwright-core .opencode/skills/module/use-playwright-ai-mode .opencode/skills/module/use-playwright-debug .opencode/skills/module/use-playwright-network-storage .opencode/skills/module/use-playwright-vision .opencode/skills/playwright-dispatcher/skill/\nrmdir .opencode/skills/module/ref .opencode/skills/module\necho "--- playwright-dispatcher/ ---"\nls -R .opencode/skills/playwright-dispatcher' 
+# CWD: /home/eddyr/assembler
+# --------------------
+--- playwright-dispatcher/ ---
+.opencode/skills/playwright-dispatcher:
+ref
+skill
+SKILL.md
+
+.opencode/skills/playwright-dispatcher/ref:
+core.md
+
+.opencode/skills/playwright-dispatcher/skill:
+use-playwright-ai-mode
+use-playwright-core
+use-playwright-debug
+use-playwright-network-storage
+use-playwright-vision
+
+.opencode/skills/playwright-dispatcher/skill/use-playwright-ai-mode:
+SKILL.md
+
+.opencode/skills/playwright-dispatcher/skill/use-playwright-core:
+SKILL.md
+
+.opencode/skills/playwright-dispatcher/skill/use-playwright-debug:
+SKILL.md
+
+.opencode/skills/playwright-dispatcher/skill/use-playwright-network-storage:
+SKILL.md
+
+.opencode/skills/playwright-dispatcher/skill/use-playwright-vision:
+SKILL.md
+# OUT_LINES: 30
+# OUT_BYTES: 704
+# ERR_LINES: 0
+# EXEC: 208589|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh dispatcher-root-restructure -- bash -c 
+# EXEC: 208590|/usr/bin/date|date +%s%N
+# EXEC: 208593|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 208596|/usr/bin/git|git remote get-url origin
+# EXEC: 208594|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 208597|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 208599|/usr/bin/git|git branch --show-current
+# EXEC: 208601|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 208602|/usr/bin/head|head -1
+# EXEC: 208603|/usr/bin/tr|tr -d \n
+# EXEC: 208604|/usr/bin/bun|bun --version
+# EXEC: 208606|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 208607|/usr/bin/head|head -1
+# EXEC: 208608|/usr/bin/tr|tr -d \n
+# EXEC: 208609|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 208611|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 208612|/usr/bin/head|head -1
+# EXEC: 208613|/usr/bin/tr|tr -d \n
+# EXEC: 208614|/usr/bin/python3|python3 --version
+# EXEC: 208616|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 208617|/usr/bin/head|head -1
+# EXEC: 208618|/usr/bin/tr|tr -d \n
+# EXEC: 208619|/usr/bin/ruby|ruby --version
+# EXEC: 208623|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 208624|/usr/bin/head|head -1
+# EXEC: 208625|/usr/bin/tr|tr -d \n
+# EXEC: 208626|/usr/bin/rustc|rustc --version
+# EXEC: 208638|/usr/bin/head|head -1
+# EXEC: 208637|/usr/bin/timeout|timeout 2 go version
+# EXEC: 208639|/usr/bin/tr|tr -d \n
+# EXEC: 208640|/usr/bin/go|go version
+# EXEC: 208645|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 208646|/usr/bin/head|head -1
+# EXEC: 208647|/usr/bin/tr|tr -d \n
+# EXEC: 208648|/usr/bin/git|git --version
+# EXEC: 208650|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 208651|/usr/bin/head|head -1
+# EXEC: 208652|/usr/bin/tr|tr -d \n
+# EXEC: 208653|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 208655|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 208656|/usr/bin/head|head -1
+# EXEC: 208657|/usr/bin/tr|tr -d \n
+# EXEC: 208658|/usr/bin/date|date --version
+# EXEC: 208662|/usr/bin/tr|tr -d \n
+# EXEC: 208660|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 208661|/usr/bin/head|head -1
+# EXEC: 208663|/usr/bin/wc|wc --version
+# EXEC: 208665|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 208666|/usr/bin/head|head -1
+# EXEC: 208667|/usr/bin/tr|tr -d \n
+# EXEC: 208668|/usr/bin/cat|cat --version
+# EXEC: 208670|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 208671|/usr/bin/head|head -1
+# EXEC: 208672|/usr/bin/tr|tr -d \n
+# EXEC: 208673|/usr/bin/tee|tee --version
+# EXEC: 208675|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 208676|/usr/bin/head|head -1
+# EXEC: 208677|/usr/bin/tr|tr -d \n
+# EXEC: 208678|/usr/bin/mktemp|mktemp --version
+# EXEC: 208680|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 208681|/usr/bin/head|head -1
+# EXEC: 208682|/usr/bin/tr|tr -d \n
+# EXEC: 208683|/usr/bin/rm|rm --version
+# EXEC: 208685|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 208686|/usr/bin/head|head -1
+# EXEC: 208687|/usr/bin/tr|tr -d \n
+# EXEC: 208688|/usr/bin/timeout|timeout --version
+# EXEC: 208690|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 208691|/usr/bin/head|head -1
+# EXEC: 208692|/usr/bin/tr|tr -d \n
+# EXEC: 208693|/usr/bin/tr|tr --version
+# EXEC: 208695|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 208696|/usr/bin/head|head -1
+# EXEC: 208697|/usr/bin/tr|tr -d \n
+# EXEC: 208698|/usr/bin/head|head --version
+# EXEC: 208700|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 208702|/usr/bin/tr|tr -d \n
+# EXEC: 208701|/usr/bin/head|head -1
+# EXEC: 208703|/usr/bin/cut|cut --version
+# EXEC: 208705|/usr/bin/date|date +%s%N
+# EXEC: 208706|/usr/bin/sha256sum|sha256sum
+# EXEC: 208707|/usr/bin/cut|cut -c1-8
+# EXEC: 208709|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160529-dispatcher-root-restructure.log
+# EXEC: 208710|/usr/bin/date|date -Is
+# EXEC: 208711|/usr/bin/mktemp|mktemp
+# EXEC: 208712|/usr/bin/mktemp|mktemp
+# EXEC: 208713|/usr/bin/bash|bash -c 
+# EXEC: 208714|/usr/bin/mkdir|mkdir -p .opencode/skills/playwright-dispatcher/skill .opencode/skills/playwright-dispatcher/ref
+# EXEC: 208715|/usr/bin/mv|mv .opencode/skills/module/SKILL.md .opencode/skills/playwright-dispatcher/SKILL.md
+# EXEC: 208716|/usr/bin/mv|mv .opencode/skills/module/ref/core.md .opencode/skills/playwright-dispatcher/ref/core.md
+# EXEC: 208717|/usr/bin/mv|mv .opencode/skills/module/use-playwright-core .opencode/skills/module/use-playwright-ai-mode .opencode/skills/module/use-playwright-debug .opencode/skills/module/use-playwright-network-storage .opencode/skills/module/use-playwright-vision .opencode/skills/playwright-dispatcher/skill/
+# EXEC: 208718|/usr/bin/rmdir|rmdir .opencode/skills/module/ref .opencode/skills/module
+# EXEC: 208713|/usr/bin/ls|ls -R .opencode/skills/playwright-dispatcher
+# EXEC: 208720|/usr/bin/wc|wc -l
+# EXEC: 208721|/usr/bin/tr|tr -d  
+# EXEC: 208723|/usr/bin/wc|wc -c
+# EXEC: 208724|/usr/bin/tr|tr -d  
+# EXEC: 208726|/usr/bin/wc|wc -l
+# EXEC: 208727|/usr/bin/tr|tr -d  
+# EXEC: 208728|/usr/bin/date|date +%s%N
+# EXEC: 208730|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160529-dispatcher-root-restructure.log
+# EXEC: 208732|/usr/bin/cat|cat /tmp/tmp.6IKGgqWtqR
+# EXEC: 208733|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160529-dispatcher-root-restructure.log
+# EXEC: 208734|/usr/bin/cat|cat /tmp/tmp.ILoK2T3ag9
+# EXEC: 208735|/usr/bin/cat|cat /tmp/tmp.ILoK2T3ag9
+# EXEC: 208736|/usr/bin/rm|rm -f /tmp/tmp.6IKGgqWtqR /tmp/tmp.ILoK2T3ag9
+# EXEC: 208738|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160529-dispatcher-root-restructure.log
+# EXEC: 208740|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160529-dispatcher-root-restructure.log
+# EXEC: 208742|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160529-dispatcher-root-restructure.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 ls=ls (GNU coreutils) 9.11 mkdir=mkdir (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 mv=mv (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 rmdir=rmdir (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 109
+# SHA: 3182a9126efb6b9da5b329dab16bbfb52491f1cbce3ba9d73c9b0af0d5db86fc
+# exit: 0

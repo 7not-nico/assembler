@@ -1,0 +1,13 @@
+# CMD: curl -s --max-time 5 http://127.0.0.1:9222/json/version 
+# DATE: 2026-08-02T15:08:07-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+{
+   "Browser": "Chrome/151.0.7922.10",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+   "V8-Version": "15.1.206.1",
+   "WebKit-Version": "537.36 (@2231dab126e59bbfe91f33b2cafd0cb2ac2ca2de)",
+   "webSocketDebuggerUrl": "ws://127.0.0.1:9222/devtools/browser/aabd3dee-5ea1-4e52-86bc-0d35c6adfba3"
+}
+# exit: 0

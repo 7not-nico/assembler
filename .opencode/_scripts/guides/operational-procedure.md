@@ -1,6 +1,6 @@
 # Operational Procedure — Anchored Skills Execution Plan
 
-Anchors: compose-web, report-outcomes, use-playwright-core, knowledge-ruby, guide-reasoning.
+Anchors: compose-web, report-outcomes, use-playwright-core, knowledge-languages, guide-reasoning.
 
 ## Phase 0: Pre-Task Context (Always)
 
@@ -22,7 +22,7 @@ Load anchored skills in dependency order:
 1. **guide-reasoning** — grounds MAX→SPEC→PROT ordering. Run before any design decision.
 2. **compose-web** — provides the search→fetch→Context7→Playwright→log pipeline. Run before any research/web interaction.
 3. **use-playwright-core** — provides navigation, interaction, extraction tools. Run within compose-web step for dynamic pages.
-4. **knowledge-ruby** — read atomic `knowledge/ruby/` files for Ruby functional programming questions only.
+4. **knowledge-languages** — read atomic `knowledge/ruby/` files for Ruby functional programming questions only.
 5. **query-nerdfont** — query nerdfont/sets/ DB for glyph data. Training memory disabled for glyph scope.
 6. **report-outcomes** — runs on task completion. Writes conclusions, errors, walkthroughs, todo.
 

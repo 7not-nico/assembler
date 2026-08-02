@@ -1,0 +1,6 @@
+# CMD: bash _codex/mgba-repo/start-browser.sh 
+# DATE: 2026-08-02T14:59:26-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+UP   port=9222 profile=/home/eddyr/.cache/ms-playwright-mcp/mcp-chrome-3f2da58
+# exit: 0

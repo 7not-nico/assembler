@@ -1,0 +1,15 @@
+# CMD: bash _codex/mgba-repo/scripts/playwright-fetch-rom.sh https://romsfun.com/download/sonic-advance-3-3797/4 90 
+# DATE: 2026-08-02T15:14:30-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+CDP  http://127.0.0.1:9222
+NAV  https://romsfun.com/download/sonic-advance-3-3797/4
+LINK https://statics.romsfun.com/GameBoyAdvance/Sonic%20Advance%203%20%28USA%29%20%28En%2CJa%2CFr%2CDe%2CEs%2CIt%29.zip?token=cHxfalBlRlhND3BzWDhQZ1BUQxF5fF5x
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/sonic-advance-3-usa-en-ja-fr-de-es-it.zip (Sonic Advance 3 (USA) (En,Ja,Fr,De,Es,It).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/sonic-advance-3-usa-en-ja-fr-de-es-it.zip
+OK   Sonic Advance 3 (USA) (En,Ja,Fr,De,Es,It).gba (16777216 B) title="SONICADVANC3"
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/sonic-advance-3-usa-en-ja-fr-de-es-it.gba
+/home/eddyr/assembler/_codex/mgba-repo/roms/sonic-advance-3-usa-en-ja-fr-de-es-it.gba: Game Boy Advance ROM image: "SONICADVANC3" (B3SE78, Rev.00)
+LAUNCH /home/eddyr/assembler/_codex/mgba-repo/build/sdl/mgba /home/eddyr/assembler/_codex/mgba-repo/roms/sonic-advance-3-usa-en-ja-fr-de-es-it.gba
+RUN   pid=174865 cpu=alive window=DISPLAY:0 log=/tmp/opencode/mgba-launch.log
+# exit: 0

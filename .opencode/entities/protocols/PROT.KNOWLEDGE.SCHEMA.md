@@ -46,7 +46,7 @@ Three files: `schema.sql` (knowledge.db DDL), `sync-knowledge-db.rb` (sync .md f
 
 ### Project-local scope
 
-Knowledge/ is scoped to its containing project — same-named files in different projects are distinct. No global registration. The `knowledge-ruby` skill reads from the nearest `knowledge/` directory.
+Knowledge/ is scoped to its containing project — same-named files in different projects are distinct. No global registration. The `knowledge-languages` skill reads from the nearest `knowledge/` directory.
 
 ## Gotchas
 
@@ -67,7 +67,7 @@ Any AMANDA project that creates a `knowledge/` directory. The protocol defines t
 
 ## See also
 
-- `knowledge-ruby` skill — reads from `knowledge/` as authoritative source
+- `knowledge-languages` skill — reads from `knowledge/` as authoritative source
 - `scripts/AGENTS.md` — canonical project documentation
 - `PROT.TOOL.SCOPE` — analogous project-scoping pattern for tools
 - `scripts/guides/functional-programming.md` — FP conventions documented in knowledge/

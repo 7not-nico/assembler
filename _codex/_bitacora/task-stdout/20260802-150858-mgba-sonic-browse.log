@@ -1,0 +1,15 @@
+# CMD: bash _codex/mgba-repo/scripts/browse-romsfun.sh Sonic\ Advance\ 3 game-boy-advance 60 
+# DATE: 2026-08-02T15:08:58-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+SEARCH https://romsfun.com/roms/game-boy-advance/?s=Sonic%2BAdvance%2B3
+GAME https://romsfun.com/roms/game-boy-advance/sonic-advance-3-playable-shadow.html | Sonic Advance 3: Playable Shadow
+GAME https://romsfun.com/roms/game-boy-advance/sonic-advance-3-sp.html | Sonic Advance 3 SP
+GAME https://romsfun.com/roms/game-boy-advance/sonic-advance-3.html | Sonic Advance 3
+GAME https://romsfun.com/roms/game-boy-advance/spyro-advance.html | Spyro Advance
+GAME https://romsfun.com/roms/game-boy-advance/crash-spyro-superpack-crash-bandicoot-the-huge-adventure-spyro-season-of-ice.html | Crash & Spyro Superpack: Crash Bandicoot: The Huge Adventure/Spyro: Season of Ice
+OPEN https://romsfun.com/roms/game-boy-advance/sonic-advance-3-playable-shadow.html
+DL https://romsfun.com/download/sonic-advance-3-playable-shadow-310286
+VARIANTS:
+1 https://romsfun.com/download/sonic-advance-3-playable-shadow-310286/1 | Sonic Advance 3 - Playable Shadow (Undub)
+# exit: 0
