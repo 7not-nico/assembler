@@ -2,46 +2,33 @@
 
 ## System
 
-The assembler runs on Bun and TypeScript. It executes source directly. Dependencies live in `.opencode/package.json`.
-The database uses `bun:sqlite`. Migrations add columns (`ALTER TABLE ADD COLUMN`); existing tables and rows persist.
-`patlib.db` lives under `.opencode/` and stores assembler entities. Subprojects maintain their own `.db` under `.opencode/`.
-The directory runs as a git repository at `github.com/7not-nico/assembler`. The `.gitignore` file excludes runtime artifacts, codex clones, and binary media.
-The `.opencode/_bitacora/task-reference/` folder stores query flags, schema details, and lookup tables. AGENTS.md references these files.
-The `.opencode/_scripts/dataflow/` directory stores flow documentation. The `semantic-engine.md` file documents embed/search logic flow.
-The `_knowledge/rust-coding/` project has its own AGENTS.md. Delegation precedes work inside it. The learning precedence chain is obligatory: `precept/` → `procedure/` → `note/` → `bitacora/` → `glossary/` → `reference/` → `fixtures/`. Precepts and procedures compose; each complements the other.
-The `_knowledge/_templates/` directory stores knowledge-project bootstrap templates. New projects scaffold with `bash _knowledge/_templates/scaffold-knowledge.sh {name} "{domain}" [--with-skills]`. The scaffold creates the full 13-layer chain (`format/ → precept/ → procedure/ → research/ → concept/ → note/ → bitacora/ → glossary/ → schema/ → script/ → reference/ → fixtures/ → practice/`), AGENTS.md, per-layer boilerplate, SQL schema, and a Ruby registry push script. The `--with-skills` flag copies the anchored skill set (browser, research, search, reasoning) into `docs/` per CMD.ANCHOR.WORKFLOW. The `_knowledge/hypr-docs/` project uses the extended chain as its reference implementation.
-The `_knowledge/_templates/report/` directory stores session reports for bootstrapped knowledge projects. Every session writes a session report (precept `write-report.md`): what was done, decisions, errors found, findings, open edges, todo state. Errors and findings feed template fixes — the improvement loop.
-The `_codex/` project explores codebases deeply. It has its own AGENTS.md, a shared `_templates/` toolchain, and a `_bitacora/` record area. Repos fetch shallow into `{repo}-repo/{repo}/`; dive projects carry their own AGENTS.md.
-The `_atelier/` domain holds plain project folders — `a01-harness-llm/`, `common/`, `one-timers/`, `pythontts-cli/`, `study-sessions/`. Projects with their own AGENTS.md delegate before work inside them, per the project-delegation rule.
+The assembler runs on Bun + TypeScript, executing source directly. Deps live in `.opencode/package.json`. The database uses `bun:sqlite`; migrations add columns (`ALTER TABLE ADD COLUMN`); existing tables and rows persist. `patlib.db` lives under `.opencode/`; subprojects keep their own `.db`. The directory runs as a git repository at `github.com/7not-nico/assembler`; `.gitignore` excludes runtime artifacts, codex clones, and binary media.
+
+Projects with their own AGENTS.md delegate before work inside (`_knowledge/rust-coding/`, `_knowledge/hypr-docs/`, `_codex/`, `.opencode/_scripts/`, `.opencode/_shell/`); `_atelier/` holds plain project folders whose subprojects carry their own AGENTS.md. Knowledge projects follow the obligatory chain `precept/ → procedure/ → note/ → bitacora/ → glossary/ → reference/ → fixtures/`; new ones scaffold with `bash _knowledge/_templates/scaffold-knowledge.sh {name} "{domain}" [--with-skills]` (13-layer chain). Session reports land in `_knowledge/_templates/report/`.
+
+Task reference: `.opencode/_bitacora/task-reference/query-patlib.md` (query flags), `entity-schema.md` (schema). Flow docs: `.opencode/_scripts/dataflow/semantic-engine.md`.
 
 ## Reports and todos
 
-The agent writes bitacora files ALWAYS — every session, every task. Todo precedes work; report follows completion. Both stay open while working. All records live under `.opencode/_bitacora/` — every subfolder follows the `{?}-{concrete noun}` naming convention: `task-audit/`, `task-plan/`, `task-reference/`, `task-report/`, `task-stdout/`, `task-survey/`, `task-todo/`.
-The `.opencode/_bitacora/task-todo/{topic}.md` file holds persistent task lists, one per project/topic. Work creates the todo BEFORE tasks start — it plans the task sequence. Work uses the todo DURING tasks — status updates (`- [ ]` / `- [x]`) mark progress as tasks complete. Each task begins from its todo entry.
-The `.opencode/_bitacora/task-report/{timestamp}-{topic}.md` file stores the factual record — metrics, findings, decisions, before/after data — and the task reports: what was done, decisions, open edges, todo state summary. The agent writes the report at completion.
-The `.opencode/_bitacora/task-audit/`, `.opencode/_bitacora/task-plan/`, and `.opencode/_bitacora/task-survey/` folders hold audit logs, plan documents, and survey records.
-Every command the agent runs passes through `bash .opencode/_bitacora/bitacora-log.sh {name} -- {command}`. The script writes the log file into `.opencode/_bitacora/task-stdout/`. The file name takes the form `{YYYYMMDD}-{HHMMSS}-{name}.log`. The `# CMD:` header holds the exact command line. Output streams live to the terminal and into the file. The script appends the exit status. Reports reference each log file.
-Report and todo updates accompany task completion; they are deliverables, first-class outputs. Every finished task carries a todo entry and a completed-task report; both mark finished work.
+Bitacora files ALWAYS — every session, every task. Todo precedes work; report follows completion; both stay open while working. Records live under `.opencode/_bitacora/` (`task-audit/`, `task-plan/`, `task-reference/`, `task-report/`, `task-stdout/`, `task-survey/`, `task-todo/`).
+
+- `.opencode/_bitacora/task-todo/{topic}.md` — persistent task lists, created BEFORE tasks start; status updates (`- [ ]` / `- [x]`) mark progress during tasks.
+- `.opencode/_bitacora/task-report/{timestamp}-{topic}.md` — factual record at completion: what was done, decisions, open edges, todo state summary.
+
+Every command pipes through `bash .opencode/_bitacora/bitacora-log.sh {name} -- {command}` → `task-stdout/{YYYYMMDD}-{HHMMSS}-{name}.log` with `# CMD:` header and exit status. Long-running commands buffer inner output to temp files replayed at completion — run long diagnostics directly to watch live progress.
 
 ## Tooling
 
-Root `.opencode/tools/` hosts active tools. They are Shebang CLI (semantic engine). They import from `../_lib/` (shared lib modules).
-Subproject `.opencode/tools/` hosts Shebang CLI or plugin IPC. They run with `bun run <file>` or auto-discover. They import from `../lib/db`.
-Root tools host the semantic engine (details below). The former sync/read/MCP toolchain (`write-sync`, `sync-watch`, `read-selection`, `read-projection`, `read-validate`, `mcp-log-search`, `mcp-features`, `mcp-compare`, `mcp-verify`) sits archived under `.opencode/tools/_disabled/` with matching `_lib/_disabled/` modules (`db.ts`, `sync.ts`, `read-entities.ts`, etc.).
-Plugins: all 8 archived under `.opencode/plugins/_disabled/` (`audit-events`, `auto-sync`, `bash-guard`, `burst-alert`, `cmd-audit`, `log-mcp`, `ref-integrity`, `session-saver`). Config carries plugin registrations when present; the directory discovers plugins; moving files back restores them.
+Root `.opencode/tools/` hosts Shebang CLI tools (semantic engine), importing `../_lib/` (shared lib). Subproject `.opencode/tools/` hosts Shebang CLI or plugin IPC, importing `../lib/db`. Dependencies share one plane: `tools/{name}/node_modules` symlinks to `.opencode/node_modules` (declared in `.opencode/package.json`); `bun install` runs at the root plane only (per `REF.TOOL.NODE_MODULES.SHARED`). MCP servers follow the same symlink for SDK/zod deps. Archived toolchain and plugins sit in `_disabled/`; opencode.json registers active servers only; restoring an archived server requires moving the directory back and re-adding its registration.
 
-Semantic engine (root):
+### Semantic engine
 
-- IPC tools: `embed-entity` (TRNS — embed patlib entities). The server loads them at start; edits require a restart.
-- CLI tools:
-  - `semantic-embed` — runs `bun run .opencode/tools/semantic-embed.ts [--type TABLE] [--force]`
-  - `semantic-stats` — runs `[--type TABLE]`
-  - `semantic-drift` — runs `bun run .opencode/tools/semantic-drift.ts [--type TABLE] [--check]`; detects MISSING/STALE embeddings vs patlib.db
-  - `semantic-eval` — runs `bun run .opencode/tools/semantic-eval.ts [--k N] [--variant default|raw|passage] [--documents stored|title|body]`; reports MRR/Recall/Hit/NDCG metrics over related-ID pairs, sequential batches
-- Search tool: `semantic-search` (`bun run .opencode/tools/semantic-search.ts --query TEXT [--k N] [--type TABLE]`). Rust ANN top-k via shared `_lib/ann.ts`; CLI usage applies. It spawns safely in standalone CLI processes (guarded by `import.meta.main`). IPC tools use in-process `_lib/score.ts`. The Rust-pipe spawn path runs from the CLI.
-- Shared: `_lib/embed.ts` (model `Xenova/bge-small-en-v1.5`, 384-dim), `_lib/paths.ts`, `_lib/cli.ts`, `_lib/score.ts` (pure `score`/`unit`/`hit`), `_lib/ann.ts` (Rust ANN endpoints `score`/`hit`/`unit` — CLI-tool twins of `_lib/score.ts`).
-- Vector store: `.opencode/patlib-vector.db` — schema `embeddings(entity_type, entity_id, seq, field, vector, content_hash, model_version, source_file, source_mtime, updated)`, UNIQUE per `(entity_type, entity_id, seq, field)`. Journal mode: DELETE — the store skips WAL and sidecar files.
-- ANN backend: `_rustlib/target/release/assemble` verbs `score|hit|unit` (JSON over stdin/stdout).
+- IPC: `embed-entity` (TRNS) — server loads at start; edits require restart.
+- MCP server: `mcp-semantic` (`.opencode/tools/mcp-semantic/index.ts`) — exposes the workflow as agent tools (`semantic_search`, `semantic_stats`, `semantic_drift`, `semantic_embed`, `semantic_purge`, `semantic_eval`); deps via the shared node_modules symlink; registered in opencode.json.
+- CLI (`bun run .opencode/tools/{name}.ts`): `semantic-embed [--type T] [--force]`, `semantic-stats [--type T]`, `semantic-drift [--type T] [--check]` (MISSING/STALE vs patlib.db), `semantic-eval [--k N] [--variant default|raw|passage] [--documents stored|title|body]` (MRR/Recall/Hit/NDCG over related-ID pairs), `semantic-purge [--type T] [--apply]` (dry-run → delete), `semantic-search --query TEXT [--k N] [--type T]`.
+- Shared: `_lib/embed.ts` (model `Xenova/bge-small-en-v1.5`, 384-dim), `_lib/paths.ts`, `_lib/score.ts` (pure `score`/`unit`/`hit`), `_lib/ann.ts` (Rust ANN twins), `_lib/semantic-types.ts`/`semantic-format.ts` (pure) and `_lib/semantic-query.ts` (io) — MCP server libs. CLI tools spawn `_rustlib/target/release/assemble` (`score|hit|unit`, JSON over stdin/stdout) — safe in standalone processes (guarded by `import.meta.main`); IPC tools use in-process `_lib/score.ts`.
+- Vector store: `.opencode/patlib-vector.db` — `embeddings(entity_type, entity_id, seq, field, vector, content_hash, model_version, source_file, source_mtime, updated)`, UNIQUE per `(entity_type, entity_id, seq, field)`, journal DELETE.
+- Eval caveat: `--documents body` re-embeds content columns and returns metrics identical to `stored` (same source text); embedder truncates long inputs (20 KB → 165 ms). Probe workflow: `.opencode/_shell/survey/semantic-engine-probe/` (`run-probe.sh`).
 
 ## Entities
 
@@ -53,6 +40,3 @@ Semantic engine (root):
 | `.opencode/entities/terms/` | `{PREFIX}.{DOMAIN}.{SUBJECT}.md` | 3-segment uppercase dotted ID. Terms. Backmatter. |
 | `.opencode/commands/` | `yamls/{verb}-{domain}.yaml` | Verb-domain YAML registry. |
 | `.opencode/entities/maxims/` | `{PREFIX}.{DOMAIN}.{SUBJECT}.md` | 3-segment uppercase dotted ID. Maxims. Frontmatter. |
-
-`.opencode/_bitacora/task-reference/query-patlib.md` holds query flags and gotchas.
-`.opencode/_bitacora/task-reference/entity-schema.md` holds schema details.
