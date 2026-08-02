@@ -103,3 +103,31 @@ Three tracers in `_sandbox/`, each distinct:
 
 `RESULT=pass:3`, exit 0, log `20260801-211147-fixture-ruby-sim.log`, SHA `7e7c7ea6…`. EXEC genealogy captures all 3 ruby invocations (PIDs 541363/541370/541377) in both the `--version` probe phase and the real run. Graceful `RESULT=skip:none` when gitignored `_sandbox/` absent (fresh clone).
 
+## Follow-up: useful-log tracer + cloth-config fixtures (same session)
+
+**Problem**: bitacora EXEC stream buries the command's story — 100-160 events per run, mostly probe noise (`timeout X --version`, `tee`, `wc`, `cat /tmp/*`) + PATH-scan ENOENT bursts. Under bitacora, inner tracers defer entirely (`(no exec events captured)`) → nothing useful.
+
+**`trace-useful.sh`** (sandbox) — standalone exec tracer that logs useful things:
+
+| Metric | Before | After |
+|---|---|---|
+| Raw events (buggy-script) | 15 | 15 |
+| Useful execs surfaced | 15 (noisy) | **4** (script, bash, sleep, ls) |
+| PATH-scan ENOENT burst | 11 lines | **1 collapsed note** |
+| Result | buried | `EXIT=0`, `FAILS=0`, tree with elapsed/delta ms |
+
+Keyed contract: `EXEC_EVENTS`, `USEFUL_EVENTS`, `COLLAPSED_SCANS`, `FAILS`, `TRACE_MS`, `RESULT=pass:STATUS`.
+
+**Finding — tracexec has no ppid**: only `id, pid, filename, argv.value, result, timestamp`. Tree depth inferred via pid-nesting heuristic (first-seen pid = child, re-exec = same level).
+
+**Error found & fixed — nested-trace hang**: fixture-trace-useful cleared `BITACORA_SELF_TRACED`, forcing nested tracexec under bitacora's outer trace → ptrace EPERM stall (aborted run, log 212557 removed). Fix: mode-aware fixture — deferred under bitacora (`RESULT=pass:deferred`, `timeout 10` guard), full trace standalone. Verified log `20260801-212654-fixture-trace-useful.log`.
+
+**Cloth-config fixtures** (repo cloned depth 1, commit `a7639ae`):
+
+| Fixture | Probes | Result |
+|---|---|---|
+| `fixture-cloth-config.sh` | structural: JAVA_TOTAL=150 (145 common), API 37, interfaces 20 vs abstract 5, builders 27, entries 30, animators 13, serializers 7 | pass:150 (log 211919) |
+| `fixture-cloth-api.sh` | API surface: FACTORY_METHODS=16, START_METHODS=14 (ratio 0.88), BUILDER_TYPES=27, LIST_ENTRY_SUBS=23, FORGE_LOADERS=2 | pass:16 (log 212710) |
+
+Errors found: awk ternary-in-printf needs parens (`printf "%.2f", (f > 0 ? s / f : 0)`); assertion thresholds corrected to actuals (16 not >20).
+

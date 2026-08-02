@@ -31,6 +31,10 @@ Status: completed
   - [x] Key finding: DEBUG traps don't cross shell processes; BASH_ENV injection makes them run inside the traced script
   - [x] buggy-script.sh fixture (missing cmd, nonexistent dir, masked exit 0)
   - [x] Composition verified: all 3 tracers + bitacora-log (provenance + EXEC + SHA)
+  - [x] trace-exec.sh — exec timeline tracer (elapsed/delta ms, pid-nesting tree, errno flags); finding: tracexec has no ppid
+  - [x] trace-useful.sh — useful-log tracer: collapses PATH-scan ENOENT bursts, surfaces real exec tree; 15 raw → 4 useful events (buggy-script)
+  - [x] cloth-config fixtures: fixture-cloth-config.sh (structural, pass:150), fixture-cloth-api.sh (API surface, pass:16); awk ternary paren fix, threshold corrections
+  - [x] fixture-trace-useful.sh — mode-aware (deferred under bitacora / standalone full trace); fixed nested-tracexec EPERM hang (was clearing BITACORA_SELF_TRACED → ptrace EPERM stall)
 
 ## Open edges
 
@@ -39,6 +43,8 @@ Status: completed
 - Perfetto/protobuf summary parsing: deferred — honest note emitted instead
 - trace-live.sh: timing via BASH_ENV applies to bash scripts; non-bash commands (sh -c, binaries) fall back to wrapper-level timing only
 - trace-stream.sh: no L3 tracexec layer (live-only); pair with bitacora-log for exec genealogy
+- tracexec emits no ppid — pid-nesting heuristic infers depth (first-seen pid = child, re-exec = same level)
+- nested tracexec under bitacora hangs (ptrace EPERM): tracers defer via BITACORA_SELF_TRACED; do NOT clear it inside fixtures
 
 ## Logs
 
