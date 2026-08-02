@@ -1,0 +1,1383 @@
+# CMD: bash .opencode/_shell/survey/skills-metadata-survey/run-survey.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T11:53:43-06:00
+# PID: 44702
+# DUR: 3214ms
+# exit: 0
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: 504acb38
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_shell/survey/skills-metadata-survey/run-survey.sh 
+# CWD: /home/eddyr/assembler
+# --------------------
+STAGE=s01-frontmatter-scan
+# s01 — skills frontmatter scan
+SKILLS_DIR=/home/eddyr/assembler/.opencode/skills
+
+SKILL=bootstrap-db FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:1,terms:0,nexus:0 STYLE=json TYPE=none NEX=NEX.META.PROPOSAL,NEX.META.TOON.ORCHESTRATION STALE= NEX.META.TOON.ORCHESTRATION→NEX.META.ORCHESTRATION
+SKILL=classify-tool FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:1,terms:0,nexus:0 STYLE=json TYPE=none NEX=NEX.TOOL.SEQUENCE STALE=none
+SKILL=compose-web FIELDS=name:1,description:1,state-profile:1,type:1,related:1,patterns:0,terms:0,nexus:0 STYLE=yaml TYPE=procedure NEX=none STALE=none
+SKILL=declare-grounded-entity FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:1,terms:1,nexus:0 STYLE=yaml TYPE=none NEX=NEX.META.PROPOSAL STALE=none
+SKILL=guide-architecture FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:1,terms:1,nexus:0 STYLE=json TYPE=none NEX=NEX.TOOL.SEQUENCE STALE=none
+SKILL=guide-reasoning FIELDS=name:1,description:1,state-profile:1,type:1,related:1,patterns:0,terms:0,nexus:0 STYLE=yaml TYPE=reference NEX=none STALE=none
+SKILL=judge-semantic FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:1,terms:0,nexus:0 STYLE=json TYPE=none NEX=none STALE=none
+SKILL=knowledge-ruby FIELDS=name:1,description:1,state-profile:1,type:1,related:1,patterns:0,terms:0,nexus:0 STYLE=yaml TYPE=reference NEX=none STALE=none
+SKILL=manage-bash-flows FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:0,terms:0,nexus:0 STYLE=json TYPE=none NEX=NEX.ACQUIRE.PIPELINE,NEX.META.ORCHESTRATION STALE=none
+SKILL=orchestrate-research FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:1,terms:0,nexus:0 STYLE=json TYPE=none NEX=NEX.INVESTIGATION.PIPELINE.STAGE STALE= NEX.INVESTIGATION.PIPELINE.STAGE→NEX.INVESTIGATION.STAGE
+SKILL=propose-command FIELDS=name:1,description:1,state-profile:1,type:1,related:1,patterns:1,terms:1,nexus:0 STYLE=yaml TYPE=procedure NEX=none STALE=none
+SKILL=propose-investigation FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:1,terms:0,nexus:0 STYLE=json TYPE=none NEX=NEX.INVESTIGATION.PIPELINE.STAGE,NEX.META.PROPOSAL STALE= NEX.INVESTIGATION.PIPELINE.STAGE→NEX.INVESTIGATION.STAGE
+SKILL=propose-mcp FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:1,terms:1,nexus:0 STYLE=json TYPE=none NEX=NEX.META.PROPOSAL STALE=none
+SKILL=propose-pattern FIELDS=name:1,description:1,state-profile:1,type:1,related:1,patterns:1,terms:1,nexus:0 STYLE=yaml TYPE=procedure NEX=NEX.META.PROPOSAL STALE=none
+SKILL=propose-protocol FIELDS=name:1,description:1,state-profile:1,type:1,related:1,patterns:1,terms:0,nexus:0 STYLE=yaml TYPE=procedure NEX=NEX.META.PROPOSAL STALE=none
+SKILL=propose-rule FIELDS=name:1,description:1,state-profile:1,type:1,related:1,patterns:1,terms:1,nexus:0 STYLE=yaml TYPE=procedure NEX=NEX.META.PROPOSAL STALE=none
+SKILL=propose-term FIELDS=name:1,description:1,state-profile:1,type:1,related:1,patterns:1,terms:1,nexus:0 STYLE=yaml TYPE=procedure NEX=NEX.META.PROPOSAL STALE=none
+SKILL=propose-tool FIELDS=name:1,description:1,state-profile:1,type:1,related:1,patterns:1,terms:0,nexus:0 STYLE=yaml TYPE=procedure NEX=NEX.META.PROPOSAL STALE=none
+SKILL=reason-invariants FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:0,terms:0,nexus:0 STYLE=json TYPE=none NEX=NEX.TOOL.SEQUENCE STALE=none
+SKILL=reason-quantitative FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:1,terms:0,nexus:0 STYLE=json TYPE=none NEX=NEX.META.CANVAS STALE=none
+SKILL=reason-verbal FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:1,terms:0,nexus:0 STYLE=json TYPE=none NEX=NEX.META.CANVAS STALE=none
+SKILL=refactor-skill FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:1,terms:0,nexus:0 STYLE=json TYPE=none NEX=none STALE=none
+SKILL=scaffold-tools FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:1,terms:0,nexus:0 STYLE=json TYPE=none NEX=NEX.META.PROPOSAL STALE=none
+SKILL=search-geo FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:1,terms:0,nexus:0 STYLE=json TYPE=none NEX=NEX.INVESTIGATION.PIPELINE.STAGE STALE= NEX.INVESTIGATION.PIPELINE.STAGE→NEX.INVESTIGATION.STAGE
+SKILL=search-maxims FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:0,terms:0,nexus:0 STYLE=json TYPE=none NEX=none STALE=none
+SKILL=search-nexus FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:0,terms:0,nexus:0 STYLE=json TYPE=none NEX=none STALE=none
+SKILL=search-papers FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:0,terms:0,nexus:0 STYLE=json TYPE=none NEX=none STALE=none
+SKILL=search-patterns FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:0,terms:0,nexus:0 STYLE=json TYPE=none NEX=none STALE=none
+SKILL=search-protocols FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:0,terms:0,nexus:0 STYLE=json TYPE=none NEX=none STALE=none
+SKILL=stage-create FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:0,terms:0,nexus:0 STYLE=json TYPE=none NEX=none STALE=none
+SKILL=structure-stdout FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:0,terms:0,nexus:0 STYLE=json TYPE=none NEX=NEX.ACQUIRE.PIPELINE,NEX.TOOL.SEQUENCE STALE=none
+SKILL=study-foundations FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:1,terms:0,nexus:0 STYLE=json TYPE=none NEX=NEX.INVESTIGATION.PIPELINE.STAGE STALE= NEX.INVESTIGATION.PIPELINE.STAGE→NEX.INVESTIGATION.STAGE
+SKILL=survey-scripts FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:1,terms:1,nexus:0 STYLE=json TYPE=none NEX=none STALE=none
+SKILL=use-context-seven FIELDS=name:1,description:1,state-profile:1,type:1,related:0,patterns:0,terms:0,nexus:0 STYLE=none TYPE=reference NEX=none STALE=none
+SKILL=use-entity-audit FIELDS=name:1,description:1,state-profile:1,type:1,related:0,patterns:0,terms:0,nexus:0 STYLE=none TYPE=reference NEX=none STALE=none
+SKILL=use-exa FIELDS=name:1,description:1,state-profile:1,type:1,related:0,patterns:0,terms:0,nexus:0 STYLE=none TYPE=reference NEX=none STALE=none
+SKILL=use-parallel-search FIELDS=name:1,description:1,state-profile:1,type:1,related:0,patterns:0,terms:0,nexus:0 STYLE=none TYPE=reference NEX=none STALE=none
+SKILL=use-playwright-ai-mode FIELDS=name:1,description:1,state-profile:1,type:1,related:0,patterns:0,terms:0,nexus:0 STYLE=none TYPE=reference NEX=none STALE=none
+SKILL=use-playwright-core FIELDS=name:1,description:1,state-profile:1,type:1,related:0,patterns:0,terms:0,nexus:0 STYLE=none TYPE=reference NEX=none STALE=none
+SKILL=use-playwright-debug FIELDS=name:1,description:1,state-profile:1,type:1,related:0,patterns:0,terms:0,nexus:0 STYLE=none TYPE=reference NEX=none STALE=none
+SKILL=use-playwright-network-storage FIELDS=name:1,description:1,state-profile:1,type:1,related:0,patterns:0,terms:0,nexus:0 STYLE=none TYPE=reference NEX=none STALE=none
+SKILL=use-playwright-vision FIELDS=name:1,description:1,state-profile:1,type:1,related:0,patterns:0,terms:0,nexus:0 STYLE=none TYPE=reference NEX=none STALE=none
+SKILL=vet-proposal FIELDS=name:1,description:1,state-profile:1,type:0,related:1,patterns:0,terms:0,nexus:0 STYLE=json TYPE=none NEX=none STALE=none
+
+────────────────────────────────────────────────────────
+SUMMARY total=43 json_style=24 yaml_style=10 no_nex_ref=23
+
+STAGE=s02-nexus-map
+# s02 — nexus mapping proposal
+CANONICAL_NEXUS=NEX.ACQUIRE.PIPELINE,NEX.BROWSER.STACK,NEX.INVESTIGATION.STAGE,NEX.LIB.STACK,NEX.META.CANVAS,NEX.META.ORCHESTRATION,NEX.META.PROPOSAL,NEX.PLUGIN.LAYER,NEX.SCHEMA.PIPELINE,NEX.TOOL.CHOICE,NEX.TOOL.SEQUENCE
+
+SKILL=bootstrap-db PROPOSED=NEX.META.ORCHESTRATION FROM=derive EVIDENCE=NEX.META.PROPOSAL NEX.META.TOON.ORCHESTRATION
+SKILL=classify-tool PROPOSED=NEX.TOOL.SEQUENCE FROM=explicit EVIDENCE=NEX.TOOL.SEQUENCE
+SKILL=compose-web PROPOSED=NEX.INVESTIGATION.STAGE FROM=derive EVIDENCE=none
+SKILL=declare-grounded-entity PROPOSED=NEX.META.PROPOSAL FROM=explicit EVIDENCE=NEX.META.PROPOSAL
+SKILL=guide-architecture PROPOSED=NEX.TOOL.SEQUENCE FROM=explicit EVIDENCE=NEX.TOOL.SEQUENCE
+SKILL=guide-reasoning PROPOSED=none FROM=none EVIDENCE=none
+SKILL=judge-semantic PROPOSED=NEX.META.PROPOSAL FROM=derive EVIDENCE=none
+SKILL=knowledge-ruby PROPOSED=NEX.INVESTIGATION.STAGE FROM=derive EVIDENCE=none
+SKILL=manage-bash-flows PROPOSED=NEX.ACQUIRE.PIPELINE FROM=derive EVIDENCE=NEX.ACQUIRE.PIPELINE NEX.META.ORCHESTRATION
+SKILL=orchestrate-research PROPOSED=NEX.INVESTIGATION.STAGE FROM=explicit EVIDENCE=NEX.INVESTIGATION.PIPELINE.STAGE
+SKILL=propose-command PROPOSED=NEX.META.PROPOSAL FROM=derive EVIDENCE=none
+SKILL=propose-investigation PROPOSED=NEX.INVESTIGATION.STAGE FROM=derive EVIDENCE=NEX.INVESTIGATION.PIPELINE.STAGE NEX.META.PROPOSAL
+SKILL=propose-mcp PROPOSED=NEX.META.PROPOSAL FROM=explicit EVIDENCE=NEX.META.PROPOSAL
+SKILL=propose-pattern PROPOSED=NEX.META.PROPOSAL FROM=explicit EVIDENCE=NEX.META.PROPOSAL
+SKILL=propose-protocol PROPOSED=NEX.META.PROPOSAL FROM=explicit EVIDENCE=NEX.META.PROPOSAL
+SKILL=propose-rule PROPOSED=NEX.META.PROPOSAL FROM=explicit EVIDENCE=NEX.META.PROPOSAL
+SKILL=propose-term PROPOSED=NEX.META.PROPOSAL FROM=explicit EVIDENCE=NEX.META.PROPOSAL
+SKILL=propose-tool PROPOSED=NEX.META.PROPOSAL FROM=explicit EVIDENCE=NEX.META.PROPOSAL
+SKILL=reason-invariants PROPOSED=NEX.TOOL.SEQUENCE FROM=explicit EVIDENCE=NEX.TOOL.SEQUENCE
+SKILL=reason-quantitative PROPOSED=NEX.META.CANVAS FROM=explicit EVIDENCE=NEX.META.CANVAS
+SKILL=reason-verbal PROPOSED=NEX.META.CANVAS FROM=explicit EVIDENCE=NEX.META.CANVAS
+SKILL=refactor-skill PROPOSED=NEX.TOOL.SEQUENCE FROM=derive EVIDENCE=none
+SKILL=scaffold-tools PROPOSED=NEX.META.PROPOSAL FROM=explicit EVIDENCE=NEX.META.PROPOSAL
+SKILL=search-geo PROPOSED=NEX.INVESTIGATION.STAGE FROM=explicit EVIDENCE=NEX.INVESTIGATION.PIPELINE.STAGE
+SKILL=search-maxims PROPOSED=NEX.TOOL.SEQUENCE FROM=derive EVIDENCE=none
+SKILL=search-nexus PROPOSED=NEX.TOOL.SEQUENCE FROM=derive EVIDENCE=none
+SKILL=search-papers PROPOSED=NEX.ACQUIRE.PIPELINE FROM=derive EVIDENCE=none
+SKILL=search-patterns PROPOSED=NEX.TOOL.SEQUENCE FROM=derive EVIDENCE=none
+SKILL=search-protocols PROPOSED=NEX.TOOL.SEQUENCE FROM=derive EVIDENCE=none
+SKILL=stage-create PROPOSED=NEX.META.ORCHESTRATION FROM=derive EVIDENCE=none
+SKILL=structure-stdout PROPOSED=NEX.ACQUIRE.PIPELINE FROM=derive EVIDENCE=NEX.ACQUIRE.PIPELINE NEX.TOOL.SEQUENCE
+SKILL=study-foundations PROPOSED=NEX.INVESTIGATION.STAGE FROM=explicit EVIDENCE=NEX.INVESTIGATION.PIPELINE.STAGE
+SKILL=survey-scripts PROPOSED=NEX.META.ORCHESTRATION FROM=derive EVIDENCE=none
+SKILL=use-context-seven PROPOSED=NEX.INVESTIGATION.STAGE FROM=derive EVIDENCE=none
+SKILL=use-entity-audit PROPOSED=NEX.TOOL.SEQUENCE FROM=derive EVIDENCE=none
+SKILL=use-exa PROPOSED=NEX.INVESTIGATION.STAGE FROM=derive EVIDENCE=none
+SKILL=use-parallel-search PROPOSED=NEX.INVESTIGATION.STAGE FROM=derive EVIDENCE=none
+SKILL=use-playwright-ai-mode PROPOSED=NEX.BROWSER.STACK FROM=derive EVIDENCE=none
+SKILL=use-playwright-core PROPOSED=NEX.BROWSER.STACK FROM=derive EVIDENCE=none
+SKILL=use-playwright-debug PROPOSED=NEX.BROWSER.STACK FROM=derive EVIDENCE=none
+SKILL=use-playwright-network-storage PROPOSED=NEX.BROWSER.STACK FROM=derive EVIDENCE=none
+SKILL=use-playwright-vision PROPOSED=NEX.BROWSER.STACK FROM=derive EVIDENCE=none
+SKILL=vet-proposal PROPOSED=NEX.META.PROPOSAL FROM=derive EVIDENCE=none
+
+SURVEY=complete
+# OUT_LINES: 100
+# OUT_BYTES: 11668
+# ERR_LINES: 0
+# EXEC: 44702|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh skills-metadata-survey -- bash .opencode/_shell/survey/skills-metadata-survey/run-survey.sh
+# EXEC: 44703|/usr/bin/date|date +%s%N
+# EXEC: 44706|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 44709|/usr/bin/git|git remote get-url origin
+# EXEC: 44707|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 44710|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 44712|/usr/bin/git|git branch --show-current
+# EXEC: 44714|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 44715|/usr/bin/head|head -1
+# EXEC: 44716|/usr/bin/tr|tr -d \n
+# EXEC: 44717|/usr/bin/bun|bun --version
+# EXEC: 44719|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 44720|/usr/bin/head|head -1
+# EXEC: 44721|/usr/bin/tr|tr -d \n
+# EXEC: 44722|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 44724|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 44725|/usr/bin/head|head -1
+# EXEC: 44726|/usr/bin/tr|tr -d \n
+# EXEC: 44727|/usr/bin/python3|python3 --version
+# EXEC: 44729|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 44730|/usr/bin/head|head -1
+# EXEC: 44731|/usr/bin/tr|tr -d \n
+# EXEC: 44732|/usr/bin/ruby|ruby --version
+# EXEC: 44735|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 44736|/usr/bin/head|head -1
+# EXEC: 44737|/usr/bin/tr|tr -d \n
+# EXEC: 44738|/usr/bin/rustc|rustc --version
+# EXEC: 44741|/usr/bin/timeout|timeout 2 go version
+# EXEC: 44742|/usr/bin/head|head -1
+# EXEC: 44743|/usr/bin/tr|tr -d \n
+# EXEC: 44744|/usr/bin/go|go version
+# EXEC: 44751|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 44752|/usr/bin/head|head -1
+# EXEC: 44753|/usr/bin/tr|tr -d \n
+# EXEC: 44754|/usr/bin/git|git --version
+# EXEC: 44756|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 44757|/usr/bin/head|head -1
+# EXEC: 44758|/usr/bin/tr|tr -d \n
+# EXEC: 44759|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 44761|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 44762|/usr/bin/head|head -1
+# EXEC: 44763|/usr/bin/tr|tr -d \n
+# EXEC: 44764|/usr/bin/date|date --version
+# EXEC: 44766|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 44767|/usr/bin/head|head -1
+# EXEC: 44768|/usr/bin/tr|tr -d \n
+# EXEC: 44769|/usr/bin/wc|wc --version
+# EXEC: 44771|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 44772|/usr/bin/head|head -1
+# EXEC: 44773|/usr/bin/tr|tr -d \n
+# EXEC: 44774|/usr/bin/cat|cat --version
+# EXEC: 44776|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 44777|/usr/bin/head|head -1
+# EXEC: 44778|/usr/bin/tr|tr -d \n
+# EXEC: 44779|/usr/bin/tee|tee --version
+# EXEC: 44781|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 44782|/usr/bin/head|head -1
+# EXEC: 44783|/usr/bin/tr|tr -d \n
+# EXEC: 44784|/usr/bin/mktemp|mktemp --version
+# EXEC: 44786|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 44787|/usr/bin/head|head -1
+# EXEC: 44788|/usr/bin/tr|tr -d \n
+# EXEC: 44789|/usr/bin/rm|rm --version
+# EXEC: 44791|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 44792|/usr/bin/head|head -1
+# EXEC: 44793|/usr/bin/tr|tr -d \n
+# EXEC: 44794|/usr/bin/timeout|timeout --version
+# EXEC: 44796|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 44797|/usr/bin/head|head -1
+# EXEC: 44798|/usr/bin/tr|tr -d \n
+# EXEC: 44799|/usr/bin/tr|tr --version
+# EXEC: 44801|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 44802|/usr/bin/head|head -1
+# EXEC: 44803|/usr/bin/tr|tr -d \n
+# EXEC: 44804|/usr/bin/head|head --version
+# EXEC: 44806|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 44807|/usr/bin/head|head -1
+# EXEC: 44808|/usr/bin/tr|tr -d \n
+# EXEC: 44809|/usr/bin/cut|cut --version
+# EXEC: 44811|/usr/bin/date|date +%s%N
+# EXEC: 44812|/usr/bin/sha256sum|sha256sum
+# EXEC: 44813|/usr/bin/cut|cut -c1-8
+# EXEC: 44815|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115343-skills-metadata-survey.log
+# EXEC: 44816|/usr/bin/date|date -Is
+# EXEC: 44817|/usr/bin/mktemp|mktemp
+# EXEC: 44818|/usr/bin/mktemp|mktemp
+# EXEC: 44819|/usr/bin/bash|bash .opencode/_shell/survey/skills-metadata-survey/run-survey.sh
+# EXEC: 44821|/usr/bin/dirname|dirname .opencode/_shell/survey/skills-metadata-survey/run-survey.sh
+# EXEC: 44822|/usr/bin/bash|bash /home/eddyr/assembler/.opencode/_shell/survey/skills-metadata-survey/s01-frontmatter-scan.sh
+# EXEC: 44824|/usr/bin/dirname|dirname /home/eddyr/assembler/.opencode/_shell/survey/skills-metadata-survey/s01-frontmatter-scan.sh
+# EXEC: 44825|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/bootstrap-db/
+# EXEC: 44826|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/bootstrap-db//SKILL.md
+# EXEC: 44829|/usr/bin/grep|grep -c ^name:
+# EXEC: 44832|/usr/bin/grep|grep -c ^description:
+# EXEC: 44835|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 44838|/usr/bin/grep|grep -c ^type:
+# EXEC: 44841|/usr/bin/grep|grep -c ^related:
+# EXEC: 44844|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 44847|/usr/bin/grep|grep -c ^terms:
+# EXEC: 44850|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 44852|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 44854|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 44857|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 44858|/usr/bin/tr|tr -d  "
+# EXEC: 44861|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 44862|/usr/bin/sort|sort -u
+# EXEC: 44863|/usr/bin/tr|tr \n ,
+# EXEC: 44864|/usr/bin/sed|sed s/,$//
+# EXEC: 44867|/usr/bin/tr|tr ,  
+# EXEC: 44868|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/classify-tool/
+# EXEC: 44869|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/classify-tool//SKILL.md
+# EXEC: 44872|/usr/bin/grep|grep -c ^name:
+# EXEC: 44875|/usr/bin/grep|grep -c ^description:
+# EXEC: 44878|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 44881|/usr/bin/grep|grep -c ^type:
+# EXEC: 44884|/usr/bin/grep|grep -c ^related:
+# EXEC: 44887|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 44890|/usr/bin/grep|grep -c ^terms:
+# EXEC: 44893|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 44895|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 44897|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 44900|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 44901|/usr/bin/tr|tr -d  "
+# EXEC: 44904|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 44905|/usr/bin/sort|sort -u
+# EXEC: 44906|/usr/bin/tr|tr \n ,
+# EXEC: 44907|/usr/bin/sed|sed s/,$//
+# EXEC: 44910|/usr/bin/tr|tr ,  
+# EXEC: 44911|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/compose-web/
+# EXEC: 44912|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/compose-web//SKILL.md
+# EXEC: 44915|/usr/bin/grep|grep -c ^name:
+# EXEC: 44918|/usr/bin/grep|grep -c ^description:
+# EXEC: 44921|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 44924|/usr/bin/grep|grep -c ^type:
+# EXEC: 44927|/usr/bin/grep|grep -c ^related:
+# EXEC: 44930|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 44933|/usr/bin/grep|grep -c ^terms:
+# EXEC: 44936|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 44938|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 44940|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 44942|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*\]
+# EXEC: 44945|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 44946|/usr/bin/tr|tr -d  "
+# EXEC: 44949|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 44951|/usr/bin/tr|tr \n ,
+# EXEC: 44950|/usr/bin/sort|sort -u
+# EXEC: 44952|/usr/bin/sed|sed s/,$//
+# EXEC: 44955|/usr/bin/tr|tr ,  
+# EXEC: 44956|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/declare-grounded-entity/
+# EXEC: 44957|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/declare-grounded-entity//SKILL.md
+# EXEC: 44960|/usr/bin/grep|grep -c ^name:
+# EXEC: 44963|/usr/bin/grep|grep -c ^description:
+# EXEC: 44966|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 44969|/usr/bin/grep|grep -c ^type:
+# EXEC: 44972|/usr/bin/grep|grep -c ^related:
+# EXEC: 44975|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 44978|/usr/bin/grep|grep -c ^terms:
+# EXEC: 44981|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 44983|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 44985|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 44987|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*\]
+# EXEC: 44990|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 44991|/usr/bin/tr|tr -d  "
+# EXEC: 44994|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 44995|/usr/bin/sort|sort -u
+# EXEC: 44996|/usr/bin/tr|tr \n ,
+# EXEC: 44997|/usr/bin/sed|sed s/,$//
+# EXEC: 45000|/usr/bin/tr|tr ,  
+# EXEC: 45001|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/guide-architecture/
+# EXEC: 45002|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/guide-architecture//SKILL.md
+# EXEC: 45005|/usr/bin/grep|grep -c ^name:
+# EXEC: 45008|/usr/bin/grep|grep -c ^description:
+# EXEC: 45011|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45014|/usr/bin/grep|grep -c ^type:
+# EXEC: 45017|/usr/bin/grep|grep -c ^related:
+# EXEC: 45023|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45026|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45029|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45031|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45033|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45036|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45037|/usr/bin/tr|tr -d  "
+# EXEC: 45040|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45041|/usr/bin/sort|sort -u
+# EXEC: 45042|/usr/bin/tr|tr \n ,
+# EXEC: 45043|/usr/bin/sed|sed s/,$//
+# EXEC: 45046|/usr/bin/tr|tr ,  
+# EXEC: 45047|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/guide-reasoning/
+# EXEC: 45048|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/guide-reasoning//SKILL.md
+# EXEC: 45051|/usr/bin/grep|grep -c ^name:
+# EXEC: 45054|/usr/bin/grep|grep -c ^description:
+# EXEC: 45057|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45060|/usr/bin/grep|grep -c ^type:
+# EXEC: 45063|/usr/bin/grep|grep -c ^related:
+# EXEC: 45066|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45069|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45072|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45074|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45076|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45078|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*\]
+# EXEC: 45081|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45082|/usr/bin/tr|tr -d  "
+# EXEC: 45085|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45087|/usr/bin/tr|tr \n ,
+# EXEC: 45086|/usr/bin/sort|sort -u
+# EXEC: 45088|/usr/bin/sed|sed s/,$//
+# EXEC: 45091|/usr/bin/tr|tr ,  
+# EXEC: 45092|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/judge-semantic/
+# EXEC: 45093|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/judge-semantic//SKILL.md
+# EXEC: 45096|/usr/bin/grep|grep -c ^name:
+# EXEC: 45099|/usr/bin/grep|grep -c ^description:
+# EXEC: 45102|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45105|/usr/bin/grep|grep -c ^type:
+# EXEC: 45108|/usr/bin/grep|grep -c ^related:
+# EXEC: 45111|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45114|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45117|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45119|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45121|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45124|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45125|/usr/bin/tr|tr -d  "
+# EXEC: 45128|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45130|/usr/bin/tr|tr \n ,
+# EXEC: 45129|/usr/bin/sort|sort -u
+# EXEC: 45131|/usr/bin/sed|sed s/,$//
+# EXEC: 45134|/usr/bin/tr|tr ,  
+# EXEC: 45135|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/knowledge-ruby/
+# EXEC: 45136|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/knowledge-ruby//SKILL.md
+# EXEC: 45139|/usr/bin/grep|grep -c ^name:
+# EXEC: 45142|/usr/bin/grep|grep -c ^description:
+# EXEC: 45145|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45148|/usr/bin/grep|grep -c ^type:
+# EXEC: 45151|/usr/bin/grep|grep -c ^related:
+# EXEC: 45154|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45157|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45160|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45162|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45164|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45166|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*\]
+# EXEC: 45169|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45170|/usr/bin/tr|tr -d  "
+# EXEC: 45173|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45174|/usr/bin/sort|sort -u
+# EXEC: 45175|/usr/bin/tr|tr \n ,
+# EXEC: 45176|/usr/bin/sed|sed s/,$//
+# EXEC: 45179|/usr/bin/tr|tr ,  
+# EXEC: 45180|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/manage-bash-flows/
+# EXEC: 45181|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/manage-bash-flows//SKILL.md
+# EXEC: 45184|/usr/bin/grep|grep -c ^name:
+# EXEC: 45187|/usr/bin/grep|grep -c ^description:
+# EXEC: 45190|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45193|/usr/bin/grep|grep -c ^type:
+# EXEC: 45196|/usr/bin/grep|grep -c ^related:
+# EXEC: 45199|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45202|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45205|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45207|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45209|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45212|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45213|/usr/bin/tr|tr -d  "
+# EXEC: 45216|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45218|/usr/bin/tr|tr \n ,
+# EXEC: 45217|/usr/bin/sort|sort -u
+# EXEC: 45219|/usr/bin/sed|sed s/,$//
+# EXEC: 45222|/usr/bin/tr|tr ,  
+# EXEC: 45223|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/orchestrate-research/
+# EXEC: 45224|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/orchestrate-research//SKILL.md
+# EXEC: 45227|/usr/bin/grep|grep -c ^name:
+# EXEC: 45230|/usr/bin/grep|grep -c ^description:
+# EXEC: 45233|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45236|/usr/bin/grep|grep -c ^type:
+# EXEC: 45239|/usr/bin/grep|grep -c ^related:
+# EXEC: 45242|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45245|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45248|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45250|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45252|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45255|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45256|/usr/bin/tr|tr -d  "
+# EXEC: 45262|/usr/bin/sed|sed s/,$//
+# EXEC: 45260|/usr/bin/sort|sort -u
+# EXEC: 45259|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45261|/usr/bin/tr|tr \n ,
+# EXEC: 45265|/usr/bin/tr|tr ,  
+# EXEC: 45266|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-command/
+# EXEC: 45267|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-command//SKILL.md
+# EXEC: 45270|/usr/bin/grep|grep -c ^name:
+# EXEC: 45273|/usr/bin/grep|grep -c ^description:
+# EXEC: 45276|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45279|/usr/bin/grep|grep -c ^type:
+# EXEC: 45282|/usr/bin/grep|grep -c ^related:
+# EXEC: 45285|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45288|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45291|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45293|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45295|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45297|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*\]
+# EXEC: 45300|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45301|/usr/bin/tr|tr -d  "
+# EXEC: 45304|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45305|/usr/bin/sort|sort -u
+# EXEC: 45306|/usr/bin/tr|tr \n ,
+# EXEC: 45307|/usr/bin/sed|sed s/,$//
+# EXEC: 45310|/usr/bin/tr|tr ,  
+# EXEC: 45311|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-investigation/
+# EXEC: 45312|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-investigation//SKILL.md
+# EXEC: 45315|/usr/bin/grep|grep -c ^name:
+# EXEC: 45318|/usr/bin/grep|grep -c ^description:
+# EXEC: 45321|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45324|/usr/bin/grep|grep -c ^type:
+# EXEC: 45327|/usr/bin/grep|grep -c ^related:
+# EXEC: 45330|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45333|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45336|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45338|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45340|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45343|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45344|/usr/bin/tr|tr -d  "
+# EXEC: 45349|/usr/bin/tr|tr \n ,
+# EXEC: 45350|/usr/bin/sed|sed s/,$//
+# EXEC: 45347|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45348|/usr/bin/sort|sort -u
+# EXEC: 45354|/usr/bin/tr|tr ,  
+# EXEC: 45355|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-mcp/
+# EXEC: 45356|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-mcp//SKILL.md
+# EXEC: 45359|/usr/bin/grep|grep -c ^name:
+# EXEC: 45362|/usr/bin/grep|grep -c ^description:
+# EXEC: 45370|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45373|/usr/bin/grep|grep -c ^type:
+# EXEC: 45376|/usr/bin/grep|grep -c ^related:
+# EXEC: 45379|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45382|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45385|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45387|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45389|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45393|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45394|/usr/bin/tr|tr -d  "
+# EXEC: 45397|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45400|/usr/bin/sed|sed s/,$//
+# EXEC: 45398|/usr/bin/sort|sort -u
+# EXEC: 45399|/usr/bin/tr|tr \n ,
+# EXEC: 45404|/usr/bin/tr|tr ,  
+# EXEC: 45405|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-pattern/
+# EXEC: 45406|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-pattern//SKILL.md
+# EXEC: 45409|/usr/bin/grep|grep -c ^name:
+# EXEC: 45412|/usr/bin/grep|grep -c ^description:
+# EXEC: 45415|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45418|/usr/bin/grep|grep -c ^type:
+# EXEC: 45421|/usr/bin/grep|grep -c ^related:
+# EXEC: 45424|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45427|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45430|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45432|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45434|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45436|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*\]
+# EXEC: 45439|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45440|/usr/bin/tr|tr -d  "
+# EXEC: 45444|/usr/bin/sort|sort -u
+# EXEC: 45443|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45445|/usr/bin/tr|tr \n ,
+# EXEC: 45446|/usr/bin/sed|sed s/,$//
+# EXEC: 45449|/usr/bin/tr|tr ,  
+# EXEC: 45450|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-protocol/
+# EXEC: 45451|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-protocol//SKILL.md
+# EXEC: 45454|/usr/bin/grep|grep -c ^name:
+# EXEC: 45457|/usr/bin/grep|grep -c ^description:
+# EXEC: 45460|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45463|/usr/bin/grep|grep -c ^type:
+# EXEC: 45466|/usr/bin/grep|grep -c ^related:
+# EXEC: 45469|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45472|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45475|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45477|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45479|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45481|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*\]
+# EXEC: 45484|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45485|/usr/bin/tr|tr -d  "
+# EXEC: 45489|/usr/bin/sort|sort -u
+# EXEC: 45488|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45490|/usr/bin/tr|tr \n ,
+# EXEC: 45491|/usr/bin/sed|sed s/,$//
+# EXEC: 45494|/usr/bin/tr|tr ,  
+# EXEC: 45495|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-rule/
+# EXEC: 45496|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-rule//SKILL.md
+# EXEC: 45499|/usr/bin/grep|grep -c ^name:
+# EXEC: 45502|/usr/bin/grep|grep -c ^description:
+# EXEC: 45505|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45508|/usr/bin/grep|grep -c ^type:
+# EXEC: 45511|/usr/bin/grep|grep -c ^related:
+# EXEC: 45514|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45517|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45520|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45522|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45524|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45526|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*\]
+# EXEC: 45529|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45530|/usr/bin/tr|tr -d  "
+# EXEC: 45533|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45535|/usr/bin/tr|tr \n ,
+# EXEC: 45534|/usr/bin/sort|sort -u
+# EXEC: 45536|/usr/bin/sed|sed s/,$//
+# EXEC: 45539|/usr/bin/tr|tr ,  
+# EXEC: 45540|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-term/
+# EXEC: 45541|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-term//SKILL.md
+# EXEC: 45544|/usr/bin/grep|grep -c ^name:
+# EXEC: 45547|/usr/bin/grep|grep -c ^description:
+# EXEC: 45550|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45553|/usr/bin/grep|grep -c ^type:
+# EXEC: 45556|/usr/bin/grep|grep -c ^related:
+# EXEC: 45559|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45562|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45565|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45567|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45569|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45571|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*\]
+# EXEC: 45574|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45575|/usr/bin/tr|tr -d  "
+# EXEC: 45578|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45580|/usr/bin/tr|tr \n ,
+# EXEC: 45579|/usr/bin/sort|sort -u
+# EXEC: 45581|/usr/bin/sed|sed s/,$//
+# EXEC: 45584|/usr/bin/tr|tr ,  
+# EXEC: 45585|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-tool/
+# EXEC: 45586|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-tool//SKILL.md
+# EXEC: 45589|/usr/bin/grep|grep -c ^name:
+# EXEC: 45592|/usr/bin/grep|grep -c ^description:
+# EXEC: 45595|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45598|/usr/bin/grep|grep -c ^type:
+# EXEC: 45601|/usr/bin/grep|grep -c ^related:
+# EXEC: 45604|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45607|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45610|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45612|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45614|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45616|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*\]
+# EXEC: 45619|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45620|/usr/bin/tr|tr -d  "
+# EXEC: 45623|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45624|/usr/bin/sort|sort -u
+# EXEC: 45625|/usr/bin/tr|tr \n ,
+# EXEC: 45626|/usr/bin/sed|sed s/,$//
+# EXEC: 45629|/usr/bin/tr|tr ,  
+# EXEC: 45630|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/reason-invariants/
+# EXEC: 45631|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/reason-invariants//SKILL.md
+# EXEC: 45634|/usr/bin/grep|grep -c ^name:
+# EXEC: 45637|/usr/bin/grep|grep -c ^description:
+# EXEC: 45640|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45643|/usr/bin/grep|grep -c ^type:
+# EXEC: 45646|/usr/bin/grep|grep -c ^related:
+# EXEC: 45649|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45652|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45655|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45657|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45659|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45662|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45663|/usr/bin/tr|tr -d  "
+# EXEC: 45666|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45667|/usr/bin/sort|sort -u
+# EXEC: 45668|/usr/bin/tr|tr \n ,
+# EXEC: 45669|/usr/bin/sed|sed s/,$//
+# EXEC: 45672|/usr/bin/tr|tr ,  
+# EXEC: 45673|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/reason-quantitative/
+# EXEC: 45674|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/reason-quantitative//SKILL.md
+# EXEC: 45677|/usr/bin/grep|grep -c ^name:
+# EXEC: 45680|/usr/bin/grep|grep -c ^description:
+# EXEC: 45683|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45686|/usr/bin/grep|grep -c ^type:
+# EXEC: 45689|/usr/bin/grep|grep -c ^related:
+# EXEC: 45692|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45695|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45698|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45700|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45702|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45705|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45706|/usr/bin/tr|tr -d  "
+# EXEC: 45709|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45710|/usr/bin/sort|sort -u
+# EXEC: 45711|/usr/bin/tr|tr \n ,
+# EXEC: 45712|/usr/bin/sed|sed s/,$//
+# EXEC: 45715|/usr/bin/tr|tr ,  
+# EXEC: 45716|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/reason-verbal/
+# EXEC: 45717|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/reason-verbal//SKILL.md
+# EXEC: 45720|/usr/bin/grep|grep -c ^name:
+# EXEC: 45723|/usr/bin/grep|grep -c ^description:
+# EXEC: 45726|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45729|/usr/bin/grep|grep -c ^type:
+# EXEC: 45732|/usr/bin/grep|grep -c ^related:
+# EXEC: 45735|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45738|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45741|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45743|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45745|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45748|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45749|/usr/bin/tr|tr -d  "
+# EXEC: 45752|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45753|/usr/bin/sort|sort -u
+# EXEC: 45754|/usr/bin/tr|tr \n ,
+# EXEC: 45755|/usr/bin/sed|sed s/,$//
+# EXEC: 45758|/usr/bin/tr|tr ,  
+# EXEC: 45759|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/refactor-skill/
+# EXEC: 45760|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/refactor-skill//SKILL.md
+# EXEC: 45763|/usr/bin/grep|grep -c ^name:
+# EXEC: 45766|/usr/bin/grep|grep -c ^description:
+# EXEC: 45769|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45772|/usr/bin/grep|grep -c ^type:
+# EXEC: 45775|/usr/bin/grep|grep -c ^related:
+# EXEC: 45778|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45781|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45784|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45786|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45788|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45791|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45792|/usr/bin/tr|tr -d  "
+# EXEC: 45795|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45796|/usr/bin/sort|sort -u
+# EXEC: 45797|/usr/bin/tr|tr \n ,
+# EXEC: 45798|/usr/bin/sed|sed s/,$//
+# EXEC: 45801|/usr/bin/tr|tr ,  
+# EXEC: 45802|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/scaffold-tools/
+# EXEC: 45803|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/scaffold-tools//SKILL.md
+# EXEC: 45806|/usr/bin/grep|grep -c ^name:
+# EXEC: 45809|/usr/bin/grep|grep -c ^description:
+# EXEC: 45812|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45815|/usr/bin/grep|grep -c ^type:
+# EXEC: 45818|/usr/bin/grep|grep -c ^related:
+# EXEC: 45821|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45824|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45827|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45829|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45831|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45834|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45835|/usr/bin/tr|tr -d  "
+# EXEC: 45838|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45839|/usr/bin/sort|sort -u
+# EXEC: 45840|/usr/bin/tr|tr \n ,
+# EXEC: 45841|/usr/bin/sed|sed s/,$//
+# EXEC: 45844|/usr/bin/tr|tr ,  
+# EXEC: 45845|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-geo/
+# EXEC: 45846|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-geo//SKILL.md
+# EXEC: 45849|/usr/bin/grep|grep -c ^name:
+# EXEC: 45852|/usr/bin/grep|grep -c ^description:
+# EXEC: 45855|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45858|/usr/bin/grep|grep -c ^type:
+# EXEC: 45861|/usr/bin/grep|grep -c ^related:
+# EXEC: 45864|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45867|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45870|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45872|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45874|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45877|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45878|/usr/bin/tr|tr -d  "
+# EXEC: 45881|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45882|/usr/bin/sort|sort -u
+# EXEC: 45883|/usr/bin/tr|tr \n ,
+# EXEC: 45884|/usr/bin/sed|sed s/,$//
+# EXEC: 45887|/usr/bin/tr|tr ,  
+# EXEC: 45888|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-maxims/
+# EXEC: 45889|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-maxims//SKILL.md
+# EXEC: 45892|/usr/bin/grep|grep -c ^name:
+# EXEC: 45895|/usr/bin/grep|grep -c ^description:
+# EXEC: 45898|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45901|/usr/bin/grep|grep -c ^type:
+# EXEC: 45904|/usr/bin/grep|grep -c ^related:
+# EXEC: 45907|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45910|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45913|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45915|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45917|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45920|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45921|/usr/bin/tr|tr -d  "
+# EXEC: 45924|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45926|/usr/bin/tr|tr \n ,
+# EXEC: 45925|/usr/bin/sort|sort -u
+# EXEC: 45927|/usr/bin/sed|sed s/,$//
+# EXEC: 45930|/usr/bin/tr|tr ,  
+# EXEC: 45931|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-nexus/
+# EXEC: 45932|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-nexus//SKILL.md
+# EXEC: 45935|/usr/bin/grep|grep -c ^name:
+# EXEC: 45938|/usr/bin/grep|grep -c ^description:
+# EXEC: 45941|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45944|/usr/bin/grep|grep -c ^type:
+# EXEC: 45947|/usr/bin/grep|grep -c ^related:
+# EXEC: 45950|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45953|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45956|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 45958|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 45960|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 45963|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 45964|/usr/bin/tr|tr -d  "
+# EXEC: 45967|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 45968|/usr/bin/sort|sort -u
+# EXEC: 45969|/usr/bin/tr|tr \n ,
+# EXEC: 45970|/usr/bin/sed|sed s/,$//
+# EXEC: 45973|/usr/bin/tr|tr ,  
+# EXEC: 45974|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-papers/
+# EXEC: 45975|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-papers//SKILL.md
+# EXEC: 45978|/usr/bin/grep|grep -c ^name:
+# EXEC: 45981|/usr/bin/grep|grep -c ^description:
+# EXEC: 45984|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 45987|/usr/bin/grep|grep -c ^type:
+# EXEC: 45990|/usr/bin/grep|grep -c ^related:
+# EXEC: 45993|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 45996|/usr/bin/grep|grep -c ^terms:
+# EXEC: 45999|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 46001|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 46003|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 46006|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 46007|/usr/bin/tr|tr -d  "
+# EXEC: 46010|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46011|/usr/bin/sort|sort -u
+# EXEC: 46012|/usr/bin/tr|tr \n ,
+# EXEC: 46013|/usr/bin/sed|sed s/,$//
+# EXEC: 46016|/usr/bin/tr|tr ,  
+# EXEC: 46017|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-patterns/
+# EXEC: 46018|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-patterns//SKILL.md
+# EXEC: 46021|/usr/bin/grep|grep -c ^name:
+# EXEC: 46024|/usr/bin/grep|grep -c ^description:
+# EXEC: 46027|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 46030|/usr/bin/grep|grep -c ^type:
+# EXEC: 46033|/usr/bin/grep|grep -c ^related:
+# EXEC: 46036|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 46039|/usr/bin/grep|grep -c ^terms:
+# EXEC: 46042|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 46044|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 46046|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 46049|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 46050|/usr/bin/tr|tr -d  "
+# EXEC: 46054|/usr/bin/sort|sort -u
+# EXEC: 46053|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46055|/usr/bin/tr|tr \n ,
+# EXEC: 46056|/usr/bin/sed|sed s/,$//
+# EXEC: 46059|/usr/bin/tr|tr ,  
+# EXEC: 46060|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-protocols/
+# EXEC: 46061|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-protocols//SKILL.md
+# EXEC: 46064|/usr/bin/grep|grep -c ^name:
+# EXEC: 46067|/usr/bin/grep|grep -c ^description:
+# EXEC: 46070|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 46073|/usr/bin/grep|grep -c ^type:
+# EXEC: 46076|/usr/bin/grep|grep -c ^related:
+# EXEC: 46079|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 46082|/usr/bin/grep|grep -c ^terms:
+# EXEC: 46085|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 46087|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 46089|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 46092|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 46093|/usr/bin/tr|tr -d  "
+# EXEC: 46096|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46097|/usr/bin/sort|sort -u
+# EXEC: 46098|/usr/bin/tr|tr \n ,
+# EXEC: 46099|/usr/bin/sed|sed s/,$//
+# EXEC: 46102|/usr/bin/tr|tr ,  
+# EXEC: 46103|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/stage-create/
+# EXEC: 46104|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/stage-create//SKILL.md
+# EXEC: 46107|/usr/bin/grep|grep -c ^name:
+# EXEC: 46110|/usr/bin/grep|grep -c ^description:
+# EXEC: 46113|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 46116|/usr/bin/grep|grep -c ^type:
+# EXEC: 46119|/usr/bin/grep|grep -c ^related:
+# EXEC: 46122|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 46125|/usr/bin/grep|grep -c ^terms:
+# EXEC: 46128|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 46130|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 46132|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 46135|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 46136|/usr/bin/tr|tr -d  "
+# EXEC: 46139|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46140|/usr/bin/sort|sort -u
+# EXEC: 46141|/usr/bin/tr|tr \n ,
+# EXEC: 46142|/usr/bin/sed|sed s/,$//
+# EXEC: 46145|/usr/bin/tr|tr ,  
+# EXEC: 46146|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/structure-stdout/
+# EXEC: 46147|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/structure-stdout//SKILL.md
+# EXEC: 46150|/usr/bin/grep|grep -c ^name:
+# EXEC: 46153|/usr/bin/grep|grep -c ^description:
+# EXEC: 46156|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 46159|/usr/bin/grep|grep -c ^type:
+# EXEC: 46162|/usr/bin/grep|grep -c ^related:
+# EXEC: 46165|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 46168|/usr/bin/grep|grep -c ^terms:
+# EXEC: 46171|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 46173|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 46175|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 46178|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 46179|/usr/bin/tr|tr -d  "
+# EXEC: 46182|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46183|/usr/bin/sort|sort -u
+# EXEC: 46184|/usr/bin/tr|tr \n ,
+# EXEC: 46185|/usr/bin/sed|sed s/,$//
+# EXEC: 46188|/usr/bin/tr|tr ,  
+# EXEC: 46189|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/study-foundations/
+# EXEC: 46190|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/study-foundations//SKILL.md
+# EXEC: 46193|/usr/bin/grep|grep -c ^name:
+# EXEC: 46196|/usr/bin/grep|grep -c ^description:
+# EXEC: 46199|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 46202|/usr/bin/grep|grep -c ^type:
+# EXEC: 46205|/usr/bin/grep|grep -c ^related:
+# EXEC: 46208|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 46211|/usr/bin/grep|grep -c ^terms:
+# EXEC: 46214|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 46216|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 46218|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 46221|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 46222|/usr/bin/tr|tr -d  "
+# EXEC: 46226|/usr/bin/sort|sort -u
+# EXEC: 46225|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46227|/usr/bin/tr|tr \n ,
+# EXEC: 46228|/usr/bin/sed|sed s/,$//
+# EXEC: 46231|/usr/bin/tr|tr ,  
+# EXEC: 46232|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/survey-scripts/
+# EXEC: 46233|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/survey-scripts//SKILL.md
+# EXEC: 46236|/usr/bin/grep|grep -c ^name:
+# EXEC: 46239|/usr/bin/grep|grep -c ^description:
+# EXEC: 46242|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 46245|/usr/bin/grep|grep -c ^type:
+# EXEC: 46248|/usr/bin/grep|grep -c ^related:
+# EXEC: 46251|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 46254|/usr/bin/grep|grep -c ^terms:
+# EXEC: 46257|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 46259|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 46261|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 46264|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 46265|/usr/bin/tr|tr -d  "
+# EXEC: 46268|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46269|/usr/bin/sort|sort -u
+# EXEC: 46270|/usr/bin/tr|tr \n ,
+# EXEC: 46271|/usr/bin/sed|sed s/,$//
+# EXEC: 46274|/usr/bin/tr|tr ,  
+# EXEC: 46275|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-context-seven/
+# EXEC: 46276|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-context-seven//SKILL.md
+# EXEC: 46279|/usr/bin/grep|grep -c ^name:
+# EXEC: 46282|/usr/bin/grep|grep -c ^description:
+# EXEC: 46285|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 46288|/usr/bin/grep|grep -c ^type:
+# EXEC: 46291|/usr/bin/grep|grep -c ^related:
+# EXEC: 46294|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 46297|/usr/bin/grep|grep -c ^terms:
+# EXEC: 46300|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 46302|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 46305|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 46306|/usr/bin/tr|tr -d  "
+# EXEC: 46309|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46310|/usr/bin/sort|sort -u
+# EXEC: 46311|/usr/bin/tr|tr \n ,
+# EXEC: 46312|/usr/bin/sed|sed s/,$//
+# EXEC: 46315|/usr/bin/tr|tr ,  
+# EXEC: 46316|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-entity-audit/
+# EXEC: 46317|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-entity-audit//SKILL.md
+# EXEC: 46320|/usr/bin/grep|grep -c ^name:
+# EXEC: 46323|/usr/bin/grep|grep -c ^description:
+# EXEC: 46326|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 46329|/usr/bin/grep|grep -c ^type:
+# EXEC: 46332|/usr/bin/grep|grep -c ^related:
+# EXEC: 46335|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 46338|/usr/bin/grep|grep -c ^terms:
+# EXEC: 46341|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 46343|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 46346|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 46347|/usr/bin/tr|tr -d  "
+# EXEC: 46350|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46351|/usr/bin/sort|sort -u
+# EXEC: 46352|/usr/bin/tr|tr \n ,
+# EXEC: 46353|/usr/bin/sed|sed s/,$//
+# EXEC: 46356|/usr/bin/tr|tr ,  
+# EXEC: 46357|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-exa/
+# EXEC: 46358|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-exa//SKILL.md
+# EXEC: 46361|/usr/bin/grep|grep -c ^name:
+# EXEC: 46364|/usr/bin/grep|grep -c ^description:
+# EXEC: 46367|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 46370|/usr/bin/grep|grep -c ^type:
+# EXEC: 46373|/usr/bin/grep|grep -c ^related:
+# EXEC: 46376|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 46379|/usr/bin/grep|grep -c ^terms:
+# EXEC: 46382|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 46384|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 46387|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 46388|/usr/bin/tr|tr -d  "
+# EXEC: 46392|/usr/bin/sort|sort -u
+# EXEC: 46391|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46393|/usr/bin/tr|tr \n ,
+# EXEC: 46394|/usr/bin/sed|sed s/,$//
+# EXEC: 46397|/usr/bin/tr|tr ,  
+# EXEC: 46398|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-parallel-search/
+# EXEC: 46399|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-parallel-search//SKILL.md
+# EXEC: 46402|/usr/bin/grep|grep -c ^name:
+# EXEC: 46405|/usr/bin/grep|grep -c ^description:
+# EXEC: 46408|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 46411|/usr/bin/grep|grep -c ^type:
+# EXEC: 46414|/usr/bin/grep|grep -c ^related:
+# EXEC: 46417|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 46420|/usr/bin/grep|grep -c ^terms:
+# EXEC: 46423|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 46425|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 46428|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 46429|/usr/bin/tr|tr -d  "
+# EXEC: 46433|/usr/bin/sort|sort -u
+# EXEC: 46432|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46434|/usr/bin/tr|tr \n ,
+# EXEC: 46435|/usr/bin/sed|sed s/,$//
+# EXEC: 46438|/usr/bin/tr|tr ,  
+# EXEC: 46439|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-playwright-ai-mode/
+# EXEC: 46440|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-playwright-ai-mode//SKILL.md
+# EXEC: 46443|/usr/bin/grep|grep -c ^name:
+# EXEC: 46446|/usr/bin/grep|grep -c ^description:
+# EXEC: 46449|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 46452|/usr/bin/grep|grep -c ^type:
+# EXEC: 46455|/usr/bin/grep|grep -c ^related:
+# EXEC: 46458|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 46461|/usr/bin/grep|grep -c ^terms:
+# EXEC: 46464|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 46466|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 46469|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 46470|/usr/bin/tr|tr -d  "
+# EXEC: 46473|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46474|/usr/bin/sort|sort -u
+# EXEC: 46475|/usr/bin/tr|tr \n ,
+# EXEC: 46476|/usr/bin/sed|sed s/,$//
+# EXEC: 46479|/usr/bin/tr|tr ,  
+# EXEC: 46480|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-playwright-core/
+# EXEC: 46481|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-playwright-core//SKILL.md
+# EXEC: 46484|/usr/bin/grep|grep -c ^name:
+# EXEC: 46487|/usr/bin/grep|grep -c ^description:
+# EXEC: 46490|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 46493|/usr/bin/grep|grep -c ^type:
+# EXEC: 46496|/usr/bin/grep|grep -c ^related:
+# EXEC: 46499|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 46502|/usr/bin/grep|grep -c ^terms:
+# EXEC: 46505|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 46507|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 46510|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 46511|/usr/bin/tr|tr -d  "
+# EXEC: 46514|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46515|/usr/bin/sort|sort -u
+# EXEC: 46516|/usr/bin/tr|tr \n ,
+# EXEC: 46517|/usr/bin/sed|sed s/,$//
+# EXEC: 46520|/usr/bin/tr|tr ,  
+# EXEC: 46521|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-playwright-debug/
+# EXEC: 46522|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-playwright-debug//SKILL.md
+# EXEC: 46525|/usr/bin/grep|grep -c ^name:
+# EXEC: 46528|/usr/bin/grep|grep -c ^description:
+# EXEC: 46531|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 46534|/usr/bin/grep|grep -c ^type:
+# EXEC: 46537|/usr/bin/grep|grep -c ^related:
+# EXEC: 46540|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 46543|/usr/bin/grep|grep -c ^terms:
+# EXEC: 46546|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 46548|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 46552|/usr/bin/tr|tr -d  "
+# EXEC: 46551|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 46555|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46557|/usr/bin/tr|tr \n ,
+# EXEC: 46556|/usr/bin/sort|sort -u
+# EXEC: 46558|/usr/bin/sed|sed s/,$//
+# EXEC: 46561|/usr/bin/tr|tr ,  
+# EXEC: 46562|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-playwright-network-storage/
+# EXEC: 46563|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-playwright-network-storage//SKILL.md
+# EXEC: 46566|/usr/bin/grep|grep -c ^name:
+# EXEC: 46569|/usr/bin/grep|grep -c ^description:
+# EXEC: 46572|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 46575|/usr/bin/grep|grep -c ^type:
+# EXEC: 46578|/usr/bin/grep|grep -c ^related:
+# EXEC: 46581|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 46584|/usr/bin/grep|grep -c ^terms:
+# EXEC: 46587|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 46589|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 46592|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 46593|/usr/bin/tr|tr -d  "
+# EXEC: 46597|/usr/bin/sort|sort -u
+# EXEC: 46596|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46598|/usr/bin/tr|tr \n ,
+# EXEC: 46599|/usr/bin/sed|sed s/,$//
+# EXEC: 46602|/usr/bin/tr|tr ,  
+# EXEC: 46603|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-playwright-vision/
+# EXEC: 46604|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-playwright-vision//SKILL.md
+# EXEC: 46607|/usr/bin/grep|grep -c ^name:
+# EXEC: 46610|/usr/bin/grep|grep -c ^description:
+# EXEC: 46613|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 46616|/usr/bin/grep|grep -c ^type:
+# EXEC: 46619|/usr/bin/grep|grep -c ^related:
+# EXEC: 46622|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 46625|/usr/bin/grep|grep -c ^terms:
+# EXEC: 46628|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 46630|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 46633|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 46634|/usr/bin/tr|tr -d  "
+# EXEC: 46637|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46639|/usr/bin/tr|tr \n ,
+# EXEC: 46638|/usr/bin/sort|sort -u
+# EXEC: 46640|/usr/bin/sed|sed s/,$//
+# EXEC: 46643|/usr/bin/tr|tr ,  
+# EXEC: 46644|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/vet-proposal/
+# EXEC: 46645|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/vet-proposal//SKILL.md
+# EXEC: 46648|/usr/bin/grep|grep -c ^name:
+# EXEC: 46651|/usr/bin/grep|grep -c ^description:
+# EXEC: 46654|/usr/bin/grep|grep -c ^state-profile:
+# EXEC: 46657|/usr/bin/grep|grep -c ^type:
+# EXEC: 46660|/usr/bin/grep|grep -c ^related:
+# EXEC: 46663|/usr/bin/grep|grep -c ^patterns:
+# EXEC: 46666|/usr/bin/grep|grep -c ^terms:
+# EXEC: 46669|/usr/bin/grep|grep -c ^nexus:
+# EXEC: 46671|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[
+# EXEC: 46673|/usr/bin/grep|grep -qE ^(related|patterns|terms):\s*\[[^]]*"
+# EXEC: 46676|/usr/bin/sed|sed -n s/^type:\s*//p
+# EXEC: 46677|/usr/bin/tr|tr -d  "
+# EXEC: 46680|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46681|/usr/bin/sort|sort -u
+# EXEC: 46682|/usr/bin/tr|tr \n ,
+# EXEC: 46683|/usr/bin/sed|sed s/,$//
+# EXEC: 46686|/usr/bin/tr|tr ,  
+# EXEC: 46687|/usr/bin/bash|bash /home/eddyr/assembler/.opencode/_shell/survey/skills-metadata-survey/s02-nexus-map.sh
+# EXEC: 46689|/usr/bin/dirname|dirname /home/eddyr/assembler/.opencode/_shell/survey/skills-metadata-survey/s02-nexus-map.sh
+# EXEC: 46690|/usr/bin/basename|basename -s .md /home/eddyr/assembler/.opencode/entities/nexus/NEX.ACQUIRE.PIPELINE.md /home/eddyr/assembler/.opencode/entities/nexus/NEX.BROWSER.STACK.md /home/eddyr/assembler/.opencode/entities/nexus/NEX.INVESTIGATION.STAGE.md /home/eddyr/assembler/.opencode/entities/nexus/NEX.LIB.STACK.md /home/eddyr/assembler/.opencode/entities/nexus/NEX.META.CANVAS.md /home/eddyr/assembler/.opencode/entities/nexus/NEX.META.ORCHESTRATION.md /home/eddyr/assembler/.opencode/entities/nexus/NEX.META.PROPOSAL.md /home/eddyr/assembler/.opencode/entities/nexus/NEX.PLUGIN.LAYER.md /home/eddyr/assembler/.opencode/entities/nexus/NEX.SCHEMA.PIPELINE.md /home/eddyr/assembler/.opencode/entities/nexus/NEX.TOOL.CHOICE.md /home/eddyr/assembler/.opencode/entities/nexus/NEX.TOOL.SEQUENCE.md
+# EXEC: 46692|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/bootstrap-db/
+# EXEC: 46693|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/bootstrap-db//SKILL.md
+# EXEC: 46696|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46697|/usr/bin/sort|sort -u
+# EXEC: 46703|/usr/bin/sort|sort -u
+# EXEC: 46702|/usr/bin/tr|tr   \n
+# EXEC: 46704|/usr/bin/tr|tr \n  
+# EXEC: 46705|/usr/bin/sed|sed s/ $//
+# EXEC: 46708|/usr/bin/awk|awk {print $1}
+# EXEC: 46711|/usr/bin/wc|wc -w
+# EXEC: 46714|/usr/bin/sed|sed s/^ //
+# EXEC: 46715|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/classify-tool/
+# EXEC: 46716|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/classify-tool//SKILL.md
+# EXEC: 46719|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46720|/usr/bin/sort|sort -u
+# EXEC: 46724|/usr/bin/tr|tr   \n
+# EXEC: 46725|/usr/bin/sort|sort -u
+# EXEC: 46726|/usr/bin/tr|tr \n  
+# EXEC: 46727|/usr/bin/sed|sed s/ $//
+# EXEC: 46730|/usr/bin/awk|awk {print $1}
+# EXEC: 46733|/usr/bin/wc|wc -w
+# EXEC: 46736|/usr/bin/sed|sed s/^ //
+# EXEC: 46737|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/compose-web/
+# EXEC: 46738|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/compose-web//SKILL.md
+# EXEC: 46741|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46742|/usr/bin/sort|sort -u
+# EXEC: 46745|/usr/bin/sed|sed s/^ //
+# EXEC: 46746|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/declare-grounded-entity/
+# EXEC: 46747|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/declare-grounded-entity//SKILL.md
+# EXEC: 46750|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46751|/usr/bin/sort|sort -u
+# EXEC: 46755|/usr/bin/tr|tr   \n
+# EXEC: 46756|/usr/bin/sort|sort -u
+# EXEC: 46757|/usr/bin/tr|tr \n  
+# EXEC: 46758|/usr/bin/sed|sed s/ $//
+# EXEC: 46761|/usr/bin/awk|awk {print $1}
+# EXEC: 46764|/usr/bin/wc|wc -w
+# EXEC: 46767|/usr/bin/sed|sed s/^ //
+# EXEC: 46768|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/guide-architecture/
+# EXEC: 46769|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/guide-architecture//SKILL.md
+# EXEC: 46772|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46773|/usr/bin/sort|sort -u
+# EXEC: 46777|/usr/bin/tr|tr   \n
+# EXEC: 46778|/usr/bin/sort|sort -u
+# EXEC: 46779|/usr/bin/tr|tr \n  
+# EXEC: 46780|/usr/bin/sed|sed s/ $//
+# EXEC: 46783|/usr/bin/awk|awk {print $1}
+# EXEC: 46786|/usr/bin/wc|wc -w
+# EXEC: 46789|/usr/bin/sed|sed s/^ //
+# EXEC: 46790|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/guide-reasoning/
+# EXEC: 46791|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/guide-reasoning//SKILL.md
+# EXEC: 46794|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46795|/usr/bin/sort|sort -u
+# EXEC: 46798|/usr/bin/sed|sed s/^ //
+# EXEC: 46799|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/judge-semantic/
+# EXEC: 46800|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/judge-semantic//SKILL.md
+# EXEC: 46803|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46804|/usr/bin/sort|sort -u
+# EXEC: 46807|/usr/bin/sed|sed s/^ //
+# EXEC: 46808|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/knowledge-ruby/
+# EXEC: 46809|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/knowledge-ruby//SKILL.md
+# EXEC: 46812|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46813|/usr/bin/sort|sort -u
+# EXEC: 46816|/usr/bin/sed|sed s/^ //
+# EXEC: 46817|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/manage-bash-flows/
+# EXEC: 46818|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/manage-bash-flows//SKILL.md
+# EXEC: 46821|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46822|/usr/bin/sort|sort -u
+# EXEC: 46827|/usr/bin/tr|tr   \n
+# EXEC: 46828|/usr/bin/sort|sort -u
+# EXEC: 46829|/usr/bin/tr|tr \n  
+# EXEC: 46830|/usr/bin/sed|sed s/ $//
+# EXEC: 46833|/usr/bin/awk|awk {print $1}
+# EXEC: 46836|/usr/bin/wc|wc -w
+# EXEC: 46839|/usr/bin/sed|sed s/^ //
+# EXEC: 46840|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/orchestrate-research/
+# EXEC: 46841|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/orchestrate-research//SKILL.md
+# EXEC: 46844|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46845|/usr/bin/sort|sort -u
+# EXEC: 46849|/usr/bin/tr|tr   \n
+# EXEC: 46850|/usr/bin/sort|sort -u
+# EXEC: 46851|/usr/bin/tr|tr \n  
+# EXEC: 46852|/usr/bin/sed|sed s/ $//
+# EXEC: 46855|/usr/bin/awk|awk {print $1}
+# EXEC: 46858|/usr/bin/wc|wc -w
+# EXEC: 46861|/usr/bin/sed|sed s/^ //
+# EXEC: 46862|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-command/
+# EXEC: 46863|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-command//SKILL.md
+# EXEC: 46866|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46867|/usr/bin/sort|sort -u
+# EXEC: 46870|/usr/bin/sed|sed s/^ //
+# EXEC: 46871|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-investigation/
+# EXEC: 46872|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-investigation//SKILL.md
+# EXEC: 46875|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46876|/usr/bin/sort|sort -u
+# EXEC: 46881|/usr/bin/tr|tr   \n
+# EXEC: 46882|/usr/bin/sort|sort -u
+# EXEC: 46883|/usr/bin/tr|tr \n  
+# EXEC: 46884|/usr/bin/sed|sed s/ $//
+# EXEC: 46887|/usr/bin/awk|awk {print $1}
+# EXEC: 46890|/usr/bin/wc|wc -w
+# EXEC: 46893|/usr/bin/sed|sed s/^ //
+# EXEC: 46894|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-mcp/
+# EXEC: 46895|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-mcp//SKILL.md
+# EXEC: 46898|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46899|/usr/bin/sort|sort -u
+# EXEC: 46903|/usr/bin/tr|tr   \n
+# EXEC: 46904|/usr/bin/sort|sort -u
+# EXEC: 46905|/usr/bin/tr|tr \n  
+# EXEC: 46906|/usr/bin/sed|sed s/ $//
+# EXEC: 46909|/usr/bin/awk|awk {print $1}
+# EXEC: 46912|/usr/bin/wc|wc -w
+# EXEC: 46915|/usr/bin/sed|sed s/^ //
+# EXEC: 46916|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-pattern/
+# EXEC: 46917|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-pattern//SKILL.md
+# EXEC: 46920|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46921|/usr/bin/sort|sort -u
+# EXEC: 46925|/usr/bin/tr|tr   \n
+# EXEC: 46926|/usr/bin/sort|sort -u
+# EXEC: 46927|/usr/bin/tr|tr \n  
+# EXEC: 46928|/usr/bin/sed|sed s/ $//
+# EXEC: 46931|/usr/bin/awk|awk {print $1}
+# EXEC: 46934|/usr/bin/wc|wc -w
+# EXEC: 46937|/usr/bin/sed|sed s/^ //
+# EXEC: 46938|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-protocol/
+# EXEC: 46939|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-protocol//SKILL.md
+# EXEC: 46942|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46943|/usr/bin/sort|sort -u
+# EXEC: 46947|/usr/bin/tr|tr   \n
+# EXEC: 46949|/usr/bin/tr|tr \n  
+# EXEC: 46948|/usr/bin/sort|sort -u
+# EXEC: 46950|/usr/bin/sed|sed s/ $//
+# EXEC: 46953|/usr/bin/awk|awk {print $1}
+# EXEC: 46956|/usr/bin/wc|wc -w
+# EXEC: 46959|/usr/bin/sed|sed s/^ //
+# EXEC: 46960|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-rule/
+# EXEC: 46961|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-rule//SKILL.md
+# EXEC: 46964|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46965|/usr/bin/sort|sort -u
+# EXEC: 46969|/usr/bin/tr|tr   \n
+# EXEC: 46970|/usr/bin/sort|sort -u
+# EXEC: 46971|/usr/bin/tr|tr \n  
+# EXEC: 46972|/usr/bin/sed|sed s/ $//
+# EXEC: 46975|/usr/bin/awk|awk {print $1}
+# EXEC: 46978|/usr/bin/wc|wc -w
+# EXEC: 46981|/usr/bin/sed|sed s/^ //
+# EXEC: 46982|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-term/
+# EXEC: 46983|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-term//SKILL.md
+# EXEC: 46986|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 46987|/usr/bin/sort|sort -u
+# EXEC: 46991|/usr/bin/tr|tr   \n
+# EXEC: 46992|/usr/bin/sort|sort -u
+# EXEC: 46993|/usr/bin/tr|tr \n  
+# EXEC: 46994|/usr/bin/sed|sed s/ $//
+# EXEC: 46997|/usr/bin/awk|awk {print $1}
+# EXEC: 47000|/usr/bin/wc|wc -w
+# EXEC: 47003|/usr/bin/sed|sed s/^ //
+# EXEC: 47004|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-tool/
+# EXEC: 47005|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-tool//SKILL.md
+# EXEC: 47008|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47009|/usr/bin/sort|sort -u
+# EXEC: 47015|/usr/bin/tr|tr \n  
+# EXEC: 47013|/usr/bin/tr|tr   \n
+# EXEC: 47014|/usr/bin/sort|sort -u
+# EXEC: 47016|/usr/bin/sed|sed s/ $//
+# EXEC: 47019|/usr/bin/awk|awk {print $1}
+# EXEC: 47022|/usr/bin/wc|wc -w
+# EXEC: 47025|/usr/bin/sed|sed s/^ //
+# EXEC: 47026|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/reason-invariants/
+# EXEC: 47027|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/reason-invariants//SKILL.md
+# EXEC: 47030|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47031|/usr/bin/sort|sort -u
+# EXEC: 47035|/usr/bin/tr|tr   \n
+# EXEC: 47037|/usr/bin/tr|tr \n  
+# EXEC: 47036|/usr/bin/sort|sort -u
+# EXEC: 47038|/usr/bin/sed|sed s/ $//
+# EXEC: 47041|/usr/bin/awk|awk {print $1}
+# EXEC: 47044|/usr/bin/wc|wc -w
+# EXEC: 47047|/usr/bin/sed|sed s/^ //
+# EXEC: 47048|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/reason-quantitative/
+# EXEC: 47049|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/reason-quantitative//SKILL.md
+# EXEC: 47052|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47053|/usr/bin/sort|sort -u
+# EXEC: 47057|/usr/bin/tr|tr   \n
+# EXEC: 47058|/usr/bin/sort|sort -u
+# EXEC: 47059|/usr/bin/tr|tr \n  
+# EXEC: 47060|/usr/bin/sed|sed s/ $//
+# EXEC: 47063|/usr/bin/awk|awk {print $1}
+# EXEC: 47066|/usr/bin/wc|wc -w
+# EXEC: 47069|/usr/bin/sed|sed s/^ //
+# EXEC: 47070|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/reason-verbal/
+# EXEC: 47071|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/reason-verbal//SKILL.md
+# EXEC: 47074|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47075|/usr/bin/sort|sort -u
+# EXEC: 47079|/usr/bin/tr|tr   \n
+# EXEC: 47080|/usr/bin/sort|sort -u
+# EXEC: 47081|/usr/bin/tr|tr \n  
+# EXEC: 47082|/usr/bin/sed|sed s/ $//
+# EXEC: 47085|/usr/bin/awk|awk {print $1}
+# EXEC: 47088|/usr/bin/wc|wc -w
+# EXEC: 47091|/usr/bin/sed|sed s/^ //
+# EXEC: 47092|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/refactor-skill/
+# EXEC: 47093|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/refactor-skill//SKILL.md
+# EXEC: 47096|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47097|/usr/bin/sort|sort -u
+# EXEC: 47100|/usr/bin/sed|sed s/^ //
+# EXEC: 47101|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/scaffold-tools/
+# EXEC: 47102|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/scaffold-tools//SKILL.md
+# EXEC: 47105|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47106|/usr/bin/sort|sort -u
+# EXEC: 47110|/usr/bin/tr|tr   \n
+# EXEC: 47111|/usr/bin/sort|sort -u
+# EXEC: 47112|/usr/bin/tr|tr \n  
+# EXEC: 47113|/usr/bin/sed|sed s/ $//
+# EXEC: 47116|/usr/bin/awk|awk {print $1}
+# EXEC: 47119|/usr/bin/wc|wc -w
+# EXEC: 47122|/usr/bin/sed|sed s/^ //
+# EXEC: 47123|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-geo/
+# EXEC: 47124|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-geo//SKILL.md
+# EXEC: 47127|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47128|/usr/bin/sort|sort -u
+# EXEC: 47132|/usr/bin/tr|tr   \n
+# EXEC: 47133|/usr/bin/sort|sort -u
+# EXEC: 47134|/usr/bin/tr|tr \n  
+# EXEC: 47135|/usr/bin/sed|sed s/ $//
+# EXEC: 47138|/usr/bin/awk|awk {print $1}
+# EXEC: 47141|/usr/bin/wc|wc -w
+# EXEC: 47144|/usr/bin/sed|sed s/^ //
+# EXEC: 47145|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-maxims/
+# EXEC: 47146|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-maxims//SKILL.md
+# EXEC: 47149|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47150|/usr/bin/sort|sort -u
+# EXEC: 47153|/usr/bin/sed|sed s/^ //
+# EXEC: 47154|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-nexus/
+# EXEC: 47155|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-nexus//SKILL.md
+# EXEC: 47158|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47159|/usr/bin/sort|sort -u
+# EXEC: 47162|/usr/bin/sed|sed s/^ //
+# EXEC: 47163|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-papers/
+# EXEC: 47164|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-papers//SKILL.md
+# EXEC: 47167|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47168|/usr/bin/sort|sort -u
+# EXEC: 47171|/usr/bin/sed|sed s/^ //
+# EXEC: 47172|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-patterns/
+# EXEC: 47173|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-patterns//SKILL.md
+# EXEC: 47176|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47177|/usr/bin/sort|sort -u
+# EXEC: 47180|/usr/bin/sed|sed s/^ //
+# EXEC: 47181|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-protocols/
+# EXEC: 47182|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-protocols//SKILL.md
+# EXEC: 47185|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47186|/usr/bin/sort|sort -u
+# EXEC: 47189|/usr/bin/sed|sed s/^ //
+# EXEC: 47190|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/stage-create/
+# EXEC: 47191|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/stage-create//SKILL.md
+# EXEC: 47194|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47195|/usr/bin/sort|sort -u
+# EXEC: 47198|/usr/bin/sed|sed s/^ //
+# EXEC: 47199|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/structure-stdout/
+# EXEC: 47200|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/structure-stdout//SKILL.md
+# EXEC: 47203|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47204|/usr/bin/sort|sort -u
+# EXEC: 47209|/usr/bin/tr|tr   \n
+# EXEC: 47210|/usr/bin/sort|sort -u
+# EXEC: 47211|/usr/bin/tr|tr \n  
+# EXEC: 47212|/usr/bin/sed|sed s/ $//
+# EXEC: 47215|/usr/bin/awk|awk {print $1}
+# EXEC: 47218|/usr/bin/wc|wc -w
+# EXEC: 47221|/usr/bin/sed|sed s/^ //
+# EXEC: 47222|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/study-foundations/
+# EXEC: 47223|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/study-foundations//SKILL.md
+# EXEC: 47226|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47227|/usr/bin/sort|sort -u
+# EXEC: 47232|/usr/bin/sort|sort -u
+# EXEC: 47231|/usr/bin/tr|tr   \n
+# EXEC: 47233|/usr/bin/tr|tr \n  
+# EXEC: 47234|/usr/bin/sed|sed s/ $//
+# EXEC: 47237|/usr/bin/awk|awk {print $1}
+# EXEC: 47240|/usr/bin/wc|wc -w
+# EXEC: 47243|/usr/bin/sed|sed s/^ //
+# EXEC: 47244|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/survey-scripts/
+# EXEC: 47245|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/survey-scripts//SKILL.md
+# EXEC: 47262|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47263|/usr/bin/sort|sort -u
+# EXEC: 47266|/usr/bin/sed|sed s/^ //
+# EXEC: 47267|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-context-seven/
+# EXEC: 47268|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-context-seven//SKILL.md
+# EXEC: 47271|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47272|/usr/bin/sort|sort -u
+# EXEC: 47275|/usr/bin/sed|sed s/^ //
+# EXEC: 47276|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-entity-audit/
+# EXEC: 47277|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-entity-audit//SKILL.md
+# EXEC: 47280|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47281|/usr/bin/sort|sort -u
+# EXEC: 47284|/usr/bin/sed|sed s/^ //
+# EXEC: 47285|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-exa/
+# EXEC: 47286|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-exa//SKILL.md
+# EXEC: 47289|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47290|/usr/bin/sort|sort -u
+# EXEC: 47293|/usr/bin/sed|sed s/^ //
+# EXEC: 47294|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-parallel-search/
+# EXEC: 47295|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-parallel-search//SKILL.md
+# EXEC: 47298|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47299|/usr/bin/sort|sort -u
+# EXEC: 47302|/usr/bin/sed|sed s/^ //
+# EXEC: 47303|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-playwright-ai-mode/
+# EXEC: 47304|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-playwright-ai-mode//SKILL.md
+# EXEC: 47307|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47308|/usr/bin/sort|sort -u
+# EXEC: 47311|/usr/bin/sed|sed s/^ //
+# EXEC: 47312|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-playwright-core/
+# EXEC: 47313|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-playwright-core//SKILL.md
+# EXEC: 47316|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47317|/usr/bin/sort|sort -u
+# EXEC: 47320|/usr/bin/sed|sed s/^ //
+# EXEC: 47321|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-playwright-debug/
+# EXEC: 47322|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-playwright-debug//SKILL.md
+# EXEC: 47325|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47326|/usr/bin/sort|sort -u
+# EXEC: 47329|/usr/bin/sed|sed s/^ //
+# EXEC: 47330|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-playwright-network-storage/
+# EXEC: 47331|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-playwright-network-storage//SKILL.md
+# EXEC: 47334|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47335|/usr/bin/sort|sort -u
+# EXEC: 47338|/usr/bin/sed|sed s/^ //
+# EXEC: 47339|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-playwright-vision/
+# EXEC: 47340|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-playwright-vision//SKILL.md
+# EXEC: 47343|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47344|/usr/bin/sort|sort -u
+# EXEC: 47347|/usr/bin/sed|sed s/^ //
+# EXEC: 47348|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/vet-proposal/
+# EXEC: 47349|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/vet-proposal//SKILL.md
+# EXEC: 47352|/usr/bin/grep|grep -oE NEX\.[A-Z0-9._-]+
+# EXEC: 47353|/usr/bin/sort|sort -u
+# EXEC: 47356|/usr/bin/sed|sed s/^ //
+# EXEC: 47358|/usr/bin/wc|wc -l
+# EXEC: 47359|/usr/bin/tr|tr -d  
+# EXEC: 47361|/usr/bin/wc|wc -c
+# EXEC: 47362|/usr/bin/tr|tr -d  
+# EXEC: 47364|/usr/bin/wc|wc -l
+# EXEC: 47365|/usr/bin/tr|tr -d  
+# EXEC: 47366|/usr/bin/date|date +%s%N
+# EXEC: 47368|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115343-skills-metadata-survey.log
+# EXEC: 47370|/usr/bin/cat|cat /tmp/tmp.XGy5G75G9J
+# EXEC: 47371|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115343-skills-metadata-survey.log
+# EXEC: 47372|/usr/bin/cat|cat /tmp/tmp.wI5Wxj5Tjh
+# EXEC: 47373|/usr/bin/cat|cat /tmp/tmp.wI5Wxj5Tjh
+# EXEC: 47374|/usr/bin/rm|rm -f /tmp/tmp.XGy5G75G9J /tmp/tmp.wI5Wxj5Tjh
+# EXEC: 47376|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115343-skills-metadata-survey.log
+# EXEC: 47378|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115343-skills-metadata-survey.log
+# EXEC: 47380|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115343-skills-metadata-survey.log
+# PROGS: node=v25.2.1 awk=GNU Awk 5.4.1, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0) basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 grep=grep (GNU grep) 3.12-modified head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sed=/usr/bin/sed (GNU sed) 4.10 sha256sum=sha256sum (GNU coreutils) 9.11 sort=sort (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 1262
+# SHA: 6cea09ad083e7eab7444e2338ceb865663c6645dd59b02bddb943011dba3dfe0
+# exit: 0

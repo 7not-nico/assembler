@@ -1,0 +1,143 @@
+# CMD: bun run .opencode/tools/semantic-search.ts --query how\ to\ phrase\ rule\ instructions\ for\ agents --k 5 --type rules 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T10:55:34-06:00
+# PID: 9784
+# DUR: 892ms
+# exit: 0
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: d74e8d9d
+# CLI: bun 1.3.14
+# ARGS: run .opencode/tools/semantic-search.ts --query how\ to\ phrase\ rule\ instructions\ for\ agents --k 5 --type rules 
+# CWD: /home/eddyr/assembler
+# --------------------
+RANK  SCORE    TYPE        ID
+----------------------------------------------------------------------
+1     0.6826    rules        RUL.DECLARATIVE.OVER.IMPERATIVE
+       Declarative-over-imperative
+2     0.6622    rules        RUL.AVOID.NEGATION.PRIMING
+       Avoid-negation-priming
+3     0.6610    rules        RUL.COMMUNICATION.PROSE.NOTATION
+       Communication-prose-notation-bridge
+4     0.6580    rules        RUL.COMMUNICATION.ACTOR
+       Communication-actor
+5     0.6571    rules        RUL.COMMUNICATION.DECLARATIVE
+       Communication-declarative
+----------------------------------------------------------------------
+5 semantic matches for "how to phrase rule instructions for agents" (79 indexed)
+# OUT_LINES: 14
+# OUT_BYTES: 712
+# ERR_LINES: 0
+# EXEC: 9784|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh semantic-search-3 -- bun run .opencode/tools/semantic-search.ts --query how to phrase rule instructions for agents --k 5 --type rules
+# EXEC: 9785|/usr/bin/date|date +%s%N
+# EXEC: 9790|/usr/bin/head|head -1
+# EXEC: 9789|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 9791|/usr/bin/tr|tr -d \n
+# EXEC: 9792|/usr/bin/bun|bun --version
+# EXEC: 9793|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 9796|/usr/bin/git|git remote get-url origin
+# EXEC: 9794|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 9797|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 9799|/usr/bin/git|git branch --show-current
+# EXEC: 9801|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 9802|/usr/bin/head|head -1
+# EXEC: 9803|/usr/bin/tr|tr -d \n
+# EXEC: 9804|/usr/bin/bun|bun --version
+# EXEC: 9808|/usr/bin/tr|tr -d \n
+# EXEC: 9806|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 9807|/usr/bin/head|head -1
+# EXEC: 9809|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 9811|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 9812|/usr/bin/head|head -1
+# EXEC: 9813|/usr/bin/tr|tr -d \n
+# EXEC: 9814|/usr/bin/python3|python3 --version
+# EXEC: 9816|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 9817|/usr/bin/head|head -1
+# EXEC: 9818|/usr/bin/tr|tr -d \n
+# EXEC: 9819|/usr/bin/ruby|ruby --version
+# EXEC: 9822|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 9823|/usr/bin/head|head -1
+# EXEC: 9824|/usr/bin/tr|tr -d \n
+# EXEC: 9825|/usr/bin/rustc|rustc --version
+# EXEC: 9828|/usr/bin/timeout|timeout 2 go version
+# EXEC: 9829|/usr/bin/head|head -1
+# EXEC: 9830|/usr/bin/tr|tr -d \n
+# EXEC: 9831|/usr/bin/go|go version
+# EXEC: 9837|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 9839|/usr/bin/tr|tr -d \n
+# EXEC: 9838|/usr/bin/head|head -1
+# EXEC: 9840|/usr/bin/git|git --version
+# EXEC: 9842|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 9843|/usr/bin/head|head -1
+# EXEC: 9844|/usr/bin/tr|tr -d \n
+# EXEC: 9845|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 9847|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 9848|/usr/bin/head|head -1
+# EXEC: 9849|/usr/bin/tr|tr -d \n
+# EXEC: 9850|/usr/bin/date|date --version
+# EXEC: 9852|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 9853|/usr/bin/head|head -1
+# EXEC: 9854|/usr/bin/tr|tr -d \n
+# EXEC: 9855|/usr/bin/wc|wc --version
+# EXEC: 9857|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 9858|/usr/bin/head|head -1
+# EXEC: 9859|/usr/bin/tr|tr -d \n
+# EXEC: 9860|/usr/bin/cat|cat --version
+# EXEC: 9862|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 9863|/usr/bin/head|head -1
+# EXEC: 9864|/usr/bin/tr|tr -d \n
+# EXEC: 9865|/usr/bin/tee|tee --version
+# EXEC: 9867|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 9868|/usr/bin/head|head -1
+# EXEC: 9869|/usr/bin/tr|tr -d \n
+# EXEC: 9870|/usr/bin/mktemp|mktemp --version
+# EXEC: 9872|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 9873|/usr/bin/head|head -1
+# EXEC: 9874|/usr/bin/tr|tr -d \n
+# EXEC: 9875|/usr/bin/rm|rm --version
+# EXEC: 9878|/usr/bin/head|head -1
+# EXEC: 9877|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 9879|/usr/bin/tr|tr -d \n
+# EXEC: 9880|/usr/bin/timeout|timeout --version
+# EXEC: 9882|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 9883|/usr/bin/head|head -1
+# EXEC: 9884|/usr/bin/tr|tr -d \n
+# EXEC: 9885|/usr/bin/tr|tr --version
+# EXEC: 9887|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 9888|/usr/bin/head|head -1
+# EXEC: 9889|/usr/bin/tr|tr -d \n
+# EXEC: 9890|/usr/bin/head|head --version
+# EXEC: 9892|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 9893|/usr/bin/head|head -1
+# EXEC: 9894|/usr/bin/tr|tr -d \n
+# EXEC: 9895|/usr/bin/cut|cut --version
+# EXEC: 9897|/usr/bin/date|date +%s%N
+# EXEC: 9898|/usr/bin/sha256sum|sha256sum
+# EXEC: 9899|/usr/bin/cut|cut -c1-8
+# EXEC: 9901|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105534-semantic-search-3.log
+# EXEC: 9902|/usr/bin/date|date -Is
+# EXEC: 9903|/usr/bin/mktemp|mktemp
+# EXEC: 9904|/usr/bin/mktemp|mktemp
+# EXEC: 9905|/usr/bin/bun|bun run .opencode/tools/semantic-search.ts --query how to phrase rule instructions for agents --k 5 --type rules
+# EXEC: 9929|/home/eddyr/assembler/.opencode/_rustlib/target/release/assemble|/home/eddyr/assembler/.opencode/_rustlib/target/release/assemble hit
+# EXEC: 9931|/usr/bin/wc|wc -l
+# EXEC: 9932|/usr/bin/tr|tr -d  
+# EXEC: 9934|/usr/bin/wc|wc -c
+# EXEC: 9935|/usr/bin/tr|tr -d  
+# EXEC: 9937|/usr/bin/wc|wc -l
+# EXEC: 9938|/usr/bin/tr|tr -d  
+# EXEC: 9939|/usr/bin/date|date +%s%N
+# EXEC: 9941|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105534-semantic-search-3.log
+# EXEC: 9943|/usr/bin/cat|cat /tmp/tmp.V4dLyk94Ql
+# EXEC: 9944|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105534-semantic-search-3.log
+# EXEC: 9945|/usr/bin/cat|cat /tmp/tmp.MyphFFX7ot
+# EXEC: 9946|/usr/bin/cat|cat /tmp/tmp.MyphFFX7ot
+# EXEC: 9947|/usr/bin/rm|rm -f /tmp/tmp.V4dLyk94Ql /tmp/tmp.MyphFFX7ot
+# EXEC: 9949|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105534-semantic-search-3.log
+# EXEC: 9951|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105534-semantic-search-3.log
+# EXEC: 9953|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105534-semantic-search-3.log
+# PROGS: node=v25.2.1 assemble=(no --version) basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 108
+# SHA: 87f7d3532c2a609c90b3db3689a5cb6663ee8e4d4dd17d79927047190598f453
+# exit: 0

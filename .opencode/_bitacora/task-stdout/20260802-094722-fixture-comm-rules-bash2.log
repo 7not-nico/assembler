@@ -1,0 +1,824 @@
+# CMD: bash fixture-communication-rules.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T09:47:22-06:00
+# PID: 155634
+# DUR: 1917ms
+# exit: 1
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: ef940a71
+# CLI: bash 5.3.15(1)-release
+# ARGS: fixture-communication-rules.sh 
+# CWD: /home/eddyr/assembler/.opencode/_scripts/fixtures
+# --------------------
+RULES=84
+VIOLATED=1
+ED=0
+GERUNDS=0
+NOMINALS=1
+TOTAL=1
+FLAGGED_ED=
+FLAGGED_GERUNDS=
+FLAGGED_NOMINALS=derivation
+VIOLATION_entity_precedence_derivation_md=nom:derivation
+RESULT=fail:1
+# OUT_LINES: 11
+# OUT_BYTES: 182
+# ERR_LINES: 0
+# EXEC: 155634|/usr/bin/bash|bash /home/eddyr/assembler/.opencode/_bitacora/bitacora-log.sh fixture-comm-rules-bash2 -- bash fixture-communication-rules.sh
+# EXEC: 155635|/usr/bin/date|date +%s%N
+# EXEC: 155638|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 155641|/usr/bin/git|git remote get-url origin
+# EXEC: 155639|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 155642|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 155644|/usr/bin/git|git branch --show-current
+# EXEC: 155646|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 155647|/usr/bin/head|head -1
+# EXEC: 155648|/usr/bin/tr|tr -d \n
+# EXEC: 155649|/usr/bin/bun|bun --version
+# EXEC: 155651|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 155652|/usr/bin/head|head -1
+# EXEC: 155653|/usr/bin/tr|tr -d \n
+# EXEC: 155654|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 155656|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 155657|/usr/bin/head|head -1
+# EXEC: 155658|/usr/bin/tr|tr -d \n
+# EXEC: 155659|/usr/bin/python3|python3 --version
+# EXEC: 155661|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 155662|/usr/bin/head|head -1
+# EXEC: 155663|/usr/bin/tr|tr -d \n
+# EXEC: 155664|/usr/bin/ruby|ruby --version
+# EXEC: 155667|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 155668|/usr/bin/head|head -1
+# EXEC: 155669|/usr/bin/tr|tr -d \n
+# EXEC: 155670|/usr/bin/rustc|rustc --version
+# EXEC: 155673|/usr/bin/timeout|timeout 2 go version
+# EXEC: 155674|/usr/bin/head|head -1
+# EXEC: 155675|/usr/bin/tr|tr -d \n
+# EXEC: 155676|/usr/bin/go|go version
+# EXEC: 155682|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 155683|/usr/bin/head|head -1
+# EXEC: 155684|/usr/bin/tr|tr -d \n
+# EXEC: 155685|/usr/bin/git|git --version
+# EXEC: 155687|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 155688|/usr/bin/head|head -1
+# EXEC: 155689|/usr/bin/tr|tr -d \n
+# EXEC: 155690|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 155692|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 155693|/usr/bin/head|head -1
+# EXEC: 155694|/usr/bin/tr|tr -d \n
+# EXEC: 155695|/usr/bin/date|date --version
+# EXEC: 155697|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 155698|/usr/bin/head|head -1
+# EXEC: 155699|/usr/bin/tr|tr -d \n
+# EXEC: 155700|/usr/bin/wc|wc --version
+# EXEC: 155702|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 155703|/usr/bin/head|head -1
+# EXEC: 155704|/usr/bin/tr|tr -d \n
+# EXEC: 155705|/usr/bin/cat|cat --version
+# EXEC: 155707|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 155708|/usr/bin/head|head -1
+# EXEC: 155709|/usr/bin/tr|tr -d \n
+# EXEC: 155710|/usr/bin/tee|tee --version
+# EXEC: 155712|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 155713|/usr/bin/head|head -1
+# EXEC: 155714|/usr/bin/tr|tr -d \n
+# EXEC: 155715|/usr/bin/mktemp|mktemp --version
+# EXEC: 155717|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 155718|/usr/bin/head|head -1
+# EXEC: 155719|/usr/bin/tr|tr -d \n
+# EXEC: 155720|/usr/bin/rm|rm --version
+# EXEC: 155722|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 155723|/usr/bin/head|head -1
+# EXEC: 155724|/usr/bin/tr|tr -d \n
+# EXEC: 155725|/usr/bin/timeout|timeout --version
+# EXEC: 155727|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 155728|/usr/bin/head|head -1
+# EXEC: 155729|/usr/bin/tr|tr -d \n
+# EXEC: 155730|/usr/bin/tr|tr --version
+# EXEC: 155732|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 155733|/usr/bin/head|head -1
+# EXEC: 155734|/usr/bin/tr|tr -d \n
+# EXEC: 155735|/usr/bin/head|head --version
+# EXEC: 155737|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 155738|/usr/bin/head|head -1
+# EXEC: 155739|/usr/bin/tr|tr -d \n
+# EXEC: 155740|/usr/bin/cut|cut --version
+# EXEC: 155742|/usr/bin/date|date +%s%N
+# EXEC: 155743|/usr/bin/sha256sum|sha256sum
+# EXEC: 155744|/usr/bin/cut|cut -c1-8
+# EXEC: 155746|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094722-fixture-comm-rules-bash2.log
+# EXEC: 155747|/usr/bin/date|date -Is
+# EXEC: 155748|/usr/bin/mktemp|mktemp
+# EXEC: 155749|/usr/bin/mktemp|mktemp
+# EXEC: 155750|/usr/bin/bash|bash fixture-communication-rules.sh
+# EXEC: 155751|/usr/bin/dirname|dirname fixture-communication-rules.sh
+# EXEC: 155754|/usr/bin/find|find /home/eddyr/assembler/.opencode/rules -maxdepth 1 -name *.md
+# EXEC: 155755|/usr/bin/sort|sort
+# EXEC: 155756|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/analysis-quantitative-reasoning.md
+# EXEC: 155758|/usr/bin/sed|sed -E 
+# EXEC: 155762|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 155763|/usr/bin/sort|sort -u
+# EXEC: 155768|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 155769|/usr/bin/sort|sort -u
+# EXEC: 155774|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 155775|/usr/bin/sort|sort -u
+# EXEC: 155777|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-abstract-noun.md
+# EXEC: 155779|/usr/bin/sed|sed -E 
+# EXEC: 155783|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 155784|/usr/bin/sort|sort -u
+# EXEC: 155790|/usr/bin/sort|sort -u
+# EXEC: 155789|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 155795|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 155796|/usr/bin/sort|sort -u
+# EXEC: 155798|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-atomic-unit.md
+# EXEC: 155800|/usr/bin/sed|sed -E 
+# EXEC: 155804|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 155805|/usr/bin/sort|sort -u
+# EXEC: 155810|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 155811|/usr/bin/sort|sort -u
+# EXEC: 155816|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 155817|/usr/bin/sort|sort -u
+# EXEC: 155819|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-atomic-units.md
+# EXEC: 155821|/usr/bin/sed|sed -E 
+# EXEC: 155825|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 155826|/usr/bin/sort|sort -u
+# EXEC: 155831|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 155832|/usr/bin/sort|sort -u
+# EXEC: 155837|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 155838|/usr/bin/sort|sort -u
+# EXEC: 155840|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-bash-shells.md
+# EXEC: 155842|/usr/bin/sed|sed -E 
+# EXEC: 155846|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 155847|/usr/bin/sort|sort -u
+# EXEC: 155852|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 155853|/usr/bin/sort|sort -u
+# EXEC: 155858|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 155859|/usr/bin/sort|sort -u
+# EXEC: 155861|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-camelcase.md
+# EXEC: 155863|/usr/bin/sed|sed -E 
+# EXEC: 155867|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 155868|/usr/bin/sort|sort -u
+# EXEC: 155873|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 155874|/usr/bin/sort|sort -u
+# EXEC: 155879|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 155880|/usr/bin/sort|sort -u
+# EXEC: 155882|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-concrete-noun.md
+# EXEC: 155884|/usr/bin/sed|sed -E 
+# EXEC: 155888|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 155889|/usr/bin/sort|sort -u
+# EXEC: 155894|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 155895|/usr/bin/sort|sort -u
+# EXEC: 155900|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 155901|/usr/bin/sort|sort -u
+# EXEC: 155903|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-constant-naming.md
+# EXEC: 155905|/usr/bin/sed|sed -E 
+# EXEC: 155909|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 155910|/usr/bin/sort|sort -u
+# EXEC: 155915|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 155916|/usr/bin/sort|sort -u
+# EXEC: 155921|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 155922|/usr/bin/sort|sort -u
+# EXEC: 155924|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-contract-header.md
+# EXEC: 155926|/usr/bin/sed|sed -E 
+# EXEC: 155930|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 155931|/usr/bin/sort|sort -u
+# EXEC: 155936|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 155937|/usr/bin/sort|sort -u
+# EXEC: 155942|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 155943|/usr/bin/sort|sort -u
+# EXEC: 155945|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-file-top-declarations.md
+# EXEC: 155947|/usr/bin/sed|sed -E 
+# EXEC: 155951|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 155952|/usr/bin/sort|sort -u
+# EXEC: 155957|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 155958|/usr/bin/sort|sort -u
+# EXEC: 155963|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 155964|/usr/bin/sort|sort -u
+# EXEC: 155966|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-functional-ruby.md
+# EXEC: 155968|/usr/bin/sed|sed -E 
+# EXEC: 155972|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 155973|/usr/bin/sort|sort -u
+# EXEC: 155978|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 155979|/usr/bin/sort|sort -u
+# EXEC: 155984|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 155985|/usr/bin/sort|sort -u
+# EXEC: 155987|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-functional-rust.md
+# EXEC: 155989|/usr/bin/sed|sed -E 
+# EXEC: 155993|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 155994|/usr/bin/sort|sort -u
+# EXEC: 155999|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156000|/usr/bin/sort|sort -u
+# EXEC: 156005|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156006|/usr/bin/sort|sort -u
+# EXEC: 156008|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-function-naming.md
+# EXEC: 156010|/usr/bin/sed|sed -E 
+# EXEC: 156014|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156015|/usr/bin/sort|sort -u
+# EXEC: 156020|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156021|/usr/bin/sort|sort -u
+# EXEC: 156026|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156027|/usr/bin/sort|sort -u
+# EXEC: 156029|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-inline-method-calls.md
+# EXEC: 156031|/usr/bin/sed|sed -E 
+# EXEC: 156038|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156039|/usr/bin/sort|sort -u
+# EXEC: 156044|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156045|/usr/bin/sort|sort -u
+# EXEC: 156050|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156051|/usr/bin/sort|sort -u
+# EXEC: 156053|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-method-naming.md
+# EXEC: 156055|/usr/bin/sed|sed -E 
+# EXEC: 156059|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156060|/usr/bin/sort|sort -u
+# EXEC: 156065|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156066|/usr/bin/sort|sort -u
+# EXEC: 156071|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156072|/usr/bin/sort|sort -u
+# EXEC: 156074|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-purity.md
+# EXEC: 156076|/usr/bin/sed|sed -E 
+# EXEC: 156080|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156081|/usr/bin/sort|sort -u
+# EXEC: 156086|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156087|/usr/bin/sort|sort -u
+# EXEC: 156092|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156093|/usr/bin/sort|sort -u
+# EXEC: 156095|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-return-type.md
+# EXEC: 156097|/usr/bin/sed|sed -E 
+# EXEC: 156101|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156102|/usr/bin/sort|sort -u
+# EXEC: 156107|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156108|/usr/bin/sort|sort -u
+# EXEC: 156113|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156114|/usr/bin/sort|sort -u
+# EXEC: 156116|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-shared-code.md
+# EXEC: 156118|/usr/bin/sed|sed -E 
+# EXEC: 156122|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156123|/usr/bin/sort|sort -u
+# EXEC: 156128|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156129|/usr/bin/sort|sort -u
+# EXEC: 156134|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156135|/usr/bin/sort|sort -u
+# EXEC: 156137|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-static-typescript.md
+# EXEC: 156139|/usr/bin/sed|sed -E 
+# EXEC: 156143|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156144|/usr/bin/sort|sort -u
+# EXEC: 156149|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156150|/usr/bin/sort|sort -u
+# EXEC: 156155|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156156|/usr/bin/sort|sort -u
+# EXEC: 156158|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-struct-naming.md
+# EXEC: 156160|/usr/bin/sed|sed -E 
+# EXEC: 156164|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156165|/usr/bin/sort|sort -u
+# EXEC: 156170|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156171|/usr/bin/sort|sort -u
+# EXEC: 156176|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156177|/usr/bin/sort|sort -u
+# EXEC: 156186|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-style-ruby.md
+# EXEC: 156188|/usr/bin/sed|sed -E 
+# EXEC: 156192|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156193|/usr/bin/sort|sort -u
+# EXEC: 156198|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156199|/usr/bin/sort|sort -u
+# EXEC: 156204|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156205|/usr/bin/sort|sort -u
+# EXEC: 156207|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-unique-tokens.md
+# EXEC: 156209|/usr/bin/sed|sed -E 
+# EXEC: 156213|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156214|/usr/bin/sort|sort -u
+# EXEC: 156219|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156220|/usr/bin/sort|sort -u
+# EXEC: 156225|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156226|/usr/bin/sort|sort -u
+# EXEC: 156228|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-variable-contrast.md
+# EXEC: 156230|/usr/bin/sed|sed -E 
+# EXEC: 156234|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156235|/usr/bin/sort|sort -u
+# EXEC: 156240|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156241|/usr/bin/sort|sort -u
+# EXEC: 156246|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156247|/usr/bin/sort|sort -u
+# EXEC: 156249|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-active.md
+# EXEC: 156251|/usr/bin/sed|sed -E 
+# EXEC: 156255|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156256|/usr/bin/sort|sort -u
+# EXEC: 156261|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156262|/usr/bin/sort|sort -u
+# EXEC: 156267|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156268|/usr/bin/sort|sort -u
+# EXEC: 156270|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-actor.md
+# EXEC: 156272|/usr/bin/sed|sed -E 
+# EXEC: 156276|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156277|/usr/bin/sort|sort -u
+# EXEC: 156282|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156283|/usr/bin/sort|sort -u
+# EXEC: 156288|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156289|/usr/bin/sort|sort -u
+# EXEC: 156291|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-affirmative.md
+# EXEC: 156293|/usr/bin/sed|sed -E 
+# EXEC: 156297|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156298|/usr/bin/sort|sort -u
+# EXEC: 156303|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156304|/usr/bin/sort|sort -u
+# EXEC: 156309|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156310|/usr/bin/sort|sort -u
+# EXEC: 156312|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-concise.md
+# EXEC: 156314|/usr/bin/sed|sed -E 
+# EXEC: 156318|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156319|/usr/bin/sort|sort -u
+# EXEC: 156324|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156325|/usr/bin/sort|sort -u
+# EXEC: 156330|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156331|/usr/bin/sort|sort -u
+# EXEC: 156333|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-declarative.md
+# EXEC: 156335|/usr/bin/sed|sed -E 
+# EXEC: 156339|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156340|/usr/bin/sort|sort -u
+# EXEC: 156345|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156346|/usr/bin/sort|sort -u
+# EXEC: 156351|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156352|/usr/bin/sort|sort -u
+# EXEC: 156354|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-finite.md
+# EXEC: 156356|/usr/bin/sed|sed -E 
+# EXEC: 156360|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156361|/usr/bin/sort|sort -u
+# EXEC: 156366|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156367|/usr/bin/sort|sort -u
+# EXEC: 156372|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156373|/usr/bin/sort|sort -u
+# EXEC: 156375|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-function.md
+# EXEC: 156377|/usr/bin/sed|sed -E 
+# EXEC: 156381|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156382|/usr/bin/sort|sort -u
+# EXEC: 156387|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156388|/usr/bin/sort|sort -u
+# EXEC: 156393|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156394|/usr/bin/sort|sort -u
+# EXEC: 156396|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-modifier.md
+# EXEC: 156398|/usr/bin/sed|sed -E 
+# EXEC: 156402|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156403|/usr/bin/sort|sort -u
+# EXEC: 156408|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156409|/usr/bin/sort|sort -u
+# EXEC: 156414|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156415|/usr/bin/sort|sort -u
+# EXEC: 156417|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-noun.md
+# EXEC: 156419|/usr/bin/sed|sed -E 
+# EXEC: 156423|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156424|/usr/bin/sort|sort -u
+# EXEC: 156429|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156430|/usr/bin/sort|sort -u
+# EXEC: 156435|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156436|/usr/bin/sort|sort -u
+# EXEC: 156438|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-proper-english.md
+# EXEC: 156440|/usr/bin/sed|sed -E 
+# EXEC: 156444|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156445|/usr/bin/sort|sort -u
+# EXEC: 156450|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156451|/usr/bin/sort|sort -u
+# EXEC: 156456|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156457|/usr/bin/sort|sort -u
+# EXEC: 156459|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-prose-notation.md
+# EXEC: 156461|/usr/bin/sed|sed -E 
+# EXEC: 156465|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156466|/usr/bin/sort|sort -u
+# EXEC: 156471|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156472|/usr/bin/sort|sort -u
+# EXEC: 156477|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156478|/usr/bin/sort|sort -u
+# EXEC: 156480|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-sov.md
+# EXEC: 156482|/usr/bin/sed|sed -E 
+# EXEC: 156486|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156487|/usr/bin/sort|sort -u
+# EXEC: 156492|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156493|/usr/bin/sort|sort -u
+# EXEC: 156498|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156499|/usr/bin/sort|sort -u
+# EXEC: 156501|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-verb.md
+# EXEC: 156503|/usr/bin/sed|sed -E 
+# EXEC: 156507|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156508|/usr/bin/sort|sort -u
+# EXEC: 156513|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156514|/usr/bin/sort|sort -u
+# EXEC: 156519|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156520|/usr/bin/sort|sort -u
+# EXEC: 156522|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/entity-precedence-derivation.md
+# EXEC: 156524|/usr/bin/sed|sed -E 
+# EXEC: 156528|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156529|/usr/bin/sort|sort -u
+# EXEC: 156534|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156535|/usr/bin/sort|sort -u
+# EXEC: 156540|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156541|/usr/bin/sort|sort -u
+# EXEC: 156545|/usr/bin/wc|wc -l
+# EXEC: 156548|/usr/bin/tr|tr \n ,
+# EXEC: 156551|/usr/bin/tr|tr -c A-Za-z0-9 _
+# EXEC: 156552|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/linguistic-lambda-penalty.md
+# EXEC: 156554|/usr/bin/sed|sed -E 
+# EXEC: 156559|/usr/bin/sort|sort -u
+# EXEC: 156558|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156564|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156565|/usr/bin/sort|sort -u
+# EXEC: 156570|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156571|/usr/bin/sort|sort -u
+# EXEC: 156573|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/logic-and.md
+# EXEC: 156575|/usr/bin/sed|sed -E 
+# EXEC: 156579|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156580|/usr/bin/sort|sort -u
+# EXEC: 156585|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156586|/usr/bin/sort|sort -u
+# EXEC: 156591|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156592|/usr/bin/sort|sort -u
+# EXEC: 156594|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/logic-nand.md
+# EXEC: 156596|/usr/bin/sed|sed -E 
+# EXEC: 156600|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156601|/usr/bin/sort|sort -u
+# EXEC: 156606|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156607|/usr/bin/sort|sort -u
+# EXEC: 156612|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156613|/usr/bin/sort|sort -u
+# EXEC: 156615|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/logic-nor.md
+# EXEC: 156617|/usr/bin/sed|sed -E 
+# EXEC: 156621|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156622|/usr/bin/sort|sort -u
+# EXEC: 156627|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156628|/usr/bin/sort|sort -u
+# EXEC: 156633|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156634|/usr/bin/sort|sort -u
+# EXEC: 156636|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/logic-not.md
+# EXEC: 156638|/usr/bin/sed|sed -E 
+# EXEC: 156642|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156643|/usr/bin/sort|sort -u
+# EXEC: 156648|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156649|/usr/bin/sort|sort -u
+# EXEC: 156654|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156655|/usr/bin/sort|sort -u
+# EXEC: 156657|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/logic-or.md
+# EXEC: 156659|/usr/bin/sed|sed -E 
+# EXEC: 156663|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156664|/usr/bin/sort|sort -u
+# EXEC: 156669|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156670|/usr/bin/sort|sort -u
+# EXEC: 156675|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156676|/usr/bin/sort|sort -u
+# EXEC: 156678|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/logic-xnor.md
+# EXEC: 156680|/usr/bin/sed|sed -E 
+# EXEC: 156684|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156685|/usr/bin/sort|sort -u
+# EXEC: 156690|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156691|/usr/bin/sort|sort -u
+# EXEC: 156696|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156697|/usr/bin/sort|sort -u
+# EXEC: 156699|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/logic-xor.md
+# EXEC: 156701|/usr/bin/sed|sed -E 
+# EXEC: 156705|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156706|/usr/bin/sort|sort -u
+# EXEC: 156711|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156712|/usr/bin/sort|sort -u
+# EXEC: 156717|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156718|/usr/bin/sort|sort -u
+# EXEC: 156720|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/philosophy-mallat.md
+# EXEC: 156722|/usr/bin/sed|sed -E 
+# EXEC: 156726|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156727|/usr/bin/sort|sort -u
+# EXEC: 156732|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156733|/usr/bin/sort|sort -u
+# EXEC: 156738|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156739|/usr/bin/sort|sort -u
+# EXEC: 156741|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/philosophy-pocock.md
+# EXEC: 156743|/usr/bin/sed|sed -E 
+# EXEC: 156747|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156748|/usr/bin/sort|sort -u
+# EXEC: 156753|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156754|/usr/bin/sort|sort -u
+# EXEC: 156759|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156760|/usr/bin/sort|sort -u
+# EXEC: 156762|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/philosophy-pragmatic.md
+# EXEC: 156764|/usr/bin/sed|sed -E 
+# EXEC: 156768|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156769|/usr/bin/sort|sort -u
+# EXEC: 156774|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156775|/usr/bin/sort|sort -u
+# EXEC: 156780|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156781|/usr/bin/sort|sort -u
+# EXEC: 156783|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/philosophy-sakana.md
+# EXEC: 156785|/usr/bin/sed|sed -E 
+# EXEC: 156789|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156790|/usr/bin/sort|sort -u
+# EXEC: 156795|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156796|/usr/bin/sort|sort -u
+# EXEC: 156801|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156802|/usr/bin/sort|sort -u
+# EXEC: 156804|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/philosophy-schell.md
+# EXEC: 156806|/usr/bin/sed|sed -E 
+# EXEC: 156810|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156811|/usr/bin/sort|sort -u
+# EXEC: 156816|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156817|/usr/bin/sort|sort -u
+# EXEC: 156822|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156823|/usr/bin/sort|sort -u
+# EXEC: 156825|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/system-illustration-scope.md
+# EXEC: 156827|/usr/bin/sed|sed -E 
+# EXEC: 156831|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156832|/usr/bin/sort|sort -u
+# EXEC: 156837|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156838|/usr/bin/sort|sort -u
+# EXEC: 156843|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156844|/usr/bin/sort|sort -u
+# EXEC: 156846|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-automate-before-fix.md
+# EXEC: 156848|/usr/bin/sed|sed -E 
+# EXEC: 156852|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156853|/usr/bin/sort|sort -u
+# EXEC: 156858|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156859|/usr/bin/sort|sort -u
+# EXEC: 156864|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156865|/usr/bin/sort|sort -u
+# EXEC: 156867|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-batch-sequence.md
+# EXEC: 156869|/usr/bin/sed|sed -E 
+# EXEC: 156873|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156874|/usr/bin/sort|sort -u
+# EXEC: 156879|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156880|/usr/bin/sort|sort -u
+# EXEC: 156886|/usr/bin/sort|sort -u
+# EXEC: 156885|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156888|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-bitacora-stdout.md
+# EXEC: 156890|/usr/bin/sed|sed -E 
+# EXEC: 156894|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156895|/usr/bin/sort|sort -u
+# EXEC: 156900|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156901|/usr/bin/sort|sort -u
+# EXEC: 156906|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156907|/usr/bin/sort|sort -u
+# EXEC: 156909|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-bridge-constraint.md
+# EXEC: 156911|/usr/bin/sed|sed -E 
+# EXEC: 156915|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156916|/usr/bin/sort|sort -u
+# EXEC: 156921|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156922|/usr/bin/sort|sort -u
+# EXEC: 156927|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156928|/usr/bin/sort|sort -u
+# EXEC: 156930|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-captcha-gate.md
+# EXEC: 156932|/usr/bin/sed|sed -E 
+# EXEC: 156936|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156937|/usr/bin/sort|sort -u
+# EXEC: 156942|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156943|/usr/bin/sort|sort -u
+# EXEC: 156948|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156949|/usr/bin/sort|sort -u
+# EXEC: 156951|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-constraint-saturation-limit.md
+# EXEC: 156953|/usr/bin/sed|sed -E 
+# EXEC: 156957|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156958|/usr/bin/sort|sort -u
+# EXEC: 156963|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156964|/usr/bin/sort|sort -u
+# EXEC: 156969|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156970|/usr/bin/sort|sort -u
+# EXEC: 156972|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-project-delegation.md
+# EXEC: 156974|/usr/bin/sed|sed -E 
+# EXEC: 156978|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 156979|/usr/bin/sort|sort -u
+# EXEC: 156984|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 156985|/usr/bin/sort|sort -u
+# EXEC: 156990|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 156991|/usr/bin/sort|sort -u
+# EXEC: 156993|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-query-patlib-context.md
+# EXEC: 156995|/usr/bin/sed|sed -E 
+# EXEC: 156999|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157000|/usr/bin/sort|sort -u
+# EXEC: 157005|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157006|/usr/bin/sort|sort -u
+# EXEC: 157011|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157012|/usr/bin/sort|sort -u
+# EXEC: 157014|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-report-write.md
+# EXEC: 157016|/usr/bin/sed|sed -E 
+# EXEC: 157020|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157021|/usr/bin/sort|sort -u
+# EXEC: 157026|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157027|/usr/bin/sort|sort -u
+# EXEC: 157032|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157033|/usr/bin/sort|sort -u
+# EXEC: 157035|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-todo-track.md
+# EXEC: 157037|/usr/bin/sed|sed -E 
+# EXEC: 157041|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157042|/usr/bin/sort|sort -u
+# EXEC: 157047|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157048|/usr/bin/sort|sort -u
+# EXEC: 157053|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157054|/usr/bin/sort|sort -u
+# EXEC: 157056|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-use-local-mcp-servers.md
+# EXEC: 157058|/usr/bin/sed|sed -E 
+# EXEC: 157062|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157063|/usr/bin/sort|sort -u
+# EXEC: 157068|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157069|/usr/bin/sort|sort -u
+# EXEC: 157074|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157075|/usr/bin/sort|sort -u
+# EXEC: 157077|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-acronymic-anaphora.md
+# EXEC: 157079|/usr/bin/sed|sed -E 
+# EXEC: 157083|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157084|/usr/bin/sort|sort -u
+# EXEC: 157089|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157090|/usr/bin/sort|sort -u
+# EXEC: 157095|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157096|/usr/bin/sort|sort -u
+# EXEC: 157098|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-asyndeton.md
+# EXEC: 157100|/usr/bin/sed|sed -E 
+# EXEC: 157104|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157105|/usr/bin/sort|sort -u
+# EXEC: 157110|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157111|/usr/bin/sort|sort -u
+# EXEC: 157116|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157117|/usr/bin/sort|sort -u
+# EXEC: 157119|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-avoid-negation-priming.md
+# EXEC: 157121|/usr/bin/sed|sed -E 
+# EXEC: 157125|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157126|/usr/bin/sort|sort -u
+# EXEC: 157131|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157132|/usr/bin/sort|sort -u
+# EXEC: 157137|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157138|/usr/bin/sort|sort -u
+# EXEC: 157140|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-colorize-diff.md
+# EXEC: 157142|/usr/bin/sed|sed -E 
+# EXEC: 157146|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157147|/usr/bin/sort|sort -u
+# EXEC: 157152|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157153|/usr/bin/sort|sort -u
+# EXEC: 157158|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157159|/usr/bin/sort|sort -u
+# EXEC: 157161|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-constraint-budget.md
+# EXEC: 157163|/usr/bin/sed|sed -E 
+# EXEC: 157167|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157168|/usr/bin/sort|sort -u
+# EXEC: 157173|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157174|/usr/bin/sort|sort -u
+# EXEC: 157179|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157180|/usr/bin/sort|sort -u
+# EXEC: 157182|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-dash-pivot.md
+# EXEC: 157184|/usr/bin/sed|sed -E 
+# EXEC: 157188|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157189|/usr/bin/sort|sort -u
+# EXEC: 157194|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157195|/usr/bin/sort|sort -u
+# EXEC: 157200|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157201|/usr/bin/sort|sort -u
+# EXEC: 157203|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-declarative-assertion.md
+# EXEC: 157205|/usr/bin/sed|sed -E 
+# EXEC: 157209|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157210|/usr/bin/sort|sort -u
+# EXEC: 157215|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157216|/usr/bin/sort|sort -u
+# EXEC: 157221|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157222|/usr/bin/sort|sort -u
+# EXEC: 157224|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-declarative-over-imperative.md
+# EXEC: 157226|/usr/bin/sed|sed -E 
+# EXEC: 157230|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157231|/usr/bin/sort|sort -u
+# EXEC: 157236|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157237|/usr/bin/sort|sort -u
+# EXEC: 157242|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157243|/usr/bin/sort|sort -u
+# EXEC: 157245|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-domain-zero-anaphora.md
+# EXEC: 157247|/usr/bin/sed|sed -E 
+# EXEC: 157251|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157252|/usr/bin/sort|sort -u
+# EXEC: 157257|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157258|/usr/bin/sort|sort -u
+# EXEC: 157263|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157264|/usr/bin/sort|sort -u
+# EXEC: 157266|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-entity-segment-count.md
+# EXEC: 157268|/usr/bin/sed|sed -E 
+# EXEC: 157272|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157273|/usr/bin/sort|sort -u
+# EXEC: 157278|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157279|/usr/bin/sort|sort -u
+# EXEC: 157284|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157285|/usr/bin/sort|sort -u
+# EXEC: 157287|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-essential-first.md
+# EXEC: 157289|/usr/bin/sed|sed -E 
+# EXEC: 157293|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157294|/usr/bin/sort|sort -u
+# EXEC: 157299|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157300|/usr/bin/sort|sort -u
+# EXEC: 157305|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157306|/usr/bin/sort|sort -u
+# EXEC: 157308|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-expletive-deletion.md
+# EXEC: 157310|/usr/bin/sed|sed -E 
+# EXEC: 157314|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157315|/usr/bin/sort|sort -u
+# EXEC: 157320|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157321|/usr/bin/sort|sort -u
+# EXEC: 157326|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157327|/usr/bin/sort|sort -u
+# EXEC: 157329|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-gapping.md
+# EXEC: 157331|/usr/bin/sed|sed -E 
+# EXEC: 157335|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157336|/usr/bin/sort|sort -u
+# EXEC: 157341|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157342|/usr/bin/sort|sort -u
+# EXEC: 157347|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157348|/usr/bin/sort|sort -u
+# EXEC: 157350|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-lambda-linguistics.md
+# EXEC: 157352|/usr/bin/sed|sed -E 
+# EXEC: 157356|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157357|/usr/bin/sort|sort -u
+# EXEC: 157362|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157363|/usr/bin/sort|sort -u
+# EXEC: 157368|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157369|/usr/bin/sort|sort -u
+# EXEC: 157371|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-left-edge-deletion.md
+# EXEC: 157373|/usr/bin/sed|sed -E 
+# EXEC: 157377|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157378|/usr/bin/sort|sort -u
+# EXEC: 157383|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157384|/usr/bin/sort|sort -u
+# EXEC: 157389|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157390|/usr/bin/sort|sort -u
+# EXEC: 157392|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-output-shape-specification.md
+# EXEC: 157394|/usr/bin/sed|sed -E 
+# EXEC: 157398|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157399|/usr/bin/sort|sort -u
+# EXEC: 157404|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157405|/usr/bin/sort|sort -u
+# EXEC: 157410|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157411|/usr/bin/sort|sort -u
+# EXEC: 157413|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-positive-framing.md
+# EXEC: 157415|/usr/bin/sed|sed -E 
+# EXEC: 157419|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157420|/usr/bin/sort|sort -u
+# EXEC: 157425|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157426|/usr/bin/sort|sort -u
+# EXEC: 157431|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157432|/usr/bin/sort|sort -u
+# EXEC: 157434|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-positive-negative-ratio.md
+# EXEC: 157436|/usr/bin/sed|sed -E 
+# EXEC: 157440|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157441|/usr/bin/sort|sort -u
+# EXEC: 157446|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157447|/usr/bin/sort|sort -u
+# EXEC: 157452|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157453|/usr/bin/sort|sort -u
+# EXEC: 157455|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-pseudo-code-notation.md
+# EXEC: 157457|/usr/bin/sed|sed -E 
+# EXEC: 157461|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157462|/usr/bin/sort|sort -u
+# EXEC: 157467|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157468|/usr/bin/sort|sort -u
+# EXEC: 157473|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157474|/usr/bin/sort|sort -u
+# EXEC: 157476|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-resultative-compounding.md
+# EXEC: 157478|/usr/bin/sed|sed -E 
+# EXEC: 157482|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157483|/usr/bin/sort|sort -u
+# EXEC: 157488|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157489|/usr/bin/sort|sort -u
+# EXEC: 157494|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157495|/usr/bin/sort|sort -u
+# EXEC: 157497|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-structural-preference.md
+# EXEC: 157499|/usr/bin/sed|sed -E 
+# EXEC: 157503|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157504|/usr/bin/sort|sort -u
+# EXEC: 157509|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157510|/usr/bin/sort|sort -u
+# EXEC: 157515|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157516|/usr/bin/sort|sort -u
+# EXEC: 157518|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-zero-copula.md
+# EXEC: 157520|/usr/bin/sed|sed -E 
+# EXEC: 157524|/usr/bin/grep|grep -oE \b[a-z]+ed\b
+# EXEC: 157525|/usr/bin/sort|sort -u
+# EXEC: 157530|/usr/bin/grep|grep -oE \b[a-z]+ing\b
+# EXEC: 157531|/usr/bin/sort|sort -u
+# EXEC: 157536|/usr/bin/grep|grep -oE \b[a-z]+(tion|sion|ment|ance|ion)\b
+# EXEC: 157537|/usr/bin/sort|sort -u
+# EXEC: 157540|/usr/bin/find|find /home/eddyr/assembler/.opencode/rules -maxdepth 1 -name *.md
+# EXEC: 157541|/usr/bin/wc|wc -l
+# EXEC: 157544|/usr/bin/sort|sort -u
+# EXEC: 157545|/usr/bin/tr|tr \n ,
+# EXEC: 157546|/usr/bin/sed|sed s/,$//
+# EXEC: 157549|/usr/bin/sort|sort -u
+# EXEC: 157550|/usr/bin/tr|tr \n ,
+# EXEC: 157551|/usr/bin/sed|sed s/,$//
+# EXEC: 157554|/usr/bin/sort|sort -u
+# EXEC: 157555|/usr/bin/tr|tr \n ,
+# EXEC: 157556|/usr/bin/sed|sed s/,$//
+# EXEC: 157560|/usr/bin/wc|wc -l
+# EXEC: 157561|/usr/bin/tr|tr -d  
+# EXEC: 157563|/usr/bin/wc|wc -c
+# EXEC: 157564|/usr/bin/tr|tr -d  
+# EXEC: 157566|/usr/bin/wc|wc -l
+# EXEC: 157567|/usr/bin/tr|tr -d  
+# EXEC: 157568|/usr/bin/date|date +%s%N
+# EXEC: 157570|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094722-fixture-comm-rules-bash2.log
+# EXEC: 157572|/usr/bin/cat|cat /tmp/tmp.WTyRCojEDP
+# EXEC: 157573|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094722-fixture-comm-rules-bash2.log
+# EXEC: 157574|/usr/bin/cat|cat /tmp/tmp.p4bfrTOiqf
+# EXEC: 157575|/usr/bin/cat|cat /tmp/tmp.p4bfrTOiqf
+# EXEC: 157576|/usr/bin/rm|rm -f /tmp/tmp.WTyRCojEDP /tmp/tmp.p4bfrTOiqf
+# EXEC: 157578|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094722-fixture-comm-rules-bash2.log
+# EXEC: 157580|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094722-fixture-comm-rules-bash2.log
+# EXEC: 157582|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094722-fixture-comm-rules-bash2.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 find=find (GNU findutils) 4.11.0-modified git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 grep=grep (GNU grep) 3.12-modified head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sed=/usr/bin/sed (GNU sed) 4.10 sha256sum=sha256sum (GNU coreutils) 9.11 sort=sort (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 792
+# SHA: 5de35b72f81182d918424f48a10f087cb7a0b2e6fba4cda6a499102dcf764cd7
+# exit: 1

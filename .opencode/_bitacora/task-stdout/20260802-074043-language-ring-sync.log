@@ -1,0 +1,132 @@
+# CMD: ruby .opencode/_scripts/r6-patlib-sync.rb --type specifications 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T07:40:43-06:00
+# PID: 67442
+# DUR: 499ms
+# exit: 1
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: 7ee59818
+# CLI: ruby ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux]
+# ARGS: .opencode/_scripts/r6-patlib-sync.rb --type specifications 
+# CWD: /home/eddyr/assembler
+# --------------------
+/home/eddyr/.local/share/gem/ruby/3.4.0/gems/sqlite3-2.9.5-x86_64-linux-gnu/lib/sqlite3/database.rb:167:in 'SQLite3::Database#open_v2': unable to open database file (SQLite3::CantOpenException)
+	from /home/eddyr/.local/share/gem/ruby/3.4.0/gems/sqlite3-2.9.5-x86_64-linux-gnu/lib/sqlite3/database.rb:167:in 'SQLite3::Database#initialize'
+	from .opencode/_scripts/r6-patlib-sync.rb:230:in 'Class#new'
+	from .opencode/_scripts/r6-patlib-sync.rb:230:in '<main>'
+# OUT_LINES: 0
+# OUT_BYTES: 0
+# ERR_LINES: 4
+# EXEC: 67442|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh language-ring-sync -- ruby .opencode/_scripts/r6-patlib-sync.rb --type specifications
+# EXEC: 67443|/usr/bin/date|date +%s%N
+# EXEC: 67447|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 67448|/usr/bin/head|head -1
+# EXEC: 67449|/usr/bin/tr|tr -d \n
+# EXEC: 67450|/usr/bin/ruby|ruby --version
+# EXEC: 67452|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 67455|/usr/bin/git|git remote get-url origin
+# EXEC: 67453|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 67456|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 67458|/usr/bin/git|git branch --show-current
+# EXEC: 67460|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 67461|/usr/bin/head|head -1
+# EXEC: 67462|/usr/bin/tr|tr -d \n
+# EXEC: 67463|/usr/bin/bun|bun --version
+# EXEC: 67465|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 67466|/usr/bin/head|head -1
+# EXEC: 67467|/usr/bin/tr|tr -d \n
+# EXEC: 67468|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 67470|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 67471|/usr/bin/head|head -1
+# EXEC: 67472|/usr/bin/tr|tr -d \n
+# EXEC: 67473|/usr/bin/python3|python3 --version
+# EXEC: 67475|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 67476|/usr/bin/head|head -1
+# EXEC: 67477|/usr/bin/tr|tr -d \n
+# EXEC: 67478|/usr/bin/ruby|ruby --version
+# EXEC: 67481|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 67482|/usr/bin/head|head -1
+# EXEC: 67483|/usr/bin/tr|tr -d \n
+# EXEC: 67484|/usr/bin/rustc|rustc --version
+# EXEC: 67487|/usr/bin/timeout|timeout 2 go version
+# EXEC: 67488|/usr/bin/head|head -1
+# EXEC: 67489|/usr/bin/tr|tr -d \n
+# EXEC: 67490|/usr/bin/go|go version
+# EXEC: 67496|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 67497|/usr/bin/head|head -1
+# EXEC: 67498|/usr/bin/tr|tr -d \n
+# EXEC: 67499|/usr/bin/git|git --version
+# EXEC: 67501|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 67502|/usr/bin/head|head -1
+# EXEC: 67503|/usr/bin/tr|tr -d \n
+# EXEC: 67504|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 67506|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 67507|/usr/bin/head|head -1
+# EXEC: 67508|/usr/bin/tr|tr -d \n
+# EXEC: 67509|/usr/bin/date|date --version
+# EXEC: 67512|/usr/bin/head|head -1
+# EXEC: 67511|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 67513|/usr/bin/tr|tr -d \n
+# EXEC: 67514|/usr/bin/wc|wc --version
+# EXEC: 67516|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 67517|/usr/bin/head|head -1
+# EXEC: 67518|/usr/bin/tr|tr -d \n
+# EXEC: 67519|/usr/bin/cat|cat --version
+# EXEC: 67521|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 67522|/usr/bin/head|head -1
+# EXEC: 67523|/usr/bin/tr|tr -d \n
+# EXEC: 67524|/usr/bin/tee|tee --version
+# EXEC: 67526|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 67527|/usr/bin/head|head -1
+# EXEC: 67528|/usr/bin/tr|tr -d \n
+# EXEC: 67529|/usr/bin/mktemp|mktemp --version
+# EXEC: 67531|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 67532|/usr/bin/head|head -1
+# EXEC: 67533|/usr/bin/tr|tr -d \n
+# EXEC: 67534|/usr/bin/rm|rm --version
+# EXEC: 67536|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 67537|/usr/bin/head|head -1
+# EXEC: 67538|/usr/bin/tr|tr -d \n
+# EXEC: 67539|/usr/bin/timeout|timeout --version
+# EXEC: 67541|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 67542|/usr/bin/head|head -1
+# EXEC: 67543|/usr/bin/tr|tr -d \n
+# EXEC: 67544|/usr/bin/tr|tr --version
+# EXEC: 67546|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 67547|/usr/bin/head|head -1
+# EXEC: 67548|/usr/bin/tr|tr -d \n
+# EXEC: 67549|/usr/bin/head|head --version
+# EXEC: 67551|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 67552|/usr/bin/head|head -1
+# EXEC: 67553|/usr/bin/tr|tr -d \n
+# EXEC: 67554|/usr/bin/cut|cut --version
+# EXEC: 67556|/usr/bin/date|date +%s%N
+# EXEC: 67557|/usr/bin/sha256sum|sha256sum
+# EXEC: 67558|/usr/bin/cut|cut -c1-8
+# EXEC: 67560|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074043-language-ring-sync.log
+# EXEC: 67561|/usr/bin/date|date -Is
+# EXEC: 67562|/usr/bin/mktemp|mktemp
+# EXEC: 67563|/usr/bin/mktemp|mktemp
+# EXEC: 67564|/usr/bin/ruby|ruby .opencode/_scripts/r6-patlib-sync.rb --type specifications
+# EXEC: 67567|/usr/bin/wc|wc -l
+# EXEC: 67568|/usr/bin/tr|tr -d  
+# EXEC: 67570|/usr/bin/wc|wc -c
+# EXEC: 67571|/usr/bin/tr|tr -d  
+# EXEC: 67573|/usr/bin/wc|wc -l
+# EXEC: 67574|/usr/bin/tr|tr -d  
+# EXEC: 67575|/usr/bin/date|date +%s%N
+# EXEC: 67577|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074043-language-ring-sync.log
+# EXEC: 67579|/usr/bin/cat|cat /tmp/tmp.lFZgxp1mDI
+# EXEC: 67580|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074043-language-ring-sync.log
+# EXEC: 67581|/usr/bin/cat|cat /tmp/tmp.0fdXf5xSYx
+# EXEC: 67582|/usr/bin/cat|cat /tmp/tmp.0fdXf5xSYx
+# EXEC: 67583|/usr/bin/rm|rm -f /tmp/tmp.lFZgxp1mDI /tmp/tmp.0fdXf5xSYx
+# EXEC: 67585|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074043-language-ring-sync.log
+# EXEC: 67587|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074043-language-ring-sync.log
+# EXEC: 67589|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074043-language-ring-sync.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 107
+# SHA: 1352788b5c15560ab30676403de7bddb734700079e8a5731f6b3a3182f2fd8e4
+# exit: 1

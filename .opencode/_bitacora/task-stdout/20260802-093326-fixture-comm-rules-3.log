@@ -1,0 +1,184 @@
+# CMD: bash fixture-communication-rules.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T09:33:26-06:00
+# PID: 143514
+# DUR: 462ms
+# exit: 1
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: 479085c5
+# CLI: bash 5.3.15(1)-release
+# ARGS: fixture-communication-rules.sh 
+# CWD: /home/eddyr/assembler/.opencode/_scripts/fixtures
+# --------------------
+RULES=84
+VIOLATED=48
+ED=34
+GERUNDS=52
+NOMINALS=24
+TOTAL=110
+FLAGGED_ED=answered,automated,blocked,bounded,checked,closed,colorized,completed,connected,declared,desired,directed,established,hyphenated,layered,presented,proposed,related,repeated,reserved,shared,structured,timestamped,undirected,visited
+FLAGGED_GERUNDS=acting,batching,combining,competing,creating,declaring,describing,encoding,encompassing,formatting,framing,grounding,hitting,leading,learning,naming,offering,pending,programming,reconciling,recurring,renaming,sequencing,tracing,traversing,unmeaning,using,working,writing
+FLAGGED_NOMINALS=automation,classification,completion,computation,construction,creation,declaration,delegation,derivation,detection,emulation,evaluation,exploration,extraction,generation,initiation,inspection,interaction,invocation,progression,prohibition,satisfaction
+VIOLATION_analysis_quantitative_reasoning_md=ed:0,ger:2,nom:1
+VIOLATION_code_atomic_units_md=ed:0,ger:1,nom:0
+VIOLATION_code_camelcase_md=ed:0,ger:1,nom:0
+VIOLATION_code_contract_header_md=ed:0,ger:1,nom:0
+VIOLATION_code_functional_ruby_md=ed:0,ger:0,nom:1
+VIOLATION_code_functional_rust_md=ed:0,ger:0,nom:2
+VIOLATION_code_inline_method_calls_md=ed:0,ger:0,nom:1
+VIOLATION_code_shared_code_md=ed:1,ger:0,nom:1
+VIOLATION_code_static_typescript_md=ed:1,ger:0,nom:1
+VIOLATION_code_style_ruby_md=ed:0,ger:1,nom:0
+VIOLATION_entity_precedence_derivation_md=ed:4,ger:6,nom:3
+VIOLATION_philosophy_mallat_md=ed:2,ger:1,nom:0
+VIOLATION_philosophy_pocock_md=ed:4,ger:2,nom:1
+VIOLATION_philosophy_pragmatic_md=ed:1,ger:1,nom:0
+VIOLATION_philosophy_sakana_md=ed:0,ger:0,nom:1
+VIOLATION_system_illustration_scope_md=ed:0,ger:0,nom:1
+VIOLATION_workflow_automate_before_fix_md=ed:1,ger:1,nom:0
+VIOLATION_workflow_batch_sequence_md=ed:1,ger:2,nom:1
+VIOLATION_workflow_bitacora_stdout_md=ed:1,ger:0,nom:0
+VIOLATION_workflow_bridge_constraint_md=ed:0,ger:2,nom:1
+VIOLATION_workflow_captcha_gate_md=ed:2,ger:1,nom:2
+VIOLATION_workflow_constraint_saturation_limit_md=ed:0,ger:0,nom:2
+VIOLATION_workflow_project_delegation_md=ed:1,ger:0,nom:1
+VIOLATION_workflow_report_write_md=ed:1,ger:0,nom:1
+VIOLATION_workflow_todo_track_md=ed:1,ger:2,nom:0
+VIOLATION_workflow_use_local_mcp_servers_md=ed:0,ger:0,nom:1
+VIOLATION_writing_acronymic_anaphora_md=ed:0,ger:1,nom:0
+VIOLATION_writing_asyndeton_md=ed:0,ger:1,nom:0
+VIOLATION_writing_avoid_negation_priming_md=ed:1,ger:2,nom:1
+VIOLATION_writing_colorize_diff_md=ed:2,ger:1,nom:0
+VIOLATION_writing_constraint_budget_md=ed:1,ger:1,nom:0
+VIOLATION_writing_dash_pivot_md=ed:0,ger:1,nom:0
+VIOLATION_writing_declarative_assertion_md=ed:0,ger:1,nom:0
+VIOLATION_writing_declarative_over_imperative_md=ed:0,ger:1,nom:0
+VIOLATION_writing_domain_zero_anaphora_md=ed:2,ger:2,nom:0
+VIOLATION_writing_entity_segment_count_md=ed:0,ger:3,nom:0
+VIOLATION_writing_essential_first_md=ed:0,ger:1,nom:0
+VIOLATION_writing_expletive_deletion_md=ed:0,ger:1,nom:0
+VIOLATION_writing_gapping_md=ed:1,ger:1,nom:0
+VIOLATION_writing_lambda_linguistics_md=ed:1,ger:1,nom:0
+VIOLATION_writing_left_edge_deletion_md=ed:0,ger:1,nom:0
+VIOLATION_writing_output_shape_specification_md=ed:0,ger:1,nom:0
+VIOLATION_writing_positive_framing_md=ed:1,ger:2,nom:0
+VIOLATION_writing_positive_negative_ratio_md=ed:0,ger:1,nom:1
+VIOLATION_writing_pseudo_code_notation_md=ed:0,ger:1,nom:0
+VIOLATION_writing_resultative_compounding_md=ed:1,ger:1,nom:0
+VIOLATION_writing_structural_preference_md=ed:3,ger:2,nom:0
+VIOLATION_writing_zero_copula_md=ed:0,ger:1,nom:0
+RESULT=fail:110
+# OUT_LINES: 58
+# OUT_BYTES: 3509
+# ERR_LINES: 0
+# EXEC: 143514|/usr/bin/bash|bash /home/eddyr/assembler/.opencode/_bitacora/bitacora-log.sh fixture-comm-rules-3 -- bash fixture-communication-rules.sh
+# EXEC: 143515|/usr/bin/date|date +%s%N
+# EXEC: 143518|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 143521|/usr/bin/git|git remote get-url origin
+# EXEC: 143519|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 143522|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 143524|/usr/bin/git|git branch --show-current
+# EXEC: 143526|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 143527|/usr/bin/head|head -1
+# EXEC: 143528|/usr/bin/tr|tr -d \n
+# EXEC: 143529|/usr/bin/bun|bun --version
+# EXEC: 143532|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 143533|/usr/bin/head|head -1
+# EXEC: 143534|/usr/bin/tr|tr -d \n
+# EXEC: 143535|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 143542|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 143543|/usr/bin/head|head -1
+# EXEC: 143544|/usr/bin/tr|tr -d \n
+# EXEC: 143545|/usr/bin/python3|python3 --version
+# EXEC: 143549|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 143550|/usr/bin/head|head -1
+# EXEC: 143551|/usr/bin/tr|tr -d \n
+# EXEC: 143552|/usr/bin/ruby|ruby --version
+# EXEC: 143556|/usr/bin/head|head -1
+# EXEC: 143555|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 143557|/usr/bin/tr|tr -d \n
+# EXEC: 143558|/usr/bin/rustc|rustc --version
+# EXEC: 143561|/usr/bin/timeout|timeout 2 go version
+# EXEC: 143562|/usr/bin/head|head -1
+# EXEC: 143563|/usr/bin/tr|tr -d \n
+# EXEC: 143564|/usr/bin/go|go version
+# EXEC: 143570|/usr/bin/head|head -1
+# EXEC: 143569|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 143571|/usr/bin/tr|tr -d \n
+# EXEC: 143572|/usr/bin/git|git --version
+# EXEC: 143574|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 143575|/usr/bin/head|head -1
+# EXEC: 143576|/usr/bin/tr|tr -d \n
+# EXEC: 143577|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 143579|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 143580|/usr/bin/head|head -1
+# EXEC: 143581|/usr/bin/tr|tr -d \n
+# EXEC: 143582|/usr/bin/date|date --version
+# EXEC: 143584|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 143585|/usr/bin/head|head -1
+# EXEC: 143586|/usr/bin/tr|tr -d \n
+# EXEC: 143587|/usr/bin/wc|wc --version
+# EXEC: 143589|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 143590|/usr/bin/head|head -1
+# EXEC: 143591|/usr/bin/tr|tr -d \n
+# EXEC: 143592|/usr/bin/cat|cat --version
+# EXEC: 143594|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 143595|/usr/bin/head|head -1
+# EXEC: 143596|/usr/bin/tr|tr -d \n
+# EXEC: 143597|/usr/bin/tee|tee --version
+# EXEC: 143599|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 143600|/usr/bin/head|head -1
+# EXEC: 143601|/usr/bin/tr|tr -d \n
+# EXEC: 143602|/usr/bin/mktemp|mktemp --version
+# EXEC: 143604|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 143605|/usr/bin/head|head -1
+# EXEC: 143606|/usr/bin/tr|tr -d \n
+# EXEC: 143607|/usr/bin/rm|rm --version
+# EXEC: 143609|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 143610|/usr/bin/head|head -1
+# EXEC: 143611|/usr/bin/tr|tr -d \n
+# EXEC: 143612|/usr/bin/timeout|timeout --version
+# EXEC: 143614|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 143615|/usr/bin/head|head -1
+# EXEC: 143616|/usr/bin/tr|tr -d \n
+# EXEC: 143617|/usr/bin/tr|tr --version
+# EXEC: 143619|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 143620|/usr/bin/head|head -1
+# EXEC: 143621|/usr/bin/tr|tr -d \n
+# EXEC: 143622|/usr/bin/head|head --version
+# EXEC: 143624|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 143625|/usr/bin/head|head -1
+# EXEC: 143626|/usr/bin/tr|tr -d \n
+# EXEC: 143627|/usr/bin/cut|cut --version
+# EXEC: 143630|/usr/bin/sha256sum|sha256sum
+# EXEC: 143629|/usr/bin/date|date +%s%N
+# EXEC: 143631|/usr/bin/cut|cut -c1-8
+# EXEC: 143633|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-093326-fixture-comm-rules-3.log
+# EXEC: 143634|/usr/bin/date|date -Is
+# EXEC: 143635|/usr/bin/mktemp|mktemp
+# EXEC: 143636|/usr/bin/mktemp|mktemp
+# EXEC: 143637|/usr/bin/bash|bash fixture-communication-rules.sh
+# EXEC: 143638|/usr/bin/dirname|dirname fixture-communication-rules.sh
+# EXEC: 143639|/usr/bin/ruby|ruby fixture-communication-rules.rb
+# EXEC: 143642|/usr/bin/wc|wc -l
+# EXEC: 143643|/usr/bin/tr|tr -d  
+# EXEC: 143645|/usr/bin/wc|wc -c
+# EXEC: 143646|/usr/bin/tr|tr -d  
+# EXEC: 143648|/usr/bin/wc|wc -l
+# EXEC: 143649|/usr/bin/tr|tr -d  
+# EXEC: 143650|/usr/bin/date|date +%s%N
+# EXEC: 143652|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-093326-fixture-comm-rules-3.log
+# EXEC: 143654|/usr/bin/cat|cat /tmp/tmp.wZ3LCrAauw
+# EXEC: 143655|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-093326-fixture-comm-rules-3.log
+# EXEC: 143656|/usr/bin/cat|cat /tmp/tmp.Em4n9opGdU
+# EXEC: 143657|/usr/bin/cat|cat /tmp/tmp.Em4n9opGdU
+# EXEC: 143658|/usr/bin/rm|rm -f /tmp/tmp.wZ3LCrAauw /tmp/tmp.Em4n9opGdU
+# EXEC: 143660|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-093326-fixture-comm-rules-3.log
+# EXEC: 143662|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-093326-fixture-comm-rules-3.log
+# EXEC: 143664|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-093326-fixture-comm-rules-3.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 105
+# SHA: fafe48e9cee2c3ac0b42f4e83f9763f42515b12b4f475fd92080d04f8836f97c
+# exit: 1

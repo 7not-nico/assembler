@@ -1,0 +1,476 @@
+# CMD: bash .opencode/_shell/verify-rules-declarative.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T12:02:08-06:00
+# PID: 56883
+# DUR: 1133ms
+# exit: 1
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: ee996739
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_shell/verify-rules-declarative.sh 
+# CWD: /home/eddyr/assembler
+# --------------------
+VIOLATION=entity-precedence-derivation.md COUNT=1
+  7:Cycle rule: when `precedes` forms a loop that returns (a walk returns to an entity seen before), the cycle detects a domain. A term that encompasses the cycle must exist as the domain's bracket. That term's `source` points to the anchor concept; its `precedes` points to the cycle start. All cycle members share the same source domain concept.
+VIOLATION=system-illustration-scope.md COUNT=1
+  5:Illustration must target exactly one pattern (morphism) or one nexus (composition); protocols (entities) and terms target other layers.
+FILES_SCANNED=85
+VIOLATIONS=2
+RESULT=fail:2
+# OUT_LINES: 7
+# OUT_BYTES: 629
+# ERR_LINES: 0
+# EXEC: 56883|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh verify-rules-declarative -- bash .opencode/_shell/verify-rules-declarative.sh
+# EXEC: 56884|/usr/bin/date|date +%s%N
+# EXEC: 56887|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 56890|/usr/bin/git|git remote get-url origin
+# EXEC: 56888|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 56891|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 56893|/usr/bin/git|git branch --show-current
+# EXEC: 56895|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 56896|/usr/bin/head|head -1
+# EXEC: 56897|/usr/bin/tr|tr -d \n
+# EXEC: 56898|/usr/bin/bun|bun --version
+# EXEC: 56900|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 56901|/usr/bin/head|head -1
+# EXEC: 56902|/usr/bin/tr|tr -d \n
+# EXEC: 56903|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 56905|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 56906|/usr/bin/head|head -1
+# EXEC: 56907|/usr/bin/tr|tr -d \n
+# EXEC: 56908|/usr/bin/python3|python3 --version
+# EXEC: 56910|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 56911|/usr/bin/head|head -1
+# EXEC: 56912|/usr/bin/tr|tr -d \n
+# EXEC: 56913|/usr/bin/ruby|ruby --version
+# EXEC: 56917|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 56918|/usr/bin/head|head -1
+# EXEC: 56919|/usr/bin/tr|tr -d \n
+# EXEC: 56920|/usr/bin/rustc|rustc --version
+# EXEC: 56928|/usr/bin/timeout|timeout 2 go version
+# EXEC: 56929|/usr/bin/head|head -1
+# EXEC: 56930|/usr/bin/tr|tr -d \n
+# EXEC: 56931|/usr/bin/go|go version
+# EXEC: 56939|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 56941|/usr/bin/tr|tr -d \n
+# EXEC: 56940|/usr/bin/head|head -1
+# EXEC: 56942|/usr/bin/git|git --version
+# EXEC: 56945|/usr/bin/head|head -1
+# EXEC: 56944|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 56946|/usr/bin/tr|tr -d \n
+# EXEC: 56947|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 56949|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 56950|/usr/bin/head|head -1
+# EXEC: 56951|/usr/bin/tr|tr -d \n
+# EXEC: 56952|/usr/bin/date|date --version
+# EXEC: 56954|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 56955|/usr/bin/head|head -1
+# EXEC: 56956|/usr/bin/tr|tr -d \n
+# EXEC: 56957|/usr/bin/wc|wc --version
+# EXEC: 56959|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 56960|/usr/bin/head|head -1
+# EXEC: 56961|/usr/bin/tr|tr -d \n
+# EXEC: 56962|/usr/bin/cat|cat --version
+# EXEC: 56964|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 56965|/usr/bin/head|head -1
+# EXEC: 56966|/usr/bin/tr|tr -d \n
+# EXEC: 56967|/usr/bin/tee|tee --version
+# EXEC: 56969|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 56970|/usr/bin/head|head -1
+# EXEC: 56971|/usr/bin/tr|tr -d \n
+# EXEC: 56972|/usr/bin/mktemp|mktemp --version
+# EXEC: 56974|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 56975|/usr/bin/head|head -1
+# EXEC: 56976|/usr/bin/tr|tr -d \n
+# EXEC: 56977|/usr/bin/rm|rm --version
+# EXEC: 56979|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 56980|/usr/bin/head|head -1
+# EXEC: 56981|/usr/bin/tr|tr -d \n
+# EXEC: 56982|/usr/bin/timeout|timeout --version
+# EXEC: 56984|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 56985|/usr/bin/head|head -1
+# EXEC: 56986|/usr/bin/tr|tr -d \n
+# EXEC: 56987|/usr/bin/tr|tr --version
+# EXEC: 56991|/usr/bin/tr|tr -d \n
+# EXEC: 56989|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 56990|/usr/bin/head|head -1
+# EXEC: 56992|/usr/bin/head|head --version
+# EXEC: 56995|/usr/bin/head|head -1
+# EXEC: 56994|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 56996|/usr/bin/tr|tr -d \n
+# EXEC: 56997|/usr/bin/cut|cut --version
+# EXEC: 56999|/usr/bin/date|date +%s%N
+# EXEC: 57000|/usr/bin/sha256sum|sha256sum
+# EXEC: 57001|/usr/bin/cut|cut -c1-8
+# EXEC: 57003|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-120208-verify-rules-declarative.log
+# EXEC: 57004|/usr/bin/date|date -Is
+# EXEC: 57005|/usr/bin/mktemp|mktemp
+# EXEC: 57006|/usr/bin/mktemp|mktemp
+# EXEC: 57007|/usr/bin/bash|bash .opencode/_shell/verify-rules-declarative.sh
+# EXEC: 57009|/usr/bin/dirname|dirname .opencode/_shell/verify-rules-declarative.sh
+# EXEC: 57010|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/agents-state.md
+# EXEC: 57012|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/agents-state.md
+# EXEC: 57013|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57014|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57015|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/analysis-quantitative-reasoning.md
+# EXEC: 57017|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/analysis-quantitative-reasoning.md
+# EXEC: 57018|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57019|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57020|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-abstract-noun.md
+# EXEC: 57022|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-abstract-noun.md
+# EXEC: 57023|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57024|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57025|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-atomic-unit.md
+# EXEC: 57027|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-atomic-unit.md
+# EXEC: 57028|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57029|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57030|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-atomic-units.md
+# EXEC: 57032|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-atomic-units.md
+# EXEC: 57033|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57034|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57035|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-bash-shells.md
+# EXEC: 57037|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-bash-shells.md
+# EXEC: 57038|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57039|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57040|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-camelcase.md
+# EXEC: 57042|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-camelcase.md
+# EXEC: 57043|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57044|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57045|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-concrete-noun.md
+# EXEC: 57047|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-concrete-noun.md
+# EXEC: 57048|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57049|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57050|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-constant-naming.md
+# EXEC: 57052|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-constant-naming.md
+# EXEC: 57053|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57054|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57055|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-contract-header.md
+# EXEC: 57057|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-contract-header.md
+# EXEC: 57058|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57059|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57060|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-file-top-declarations.md
+# EXEC: 57062|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-file-top-declarations.md
+# EXEC: 57063|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57064|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57065|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-functional-ruby.md
+# EXEC: 57067|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-functional-ruby.md
+# EXEC: 57068|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57069|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57070|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-functional-rust.md
+# EXEC: 57072|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-functional-rust.md
+# EXEC: 57073|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57074|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57075|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-function-naming.md
+# EXEC: 57077|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-function-naming.md
+# EXEC: 57078|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57079|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57080|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-inline-method-calls.md
+# EXEC: 57082|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-inline-method-calls.md
+# EXEC: 57083|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57084|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57085|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-method-naming.md
+# EXEC: 57087|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-method-naming.md
+# EXEC: 57088|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57089|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57090|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-purity.md
+# EXEC: 57092|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-purity.md
+# EXEC: 57093|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57094|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57095|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-return-type.md
+# EXEC: 57097|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-return-type.md
+# EXEC: 57098|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57099|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57100|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-shared-code.md
+# EXEC: 57102|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-shared-code.md
+# EXEC: 57103|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57104|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57105|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-static-typescript.md
+# EXEC: 57107|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-static-typescript.md
+# EXEC: 57108|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57109|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57110|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-struct-naming.md
+# EXEC: 57112|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-struct-naming.md
+# EXEC: 57113|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57114|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57115|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-style-ruby.md
+# EXEC: 57117|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-style-ruby.md
+# EXEC: 57118|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57119|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57120|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-unique-tokens.md
+# EXEC: 57122|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-unique-tokens.md
+# EXEC: 57123|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57124|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57125|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/code-variable-contrast.md
+# EXEC: 57127|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/code-variable-contrast.md
+# EXEC: 57128|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57129|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57130|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-active.md
+# EXEC: 57132|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/communication-active.md
+# EXEC: 57133|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57134|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57135|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-actor.md
+# EXEC: 57137|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/communication-actor.md
+# EXEC: 57138|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57139|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57140|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-affirmative.md
+# EXEC: 57142|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/communication-affirmative.md
+# EXEC: 57143|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57144|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57147|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-concise.md
+# EXEC: 57150|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/communication-concise.md
+# EXEC: 57151|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57152|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57153|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-declarative.md
+# EXEC: 57155|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/communication-declarative.md
+# EXEC: 57156|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57157|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57158|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-finite.md
+# EXEC: 57160|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/communication-finite.md
+# EXEC: 57161|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57162|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57163|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-function.md
+# EXEC: 57165|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/communication-function.md
+# EXEC: 57166|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57167|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57168|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-modifier.md
+# EXEC: 57170|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/communication-modifier.md
+# EXEC: 57171|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57172|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57173|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-noun.md
+# EXEC: 57175|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/communication-noun.md
+# EXEC: 57176|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57177|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57178|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-proper-english.md
+# EXEC: 57180|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/communication-proper-english.md
+# EXEC: 57181|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57182|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57183|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-prose-notation.md
+# EXEC: 57185|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/communication-prose-notation.md
+# EXEC: 57186|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57187|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57188|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-sov.md
+# EXEC: 57190|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/communication-sov.md
+# EXEC: 57191|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57192|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57193|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/communication-verb.md
+# EXEC: 57196|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57195|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/communication-verb.md
+# EXEC: 57197|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57198|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/entity-precedence-derivation.md
+# EXEC: 57200|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/entity-precedence-derivation.md
+# EXEC: 57201|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57202|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57205|/usr/bin/rg|rg -c .
+# EXEC: 57207|/usr/bin/sed|sed s/^/  /
+# EXEC: 57208|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/linguistic-lambda-penalty.md
+# EXEC: 57210|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/linguistic-lambda-penalty.md
+# EXEC: 57211|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57212|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57213|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/logic-and.md
+# EXEC: 57215|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/logic-and.md
+# EXEC: 57216|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57217|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57218|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/logic-nand.md
+# EXEC: 57220|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/logic-nand.md
+# EXEC: 57222|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57221|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57223|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/logic-nor.md
+# EXEC: 57225|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/logic-nor.md
+# EXEC: 57226|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57227|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57228|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/logic-not.md
+# EXEC: 57230|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/logic-not.md
+# EXEC: 57231|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57232|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57233|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/logic-or.md
+# EXEC: 57235|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/logic-or.md
+# EXEC: 57236|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57237|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57238|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/logic-xnor.md
+# EXEC: 57240|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/logic-xnor.md
+# EXEC: 57241|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57242|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57243|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/logic-xor.md
+# EXEC: 57245|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/logic-xor.md
+# EXEC: 57246|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57247|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57255|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/philosophy-mallat.md
+# EXEC: 57257|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/philosophy-mallat.md
+# EXEC: 57258|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57259|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57260|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/philosophy-pocock.md
+# EXEC: 57262|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/philosophy-pocock.md
+# EXEC: 57263|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57264|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57265|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/philosophy-pragmatic.md
+# EXEC: 57267|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/philosophy-pragmatic.md
+# EXEC: 57268|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57269|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57270|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/philosophy-sakana.md
+# EXEC: 57272|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/philosophy-sakana.md
+# EXEC: 57273|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57274|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57275|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/philosophy-schell.md
+# EXEC: 57277|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/philosophy-schell.md
+# EXEC: 57278|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57279|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57280|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/system-illustration-scope.md
+# EXEC: 57283|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57282|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/system-illustration-scope.md
+# EXEC: 57284|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57287|/usr/bin/rg|rg -c .
+# EXEC: 57289|/usr/bin/sed|sed s/^/  /
+# EXEC: 57290|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-automate-before-fix.md
+# EXEC: 57292|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/workflow-automate-before-fix.md
+# EXEC: 57293|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57294|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57295|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-batch-sequence.md
+# EXEC: 57297|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/workflow-batch-sequence.md
+# EXEC: 57298|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57299|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57300|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-bitacora-stdout.md
+# EXEC: 57302|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/workflow-bitacora-stdout.md
+# EXEC: 57303|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57304|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57305|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-bridge-constraint.md
+# EXEC: 57307|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/workflow-bridge-constraint.md
+# EXEC: 57308|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57309|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57310|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-captcha-gate.md
+# EXEC: 57312|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/workflow-captcha-gate.md
+# EXEC: 57313|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57314|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57315|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-constraint-saturation-limit.md
+# EXEC: 57317|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/workflow-constraint-saturation-limit.md
+# EXEC: 57318|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57319|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57320|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-project-delegation.md
+# EXEC: 57322|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/workflow-project-delegation.md
+# EXEC: 57323|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57324|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57325|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-query-patlib-context.md
+# EXEC: 57327|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/workflow-query-patlib-context.md
+# EXEC: 57328|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57329|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57330|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-report-write.md
+# EXEC: 57332|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/workflow-report-write.md
+# EXEC: 57333|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57334|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57335|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-todo-track.md
+# EXEC: 57337|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/workflow-todo-track.md
+# EXEC: 57338|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57339|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57340|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/workflow-use-local-mcp-servers.md
+# EXEC: 57342|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/workflow-use-local-mcp-servers.md
+# EXEC: 57343|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57344|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57345|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-acronymic-anaphora.md
+# EXEC: 57347|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-acronymic-anaphora.md
+# EXEC: 57348|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57349|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57350|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-asyndeton.md
+# EXEC: 57352|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-asyndeton.md
+# EXEC: 57353|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57354|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57355|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-avoid-negation-priming.md
+# EXEC: 57357|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-avoid-negation-priming.md
+# EXEC: 57358|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57359|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57360|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-colorize-diff.md
+# EXEC: 57362|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-colorize-diff.md
+# EXEC: 57363|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57364|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57365|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-constraint-budget.md
+# EXEC: 57367|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-constraint-budget.md
+# EXEC: 57368|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57369|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57370|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-dash-pivot.md
+# EXEC: 57372|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-dash-pivot.md
+# EXEC: 57373|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57374|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57375|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-declarative-assertion.md
+# EXEC: 57379|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57377|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-declarative-assertion.md
+# EXEC: 57378|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57380|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-declarative-over-imperative.md
+# EXEC: 57382|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-declarative-over-imperative.md
+# EXEC: 57384|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57383|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57385|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-domain-zero-anaphora.md
+# EXEC: 57387|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-domain-zero-anaphora.md
+# EXEC: 57388|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57389|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57390|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-entity-segment-count.md
+# EXEC: 57392|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-entity-segment-count.md
+# EXEC: 57393|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57394|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57395|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-essential-first.md
+# EXEC: 57397|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-essential-first.md
+# EXEC: 57398|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57399|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57400|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-expletive-deletion.md
+# EXEC: 57402|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-expletive-deletion.md
+# EXEC: 57403|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57404|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57405|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-gapping.md
+# EXEC: 57407|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-gapping.md
+# EXEC: 57408|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57409|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57410|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-lambda-linguistics.md
+# EXEC: 57412|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-lambda-linguistics.md
+# EXEC: 57413|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57414|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57415|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-left-edge-deletion.md
+# EXEC: 57417|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-left-edge-deletion.md
+# EXEC: 57418|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57419|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57420|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-output-shape-specification.md
+# EXEC: 57422|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-output-shape-specification.md
+# EXEC: 57423|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57424|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57425|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-positive-framing.md
+# EXEC: 57427|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-positive-framing.md
+# EXEC: 57428|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57429|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57430|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-positive-negative-ratio.md
+# EXEC: 57432|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-positive-negative-ratio.md
+# EXEC: 57433|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57434|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57435|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-pseudo-code-notation.md
+# EXEC: 57437|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-pseudo-code-notation.md
+# EXEC: 57438|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57439|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57440|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-resultative-compounding.md
+# EXEC: 57442|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-resultative-compounding.md
+# EXEC: 57443|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57444|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57445|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-structural-preference.md
+# EXEC: 57447|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-structural-preference.md
+# EXEC: 57448|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57449|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57450|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/rules/writing-zero-copula.md
+# EXEC: 57452|/usr/bin/sed|sed s/"[^"]*"//g /home/eddyr/assembler/.opencode/rules/writing-zero-copula.md
+# EXEC: 57453|/usr/bin/rg|rg -in \b(must|should|never|don't|do not|always|avoid)\b|!
+# EXEC: 57454|/usr/bin/rg|rg -v RUL\.|PROT\.|REF\.|MAX\.|PAT\.|NEX\.|ILL\.|SPEC\.|IDENTITY\.
+# EXEC: 57456|/usr/bin/wc|wc -l
+# EXEC: 57457|/usr/bin/tr|tr -d  
+# EXEC: 57459|/usr/bin/wc|wc -c
+# EXEC: 57460|/usr/bin/tr|tr -d  
+# EXEC: 57462|/usr/bin/wc|wc -l
+# EXEC: 57463|/usr/bin/tr|tr -d  
+# EXEC: 57464|/usr/bin/date|date +%s%N
+# EXEC: 57466|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-120208-verify-rules-declarative.log
+# EXEC: 57468|/usr/bin/cat|cat /tmp/tmp.zz5RtnkIns
+# EXEC: 57469|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-120208-verify-rules-declarative.log
+# EXEC: 57470|/usr/bin/cat|cat /tmp/tmp.P5Dot0u3xE
+# EXEC: 57471|/usr/bin/cat|cat /tmp/tmp.P5Dot0u3xE
+# EXEC: 57472|/usr/bin/rm|rm -f /tmp/tmp.zz5RtnkIns /tmp/tmp.P5Dot0u3xE
+# EXEC: 57474|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-120208-verify-rules-declarative.log
+# EXEC: 57476|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-120208-verify-rules-declarative.log
+# EXEC: 57478|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-120208-verify-rules-declarative.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rg=ripgrep 15.2.0 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sed=/usr/bin/sed (GNU sed) 4.10 sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 448
+# SHA: 74bc06eba0139ef71dbac699940c8c1a86fcce2814f1380eabcf42c09ab7c3e2
+# exit: 1

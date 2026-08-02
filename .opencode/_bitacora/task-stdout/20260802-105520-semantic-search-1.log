@@ -1,0 +1,149 @@
+# CMD: bun run .opencode/tools/semantic-search.ts --query agent\ session\ record\ keeping\ bitacora\ todo\ report\ workflow --k 8 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T10:55:21-06:00
+# PID: 9059
+# DUR: 1236ms
+# exit: 0
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: 36dff04c
+# CLI: bun 1.3.14
+# ARGS: run .opencode/tools/semantic-search.ts --query agent\ session\ record\ keeping\ bitacora\ todo\ report\ workflow --k 8 
+# CWD: /home/eddyr/assembler
+# --------------------
+RANK  SCORE    TYPE        ID
+----------------------------------------------------------------------
+1     0.7323    identities   IDENTITY.BITACORA
+       Bitacora — Record Container Entity
+2     0.7230    rules        RUL.TODO.TRACK
+       Todo-track
+3     0.6734    protocols    PROT.LIB.ENFORCEMENT
+       Contract Auto-Enforcement — Lifecycle Hooks for Module Integrity
+4     0.6683    illustrations ILL.REFACTOR.SPLIT
+       Refactor Early, Refactor Often — Splitting a Growing Module Before It Hardens
+5     0.6661    rules        RUL.PROJECT.DELEGATION
+       Project delegation
+6     0.6579    nexus        NEX.META.ORCHESTRATION
+       TOON Orchestration Workflow — Temporal Batch Entity Creation
+7     0.6579    specifications SPEC.AGENTS.SELF.CONTAINED
+       Agent Instructions Self-Containment — No Preceding-Instruction References
+8     0.6539    protocols    PROT.PLUGIN.LIFECYCLE
+       Validation Plugins — Pure Logic + Lifecycle Hooks for Data Integrity
+----------------------------------------------------------------------
+8 semantic matches for "agent session record keeping bitacora todo report workflow" (567 indexed)
+# OUT_LINES: 20
+# OUT_BYTES: 1153
+# ERR_LINES: 0
+# EXEC: 9059|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh semantic-search-1 -- bun run .opencode/tools/semantic-search.ts --query agent session record keeping bitacora todo report workflow --k 8
+# EXEC: 9060|/usr/bin/date|date +%s%N
+# EXEC: 9064|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 9065|/usr/bin/head|head -1
+# EXEC: 9066|/usr/bin/tr|tr -d \n
+# EXEC: 9067|/usr/bin/bun|bun --version
+# EXEC: 9068|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 9071|/usr/bin/git|git remote get-url origin
+# EXEC: 9069|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 9072|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 9074|/usr/bin/git|git branch --show-current
+# EXEC: 9076|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 9077|/usr/bin/head|head -1
+# EXEC: 9078|/usr/bin/tr|tr -d \n
+# EXEC: 9079|/usr/bin/bun|bun --version
+# EXEC: 9082|/usr/bin/head|head -1
+# EXEC: 9081|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 9083|/usr/bin/tr|tr -d \n
+# EXEC: 9084|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 9086|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 9087|/usr/bin/head|head -1
+# EXEC: 9088|/usr/bin/tr|tr -d \n
+# EXEC: 9089|/usr/bin/python3|python3 --version
+# EXEC: 9091|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 9092|/usr/bin/head|head -1
+# EXEC: 9093|/usr/bin/tr|tr -d \n
+# EXEC: 9094|/usr/bin/ruby|ruby --version
+# EXEC: 9097|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 9098|/usr/bin/head|head -1
+# EXEC: 9099|/usr/bin/tr|tr -d \n
+# EXEC: 9100|/usr/bin/rustc|rustc --version
+# EXEC: 9103|/usr/bin/timeout|timeout 2 go version
+# EXEC: 9104|/usr/bin/head|head -1
+# EXEC: 9105|/usr/bin/tr|tr -d \n
+# EXEC: 9106|/usr/bin/go|go version
+# EXEC: 9113|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 9114|/usr/bin/head|head -1
+# EXEC: 9115|/usr/bin/tr|tr -d \n
+# EXEC: 9116|/usr/bin/git|git --version
+# EXEC: 9118|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 9119|/usr/bin/head|head -1
+# EXEC: 9120|/usr/bin/tr|tr -d \n
+# EXEC: 9121|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 9123|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 9124|/usr/bin/head|head -1
+# EXEC: 9125|/usr/bin/tr|tr -d \n
+# EXEC: 9126|/usr/bin/date|date --version
+# EXEC: 9128|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 9129|/usr/bin/head|head -1
+# EXEC: 9130|/usr/bin/tr|tr -d \n
+# EXEC: 9131|/usr/bin/wc|wc --version
+# EXEC: 9133|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 9134|/usr/bin/head|head -1
+# EXEC: 9135|/usr/bin/tr|tr -d \n
+# EXEC: 9136|/usr/bin/cat|cat --version
+# EXEC: 9138|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 9139|/usr/bin/head|head -1
+# EXEC: 9140|/usr/bin/tr|tr -d \n
+# EXEC: 9141|/usr/bin/tee|tee --version
+# EXEC: 9143|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 9144|/usr/bin/head|head -1
+# EXEC: 9145|/usr/bin/tr|tr -d \n
+# EXEC: 9146|/usr/bin/mktemp|mktemp --version
+# EXEC: 9148|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 9149|/usr/bin/head|head -1
+# EXEC: 9150|/usr/bin/tr|tr -d \n
+# EXEC: 9151|/usr/bin/rm|rm --version
+# EXEC: 9153|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 9154|/usr/bin/head|head -1
+# EXEC: 9155|/usr/bin/tr|tr -d \n
+# EXEC: 9156|/usr/bin/timeout|timeout --version
+# EXEC: 9158|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 9159|/usr/bin/head|head -1
+# EXEC: 9160|/usr/bin/tr|tr -d \n
+# EXEC: 9161|/usr/bin/tr|tr --version
+# EXEC: 9163|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 9164|/usr/bin/head|head -1
+# EXEC: 9165|/usr/bin/tr|tr -d \n
+# EXEC: 9166|/usr/bin/head|head --version
+# EXEC: 9169|/usr/bin/head|head -1
+# EXEC: 9168|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 9170|/usr/bin/tr|tr -d \n
+# EXEC: 9171|/usr/bin/cut|cut --version
+# EXEC: 9173|/usr/bin/date|date +%s%N
+# EXEC: 9174|/usr/bin/sha256sum|sha256sum
+# EXEC: 9175|/usr/bin/cut|cut -c1-8
+# EXEC: 9177|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105520-semantic-search-1.log
+# EXEC: 9178|/usr/bin/date|date -Is
+# EXEC: 9179|/usr/bin/mktemp|mktemp
+# EXEC: 9180|/usr/bin/mktemp|mktemp
+# EXEC: 9181|/usr/bin/bun|bun run .opencode/tools/semantic-search.ts --query agent session record keeping bitacora todo report workflow --k 8
+# EXEC: 9205|/home/eddyr/assembler/.opencode/_rustlib/target/release/assemble|/home/eddyr/assembler/.opencode/_rustlib/target/release/assemble hit
+# EXEC: 9207|/usr/bin/wc|wc -l
+# EXEC: 9208|/usr/bin/tr|tr -d  
+# EXEC: 9210|/usr/bin/wc|wc -c
+# EXEC: 9211|/usr/bin/tr|tr -d  
+# EXEC: 9213|/usr/bin/wc|wc -l
+# EXEC: 9214|/usr/bin/tr|tr -d  
+# EXEC: 9215|/usr/bin/date|date +%s%N
+# EXEC: 9217|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105520-semantic-search-1.log
+# EXEC: 9219|/usr/bin/cat|cat /tmp/tmp.3UKtWOgjkj
+# EXEC: 9220|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105520-semantic-search-1.log
+# EXEC: 9221|/usr/bin/cat|cat /tmp/tmp.tUpJdcmr4r
+# EXEC: 9222|/usr/bin/cat|cat /tmp/tmp.tUpJdcmr4r
+# EXEC: 9223|/usr/bin/rm|rm -f /tmp/tmp.3UKtWOgjkj /tmp/tmp.tUpJdcmr4r
+# EXEC: 9225|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105520-semantic-search-1.log
+# EXEC: 9227|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105520-semantic-search-1.log
+# EXEC: 9229|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105520-semantic-search-1.log
+# PROGS: node=v25.2.1 assemble=(no --version) basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 108
+# SHA: 95d61f59b0cbd94fff1289f12d12e9c691bf2fa8bb759f295adad632931f9dec
+# exit: 0

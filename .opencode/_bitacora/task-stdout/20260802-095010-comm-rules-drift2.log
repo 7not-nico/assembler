@@ -1,0 +1,161 @@
+# CMD: bun run .opencode/tools/semantic-drift.ts --check 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T09:50:10-06:00
+# PID: 163063
+# DUR: 453ms
+# exit: 0
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: 51c7b15e
+# CLI: bun 1.3.14
+# ARGS: run .opencode/tools/semantic-drift.ts --check 
+# CWD: /home/eddyr/assembler
+# --------------------
+TABLE                DB  VEC MISS STALE
+----------------------------------------
+refs                 34   34    0     0
+precepts             12   12    0     0
+ruby                  0    0    0     0
+bash                  0    0    0     0
+ml                    1    1    0     0
+manifests             1    1    0     0
+specifications       26   26    0     0
+identities           35   35    0     0
+taxonomy              3    3    0     0
+chem                  0    0    0     0
+bio                   5    5    0     0
+definitions           3    3    0     0
+concepts             62   62    0     0
+cognitions           35   35    0     0
+patterns              7    7    0     0
+nexus                11   11    0     0
+maxims                9    9    0     0
+illustrations        79   79    0     0
+llm_spec_rules       12   12    0     0
+persons               8    8    0     0
+protocols            43   43    0     0
+linguistics           1    1    0     0
+abstractions          3    3    0     0
+commands             16   16    0     0
+rules                79   79    0     0
+apologias             1    1    0     0
+skills               66   66    0     0
+terms                15   15    0     0
+----------------------------------------
+TOTAL: 0 missing, 0 stale across 28 tables
+no drift
+# OUT_LINES: 33
+# OUT_BYTES: 1294
+# ERR_LINES: 0
+# EXEC: 163063|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh comm-rules-drift2 -- bun run .opencode/tools/semantic-drift.ts --check
+# EXEC: 163064|/usr/bin/date|date +%s%N
+# EXEC: 163068|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 163069|/usr/bin/head|head -1
+# EXEC: 163070|/usr/bin/tr|tr -d \n
+# EXEC: 163071|/usr/bin/bun|bun --version
+# EXEC: 163072|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 163075|/usr/bin/git|git remote get-url origin
+# EXEC: 163073|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 163076|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 163078|/usr/bin/git|git branch --show-current
+# EXEC: 163080|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 163081|/usr/bin/head|head -1
+# EXEC: 163082|/usr/bin/tr|tr -d \n
+# EXEC: 163083|/usr/bin/bun|bun --version
+# EXEC: 163085|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 163086|/usr/bin/head|head -1
+# EXEC: 163087|/usr/bin/tr|tr -d \n
+# EXEC: 163088|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 163090|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 163091|/usr/bin/head|head -1
+# EXEC: 163092|/usr/bin/tr|tr -d \n
+# EXEC: 163093|/usr/bin/python3|python3 --version
+# EXEC: 163095|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 163096|/usr/bin/head|head -1
+# EXEC: 163097|/usr/bin/tr|tr -d \n
+# EXEC: 163098|/usr/bin/ruby|ruby --version
+# EXEC: 163101|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 163102|/usr/bin/head|head -1
+# EXEC: 163103|/usr/bin/tr|tr -d \n
+# EXEC: 163104|/usr/bin/rustc|rustc --version
+# EXEC: 163107|/usr/bin/timeout|timeout 2 go version
+# EXEC: 163108|/usr/bin/head|head -1
+# EXEC: 163109|/usr/bin/tr|tr -d \n
+# EXEC: 163110|/usr/bin/go|go version
+# EXEC: 163116|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 163117|/usr/bin/head|head -1
+# EXEC: 163118|/usr/bin/tr|tr -d \n
+# EXEC: 163119|/usr/bin/git|git --version
+# EXEC: 163121|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 163122|/usr/bin/head|head -1
+# EXEC: 163123|/usr/bin/tr|tr -d \n
+# EXEC: 163124|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 163126|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 163127|/usr/bin/head|head -1
+# EXEC: 163128|/usr/bin/tr|tr -d \n
+# EXEC: 163129|/usr/bin/date|date --version
+# EXEC: 163131|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 163132|/usr/bin/head|head -1
+# EXEC: 163133|/usr/bin/tr|tr -d \n
+# EXEC: 163134|/usr/bin/wc|wc --version
+# EXEC: 163136|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 163137|/usr/bin/head|head -1
+# EXEC: 163138|/usr/bin/tr|tr -d \n
+# EXEC: 163139|/usr/bin/cat|cat --version
+# EXEC: 163141|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 163142|/usr/bin/head|head -1
+# EXEC: 163143|/usr/bin/tr|tr -d \n
+# EXEC: 163144|/usr/bin/tee|tee --version
+# EXEC: 163146|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 163147|/usr/bin/head|head -1
+# EXEC: 163148|/usr/bin/tr|tr -d \n
+# EXEC: 163149|/usr/bin/mktemp|mktemp --version
+# EXEC: 163151|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 163152|/usr/bin/head|head -1
+# EXEC: 163153|/usr/bin/tr|tr -d \n
+# EXEC: 163154|/usr/bin/rm|rm --version
+# EXEC: 163156|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 163157|/usr/bin/head|head -1
+# EXEC: 163158|/usr/bin/tr|tr -d \n
+# EXEC: 163159|/usr/bin/timeout|timeout --version
+# EXEC: 163161|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 163162|/usr/bin/head|head -1
+# EXEC: 163163|/usr/bin/tr|tr -d \n
+# EXEC: 163164|/usr/bin/tr|tr --version
+# EXEC: 163166|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 163167|/usr/bin/head|head -1
+# EXEC: 163168|/usr/bin/tr|tr -d \n
+# EXEC: 163169|/usr/bin/head|head --version
+# EXEC: 163171|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 163172|/usr/bin/head|head -1
+# EXEC: 163173|/usr/bin/tr|tr -d \n
+# EXEC: 163174|/usr/bin/cut|cut --version
+# EXEC: 163176|/usr/bin/date|date +%s%N
+# EXEC: 163177|/usr/bin/sha256sum|sha256sum
+# EXEC: 163178|/usr/bin/cut|cut -c1-8
+# EXEC: 163180|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-095010-comm-rules-drift2.log
+# EXEC: 163181|/usr/bin/date|date -Is
+# EXEC: 163182|/usr/bin/mktemp|mktemp
+# EXEC: 163183|/usr/bin/mktemp|mktemp
+# EXEC: 163184|/usr/bin/bun|bun run .opencode/tools/semantic-drift.ts --check
+# EXEC: 163200|/usr/bin/wc|wc -l
+# EXEC: 163201|/usr/bin/tr|tr -d  
+# EXEC: 163203|/usr/bin/wc|wc -c
+# EXEC: 163204|/usr/bin/tr|tr -d  
+# EXEC: 163206|/usr/bin/wc|wc -l
+# EXEC: 163207|/usr/bin/tr|tr -d  
+# EXEC: 163208|/usr/bin/date|date +%s%N
+# EXEC: 163210|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-095010-comm-rules-drift2.log
+# EXEC: 163212|/usr/bin/cat|cat /tmp/tmp.3dDaaIxaxN
+# EXEC: 163213|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-095010-comm-rules-drift2.log
+# EXEC: 163214|/usr/bin/cat|cat /tmp/tmp.bSbNpjvIBJ
+# EXEC: 163215|/usr/bin/cat|cat /tmp/tmp.bSbNpjvIBJ
+# EXEC: 163216|/usr/bin/rm|rm -f /tmp/tmp.3dDaaIxaxN /tmp/tmp.bSbNpjvIBJ
+# EXEC: 163218|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-095010-comm-rules-drift2.log
+# EXEC: 163220|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-095010-comm-rules-drift2.log
+# EXEC: 163222|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-095010-comm-rules-drift2.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 107
+# SHA: a38d4320ac7fa9053f2c1ede889fbd8e69cba0cfbb1384e8749496cc7838e4d0
+# exit: 0

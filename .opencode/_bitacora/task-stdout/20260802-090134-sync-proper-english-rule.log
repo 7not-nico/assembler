@@ -1,0 +1,129 @@
+# CMD: ruby .opencode/_scripts/r6-patlib-sync.rb --type rules 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T09:01:34-06:00
+# PID: 120461
+# DUR: 525ms
+# exit: 0
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: 5a68d521
+# CLI: ruby ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux]
+# ARGS: .opencode/_scripts/r6-patlib-sync.rb --type rules 
+# CWD: /home/eddyr/assembler
+# --------------------
+Synced 79 rules.
+# OUT_LINES: 1
+# OUT_BYTES: 17
+# ERR_LINES: 0
+# EXEC: 120461|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh sync-proper-english-rule -- ruby .opencode/_scripts/r6-patlib-sync.rb --type rules
+# EXEC: 120462|/usr/bin/date|date +%s%N
+# EXEC: 120466|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 120467|/usr/bin/head|head -1
+# EXEC: 120468|/usr/bin/tr|tr -d \n
+# EXEC: 120469|/usr/bin/ruby|ruby --version
+# EXEC: 120471|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 120474|/usr/bin/git|git remote get-url origin
+# EXEC: 120472|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 120475|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 120477|/usr/bin/git|git branch --show-current
+# EXEC: 120479|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 120480|/usr/bin/head|head -1
+# EXEC: 120481|/usr/bin/tr|tr -d \n
+# EXEC: 120482|/usr/bin/bun|bun --version
+# EXEC: 120491|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 120492|/usr/bin/head|head -1
+# EXEC: 120493|/usr/bin/tr|tr -d \n
+# EXEC: 120494|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 120496|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 120497|/usr/bin/head|head -1
+# EXEC: 120498|/usr/bin/tr|tr -d \n
+# EXEC: 120499|/usr/bin/python3|python3 --version
+# EXEC: 120501|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 120502|/usr/bin/head|head -1
+# EXEC: 120503|/usr/bin/tr|tr -d \n
+# EXEC: 120504|/usr/bin/ruby|ruby --version
+# EXEC: 120507|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 120508|/usr/bin/head|head -1
+# EXEC: 120509|/usr/bin/tr|tr -d \n
+# EXEC: 120510|/usr/bin/rustc|rustc --version
+# EXEC: 120513|/usr/bin/timeout|timeout 2 go version
+# EXEC: 120514|/usr/bin/head|head -1
+# EXEC: 120515|/usr/bin/tr|tr -d \n
+# EXEC: 120516|/usr/bin/go|go version
+# EXEC: 120523|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 120524|/usr/bin/head|head -1
+# EXEC: 120525|/usr/bin/tr|tr -d \n
+# EXEC: 120526|/usr/bin/git|git --version
+# EXEC: 120528|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 120529|/usr/bin/head|head -1
+# EXEC: 120530|/usr/bin/tr|tr -d \n
+# EXEC: 120531|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 120533|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 120534|/usr/bin/head|head -1
+# EXEC: 120535|/usr/bin/tr|tr -d \n
+# EXEC: 120536|/usr/bin/date|date --version
+# EXEC: 120538|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 120539|/usr/bin/head|head -1
+# EXEC: 120540|/usr/bin/tr|tr -d \n
+# EXEC: 120541|/usr/bin/wc|wc --version
+# EXEC: 120544|/usr/bin/head|head -1
+# EXEC: 120543|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 120545|/usr/bin/tr|tr -d \n
+# EXEC: 120546|/usr/bin/cat|cat --version
+# EXEC: 120549|/usr/bin/head|head -1
+# EXEC: 120548|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 120550|/usr/bin/tr|tr -d \n
+# EXEC: 120551|/usr/bin/tee|tee --version
+# EXEC: 120553|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 120554|/usr/bin/head|head -1
+# EXEC: 120555|/usr/bin/tr|tr -d \n
+# EXEC: 120556|/usr/bin/mktemp|mktemp --version
+# EXEC: 120558|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 120559|/usr/bin/head|head -1
+# EXEC: 120560|/usr/bin/tr|tr -d \n
+# EXEC: 120561|/usr/bin/rm|rm --version
+# EXEC: 120563|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 120564|/usr/bin/head|head -1
+# EXEC: 120565|/usr/bin/tr|tr -d \n
+# EXEC: 120566|/usr/bin/timeout|timeout --version
+# EXEC: 120568|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 120569|/usr/bin/head|head -1
+# EXEC: 120570|/usr/bin/tr|tr -d \n
+# EXEC: 120571|/usr/bin/tr|tr --version
+# EXEC: 120573|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 120574|/usr/bin/head|head -1
+# EXEC: 120575|/usr/bin/tr|tr -d \n
+# EXEC: 120576|/usr/bin/head|head --version
+# EXEC: 120578|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 120579|/usr/bin/head|head -1
+# EXEC: 120580|/usr/bin/tr|tr -d \n
+# EXEC: 120581|/usr/bin/cut|cut --version
+# EXEC: 120583|/usr/bin/date|date +%s%N
+# EXEC: 120584|/usr/bin/sha256sum|sha256sum
+# EXEC: 120585|/usr/bin/cut|cut -c1-8
+# EXEC: 120588|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090134-sync-proper-english-rule.log
+# EXEC: 120589|/usr/bin/date|date -Is
+# EXEC: 120590|/usr/bin/mktemp|mktemp
+# EXEC: 120591|/usr/bin/mktemp|mktemp
+# EXEC: 120592|/usr/bin/ruby|ruby .opencode/_scripts/r6-patlib-sync.rb --type rules
+# EXEC: 120600|/usr/bin/wc|wc -l
+# EXEC: 120601|/usr/bin/tr|tr -d  
+# EXEC: 120603|/usr/bin/wc|wc -c
+# EXEC: 120604|/usr/bin/tr|tr -d  
+# EXEC: 120606|/usr/bin/wc|wc -l
+# EXEC: 120607|/usr/bin/tr|tr -d  
+# EXEC: 120608|/usr/bin/date|date +%s%N
+# EXEC: 120610|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090134-sync-proper-english-rule.log
+# EXEC: 120612|/usr/bin/cat|cat /tmp/tmp.hTH8yNdh3a
+# EXEC: 120613|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090134-sync-proper-english-rule.log
+# EXEC: 120614|/usr/bin/cat|cat /tmp/tmp.1I1Sx67gQn
+# EXEC: 120615|/usr/bin/cat|cat /tmp/tmp.1I1Sx67gQn
+# EXEC: 120616|/usr/bin/rm|rm -f /tmp/tmp.hTH8yNdh3a /tmp/tmp.1I1Sx67gQn
+# EXEC: 120618|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090134-sync-proper-english-rule.log
+# EXEC: 120620|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090134-sync-proper-english-rule.log
+# EXEC: 120622|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090134-sync-proper-english-rule.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 107
+# SHA: 53dc1fbcfe497ac990c3d880a63cda97dddc4d65faf3c02fff7e6eda4693c69b
+# exit: 0

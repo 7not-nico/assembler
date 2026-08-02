@@ -1,0 +1,134 @@
+# CMD: bun run .opencode/tools/semantic-drift.ts --type specifications --check 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T07:44:29-06:00
+# PID: 70621
+# DUR: 423ms
+# exit: 0
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: d1a9b751
+# CLI: bun 1.3.14
+# ARGS: run .opencode/tools/semantic-drift.ts --type specifications --check 
+# CWD: /home/eddyr/assembler
+# --------------------
+TABLE                DB  VEC MISS STALE
+----------------------------------------
+specifications       26   26    0     0
+----------------------------------------
+TOTAL: 0 missing, 0 stale across 1 tables
+no drift
+# OUT_LINES: 6
+# OUT_BYTES: 213
+# ERR_LINES: 0
+# EXEC: 70621|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh language-ring-drift -- bun run .opencode/tools/semantic-drift.ts --type specifications --check
+# EXEC: 70622|/usr/bin/date|date +%s%N
+# EXEC: 70626|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 70627|/usr/bin/head|head -1
+# EXEC: 70628|/usr/bin/tr|tr -d \n
+# EXEC: 70629|/usr/bin/bun|bun --version
+# EXEC: 70630|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 70633|/usr/bin/git|git remote get-url origin
+# EXEC: 70631|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 70634|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 70636|/usr/bin/git|git branch --show-current
+# EXEC: 70638|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 70639|/usr/bin/head|head -1
+# EXEC: 70640|/usr/bin/tr|tr -d \n
+# EXEC: 70641|/usr/bin/bun|bun --version
+# EXEC: 70644|/usr/bin/head|head -1
+# EXEC: 70643|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 70645|/usr/bin/tr|tr -d \n
+# EXEC: 70646|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 70649|/usr/bin/head|head -1
+# EXEC: 70648|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 70650|/usr/bin/tr|tr -d \n
+# EXEC: 70651|/usr/bin/python3|python3 --version
+# EXEC: 70653|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 70654|/usr/bin/head|head -1
+# EXEC: 70655|/usr/bin/tr|tr -d \n
+# EXEC: 70656|/usr/bin/ruby|ruby --version
+# EXEC: 70659|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 70660|/usr/bin/head|head -1
+# EXEC: 70661|/usr/bin/tr|tr -d \n
+# EXEC: 70662|/usr/bin/rustc|rustc --version
+# EXEC: 70666|/usr/bin/head|head -1
+# EXEC: 70665|/usr/bin/timeout|timeout 2 go version
+# EXEC: 70667|/usr/bin/tr|tr -d \n
+# EXEC: 70668|/usr/bin/go|go version
+# EXEC: 70675|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 70676|/usr/bin/head|head -1
+# EXEC: 70677|/usr/bin/tr|tr -d \n
+# EXEC: 70678|/usr/bin/git|git --version
+# EXEC: 70680|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 70681|/usr/bin/head|head -1
+# EXEC: 70682|/usr/bin/tr|tr -d \n
+# EXEC: 70683|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 70685|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 70686|/usr/bin/head|head -1
+# EXEC: 70687|/usr/bin/tr|tr -d \n
+# EXEC: 70688|/usr/bin/date|date --version
+# EXEC: 70690|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 70691|/usr/bin/head|head -1
+# EXEC: 70692|/usr/bin/tr|tr -d \n
+# EXEC: 70693|/usr/bin/wc|wc --version
+# EXEC: 70695|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 70696|/usr/bin/head|head -1
+# EXEC: 70697|/usr/bin/tr|tr -d \n
+# EXEC: 70698|/usr/bin/cat|cat --version
+# EXEC: 70700|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 70701|/usr/bin/head|head -1
+# EXEC: 70702|/usr/bin/tr|tr -d \n
+# EXEC: 70703|/usr/bin/tee|tee --version
+# EXEC: 70705|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 70706|/usr/bin/head|head -1
+# EXEC: 70707|/usr/bin/tr|tr -d \n
+# EXEC: 70708|/usr/bin/mktemp|mktemp --version
+# EXEC: 70710|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 70711|/usr/bin/head|head -1
+# EXEC: 70712|/usr/bin/tr|tr -d \n
+# EXEC: 70713|/usr/bin/rm|rm --version
+# EXEC: 70715|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 70716|/usr/bin/head|head -1
+# EXEC: 70717|/usr/bin/tr|tr -d \n
+# EXEC: 70718|/usr/bin/timeout|timeout --version
+# EXEC: 70722|/usr/bin/tr|tr -d \n
+# EXEC: 70720|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 70721|/usr/bin/head|head -1
+# EXEC: 70723|/usr/bin/tr|tr --version
+# EXEC: 70725|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 70726|/usr/bin/head|head -1
+# EXEC: 70727|/usr/bin/tr|tr -d \n
+# EXEC: 70728|/usr/bin/head|head --version
+# EXEC: 70730|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 70731|/usr/bin/head|head -1
+# EXEC: 70732|/usr/bin/tr|tr -d \n
+# EXEC: 70733|/usr/bin/cut|cut --version
+# EXEC: 70735|/usr/bin/date|date +%s%N
+# EXEC: 70736|/usr/bin/sha256sum|sha256sum
+# EXEC: 70737|/usr/bin/cut|cut -c1-8
+# EXEC: 70739|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074429-language-ring-drift.log
+# EXEC: 70740|/usr/bin/date|date -Is
+# EXEC: 70741|/usr/bin/mktemp|mktemp
+# EXEC: 70742|/usr/bin/mktemp|mktemp
+# EXEC: 70743|/usr/bin/bun|bun run .opencode/tools/semantic-drift.ts --type specifications --check
+# EXEC: 70757|/usr/bin/wc|wc -l
+# EXEC: 70758|/usr/bin/tr|tr -d  
+# EXEC: 70760|/usr/bin/wc|wc -c
+# EXEC: 70761|/usr/bin/tr|tr -d  
+# EXEC: 70763|/usr/bin/wc|wc -l
+# EXEC: 70764|/usr/bin/tr|tr -d  
+# EXEC: 70765|/usr/bin/date|date +%s%N
+# EXEC: 70767|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074429-language-ring-drift.log
+# EXEC: 70769|/usr/bin/cat|cat /tmp/tmp.yHxSmJR2if
+# EXEC: 70770|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074429-language-ring-drift.log
+# EXEC: 70771|/usr/bin/cat|cat /tmp/tmp.xY9inxwcph
+# EXEC: 70772|/usr/bin/cat|cat /tmp/tmp.xY9inxwcph
+# EXEC: 70773|/usr/bin/rm|rm -f /tmp/tmp.yHxSmJR2if /tmp/tmp.xY9inxwcph
+# EXEC: 70775|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074429-language-ring-drift.log
+# EXEC: 70777|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074429-language-ring-drift.log
+# EXEC: 70779|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074429-language-ring-drift.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 107
+# SHA: 66bf08f7a2a0d255856ed36881933c919613db0e034fed7dd3c39c785ce5ea52
+# exit: 0

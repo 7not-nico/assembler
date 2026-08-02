@@ -1,0 +1,165 @@
+# CMD: bash .opencode/_scripts/survey/semantic-engine-probe/s01-body-lengths.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T11:11:31-06:00
+# PID: 19389
+# DUR: 379ms
+# exit: 0
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: f840801d
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_scripts/survey/semantic-engine-probe/s01-body-lengths.sh 
+# CWD: /home/eddyr/assembler
+# --------------------
+TABLE                 ROWS     AVG_BODY  MAX_BODY
+-----------------------------------------------
+abstractions         3|1293.0|1498                     
+-----------------------------------------------
+TABLES=abstractions
+apologias
+bash
+bio
+chem
+cognitions
+commands
+concepts
+definitions
+identities
+illustrations
+linguistics
+llm_spec_rules
+manifests
+maxims
+ml
+nexus
+patterns
+persons
+precepts
+protocols
+refs
+ruby
+rules
+skills
+specifications
+taxonomy
+terms
+TOTAL_ROWS=0
+GLOBAL_MAX_BODY=0
+.opencode/_scripts/survey/semantic-engine-probe/s01-body-lengths.sh: line 33: 3|1293.0|1498: arithmetic syntax error: invalid arithmetic operator (error token is ".0|1498")
+# OUT_LINES: 34
+# OUT_BYTES: 485
+# ERR_LINES: 1
+# EXEC: 19389|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh probe-s01 -- bash .opencode/_scripts/survey/semantic-engine-probe/s01-body-lengths.sh
+# EXEC: 19395|/usr/bin/date|date +%s%N
+# EXEC: 19398|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 19404|/usr/bin/git|git remote get-url origin
+# EXEC: 19402|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 19408|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 19410|/usr/bin/git|git branch --show-current
+# EXEC: 19412|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 19414|/usr/bin/head|head -1
+# EXEC: 19415|/usr/bin/tr|tr -d \n
+# EXEC: 19416|/usr/bin/bun|bun --version
+# EXEC: 19418|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 19419|/usr/bin/head|head -1
+# EXEC: 19420|/usr/bin/tr|tr -d \n
+# EXEC: 19421|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 19423|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 19424|/usr/bin/head|head -1
+# EXEC: 19425|/usr/bin/tr|tr -d \n
+# EXEC: 19426|/usr/bin/python3|python3 --version
+# EXEC: 19428|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 19429|/usr/bin/head|head -1
+# EXEC: 19430|/usr/bin/tr|tr -d \n
+# EXEC: 19431|/usr/bin/ruby|ruby --version
+# EXEC: 19434|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 19435|/usr/bin/head|head -1
+# EXEC: 19436|/usr/bin/tr|tr -d \n
+# EXEC: 19437|/usr/bin/rustc|rustc --version
+# EXEC: 19440|/usr/bin/timeout|timeout 2 go version
+# EXEC: 19441|/usr/bin/head|head -1
+# EXEC: 19442|/usr/bin/tr|tr -d \n
+# EXEC: 19443|/usr/bin/go|go version
+# EXEC: 19450|/usr/bin/head|head -1
+# EXEC: 19449|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 19451|/usr/bin/tr|tr -d \n
+# EXEC: 19452|/usr/bin/git|git --version
+# EXEC: 19454|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 19455|/usr/bin/head|head -1
+# EXEC: 19456|/usr/bin/tr|tr -d \n
+# EXEC: 19457|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 19459|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 19460|/usr/bin/head|head -1
+# EXEC: 19461|/usr/bin/tr|tr -d \n
+# EXEC: 19462|/usr/bin/date|date --version
+# EXEC: 19464|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 19465|/usr/bin/head|head -1
+# EXEC: 19466|/usr/bin/tr|tr -d \n
+# EXEC: 19467|/usr/bin/wc|wc --version
+# EXEC: 19469|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 19470|/usr/bin/head|head -1
+# EXEC: 19471|/usr/bin/tr|tr -d \n
+# EXEC: 19472|/usr/bin/cat|cat --version
+# EXEC: 19474|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 19475|/usr/bin/head|head -1
+# EXEC: 19476|/usr/bin/tr|tr -d \n
+# EXEC: 19477|/usr/bin/tee|tee --version
+# EXEC: 19479|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 19480|/usr/bin/head|head -1
+# EXEC: 19481|/usr/bin/tr|tr -d \n
+# EXEC: 19482|/usr/bin/mktemp|mktemp --version
+# EXEC: 19484|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 19485|/usr/bin/head|head -1
+# EXEC: 19486|/usr/bin/tr|tr -d \n
+# EXEC: 19487|/usr/bin/rm|rm --version
+# EXEC: 19489|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 19490|/usr/bin/head|head -1
+# EXEC: 19491|/usr/bin/tr|tr -d \n
+# EXEC: 19492|/usr/bin/timeout|timeout --version
+# EXEC: 19494|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 19495|/usr/bin/head|head -1
+# EXEC: 19496|/usr/bin/tr|tr -d \n
+# EXEC: 19497|/usr/bin/tr|tr --version
+# EXEC: 19499|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 19500|/usr/bin/head|head -1
+# EXEC: 19501|/usr/bin/tr|tr -d \n
+# EXEC: 19502|/usr/bin/head|head --version
+# EXEC: 19504|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 19505|/usr/bin/head|head -1
+# EXEC: 19506|/usr/bin/tr|tr -d \n
+# EXEC: 19507|/usr/bin/cut|cut --version
+# EXEC: 19511|/usr/bin/cut|cut -c1-8
+# EXEC: 19509|/usr/bin/date|date +%s%N
+# EXEC: 19510|/usr/bin/sha256sum|sha256sum
+# EXEC: 19513|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-111131-probe-s01.log
+# EXEC: 19514|/usr/bin/date|date -Is
+# EXEC: 19515|/usr/bin/mktemp|mktemp
+# EXEC: 19516|/usr/bin/mktemp|mktemp
+# EXEC: 19517|/usr/bin/bash|bash .opencode/_scripts/survey/semantic-engine-probe/s01-body-lengths.sh
+# EXEC: 19519|/usr/bin/dirname|dirname .opencode/_scripts/survey/semantic-engine-probe/s01-body-lengths.sh
+# EXEC: 19523|/usr/bin/sed|sed s/ /','/g; s/^/'/; s/$/'/
+# EXEC: 19520|/home/linuxbrew/.linuxbrew/bin/sqlite3|sqlite3 /home/eddyr/assembler/.opencode/patlib.db SELECT name FROM sqlite_master WHERE type='table' AND sql LIKE '%id TEXT%' AND sql LIKE '%title TEXT%' AND name NOT IN ('embeddings','fts_entities','entities_fts','meta','notes','sqlite_sequence') ORDER BY name
+# EXEC: 19525|/home/linuxbrew/.linuxbrew/bin/sqlite3|sqlite3 /home/eddyr/assembler/.opencode/patlib.db PRAGMA table_info("abstractions")
+# EXEC: 19526|/usr/bin/cut|cut -d| -f2
+# EXEC: 19527|/home/linuxbrew/.linuxbrew/bin/sqlite3|sqlite3 /home/eddyr/assembler/.opencode/patlib.db SELECT COUNT(*), COALESCE(ROUND(AVG(blen)),0), COALESCE(MAX(blen),0) FROM (SELECT min(length(coalesce("title",'')),2000) + min(length(coalesce("body",'')),2000) + min(length(coalesce("related",'')),2000) AS blen FROM "abstractions")
+# EXEC: 19529|/usr/bin/wc|wc -l
+# EXEC: 19530|/usr/bin/tr|tr -d  
+# EXEC: 19532|/usr/bin/wc|wc -c
+# EXEC: 19533|/usr/bin/tr|tr -d  
+# EXEC: 19535|/usr/bin/wc|wc -l
+# EXEC: 19536|/usr/bin/tr|tr -d  
+# EXEC: 19537|/usr/bin/date|date +%s%N
+# EXEC: 19539|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-111131-probe-s01.log
+# EXEC: 19541|/usr/bin/cat|cat /tmp/tmp.4QxdljnGhW
+# EXEC: 19542|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-111131-probe-s01.log
+# EXEC: 19543|/usr/bin/cat|cat /tmp/tmp.xYtC8Hn0eH
+# EXEC: 19544|/usr/bin/cat|cat /tmp/tmp.xYtC8Hn0eH
+# EXEC: 19545|/usr/bin/rm|rm -f /tmp/tmp.4QxdljnGhW /tmp/tmp.xYtC8Hn0eH
+# EXEC: 19547|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-111131-probe-s01.log
+# EXEC: 19549|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-111131-probe-s01.log
+# EXEC: 19551|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-111131-probe-s01.log
+# PROGS: node=v25.2.1 sqlite3=3.51.2 2026-01-09 17:27:48 b270f8339eb13b504d0b2ba154ebca966b7dde08e40c3ed7d559749818cb2075 (64-bit) basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sed=/usr/bin/sed (GNU sed) 4.10 sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 109
+# SHA: 6681eaa92b81ac31d14a05ee9d16b23af64904a44dd152458b6883dc43049848
+# exit: 0

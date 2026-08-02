@@ -1,0 +1,178 @@
+# CMD: bun -e import\ \{\ Database\ \}\ from\ \'bun:sqlite\'\;\ const\ db\ =\ new\ Database\(\'.opencode/patlib.db\'\,\ \{\ readonly:\ true\ \}\)\;\ console.log\(db.query\(\"SELECT\ name\ FROM\ sqlite_master\ WHERE\ type=\'table\'\"\).all\(\).map\(r=\>r.name\).join\(\'\\n\'\)\)\; 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T07:15:29-06:00
+# PID: 52627
+# DUR: 413ms
+# exit: 0
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: 4d54a1db
+# CLI: bun 1.3.14
+# ARGS: -e import\ \{\ Database\ \}\ from\ \'bun:sqlite\'\;\ const\ db\ =\ new\ Database\(\'.opencode/patlib.db\'\,\ \{\ readonly:\ true\ \}\)\;\ console.log\(db.query\(\"SELECT\ name\ FROM\ sqlite_master\ WHERE\ type=\'table\'\"\).all\(\).map\(r=\>r.name\).join\(\'\\n\'\)\)\; 
+# CWD: /home/eddyr/assembler
+# --------------------
+patterns
+terms
+notes
+meta
+skills
+apologias
+rules
+commands
+abstractions
+linguistics
+protocols
+persons
+events
+person_events
+llm_spec_rules
+ref_sources
+sqlite_sequence
+reference_roles
+entity_references
+illustrations
+illustration_entities
+maxims
+entity_terms
+entity_patterns
+nexus
+refs
+cognitions
+concepts
+definitions
+mcp_searches
+mcp_results
+mcp_features
+mcp_signal
+embeddings
+fts_entities
+entities_fts
+entities_fts_data
+entities_fts_idx
+entities_fts_docsize
+entities_fts_config
+bio
+chem
+taxonomy
+identities
+specifications
+manifests
+ml
+bash
+ruby
+precepts
+# OUT_LINES: 50
+# OUT_BYTES: 552
+# ERR_LINES: 0
+# EXEC: 52627|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh patlib-tables -- bun -e import { Database } from 'bun:sqlite'; const db = new Database('.opencode/patlib.db', { readonly: true }); console.log(db.query("SELECT name FROM sqlite_master WHERE type='table'").all().map(r=>r.name).join('\n'));
+# EXEC: 52628|/usr/bin/date|date +%s%N
+# EXEC: 52632|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 52633|/usr/bin/head|head -1
+# EXEC: 52634|/usr/bin/tr|tr -d \n
+# EXEC: 52635|/usr/bin/bun|bun --version
+# EXEC: 52636|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 52639|/usr/bin/git|git remote get-url origin
+# EXEC: 52637|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 52640|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 52642|/usr/bin/git|git branch --show-current
+# EXEC: 52644|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 52645|/usr/bin/head|head -1
+# EXEC: 52646|/usr/bin/tr|tr -d \n
+# EXEC: 52647|/usr/bin/bun|bun --version
+# EXEC: 52650|/usr/bin/head|head -1
+# EXEC: 52649|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 52651|/usr/bin/tr|tr -d \n
+# EXEC: 52652|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 52654|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 52655|/usr/bin/head|head -1
+# EXEC: 52656|/usr/bin/tr|tr -d \n
+# EXEC: 52657|/usr/bin/python3|python3 --version
+# EXEC: 52660|/usr/bin/head|head -1
+# EXEC: 52659|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 52661|/usr/bin/tr|tr -d \n
+# EXEC: 52662|/usr/bin/ruby|ruby --version
+# EXEC: 52665|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 52667|/usr/bin/tr|tr -d \n
+# EXEC: 52666|/usr/bin/head|head -1
+# EXEC: 52668|/usr/bin/rustc|rustc --version
+# EXEC: 52671|/usr/bin/timeout|timeout 2 go version
+# EXEC: 52672|/usr/bin/head|head -1
+# EXEC: 52673|/usr/bin/tr|tr -d \n
+# EXEC: 52674|/usr/bin/go|go version
+# EXEC: 52681|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 52682|/usr/bin/head|head -1
+# EXEC: 52683|/usr/bin/tr|tr -d \n
+# EXEC: 52684|/usr/bin/git|git --version
+# EXEC: 52686|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 52687|/usr/bin/head|head -1
+# EXEC: 52688|/usr/bin/tr|tr -d \n
+# EXEC: 52689|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 52692|/usr/bin/head|head -1
+# EXEC: 52691|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 52693|/usr/bin/tr|tr -d \n
+# EXEC: 52694|/usr/bin/date|date --version
+# EXEC: 52696|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 52697|/usr/bin/head|head -1
+# EXEC: 52698|/usr/bin/tr|tr -d \n
+# EXEC: 52699|/usr/bin/wc|wc --version
+# EXEC: 52701|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 52702|/usr/bin/head|head -1
+# EXEC: 52703|/usr/bin/tr|tr -d \n
+# EXEC: 52704|/usr/bin/cat|cat --version
+# EXEC: 52706|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 52707|/usr/bin/head|head -1
+# EXEC: 52708|/usr/bin/tr|tr -d \n
+# EXEC: 52709|/usr/bin/tee|tee --version
+# EXEC: 52711|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 52712|/usr/bin/head|head -1
+# EXEC: 52713|/usr/bin/tr|tr -d \n
+# EXEC: 52714|/usr/bin/mktemp|mktemp --version
+# EXEC: 52718|/usr/bin/tr|tr -d \n
+# EXEC: 52716|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 52717|/usr/bin/head|head -1
+# EXEC: 52719|/usr/bin/rm|rm --version
+# EXEC: 52721|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 52722|/usr/bin/head|head -1
+# EXEC: 52723|/usr/bin/tr|tr -d \n
+# EXEC: 52724|/usr/bin/timeout|timeout --version
+# EXEC: 52726|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 52727|/usr/bin/head|head -1
+# EXEC: 52728|/usr/bin/tr|tr -d \n
+# EXEC: 52729|/usr/bin/tr|tr --version
+# EXEC: 52731|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 52732|/usr/bin/head|head -1
+# EXEC: 52733|/usr/bin/tr|tr -d \n
+# EXEC: 52734|/usr/bin/head|head --version
+# EXEC: 52737|/usr/bin/head|head -1
+# EXEC: 52736|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 52738|/usr/bin/tr|tr -d \n
+# EXEC: 52739|/usr/bin/cut|cut --version
+# EXEC: 52741|/usr/bin/date|date +%s%N
+# EXEC: 52742|/usr/bin/sha256sum|sha256sum
+# EXEC: 52743|/usr/bin/cut|cut -c1-8
+# EXEC: 52745|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-071529-patlib-tables.log
+# EXEC: 52746|/usr/bin/date|date -Is
+# EXEC: 52747|/usr/bin/mktemp|mktemp
+# EXEC: 52748|/usr/bin/mktemp|mktemp
+# EXEC: 52749|/usr/bin/bun|bun -e import { Database } from 'bun:sqlite'; const db = new Database('.opencode/patlib.db', { readonly: true }); console.log(db.query("SELECT name FROM sqlite_master WHERE type='table'").all().map(r=>r.name).join('\n'));
+# EXEC: 52760|/usr/bin/wc|wc -l
+# EXEC: 52761|/usr/bin/tr|tr -d  
+# EXEC: 52763|/usr/bin/wc|wc -c
+# EXEC: 52764|/usr/bin/tr|tr -d  
+# EXEC: 52766|/usr/bin/wc|wc -l
+# EXEC: 52767|/usr/bin/tr|tr -d  
+# EXEC: 52768|/usr/bin/date|date +%s%N
+# EXEC: 52770|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-071529-patlib-tables.log
+# EXEC: 52772|/usr/bin/cat|cat /tmp/tmp.acONzFOMv9
+# EXEC: 52773|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-071529-patlib-tables.log
+# EXEC: 52774|/usr/bin/cat|cat /tmp/tmp.4UFln7jJZQ
+# EXEC: 52775|/usr/bin/cat|cat /tmp/tmp.4UFln7jJZQ
+# EXEC: 52776|/usr/bin/rm|rm -f /tmp/tmp.acONzFOMv9 /tmp/tmp.4UFln7jJZQ
+# EXEC: 52778|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-071529-patlib-tables.log
+# EXEC: 52780|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-071529-patlib-tables.log
+# EXEC: 52782|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-071529-patlib-tables.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 107
+# SHA: 46b7f7fea15a15b390bfaf248ba5bfe1185ce5065f052f81e96361a4c42d343a
+# exit: 0

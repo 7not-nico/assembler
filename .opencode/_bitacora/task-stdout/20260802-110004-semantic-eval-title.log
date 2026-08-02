@@ -1,0 +1,211 @@
+# CMD: bun run .opencode/tools/semantic-eval.ts --k 5 --documents title 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T11:00:04-06:00
+# PID: 13068
+# DUR: 6153ms
+# exit: 0
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: 9d19097d
+# CLI: bun 1.3.14
+# ARGS: run .opencode/tools/semantic-eval.ts --k 5 --documents title 
+# CWD: /home/eddyr/assembler
+# --------------------
+embedded batch 16/259
+embedded batch 32/259
+embedded batch 48/259
+embedded batch 64/259
+embedded batch 80/259
+embedded batch 96/259
+embedded batch 112/259
+embedded batch 128/259
+embedded batch 144/259
+embedded batch 160/259
+embedded batch 176/259
+embedded batch 192/259
+embedded batch 208/259
+embedded batch 224/259
+embedded batch 240/259
+embedded batch 256/259
+embedded batch 259/259
+embedded batch 16/567
+embedded batch 32/567
+embedded batch 48/567
+embedded batch 64/567
+embedded batch 80/567
+embedded batch 96/567
+embedded batch 112/567
+embedded batch 128/567
+embedded batch 144/567
+embedded batch 160/567
+embedded batch 176/567
+embedded batch 192/567
+embedded batch 208/567
+embedded batch 224/567
+embedded batch 240/567
+embedded batch 256/567
+embedded batch 272/567
+embedded batch 288/567
+embedded batch 304/567
+embedded batch 320/567
+embedded batch 336/567
+embedded batch 352/567
+embedded batch 368/567
+embedded batch 384/567
+embedded batch 400/567
+embedded batch 416/567
+embedded batch 432/567
+embedded batch 448/567
+embedded batch 464/567
+embedded batch 480/567
+embedded batch 496/567
+embedded batch 512/567
+embedded batch 528/567
+embedded batch 544/567
+embedded batch 560/567
+embedded batch 567/567
+variant: default
+documents: title
+model: Xenova/bge-small-en-v1.5
+vectors: 567
+labeled pairs: 259
+
+MRR@5: 0.0739
+Recall@5: 0.1213
+Precision@5: 0.0432
+Hit@5: 0.1969
+NDCG@5: 0.0748
+Self-hit@5: 259/259
+
+Per type
+----------------------------------------------------------------------
+TYPE                 Q      MRR      RECALL   HIT      NDCG    
+abstractions         3      0.4444   1.0000   1.0000   0.6019  
+apologias            1      0.0000   0.0000   0.0000   0.0000  
+cognitions           11     0.0833   0.1818   0.2727   0.1023  
+commands             7      0.1667   0.3571   0.4286   0.2054  
+concepts             29     0.1305   0.2759   0.3448   0.1559  
+definitions          2      0.1667   0.1000   0.5000   0.0848  
+identities           32     0.1589   0.1870   0.4688   0.1244  
+illustrations        79     0.0200   0.0338   0.0633   0.0193  
+linguistics          1      0.2000   0.3333   1.0000   0.1815  
+protocols            22     0.0227   0.0152   0.0455   0.0135  
+refs                 12     0.0000   0.0000   0.0000   0.0000  
+rules                9      0.0000   0.0000   0.0000   0.0000  
+skills               50     0.0650   0.1081   0.1600   0.0667  
+terms                1      1.0000   1.0000   1.0000   1.0000  
+# OUT_LINES: 83
+# OUT_BYTES: 2447
+# ERR_LINES: 0
+# EXEC: 13068|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh semantic-eval-title -- bun run .opencode/tools/semantic-eval.ts --k 5 --documents title
+# EXEC: 13069|/usr/bin/date|date +%s%N
+# EXEC: 13073|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 13074|/usr/bin/head|head -1
+# EXEC: 13075|/usr/bin/tr|tr -d \n
+# EXEC: 13076|/usr/bin/bun|bun --version
+# EXEC: 13077|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 13080|/usr/bin/git|git remote get-url origin
+# EXEC: 13078|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 13081|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 13083|/usr/bin/git|git branch --show-current
+# EXEC: 13085|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 13086|/usr/bin/head|head -1
+# EXEC: 13087|/usr/bin/tr|tr -d \n
+# EXEC: 13088|/usr/bin/bun|bun --version
+# EXEC: 13090|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 13091|/usr/bin/head|head -1
+# EXEC: 13092|/usr/bin/tr|tr -d \n
+# EXEC: 13093|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 13095|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 13096|/usr/bin/head|head -1
+# EXEC: 13097|/usr/bin/tr|tr -d \n
+# EXEC: 13098|/usr/bin/python3|python3 --version
+# EXEC: 13100|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 13101|/usr/bin/head|head -1
+# EXEC: 13102|/usr/bin/tr|tr -d \n
+# EXEC: 13103|/usr/bin/ruby|ruby --version
+# EXEC: 13106|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 13107|/usr/bin/head|head -1
+# EXEC: 13108|/usr/bin/tr|tr -d \n
+# EXEC: 13109|/usr/bin/rustc|rustc --version
+# EXEC: 13112|/usr/bin/timeout|timeout 2 go version
+# EXEC: 13113|/usr/bin/head|head -1
+# EXEC: 13114|/usr/bin/tr|tr -d \n
+# EXEC: 13115|/usr/bin/go|go version
+# EXEC: 13121|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 13122|/usr/bin/head|head -1
+# EXEC: 13123|/usr/bin/tr|tr -d \n
+# EXEC: 13124|/usr/bin/git|git --version
+# EXEC: 13127|/usr/bin/head|head -1
+# EXEC: 13126|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 13128|/usr/bin/tr|tr -d \n
+# EXEC: 13129|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 13131|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 13132|/usr/bin/head|head -1
+# EXEC: 13133|/usr/bin/tr|tr -d \n
+# EXEC: 13134|/usr/bin/date|date --version
+# EXEC: 13136|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 13137|/usr/bin/head|head -1
+# EXEC: 13138|/usr/bin/tr|tr -d \n
+# EXEC: 13139|/usr/bin/wc|wc --version
+# EXEC: 13142|/usr/bin/head|head -1
+# EXEC: 13141|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 13143|/usr/bin/tr|tr -d \n
+# EXEC: 13144|/usr/bin/cat|cat --version
+# EXEC: 13146|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 13147|/usr/bin/head|head -1
+# EXEC: 13148|/usr/bin/tr|tr -d \n
+# EXEC: 13149|/usr/bin/tee|tee --version
+# EXEC: 13151|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 13152|/usr/bin/head|head -1
+# EXEC: 13153|/usr/bin/tr|tr -d \n
+# EXEC: 13154|/usr/bin/mktemp|mktemp --version
+# EXEC: 13156|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 13157|/usr/bin/head|head -1
+# EXEC: 13158|/usr/bin/tr|tr -d \n
+# EXEC: 13159|/usr/bin/rm|rm --version
+# EXEC: 13161|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 13162|/usr/bin/head|head -1
+# EXEC: 13163|/usr/bin/tr|tr -d \n
+# EXEC: 13164|/usr/bin/timeout|timeout --version
+# EXEC: 13166|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 13167|/usr/bin/head|head -1
+# EXEC: 13168|/usr/bin/tr|tr -d \n
+# EXEC: 13169|/usr/bin/tr|tr --version
+# EXEC: 13171|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 13172|/usr/bin/head|head -1
+# EXEC: 13173|/usr/bin/tr|tr -d \n
+# EXEC: 13174|/usr/bin/head|head --version
+# EXEC: 13176|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 13177|/usr/bin/head|head -1
+# EXEC: 13178|/usr/bin/tr|tr -d \n
+# EXEC: 13179|/usr/bin/cut|cut --version
+# EXEC: 13181|/usr/bin/date|date +%s%N
+# EXEC: 13182|/usr/bin/sha256sum|sha256sum
+# EXEC: 13183|/usr/bin/cut|cut -c1-8
+# EXEC: 13186|/usr/bin/date|date -Is
+# EXEC: 13185|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-110004-semantic-eval-title.log
+# EXEC: 13187|/usr/bin/mktemp|mktemp
+# EXEC: 13188|/usr/bin/mktemp|mktemp
+# EXEC: 13189|/usr/bin/bun|bun run .opencode/tools/semantic-eval.ts --k 5 --documents title
+# EXEC: 13406|/usr/bin/wc|wc -l
+# EXEC: 13407|/usr/bin/tr|tr -d  
+# EXEC: 13409|/usr/bin/wc|wc -c
+# EXEC: 13410|/usr/bin/tr|tr -d  
+# EXEC: 13412|/usr/bin/wc|wc -l
+# EXEC: 13413|/usr/bin/tr|tr -d  
+# EXEC: 13414|/usr/bin/date|date +%s%N
+# EXEC: 13416|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-110004-semantic-eval-title.log
+# EXEC: 13418|/usr/bin/cat|cat /tmp/tmp.DBdHw9q8df
+# EXEC: 13419|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-110004-semantic-eval-title.log
+# EXEC: 13420|/usr/bin/cat|cat /tmp/tmp.Ky0uqwNwi2
+# EXEC: 13421|/usr/bin/cat|cat /tmp/tmp.Ky0uqwNwi2
+# EXEC: 13422|/usr/bin/rm|rm -f /tmp/tmp.DBdHw9q8df /tmp/tmp.Ky0uqwNwi2
+# EXEC: 13424|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-110004-semantic-eval-title.log
+# EXEC: 13426|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-110004-semantic-eval-title.log
+# EXEC: 13428|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-110004-semantic-eval-title.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 107
+# SHA: 1ebbd23195c4120c74f099f66f7e22bb44b8382667ea3da5206d855a3bc0eca7
+# exit: 0

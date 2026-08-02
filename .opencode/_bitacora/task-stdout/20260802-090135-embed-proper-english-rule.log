@@ -1,0 +1,131 @@
+# CMD: bun run .opencode/tools/semantic-embed.ts --type rules 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T09:01:35-06:00
+# PID: 120757
+# DUR: 1106ms
+# exit: 0
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: 470e9f2e
+# CLI: bun 1.3.14
+# ARGS: run .opencode/tools/semantic-embed.ts --type rules 
+# CWD: /home/eddyr/assembler
+# --------------------
+embedded 1 rules
+
+1 entities embedded of type 'rules'
+# OUT_LINES: 3
+# OUT_BYTES: 54
+# ERR_LINES: 0
+# EXEC: 120757|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh embed-proper-english-rule -- bun run .opencode/tools/semantic-embed.ts --type rules
+# EXEC: 120758|/usr/bin/date|date +%s%N
+# EXEC: 120763|/usr/bin/head|head -1
+# EXEC: 120762|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 120764|/usr/bin/tr|tr -d \n
+# EXEC: 120765|/usr/bin/bun|bun --version
+# EXEC: 120766|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 120769|/usr/bin/git|git remote get-url origin
+# EXEC: 120767|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 120770|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 120772|/usr/bin/git|git branch --show-current
+# EXEC: 120775|/usr/bin/head|head -1
+# EXEC: 120774|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 120776|/usr/bin/tr|tr -d \n
+# EXEC: 120777|/usr/bin/bun|bun --version
+# EXEC: 120779|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 120780|/usr/bin/head|head -1
+# EXEC: 120781|/usr/bin/tr|tr -d \n
+# EXEC: 120782|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 120785|/usr/bin/head|head -1
+# EXEC: 120784|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 120786|/usr/bin/tr|tr -d \n
+# EXEC: 120787|/usr/bin/python3|python3 --version
+# EXEC: 120790|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 120791|/usr/bin/head|head -1
+# EXEC: 120792|/usr/bin/tr|tr -d \n
+# EXEC: 120793|/usr/bin/ruby|ruby --version
+# EXEC: 120796|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 120797|/usr/bin/head|head -1
+# EXEC: 120798|/usr/bin/tr|tr -d \n
+# EXEC: 120799|/usr/bin/rustc|rustc --version
+# EXEC: 120802|/usr/bin/timeout|timeout 2 go version
+# EXEC: 120803|/usr/bin/head|head -1
+# EXEC: 120804|/usr/bin/tr|tr -d \n
+# EXEC: 120805|/usr/bin/go|go version
+# EXEC: 120813|/usr/bin/head|head -1
+# EXEC: 120812|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 120814|/usr/bin/tr|tr -d \n
+# EXEC: 120815|/usr/bin/git|git --version
+# EXEC: 120817|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 120818|/usr/bin/head|head -1
+# EXEC: 120819|/usr/bin/tr|tr -d \n
+# EXEC: 120820|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 120822|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 120823|/usr/bin/head|head -1
+# EXEC: 120824|/usr/bin/tr|tr -d \n
+# EXEC: 120825|/usr/bin/date|date --version
+# EXEC: 120827|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 120828|/usr/bin/head|head -1
+# EXEC: 120829|/usr/bin/tr|tr -d \n
+# EXEC: 120830|/usr/bin/wc|wc --version
+# EXEC: 120832|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 120833|/usr/bin/head|head -1
+# EXEC: 120834|/usr/bin/tr|tr -d \n
+# EXEC: 120835|/usr/bin/cat|cat --version
+# EXEC: 120837|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 120838|/usr/bin/head|head -1
+# EXEC: 120839|/usr/bin/tr|tr -d \n
+# EXEC: 120840|/usr/bin/tee|tee --version
+# EXEC: 120842|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 120843|/usr/bin/head|head -1
+# EXEC: 120844|/usr/bin/tr|tr -d \n
+# EXEC: 120845|/usr/bin/mktemp|mktemp --version
+# EXEC: 120847|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 120848|/usr/bin/head|head -1
+# EXEC: 120849|/usr/bin/tr|tr -d \n
+# EXEC: 120850|/usr/bin/rm|rm --version
+# EXEC: 120852|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 120853|/usr/bin/head|head -1
+# EXEC: 120854|/usr/bin/tr|tr -d \n
+# EXEC: 120855|/usr/bin/timeout|timeout --version
+# EXEC: 120857|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 120858|/usr/bin/head|head -1
+# EXEC: 120859|/usr/bin/tr|tr -d \n
+# EXEC: 120860|/usr/bin/tr|tr --version
+# EXEC: 120862|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 120863|/usr/bin/head|head -1
+# EXEC: 120864|/usr/bin/tr|tr -d \n
+# EXEC: 120865|/usr/bin/head|head --version
+# EXEC: 120867|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 120868|/usr/bin/head|head -1
+# EXEC: 120869|/usr/bin/tr|tr -d \n
+# EXEC: 120870|/usr/bin/cut|cut --version
+# EXEC: 120872|/usr/bin/date|date +%s%N
+# EXEC: 120873|/usr/bin/sha256sum|sha256sum
+# EXEC: 120874|/usr/bin/cut|cut -c1-8
+# EXEC: 120876|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090135-embed-proper-english-rule.log
+# EXEC: 120877|/usr/bin/date|date -Is
+# EXEC: 120878|/usr/bin/mktemp|mktemp
+# EXEC: 120879|/usr/bin/mktemp|mktemp
+# EXEC: 120880|/usr/bin/bun|bun run .opencode/tools/semantic-embed.ts --type rules
+# EXEC: 120912|/usr/bin/wc|wc -l
+# EXEC: 120913|/usr/bin/tr|tr -d  
+# EXEC: 120915|/usr/bin/wc|wc -c
+# EXEC: 120916|/usr/bin/tr|tr -d  
+# EXEC: 120918|/usr/bin/wc|wc -l
+# EXEC: 120919|/usr/bin/tr|tr -d  
+# EXEC: 120920|/usr/bin/date|date +%s%N
+# EXEC: 120922|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090135-embed-proper-english-rule.log
+# EXEC: 120924|/usr/bin/cat|cat /tmp/tmp.ue9k9JKtJz
+# EXEC: 120925|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090135-embed-proper-english-rule.log
+# EXEC: 120926|/usr/bin/cat|cat /tmp/tmp.oPYhiYSAT3
+# EXEC: 120927|/usr/bin/cat|cat /tmp/tmp.oPYhiYSAT3
+# EXEC: 120928|/usr/bin/rm|rm -f /tmp/tmp.ue9k9JKtJz /tmp/tmp.oPYhiYSAT3
+# EXEC: 120930|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090135-embed-proper-english-rule.log
+# EXEC: 120932|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090135-embed-proper-english-rule.log
+# EXEC: 120934|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090135-embed-proper-english-rule.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 107
+# SHA: 064205f28ee5288a25072af14d3c4d336163016ce5b2cf7fb597d55f3c66f9c1
+# exit: 0

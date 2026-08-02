@@ -1,0 +1,161 @@
+# CMD: bun run .opencode/tools/semantic-drift.ts --check 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T10:55:00-06:00
+# PID: 8624
+# DUR: 412ms
+# exit: 0
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: 602b5d5b
+# CLI: bun 1.3.14
+# ARGS: run .opencode/tools/semantic-drift.ts --check 
+# CWD: /home/eddyr/assembler
+# --------------------
+TABLE                DB  VEC MISS STALE
+----------------------------------------
+refs                 34   34    0     0
+precepts             12   12    0     0
+ruby                  0    0    0     0
+bash                  0    0    0     0
+ml                    1    1    0     0
+manifests             1    1    0     0
+specifications       26   26    0     0
+identities           35   35    0     0
+taxonomy              3    3    0     0
+chem                  0    0    0     0
+bio                   5    5    0     0
+definitions           3    3    0     0
+concepts             62   62    0     0
+cognitions           35   35    0     0
+patterns              7    7    0     0
+nexus                11   11    0     0
+maxims                9    9    0     0
+illustrations        79   79    0     0
+llm_spec_rules       12   12    0     0
+persons               8    8    0     0
+protocols            43   43    0     0
+linguistics           1    1    0     0
+abstractions          3    3    0     0
+commands             16   16    0     0
+rules                79   79    0     0
+apologias             1    1    0     0
+skills               66   66    0     0
+terms                15   15    0     0
+----------------------------------------
+TOTAL: 0 missing, 0 stale across 28 tables
+no drift
+# OUT_LINES: 33
+# OUT_BYTES: 1294
+# ERR_LINES: 0
+# EXEC: 8624|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh semantic-drift -- bun run .opencode/tools/semantic-drift.ts --check
+# EXEC: 8625|/usr/bin/date|date +%s%N
+# EXEC: 8629|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 8630|/usr/bin/head|head -1
+# EXEC: 8631|/usr/bin/tr|tr -d \n
+# EXEC: 8632|/usr/bin/bun|bun --version
+# EXEC: 8633|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 8636|/usr/bin/git|git remote get-url origin
+# EXEC: 8634|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 8637|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 8639|/usr/bin/git|git branch --show-current
+# EXEC: 8642|/usr/bin/head|head -1
+# EXEC: 8641|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 8643|/usr/bin/tr|tr -d \n
+# EXEC: 8644|/usr/bin/bun|bun --version
+# EXEC: 8646|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 8647|/usr/bin/head|head -1
+# EXEC: 8648|/usr/bin/tr|tr -d \n
+# EXEC: 8649|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 8651|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 8652|/usr/bin/head|head -1
+# EXEC: 8653|/usr/bin/tr|tr -d \n
+# EXEC: 8654|/usr/bin/python3|python3 --version
+# EXEC: 8658|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 8659|/usr/bin/head|head -1
+# EXEC: 8660|/usr/bin/tr|tr -d \n
+# EXEC: 8661|/usr/bin/ruby|ruby --version
+# EXEC: 8664|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 8665|/usr/bin/head|head -1
+# EXEC: 8666|/usr/bin/tr|tr -d \n
+# EXEC: 8667|/usr/bin/rustc|rustc --version
+# EXEC: 8670|/usr/bin/timeout|timeout 2 go version
+# EXEC: 8671|/usr/bin/head|head -1
+# EXEC: 8672|/usr/bin/tr|tr -d \n
+# EXEC: 8673|/usr/bin/go|go version
+# EXEC: 8679|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 8680|/usr/bin/head|head -1
+# EXEC: 8681|/usr/bin/tr|tr -d \n
+# EXEC: 8682|/usr/bin/git|git --version
+# EXEC: 8684|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 8685|/usr/bin/head|head -1
+# EXEC: 8686|/usr/bin/tr|tr -d \n
+# EXEC: 8687|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 8689|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 8690|/usr/bin/head|head -1
+# EXEC: 8691|/usr/bin/tr|tr -d \n
+# EXEC: 8692|/usr/bin/date|date --version
+# EXEC: 8694|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 8695|/usr/bin/head|head -1
+# EXEC: 8696|/usr/bin/tr|tr -d \n
+# EXEC: 8697|/usr/bin/wc|wc --version
+# EXEC: 8699|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 8700|/usr/bin/head|head -1
+# EXEC: 8701|/usr/bin/tr|tr -d \n
+# EXEC: 8702|/usr/bin/cat|cat --version
+# EXEC: 8704|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 8705|/usr/bin/head|head -1
+# EXEC: 8706|/usr/bin/tr|tr -d \n
+# EXEC: 8707|/usr/bin/tee|tee --version
+# EXEC: 8709|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 8710|/usr/bin/head|head -1
+# EXEC: 8711|/usr/bin/tr|tr -d \n
+# EXEC: 8712|/usr/bin/mktemp|mktemp --version
+# EXEC: 8714|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 8715|/usr/bin/head|head -1
+# EXEC: 8716|/usr/bin/tr|tr -d \n
+# EXEC: 8717|/usr/bin/rm|rm --version
+# EXEC: 8719|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 8720|/usr/bin/head|head -1
+# EXEC: 8721|/usr/bin/tr|tr -d \n
+# EXEC: 8722|/usr/bin/timeout|timeout --version
+# EXEC: 8724|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 8725|/usr/bin/head|head -1
+# EXEC: 8726|/usr/bin/tr|tr -d \n
+# EXEC: 8727|/usr/bin/tr|tr --version
+# EXEC: 8729|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 8730|/usr/bin/head|head -1
+# EXEC: 8731|/usr/bin/tr|tr -d \n
+# EXEC: 8732|/usr/bin/head|head --version
+# EXEC: 8734|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 8735|/usr/bin/head|head -1
+# EXEC: 8736|/usr/bin/tr|tr -d \n
+# EXEC: 8737|/usr/bin/cut|cut --version
+# EXEC: 8739|/usr/bin/date|date +%s%N
+# EXEC: 8740|/usr/bin/sha256sum|sha256sum
+# EXEC: 8741|/usr/bin/cut|cut -c1-8
+# EXEC: 8743|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105500-semantic-drift.log
+# EXEC: 8744|/usr/bin/date|date -Is
+# EXEC: 8745|/usr/bin/mktemp|mktemp
+# EXEC: 8746|/usr/bin/mktemp|mktemp
+# EXEC: 8747|/usr/bin/bun|bun run .opencode/tools/semantic-drift.ts --check
+# EXEC: 8763|/usr/bin/wc|wc -l
+# EXEC: 8764|/usr/bin/tr|tr -d  
+# EXEC: 8766|/usr/bin/wc|wc -c
+# EXEC: 8767|/usr/bin/tr|tr -d  
+# EXEC: 8769|/usr/bin/wc|wc -l
+# EXEC: 8770|/usr/bin/tr|tr -d  
+# EXEC: 8771|/usr/bin/date|date +%s%N
+# EXEC: 8773|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105500-semantic-drift.log
+# EXEC: 8775|/usr/bin/cat|cat /tmp/tmp.G3Hvsu6dSu
+# EXEC: 8776|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105500-semantic-drift.log
+# EXEC: 8777|/usr/bin/cat|cat /tmp/tmp.Rq2laQoofy
+# EXEC: 8778|/usr/bin/cat|cat /tmp/tmp.Rq2laQoofy
+# EXEC: 8779|/usr/bin/rm|rm -f /tmp/tmp.G3Hvsu6dSu /tmp/tmp.Rq2laQoofy
+# EXEC: 8781|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105500-semantic-drift.log
+# EXEC: 8783|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105500-semantic-drift.log
+# EXEC: 8785|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105500-semantic-drift.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 107
+# SHA: c284a36c92541ee42c92ecded7f73ca7fed5ceaa5a26b865c42981fc500e555b
+# exit: 0

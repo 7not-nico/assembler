@@ -1,0 +1,513 @@
+# CMD: bash .opencode/_scripts/migrate-skill-metadata.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T11:57:47-06:00
+# PID: 50354
+# DUR: 1182ms
+# exit: 0
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: e8256a0a
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_scripts/migrate-skill-metadata.sh 
+# CWD: /home/eddyr/assembler
+# --------------------
+UPDATED=bootstrap-db NEXUS=NEX.META.PROPOSAL
+UPDATED=classify-tool NEXUS=NEX.TOOL.SEQUENCE
+UPDATED=compose-web NEXUS=NEX.INVESTIGATION.STAGE
+UPDATED=declare-grounded-entity NEXUS=NEX.META.PROPOSAL
+UPDATED=guide-architecture NEXUS=NEX.TOOL.CHOICE
+UPDATED=guide-reasoning NEXUS=NEX.META.CANVAS
+UPDATED=judge-semantic NEXUS=NEX.META.PROPOSAL
+UPDATED=knowledge-ruby NEXUS=none
+UPDATED=manage-bash-flows NEXUS=NEX.ACQUIRE.PIPELINE
+UPDATED=orchestrate-research NEXUS=NEX.INVESTIGATION.STAGE
+UPDATED=propose-command NEXUS=NEX.META.PROPOSAL
+UPDATED=propose-investigation NEXUS=NEX.META.PROPOSAL
+UPDATED=propose-mcp NEXUS=NEX.META.PROPOSAL
+UPDATED=propose-pattern NEXUS=NEX.META.PROPOSAL
+UPDATED=propose-protocol NEXUS=NEX.META.PROPOSAL
+UPDATED=propose-rule NEXUS=NEX.META.PROPOSAL
+UPDATED=propose-term NEXUS=NEX.META.PROPOSAL
+UPDATED=propose-tool NEXUS=NEX.META.PROPOSAL
+UPDATED=reason-invariants NEXUS=NEX.TOOL.SEQUENCE
+UPDATED=reason-quantitative NEXUS=NEX.META.CANVAS
+UPDATED=reason-verbal NEXUS=NEX.META.CANVAS
+UPDATED=refactor-skill NEXUS=NEX.TOOL.SEQUENCE
+UPDATED=scaffold-tools NEXUS=NEX.META.PROPOSAL
+UPDATED=search-geo NEXUS=NEX.INVESTIGATION.STAGE
+UPDATED=search-maxims NEXUS=none
+UPDATED=search-nexus NEXUS=none
+UPDATED=search-papers NEXUS=NEX.ACQUIRE.PIPELINE
+UPDATED=search-patterns NEXUS=none
+UPDATED=search-protocols NEXUS=none
+UPDATED=stage-create NEXUS=NEX.META.ORCHESTRATION
+UPDATED=structure-stdout NEXUS=NEX.ACQUIRE.PIPELINE
+UPDATED=study-foundations NEXUS=NEX.INVESTIGATION.STAGE
+UPDATED=survey-scripts NEXUS=NEX.META.PROPOSAL
+UPDATED=use-context-seven NEXUS=NEX.INVESTIGATION.STAGE
+UPDATED=use-entity-audit NEXUS=NEX.TOOL.SEQUENCE
+UPDATED=use-exa NEXUS=NEX.INVESTIGATION.STAGE
+UPDATED=use-parallel-search NEXUS=NEX.INVESTIGATION.STAGE
+UPDATED=use-playwright-ai-mode NEXUS=NEX.BROWSER.STACK
+UPDATED=use-playwright-core NEXUS=NEX.BROWSER.STACK
+UPDATED=use-playwright-debug NEXUS=NEX.BROWSER.STACK
+UPDATED=use-playwright-network-storage NEXUS=NEX.BROWSER.STACK
+UPDATED=use-playwright-vision NEXUS=NEX.BROWSER.STACK
+UPDATED=vet-proposal NEXUS=NEX.META.PROPOSAL
+MIGRATED=43
+# OUT_LINES: 44
+# OUT_BYTES: 2083
+# ERR_LINES: 0
+# EXEC: 50354|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh skills-metadata-migrate-2 -- bash .opencode/_scripts/migrate-skill-metadata.sh
+# EXEC: 50355|/usr/bin/date|date +%s%N
+# EXEC: 50358|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 50361|/usr/bin/git|git remote get-url origin
+# EXEC: 50359|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 50362|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 50364|/usr/bin/git|git branch --show-current
+# EXEC: 50366|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 50367|/usr/bin/head|head -1
+# EXEC: 50368|/usr/bin/tr|tr -d \n
+# EXEC: 50369|/usr/bin/bun|bun --version
+# EXEC: 50372|/usr/bin/head|head -1
+# EXEC: 50371|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 50373|/usr/bin/tr|tr -d \n
+# EXEC: 50374|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 50376|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 50377|/usr/bin/head|head -1
+# EXEC: 50378|/usr/bin/tr|tr -d \n
+# EXEC: 50379|/usr/bin/python3|python3 --version
+# EXEC: 50381|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 50382|/usr/bin/head|head -1
+# EXEC: 50383|/usr/bin/tr|tr -d \n
+# EXEC: 50384|/usr/bin/ruby|ruby --version
+# EXEC: 50388|/usr/bin/head|head -1
+# EXEC: 50387|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 50389|/usr/bin/tr|tr -d \n
+# EXEC: 50390|/usr/bin/rustc|rustc --version
+# EXEC: 50393|/usr/bin/timeout|timeout 2 go version
+# EXEC: 50394|/usr/bin/head|head -1
+# EXEC: 50395|/usr/bin/tr|tr -d \n
+# EXEC: 50396|/usr/bin/go|go version
+# EXEC: 50402|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 50403|/usr/bin/head|head -1
+# EXEC: 50404|/usr/bin/tr|tr -d \n
+# EXEC: 50405|/usr/bin/git|git --version
+# EXEC: 50407|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 50408|/usr/bin/head|head -1
+# EXEC: 50409|/usr/bin/tr|tr -d \n
+# EXEC: 50410|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 50412|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 50413|/usr/bin/head|head -1
+# EXEC: 50414|/usr/bin/tr|tr -d \n
+# EXEC: 50415|/usr/bin/date|date --version
+# EXEC: 50417|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 50418|/usr/bin/head|head -1
+# EXEC: 50419|/usr/bin/tr|tr -d \n
+# EXEC: 50420|/usr/bin/wc|wc --version
+# EXEC: 50422|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 50423|/usr/bin/head|head -1
+# EXEC: 50424|/usr/bin/tr|tr -d \n
+# EXEC: 50425|/usr/bin/cat|cat --version
+# EXEC: 50427|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 50428|/usr/bin/head|head -1
+# EXEC: 50429|/usr/bin/tr|tr -d \n
+# EXEC: 50430|/usr/bin/tee|tee --version
+# EXEC: 50432|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 50433|/usr/bin/head|head -1
+# EXEC: 50434|/usr/bin/tr|tr -d \n
+# EXEC: 50435|/usr/bin/mktemp|mktemp --version
+# EXEC: 50438|/usr/bin/head|head -1
+# EXEC: 50437|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 50439|/usr/bin/tr|tr -d \n
+# EXEC: 50440|/usr/bin/rm|rm --version
+# EXEC: 50443|/usr/bin/head|head -1
+# EXEC: 50442|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 50444|/usr/bin/tr|tr -d \n
+# EXEC: 50445|/usr/bin/timeout|timeout --version
+# EXEC: 50447|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 50448|/usr/bin/head|head -1
+# EXEC: 50449|/usr/bin/tr|tr -d \n
+# EXEC: 50450|/usr/bin/tr|tr --version
+# EXEC: 50452|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 50453|/usr/bin/head|head -1
+# EXEC: 50454|/usr/bin/tr|tr -d \n
+# EXEC: 50455|/usr/bin/head|head --version
+# EXEC: 50457|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 50458|/usr/bin/head|head -1
+# EXEC: 50459|/usr/bin/tr|tr -d \n
+# EXEC: 50460|/usr/bin/cut|cut --version
+# EXEC: 50462|/usr/bin/date|date +%s%N
+# EXEC: 50463|/usr/bin/sha256sum|sha256sum
+# EXEC: 50464|/usr/bin/cut|cut -c1-8
+# EXEC: 50466|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115746-skills-metadata-migrate-2.log
+# EXEC: 50467|/usr/bin/date|date -Is
+# EXEC: 50468|/usr/bin/mktemp|mktemp
+# EXEC: 50469|/usr/bin/mktemp|mktemp
+# EXEC: 50470|/usr/bin/bash|bash .opencode/_scripts/migrate-skill-metadata.sh
+# EXEC: 50472|/usr/bin/dirname|dirname .opencode/_scripts/migrate-skill-metadata.sh
+# EXEC: 50473|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/bootstrap-db/
+# EXEC: 50474|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/bootstrap-db//SKILL.md
+# EXEC: 50475|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/bootstrap-db//SKILL.md
+# EXEC: 50478|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50479|/usr/bin/tr|tr -d  "
+# EXEC: 50482|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50485|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50486|/usr/bin/tr|tr -d  "
+# EXEC: 50487|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/classify-tool/
+# EXEC: 50488|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/classify-tool//SKILL.md
+# EXEC: 50489|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/classify-tool//SKILL.md
+# EXEC: 50492|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50493|/usr/bin/tr|tr -d  "
+# EXEC: 50496|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50499|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50500|/usr/bin/tr|tr -d  "
+# EXEC: 50501|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/compose-web/
+# EXEC: 50502|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/compose-web//SKILL.md
+# EXEC: 50503|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/compose-web//SKILL.md
+# EXEC: 50506|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50507|/usr/bin/tr|tr -d  "
+# EXEC: 50510|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50513|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50514|/usr/bin/tr|tr -d  "
+# EXEC: 50515|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/declare-grounded-entity/
+# EXEC: 50516|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/declare-grounded-entity//SKILL.md
+# EXEC: 50517|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/declare-grounded-entity//SKILL.md
+# EXEC: 50520|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50521|/usr/bin/tr|tr -d  "
+# EXEC: 50524|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50527|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50528|/usr/bin/tr|tr -d  "
+# EXEC: 50529|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/guide-architecture/
+# EXEC: 50530|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/guide-architecture//SKILL.md
+# EXEC: 50531|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/guide-architecture//SKILL.md
+# EXEC: 50534|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50535|/usr/bin/tr|tr -d  "
+# EXEC: 50538|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50541|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50542|/usr/bin/tr|tr -d  "
+# EXEC: 50543|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/guide-reasoning/
+# EXEC: 50544|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/guide-reasoning//SKILL.md
+# EXEC: 50545|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/guide-reasoning//SKILL.md
+# EXEC: 50548|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50549|/usr/bin/tr|tr -d  "
+# EXEC: 50552|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50555|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50556|/usr/bin/tr|tr -d  "
+# EXEC: 50557|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/judge-semantic/
+# EXEC: 50558|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/judge-semantic//SKILL.md
+# EXEC: 50559|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/judge-semantic//SKILL.md
+# EXEC: 50562|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50563|/usr/bin/tr|tr -d  "
+# EXEC: 50566|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50569|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50570|/usr/bin/tr|tr -d  "
+# EXEC: 50571|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/knowledge-ruby/
+# EXEC: 50572|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/knowledge-ruby//SKILL.md
+# EXEC: 50573|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/knowledge-ruby//SKILL.md
+# EXEC: 50576|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50577|/usr/bin/tr|tr -d  "
+# EXEC: 50580|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50583|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50584|/usr/bin/tr|tr -d  "
+# EXEC: 50585|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/manage-bash-flows/
+# EXEC: 50586|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/manage-bash-flows//SKILL.md
+# EXEC: 50587|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/manage-bash-flows//SKILL.md
+# EXEC: 50590|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50591|/usr/bin/tr|tr -d  "
+# EXEC: 50594|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50597|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50598|/usr/bin/tr|tr -d  "
+# EXEC: 50599|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/orchestrate-research/
+# EXEC: 50600|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/orchestrate-research//SKILL.md
+# EXEC: 50601|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/orchestrate-research//SKILL.md
+# EXEC: 50604|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50605|/usr/bin/tr|tr -d  "
+# EXEC: 50608|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50611|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50612|/usr/bin/tr|tr -d  "
+# EXEC: 50613|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-command/
+# EXEC: 50614|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-command//SKILL.md
+# EXEC: 50615|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/propose-command//SKILL.md
+# EXEC: 50618|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50619|/usr/bin/tr|tr -d  "
+# EXEC: 50622|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50625|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50626|/usr/bin/tr|tr -d  "
+# EXEC: 50627|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-investigation/
+# EXEC: 50628|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-investigation//SKILL.md
+# EXEC: 50629|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/propose-investigation//SKILL.md
+# EXEC: 50632|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50633|/usr/bin/tr|tr -d  "
+# EXEC: 50636|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50639|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50640|/usr/bin/tr|tr -d  "
+# EXEC: 50641|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-mcp/
+# EXEC: 50642|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-mcp//SKILL.md
+# EXEC: 50643|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/propose-mcp//SKILL.md
+# EXEC: 50646|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50647|/usr/bin/tr|tr -d  "
+# EXEC: 50650|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50653|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50654|/usr/bin/tr|tr -d  "
+# EXEC: 50656|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-pattern/
+# EXEC: 50659|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-pattern//SKILL.md
+# EXEC: 50660|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/propose-pattern//SKILL.md
+# EXEC: 50663|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50664|/usr/bin/tr|tr -d  "
+# EXEC: 50667|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50670|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50671|/usr/bin/tr|tr -d  "
+# EXEC: 50672|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-protocol/
+# EXEC: 50673|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-protocol//SKILL.md
+# EXEC: 50674|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/propose-protocol//SKILL.md
+# EXEC: 50677|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50678|/usr/bin/tr|tr -d  "
+# EXEC: 50681|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50684|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50685|/usr/bin/tr|tr -d  "
+# EXEC: 50686|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-rule/
+# EXEC: 50687|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-rule//SKILL.md
+# EXEC: 50688|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/propose-rule//SKILL.md
+# EXEC: 50691|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50692|/usr/bin/tr|tr -d  "
+# EXEC: 50695|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50698|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50699|/usr/bin/tr|tr -d  "
+# EXEC: 50700|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-term/
+# EXEC: 50701|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-term//SKILL.md
+# EXEC: 50702|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/propose-term//SKILL.md
+# EXEC: 50705|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50706|/usr/bin/tr|tr -d  "
+# EXEC: 50709|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50712|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50713|/usr/bin/tr|tr -d  "
+# EXEC: 50714|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/propose-tool/
+# EXEC: 50715|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/propose-tool//SKILL.md
+# EXEC: 50716|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/propose-tool//SKILL.md
+# EXEC: 50719|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50720|/usr/bin/tr|tr -d  "
+# EXEC: 50723|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50726|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50727|/usr/bin/tr|tr -d  "
+# EXEC: 50728|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/reason-invariants/
+# EXEC: 50729|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/reason-invariants//SKILL.md
+# EXEC: 50730|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/reason-invariants//SKILL.md
+# EXEC: 50733|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50734|/usr/bin/tr|tr -d  "
+# EXEC: 50737|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50740|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50741|/usr/bin/tr|tr -d  "
+# EXEC: 50742|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/reason-quantitative/
+# EXEC: 50743|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/reason-quantitative//SKILL.md
+# EXEC: 50744|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/reason-quantitative//SKILL.md
+# EXEC: 50747|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50748|/usr/bin/tr|tr -d  "
+# EXEC: 50751|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50754|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50755|/usr/bin/tr|tr -d  "
+# EXEC: 50756|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/reason-verbal/
+# EXEC: 50757|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/reason-verbal//SKILL.md
+# EXEC: 50758|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/reason-verbal//SKILL.md
+# EXEC: 50761|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50762|/usr/bin/tr|tr -d  "
+# EXEC: 50765|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50768|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50769|/usr/bin/tr|tr -d  "
+# EXEC: 50770|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/refactor-skill/
+# EXEC: 50771|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/refactor-skill//SKILL.md
+# EXEC: 50772|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/refactor-skill//SKILL.md
+# EXEC: 50775|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50776|/usr/bin/tr|tr -d  "
+# EXEC: 50779|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50782|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50783|/usr/bin/tr|tr -d  "
+# EXEC: 50784|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/scaffold-tools/
+# EXEC: 50785|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/scaffold-tools//SKILL.md
+# EXEC: 50786|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/scaffold-tools//SKILL.md
+# EXEC: 50789|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50790|/usr/bin/tr|tr -d  "
+# EXEC: 50793|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50796|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50797|/usr/bin/tr|tr -d  "
+# EXEC: 50798|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-geo/
+# EXEC: 50799|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-geo//SKILL.md
+# EXEC: 50800|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/search-geo//SKILL.md
+# EXEC: 50803|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50804|/usr/bin/tr|tr -d  "
+# EXEC: 50807|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50810|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50811|/usr/bin/tr|tr -d  "
+# EXEC: 50812|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-maxims/
+# EXEC: 50813|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-maxims//SKILL.md
+# EXEC: 50814|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/search-maxims//SKILL.md
+# EXEC: 50817|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50818|/usr/bin/tr|tr -d  "
+# EXEC: 50821|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50824|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50825|/usr/bin/tr|tr -d  "
+# EXEC: 50826|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-nexus/
+# EXEC: 50827|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-nexus//SKILL.md
+# EXEC: 50828|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/search-nexus//SKILL.md
+# EXEC: 50831|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50832|/usr/bin/tr|tr -d  "
+# EXEC: 50835|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50838|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50839|/usr/bin/tr|tr -d  "
+# EXEC: 50840|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-papers/
+# EXEC: 50841|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-papers//SKILL.md
+# EXEC: 50842|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/search-papers//SKILL.md
+# EXEC: 50845|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50846|/usr/bin/tr|tr -d  "
+# EXEC: 50849|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50852|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50853|/usr/bin/tr|tr -d  "
+# EXEC: 50854|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-patterns/
+# EXEC: 50855|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-patterns//SKILL.md
+# EXEC: 50856|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/search-patterns//SKILL.md
+# EXEC: 50859|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50860|/usr/bin/tr|tr -d  "
+# EXEC: 50863|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50866|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50867|/usr/bin/tr|tr -d  "
+# EXEC: 50868|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/search-protocols/
+# EXEC: 50869|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/search-protocols//SKILL.md
+# EXEC: 50870|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/search-protocols//SKILL.md
+# EXEC: 50873|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50874|/usr/bin/tr|tr -d  "
+# EXEC: 50877|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50880|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50881|/usr/bin/tr|tr -d  "
+# EXEC: 50882|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/stage-create/
+# EXEC: 50883|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/stage-create//SKILL.md
+# EXEC: 50884|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/stage-create//SKILL.md
+# EXEC: 50887|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50888|/usr/bin/tr|tr -d  "
+# EXEC: 50891|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50894|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50895|/usr/bin/tr|tr -d  "
+# EXEC: 50896|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/structure-stdout/
+# EXEC: 50897|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/structure-stdout//SKILL.md
+# EXEC: 50898|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/structure-stdout//SKILL.md
+# EXEC: 50901|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50902|/usr/bin/tr|tr -d  "
+# EXEC: 50905|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50908|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50909|/usr/bin/tr|tr -d  "
+# EXEC: 50910|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/study-foundations/
+# EXEC: 50911|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/study-foundations//SKILL.md
+# EXEC: 50912|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/study-foundations//SKILL.md
+# EXEC: 50915|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50916|/usr/bin/tr|tr -d  "
+# EXEC: 50919|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50922|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50923|/usr/bin/tr|tr -d  "
+# EXEC: 50924|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/survey-scripts/
+# EXEC: 50925|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/survey-scripts//SKILL.md
+# EXEC: 50926|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/survey-scripts//SKILL.md
+# EXEC: 50929|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50930|/usr/bin/tr|tr -d  "
+# EXEC: 50933|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50936|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50937|/usr/bin/tr|tr -d  "
+# EXEC: 50938|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-context-seven/
+# EXEC: 50939|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-context-seven//SKILL.md
+# EXEC: 50940|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/use-context-seven//SKILL.md
+# EXEC: 50943|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50944|/usr/bin/tr|tr -d  "
+# EXEC: 50947|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50950|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50951|/usr/bin/tr|tr -d  "
+# EXEC: 50952|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-entity-audit/
+# EXEC: 50953|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-entity-audit//SKILL.md
+# EXEC: 50954|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/use-entity-audit//SKILL.md
+# EXEC: 50957|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50958|/usr/bin/tr|tr -d  "
+# EXEC: 50961|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50964|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50965|/usr/bin/tr|tr -d  "
+# EXEC: 50966|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-exa/
+# EXEC: 50967|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-exa//SKILL.md
+# EXEC: 50968|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/use-exa//SKILL.md
+# EXEC: 50971|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50972|/usr/bin/tr|tr -d  "
+# EXEC: 50975|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50978|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50979|/usr/bin/tr|tr -d  "
+# EXEC: 50980|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-parallel-search/
+# EXEC: 50981|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-parallel-search//SKILL.md
+# EXEC: 50982|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/use-parallel-search//SKILL.md
+# EXEC: 50985|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 50986|/usr/bin/tr|tr -d  "
+# EXEC: 50989|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 50992|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 50993|/usr/bin/tr|tr -d  "
+# EXEC: 50994|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-playwright-ai-mode/
+# EXEC: 50995|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-playwright-ai-mode//SKILL.md
+# EXEC: 50996|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/use-playwright-ai-mode//SKILL.md
+# EXEC: 50999|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 51000|/usr/bin/tr|tr -d  "
+# EXEC: 51003|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 51006|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 51007|/usr/bin/tr|tr -d  "
+# EXEC: 51008|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-playwright-core/
+# EXEC: 51009|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-playwright-core//SKILL.md
+# EXEC: 51010|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/use-playwright-core//SKILL.md
+# EXEC: 51013|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 51014|/usr/bin/tr|tr -d  "
+# EXEC: 51017|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 51020|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 51021|/usr/bin/tr|tr -d  "
+# EXEC: 51022|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-playwright-debug/
+# EXEC: 51023|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-playwright-debug//SKILL.md
+# EXEC: 51024|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/use-playwright-debug//SKILL.md
+# EXEC: 51027|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 51028|/usr/bin/tr|tr -d  "
+# EXEC: 51031|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 51034|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 51035|/usr/bin/tr|tr -d  "
+# EXEC: 51036|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-playwright-network-storage/
+# EXEC: 51037|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-playwright-network-storage//SKILL.md
+# EXEC: 51039|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/use-playwright-network-storage//SKILL.md
+# EXEC: 51042|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 51043|/usr/bin/tr|tr -d  "
+# EXEC: 51046|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 51049|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 51050|/usr/bin/tr|tr -d  "
+# EXEC: 51051|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/use-playwright-vision/
+# EXEC: 51052|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/use-playwright-vision//SKILL.md
+# EXEC: 51053|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/use-playwright-vision//SKILL.md
+# EXEC: 51056|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 51057|/usr/bin/tr|tr -d  "
+# EXEC: 51060|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 51063|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 51064|/usr/bin/tr|tr -d  "
+# EXEC: 51065|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/skills/vet-proposal/
+# EXEC: 51066|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==1{print} c==2{exit} /home/eddyr/assembler/.opencode/skills/vet-proposal//SKILL.md
+# EXEC: 51067|/usr/bin/awk|awk BEGIN{c=0} /^---$/{c++; next} c==2{print} /home/eddyr/assembler/.opencode/skills/vet-proposal//SKILL.md
+# EXEC: 51071|/usr/bin/tr|tr -d  "
+# EXEC: 51070|/usr/bin/sed|sed -n s/^name:\s*//p
+# EXEC: 51074|/usr/bin/sed|sed -n s/^description:\s*//p
+# EXEC: 51077|/usr/bin/sed|sed -n s/^state-profile:\s*//p
+# EXEC: 51078|/usr/bin/tr|tr -d  "
+# EXEC: 51080|/usr/bin/wc|wc -l
+# EXEC: 51081|/usr/bin/tr|tr -d  
+# EXEC: 51083|/usr/bin/wc|wc -c
+# EXEC: 51084|/usr/bin/tr|tr -d  
+# EXEC: 51086|/usr/bin/wc|wc -l
+# EXEC: 51087|/usr/bin/tr|tr -d  
+# EXEC: 51088|/usr/bin/date|date +%s%N
+# EXEC: 51090|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115746-skills-metadata-migrate-2.log
+# EXEC: 51092|/usr/bin/cat|cat /tmp/tmp.WutL22PFrG
+# EXEC: 51093|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115746-skills-metadata-migrate-2.log
+# EXEC: 51094|/usr/bin/cat|cat /tmp/tmp.uqkQzCXqhx
+# EXEC: 51095|/usr/bin/cat|cat /tmp/tmp.uqkQzCXqhx
+# EXEC: 51096|/usr/bin/rm|rm -f /tmp/tmp.WutL22PFrG /tmp/tmp.uqkQzCXqhx
+# EXEC: 51098|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115746-skills-metadata-migrate-2.log
+# EXEC: 51100|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115746-skills-metadata-migrate-2.log
+# EXEC: 51102|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115746-skills-metadata-migrate-2.log
+# PROGS: node=v25.2.1 awk=GNU Awk 5.4.1, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0) basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sed=/usr/bin/sed (GNU sed) 4.10 sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 448
+# SHA: 8ef99b3dc971ca98b8fe12b480a947c211b296f87f34b744be781c2cd4676c13
+# exit: 0

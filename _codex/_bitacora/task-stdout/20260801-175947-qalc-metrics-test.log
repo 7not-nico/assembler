@@ -1,0 +1,7 @@
+# CMD: bash -c printf\ \"WIDTH=256\\nHEIGHT=224\\n\" 
+# DATE: 2026-08-01T17:59:47-06:00
+# CWD: /home/eddyr/assembler/_codex/snes9x-repo
+# --------------------
+WIDTH=256
+HEIGHT=224
+# exit: 0

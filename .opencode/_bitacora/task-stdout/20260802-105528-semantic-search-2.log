@@ -1,0 +1,145 @@
+# CMD: bun run .opencode/tools/semantic-search.ts --query vector\ embedding\ nearest\ neighbor\ cosine\ similarity\ retrieval --k 6 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T10:55:28-06:00
+# PID: 9423
+# DUR: 935ms
+# exit: 0
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: 1540d446
+# CLI: bun 1.3.14
+# ARGS: run .opencode/tools/semantic-search.ts --query vector\ embedding\ nearest\ neighbor\ cosine\ similarity\ retrieval --k 6 
+# CWD: /home/eddyr/assembler
+# --------------------
+RANK  SCORE    TYPE        ID
+----------------------------------------------------------------------
+1     0.7290    protocols    PROT.SEARCH.QUERY
+       Vector Search Query — Cosine, FTS5 BM25, Hybrid RRF, Tool Invocations
+2     0.6844    rules        RUL.VECTOR.QUERY.HYBRID
+       Vector query hybrid
+3     0.6830    rules        RUL.VECTOR.QUERY.KEYWORD
+       Vector query keyword
+4     0.6769    protocols    PROT.SEARCH.EMBEDDING
+       Vector Search Embedding — Registry Pattern, Entity Composition, Scoped Embedding, Source Trackin
+5     0.6622    illustrations ILL.SEARCH.TOOLS
+       Vector Search Tools Walkthrough — Search, Similar, Keyword, Reindex
+6     0.6494    commands     CMD.XRESEARCH.GEO
+       XResearch Geo
+----------------------------------------------------------------------
+6 semantic matches for "vector embedding nearest neighbor cosine similarity retrieval" (567 indexed)
+# OUT_LINES: 16
+# OUT_BYTES: 910
+# ERR_LINES: 0
+# EXEC: 9423|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh semantic-search-2 -- bun run .opencode/tools/semantic-search.ts --query vector embedding nearest neighbor cosine similarity retrieval --k 6
+# EXEC: 9424|/usr/bin/date|date +%s%N
+# EXEC: 9428|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 9429|/usr/bin/head|head -1
+# EXEC: 9430|/usr/bin/tr|tr -d \n
+# EXEC: 9431|/usr/bin/bun|bun --version
+# EXEC: 9432|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 9435|/usr/bin/git|git remote get-url origin
+# EXEC: 9433|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 9436|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 9438|/usr/bin/git|git branch --show-current
+# EXEC: 9440|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 9441|/usr/bin/head|head -1
+# EXEC: 9442|/usr/bin/tr|tr -d \n
+# EXEC: 9443|/usr/bin/bun|bun --version
+# EXEC: 9445|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 9446|/usr/bin/head|head -1
+# EXEC: 9447|/usr/bin/tr|tr -d \n
+# EXEC: 9448|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 9450|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 9451|/usr/bin/head|head -1
+# EXEC: 9452|/usr/bin/tr|tr -d \n
+# EXEC: 9453|/usr/bin/python3|python3 --version
+# EXEC: 9455|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 9456|/usr/bin/head|head -1
+# EXEC: 9457|/usr/bin/tr|tr -d \n
+# EXEC: 9458|/usr/bin/ruby|ruby --version
+# EXEC: 9461|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 9462|/usr/bin/head|head -1
+# EXEC: 9463|/usr/bin/tr|tr -d \n
+# EXEC: 9464|/usr/bin/rustc|rustc --version
+# EXEC: 9467|/usr/bin/timeout|timeout 2 go version
+# EXEC: 9468|/usr/bin/head|head -1
+# EXEC: 9469|/usr/bin/tr|tr -d \n
+# EXEC: 9470|/usr/bin/go|go version
+# EXEC: 9477|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 9478|/usr/bin/head|head -1
+# EXEC: 9479|/usr/bin/tr|tr -d \n
+# EXEC: 9480|/usr/bin/git|git --version
+# EXEC: 9482|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 9483|/usr/bin/head|head -1
+# EXEC: 9484|/usr/bin/tr|tr -d \n
+# EXEC: 9485|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 9487|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 9488|/usr/bin/head|head -1
+# EXEC: 9489|/usr/bin/tr|tr -d \n
+# EXEC: 9490|/usr/bin/date|date --version
+# EXEC: 9492|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 9493|/usr/bin/head|head -1
+# EXEC: 9494|/usr/bin/tr|tr -d \n
+# EXEC: 9495|/usr/bin/wc|wc --version
+# EXEC: 9498|/usr/bin/head|head -1
+# EXEC: 9497|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 9499|/usr/bin/tr|tr -d \n
+# EXEC: 9500|/usr/bin/cat|cat --version
+# EXEC: 9502|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 9503|/usr/bin/head|head -1
+# EXEC: 9504|/usr/bin/tr|tr -d \n
+# EXEC: 9505|/usr/bin/tee|tee --version
+# EXEC: 9508|/usr/bin/head|head -1
+# EXEC: 9507|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 9509|/usr/bin/tr|tr -d \n
+# EXEC: 9510|/usr/bin/mktemp|mktemp --version
+# EXEC: 9512|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 9513|/usr/bin/head|head -1
+# EXEC: 9514|/usr/bin/tr|tr -d \n
+# EXEC: 9515|/usr/bin/rm|rm --version
+# EXEC: 9517|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 9518|/usr/bin/head|head -1
+# EXEC: 9519|/usr/bin/tr|tr -d \n
+# EXEC: 9520|/usr/bin/timeout|timeout --version
+# EXEC: 9524|/usr/bin/tr|tr -d \n
+# EXEC: 9522|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 9523|/usr/bin/head|head -1
+# EXEC: 9525|/usr/bin/tr|tr --version
+# EXEC: 9527|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 9528|/usr/bin/head|head -1
+# EXEC: 9529|/usr/bin/tr|tr -d \n
+# EXEC: 9530|/usr/bin/head|head --version
+# EXEC: 9532|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 9533|/usr/bin/head|head -1
+# EXEC: 9534|/usr/bin/tr|tr -d \n
+# EXEC: 9535|/usr/bin/cut|cut --version
+# EXEC: 9537|/usr/bin/date|date +%s%N
+# EXEC: 9538|/usr/bin/sha256sum|sha256sum
+# EXEC: 9539|/usr/bin/cut|cut -c1-8
+# EXEC: 9541|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105528-semantic-search-2.log
+# EXEC: 9542|/usr/bin/date|date -Is
+# EXEC: 9543|/usr/bin/mktemp|mktemp
+# EXEC: 9544|/usr/bin/mktemp|mktemp
+# EXEC: 9545|/usr/bin/bun|bun run .opencode/tools/semantic-search.ts --query vector embedding nearest neighbor cosine similarity retrieval --k 6
+# EXEC: 9569|/home/eddyr/assembler/.opencode/_rustlib/target/release/assemble|/home/eddyr/assembler/.opencode/_rustlib/target/release/assemble hit
+# EXEC: 9571|/usr/bin/wc|wc -l
+# EXEC: 9572|/usr/bin/tr|tr -d  
+# EXEC: 9574|/usr/bin/wc|wc -c
+# EXEC: 9575|/usr/bin/tr|tr -d  
+# EXEC: 9577|/usr/bin/wc|wc -l
+# EXEC: 9578|/usr/bin/tr|tr -d  
+# EXEC: 9579|/usr/bin/date|date +%s%N
+# EXEC: 9581|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105528-semantic-search-2.log
+# EXEC: 9583|/usr/bin/cat|cat /tmp/tmp.AVzDdWKnBo
+# EXEC: 9584|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105528-semantic-search-2.log
+# EXEC: 9585|/usr/bin/cat|cat /tmp/tmp.kS8ZwVj5qG
+# EXEC: 9586|/usr/bin/cat|cat /tmp/tmp.kS8ZwVj5qG
+# EXEC: 9587|/usr/bin/rm|rm -f /tmp/tmp.AVzDdWKnBo /tmp/tmp.kS8ZwVj5qG
+# EXEC: 9589|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105528-semantic-search-2.log
+# EXEC: 9591|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105528-semantic-search-2.log
+# EXEC: 9593|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105528-semantic-search-2.log
+# PROGS: node=v25.2.1 assemble=(no --version) basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 108
+# SHA: ed4c5a336da395a38b15241b4b1f797a1266fb3716a9f54bccd0aaf2e61f25ae
+# exit: 0

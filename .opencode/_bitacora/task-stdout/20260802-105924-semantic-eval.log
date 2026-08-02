@@ -1,0 +1,175 @@
+# CMD: bun run .opencode/tools/semantic-eval.ts --k 5 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T10:59:25-06:00
+# PID: 11929
+# DUR: 2336ms
+# exit: 0
+# GIT: assembler@d7b08f8
+# BRANCH: main
+# SESSION: 1841b03a
+# CLI: bun 1.3.14
+# ARGS: run .opencode/tools/semantic-eval.ts --k 5 
+# CWD: /home/eddyr/assembler
+# --------------------
+embedded batch 16/259
+embedded batch 32/259
+embedded batch 48/259
+embedded batch 64/259
+embedded batch 80/259
+embedded batch 96/259
+embedded batch 112/259
+embedded batch 128/259
+embedded batch 144/259
+embedded batch 160/259
+embedded batch 176/259
+embedded batch 192/259
+embedded batch 208/259
+embedded batch 224/259
+embedded batch 240/259
+embedded batch 256/259
+embedded batch 259/259
+variant: default
+documents: stored
+model: Xenova/bge-small-en-v1.5
+vectors: 567
+labeled pairs: 259
+
+MRR@5: 0.1040
+Recall@5: 0.1673
+Precision@5: 0.0602
+Hit@5: 0.2780
+NDCG@5: 0.1032
+Self-hit@5: 258/259
+
+Per type
+----------------------------------------------------------------------
+TYPE                 Q      MRR      RECALL   HIT      NDCG    
+abstractions         3      0.5000   1.0000   1.0000   0.6518  
+apologias            1      0.0000   0.0000   0.0000   0.0000  
+cognitions           11     0.1288   0.2500   0.3636   0.1375  
+commands             7      0.1786   0.3571   0.4286   0.2180  
+concepts             29     0.2420   0.4753   0.6552   0.2842  
+definitions          2      0.1667   0.2000   0.5000   0.1578  
+identities           32     0.1328   0.1328   0.3750   0.0944  
+illustrations        79     0.0357   0.0612   0.1139   0.0355  
+linguistics          1      0.5000   0.3333   1.0000   0.2961  
+protocols            22     0.0545   0.0303   0.0909   0.0296  
+refs                 12     0.0000   0.0000   0.0000   0.0000  
+rules                9      0.0000   0.0000   0.0000   0.0000  
+skills               50     0.1230   0.1964   0.3400   0.1155  
+terms                1      0.5000   1.0000   1.0000   0.6309  
+# OUT_LINES: 47
+# OUT_BYTES: 1626
+# ERR_LINES: 0
+# EXEC: 11929|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh semantic-eval -- bun run .opencode/tools/semantic-eval.ts --k 5
+# EXEC: 11930|/usr/bin/date|date +%s%N
+# EXEC: 11934|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 11935|/usr/bin/head|head -1
+# EXEC: 11936|/usr/bin/tr|tr -d \n
+# EXEC: 11937|/usr/bin/bun|bun --version
+# EXEC: 11938|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 11941|/usr/bin/git|git remote get-url origin
+# EXEC: 11939|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 11942|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 11944|/usr/bin/git|git branch --show-current
+# EXEC: 11946|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 11947|/usr/bin/head|head -1
+# EXEC: 11948|/usr/bin/tr|tr -d \n
+# EXEC: 11949|/usr/bin/bun|bun --version
+# EXEC: 11951|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 11952|/usr/bin/head|head -1
+# EXEC: 11953|/usr/bin/tr|tr -d \n
+# EXEC: 11954|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 11956|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 11957|/usr/bin/head|head -1
+# EXEC: 11958|/usr/bin/tr|tr -d \n
+# EXEC: 11959|/usr/bin/python3|python3 --version
+# EXEC: 11962|/usr/bin/head|head -1
+# EXEC: 11961|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 11963|/usr/bin/tr|tr -d \n
+# EXEC: 11964|/usr/bin/ruby|ruby --version
+# EXEC: 11967|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 11968|/usr/bin/head|head -1
+# EXEC: 11969|/usr/bin/tr|tr -d \n
+# EXEC: 11970|/usr/bin/rustc|rustc --version
+# EXEC: 11973|/usr/bin/timeout|timeout 2 go version
+# EXEC: 11974|/usr/bin/head|head -1
+# EXEC: 11975|/usr/bin/tr|tr -d \n
+# EXEC: 11976|/usr/bin/go|go version
+# EXEC: 11982|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 11983|/usr/bin/head|head -1
+# EXEC: 11984|/usr/bin/tr|tr -d \n
+# EXEC: 11985|/usr/bin/git|git --version
+# EXEC: 11987|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 11988|/usr/bin/head|head -1
+# EXEC: 11989|/usr/bin/tr|tr -d \n
+# EXEC: 11990|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 11992|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 11993|/usr/bin/head|head -1
+# EXEC: 11994|/usr/bin/tr|tr -d \n
+# EXEC: 11995|/usr/bin/date|date --version
+# EXEC: 11997|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 11998|/usr/bin/head|head -1
+# EXEC: 11999|/usr/bin/tr|tr -d \n
+# EXEC: 12000|/usr/bin/wc|wc --version
+# EXEC: 12002|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 12003|/usr/bin/head|head -1
+# EXEC: 12004|/usr/bin/tr|tr -d \n
+# EXEC: 12005|/usr/bin/cat|cat --version
+# EXEC: 12007|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 12008|/usr/bin/head|head -1
+# EXEC: 12009|/usr/bin/tr|tr -d \n
+# EXEC: 12010|/usr/bin/tee|tee --version
+# EXEC: 12012|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 12013|/usr/bin/head|head -1
+# EXEC: 12014|/usr/bin/tr|tr -d \n
+# EXEC: 12015|/usr/bin/mktemp|mktemp --version
+# EXEC: 12017|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 12018|/usr/bin/head|head -1
+# EXEC: 12019|/usr/bin/tr|tr -d \n
+# EXEC: 12020|/usr/bin/rm|rm --version
+# EXEC: 12022|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 12023|/usr/bin/head|head -1
+# EXEC: 12024|/usr/bin/tr|tr -d \n
+# EXEC: 12025|/usr/bin/timeout|timeout --version
+# EXEC: 12027|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 12028|/usr/bin/head|head -1
+# EXEC: 12029|/usr/bin/tr|tr -d \n
+# EXEC: 12030|/usr/bin/tr|tr --version
+# EXEC: 12033|/usr/bin/head|head -1
+# EXEC: 12032|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 12034|/usr/bin/tr|tr -d \n
+# EXEC: 12035|/usr/bin/head|head --version
+# EXEC: 12037|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 12038|/usr/bin/head|head -1
+# EXEC: 12039|/usr/bin/tr|tr -d \n
+# EXEC: 12040|/usr/bin/cut|cut --version
+# EXEC: 12042|/usr/bin/date|date +%s%N
+# EXEC: 12043|/usr/bin/sha256sum|sha256sum
+# EXEC: 12044|/usr/bin/cut|cut -c1-8
+# EXEC: 12046|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105924-semantic-eval.log
+# EXEC: 12047|/usr/bin/date|date -Is
+# EXEC: 12048|/usr/bin/mktemp|mktemp
+# EXEC: 12049|/usr/bin/mktemp|mktemp
+# EXEC: 12050|/usr/bin/bun|bun run .opencode/tools/semantic-eval.ts --k 5
+# EXEC: 12181|/usr/bin/wc|wc -l
+# EXEC: 12182|/usr/bin/tr|tr -d  
+# EXEC: 12184|/usr/bin/wc|wc -c
+# EXEC: 12185|/usr/bin/tr|tr -d  
+# EXEC: 12187|/usr/bin/wc|wc -l
+# EXEC: 12188|/usr/bin/tr|tr -d  
+# EXEC: 12189|/usr/bin/date|date +%s%N
+# EXEC: 12191|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105924-semantic-eval.log
+# EXEC: 12193|/usr/bin/cat|cat /tmp/tmp.stwTmt5g1A
+# EXEC: 12194|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105924-semantic-eval.log
+# EXEC: 12195|/usr/bin/cat|cat /tmp/tmp.7YGw3d2aiK
+# EXEC: 12196|/usr/bin/cat|cat /tmp/tmp.7YGw3d2aiK
+# EXEC: 12197|/usr/bin/rm|rm -f /tmp/tmp.stwTmt5g1A /tmp/tmp.7YGw3d2aiK
+# EXEC: 12199|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105924-semantic-eval.log
+# EXEC: 12201|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105924-semantic-eval.log
+# EXEC: 12203|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105924-semantic-eval.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 107
+# SHA: 831c790c30a6a9846c00ee81e58588da980f3333e963dfe8a13b91eab0fb4817
+# exit: 0
