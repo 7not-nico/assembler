@@ -148,3 +148,21 @@ Errors found: awk ternary-in-printf needs parens (`printf "%.2f", (f > 0 ? s / f
 
 **Fixture**: `fixture-trace-strace.sh` — mode-aware; standalone `RESULT=pass:4` (PIDS=4, FAILED=117, exit127 labeled, exit2 ls surfaced, scans collapsed), deferred `pass:deferred` (log 213449).
 
+
+## Follow-up: trace-rich depth bug + tracexec docs study (same session)
+
+**Bug fixed — unbounded tree depth in trace-rich.sh**: pid-nesting heuristic pushed every new pid onto the chain stack but never popped → linear sequences rendered as descending chains (dirname depth 3, git 4, find 5…). Fix: precompute per-pid occurrence counts; a new pid is a child of the top only if the top still has future events, else a sibling (same depth); re-exec pops to the ancestor. Also fixed missing `import collections` (surfaced after the first fix).
+
+**Docs study** (Playwright + web fetch of github.com/kxxt/tracexec, v0.17.0):
+
+| Doc | Finding |
+|---|---|
+| README | Modes: log/tui/collect (`json-stream`/`json`/`perfetto`)/ebpf (experimental) |
+| features/log.md | Default shows filename, argv, env diff, PID, comm, syscall result; color-coded (yellow=non-fatal, green=new env/fd); FD diff tracking; output stderr by default (`-o-` stdout) |
+| features/ebpf.md | **eBPF backend does NOT use ptrace(2)** — combines with gdb/other ptrace tools; requires root or CAP_SYS_ADMIN+CAP_BPF; experimental (page faults, kernel bugs) |
+| comparison.md | tracexec: eBPF ✅ + ptrace ✅; strace: ptrace only |
+| support.md | eBPF needs kernel ≥5.17 (x86_64), clang/LLVM ≥20 to build |
+
+**Native flags duplicating tracer python logic** (all present in local 0.17.0): `--show-cwd`, `--decode-errno`, `--diff-env`, `--diff-fd`, `--show-interpreter`, `--show-cmdline`, `--successful-only`, `--timestamp`.
+
+**eBPF nesting test**: `tracexec ebpf log` → `Failed to increase rlimit for memlock` (CapEff=0); `sudo -n` → password required. Kernel 7.1.5-1-cachyos is eBPF-capable (≥5.17) but this session lacks capabilities — eBPF nesting experiment blocked on sudo. Hypothesis: `tracexec ebpf collect` under bitacora-log's ptrace tracexec should work (no ptrace in eBPF path) — needs a privileged run to verify.

@@ -47,6 +47,8 @@ Status: completed
 - trace-stream.sh: no L3 tracexec layer (live-only); pair with bitacora-log for exec genealogy
 - tracexec emits no ppid — pid-nesting heuristic infers depth (first-seen pid = child, re-exec = same level)
 - nested tracexec under bitacora hangs (ptrace EPERM): tracers defer via BITACORA_SELF_TRACED; do NOT clear it inside fixtures
+- docs study (Playwright + web): tracexec native flags duplicate tracer logic — `--show-cwd`, `--decode-errno`, `--diff-env`, `--diff-fd`, `--show-interpreter`; consider replacing python re-parsing
+- eBPF backend: does NOT use ptrace → nests under bitacora (EPERM-free); requires root/CAP_BPF (memlock rlimit error without); kernel 7.1.5 supports it (≥5.17) but CapEff=0 blocks — needs sudo password
 
 ## Logs
 
