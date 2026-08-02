@@ -1,0 +1,24 @@
+# CMD: sh -c echo\ hi\ \|\ grep\ -c\ hi\;\ ls\ \|\ wc\ -l 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T20:03:27-06:00
+# PID: 497857
+# DUR: 163ms
+# exit: 0
+# TRACER: tracexec
+# PROGS:
+# GIT: assembler@087b240
+# BRANCH: main
+# SCOPE: fixtures
+# SESSION: exec-always
+# TASK: demo-exec
+# CLI: sh GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu)
+# ARGS: -c echo\ hi\ \|\ grep\ -c\ hi\;\ ls\ \|\ wc\ -l 
+# CWD: /home/eddyr/assembler
+# --------------------
+1
+9
+# OUT_LINES: 2
+# OUT_BYTES: 4
+# ERR_LINES: 0
+# SHA: e475a38eabfd8d7e32956e2dff5252a1a21d878d0db2e0b980ebebe1cbfacfc3

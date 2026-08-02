@@ -1,0 +1,26 @@
+# CMD: bash .opencode/_scripts/fixtures/fixture-stderr.sh 
+# ARGS: .opencode/_scripts/fixtures/fixture-stderr.sh 
+# CLI: bash 5.3.15(1)-release
+# GIT: assembler@087b240
+# BRANCH: main
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# SESSION: stderr-demo
+# PID: 459876
+# TASK: demo-stderr
+# SCOPE: fixtures
+# OUT: fixtures/fixture-stderr.sh
+# IN: fixture-stderr.sh=fed42890d86dbef11c62b59747b04e9ab94028607bd585a7bafa10bcca4f84d9
+# DATE: 2026-08-01T19:02:31-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+begin work
+still going
+done
+warning: deprecation
+fatal: something broke
+# OUT_LINES: 3
+# OUT_BYTES: 28
+# ERR_LINES: 2
+# DUR: 0s
+# SHA: eec7ae338aa4b2a0a9a48ac2bdb1516cb7754c5576b611dca513e56a4737e4ea
+# exit: 2

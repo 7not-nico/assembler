@@ -1,0 +1,29 @@
+# CMD: .opencode/_scripts/fixtures/fixture-ruby-sim.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T22:00:26-06:00
+# PID: 577971
+# DUR: 273ms
+# exit: 0
+# GIT: assembler@d2d85b4
+# BRANCH: main
+# SESSION: 2f024415
+# TASK: original-baseline
+# CLI: .opencode/_scripts/fixtures/fixture-ruby-sim.sh unknown
+# ARGS: (none)
+# CWD: /home/eddyr/assembler
+# --------------------
+SANDBOX=/home/eddyr/assembler/_sandbox
+RUN_random-sum=290
+RUN_random-sum_EXIT=0
+RUN_random-stats=sum:44;mean:6.29;std:1.58;n:7
+RUN_random-stats_EXIT=0
+RUN_monte-carlo=chi2:58.743;p:0.8292;mean:49.06;trials:500
+RUN_monte-carlo_EXIT=0
+RUNS=3
+FAILS=0
+RESULT=pass:3
+# OUT_LINES: 10
+# OUT_BYTES: 262
+# ERR_LINES: 0
+# SHA: 12571682c3dac3a33f569e6f030600b56469ca9b92eabd5831f1f46b015d1293

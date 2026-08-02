@@ -1,0 +1,157 @@
+# CMD: .opencode/_scripts/fixtures/fixture-trace-native.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T21:54:04-06:00
+# PID: 573888
+# DUR: 2503ms
+# exit: 0
+# GIT: assembler@d87d0f7
+# BRANCH: main
+# SESSION: fed75cbc
+# TASK: trace-native-fixture
+# CLI: .opencode/_scripts/fixtures/fixture-trace-native.sh unknown
+# ARGS: (none)
+# CWD: /home/eddyr/assembler
+# --------------------
+MODE=deferred
+TRACER_RC=0
+EXIT=0
+RESULT=pass:deferred
+# OUT_LINES: 4
+# OUT_BYTES: 54
+# ERR_LINES: 0
+# EXEC: 573888|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh fixture-trace-native-fixed --task trace-native-fixture -- .opencode/_scripts/fixtures/fixture-trace-native.sh
+# EXEC: 573889|/usr/bin/date|date +%s%N
+# EXEC: 573893|/usr/bin/head|head -1
+# EXEC: 573892|/usr/bin/timeout|timeout 2 .opencode/_scripts/fixtures/fixture-trace-native.sh --version
+# EXEC: 573894|/usr/bin/tr|tr -d \n
+# EXEC: 573895|.opencode/_scripts/fixtures/fixture-trace-native.sh|.opencode/_scripts/fixtures/fixture-trace-native.sh --version
+# EXEC: 573895|/usr/bin/bash|bash .opencode/_scripts/fixtures/fixture-trace-native.sh --version
+# EXEC: 573896|/usr/bin/dirname|dirname .opencode/_scripts/fixtures/fixture-trace-native.sh
+# EXEC: 573899|/usr/bin/timeout|timeout 10 /home/eddyr/assembler/_sandbox/trace-native.sh -- /home/eddyr/assembler/_sandbox/buggy-script.sh
+# EXEC: 573900|/home/eddyr/assembler/_sandbox/trace-native.sh|/home/eddyr/assembler/_sandbox/trace-native.sh -- /home/eddyr/assembler/_sandbox/buggy-script.sh
+# EXEC: 573900|/usr/bin/bash|bash /home/eddyr/assembler/_sandbox/trace-native.sh -- /home/eddyr/assembler/_sandbox/buggy-script.sh
+# EXEC: 573901|/usr/bin/date|date -Is
+# EXEC: 573902|/home/eddyr/assembler/_sandbox/buggy-script.sh|/home/eddyr/assembler/_sandbox/buggy-script.sh
+# EXEC: 573902|/usr/bin/bash|bash /home/eddyr/assembler/_sandbox/buggy-script.sh
+# EXEC: 573903|/usr/bin/sleep|sleep 1
+# EXEC: 573912|/usr/bin/ls|ls /nonexistent-dir
+# EXEC: 573915|/usr/bin/sed|sed -n s/^EXIT=//p
+# EXEC: 573918|/usr/bin/rg|rg -c NOTE: nested
+# EXEC: 573919|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 573922|/usr/bin/git|git remote get-url origin
+# EXEC: 573920|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 573923|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 573925|/usr/bin/git|git branch --show-current
+# EXEC: 573927|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 573928|/usr/bin/head|head -1
+# EXEC: 573929|/usr/bin/tr|tr -d \n
+# EXEC: 573930|/usr/bin/bun|bun --version
+# EXEC: 573932|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 573933|/usr/bin/head|head -1
+# EXEC: 573934|/usr/bin/tr|tr -d \n
+# EXEC: 573935|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 573937|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 573938|/usr/bin/head|head -1
+# EXEC: 573939|/usr/bin/tr|tr -d \n
+# EXEC: 573940|/usr/bin/python3|python3 --version
+# EXEC: 573942|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 573943|/usr/bin/head|head -1
+# EXEC: 573944|/usr/bin/tr|tr -d \n
+# EXEC: 573945|/usr/bin/ruby|ruby --version
+# EXEC: 573948|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 573949|/usr/bin/head|head -1
+# EXEC: 573950|/usr/bin/tr|tr -d \n
+# EXEC: 573951|/usr/bin/rustc|rustc --version
+# EXEC: 573954|/usr/bin/timeout|timeout 2 go version
+# EXEC: 573955|/usr/bin/head|head -1
+# EXEC: 573956|/usr/bin/tr|tr -d \n
+# EXEC: 573957|/usr/bin/go|go version
+# EXEC: 573963|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 573964|/usr/bin/head|head -1
+# EXEC: 573965|/usr/bin/tr|tr -d \n
+# EXEC: 573966|/usr/bin/git|git --version
+# EXEC: 573968|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 573969|/usr/bin/head|head -1
+# EXEC: 573970|/usr/bin/tr|tr -d \n
+# EXEC: 573971|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 573973|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 573974|/usr/bin/head|head -1
+# EXEC: 573975|/usr/bin/tr|tr -d \n
+# EXEC: 573976|/usr/bin/date|date --version
+# EXEC: 573978|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 573979|/usr/bin/head|head -1
+# EXEC: 573980|/usr/bin/tr|tr -d \n
+# EXEC: 573981|/usr/bin/wc|wc --version
+# EXEC: 573983|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 573984|/usr/bin/head|head -1
+# EXEC: 573985|/usr/bin/tr|tr -d \n
+# EXEC: 573986|/usr/bin/cat|cat --version
+# EXEC: 573988|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 573989|/usr/bin/head|head -1
+# EXEC: 573990|/usr/bin/tr|tr -d \n
+# EXEC: 573991|/usr/bin/tee|tee --version
+# EXEC: 573993|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 573994|/usr/bin/head|head -1
+# EXEC: 573995|/usr/bin/tr|tr -d \n
+# EXEC: 573996|/usr/bin/mktemp|mktemp --version
+# EXEC: 573998|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 573999|/usr/bin/head|head -1
+# EXEC: 574000|/usr/bin/tr|tr -d \n
+# EXEC: 574001|/usr/bin/rm|rm --version
+# EXEC: 574003|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 574004|/usr/bin/head|head -1
+# EXEC: 574005|/usr/bin/tr|tr -d \n
+# EXEC: 574006|/usr/bin/timeout|timeout --version
+# EXEC: 574008|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 574009|/usr/bin/head|head -1
+# EXEC: 574010|/usr/bin/tr|tr -d \n
+# EXEC: 574011|/usr/bin/tr|tr --version
+# EXEC: 574014|/usr/bin/head|head -1
+# EXEC: 574013|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 574015|/usr/bin/tr|tr -d \n
+# EXEC: 574016|/usr/bin/head|head --version
+# EXEC: 574018|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 574019|/usr/bin/head|head -1
+# EXEC: 574020|/usr/bin/tr|tr -d \n
+# EXEC: 574021|/usr/bin/cut|cut --version
+# EXEC: 574023|/usr/bin/date|date +%s%N
+# EXEC: 574024|/usr/bin/sha256sum|sha256sum
+# EXEC: 574025|/usr/bin/cut|cut -c1-8
+# EXEC: 574027|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-215403-fixture-trace-native-fixed.log
+# EXEC: 574028|/usr/bin/date|date -Is
+# EXEC: 574029|/usr/bin/mktemp|mktemp
+# EXEC: 574030|/usr/bin/mktemp|mktemp
+# EXEC: 574031|.opencode/_scripts/fixtures/fixture-trace-native.sh|.opencode/_scripts/fixtures/fixture-trace-native.sh
+# EXEC: 574031|/usr/bin/bash|bash .opencode/_scripts/fixtures/fixture-trace-native.sh
+# EXEC: 574032|/usr/bin/dirname|dirname .opencode/_scripts/fixtures/fixture-trace-native.sh
+# EXEC: 574035|/usr/bin/timeout|timeout 10 /home/eddyr/assembler/_sandbox/trace-native.sh -- /home/eddyr/assembler/_sandbox/buggy-script.sh
+# EXEC: 574036|/home/eddyr/assembler/_sandbox/trace-native.sh|/home/eddyr/assembler/_sandbox/trace-native.sh -- /home/eddyr/assembler/_sandbox/buggy-script.sh
+# EXEC: 574036|/usr/bin/bash|bash /home/eddyr/assembler/_sandbox/trace-native.sh -- /home/eddyr/assembler/_sandbox/buggy-script.sh
+# EXEC: 574037|/usr/bin/date|date -Is
+# EXEC: 574038|/home/eddyr/assembler/_sandbox/buggy-script.sh|/home/eddyr/assembler/_sandbox/buggy-script.sh
+# EXEC: 574038|/usr/bin/bash|bash /home/eddyr/assembler/_sandbox/buggy-script.sh
+# EXEC: 574039|/usr/bin/sleep|sleep 1
+# EXEC: 574044|/usr/bin/ls|ls /nonexistent-dir
+# EXEC: 574047|/usr/bin/sed|sed -n s/^EXIT=//p
+# EXEC: 574050|/usr/bin/rg|rg -c NOTE: nested
+# EXEC: 574052|/usr/bin/wc|wc -l
+# EXEC: 574053|/usr/bin/tr|tr -d  
+# EXEC: 574056|/usr/bin/tr|tr -d  
+# EXEC: 574055|/usr/bin/wc|wc -c
+# EXEC: 574058|/usr/bin/wc|wc -l
+# EXEC: 574059|/usr/bin/tr|tr -d  
+# EXEC: 574060|/usr/bin/date|date +%s%N
+# EXEC: 574062|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-215403-fixture-trace-native-fixed.log
+# EXEC: 574064|/usr/bin/cat|cat /tmp/tmp.Xd6PLtQF5B
+# EXEC: 574065|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-215403-fixture-trace-native-fixed.log
+# EXEC: 574066|/usr/bin/cat|cat /tmp/tmp.RYbAklt0ep
+# EXEC: 574067|/usr/bin/cat|cat /tmp/tmp.RYbAklt0ep
+# EXEC: 574068|/usr/bin/rm|rm -f /tmp/tmp.Xd6PLtQF5B /tmp/tmp.RYbAklt0ep
+# EXEC: 574070|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-215403-fixture-trace-native-fixed.log
+# EXEC: 574072|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-215403-fixture-trace-native-fixed.log
+# EXEC: 574074|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-215403-fixture-trace-native-fixed.log
+# PROGS: node=v25.2.1 buggy-script.sh=(no --version) trace-native.sh==== trace-native: 2026-08-01T21:54:07-06:00 === basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 ls=ls (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rg=ripgrep 15.2.0 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sed=/usr/bin/sed (GNU sed) 4.10 sha256sum=sha256sum (GNU coreutils) 9.11 sleep=sleep (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 131
+# SHA: f17e825f9897766908818d32ddf8918c2f188144fc9aabc849b53fee30dcd8e2
+# exit: 0

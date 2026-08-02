@@ -1,0 +1,131 @@
+# CMD: ruby -e puts\ \"RUBY_VERSION=#\{RUBY_VERSION\}\"\;\ puts\ \"RUBY_PLATFORM=#\{RUBY_PLATFORM\}\"\;\ puts\ \"RUBY_ENGINE=#\{RUBY_ENGINE\}\" 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T20:50:09-06:00
+# PID: 523646
+# DUR: 456ms
+# exit: 0
+# GIT: assembler@087b240
+# BRANCH: main
+# SCOPE: fixtures
+# SESSION: ruby-run
+# TASK: run-ruby
+# CLI: ruby ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux]
+# ARGS: -e puts\ \"RUBY_VERSION=#\{RUBY_VERSION\}\"\;\ puts\ \"RUBY_PLATFORM=#\{RUBY_PLATFORM\}\"\;\ puts\ \"RUBY_ENGINE=#\{RUBY_ENGINE\}\" 
+# OUT: ruby -e eval
+# CWD: /home/eddyr/assembler
+# --------------------
+RUBY_VERSION=3.4.10
+RUBY_PLATFORM=x86_64-linux
+RUBY_ENGINE=ruby
+# OUT_LINES: 3
+# OUT_BYTES: 64
+# ERR_LINES: 0
+# EXEC: 523646|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh ruby-interp --task run-ruby --scope fixtures --out ruby -e eval -- ruby -e puts "RUBY_VERSION=#{RUBY_VERSION}"; puts "RUBY_PLATFORM=#{RUBY_PLATFORM}"; puts "RUBY_ENGINE=#{RUBY_ENGINE}"
+# EXEC: 523647|/usr/bin/date|date +%s%N
+# EXEC: 523651|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 523652|/usr/bin/head|head -1
+# EXEC: 523653|/usr/bin/tr|tr -d \n
+# EXEC: 523654|/usr/bin/ruby|ruby --version
+# EXEC: 523656|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 523659|/usr/bin/git|git remote get-url origin
+# EXEC: 523657|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 523660|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 523662|/usr/bin/git|git branch --show-current
+# EXEC: 523664|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 523665|/usr/bin/head|head -1
+# EXEC: 523666|/usr/bin/tr|tr -d \n
+# EXEC: 523667|/usr/bin/bun|bun --version
+# EXEC: 523669|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 523670|/usr/bin/head|head -1
+# EXEC: 523671|/usr/bin/tr|tr -d \n
+# EXEC: 523672|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 523674|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 523675|/usr/bin/head|head -1
+# EXEC: 523676|/usr/bin/tr|tr -d \n
+# EXEC: 523677|/usr/bin/python3|python3 --version
+# EXEC: 523679|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 523680|/usr/bin/head|head -1
+# EXEC: 523681|/usr/bin/tr|tr -d \n
+# EXEC: 523682|/usr/bin/ruby|ruby --version
+# EXEC: 523685|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 523686|/usr/bin/head|head -1
+# EXEC: 523687|/usr/bin/tr|tr -d \n
+# EXEC: 523688|/usr/bin/rustc|rustc --version
+# EXEC: 523691|/usr/bin/timeout|timeout 2 go version
+# EXEC: 523692|/usr/bin/head|head -1
+# EXEC: 523693|/usr/bin/tr|tr -d \n
+# EXEC: 523694|/usr/bin/go|go version
+# EXEC: 523700|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 523701|/usr/bin/head|head -1
+# EXEC: 523702|/usr/bin/tr|tr -d \n
+# EXEC: 523703|/usr/bin/git|git --version
+# EXEC: 523705|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 523706|/usr/bin/head|head -1
+# EXEC: 523707|/usr/bin/tr|tr -d \n
+# EXEC: 523708|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 523710|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 523711|/usr/bin/head|head -1
+# EXEC: 523712|/usr/bin/tr|tr -d \n
+# EXEC: 523713|/usr/bin/date|date --version
+# EXEC: 523715|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 523716|/usr/bin/head|head -1
+# EXEC: 523717|/usr/bin/tr|tr -d \n
+# EXEC: 523718|/usr/bin/wc|wc --version
+# EXEC: 523720|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 523721|/usr/bin/head|head -1
+# EXEC: 523722|/usr/bin/tr|tr -d \n
+# EXEC: 523723|/usr/bin/cat|cat --version
+# EXEC: 523725|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 523726|/usr/bin/head|head -1
+# EXEC: 523727|/usr/bin/tr|tr -d \n
+# EXEC: 523728|/usr/bin/tee|tee --version
+# EXEC: 523730|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 523731|/usr/bin/head|head -1
+# EXEC: 523732|/usr/bin/tr|tr -d \n
+# EXEC: 523733|/usr/bin/mktemp|mktemp --version
+# EXEC: 523735|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 523736|/usr/bin/head|head -1
+# EXEC: 523737|/usr/bin/tr|tr -d \n
+# EXEC: 523738|/usr/bin/rm|rm --version
+# EXEC: 523740|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 523741|/usr/bin/head|head -1
+# EXEC: 523742|/usr/bin/tr|tr -d \n
+# EXEC: 523743|/usr/bin/timeout|timeout --version
+# EXEC: 523746|/usr/bin/head|head -1
+# EXEC: 523745|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 523747|/usr/bin/tr|tr -d \n
+# EXEC: 523748|/usr/bin/tr|tr --version
+# EXEC: 523750|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 523751|/usr/bin/head|head -1
+# EXEC: 523752|/usr/bin/tr|tr -d \n
+# EXEC: 523753|/usr/bin/head|head --version
+# EXEC: 523755|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 523756|/usr/bin/head|head -1
+# EXEC: 523757|/usr/bin/tr|tr -d \n
+# EXEC: 523758|/usr/bin/cut|cut --version
+# EXEC: 523760|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205009-ruby-interp.log
+# EXEC: 523761|/usr/bin/date|date -Is
+# EXEC: 523762|/usr/bin/mktemp|mktemp
+# EXEC: 523763|/usr/bin/mktemp|mktemp
+# EXEC: 523764|/usr/bin/ruby|ruby -e puts "RUBY_VERSION=#{RUBY_VERSION}"; puts "RUBY_PLATFORM=#{RUBY_PLATFORM}"; puts "RUBY_ENGINE=#{RUBY_ENGINE}"
+# EXEC: 523767|/usr/bin/wc|wc -l
+# EXEC: 523768|/usr/bin/tr|tr -d  
+# EXEC: 523770|/usr/bin/wc|wc -c
+# EXEC: 523771|/usr/bin/tr|tr -d  
+# EXEC: 523773|/usr/bin/wc|wc -l
+# EXEC: 523774|/usr/bin/tr|tr -d  
+# EXEC: 523775|/usr/bin/date|date +%s%N
+# EXEC: 523777|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205009-ruby-interp.log
+# EXEC: 523779|/usr/bin/cat|cat /tmp/tmp.gmPpnpCaGu
+# EXEC: 523780|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205009-ruby-interp.log
+# EXEC: 523781|/usr/bin/cat|cat /tmp/tmp.zImNL5PMH9
+# EXEC: 523782|/usr/bin/cat|cat /tmp/tmp.zImNL5PMH9
+# EXEC: 523783|/usr/bin/rm|rm -f /tmp/tmp.gmPpnpCaGu /tmp/tmp.zImNL5PMH9
+# EXEC: 523785|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205009-ruby-interp.log
+# EXEC: 523787|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205009-ruby-interp.log
+# EXEC: 523789|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205009-ruby-interp.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=(no --version) head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 104
+# SHA: fd14990f4a72b109f7316db770cfcc54fbd15523b08b2fd76a34033603d65064
+# exit: 0

@@ -1,0 +1,26 @@
+# CMD: bash .opencode/_scripts/fixtures/fixture-keyed.sh env-before-date-run 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# DATE: 2026-08-01T19:13:22-06:00
+# PID: 466935
+# GIT: assembler@087b240
+# BRANCH: main
+# SESSION: env-before-date
+# TASK: demo-keyed
+# SCOPE: fixtures
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_scripts/fixtures/fixture-keyed.sh env-before-date-run 
+# IN: fixture-keyed.sh=5e3e63ce9e0b6d05d4011ec76736c850a08810c6a035e773b2173677dfcbec34
+# CWD: /home/eddyr/assembler
+# --------------------
+item 1
+item 2
+item 3
+item 4
+item 5
+RESULT=env-before-date-run:5
+# OUT_LINES: 6
+# OUT_BYTES: 64
+# ERR_LINES: 0
+# DUR: 0s
+# SHA: 47fce92550b141dd0264daff2298aa4d13a54a5100c958d78cb65bffd3ad841d
+# exit: 0

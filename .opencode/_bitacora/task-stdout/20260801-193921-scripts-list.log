@@ -1,0 +1,50 @@
+# CMD: bash .opencode/_scripts/fixtures/fixture-scripts-list.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# DATE: 2026-08-01T19:39:21-06:00
+# PID: 483474
+# DUR: 60ms
+# exit: 0
+# GIT: assembler@087b240
+# BRANCH: main
+# SCOPE: _scripts
+# SESSION: scripts-v2
+# TASK: run-scripts-v2
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_scripts/fixtures/fixture-scripts-list.sh 
+# OUT: go-cli list
+# IN: assembler-cli=327f262a82ae9d5863c40573765500ccd7c52a4d1efd26a4dd1d3aff364cbc34
+# CWD: /home/eddyr/assembler
+# --------------------
+28 entities of type 'terms':
+  TERM.AMANDA.SYSTEMS — AMANDA Systems
+  TERM.AUDIT.ABSTRACTIONS — Audit Abstractions
+  TERM.AUDIT.COMMANDS — Audit Commands
+  TERM.AUDIT.PATTERNS — Audit Patterns
+  TERM.AUDIT.RULES — Audit Rules
+  TERM.AUDIT.SKILLS — Audit Skills
+  TERM.AUDIT.TERMS — Audit Terms
+  TERM.AUDIT.TOOLS — Audit Tools
+  TERM.BERT — BERT
+  TERM.GENERATED.TOOL — Generated Tool
+  TERM.GPT — GPT
+  TERM.OPENCODE.COMMANDS — OpenCode Commands
+  TERM.OPENCODE.CUSTOM.TOOLS — OpenCode Custom Tools
+  TERM.SKILL.NAMING.CONVENTION — Skill Naming Convention
+  TERM.WEEK — Week
+  TERM.CRYPTO.INTERACTIVEPROOF — Interactive Proof System — Prover–Verifier Protocol
+  TERM.CRYPTO.ZEROKNOWLEDGEPROOF — Zero-Knowledge Proof — Prove Without Revealing
+  TERM.LIB.MODULE — Lib Module
+  TERM.LUDOTECA — Ludoteca
+  TERM.OPENCODE.PLUGIN — OpenCode Plugin
+  TERM.PLANE.INIT — Init Plane — Project Classification
+  TERM.PLANE.STATE — State Plane — Project Classification
+  TERM.PLANE.STRUCTURE — Structure Plane — Project Classification
+  TERM.PLANE.TECH — Tech Plane — Project Classification
+  TERM.PLANE.VOCATION — Vocation Plane — Project Classification
+  TERM.PLAYWRIGHT — Playwright
+  TERM.PURITY.PROTOCOL — Purity Protocol
+  TERM.SKILL.STATECLASS — Skill State Classification
+# OUT_LINES: 29
+# OUT_BYTES: 1339
+# ERR_LINES: 0
+# SHA: 2405c7b7e6120cca8d79af69be1ebaba7afa1ad2c0d387925ff8f6128bc5c4a9

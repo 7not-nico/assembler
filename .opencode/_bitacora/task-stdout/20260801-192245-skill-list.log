@@ -1,0 +1,89 @@
+# CMD: bash .opencode/_scripts/fixtures/skill-list.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# DATE: 2026-08-01T19:22:45-06:00
+# PID: 471936
+# GIT: assembler@087b240
+# BRANCH: main
+# SCOPE: fixtures
+# SESSION: ten-fixtures
+# TASK: run-10
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_scripts/fixtures/skill-list.sh 
+# IN: skill-list.sh=789f68116a7242f4044449a2abe2926c8e9afe6ae0df4901ea7d085bf8516609
+# CWD: /home/eddyr/assembler
+# --------------------
+acquire-acm
+acquire-assets
+acquire-papers
+audit-abstraction
+audit-apologia
+audit-command
+audit-crossref
+audit-investigation
+audit-maxim
+audit-nexus
+audit-pattern
+audit-protocol
+audit-rule
+audit-skill
+audit-term
+audit-tool
+bootstrap-db
+classify-tool
+compose-web
+declare-grounded-entity
+guide-architecture
+guide-reasoning
+guide-web
+judge-semantic
+knowledge-ruby
+manage-bash-flows
+orchestrate-research
+propose-command
+propose-investigation
+propose-mcp
+propose-pattern
+propose-protocol
+propose-rule
+propose-term
+propose-tool
+prune-stale
+read-maxims-protocols
+reason-invariants
+reason-quantitative
+reason-verbal
+refactor-skill
+report-outcomes
+scaffold-tools
+search-geo
+search-maxims
+search-nexus
+search-papers
+search-patterns
+search-protocols
+stage-create
+structure-stdout
+study-foundations
+survey-scripts
+use-context-seven
+use-entity-audit
+use-exa
+use-parallel-search
+use-patlib
+use-playwright-ai-mode
+use-playwright-core
+use-playwright-debug
+use-playwright-network-storage
+use-playwright-vision
+use-spec-audit
+validate-spec
+vet-proposal
+find-skills
+omarchy
+SKILL_COUNT=68
+# OUT_LINES: 69
+# OUT_BYTES: 1069
+# ERR_LINES: 0
+# DUR: 59ms
+# SHA: ae7b5cefeeb31d143a55251f2e1963e028e7158b261e3f6a0ea3e45df820ba97
+# exit: 0

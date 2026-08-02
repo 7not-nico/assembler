@@ -36,11 +36,11 @@ Confirmed waves already applied system-wide (26 + 9 + 6 identity maps + 7 NEX ma
 |----------|-------|---------|
 | PROT.LLM.SPECIFICATION | 22 | create protocol or map to PROT.META.IDENTITY |
 | PROT.LIB.DIRECTORY.LAYER | 13 | create or map to PROT.LIB.CONTRACT |
-| PROT.TOOL.MORPHISM | 11 | create or map to PROT.TOOL.COMPOSITE |
+| PROT.TOOL.COMPOSITE | 11 | create or map to PROT.TOOL.COMPOSITE |
 | PROT.LIB.PURITY.BOUNDARY | 11 | create or map to PROT.LIB.ENFORCEMENT |
 | PROT.LIB.BOUNDARY | 10 | create or map to PROT.LIB.CONTRACT |
 | PROT.SEARCH.VECTOR.INDEX | 10 | create or map to PROT.SEARCH.QUERY |
-| PROT.META.ENTITY.ROUTING | 7 | map to SPEC.ENTITY.ROUTING.TABLE |
+| SPEC.ENTITY.ROUTING.TABLE | 7 | map to SPEC.ENTITY.ROUTING.TABLE |
 | PROT.LIB.MUTATION.STRATEGY | 7 | create or defer |
 
 Trailing-dot false positives in sweep (fix regex): `PROT.META.IDENTITY.` (11), `PROT.SEARCH.VECTOR.INDEX.` (7).

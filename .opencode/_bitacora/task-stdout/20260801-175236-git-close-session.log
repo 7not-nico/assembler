@@ -2,3 +2,14 @@
 # DATE: 2026-08-01T17:52:36-06:00
 # CWD: /home/eddyr/assembler
 # --------------------
+[main 778a40e] Task report: git repo initialization; session stdout logs
+ 6 files changed, 90 insertions(+)
+To https://github.com/7not-nico/assembler.git
+   9e30662..778a40e  main -> main
+=== final ===
+2
+untracked entries
+778a40e Task report: git repo initialization; session stdout logs
+9e30662 Track Go ANN worker sources in _templates substrate
+e382222 Ignore aggregator root children — close untracked leak, roots keep placeholders
+# exit: 0

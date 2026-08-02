@@ -1,0 +1,16 @@
+# CMD: echo standalone-run 
+# ARGS: standalone-run 
+# CLI: echo echo (GNU coreutils) 9.11
+# GIT: assembler@087b240
+# BRANCH: main
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=?
+# HOST: elite
+# USER: eddyr
+# SESSION: 6afc94ad
+# DATE: 2026-08-01T18:51:28-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+standalone-run
+# DUR: 0s
+# SHA: e967e8bece995497eae7386cf0f0d8a79ac96dac58ecc61759d1e1f8456a4f70
+# exit: 0

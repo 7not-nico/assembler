@@ -1,0 +1,31 @@
+# CMD: bash .opencode/_scripts/fixtures/fixture-scripts-protocol.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# DATE: 2026-08-01T19:40:15-06:00
+# PID: 484580
+# DUR: 173ms
+# exit: 0
+# GIT: assembler@087b240
+# BRANCH: main
+# SCOPE: _scripts
+# SESSION: scripts-v2
+# TASK: run-scripts-v2
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_scripts/fixtures/fixture-scripts-protocol.sh 
+# OUT: protocol audit via launcher
+# IN: r1-protocol-audit.rb=bce8d0e0f176aa2046574b7c696fa8474b82416dd92fae9f2e2392c9bbb98626
+# CWD: /home/eddyr/assembler
+# --------------------
+== audit: protocols (47 entities) ==
+-- id-match --
+ok — 0 faults
+-- ring-match --
+ok — 0 faults
+-- source --
+ok — 0 faults
+-- precedes --
+ok — 0 faults
+audit ok — 47 entities of type 'protocols', 0 faults
+# OUT_LINES: 10
+# OUT_BYTES: 216
+# ERR_LINES: 0
+# SHA: f690b120117f46b8539e42c6f7ae752f3e0f699e7e0ef02850460a3879437783

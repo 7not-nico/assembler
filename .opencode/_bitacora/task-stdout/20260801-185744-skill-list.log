@@ -1,0 +1,92 @@
+# CMD: bash .opencode/_scripts/fixtures/skill-list.sh 
+# ARGS: .opencode/_scripts/fixtures/skill-list.sh 
+# CLI: bash 5.3.15(1)-release
+# GIT: assembler@087b240
+# BRANCH: main
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# HOST: elite
+# USER: eddyr
+# SESSION: sess-20260801
+# PID: 456354
+# TASK: list-skills
+# SCOPE: skills
+# DATE: 2026-08-01T18:57:44-06:00
+# CWD: /home/eddyr/assembler
+# OUT: fixtures/skill-list.sh
+# IN: skill-list.sh=missing AGENTS.md=ef049250438a7326a29fd7d8b71e4f645fa1bdea677722482f3b8a3f222a9a67
+# --------------------
+acquire-acm
+acquire-assets
+acquire-papers
+audit-abstraction
+audit-apologia
+audit-command
+audit-crossref
+audit-investigation
+audit-maxim
+audit-nexus
+audit-pattern
+audit-protocol
+audit-rule
+audit-skill
+audit-term
+audit-tool
+bootstrap-db
+classify-tool
+compose-web
+declare-grounded-entity
+guide-architecture
+guide-reasoning
+guide-web
+judge-semantic
+knowledge-ruby
+manage-bash-flows
+orchestrate-research
+propose-command
+propose-investigation
+propose-mcp
+propose-pattern
+propose-protocol
+propose-rule
+propose-term
+propose-tool
+prune-stale
+read-maxims-protocols
+reason-invariants
+reason-quantitative
+reason-verbal
+refactor-skill
+report-outcomes
+scaffold-tools
+search-geo
+search-maxims
+search-nexus
+search-papers
+search-patterns
+search-protocols
+stage-create
+structure-stdout
+study-foundations
+survey-scripts
+use-context-seven
+use-entity-audit
+use-exa
+use-parallel-search
+use-patlib
+use-playwright-ai-mode
+use-playwright-core
+use-playwright-debug
+use-playwright-network-storage
+use-playwright-vision
+use-spec-audit
+validate-spec
+vet-proposal
+find-skills
+omarchy
+SKILL_COUNT=68
+# OUT_LINES: 69
+# OUT_BYTES: 1069
+# ERR_LINES: 0
+# DUR: 0s
+# SHA: 2c3759542f56fcd9d034e4ac4a246ea5ee247713709f75ae94dcd805daaaf719
+# exit: 0

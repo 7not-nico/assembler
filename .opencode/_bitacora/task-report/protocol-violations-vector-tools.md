@@ -13,7 +13,7 @@ Which protocols were violated by the disabled tools and what rules were broken.
 | 9 | crashOnError() in execute() | All 4 shebang CLIs | ❌ Absent — no error reporting to LLM |
 | Gotcha | No shebang line | All 4 | ❌ Shebang on line 1 |
 
-## PROT.TOOL.MORPHISM — Tool Import Architecture
+## PROT.TOOL.COMPOSITE — Tool Import Architecture
 
 | Rule | Description | Violated by | Status |
 |------|-------------|-------------|--------|
@@ -56,7 +56,7 @@ Which protocols were violated by the disabled tools and what rules were broken.
 | Protocol | Rules violated | Severity |
 |----------|---------------|----------|
 | PROT.TOOL.DEFINITION | 5 violations | HIGH — format prevents startup |
-| PROT.TOOL.MORPHISM | 2 violations | HIGH — cross-tool imports (fixed) |
+| PROT.TOOL.COMPOSITE | 2 violations | HIGH — cross-tool imports (fixed) |
 | PROT.TOOL.AUTOMATON | 2 violations | MEDIUM — annotation position |
 | REF.LIB.DIRECTORY.LAYER | 2 violations | HIGH — import direction (fixed) |
 | MAX.CODE.LAYERS | 2 to verify | LOW — annotation completeness |

@@ -1,0 +1,397 @@
+# CMD: .opencode/_scripts/fixtures/fixture-original-wrapper.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T22:01:45-06:00
+# PID: 579293
+# DUR: 1357ms
+# exit: 0
+# GIT: assembler@d2d85b4
+# BRANCH: main
+# SESSION: be026f87
+# TASK: original-fixture
+# CLI: .opencode/_scripts/fixtures/fixture-original-wrapper.sh WRAPPER_RC=0
+# ARGS: (none)
+# CWD: /home/eddyr/assembler
+# --------------------
+WRAPPER_RC=0
+LOG_WRITTEN=yes
+META_KEYS=13
+TAIL_KEYS=4
+TRACE_LINES=0
+TASK_KEY=1
+STDOUT_REPLAYED=1
+STDERR_REPLAYED=1
+SHA_VALID=1
+RESULT=pass:13
+# OUT_LINES: 10
+# OUT_BYTES: 142
+# ERR_LINES: 0
+# EXEC: 579293|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh fixture-original-wrapper --task original-fixture -- .opencode/_scripts/fixtures/fixture-original-wrapper.sh
+# EXEC: 579294|/usr/bin/date|date +%s%N
+# EXEC: 579297|/usr/bin/timeout|timeout 2 .opencode/_scripts/fixtures/fixture-original-wrapper.sh --version
+# EXEC: 579298|/usr/bin/head|head -1
+# EXEC: 579299|/usr/bin/tr|tr -d \n
+# EXEC: 579300|.opencode/_scripts/fixtures/fixture-original-wrapper.sh|.opencode/_scripts/fixtures/fixture-original-wrapper.sh --version
+# EXEC: 579300|/usr/bin/bash|bash .opencode/_scripts/fixtures/fixture-original-wrapper.sh --version
+# EXEC: 579301|/usr/bin/dirname|dirname .opencode/_scripts/fixtures/fixture-original-wrapper.sh
+# EXEC: 579304|/usr/bin/ls|ls /home/eddyr/assembler/.opencode/_bitacora/task-stdout
+# EXEC: 579305|/usr/bin/wc|wc -l
+# EXEC: 579307|/usr/bin/timeout|timeout 15 /home/eddyr/assembler/.opencode/_bitacora/bitacora-log.original.sh fixture-original-wrapper-579300 --task original-fixture -- sh -c echo hello; echo errline >&2
+# EXEC: 579308|/home/eddyr/assembler/.opencode/_bitacora/bitacora-log.original.sh|/home/eddyr/assembler/.opencode/_bitacora/bitacora-log.original.sh fixture-original-wrapper-579300 --task original-fixture -- sh -c echo hello; echo errline >&2
+# EXEC: 579308|/usr/bin/bash|bash /home/eddyr/assembler/.opencode/_bitacora/bitacora-log.original.sh fixture-original-wrapper-579300 --task original-fixture -- sh -c echo hello; echo errline >&2
+# EXEC: 579310|/usr/bin/dirname|dirname /home/eddyr/assembler/.opencode/_bitacora/bitacora-log.original.sh
+# EXEC: 579311|/usr/bin/mkdir|mkdir -p /home/eddyr/assembler/.opencode/_bitacora/task-stdout
+# EXEC: 579312|/usr/bin/date|date +%Y%m%d-%H%M%S
+# EXEC: 579313|/usr/bin/date|date +%s%N
+# EXEC: 579318|/usr/bin/head|head -1
+# EXEC: 579317|/usr/bin/timeout|timeout 2 sh --version
+# EXEC: 579319|/usr/bin/tr|tr -d \n
+# EXEC: 579320|/usr/bin/sh|sh --version
+# EXEC: 579321|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 579324|/usr/bin/git|git remote get-url origin
+# EXEC: 579322|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 579325|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 579327|/usr/bin/git|git branch --show-current
+# EXEC: 579329|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 579330|/usr/bin/head|head -1
+# EXEC: 579331|/usr/bin/tr|tr -d \n
+# EXEC: 579332|/usr/bin/bun|bun --version
+# EXEC: 579334|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 579335|/usr/bin/head|head -1
+# EXEC: 579336|/usr/bin/tr|tr -d \n
+# EXEC: 579337|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 579339|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 579340|/usr/bin/head|head -1
+# EXEC: 579341|/usr/bin/tr|tr -d \n
+# EXEC: 579342|/usr/bin/python3|python3 --version
+# EXEC: 579344|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 579345|/usr/bin/head|head -1
+# EXEC: 579346|/usr/bin/tr|tr -d \n
+# EXEC: 579347|/usr/bin/ruby|ruby --version
+# EXEC: 579350|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 579351|/usr/bin/head|head -1
+# EXEC: 579352|/usr/bin/tr|tr -d \n
+# EXEC: 579353|/usr/bin/rustc|rustc --version
+# EXEC: 579356|/usr/bin/timeout|timeout 2 go version
+# EXEC: 579357|/usr/bin/head|head -1
+# EXEC: 579358|/usr/bin/tr|tr -d \n
+# EXEC: 579359|/usr/bin/go|go version
+# EXEC: 579365|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 579366|/usr/bin/head|head -1
+# EXEC: 579367|/usr/bin/tr|tr -d \n
+# EXEC: 579368|/usr/bin/git|git --version
+# EXEC: 579370|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 579371|/usr/bin/head|head -1
+# EXEC: 579372|/usr/bin/tr|tr -d \n
+# EXEC: 579373|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 579375|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 579376|/usr/bin/head|head -1
+# EXEC: 579377|/usr/bin/tr|tr -d \n
+# EXEC: 579378|/usr/bin/date|date --version
+# EXEC: 579380|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 579381|/usr/bin/head|head -1
+# EXEC: 579382|/usr/bin/tr|tr -d \n
+# EXEC: 579383|/usr/bin/wc|wc --version
+# EXEC: 579385|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 579386|/usr/bin/head|head -1
+# EXEC: 579387|/usr/bin/tr|tr -d \n
+# EXEC: 579388|/usr/bin/cat|cat --version
+# EXEC: 579391|/usr/bin/head|head -1
+# EXEC: 579390|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 579392|/usr/bin/tr|tr -d \n
+# EXEC: 579393|/usr/bin/tee|tee --version
+# EXEC: 579395|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 579396|/usr/bin/head|head -1
+# EXEC: 579397|/usr/bin/tr|tr -d \n
+# EXEC: 579398|/usr/bin/mktemp|mktemp --version
+# EXEC: 579400|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 579401|/usr/bin/head|head -1
+# EXEC: 579402|/usr/bin/tr|tr -d \n
+# EXEC: 579403|/usr/bin/rm|rm --version
+# EXEC: 579405|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 579406|/usr/bin/head|head -1
+# EXEC: 579407|/usr/bin/tr|tr -d \n
+# EXEC: 579408|/usr/bin/timeout|timeout --version
+# EXEC: 579410|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 579411|/usr/bin/head|head -1
+# EXEC: 579412|/usr/bin/tr|tr -d \n
+# EXEC: 579413|/usr/bin/tr|tr --version
+# EXEC: 579415|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 579416|/usr/bin/head|head -1
+# EXEC: 579417|/usr/bin/tr|tr -d \n
+# EXEC: 579418|/usr/bin/head|head --version
+# EXEC: 579420|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 579421|/usr/bin/head|head -1
+# EXEC: 579422|/usr/bin/tr|tr -d \n
+# EXEC: 579423|/usr/bin/cut|cut --version
+# EXEC: 579425|/usr/bin/date|date +%s%N
+# EXEC: 579426|/usr/bin/sha256sum|sha256sum
+# EXEC: 579427|/usr/bin/cut|cut -c1-8
+# EXEC: 579429|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 579430|/usr/bin/date|date -Is
+# EXEC: 579431|/usr/bin/mktemp|mktemp
+# EXEC: 579432|/usr/bin/mktemp|mktemp
+# EXEC: 579433|/usr/bin/sh|sh -c echo hello; echo errline >&2
+# EXEC: 579435|/usr/bin/wc|wc -l
+# EXEC: 579436|/usr/bin/tr|tr -d  
+# EXEC: 579438|/usr/bin/wc|wc -c
+# EXEC: 579439|/usr/bin/tr|tr -d  
+# EXEC: 579441|/usr/bin/wc|wc -l
+# EXEC: 579442|/usr/bin/tr|tr -d  
+# EXEC: 579443|/usr/bin/date|date +%s%N
+# EXEC: 579445|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 579447|/usr/bin/cat|cat /tmp/tmp.540v3qe94l
+# EXEC: 579448|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 579449|/usr/bin/cat|cat /tmp/tmp.f5WslTuae9
+# EXEC: 579450|/usr/bin/cat|cat /tmp/tmp.f5WslTuae9
+# EXEC: 579451|/usr/bin/rm|rm -f /tmp/tmp.540v3qe94l /tmp/tmp.f5WslTuae9
+# EXEC: 579453|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 579455|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 579457|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 579459|/usr/bin/sed|sed /^# SHA:/,$d /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 579460|/usr/bin/sha256sum|sha256sum
+# EXEC: 579461|/usr/bin/cut|cut -d  -f1
+# EXEC: 579463|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 579465|/usr/bin/ls|ls -t /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 579466|/usr/bin/head|head -1
+# EXEC: 579468|/usr/bin/rg|rg -c ^# (CMD|ENV|TOOLS|DATE|PID|DUR|exit|GIT|BRANCH|SESSION|CLI|ARGS|CWD):  /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 579469|/usr/bin/rg|rg -c ^# (OUT_LINES|OUT_BYTES|ERR_LINES|SHA):  /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 579471|/usr/bin/rg|rg -c ^# (EXEC|PROGS|EXEC_COUNT|TRACE_FILE)  /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 579472|/usr/bin/rg|rg -c ^# TASK: original-fixture /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 579473|/usr/bin/rg|rg -c ^hello$ /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 579474|/usr/bin/rg|rg -c ^errline$ /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 579475|/usr/bin/rg|rg -c ^# SHA: [0-9a-f]{64}$ /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 579476|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 579479|/usr/bin/git|git remote get-url origin
+# EXEC: 579477|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 579480|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 579482|/usr/bin/git|git branch --show-current
+# EXEC: 579484|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 579485|/usr/bin/head|head -1
+# EXEC: 579486|/usr/bin/tr|tr -d \n
+# EXEC: 579487|/usr/bin/bun|bun --version
+# EXEC: 579489|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 579490|/usr/bin/head|head -1
+# EXEC: 579491|/usr/bin/tr|tr -d \n
+# EXEC: 579492|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 579494|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 579495|/usr/bin/head|head -1
+# EXEC: 579496|/usr/bin/tr|tr -d \n
+# EXEC: 579497|/usr/bin/python3|python3 --version
+# EXEC: 579499|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 579500|/usr/bin/head|head -1
+# EXEC: 579501|/usr/bin/tr|tr -d \n
+# EXEC: 579502|/usr/bin/ruby|ruby --version
+# EXEC: 579505|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 579506|/usr/bin/head|head -1
+# EXEC: 579507|/usr/bin/tr|tr -d \n
+# EXEC: 579508|/usr/bin/rustc|rustc --version
+# EXEC: 579511|/usr/bin/timeout|timeout 2 go version
+# EXEC: 579512|/usr/bin/head|head -1
+# EXEC: 579513|/usr/bin/tr|tr -d \n
+# EXEC: 579514|/usr/bin/go|go version
+# EXEC: 579520|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 579521|/usr/bin/head|head -1
+# EXEC: 579522|/usr/bin/tr|tr -d \n
+# EXEC: 579523|/usr/bin/git|git --version
+# EXEC: 579525|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 579526|/usr/bin/head|head -1
+# EXEC: 579527|/usr/bin/tr|tr -d \n
+# EXEC: 579528|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 579530|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 579531|/usr/bin/head|head -1
+# EXEC: 579532|/usr/bin/tr|tr -d \n
+# EXEC: 579533|/usr/bin/date|date --version
+# EXEC: 579538|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 579539|/usr/bin/head|head -1
+# EXEC: 579540|/usr/bin/tr|tr -d \n
+# EXEC: 579541|/usr/bin/wc|wc --version
+# EXEC: 579544|/usr/bin/head|head -1
+# EXEC: 579543|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 579545|/usr/bin/tr|tr -d \n
+# EXEC: 579546|/usr/bin/cat|cat --version
+# EXEC: 579548|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 579549|/usr/bin/head|head -1
+# EXEC: 579550|/usr/bin/tr|tr -d \n
+# EXEC: 579551|/usr/bin/tee|tee --version
+# EXEC: 579553|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 579554|/usr/bin/head|head -1
+# EXEC: 579555|/usr/bin/tr|tr -d \n
+# EXEC: 579556|/usr/bin/mktemp|mktemp --version
+# EXEC: 579558|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 579559|/usr/bin/head|head -1
+# EXEC: 579560|/usr/bin/tr|tr -d \n
+# EXEC: 579561|/usr/bin/rm|rm --version
+# EXEC: 579563|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 579564|/usr/bin/head|head -1
+# EXEC: 579565|/usr/bin/tr|tr -d \n
+# EXEC: 579566|/usr/bin/timeout|timeout --version
+# EXEC: 579568|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 579569|/usr/bin/head|head -1
+# EXEC: 579570|/usr/bin/tr|tr -d \n
+# EXEC: 579571|/usr/bin/tr|tr --version
+# EXEC: 579573|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 579574|/usr/bin/head|head -1
+# EXEC: 579575|/usr/bin/tr|tr -d \n
+# EXEC: 579576|/usr/bin/head|head --version
+# EXEC: 579578|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 579579|/usr/bin/head|head -1
+# EXEC: 579580|/usr/bin/tr|tr -d \n
+# EXEC: 579581|/usr/bin/cut|cut --version
+# EXEC: 579583|/usr/bin/date|date +%s%N
+# EXEC: 579584|/usr/bin/sha256sum|sha256sum
+# EXEC: 579585|/usr/bin/cut|cut -c1-8
+# EXEC: 579587|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper.log
+# EXEC: 579588|/usr/bin/date|date -Is
+# EXEC: 579589|/usr/bin/mktemp|mktemp
+# EXEC: 579590|/usr/bin/mktemp|mktemp
+# EXEC: 579591|.opencode/_scripts/fixtures/fixture-original-wrapper.sh|.opencode/_scripts/fixtures/fixture-original-wrapper.sh
+# EXEC: 579591|/usr/bin/bash|bash .opencode/_scripts/fixtures/fixture-original-wrapper.sh
+# EXEC: 579592|/usr/bin/dirname|dirname .opencode/_scripts/fixtures/fixture-original-wrapper.sh
+# EXEC: 579595|/usr/bin/ls|ls /home/eddyr/assembler/.opencode/_bitacora/task-stdout
+# EXEC: 579596|/usr/bin/wc|wc -l
+# EXEC: 579598|/usr/bin/timeout|timeout 15 /home/eddyr/assembler/.opencode/_bitacora/bitacora-log.original.sh fixture-original-wrapper-579591 --task original-fixture -- sh -c echo hello; echo errline >&2
+# EXEC: 579599|/home/eddyr/assembler/.opencode/_bitacora/bitacora-log.original.sh|/home/eddyr/assembler/.opencode/_bitacora/bitacora-log.original.sh fixture-original-wrapper-579591 --task original-fixture -- sh -c echo hello; echo errline >&2
+# EXEC: 579599|/usr/bin/bash|bash /home/eddyr/assembler/.opencode/_bitacora/bitacora-log.original.sh fixture-original-wrapper-579591 --task original-fixture -- sh -c echo hello; echo errline >&2
+# EXEC: 579601|/usr/bin/dirname|dirname /home/eddyr/assembler/.opencode/_bitacora/bitacora-log.original.sh
+# EXEC: 579602|/usr/bin/mkdir|mkdir -p /home/eddyr/assembler/.opencode/_bitacora/task-stdout
+# EXEC: 579603|/usr/bin/date|date +%Y%m%d-%H%M%S
+# EXEC: 579604|/usr/bin/date|date +%s%N
+# EXEC: 579610|/usr/bin/tr|tr -d \n
+# EXEC: 579608|/usr/bin/timeout|timeout 2 sh --version
+# EXEC: 579609|/usr/bin/head|head -1
+# EXEC: 579611|/usr/bin/sh|sh --version
+# EXEC: 579612|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 579615|/usr/bin/git|git remote get-url origin
+# EXEC: 579613|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 579616|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 579618|/usr/bin/git|git branch --show-current
+# EXEC: 579620|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 579621|/usr/bin/head|head -1
+# EXEC: 579622|/usr/bin/tr|tr -d \n
+# EXEC: 579623|/usr/bin/bun|bun --version
+# EXEC: 579625|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 579626|/usr/bin/head|head -1
+# EXEC: 579627|/usr/bin/tr|tr -d \n
+# EXEC: 579628|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 579632|/usr/bin/tr|tr -d \n
+# EXEC: 579630|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 579631|/usr/bin/head|head -1
+# EXEC: 579633|/usr/bin/python3|python3 --version
+# EXEC: 579635|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 579636|/usr/bin/head|head -1
+# EXEC: 579637|/usr/bin/tr|tr -d \n
+# EXEC: 579638|/usr/bin/ruby|ruby --version
+# EXEC: 579641|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 579642|/usr/bin/head|head -1
+# EXEC: 579643|/usr/bin/tr|tr -d \n
+# EXEC: 579644|/usr/bin/rustc|rustc --version
+# EXEC: 579647|/usr/bin/timeout|timeout 2 go version
+# EXEC: 579648|/usr/bin/head|head -1
+# EXEC: 579649|/usr/bin/tr|tr -d \n
+# EXEC: 579650|/usr/bin/go|go version
+# EXEC: 579657|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 579658|/usr/bin/head|head -1
+# EXEC: 579659|/usr/bin/tr|tr -d \n
+# EXEC: 579660|/usr/bin/git|git --version
+# EXEC: 579662|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 579663|/usr/bin/head|head -1
+# EXEC: 579664|/usr/bin/tr|tr -d \n
+# EXEC: 579665|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 579667|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 579668|/usr/bin/head|head -1
+# EXEC: 579669|/usr/bin/tr|tr -d \n
+# EXEC: 579670|/usr/bin/date|date --version
+# EXEC: 579673|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 579674|/usr/bin/head|head -1
+# EXEC: 579675|/usr/bin/tr|tr -d \n
+# EXEC: 579676|/usr/bin/wc|wc --version
+# EXEC: 579678|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 579679|/usr/bin/head|head -1
+# EXEC: 579680|/usr/bin/tr|tr -d \n
+# EXEC: 579681|/usr/bin/cat|cat --version
+# EXEC: 579683|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 579684|/usr/bin/head|head -1
+# EXEC: 579685|/usr/bin/tr|tr -d \n
+# EXEC: 579686|/usr/bin/tee|tee --version
+# EXEC: 579688|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 579689|/usr/bin/head|head -1
+# EXEC: 579690|/usr/bin/tr|tr -d \n
+# EXEC: 579691|/usr/bin/mktemp|mktemp --version
+# EXEC: 579693|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 579694|/usr/bin/head|head -1
+# EXEC: 579695|/usr/bin/tr|tr -d \n
+# EXEC: 579696|/usr/bin/rm|rm --version
+# EXEC: 579698|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 579699|/usr/bin/head|head -1
+# EXEC: 579700|/usr/bin/tr|tr -d \n
+# EXEC: 579701|/usr/bin/timeout|timeout --version
+# EXEC: 579703|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 579704|/usr/bin/head|head -1
+# EXEC: 579705|/usr/bin/tr|tr -d \n
+# EXEC: 579706|/usr/bin/tr|tr --version
+# EXEC: 579708|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 579709|/usr/bin/head|head -1
+# EXEC: 579710|/usr/bin/tr|tr -d \n
+# EXEC: 579711|/usr/bin/head|head --version
+# EXEC: 579713|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 579714|/usr/bin/head|head -1
+# EXEC: 579715|/usr/bin/tr|tr -d \n
+# EXEC: 579716|/usr/bin/cut|cut --version
+# EXEC: 579718|/usr/bin/date|date +%s%N
+# EXEC: 579719|/usr/bin/sha256sum|sha256sum
+# EXEC: 579720|/usr/bin/cut|cut -c1-8
+# EXEC: 579722|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 579723|/usr/bin/date|date -Is
+# EXEC: 579724|/usr/bin/mktemp|mktemp
+# EXEC: 579725|/usr/bin/mktemp|mktemp
+# EXEC: 579726|/usr/bin/sh|sh -c echo hello; echo errline >&2
+# EXEC: 579728|/usr/bin/wc|wc -l
+# EXEC: 579729|/usr/bin/tr|tr -d  
+# EXEC: 579731|/usr/bin/wc|wc -c
+# EXEC: 579732|/usr/bin/tr|tr -d  
+# EXEC: 579734|/usr/bin/wc|wc -l
+# EXEC: 579735|/usr/bin/tr|tr -d  
+# EXEC: 579736|/usr/bin/date|date +%s%N
+# EXEC: 579738|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 579740|/usr/bin/cat|cat /tmp/tmp.h5PjISnvK2
+# EXEC: 579741|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 579742|/usr/bin/cat|cat /tmp/tmp.7ixlHXd7iw
+# EXEC: 579743|/usr/bin/cat|cat /tmp/tmp.7ixlHXd7iw
+# EXEC: 579744|/usr/bin/rm|rm -f /tmp/tmp.h5PjISnvK2 /tmp/tmp.7ixlHXd7iw
+# EXEC: 579746|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 579748|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 579750|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 579752|/usr/bin/sed|sed /^# SHA:/,$d /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 579753|/usr/bin/sha256sum|sha256sum
+# EXEC: 579754|/usr/bin/cut|cut -d  -f1
+# EXEC: 579756|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 579758|/usr/bin/ls|ls -t /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 579759|/usr/bin/head|head -1
+# EXEC: 579761|/usr/bin/rg|rg -c ^# (CMD|ENV|TOOLS|DATE|PID|DUR|exit|GIT|BRANCH|SESSION|CLI|ARGS|CWD):  /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 579762|/usr/bin/rg|rg -c ^# (OUT_LINES|OUT_BYTES|ERR_LINES|SHA):  /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 579764|/usr/bin/rg|rg -c ^# (EXEC|PROGS|EXEC_COUNT|TRACE_FILE)  /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 579765|/usr/bin/rg|rg -c ^# TASK: original-fixture /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 579766|/usr/bin/rg|rg -c ^hello$ /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 579767|/usr/bin/rg|rg -c ^errline$ /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 579768|/usr/bin/rg|rg -c ^# SHA: [0-9a-f]{64}$ /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 579770|/usr/bin/wc|wc -l
+# EXEC: 579771|/usr/bin/tr|tr -d  
+# EXEC: 579773|/usr/bin/wc|wc -c
+# EXEC: 579774|/usr/bin/tr|tr -d  
+# EXEC: 579776|/usr/bin/wc|wc -l
+# EXEC: 579777|/usr/bin/tr|tr -d  
+# EXEC: 579778|/usr/bin/date|date +%s%N
+# EXEC: 579780|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper.log
+# EXEC: 579782|/usr/bin/cat|cat /tmp/tmp.SciNTBBb9N
+# EXEC: 579783|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper.log
+# EXEC: 579784|/usr/bin/cat|cat /tmp/tmp.kqlS6q4H4O
+# EXEC: 579785|/usr/bin/cat|cat /tmp/tmp.kqlS6q4H4O
+# EXEC: 579786|/usr/bin/rm|rm -f /tmp/tmp.SciNTBBb9N /tmp/tmp.kqlS6q4H4O
+# EXEC: 579788|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper.log
+# EXEC: 579790|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper.log
+# EXEC: 579792|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper.log
+# PROGS: node=v25.2.1 bitacora-log.original.sh=(no --version) basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 ls=ls (GNU coreutils) 9.11 mkdir=mkdir (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rg=ripgrep 15.2.0 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sed=/usr/bin/sed (GNU sed) 4.10 sh=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 365
+# SHA: 06194edcfd1f0266c6e742dab35ba109d8673547f6196d85caa09e009b6b0846
+# exit: 0

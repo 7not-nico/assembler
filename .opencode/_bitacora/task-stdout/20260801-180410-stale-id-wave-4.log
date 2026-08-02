@@ -1,0 +1,9 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\ndeclare -A MAP=(\n [PROT.TOOL.MORPHISM]=PROT.TOOL.COMPOSITE\n [PROT.META.ENTITY.ROUTING]=SPEC.ENTITY.ROUTING.TABLE\n)\nfind . -name "*.md" -not -path "*/.git/*" -not -path "*/node_modules/*" -not -path "*/target/*" > /tmp/opencode/all-md.txt\nfor old in $(printf "%s\\n" "${!MAP[@]}" | awk "{ print length, \\$0 }" | sort -rn | cut -d" " -f2-); do\n  new=${MAP[$old]}\n  esc=$(printf "%s" "$old" | sed "s/\\./\\\\\\\\./g")\n  files=$(grep -rl -- "$old" $(cat /tmp/opencode/all-md.txt) 2>/dev/null)\n  if [ -n "$files" ]; then\n    echo "$files" | xargs -r sed -i "s/$esc/$new/g"\n    echo "MAP $old -> $new ($(echo "$files" | wc -l) files)"\n  fi\ndone\necho "=== remaining stale PROT count ==="\ncd /home/eddyr/assembler/.opencode/_scripts && ./rs check stale-refs 2>&1 | grep -c "potential stale"' 
+# DATE: 2026-08-01T18:04:10-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+MAP PROT.META.ENTITY.ROUTING -> SPEC.ENTITY.ROUTING.TABLE (10 files)
+MAP PROT.TOOL.MORPHISM -> PROT.TOOL.COMPOSITE (14 files)
+=== remaining stale PROT count ===
+2219
+# exit: 0

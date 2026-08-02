@@ -1,0 +1,39 @@
+# CMD: bash .opencode/_scripts/fixtures/fixture-scripts-rings.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# DATE: 2026-08-01T19:39:21-06:00
+# PID: 483571
+# DUR: 60ms
+# exit: 0
+# GIT: assembler@087b240
+# BRANCH: main
+# SCOPE: _scripts
+# SESSION: scripts-v2
+# TASK: run-scripts-v2
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_scripts/fixtures/fixture-scripts-rings.sh 
+# OUT: go-cli rings
+# IN: assembler-cli=327f262a82ae9d5863c40573765500ccd7c52a4d1efd26a4dd1d3aff364cbc34
+# CWD: /home/eddyr/assembler
+# --------------------
+Ring topology per SPEC.KNOWLEDGE.CLASSIFICATION.TOPOLOGY:
+  axiomatic R0 — Maxim, Precept, Specification
+  axiomatic R1 — Identity
+  axiomatic R2 — Abstraction, Algorithm, Linguistic
+  encyclopedic R0 — Etymology
+  encyclopedic R1 — Cognition
+  encyclopedic R2 — Concept, Definition, Taxonomy
+  encyclopedic R3 — Term, Biology, Chemical
+  composition R0 — Protocol
+  composition R1 — Pattern
+  composition R2 — Nexus
+  composition R3 — Illustration, Reference
+  architectonic R0 — Rule
+  architectonic R1 — Command, Skill
+  architectonic R2 — Tool
+  chronicle R0 — Person
+  chronicle R1 — Investigation, Apologia, Manifest
+  chronicle R2 — Archive, Note
+# OUT_LINES: 18
+# OUT_BYTES: 688
+# ERR_LINES: 0
+# SHA: 210790980797de9a46f54e87009c410090be77aef33244c8eeb7a2b7cabd4e48

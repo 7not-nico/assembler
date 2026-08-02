@@ -1,0 +1,16 @@
+# CMD: bash -c $'cd /home/eddyr/assembler/.opencode/_scripts\necho "=== audit protocols ==="; ./rs audit protocols 2>&1 | tail -1\necho "=== new IDs resolve? ==="; for id in PROT.LLM.SPECIFICATION PROT.LIB.DIRECTORY.LAYER PROT.LIB.PURITY.BOUNDARY PROT.LIB.MUTATION.STRATEGY; do ./rs list protocols | grep -c "$id"; done\necho "=== stale-refs total ==="; ./rs check stale-refs 2>&1 | grep -c "potential stale"\necho "=== the 4 IDs still stale? ==="; ./rs check stale-refs 2>&1 | grep -cE "LLM.SPECIFICATION|LIB.DIRECTORY.LAYER|PURITY.BOUNDARY|MUTATION.STRATEGY" || echo "0 — resolved"' 
+# DATE: 2026-08-01T18:13:55-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== audit protocols ===
+audit ok — 47 entities of type 'protocols', 0 faults
+=== new IDs resolve? ===
+1
+1
+1
+1
+=== stale-refs total ===
+2020
+=== the 4 IDs still stale? ===
+95
+# exit: 0

@@ -1,0 +1,9 @@
+# CMD: bash -c $'cd /home/eddyr/assembler\ngit add .opencode/_scripts/_golib/internal/check/stalerefs.go\ngit commit -m "Stale-refs regex: exclude trailing-dot captures (artifacts ~18 eliminated)" 2>&1 | head -2\ngit push 2>&1 | tail -2' 
+# DATE: 2026-08-01T18:10:55-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+[main 5048006] Stale-refs regex: exclude trailing-dot captures (artifacts ~18 eliminated)
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+To https://github.com/7not-nico/assembler.git
+   3a4fb8d..5048006  main -> main
+# exit: 0

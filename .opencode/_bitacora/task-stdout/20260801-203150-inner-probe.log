@@ -1,0 +1,155 @@
+# CMD: sh -c echo\ hi\ \|\ grep\ -c\ hi 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T20:31:51-06:00
+# PID: 511766
+# DUR: 501ms
+# exit: 1
+# TRACER: tracexec
+# SELF_TRACER: tracexec
+# PROGS:
+# GIT: assembler@087b240
+# BRANCH: main
+# SESSION: eda29649
+# CLI: sh GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu)
+# ARGS: -c echo\ hi\ \|\ grep\ -c\ hi 
+# CWD: /home/eddyr/assembler
+# --------------------
+Error: 
+   0: [91mEPERM: Operation not permitted[0m
+
+Location:
+   [35mcrates/tracexec-backend-ptrace/src/ptrace/engine.rs[0m:[35m76[0m
+
+Backtrace omitted. Run with RUST_BACKTRACE=1 environment variable to display it.
+Run with RUST_BACKTRACE=full to include source snippets.
+# OUT_LINES: 0
+# OUT_BYTES: 0
+# ERR_LINES: 8
+# SELF_EXEC: 511766|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh inner-probe -- sh -c echo hi | grep -c hi
+# SELF_EXEC: 511767|/usr/bin/date|date +%s%N
+# SELF_EXEC: 511771|/usr/bin/timeout|timeout 2 sh --version
+# SELF_EXEC: 511772|/usr/bin/head|head -1
+# SELF_EXEC: 511773|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511774|/usr/bin/sh|sh --version
+# SELF_EXEC: 511775|/usr/bin/git|git rev-parse --short HEAD
+# SELF_EXEC: 511778|/usr/bin/git|git remote get-url origin
+# SELF_EXEC: 511776|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# SELF_EXEC: 511779|/usr/bin/git|git rev-parse --short HEAD
+# SELF_EXEC: 511781|/usr/bin/git|git branch --show-current
+# SELF_EXEC: 511783|/usr/bin/timeout|timeout 2 bun --version
+# SELF_EXEC: 511784|/usr/bin/head|head -1
+# SELF_EXEC: 511785|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511786|/usr/bin/bun|bun --version
+# SELF_EXEC: 511788|/usr/bin/timeout|timeout 2 node --version
+# SELF_EXEC: 511789|/usr/bin/head|head -1
+# SELF_EXEC: 511790|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511791|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# SELF_EXEC: 511793|/usr/bin/timeout|timeout 2 python3 --version
+# SELF_EXEC: 511794|/usr/bin/head|head -1
+# SELF_EXEC: 511795|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511796|/usr/bin/python3|python3 --version
+# SELF_EXEC: 511798|/usr/bin/timeout|timeout 2 ruby --version
+# SELF_EXEC: 511799|/usr/bin/head|head -1
+# SELF_EXEC: 511800|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511801|/usr/bin/ruby|ruby --version
+# SELF_EXEC: 511804|/usr/bin/timeout|timeout 2 rustc --version
+# SELF_EXEC: 511805|/usr/bin/head|head -1
+# SELF_EXEC: 511806|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511807|/usr/bin/rustc|rustc --version
+# SELF_EXEC: 511810|/usr/bin/timeout|timeout 2 go version
+# SELF_EXEC: 511811|/usr/bin/head|head -1
+# SELF_EXEC: 511812|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511813|/usr/bin/go|go version
+# SELF_EXEC: 511819|/usr/bin/timeout|timeout 2 git --version
+# SELF_EXEC: 511820|/usr/bin/head|head -1
+# SELF_EXEC: 511821|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511822|/usr/bin/git|git --version
+# SELF_EXEC: 511824|/usr/bin/timeout|timeout 2 sha256sum --version
+# SELF_EXEC: 511825|/usr/bin/head|head -1
+# SELF_EXEC: 511826|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511827|/usr/bin/sha256sum|sha256sum --version
+# SELF_EXEC: 511829|/usr/bin/timeout|timeout 2 date --version
+# SELF_EXEC: 511830|/usr/bin/head|head -1
+# SELF_EXEC: 511831|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511832|/usr/bin/date|date --version
+# SELF_EXEC: 511834|/usr/bin/timeout|timeout 2 wc --version
+# SELF_EXEC: 511835|/usr/bin/head|head -1
+# SELF_EXEC: 511836|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511837|/usr/bin/wc|wc --version
+# SELF_EXEC: 511839|/usr/bin/timeout|timeout 2 cat --version
+# SELF_EXEC: 511840|/usr/bin/head|head -1
+# SELF_EXEC: 511841|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511842|/usr/bin/cat|cat --version
+# SELF_EXEC: 511844|/usr/bin/timeout|timeout 2 tee --version
+# SELF_EXEC: 511845|/usr/bin/head|head -1
+# SELF_EXEC: 511846|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511847|/usr/bin/tee|tee --version
+# SELF_EXEC: 511849|/usr/bin/timeout|timeout 2 mktemp --version
+# SELF_EXEC: 511850|/usr/bin/head|head -1
+# SELF_EXEC: 511851|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511852|/usr/bin/mktemp|mktemp --version
+# SELF_EXEC: 511854|/usr/bin/timeout|timeout 2 rm --version
+# SELF_EXEC: 511856|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511855|/usr/bin/head|head -1
+# SELF_EXEC: 511857|/usr/bin/rm|rm --version
+# SELF_EXEC: 511859|/usr/bin/timeout|timeout 2 timeout --version
+# SELF_EXEC: 511860|/usr/bin/head|head -1
+# SELF_EXEC: 511861|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511862|/usr/bin/timeout|timeout --version
+# SELF_EXEC: 511864|/usr/bin/timeout|timeout 2 tr --version
+# SELF_EXEC: 511865|/usr/bin/head|head -1
+# SELF_EXEC: 511866|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511867|/usr/bin/tr|tr --version
+# SELF_EXEC: 511869|/usr/bin/timeout|timeout 2 head --version
+# SELF_EXEC: 511870|/usr/bin/head|head -1
+# SELF_EXEC: 511871|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511872|/usr/bin/head|head --version
+# SELF_EXEC: 511874|/usr/bin/timeout|timeout 2 cut --version
+# SELF_EXEC: 511875|/usr/bin/head|head -1
+# SELF_EXEC: 511876|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 511877|/usr/bin/cut|cut --version
+# SELF_EXEC: 511879|/usr/bin/date|date +%s%N
+# SELF_EXEC: 511880|/usr/bin/sha256sum|sha256sum
+# SELF_EXEC: 511881|/usr/bin/cut|cut -c1-8
+# SELF_EXEC: 511883|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-203150-inner-probe.log
+# SELF_EXEC: 511884|/usr/bin/date|date -Is
+# SELF_EXEC: 511885|/usr/bin/mktemp|mktemp
+# SELF_EXEC: 511886|/usr/bin/mktemp|mktemp
+# SELF_EXEC: 511887|/usr/bin/mktemp|mktemp
+# SELF_EXEC: 511888|/usr/bin/tracexec|tracexec collect --format=json -o /tmp/tmp.7mN0IHe0K6 -- sh -c echo hi | grep -c hi
+# SELF_EXEC: 511893|/usr/bin/python3|python3 -c 
+# SELF_EXEC: import json, sys
+# SELF_EXEC: d = json.load(open(sys.argv[1]))
+# SELF_EXEC: seen = set()
+# SELF_EXEC: for ev in d.get("events", []):
+# SELF_EXEC:     fn = ev.get("filename") or ""
+# SELF_EXEC:     argv = ev.get("argv") or {}
+# SELF_EXEC:     av = argv.get("value", []) if isinstance(argv, dict) else []
+# SELF_EXEC:     args = " ".join(av) if av else fn
+# SELF_EXEC:     print(str(ev.get("pid", "?")) + "|" + fn + "|" + args)
+# SELF_EXEC:     if fn and fn not in seen:
+# SELF_EXEC:         seen.add(fn)
+# SELF_EXEC:         print("PROG|" + fn, file=sys.stderr)
+# SELF_EXEC:  /tmp/tmp.7mN0IHe0K6
+# SELF_EXEC: 511895|/usr/bin/sed|sed -n s/^PROG|\//\//p /tmp/tmp.7mN0IHe0K6.progs
+# SELF_EXEC: 511896|/usr/bin/rm|rm -f /tmp/tmp.7mN0IHe0K6 /tmp/tmp.7mN0IHe0K6.progs
+# SELF_EXEC: 511898|/usr/bin/wc|wc -l
+# SELF_EXEC: 511899|/usr/bin/tr|tr -d  
+# SELF_EXEC: 511901|/usr/bin/wc|wc -c
+# SELF_EXEC: 511902|/usr/bin/tr|tr -d  
+# SELF_EXEC: 511904|/usr/bin/wc|wc -l
+# SELF_EXEC: 511905|/usr/bin/tr|tr -d  
+# SELF_EXEC: 511906|/usr/bin/date|date +%s%N
+# SELF_EXEC: 511908|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-203150-inner-probe.log
+# SELF_EXEC: 511910|/usr/bin/cat|cat /tmp/tmp.nNRu4uAcyd
+# SELF_EXEC: 511911|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-203150-inner-probe.log
+# SELF_EXEC: 511912|/usr/bin/cat|cat /tmp/tmp.9KfymWGgDB
+# SELF_EXEC: 511913|/usr/bin/cat|cat /tmp/tmp.9KfymWGgDB
+# SELF_EXEC: 511914|/usr/bin/rm|rm -f /tmp/tmp.nNRu4uAcyd /tmp/tmp.9KfymWGgDB
+# SELF_EXEC: 511916|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-203150-inner-probe.log
+# SELF_EXEC: 511918|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-203150-inner-probe.log
+# SELF_EXEC: 511920|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-203150-inner-probe.log
+# SELF_EXEC_COUNT: 124
+# SHA: 0b6b50f3262a71c17f719c16d93c821f379ad8e5c28c171cb0ed750f2f1558c9
+# exit: 1

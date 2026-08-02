@@ -1,0 +1,35 @@
+# CMD: bash .opencode/_scripts/fixtures/fixture-scripts-idmatch.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# DATE: 2026-08-01T19:34:45-06:00
+# PID: 480579
+# DUR: 124ms
+# exit: 0
+# GIT: assembler@087b240
+# BRANCH: main
+# SCOPE: _scripts
+# SESSION: scripts-fixtures
+# TASK: run-scripts
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_scripts/fixtures/fixture-scripts-idmatch.sh 
+# OUT: go-cli check id-match
+# IN: assembler-cli=327f262a82ae9d5863c40573765500ccd7c52a4d1efd26a4dd1d3aff364cbc34
+# CWD: /home/eddyr/assembler
+# --------------------
+Faults (11):
+ID                    | Type           | Field | Value                                                                    | Problem                               
+----------------------|----------------|-------|--------------------------------------------------------------------------|---------------------------------------
+meta-audit            | investigations | id    | frontmatter id=MANIFEST.AGENTSKILLS.SPEC.EVALUATION, filename=meta-audit | frontmatter id does not match filename
+meta-audit            | investigations | id    | frontmatter id=INV.LLM.OPERATOR, filename=meta-audit                     | frontmatter id does not match filename
+meta-audit            | investigations | id    | frontmatter id=INV.LLM.SPEC.CONTRACT, filename=meta-audit                | frontmatter id does not match filename
+per-acm               | persons        | id    | frontmatter id=PER.ACM, filename=per-acm                                 | frontmatter id does not match filename
+per-alan-turing       | persons        | id    | frontmatter id=PER.ALAN.TURING, filename=per-alan-turing                 | frontmatter id does not match filename
+per-alonzo-church     | persons        | id    | frontmatter id=PER.ALONZO.CHURCH, filename=per-alonzo-church             | frontmatter id does not match filename
+per-edsger-w-dijkstra | persons        | id    | frontmatter id=PER.EDSGER.W.DIJKSTRA, filename=per-edsger-w-dijkstra     | frontmatter id does not match filename
+per-erich-fromm       | persons        | id    | frontmatter id=PER.ERICH.FROMM, filename=per-erich-fromm                 | frontmatter id does not match filename
+per-haskell-curry     | persons        | id    | frontmatter id=PER.HASKELL.CURRY, filename=per-haskell-curry             | frontmatter id does not match filename
+per-j-barkley-rosser  | persons        | id    | frontmatter id=PER.J.BARKLEY.ROSSER, filename=per-j-barkley-rosser       | frontmatter id does not match filename
+per-stephen-kleene    | persons        | id    | frontmatter id=PER.STEPHEN.KLEENE, filename=per-stephen-kleene           | frontmatter id does not match filename
+# OUT_LINES: 14
+# OUT_BYTES: 2132
+# ERR_LINES: 0
+# SHA: 63af63f5c3dc7abb155d923c38d7501cc19e633631bc04065a778f6f152b1be5

@@ -1,0 +1,25 @@
+# CMD: bash .opencode/_scripts/fixtures/fixture-both.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# DATE: 2026-08-01T19:23:16-06:00
+# PID: 472982
+# GIT: assembler@087b240
+# BRANCH: main
+# SCOPE: fixtures
+# SESSION: ten-fixtures
+# TASK: run-10
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_scripts/fixtures/fixture-both.sh 
+# IN: fixture-both.sh=2b81f75a0e6dadda1003925482fe8e94bf0a568895bf6655e2ace23661fc8d31
+# CWD: /home/eddyr/assembler
+# --------------------
+line-1-out
+line-3-out
+line-5-out
+line-2-err
+line-4-err
+# OUT_LINES: 3
+# OUT_BYTES: 33
+# ERR_LINES: 2
+# DUR: 52ms
+# SHA: 10fee72c2d773b359a42b84cd93d61c0e306239367a5a14447c96ab320d24cf6
+# exit: 0

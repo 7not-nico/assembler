@@ -1,0 +1,16 @@
+# CMD: echo ok 
+# ARGS: ok 
+# CLI: echo echo (GNU coreutils) 9.11
+# GIT: assembler@087b240
+# BRANCH: main
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# HOST: elite
+# USER: eddyr
+# SESSION: ec97538d
+# DATE: 2026-08-01T18:53:14-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+ok
+# DUR: 0s
+# SHA: b310a545e216987b7727e8c9d53999a23b92fc8e75b0a0cc7a0f5716c74cf2a1
+# exit: 0

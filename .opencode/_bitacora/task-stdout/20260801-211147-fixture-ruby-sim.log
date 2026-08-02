@@ -1,0 +1,161 @@
+# CMD: .opencode/_scripts/fixtures/fixture-ruby-sim.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T21:11:47-06:00
+# PID: 541209
+# DUR: 752ms
+# exit: 0
+# GIT: assembler@b3e4528
+# BRANCH: main
+# SESSION: 912203bd
+# TASK: ruby-sim-fixture
+# CLI: .opencode/_scripts/fixtures/fixture-ruby-sim.sh unknown
+# ARGS: (none)
+# CWD: /home/eddyr/assembler
+# --------------------
+SANDBOX=/home/eddyr/assembler/_sandbox
+RUN_random-sum=203
+RUN_random-sum_EXIT=0
+RUN_random-stats=sum:67;mean:9.57;std:1.68;n:7
+RUN_random-stats_EXIT=0
+RUN_monte-carlo=chi2:96.1;p:0.021;mean:48.89;trials:500
+RUN_monte-carlo_EXIT=0
+RUNS=3
+FAILS=0
+RESULT=pass:3
+# OUT_LINES: 10
+# OUT_BYTES: 259
+# ERR_LINES: 0
+# EXEC: 541209|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh fixture-ruby-sim --task ruby-sim-fixture -- .opencode/_scripts/fixtures/fixture-ruby-sim.sh
+# EXEC: 541210|/usr/bin/date|date +%s%N
+# EXEC: 541213|/usr/bin/timeout|timeout 2 .opencode/_scripts/fixtures/fixture-ruby-sim.sh --version
+# EXEC: 541214|/usr/bin/head|head -1
+# EXEC: 541215|/usr/bin/tr|tr -d \n
+# EXEC: 541216|.opencode/_scripts/fixtures/fixture-ruby-sim.sh|.opencode/_scripts/fixtures/fixture-ruby-sim.sh --version
+# EXEC: 541216|/usr/bin/bash|bash .opencode/_scripts/fixtures/fixture-ruby-sim.sh --version
+# EXEC: 541217|/usr/bin/dirname|dirname .opencode/_scripts/fixtures/fixture-ruby-sim.sh
+# EXEC: 541220|/usr/bin/ruby|ruby /home/eddyr/assembler/_sandbox/random-sum.rb
+# EXEC: 541224|/usr/bin/sed|sed -n s/^RESULT=//p
+# EXEC: 541225|/usr/bin/tail|tail -1
+# EXEC: 541227|/usr/bin/ruby|ruby /home/eddyr/assembler/_sandbox/random-stats.rb
+# EXEC: 541231|/usr/bin/sed|sed -n s/^RESULT=//p
+# EXEC: 541232|/usr/bin/tail|tail -1
+# EXEC: 541234|/usr/bin/ruby|ruby /home/eddyr/assembler/_sandbox/monte-carlo.rb
+# EXEC: 541238|/usr/bin/sed|sed -n s/^RESULT=//p
+# EXEC: 541239|/usr/bin/tail|tail -1
+# EXEC: 541240|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 541243|/usr/bin/git|git remote get-url origin
+# EXEC: 541241|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 541244|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 541246|/usr/bin/git|git branch --show-current
+# EXEC: 541248|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 541249|/usr/bin/head|head -1
+# EXEC: 541250|/usr/bin/tr|tr -d \n
+# EXEC: 541251|/usr/bin/bun|bun --version
+# EXEC: 541253|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 541254|/usr/bin/head|head -1
+# EXEC: 541255|/usr/bin/tr|tr -d \n
+# EXEC: 541256|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 541258|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 541259|/usr/bin/head|head -1
+# EXEC: 541260|/usr/bin/tr|tr -d \n
+# EXEC: 541261|/usr/bin/python3|python3 --version
+# EXEC: 541263|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 541264|/usr/bin/head|head -1
+# EXEC: 541265|/usr/bin/tr|tr -d \n
+# EXEC: 541266|/usr/bin/ruby|ruby --version
+# EXEC: 541269|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 541270|/usr/bin/head|head -1
+# EXEC: 541271|/usr/bin/tr|tr -d \n
+# EXEC: 541272|/usr/bin/rustc|rustc --version
+# EXEC: 541276|/usr/bin/head|head -1
+# EXEC: 541275|/usr/bin/timeout|timeout 2 go version
+# EXEC: 541277|/usr/bin/tr|tr -d \n
+# EXEC: 541278|/usr/bin/go|go version
+# EXEC: 541283|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 541284|/usr/bin/head|head -1
+# EXEC: 541285|/usr/bin/tr|tr -d \n
+# EXEC: 541286|/usr/bin/git|git --version
+# EXEC: 541288|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 541289|/usr/bin/head|head -1
+# EXEC: 541290|/usr/bin/tr|tr -d \n
+# EXEC: 541291|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 541293|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 541294|/usr/bin/head|head -1
+# EXEC: 541295|/usr/bin/tr|tr -d \n
+# EXEC: 541296|/usr/bin/date|date --version
+# EXEC: 541298|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 541299|/usr/bin/head|head -1
+# EXEC: 541300|/usr/bin/tr|tr -d \n
+# EXEC: 541301|/usr/bin/wc|wc --version
+# EXEC: 541303|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 541304|/usr/bin/head|head -1
+# EXEC: 541305|/usr/bin/tr|tr -d \n
+# EXEC: 541306|/usr/bin/cat|cat --version
+# EXEC: 541309|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 541310|/usr/bin/head|head -1
+# EXEC: 541311|/usr/bin/tr|tr -d \n
+# EXEC: 541312|/usr/bin/tee|tee --version
+# EXEC: 541319|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 541320|/usr/bin/head|head -1
+# EXEC: 541321|/usr/bin/tr|tr -d \n
+# EXEC: 541322|/usr/bin/mktemp|mktemp --version
+# EXEC: 541325|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 541326|/usr/bin/head|head -1
+# EXEC: 541327|/usr/bin/tr|tr -d \n
+# EXEC: 541328|/usr/bin/rm|rm --version
+# EXEC: 541331|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 541332|/usr/bin/head|head -1
+# EXEC: 541333|/usr/bin/tr|tr -d \n
+# EXEC: 541334|/usr/bin/timeout|timeout --version
+# EXEC: 541336|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 541337|/usr/bin/head|head -1
+# EXEC: 541338|/usr/bin/tr|tr -d \n
+# EXEC: 541339|/usr/bin/tr|tr --version
+# EXEC: 541341|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 541342|/usr/bin/head|head -1
+# EXEC: 541343|/usr/bin/tr|tr -d \n
+# EXEC: 541344|/usr/bin/head|head --version
+# EXEC: 541346|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 541347|/usr/bin/head|head -1
+# EXEC: 541348|/usr/bin/tr|tr -d \n
+# EXEC: 541349|/usr/bin/cut|cut --version
+# EXEC: 541351|/usr/bin/date|date +%s%N
+# EXEC: 541352|/usr/bin/sha256sum|sha256sum
+# EXEC: 541353|/usr/bin/cut|cut -c1-8
+# EXEC: 541355|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211147-fixture-ruby-sim.log
+# EXEC: 541356|/usr/bin/date|date -Is
+# EXEC: 541357|/usr/bin/mktemp|mktemp
+# EXEC: 541358|/usr/bin/mktemp|mktemp
+# EXEC: 541359|.opencode/_scripts/fixtures/fixture-ruby-sim.sh|.opencode/_scripts/fixtures/fixture-ruby-sim.sh
+# EXEC: 541359|/usr/bin/bash|bash .opencode/_scripts/fixtures/fixture-ruby-sim.sh
+# EXEC: 541360|/usr/bin/dirname|dirname .opencode/_scripts/fixtures/fixture-ruby-sim.sh
+# EXEC: 541363|/usr/bin/ruby|ruby /home/eddyr/assembler/_sandbox/random-sum.rb
+# EXEC: 541367|/usr/bin/sed|sed -n s/^RESULT=//p
+# EXEC: 541368|/usr/bin/tail|tail -1
+# EXEC: 541370|/usr/bin/ruby|ruby /home/eddyr/assembler/_sandbox/random-stats.rb
+# EXEC: 541374|/usr/bin/sed|sed -n s/^RESULT=//p
+# EXEC: 541375|/usr/bin/tail|tail -1
+# EXEC: 541377|/usr/bin/ruby|ruby /home/eddyr/assembler/_sandbox/monte-carlo.rb
+# EXEC: 541381|/usr/bin/sed|sed -n s/^RESULT=//p
+# EXEC: 541382|/usr/bin/tail|tail -1
+# EXEC: 541384|/usr/bin/wc|wc -l
+# EXEC: 541385|/usr/bin/tr|tr -d  
+# EXEC: 541387|/usr/bin/wc|wc -c
+# EXEC: 541388|/usr/bin/tr|tr -d  
+# EXEC: 541390|/usr/bin/wc|wc -l
+# EXEC: 541391|/usr/bin/tr|tr -d  
+# EXEC: 541392|/usr/bin/date|date +%s%N
+# EXEC: 541394|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211147-fixture-ruby-sim.log
+# EXEC: 541396|/usr/bin/cat|cat /tmp/tmp.IOinEA6tSw
+# EXEC: 541397|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211147-fixture-ruby-sim.log
+# EXEC: 541398|/usr/bin/cat|cat /tmp/tmp.Di8kQ2FwWm
+# EXEC: 541399|/usr/bin/cat|cat /tmp/tmp.Di8kQ2FwWm
+# EXEC: 541400|/usr/bin/rm|rm -f /tmp/tmp.IOinEA6tSw /tmp/tmp.Di8kQ2FwWm
+# EXEC: 541402|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211147-fixture-ruby-sim.log
+# EXEC: 541404|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211147-fixture-ruby-sim.log
+# EXEC: 541406|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211147-fixture-ruby-sim.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sed=/usr/bin/sed (GNU sed) 4.10 sha256sum=sha256sum (GNU coreutils) 9.11 tail=tail (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 129
+# SHA: 7e7c7ea620a8f6fe9fedbd1c05d23c2b11143356503ee831cfda80d2c5833d69
+# exit: 0

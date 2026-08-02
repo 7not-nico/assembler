@@ -155,7 +155,7 @@ The following shared modules remain in place but are only consumed by disabled t
 
 ## Lessons
 
-1. **Import discipline**: Tools must import from `_lib/` only. Cross-tool imports (`tools/ → tools/`) are violations per `PROT.TOOL.MORPHISM` and `REF.LIB.DIRECTORY.LAYER`.
+1. **Import discipline**: Tools must import from `_lib/` only. Cross-tool imports (`tools/ → tools/`) are violations per `PROT.TOOL.COMPOSITE` and `REF.LIB.DIRECTORY.LAYER`.
 2. **Format compliance**: All tools in `.opencode/tools/` must use `export default tool({...})` per `audit-tool` skill. Shebang CLI tools cause validation failures on session startup. The `_lib/` import path fix was necessary but insufficient — the format violation alone was enough to trigger the startup error.
 3. **Same error, different cause**: The original and post-fix errors had the same symptom (startup failure) but different causes. First: cross-tool imports. Second: plugin format violation. Both must be checked.
 4. **Clean disable**: To fully disable a tool, both the config entry (if MCP) and the file must be removed or moved. A disabled config entry with a still-present directory causes confusion.

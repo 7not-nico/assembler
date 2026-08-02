@@ -1,0 +1,144 @@
+# CMD: rg -n \^\\s+\(default\|static\)\ .\*\\\( _sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/api/ConfigEntryBuilder.java 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T21:21:31-06:00
+# PID: 550622
+# DUR: 392ms
+# exit: 0
+# GIT: assembler@490b1ca
+# BRANCH: main
+# SESSION: 187ae329
+# CLI: rg ripgrep 15.2.0
+# ARGS: -n \^\\s+\(default\|static\)\ .\*\\\( _sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/api/ConfigEntryBuilder.java 
+# CWD: /home/eddyr/assembler
+# --------------------
+43:    static ConfigEntryBuilder create() {
+71:    default ColorFieldBuilder startColorField(Component fieldNameKey, TextColor color) {
+75:    default ColorFieldBuilder startColorField(Component fieldNameKey, Color color) {
+79:    default ColorFieldBuilder startAlphaColorField(Component fieldNameKey, int value) {
+83:    default ColorFieldBuilder startAlphaColorField(Component fieldNameKey, Color color) {
+109:    default KeyCodeBuilder startKeyCodeField(Component fieldNameKey, InputConstants.Key value) {
+113:    default KeyCodeBuilder fillKeybindingField(Component fieldNameKey, KeyMapping value) {
+123:    default <T> DropdownMenuBuilder<T> startDropdownMenu(Component fieldNameKey, SelectionTopCellElement<T> topCellElement) {
+127:    default <T> DropdownMenuBuilder<T> startDropdownMenu(Component fieldNameKey, T value, Function<String, T> toObjectFunction, SelectionCellCreator<T> cellCreator) {
+131:    default <T> DropdownMenuBuilder<T> startDropdownMenu(Component fieldNameKey, T value, Function<String, T> toObjectFunction, Function<T, Component> toTextFunction, SelectionCellCreator<T> cellCreator) {
+135:    default <T> DropdownMenuBuilder<T> startDropdownMenu(Component fieldNameKey, T value, Function<String, T> toObjectFunction) {
+139:    default <T> DropdownMenuBuilder<T> startDropdownMenu(Component fieldNameKey, T value, Function<String, T> toObjectFunction, Function<T, Component> toTextFunction) {
+143:    default DropdownMenuBuilder<String> startStringDropdownMenu(Component fieldNameKey, String value, SelectionCellCreator<String> cellCreator) {
+147:    default DropdownMenuBuilder<String> startStringDropdownMenu(Component fieldNameKey, String value, Function<String, Component> toTextFunction, SelectionCellCreator<String> cellCreator) {
+151:    default DropdownMenuBuilder<String> startStringDropdownMenu(Component fieldNameKey, String value) {
+155:    default DropdownMenuBuilder<String> startStringDropdownMenu(Component fieldNameKey, String value, Function<String, Component> toTextFunction) {
+# OUT_LINES: 16
+# OUT_BYTES: 2026
+# ERR_LINES: 0
+# EXEC: 550622|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh cloth-methods-full -- rg -n ^\s+(default|static) .*\( _sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/api/ConfigEntryBuilder.java
+# EXEC: 550623|/usr/bin/date|date +%s%N
+# EXEC: 550627|/usr/bin/timeout|timeout 2 rg --version
+# EXEC: 550628|/usr/bin/head|head -1
+# EXEC: 550629|/usr/bin/tr|tr -d \n
+# EXEC: 550630|/usr/bin/rg|rg --version
+# EXEC: 550631|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 550634|/usr/bin/git|git remote get-url origin
+# EXEC: 550632|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 550635|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 550637|/usr/bin/git|git branch --show-current
+# EXEC: 550639|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 550640|/usr/bin/head|head -1
+# EXEC: 550641|/usr/bin/tr|tr -d \n
+# EXEC: 550642|/usr/bin/bun|bun --version
+# EXEC: 550644|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 550645|/usr/bin/head|head -1
+# EXEC: 550646|/usr/bin/tr|tr -d \n
+# EXEC: 550647|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 550649|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 550650|/usr/bin/head|head -1
+# EXEC: 550651|/usr/bin/tr|tr -d \n
+# EXEC: 550652|/usr/bin/python3|python3 --version
+# EXEC: 550655|/usr/bin/head|head -1
+# EXEC: 550656|/usr/bin/tr|tr -d \n
+# EXEC: 550654|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 550657|/usr/bin/ruby|ruby --version
+# EXEC: 550660|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 550661|/usr/bin/head|head -1
+# EXEC: 550662|/usr/bin/tr|tr -d \n
+# EXEC: 550663|/usr/bin/rustc|rustc --version
+# EXEC: 550666|/usr/bin/timeout|timeout 2 go version
+# EXEC: 550667|/usr/bin/head|head -1
+# EXEC: 550668|/usr/bin/tr|tr -d \n
+# EXEC: 550669|/usr/bin/go|go version
+# EXEC: 550675|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 550676|/usr/bin/head|head -1
+# EXEC: 550677|/usr/bin/tr|tr -d \n
+# EXEC: 550678|/usr/bin/git|git --version
+# EXEC: 550680|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 550681|/usr/bin/head|head -1
+# EXEC: 550682|/usr/bin/tr|tr -d \n
+# EXEC: 550683|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 550685|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 550686|/usr/bin/head|head -1
+# EXEC: 550687|/usr/bin/tr|tr -d \n
+# EXEC: 550688|/usr/bin/date|date --version
+# EXEC: 550690|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 550691|/usr/bin/head|head -1
+# EXEC: 550692|/usr/bin/tr|tr -d \n
+# EXEC: 550693|/usr/bin/wc|wc --version
+# EXEC: 550695|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 550696|/usr/bin/head|head -1
+# EXEC: 550697|/usr/bin/tr|tr -d \n
+# EXEC: 550698|/usr/bin/cat|cat --version
+# EXEC: 550700|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 550701|/usr/bin/head|head -1
+# EXEC: 550702|/usr/bin/tr|tr -d \n
+# EXEC: 550703|/usr/bin/tee|tee --version
+# EXEC: 550705|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 550706|/usr/bin/head|head -1
+# EXEC: 550707|/usr/bin/tr|tr -d \n
+# EXEC: 550708|/usr/bin/mktemp|mktemp --version
+# EXEC: 550710|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 550711|/usr/bin/head|head -1
+# EXEC: 550712|/usr/bin/tr|tr -d \n
+# EXEC: 550713|/usr/bin/rm|rm --version
+# EXEC: 550716|/usr/bin/head|head -1
+# EXEC: 550717|/usr/bin/tr|tr -d \n
+# EXEC: 550715|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 550718|/usr/bin/timeout|timeout --version
+# EXEC: 550720|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 550721|/usr/bin/head|head -1
+# EXEC: 550722|/usr/bin/tr|tr -d \n
+# EXEC: 550723|/usr/bin/tr|tr --version
+# EXEC: 550725|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 550726|/usr/bin/head|head -1
+# EXEC: 550727|/usr/bin/tr|tr -d \n
+# EXEC: 550728|/usr/bin/head|head --version
+# EXEC: 550730|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 550731|/usr/bin/head|head -1
+# EXEC: 550732|/usr/bin/tr|tr -d \n
+# EXEC: 550733|/usr/bin/cut|cut --version
+# EXEC: 550735|/usr/bin/date|date +%s%N
+# EXEC: 550736|/usr/bin/sha256sum|sha256sum
+# EXEC: 550737|/usr/bin/cut|cut -c1-8
+# EXEC: 550739|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212131-cloth-methods-full.log
+# EXEC: 550740|/usr/bin/date|date -Is
+# EXEC: 550741|/usr/bin/mktemp|mktemp
+# EXEC: 550742|/usr/bin/mktemp|mktemp
+# EXEC: 550743|/usr/bin/rg|rg -n ^\s+(default|static) .*\( _sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/api/ConfigEntryBuilder.java
+# EXEC: 550745|/usr/bin/wc|wc -l
+# EXEC: 550746|/usr/bin/tr|tr -d  
+# EXEC: 550748|/usr/bin/wc|wc -c
+# EXEC: 550749|/usr/bin/tr|tr -d  
+# EXEC: 550751|/usr/bin/wc|wc -l
+# EXEC: 550752|/usr/bin/tr|tr -d  
+# EXEC: 550753|/usr/bin/date|date +%s%N
+# EXEC: 550755|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212131-cloth-methods-full.log
+# EXEC: 550757|/usr/bin/cat|cat /tmp/tmp.JW2lVRTh8n
+# EXEC: 550758|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212131-cloth-methods-full.log
+# EXEC: 550759|/usr/bin/cat|cat /tmp/tmp.RVOMjRBa6R
+# EXEC: 550760|/usr/bin/cat|cat /tmp/tmp.RVOMjRBa6R
+# EXEC: 550761|/usr/bin/rm|rm -f /tmp/tmp.JW2lVRTh8n /tmp/tmp.RVOMjRBa6R
+# EXEC: 550763|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212131-cloth-methods-full.log
+# EXEC: 550765|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212131-cloth-methods-full.log
+# EXEC: 550767|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212131-cloth-methods-full.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rg=ripgrep 15.2.0 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 107
+# SHA: 78b57790b8c86de04edf2e7aa38afc6b7b965804d2365a4d9cfddde0d2a0613e
+# exit: 0

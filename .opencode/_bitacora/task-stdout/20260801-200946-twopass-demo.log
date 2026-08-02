@@ -1,0 +1,154 @@
+# CMD: sh -c echo\ hi\ \|\ grep\ -c\ hi 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T20:09:46-06:00
+# PID: 501799
+# DUR: 435ms
+# exit: 1
+# TRACER: tracexec
+# SELF_TRACER: tracexec
+# PROGS:
+# GIT: assembler@087b240
+# BRANCH: main
+# SCOPE: fixtures
+# SESSION: twopass-fixed
+# TASK: demo
+# CLI: sh GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu)
+# ARGS: -c echo\ hi\ \|\ grep\ -c\ hi 
+# CWD: /home/eddyr/assembler
+# --------------------
+Error: 
+   0: [91mEPERM: Operation not permitted[0m
+
+Location:
+   [35mcrates/tracexec-backend-ptrace/src/ptrace/engine.rs[0m:[35m76[0m
+
+Backtrace omitted. Run with RUST_BACKTRACE=1 environment variable to display it.
+Run with RUST_BACKTRACE=full to include source snippets.
+# OUT_LINES: 0
+# OUT_BYTES: 0
+# ERR_LINES: 8
+# SELF_EXEC: 501799|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh twopass-demo --task demo --scope fixtures -- sh -c echo hi | grep -c hi
+# SELF_EXEC: 501800|/usr/bin/date|date +%s%N
+# SELF_EXEC: 501804|/usr/bin/timeout|timeout 2 sh --version
+# SELF_EXEC: 501805|/usr/bin/head|head -1
+# SELF_EXEC: 501806|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501807|/usr/bin/sh|sh --version
+# SELF_EXEC: 501808|/usr/bin/git|git rev-parse --short HEAD
+# SELF_EXEC: 501811|/usr/bin/git|git remote get-url origin
+# SELF_EXEC: 501809|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# SELF_EXEC: 501812|/usr/bin/git|git rev-parse --short HEAD
+# SELF_EXEC: 501814|/usr/bin/git|git branch --show-current
+# SELF_EXEC: 501816|/usr/bin/timeout|timeout 2 bun --version
+# SELF_EXEC: 501817|/usr/bin/head|head -1
+# SELF_EXEC: 501818|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501819|/usr/bin/bun|bun --version
+# SELF_EXEC: 501821|/usr/bin/timeout|timeout 2 node --version
+# SELF_EXEC: 501822|/usr/bin/head|head -1
+# SELF_EXEC: 501823|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501824|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# SELF_EXEC: 501827|/usr/bin/head|head -1
+# SELF_EXEC: 501826|/usr/bin/timeout|timeout 2 python3 --version
+# SELF_EXEC: 501828|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501829|/usr/bin/python3|python3 --version
+# SELF_EXEC: 501831|/usr/bin/timeout|timeout 2 ruby --version
+# SELF_EXEC: 501832|/usr/bin/head|head -1
+# SELF_EXEC: 501833|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501834|/usr/bin/ruby|ruby --version
+# SELF_EXEC: 501837|/usr/bin/timeout|timeout 2 rustc --version
+# SELF_EXEC: 501838|/usr/bin/head|head -1
+# SELF_EXEC: 501839|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501840|/usr/bin/rustc|rustc --version
+# SELF_EXEC: 501843|/usr/bin/timeout|timeout 2 go version
+# SELF_EXEC: 501844|/usr/bin/head|head -1
+# SELF_EXEC: 501845|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501846|/usr/bin/go|go version
+# SELF_EXEC: 501852|/usr/bin/timeout|timeout 2 git --version
+# SELF_EXEC: 501853|/usr/bin/head|head -1
+# SELF_EXEC: 501854|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501855|/usr/bin/git|git --version
+# SELF_EXEC: 501857|/usr/bin/timeout|timeout 2 sha256sum --version
+# SELF_EXEC: 501858|/usr/bin/head|head -1
+# SELF_EXEC: 501859|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501860|/usr/bin/sha256sum|sha256sum --version
+# SELF_EXEC: 501863|/usr/bin/head|head -1
+# SELF_EXEC: 501862|/usr/bin/timeout|timeout 2 date --version
+# SELF_EXEC: 501864|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501865|/usr/bin/date|date --version
+# SELF_EXEC: 501868|/usr/bin/head|head -1
+# SELF_EXEC: 501867|/usr/bin/timeout|timeout 2 wc --version
+# SELF_EXEC: 501869|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501870|/usr/bin/wc|wc --version
+# SELF_EXEC: 501872|/usr/bin/timeout|timeout 2 cat --version
+# SELF_EXEC: 501873|/usr/bin/head|head -1
+# SELF_EXEC: 501874|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501875|/usr/bin/cat|cat --version
+# SELF_EXEC: 501877|/usr/bin/timeout|timeout 2 tee --version
+# SELF_EXEC: 501878|/usr/bin/head|head -1
+# SELF_EXEC: 501879|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501880|/usr/bin/tee|tee --version
+# SELF_EXEC: 501883|/usr/bin/head|head -1
+# SELF_EXEC: 501882|/usr/bin/timeout|timeout 2 mktemp --version
+# SELF_EXEC: 501884|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501885|/usr/bin/mktemp|mktemp --version
+# SELF_EXEC: 501887|/usr/bin/timeout|timeout 2 rm --version
+# SELF_EXEC: 501888|/usr/bin/head|head -1
+# SELF_EXEC: 501889|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501890|/usr/bin/rm|rm --version
+# SELF_EXEC: 501892|/usr/bin/timeout|timeout 2 timeout --version
+# SELF_EXEC: 501893|/usr/bin/head|head -1
+# SELF_EXEC: 501894|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501895|/usr/bin/timeout|timeout --version
+# SELF_EXEC: 501897|/usr/bin/timeout|timeout 2 tr --version
+# SELF_EXEC: 501898|/usr/bin/head|head -1
+# SELF_EXEC: 501899|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501900|/usr/bin/tr|tr --version
+# SELF_EXEC: 501902|/usr/bin/timeout|timeout 2 head --version
+# SELF_EXEC: 501903|/usr/bin/head|head -1
+# SELF_EXEC: 501904|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501905|/usr/bin/head|head --version
+# SELF_EXEC: 501907|/usr/bin/timeout|timeout 2 cut --version
+# SELF_EXEC: 501908|/usr/bin/head|head -1
+# SELF_EXEC: 501909|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 501910|/usr/bin/cut|cut --version
+# SELF_EXEC: 501913|/usr/bin/date|date -Is
+# SELF_EXEC: 501912|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200946-twopass-demo.log
+# SELF_EXEC: 501914|/usr/bin/mktemp|mktemp
+# SELF_EXEC: 501915|/usr/bin/mktemp|mktemp
+# SELF_EXEC: 501916|/usr/bin/mktemp|mktemp
+# SELF_EXEC: 501917|/usr/bin/tracexec|tracexec collect --format=json -o /tmp/tmp.E0yKQKcAfu -- sh -c echo hi | grep -c hi
+# SELF_EXEC: 501922|/usr/bin/python3|python3 -c 
+# SELF_EXEC: import json, sys
+# SELF_EXEC: d = json.load(open(sys.argv[1]))
+# SELF_EXEC: seen = set()
+# SELF_EXEC: for ev in d.get("events", []):
+# SELF_EXEC:     fn = ev.get("filename") or ""
+# SELF_EXEC:     argv = ev.get("argv") or {}
+# SELF_EXEC:     av = argv.get("value", []) if isinstance(argv, dict) else []
+# SELF_EXEC:     args = " ".join(av) if av else fn
+# SELF_EXEC:     print(str(ev.get("pid", "?")) + "|" + fn + "|" + args)
+# SELF_EXEC:     if fn and fn not in seen:
+# SELF_EXEC:         seen.add(fn)
+# SELF_EXEC:         print("PROG|" + fn, file=sys.stderr)
+# SELF_EXEC:  /tmp/tmp.E0yKQKcAfu
+# SELF_EXEC: 501924|/usr/bin/sed|sed -n s/^PROG|\//\//p /tmp/tmp.E0yKQKcAfu.progs
+# SELF_EXEC: 501925|/usr/bin/rm|rm -f /tmp/tmp.E0yKQKcAfu /tmp/tmp.E0yKQKcAfu.progs
+# SELF_EXEC: 501927|/usr/bin/wc|wc -l
+# SELF_EXEC: 501928|/usr/bin/tr|tr -d  
+# SELF_EXEC: 501930|/usr/bin/wc|wc -c
+# SELF_EXEC: 501931|/usr/bin/tr|tr -d  
+# SELF_EXEC: 501933|/usr/bin/wc|wc -l
+# SELF_EXEC: 501934|/usr/bin/tr|tr -d  
+# SELF_EXEC: 501935|/usr/bin/date|date +%s%N
+# SELF_EXEC: 501937|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200946-twopass-demo.log
+# SELF_EXEC: 501939|/usr/bin/cat|cat /tmp/tmp.6g3DQp33sG
+# SELF_EXEC: 501940|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200946-twopass-demo.log
+# SELF_EXEC: 501941|/usr/bin/cat|cat /tmp/tmp.1UI7ASRBl4
+# SELF_EXEC: 501942|/usr/bin/cat|cat /tmp/tmp.1UI7ASRBl4
+# SELF_EXEC: 501943|/usr/bin/rm|rm -f /tmp/tmp.6g3DQp33sG /tmp/tmp.1UI7ASRBl4
+# SELF_EXEC: 501945|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200946-twopass-demo.log
+# SELF_EXEC: 501947|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200946-twopass-demo.log
+# SELF_EXEC: 501949|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200946-twopass-demo.log
+# SELF_EXEC_COUNT: 121
+# SHA: 093e4292b0ce4578ec465cecaefbce8516e5895719adf8329abaacac910d21a9
+# exit: 1

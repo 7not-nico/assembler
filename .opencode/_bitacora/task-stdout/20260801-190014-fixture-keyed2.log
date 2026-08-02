@@ -1,0 +1,28 @@
+# CMD: bash .opencode/_scripts/fixtures/fixture-keyed.sh chain-A 
+# ARGS: .opencode/_scripts/fixtures/fixture-keyed.sh chain-A 
+# CLI: bash 5.3.15(1)-release
+# GIT: assembler@087b240
+# BRANCH: main
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# HOST: elite
+# USER: eddyr
+# SESSION: demo-fixtures
+# PID: 458322
+# TASK: demo-keyed
+# SCOPE: fixtures
+# DATE: 2026-08-01T19:00:14-06:00
+# CWD: /home/eddyr/assembler
+# IN: fixture-keyed.sh=5e3e63ce9e0b6d05d4011ec76736c850a08810c6a035e773b2173677dfcbec34 skill-list.sh=789f68116a7242f4044449a2abe2926c8e9afe6ae0df4901ea7d085bf8516609
+# --------------------
+item 1
+item 2
+item 3
+item 4
+item 5
+RESULT=chain-A:5
+# OUT_LINES: 6
+# OUT_BYTES: 52
+# ERR_LINES: 0
+# DUR: 0s
+# SHA: aa4cda527bcb8eda370fb65407773b24aed81bdf89c7b461cd3cc6f8c335cc97
+# exit: 0

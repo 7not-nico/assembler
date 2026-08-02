@@ -1,0 +1,24 @@
+# CMD: bash .opencode/_scripts/fixtures/fixture-args.sh --alpha two\ words -b 3 
+# ARGS: .opencode/_scripts/fixtures/fixture-args.sh --alpha two\ words -b 3 
+# CLI: bash 5.3.15(1)-release
+# GIT: assembler@087b240
+# BRANCH: main
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# HOST: elite
+# USER: eddyr
+# SESSION: demo-fixtures
+# PID: 457453
+# TASK: demo-args
+# SCOPE: fixtures
+# DATE: 2026-08-01T18:59:22-06:00
+# CWD: /home/eddyr/assembler
+# OUT: fixtures/fixture-args.sh
+# --------------------
+argc=4
+args=--alpha two words -b 3
+# OUT_LINES: 2
+# OUT_BYTES: 35
+# ERR_LINES: 0
+# DUR: 0s
+# SHA: 4b3ab840cbb85a57198e7cab6c40872749dd0aaeb5a08a19132480a2ddcf847c
+# exit: 0

@@ -1,0 +1,163 @@
+# CMD: .opencode/_scripts/fixtures/fixture-cloth-api.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T21:27:11-06:00
+# PID: 554782
+# DUR: 472ms
+# exit: 0
+# GIT: assembler@490b1ca
+# BRANCH: main
+# SESSION: b2510ffb
+# TASK: cloth-api-fixture
+# CLI: .opencode/_scripts/fixtures/fixture-cloth-api.sh FACTORY_METHODS=16
+# ARGS: (none)
+# CWD: /home/eddyr/assembler
+# --------------------
+FACTORY_METHODS=16
+START_METHODS=14
+START_RATIO=0.88
+BUILDER_TYPES=27
+LIST_ENTRY_SUBS=23
+IMPL_ABSTRACT=6
+FORGE_LOADERS=2
+RESULT=pass:16
+# OUT_LINES: 8
+# OUT_BYTES: 136
+# ERR_LINES: 0
+# EXEC: 554782|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh fixture-cloth-api --task cloth-api-fixture -- .opencode/_scripts/fixtures/fixture-cloth-api.sh
+# EXEC: 554783|/usr/bin/date|date +%s%N
+# EXEC: 554786|/usr/bin/timeout|timeout 2 .opencode/_scripts/fixtures/fixture-cloth-api.sh --version
+# EXEC: 554787|/usr/bin/head|head -1
+# EXEC: 554788|/usr/bin/tr|tr -d \n
+# EXEC: 554789|.opencode/_scripts/fixtures/fixture-cloth-api.sh|.opencode/_scripts/fixtures/fixture-cloth-api.sh --version
+# EXEC: 554789|/usr/bin/bash|bash .opencode/_scripts/fixtures/fixture-cloth-api.sh --version
+# EXEC: 554790|/usr/bin/dirname|dirname .opencode/_scripts/fixtures/fixture-cloth-api.sh
+# EXEC: 554793|/usr/bin/rg|rg -c ^\s+(default|static) .*\( /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/api/ConfigEntryBuilder.java
+# EXEC: 554795|/usr/bin/rg|rg -c ^\s+(default|static) .* start[A-Z] /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/api/ConfigEntryBuilder.java
+# EXEC: 554798|/usr/bin/wc|wc -l
+# EXEC: 554797|/usr/bin/ls|ls /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/AbstractFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/AbstractListBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/AbstractRangeFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/AbstractRangeListBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/AbstractSliderFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/ColorFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/DoubleFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/DoubleListBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/DropdownMenuBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/EnumSelectorBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/FieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/FloatFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/FloatListBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/IntFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/IntListBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/IntSliderBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/KeyCodeBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/LongFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/LongListBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/LongSliderBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/SelectorBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/StringFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/StringListBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/TextDescriptionBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/TextFieldBuilder.java
+# EXEC: 554801|/usr/bin/wc|wc -l
+# EXEC: 554800|/usr/bin/ls|ls /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/AbstractListListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/AbstractNumberListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/AbstractTextFieldListListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/BaseListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/BooleanListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/DoubleListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/DoubleListListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/EnumListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/FloatListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/FloatListListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/IntegerListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/IntegerListListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/LongListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/LongListListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/MultiElementListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/NestedListListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/SelectionListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/StringListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/StringListListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/SubCategoryListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/TextFieldListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/TextListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/TooltipListEntry.java
+# EXEC: 554803|/usr/bin/rg|rg -l ^public abstract class  /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl
+# EXEC: 554804|/usr/bin/wc|wc -l
+# EXEC: 554814|/usr/bin/find|find /home/eddyr/assembler/_sandbox/cloth-config/forge -name ClothConfig*.java
+# EXEC: 554815|/usr/bin/wc|wc -l
+# EXEC: 554816|/usr/bin/awk|awk -v s=14 -v f=16 BEGIN { printf "%.2f", (f > 0 ? s / f : 0) }
+# EXEC: 554817|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 554820|/usr/bin/git|git remote get-url origin
+# EXEC: 554818|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 554821|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 554823|/usr/bin/git|git branch --show-current
+# EXEC: 554825|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 554827|/usr/bin/tr|tr -d \n
+# EXEC: 554826|/usr/bin/head|head -1
+# EXEC: 554828|/usr/bin/bun|bun --version
+# EXEC: 554830|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 554831|/usr/bin/head|head -1
+# EXEC: 554832|/usr/bin/tr|tr -d \n
+# EXEC: 554833|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 554835|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 554836|/usr/bin/head|head -1
+# EXEC: 554837|/usr/bin/tr|tr -d \n
+# EXEC: 554838|/usr/bin/python3|python3 --version
+# EXEC: 554840|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 554841|/usr/bin/head|head -1
+# EXEC: 554842|/usr/bin/tr|tr -d \n
+# EXEC: 554843|/usr/bin/ruby|ruby --version
+# EXEC: 554846|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 554847|/usr/bin/head|head -1
+# EXEC: 554848|/usr/bin/tr|tr -d \n
+# EXEC: 554849|/usr/bin/rustc|rustc --version
+# EXEC: 554853|/usr/bin/timeout|timeout 2 go version
+# EXEC: 554854|/usr/bin/head|head -1
+# EXEC: 554860|/usr/bin/tr|tr -d \n
+# EXEC: 554861|/usr/bin/go|go version
+# EXEC: 554869|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 554870|/usr/bin/head|head -1
+# EXEC: 554871|/usr/bin/tr|tr -d \n
+# EXEC: 554872|/usr/bin/git|git --version
+# EXEC: 554875|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 554876|/usr/bin/head|head -1
+# EXEC: 554877|/usr/bin/tr|tr -d \n
+# EXEC: 554878|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 554881|/usr/bin/head|head -1
+# EXEC: 554880|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 554882|/usr/bin/tr|tr -d \n
+# EXEC: 554883|/usr/bin/date|date --version
+# EXEC: 554885|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 554886|/usr/bin/head|head -1
+# EXEC: 554887|/usr/bin/tr|tr -d \n
+# EXEC: 554888|/usr/bin/wc|wc --version
+# EXEC: 554890|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 554891|/usr/bin/head|head -1
+# EXEC: 554892|/usr/bin/tr|tr -d \n
+# EXEC: 554893|/usr/bin/cat|cat --version
+# EXEC: 554895|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 554896|/usr/bin/head|head -1
+# EXEC: 554897|/usr/bin/tr|tr -d \n
+# EXEC: 554898|/usr/bin/tee|tee --version
+# EXEC: 554900|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 554901|/usr/bin/head|head -1
+# EXEC: 554902|/usr/bin/tr|tr -d \n
+# EXEC: 554903|/usr/bin/mktemp|mktemp --version
+# EXEC: 554905|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 554906|/usr/bin/head|head -1
+# EXEC: 554907|/usr/bin/tr|tr -d \n
+# EXEC: 554908|/usr/bin/rm|rm --version
+# EXEC: 554912|/usr/bin/tr|tr -d \n
+# EXEC: 554910|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 554911|/usr/bin/head|head -1
+# EXEC: 554913|/usr/bin/timeout|timeout --version
+# EXEC: 554916|/usr/bin/head|head -1
+# EXEC: 554915|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 554917|/usr/bin/tr|tr -d \n
+# EXEC: 554918|/usr/bin/tr|tr --version
+# EXEC: 554920|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 554921|/usr/bin/head|head -1
+# EXEC: 554922|/usr/bin/tr|tr -d \n
+# EXEC: 554923|/usr/bin/head|head --version
+# EXEC: 554925|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 554926|/usr/bin/head|head -1
+# EXEC: 554927|/usr/bin/tr|tr -d \n
+# EXEC: 554928|/usr/bin/cut|cut --version
+# EXEC: 554930|/usr/bin/date|date +%s%N
+# EXEC: 554931|/usr/bin/sha256sum|sha256sum
+# EXEC: 554932|/usr/bin/cut|cut -c1-8
+# EXEC: 554934|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212710-fixture-cloth-api.log
+# EXEC: 554935|/usr/bin/date|date -Is
+# EXEC: 554936|/usr/bin/mktemp|mktemp
+# EXEC: 554937|/usr/bin/mktemp|mktemp
+# EXEC: 554938|.opencode/_scripts/fixtures/fixture-cloth-api.sh|.opencode/_scripts/fixtures/fixture-cloth-api.sh
+# EXEC: 554938|/usr/bin/bash|bash .opencode/_scripts/fixtures/fixture-cloth-api.sh
+# EXEC: 554939|/usr/bin/dirname|dirname .opencode/_scripts/fixtures/fixture-cloth-api.sh
+# EXEC: 554942|/usr/bin/rg|rg -c ^\s+(default|static) .*\( /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/api/ConfigEntryBuilder.java
+# EXEC: 554944|/usr/bin/rg|rg -c ^\s+(default|static) .* start[A-Z] /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/api/ConfigEntryBuilder.java
+# EXEC: 554946|/usr/bin/ls|ls /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/AbstractFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/AbstractListBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/AbstractRangeFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/AbstractRangeListBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/AbstractSliderFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/ColorFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/DoubleFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/DoubleListBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/DropdownMenuBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/EnumSelectorBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/FieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/FloatFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/FloatListBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/IntFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/IntListBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/IntSliderBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/KeyCodeBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/LongFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/LongListBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/LongSliderBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/SelectorBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/StringFieldBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/StringListBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/TextDescriptionBuilder.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl/builders/TextFieldBuilder.java
+# EXEC: 554947|/usr/bin/wc|wc -l
+# EXEC: 554950|/usr/bin/wc|wc -l
+# EXEC: 554949|/usr/bin/ls|ls /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/AbstractListListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/AbstractNumberListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/AbstractTextFieldListListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/BaseListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/BooleanListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/DoubleListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/DoubleListListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/EnumListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/FloatListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/FloatListListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/IntegerListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/IntegerListListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/LongListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/LongListListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/MultiElementListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/NestedListListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/SelectionListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/StringListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/StringListListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/SubCategoryListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/TextFieldListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/TextListEntry.java /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/gui/entries/TooltipListEntry.java
+# EXEC: 554952|/usr/bin/rg|rg -l ^public abstract class  /home/eddyr/assembler/_sandbox/cloth-config/common/src/main/java/me/shedaniel/clothconfig2/impl
+# EXEC: 554953|/usr/bin/wc|wc -l
+# EXEC: 554963|/usr/bin/find|find /home/eddyr/assembler/_sandbox/cloth-config/forge -name ClothConfig*.java
+# EXEC: 554964|/usr/bin/wc|wc -l
+# EXEC: 554965|/usr/bin/awk|awk -v s=14 -v f=16 BEGIN { printf "%.2f", (f > 0 ? s / f : 0) }
+# EXEC: 554967|/usr/bin/wc|wc -l
+# EXEC: 554968|/usr/bin/tr|tr -d  
+# EXEC: 554970|/usr/bin/wc|wc -c
+# EXEC: 554971|/usr/bin/tr|tr -d  
+# EXEC: 554973|/usr/bin/wc|wc -l
+# EXEC: 554974|/usr/bin/tr|tr -d  
+# EXEC: 554975|/usr/bin/date|date +%s%N
+# EXEC: 554977|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212710-fixture-cloth-api.log
+# EXEC: 554979|/usr/bin/cat|cat /tmp/tmp.hcyi7d6BGO
+# EXEC: 554980|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212710-fixture-cloth-api.log
+# EXEC: 554981|/usr/bin/cat|cat /tmp/tmp.jTgWMlKEhV
+# EXEC: 554982|/usr/bin/cat|cat /tmp/tmp.jTgWMlKEhV
+# EXEC: 554983|/usr/bin/rm|rm -f /tmp/tmp.hcyi7d6BGO /tmp/tmp.jTgWMlKEhV
+# EXEC: 554985|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212710-fixture-cloth-api.log
+# EXEC: 554987|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212710-fixture-cloth-api.log
+# EXEC: 554989|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212710-fixture-cloth-api.log
+# PROGS: node=v25.2.1 awk=GNU Awk 5.4.1, API 4.1, PMA Avon 8-g1, (GNU MPFR 4.2.2, GNU MP 6.3.0) basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 find=find (GNU findutils) 4.11.0-modified git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 ls=ls (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rg=ripgrep 15.2.0 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 133
+# SHA: f217c9574a7aa9a687cea3421396943cb6281b0f77be0c081e1b3bc7f71a61f2
+# exit: 0

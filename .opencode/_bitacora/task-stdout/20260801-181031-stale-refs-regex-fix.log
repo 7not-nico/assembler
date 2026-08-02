@@ -1,0 +1,13 @@
+# CMD: bash -c $'cd /home/eddyr/assembler/.opencode/_scripts\necho "=== trailing-dot artifacts before/after ==="\n./rs check stale-refs 2>&1 | grep -cE "PROT\\.[A-Z0-9.]+\\. \\|" || echo "0 trailing-dot captures"\necho "=== META.IDENTITY with dot no longer flagged ==="\n./rs check stale-refs 2>&1 | grep -c "PROT.META.IDENTITY. " || echo "0"\necho "=== total stale ==="; ./rs check stale-refs 2>&1 | grep -c "potential stale"' 
+# DATE: 2026-08-01T18:10:31-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== trailing-dot artifacts before/after ===
+0
+0 trailing-dot captures
+=== META.IDENTITY with dot no longer flagged ===
+0
+0
+=== total stale ===
+2082
+# exit: 0

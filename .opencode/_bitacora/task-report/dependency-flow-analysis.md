@@ -125,4 +125,4 @@ opencode start
                           └── import from _lib/ only (internal)
 ```
 
-No `tools/` file imports from another `tools/` file. All shared logic routes through `_lib/`. This is the pattern described in `REF.LIB.DIRECTORY.LAYER` and `PROT.TOOL.MORPHISM`.
+No `tools/` file imports from another `tools/` file. All shared logic routes through `_lib/`. This is the pattern described in `REF.LIB.DIRECTORY.LAYER` and `PROT.TOOL.COMPOSITE`.

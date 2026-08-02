@@ -1,6 +1,6 @@
 # MCP server — mcp-rom-acquire (snes9x acquisition orchestrator)
 
-Status: in progress (2026-07-31 21:40)
+Status: completed (2026-08-01)
 
 ## Tasks
 

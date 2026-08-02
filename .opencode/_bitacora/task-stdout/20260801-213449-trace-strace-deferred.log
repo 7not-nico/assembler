@@ -1,0 +1,152 @@
+# CMD: _sandbox/trace-strace.sh -- _sandbox/buggy-script.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T21:34:49-06:00
+# PID: 559510
+# DUR: 1441ms
+# exit: 0
+# GIT: assembler@a6af804
+# BRANCH: main
+# SESSION: 561626e8
+# TASK: trace-strace-tracer
+# CLI: _sandbox/trace-strace.sh === trace-strace: 2026-08-01T21:34:49-06:00 ===
+# ARGS: -- _sandbox/buggy-script.sh 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== trace-strace: 2026-08-01T21:34:49-06:00 ===
+CMD: _sandbox/buggy-script.sh
+start
+mid
+done
+EXIT=0
+SYSCALL_LINES=0
+=== SUMMARY ===
+exit=0
+RESULT=pass:0
+NOTE: nested under bitacora-log — outer tracexec holds ptrace (EPERM); run standalone
+# OUT_LINES: 10
+# OUT_BYTES: 153
+# ERR_LINES: 1
+# EXEC: 559510|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh trace-strace-deferred --task trace-strace-tracer -- _sandbox/trace-strace.sh -- _sandbox/buggy-script.sh
+# EXEC: 559511|/usr/bin/date|date +%s%N
+# EXEC: 559515|/usr/bin/timeout|timeout 2 _sandbox/trace-strace.sh --version
+# EXEC: 559516|/usr/bin/head|head -1
+# EXEC: 559517|/usr/bin/tr|tr -d \n
+# EXEC: 559518|_sandbox/trace-strace.sh|_sandbox/trace-strace.sh --version
+# EXEC: 559518|/usr/bin/bash|bash _sandbox/trace-strace.sh --version
+# EXEC: 559519|/usr/bin/mktemp|mktemp -d
+# EXEC: 559520|/usr/bin/date|date -Is
+# EXEC: 559522|/usr/bin/rm|rm -rf /tmp/tmp.mhzMm0o9y4
+# EXEC: 559523|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 559526|/usr/bin/git|git remote get-url origin
+# EXEC: 559524|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 559527|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 559529|/usr/bin/git|git branch --show-current
+# EXEC: 559531|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 559532|/usr/bin/head|head -1
+# EXEC: 559533|/usr/bin/tr|tr -d \n
+# EXEC: 559534|/usr/bin/bun|bun --version
+# EXEC: 559536|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 559537|/usr/bin/head|head -1
+# EXEC: 559538|/usr/bin/tr|tr -d \n
+# EXEC: 559539|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 559541|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 559542|/usr/bin/head|head -1
+# EXEC: 559543|/usr/bin/tr|tr -d \n
+# EXEC: 559544|/usr/bin/python3|python3 --version
+# EXEC: 559546|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 559547|/usr/bin/head|head -1
+# EXEC: 559548|/usr/bin/tr|tr -d \n
+# EXEC: 559549|/usr/bin/ruby|ruby --version
+# EXEC: 559552|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 559553|/usr/bin/head|head -1
+# EXEC: 559554|/usr/bin/tr|tr -d \n
+# EXEC: 559555|/usr/bin/rustc|rustc --version
+# EXEC: 559558|/usr/bin/timeout|timeout 2 go version
+# EXEC: 559559|/usr/bin/head|head -1
+# EXEC: 559560|/usr/bin/tr|tr -d \n
+# EXEC: 559561|/usr/bin/go|go version
+# EXEC: 559568|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 559569|/usr/bin/head|head -1
+# EXEC: 559570|/usr/bin/tr|tr -d \n
+# EXEC: 559571|/usr/bin/git|git --version
+# EXEC: 559573|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 559574|/usr/bin/head|head -1
+# EXEC: 559575|/usr/bin/tr|tr -d \n
+# EXEC: 559576|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 559578|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 559579|/usr/bin/head|head -1
+# EXEC: 559580|/usr/bin/tr|tr -d \n
+# EXEC: 559581|/usr/bin/date|date --version
+# EXEC: 559583|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 559584|/usr/bin/head|head -1
+# EXEC: 559585|/usr/bin/tr|tr -d \n
+# EXEC: 559586|/usr/bin/wc|wc --version
+# EXEC: 559588|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 559589|/usr/bin/head|head -1
+# EXEC: 559590|/usr/bin/tr|tr -d \n
+# EXEC: 559591|/usr/bin/cat|cat --version
+# EXEC: 559593|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 559594|/usr/bin/head|head -1
+# EXEC: 559595|/usr/bin/tr|tr -d \n
+# EXEC: 559596|/usr/bin/tee|tee --version
+# EXEC: 559598|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 559599|/usr/bin/head|head -1
+# EXEC: 559600|/usr/bin/tr|tr -d \n
+# EXEC: 559601|/usr/bin/mktemp|mktemp --version
+# EXEC: 559603|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 559604|/usr/bin/head|head -1
+# EXEC: 559605|/usr/bin/tr|tr -d \n
+# EXEC: 559606|/usr/bin/rm|rm --version
+# EXEC: 559608|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 559609|/usr/bin/head|head -1
+# EXEC: 559610|/usr/bin/tr|tr -d \n
+# EXEC: 559611|/usr/bin/timeout|timeout --version
+# EXEC: 559613|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 559614|/usr/bin/head|head -1
+# EXEC: 559615|/usr/bin/tr|tr -d \n
+# EXEC: 559616|/usr/bin/tr|tr --version
+# EXEC: 559618|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 559619|/usr/bin/head|head -1
+# EXEC: 559620|/usr/bin/tr|tr -d \n
+# EXEC: 559621|/usr/bin/head|head --version
+# EXEC: 559623|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 559624|/usr/bin/head|head -1
+# EXEC: 559625|/usr/bin/tr|tr -d \n
+# EXEC: 559626|/usr/bin/cut|cut --version
+# EXEC: 559628|/usr/bin/date|date +%s%N
+# EXEC: 559629|/usr/bin/sha256sum|sha256sum
+# EXEC: 559630|/usr/bin/cut|cut -c1-8
+# EXEC: 559632|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213449-trace-strace-deferred.log
+# EXEC: 559633|/usr/bin/date|date -Is
+# EXEC: 559634|/usr/bin/mktemp|mktemp
+# EXEC: 559635|/usr/bin/mktemp|mktemp
+# EXEC: 559636|_sandbox/trace-strace.sh|_sandbox/trace-strace.sh -- _sandbox/buggy-script.sh
+# EXEC: 559636|/usr/bin/bash|bash _sandbox/trace-strace.sh -- _sandbox/buggy-script.sh
+# EXEC: 559637|/usr/bin/mktemp|mktemp -d
+# EXEC: 559638|/usr/bin/date|date -Is
+# EXEC: 559639|_sandbox/buggy-script.sh|_sandbox/buggy-script.sh
+# EXEC: 559639|/usr/bin/bash|bash _sandbox/buggy-script.sh
+# EXEC: 559640|/usr/bin/sleep|sleep 1
+# EXEC: 559645|/usr/bin/ls|ls /nonexistent-dir
+# EXEC: 559646|/usr/bin/rm|rm -rf /tmp/tmp.Dwdfss3evW
+# EXEC: 559648|/usr/bin/wc|wc -l
+# EXEC: 559649|/usr/bin/tr|tr -d  
+# EXEC: 559651|/usr/bin/wc|wc -c
+# EXEC: 559652|/usr/bin/tr|tr -d  
+# EXEC: 559654|/usr/bin/wc|wc -l
+# EXEC: 559655|/usr/bin/tr|tr -d  
+# EXEC: 559656|/usr/bin/date|date +%s%N
+# EXEC: 559658|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213449-trace-strace-deferred.log
+# EXEC: 559660|/usr/bin/cat|cat /tmp/tmp.6lVptxybzB
+# EXEC: 559661|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213449-trace-strace-deferred.log
+# EXEC: 559662|/usr/bin/cat|cat /tmp/tmp.LDX0M6BUpE
+# EXEC: 559663|/usr/bin/cat|cat /tmp/tmp.LDX0M6BUpE
+# EXEC: 559664|/usr/bin/rm|rm -f /tmp/tmp.6lVptxybzB /tmp/tmp.LDX0M6BUpE
+# EXEC: 559666|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213449-trace-strace-deferred.log
+# EXEC: 559668|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213449-trace-strace-deferred.log
+# EXEC: 559670|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213449-trace-strace-deferred.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 ls=ls (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 sleep=sleep (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 119
+# SHA: 4f024ea756532d53a35596c023ca1539ac2c5d0a6b088a3fbb121eab28c9076b
+# exit: 0

@@ -1,0 +1,26 @@
+# CMD: bash .opencode/_scripts/fixtures/fixture-ruby-test.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# DATE: 2026-08-01T19:42:19-06:00
+# PID: 485794
+# DUR: 226ms
+# exit: 0
+# GIT: assembler@087b240
+# BRANCH: main
+# SCOPE: fixtures
+# SESSION: ruby-fixture
+# TASK: test-ruby-fixture
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_scripts/fixtures/fixture-ruby-test.sh 
+# OUT: ruby toolchain test
+# IN: fixture-ruby-test.rb=3300e6594a017b86183d03a4c4ae4b74155a9d87a29ec5ff9c1af1fb0b5188e5 assembler-cli=327f262a82ae9d5863c40573765500ccd7c52a4d1efd26a4dd1d3aff364cbc34
+# CWD: /home/eddyr/assembler
+# --------------------
+CLI=/home/eddyr/assembler/.opencode/_scripts/_golib/bin/assembler-cli
+CLI_PRESENT=yes
+RUN_COUNT={"cli":"count","count":417,"exit":0}
+RUN_AUDIT_PATTERNS={"cli":"audit-patterns","faults":0,"exit":0}
+RESULT=pass:2
+# OUT_LINES: 5
+# OUT_BYTES: 211
+# ERR_LINES: 0
+# SHA: 89cbacec41aa02e28e93d93f8ddfb16b867b01262cb41d05d2fd21f7da66c55a

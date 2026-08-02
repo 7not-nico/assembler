@@ -1,0 +1,349 @@
+# CMD: sh -c echo\ hi\ \|\ grep\ -c\ hi 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T20:07:46-06:00
+# PID: 500599
+# SELF_EXEC: 500599|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh twopass-demo --task demo --scope fixtures -- sh -c echo hi | grep -c hi
+# SELF_EXEC: 500600|/usr/bin/date|date +%s%N
+# SELF_EXEC: 500604|/usr/bin/timeout|timeout 2 sh --version
+# SELF_EXEC: 500605|/usr/bin/head|head -1
+# SELF_EXEC: 500607|/home/eddyr/.cache/.bun/bin/sh|sh --version
+# SELF_EXEC: 500606|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500607|/home/eddyr/.cache/.bun/bin/sh|sh --version
+# SELF_EXEC: 500607|/home/linuxbrew/.linuxbrew/bin/sh|sh --version
+# SELF_EXEC: 500607|/home/linuxbrew/.linuxbrew/sbin/sh|sh --version
+# SELF_EXEC: 500607|/home/eddyr/.local/share/mise/installs/java/latest/bin/sh|sh --version
+# SELF_EXEC: 500607|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/sh|sh --version
+# SELF_EXEC: 500607|/home/eddyr/.local/share/omarchy/bin/sh|sh --version
+# SELF_EXEC: 500607|/home/eddyr/.local/share/mise/shims/sh|sh --version
+# SELF_EXEC: 500607|/home/eddyr/.local/share/omarchy/bin/sh|sh --version
+# SELF_EXEC: 500607|/usr/local/sbin/sh|sh --version
+# SELF_EXEC: 500607|/usr/local/bin/sh|sh --version
+# SELF_EXEC: 500607|/usr/bin/sh|sh --version
+# SELF_EXEC: 500608|/usr/bin/git|git rev-parse --short HEAD
+# SELF_EXEC: 500611|/usr/bin/git|git remote get-url origin
+# SELF_EXEC: 500609|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# SELF_EXEC: 500612|/usr/bin/git|git rev-parse --short HEAD
+# SELF_EXEC: 500614|/usr/bin/git|git branch --show-current
+# SELF_EXEC: 500616|/usr/bin/timeout|timeout 2 bun --version
+# SELF_EXEC: 500617|/usr/bin/head|head -1
+# SELF_EXEC: 500619|/home/eddyr/.cache/.bun/bin/bun|bun --version
+# SELF_EXEC: 500618|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500619|/home/eddyr/.cache/.bun/bin/bun|bun --version
+# SELF_EXEC: 500619|/home/linuxbrew/.linuxbrew/bin/bun|bun --version
+# SELF_EXEC: 500619|/home/linuxbrew/.linuxbrew/sbin/bun|bun --version
+# SELF_EXEC: 500619|/home/eddyr/.local/share/mise/installs/java/latest/bin/bun|bun --version
+# SELF_EXEC: 500619|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/bun|bun --version
+# SELF_EXEC: 500619|/home/eddyr/.local/share/omarchy/bin/bun|bun --version
+# SELF_EXEC: 500619|/home/eddyr/.local/share/mise/shims/bun|bun --version
+# SELF_EXEC: 500619|/home/eddyr/.local/share/omarchy/bin/bun|bun --version
+# SELF_EXEC: 500619|/usr/local/sbin/bun|bun --version
+# SELF_EXEC: 500619|/usr/local/bin/bun|bun --version
+# SELF_EXEC: 500619|/usr/bin/bun|bun --version
+# SELF_EXEC: 500621|/usr/bin/timeout|timeout 2 node --version
+# SELF_EXEC: 500622|/usr/bin/head|head -1
+# SELF_EXEC: 500624|/home/eddyr/.cache/.bun/bin/node|node --version
+# SELF_EXEC: 500623|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500624|/home/eddyr/.cache/.bun/bin/node|node --version
+# SELF_EXEC: 500624|/home/linuxbrew/.linuxbrew/bin/node|node --version
+# SELF_EXEC: 500624|/home/linuxbrew/.linuxbrew/sbin/node|node --version
+# SELF_EXEC: 500624|/home/eddyr/.local/share/mise/installs/java/latest/bin/node|node --version
+# SELF_EXEC: 500624|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# SELF_EXEC: 500626|/usr/bin/timeout|timeout 2 python3 --version
+# SELF_EXEC: 500627|/usr/bin/head|head -1
+# SELF_EXEC: 500629|/home/eddyr/.cache/.bun/bin/python3|python3 --version
+# SELF_EXEC: 500628|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500629|/home/eddyr/.cache/.bun/bin/python3|python3 --version
+# SELF_EXEC: 500629|/home/linuxbrew/.linuxbrew/bin/python3|python3 --version
+# SELF_EXEC: 500629|/home/linuxbrew/.linuxbrew/sbin/python3|python3 --version
+# SELF_EXEC: 500629|/home/eddyr/.local/share/mise/installs/java/latest/bin/python3|python3 --version
+# SELF_EXEC: 500629|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/python3|python3 --version
+# SELF_EXEC: 500629|/home/eddyr/.local/share/omarchy/bin/python3|python3 --version
+# SELF_EXEC: 500629|/home/eddyr/.local/share/mise/shims/python3|python3 --version
+# SELF_EXEC: 500629|/home/eddyr/.local/share/omarchy/bin/python3|python3 --version
+# SELF_EXEC: 500629|/usr/local/sbin/python3|python3 --version
+# SELF_EXEC: 500629|/usr/local/bin/python3|python3 --version
+# SELF_EXEC: 500629|/usr/bin/python3|python3 --version
+# SELF_EXEC: 500631|/usr/bin/timeout|timeout 2 ruby --version
+# SELF_EXEC: 500632|/usr/bin/head|head -1
+# SELF_EXEC: 500633|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500634|/home/eddyr/.cache/.bun/bin/ruby|ruby --version
+# SELF_EXEC: 500634|/home/eddyr/.cache/.bun/bin/ruby|ruby --version
+# SELF_EXEC: 500634|/home/linuxbrew/.linuxbrew/bin/ruby|ruby --version
+# SELF_EXEC: 500634|/home/linuxbrew/.linuxbrew/sbin/ruby|ruby --version
+# SELF_EXEC: 500634|/home/eddyr/.local/share/mise/installs/java/latest/bin/ruby|ruby --version
+# SELF_EXEC: 500634|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/ruby|ruby --version
+# SELF_EXEC: 500634|/home/eddyr/.local/share/omarchy/bin/ruby|ruby --version
+# SELF_EXEC: 500634|/home/eddyr/.local/share/mise/shims/ruby|ruby --version
+# SELF_EXEC: 500634|/home/eddyr/.local/share/omarchy/bin/ruby|ruby --version
+# SELF_EXEC: 500634|/usr/local/sbin/ruby|ruby --version
+# SELF_EXEC: 500634|/usr/local/bin/ruby|ruby --version
+# SELF_EXEC: 500634|/usr/bin/ruby|ruby --version
+# SELF_EXEC: 500637|/usr/bin/timeout|timeout 2 rustc --version
+# SELF_EXEC: 500638|/usr/bin/head|head -1
+# SELF_EXEC: 500640|/home/eddyr/.cache/.bun/bin/rustc|rustc --version
+# SELF_EXEC: 500639|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500640|/home/eddyr/.cache/.bun/bin/rustc|rustc --version
+# SELF_EXEC: 500640|/home/linuxbrew/.linuxbrew/bin/rustc|rustc --version
+# SELF_EXEC: 500640|/home/linuxbrew/.linuxbrew/sbin/rustc|rustc --version
+# SELF_EXEC: 500640|/home/eddyr/.local/share/mise/installs/java/latest/bin/rustc|rustc --version
+# SELF_EXEC: 500640|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/rustc|rustc --version
+# SELF_EXEC: 500640|/home/eddyr/.local/share/omarchy/bin/rustc|rustc --version
+# SELF_EXEC: 500640|/home/eddyr/.local/share/mise/shims/rustc|rustc --version
+# SELF_EXEC: 500640|/home/eddyr/.local/share/omarchy/bin/rustc|rustc --version
+# SELF_EXEC: 500640|/usr/local/sbin/rustc|rustc --version
+# SELF_EXEC: 500640|/usr/local/bin/rustc|rustc --version
+# SELF_EXEC: 500640|/usr/bin/rustc|rustc --version
+# SELF_EXEC: 500643|/usr/bin/timeout|timeout 2 go version
+# SELF_EXEC: 500644|/usr/bin/head|head -1
+# SELF_EXEC: 500646|/home/eddyr/.cache/.bun/bin/go|go version
+# SELF_EXEC: 500645|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500646|/home/eddyr/.cache/.bun/bin/go|go version
+# SELF_EXEC: 500646|/home/linuxbrew/.linuxbrew/bin/go|go version
+# SELF_EXEC: 500646|/home/linuxbrew/.linuxbrew/sbin/go|go version
+# SELF_EXEC: 500646|/home/eddyr/.local/share/mise/installs/java/latest/bin/go|go version
+# SELF_EXEC: 500646|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/go|go version
+# SELF_EXEC: 500646|/home/eddyr/.local/share/omarchy/bin/go|go version
+# SELF_EXEC: 500646|/home/eddyr/.local/share/mise/shims/go|go version
+# SELF_EXEC: 500646|/home/eddyr/.local/share/omarchy/bin/go|go version
+# SELF_EXEC: 500646|/usr/local/sbin/go|go version
+# SELF_EXEC: 500646|/usr/local/bin/go|go version
+# SELF_EXEC: 500646|/usr/bin/go|go version
+# SELF_EXEC: 500652|/usr/bin/timeout|timeout 2 git --version
+# SELF_EXEC: 500653|/usr/bin/head|head -1
+# SELF_EXEC: 500655|/home/eddyr/.cache/.bun/bin/git|git --version
+# SELF_EXEC: 500654|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500655|/home/eddyr/.cache/.bun/bin/git|git --version
+# SELF_EXEC: 500655|/home/linuxbrew/.linuxbrew/bin/git|git --version
+# SELF_EXEC: 500655|/home/linuxbrew/.linuxbrew/sbin/git|git --version
+# SELF_EXEC: 500655|/home/eddyr/.local/share/mise/installs/java/latest/bin/git|git --version
+# SELF_EXEC: 500655|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/git|git --version
+# SELF_EXEC: 500655|/home/eddyr/.local/share/omarchy/bin/git|git --version
+# SELF_EXEC: 500655|/home/eddyr/.local/share/mise/shims/git|git --version
+# SELF_EXEC: 500655|/home/eddyr/.local/share/omarchy/bin/git|git --version
+# SELF_EXEC: 500655|/usr/local/sbin/git|git --version
+# SELF_EXEC: 500655|/usr/local/bin/git|git --version
+# SELF_EXEC: 500655|/usr/bin/git|git --version
+# SELF_EXEC: 500657|/usr/bin/timeout|timeout 2 sha256sum --version
+# SELF_EXEC: 500658|/usr/bin/head|head -1
+# SELF_EXEC: 500660|/home/eddyr/.cache/.bun/bin/sha256sum|sha256sum --version
+# SELF_EXEC: 500659|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500660|/home/eddyr/.cache/.bun/bin/sha256sum|sha256sum --version
+# SELF_EXEC: 500660|/home/linuxbrew/.linuxbrew/bin/sha256sum|sha256sum --version
+# SELF_EXEC: 500660|/home/linuxbrew/.linuxbrew/sbin/sha256sum|sha256sum --version
+# SELF_EXEC: 500660|/home/eddyr/.local/share/mise/installs/java/latest/bin/sha256sum|sha256sum --version
+# SELF_EXEC: 500660|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/sha256sum|sha256sum --version
+# SELF_EXEC: 500660|/home/eddyr/.local/share/omarchy/bin/sha256sum|sha256sum --version
+# SELF_EXEC: 500660|/home/eddyr/.local/share/mise/shims/sha256sum|sha256sum --version
+# SELF_EXEC: 500660|/home/eddyr/.local/share/omarchy/bin/sha256sum|sha256sum --version
+# SELF_EXEC: 500660|/usr/local/sbin/sha256sum|sha256sum --version
+# SELF_EXEC: 500660|/usr/local/bin/sha256sum|sha256sum --version
+# SELF_EXEC: 500660|/usr/bin/sha256sum|sha256sum --version
+# SELF_EXEC: 500662|/usr/bin/timeout|timeout 2 date --version
+# SELF_EXEC: 500663|/usr/bin/head|head -1
+# SELF_EXEC: 500665|/home/eddyr/.cache/.bun/bin/date|date --version
+# SELF_EXEC: 500664|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500665|/home/eddyr/.cache/.bun/bin/date|date --version
+# SELF_EXEC: 500665|/home/linuxbrew/.linuxbrew/bin/date|date --version
+# SELF_EXEC: 500665|/home/linuxbrew/.linuxbrew/sbin/date|date --version
+# SELF_EXEC: 500665|/home/eddyr/.local/share/mise/installs/java/latest/bin/date|date --version
+# SELF_EXEC: 500665|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/date|date --version
+# SELF_EXEC: 500665|/home/eddyr/.local/share/omarchy/bin/date|date --version
+# SELF_EXEC: 500665|/home/eddyr/.local/share/mise/shims/date|date --version
+# SELF_EXEC: 500665|/home/eddyr/.local/share/omarchy/bin/date|date --version
+# SELF_EXEC: 500665|/usr/local/sbin/date|date --version
+# SELF_EXEC: 500665|/usr/local/bin/date|date --version
+# SELF_EXEC: 500665|/usr/bin/date|date --version
+# SELF_EXEC: 500667|/usr/bin/timeout|timeout 2 wc --version
+# SELF_EXEC: 500668|/usr/bin/head|head -1
+# SELF_EXEC: 500670|/home/eddyr/.cache/.bun/bin/wc|wc --version
+# SELF_EXEC: 500669|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500670|/home/eddyr/.cache/.bun/bin/wc|wc --version
+# SELF_EXEC: 500670|/home/linuxbrew/.linuxbrew/bin/wc|wc --version
+# SELF_EXEC: 500670|/home/linuxbrew/.linuxbrew/sbin/wc|wc --version
+# SELF_EXEC: 500670|/home/eddyr/.local/share/mise/installs/java/latest/bin/wc|wc --version
+# SELF_EXEC: 500670|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/wc|wc --version
+# SELF_EXEC: 500670|/home/eddyr/.local/share/omarchy/bin/wc|wc --version
+# SELF_EXEC: 500670|/home/eddyr/.local/share/mise/shims/wc|wc --version
+# SELF_EXEC: 500670|/home/eddyr/.local/share/omarchy/bin/wc|wc --version
+# SELF_EXEC: 500670|/usr/local/sbin/wc|wc --version
+# SELF_EXEC: 500670|/usr/local/bin/wc|wc --version
+# SELF_EXEC: 500670|/usr/bin/wc|wc --version
+# SELF_EXEC: 500672|/usr/bin/timeout|timeout 2 cat --version
+# SELF_EXEC: 500673|/usr/bin/head|head -1
+# SELF_EXEC: 500675|/home/eddyr/.cache/.bun/bin/cat|cat --version
+# SELF_EXEC: 500674|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500675|/home/eddyr/.cache/.bun/bin/cat|cat --version
+# SELF_EXEC: 500675|/home/linuxbrew/.linuxbrew/bin/cat|cat --version
+# SELF_EXEC: 500675|/home/linuxbrew/.linuxbrew/sbin/cat|cat --version
+# SELF_EXEC: 500675|/home/eddyr/.local/share/mise/installs/java/latest/bin/cat|cat --version
+# SELF_EXEC: 500675|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/cat|cat --version
+# SELF_EXEC: 500675|/home/eddyr/.local/share/omarchy/bin/cat|cat --version
+# SELF_EXEC: 500675|/home/eddyr/.local/share/mise/shims/cat|cat --version
+# SELF_EXEC: 500675|/home/eddyr/.local/share/omarchy/bin/cat|cat --version
+# SELF_EXEC: 500675|/usr/local/sbin/cat|cat --version
+# SELF_EXEC: 500675|/usr/local/bin/cat|cat --version
+# SELF_EXEC: 500675|/usr/bin/cat|cat --version
+# SELF_EXEC: 500677|/usr/bin/timeout|timeout 2 tee --version
+# SELF_EXEC: 500678|/usr/bin/head|head -1
+# SELF_EXEC: 500680|/home/eddyr/.cache/.bun/bin/tee|tee --version
+# SELF_EXEC: 500679|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500680|/home/eddyr/.cache/.bun/bin/tee|tee --version
+# SELF_EXEC: 500680|/home/linuxbrew/.linuxbrew/bin/tee|tee --version
+# SELF_EXEC: 500680|/home/linuxbrew/.linuxbrew/sbin/tee|tee --version
+# SELF_EXEC: 500680|/home/eddyr/.local/share/mise/installs/java/latest/bin/tee|tee --version
+# SELF_EXEC: 500680|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/tee|tee --version
+# SELF_EXEC: 500680|/home/eddyr/.local/share/omarchy/bin/tee|tee --version
+# SELF_EXEC: 500680|/home/eddyr/.local/share/mise/shims/tee|tee --version
+# SELF_EXEC: 500680|/home/eddyr/.local/share/omarchy/bin/tee|tee --version
+# SELF_EXEC: 500680|/usr/local/sbin/tee|tee --version
+# SELF_EXEC: 500680|/usr/local/bin/tee|tee --version
+# SELF_EXEC: 500680|/usr/bin/tee|tee --version
+# SELF_EXEC: 500682|/usr/bin/timeout|timeout 2 mktemp --version
+# SELF_EXEC: 500683|/usr/bin/head|head -1
+# SELF_EXEC: 500684|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500685|/home/eddyr/.cache/.bun/bin/mktemp|mktemp --version
+# SELF_EXEC: 500685|/home/eddyr/.cache/.bun/bin/mktemp|mktemp --version
+# SELF_EXEC: 500685|/home/linuxbrew/.linuxbrew/bin/mktemp|mktemp --version
+# SELF_EXEC: 500685|/home/linuxbrew/.linuxbrew/sbin/mktemp|mktemp --version
+# SELF_EXEC: 500685|/home/eddyr/.local/share/mise/installs/java/latest/bin/mktemp|mktemp --version
+# SELF_EXEC: 500685|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/mktemp|mktemp --version
+# SELF_EXEC: 500685|/home/eddyr/.local/share/omarchy/bin/mktemp|mktemp --version
+# SELF_EXEC: 500685|/home/eddyr/.local/share/mise/shims/mktemp|mktemp --version
+# SELF_EXEC: 500685|/home/eddyr/.local/share/omarchy/bin/mktemp|mktemp --version
+# SELF_EXEC: 500685|/usr/local/sbin/mktemp|mktemp --version
+# SELF_EXEC: 500685|/usr/local/bin/mktemp|mktemp --version
+# SELF_EXEC: 500685|/usr/bin/mktemp|mktemp --version
+# SELF_EXEC: 500687|/usr/bin/timeout|timeout 2 rm --version
+# SELF_EXEC: 500689|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500688|/usr/bin/head|head -1
+# SELF_EXEC: 500690|/home/eddyr/.cache/.bun/bin/rm|rm --version
+# SELF_EXEC: 500690|/home/eddyr/.cache/.bun/bin/rm|rm --version
+# SELF_EXEC: 500690|/home/linuxbrew/.linuxbrew/bin/rm|rm --version
+# SELF_EXEC: 500690|/home/linuxbrew/.linuxbrew/sbin/rm|rm --version
+# SELF_EXEC: 500690|/home/eddyr/.local/share/mise/installs/java/latest/bin/rm|rm --version
+# SELF_EXEC: 500690|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/rm|rm --version
+# SELF_EXEC: 500690|/home/eddyr/.local/share/omarchy/bin/rm|rm --version
+# SELF_EXEC: 500690|/home/eddyr/.local/share/mise/shims/rm|rm --version
+# SELF_EXEC: 500690|/home/eddyr/.local/share/omarchy/bin/rm|rm --version
+# SELF_EXEC: 500690|/usr/local/sbin/rm|rm --version
+# SELF_EXEC: 500690|/usr/local/bin/rm|rm --version
+# SELF_EXEC: 500690|/usr/bin/rm|rm --version
+# SELF_EXEC: 500692|/usr/bin/timeout|timeout 2 timeout --version
+# SELF_EXEC: 500693|/usr/bin/head|head -1
+# SELF_EXEC: 500695|/home/eddyr/.cache/.bun/bin/timeout|timeout --version
+# SELF_EXEC: 500694|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500695|/home/eddyr/.cache/.bun/bin/timeout|timeout --version
+# SELF_EXEC: 500695|/home/linuxbrew/.linuxbrew/bin/timeout|timeout --version
+# SELF_EXEC: 500695|/home/linuxbrew/.linuxbrew/sbin/timeout|timeout --version
+# SELF_EXEC: 500695|/home/eddyr/.local/share/mise/installs/java/latest/bin/timeout|timeout --version
+# SELF_EXEC: 500695|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/timeout|timeout --version
+# SELF_EXEC: 500695|/home/eddyr/.local/share/omarchy/bin/timeout|timeout --version
+# SELF_EXEC: 500695|/home/eddyr/.local/share/mise/shims/timeout|timeout --version
+# SELF_EXEC: 500695|/home/eddyr/.local/share/omarchy/bin/timeout|timeout --version
+# SELF_EXEC: 500695|/usr/local/sbin/timeout|timeout --version
+# SELF_EXEC: 500695|/usr/local/bin/timeout|timeout --version
+# SELF_EXEC: 500695|/usr/bin/timeout|timeout --version
+# SELF_EXEC: 500697|/usr/bin/timeout|timeout 2 tr --version
+# SELF_EXEC: 500698|/usr/bin/head|head -1
+# SELF_EXEC: 500700|/home/eddyr/.cache/.bun/bin/tr|tr --version
+# SELF_EXEC: 500699|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500700|/home/eddyr/.cache/.bun/bin/tr|tr --version
+# SELF_EXEC: 500700|/home/linuxbrew/.linuxbrew/bin/tr|tr --version
+# SELF_EXEC: 500700|/home/linuxbrew/.linuxbrew/sbin/tr|tr --version
+# SELF_EXEC: 500700|/home/eddyr/.local/share/mise/installs/java/latest/bin/tr|tr --version
+# SELF_EXEC: 500700|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/tr|tr --version
+# SELF_EXEC: 500700|/home/eddyr/.local/share/omarchy/bin/tr|tr --version
+# SELF_EXEC: 500700|/home/eddyr/.local/share/mise/shims/tr|tr --version
+# SELF_EXEC: 500700|/home/eddyr/.local/share/omarchy/bin/tr|tr --version
+# SELF_EXEC: 500700|/usr/local/sbin/tr|tr --version
+# SELF_EXEC: 500700|/usr/local/bin/tr|tr --version
+# SELF_EXEC: 500700|/usr/bin/tr|tr --version
+# SELF_EXEC: 500703|/usr/bin/head|head -1
+# SELF_EXEC: 500702|/usr/bin/timeout|timeout 2 head --version
+# SELF_EXEC: 500704|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500705|/home/eddyr/.cache/.bun/bin/head|head --version
+# SELF_EXEC: 500705|/home/eddyr/.cache/.bun/bin/head|head --version
+# SELF_EXEC: 500705|/home/linuxbrew/.linuxbrew/bin/head|head --version
+# SELF_EXEC: 500705|/home/linuxbrew/.linuxbrew/sbin/head|head --version
+# SELF_EXEC: 500705|/home/eddyr/.local/share/mise/installs/java/latest/bin/head|head --version
+# SELF_EXEC: 500705|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/head|head --version
+# SELF_EXEC: 500705|/home/eddyr/.local/share/omarchy/bin/head|head --version
+# SELF_EXEC: 500705|/home/eddyr/.local/share/mise/shims/head|head --version
+# SELF_EXEC: 500705|/home/eddyr/.local/share/omarchy/bin/head|head --version
+# SELF_EXEC: 500705|/usr/local/sbin/head|head --version
+# SELF_EXEC: 500705|/usr/local/bin/head|head --version
+# SELF_EXEC: 500705|/usr/bin/head|head --version
+# SELF_EXEC: 500707|/usr/bin/timeout|timeout 2 cut --version
+# SELF_EXEC: 500708|/usr/bin/head|head -1
+# SELF_EXEC: 500710|/home/eddyr/.cache/.bun/bin/cut|cut --version
+# SELF_EXEC: 500709|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500710|/home/eddyr/.cache/.bun/bin/cut|cut --version
+# SELF_EXEC: 500710|/home/linuxbrew/.linuxbrew/bin/cut|cut --version
+# SELF_EXEC: 500710|/home/linuxbrew/.linuxbrew/sbin/cut|cut --version
+# SELF_EXEC: 500710|/home/eddyr/.local/share/mise/installs/java/latest/bin/cut|cut --version
+# SELF_EXEC: 500710|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/cut|cut --version
+# SELF_EXEC: 500710|/home/eddyr/.local/share/omarchy/bin/cut|cut --version
+# SELF_EXEC: 500710|/home/eddyr/.local/share/mise/shims/cut|cut --version
+# SELF_EXEC: 500710|/home/eddyr/.local/share/omarchy/bin/cut|cut --version
+# SELF_EXEC: 500710|/usr/local/sbin/cut|cut --version
+# SELF_EXEC: 500710|/usr/local/bin/cut|cut --version
+# SELF_EXEC: 500710|/usr/bin/cut|cut --version
+# SELF_EXEC: 500712|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200745-twopass-demo.log
+# SELF_EXEC: 500713|/usr/bin/date|date -Is
+# SELF_EXEC: 500714|/usr/bin/mktemp|mktemp
+# SELF_EXEC: 500715|/usr/bin/mktemp|mktemp
+# SELF_EXEC: 500716|/usr/bin/mktemp|mktemp
+# SELF_EXEC: 500717|/usr/bin/tracexec|tracexec collect --format=json -o /tmp/tmp.HRSByjMN0v -- sh -c echo hi | grep -c hi
+# SELF_EXEC: 500722|/usr/bin/python3|python3 -c 
+# SELF_EXEC: import json, sys
+# SELF_EXEC: d = json.load(open(sys.argv[1]))
+# SELF_EXEC: seen = set()
+# SELF_EXEC: for ev in d.get("events", []):
+# SELF_EXEC:     fn = ev.get("filename") or ""
+# SELF_EXEC:     argv = ev.get("argv") or {}
+# SELF_EXEC:     av = argv.get("value", []) if isinstance(argv, dict) else []
+# SELF_EXEC:     args = " ".join(av) if av else fn
+# SELF_EXEC:     print(str(ev.get("pid", "?")) + "|" + fn + "|" + args)
+# SELF_EXEC:     if fn and fn not in seen:
+# SELF_EXEC:         seen.add(fn)
+# SELF_EXEC:         print("PROG|" + fn, file=sys.stderr)
+# SELF_EXEC:  /tmp/tmp.HRSByjMN0v
+# SELF_EXEC: 500724|/usr/bin/sed|sed -n s/^PROG|\//\//p /tmp/tmp.HRSByjMN0v.progs
+# SELF_EXEC: 500726|/usr/bin/cat|cat /tmp/tmp.HRSByjMN0v.progs
+# SELF_EXEC: 500727|/usr/bin/sed|sed s/^PROG|//
+# SELF_EXEC: 500729|/usr/bin/timeout|timeout 2 Traceback --version
+# SELF_EXEC: 500730|/usr/bin/head|head -1
+# SELF_EXEC: 500732|/home/eddyr/.cache/.bun/bin/Traceback|Traceback --version
+# SELF_EXEC: 500731|/usr/bin/tr|tr -d \n
+# SELF_EXEC: 500732|/home/eddyr/.cache/.bun/bin/Traceback|Traceback --version
+# SELF_EXEC: 500732|/home/linuxbrew/.linuxbrew/bin/Traceback|Traceback --version
+# SELF_EXEC: 500732|/home/linuxbrew/.linuxbrew/sbin/Traceback|Traceback --version
+# SELF_EXEC: 500732|/home/eddyr/.local/share/mise/installs/java/latest/bin/Traceback|Traceback --version
+# SELF_EXEC: 500732|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/Traceback|Traceback --version
+# SELF_EXEC: 500732|/home/eddyr/.local/share/omarchy/bin/Traceback|Traceback --version
+# SELF_EXEC: 500732|/home/eddyr/.local/share/mise/shims/Traceback|Traceback --version
+# SELF_EXEC: 500732|/home/eddyr/.local/share/omarchy/bin/Traceback|Traceback --version
+# SELF_EXEC: 500732|/usr/local/sbin/Traceback|Traceback --version
+# SELF_EXEC: 500732|/usr/local/bin/Traceback|Traceback --version
+# SELF_EXEC: 500732|/usr/bin/Traceback|Traceback --version
+# SELF_EXEC: 500732|/opt/android-sdk/platform-tools/Traceback|Traceback --version
+# SELF_EXEC: 500732|/opt/android-sdk/tools/Traceback|Traceback --version
+# SELF_EXEC: 500732|/opt/android-sdk/tools/bin/Traceback|Traceback --version
+# SELF_EXEC: 500732|/usr/share/dotnet/Traceback|Traceback --version
+# SELF_EXEC: 500732|/home/eddyr/.dotnet/tools/Traceback|Traceback --version
+# SELF_EXEC: 500732|/var/lib/flatpak/exports/bin/Traceback|Traceback --version
+# SELF_EXEC: 500732|/usr/lib/jvm/default/bin/Traceback|Traceback --version
+# SELF_EXEC: 500732|/usr/bin/site_perl/Traceback|Traceback --version
+# SELF_EXEC: 500732|/usr/bin/vendor_perl/Traceback|Traceback --version
+# SELF_EXEC: 500732|/usr/bin/core_perl/Traceback|Traceback --version
+# SELF_EXEC: 500732|/opt/pspdev/bin/Traceback|Traceback --version
+# SELF_EXEC: 500732|/opt/android-sdk/platform-tools/Traceback|Traceback --version
+# SELF_EXEC: 500732|/opt/android-sdk/tools/Traceback|Traceback --version
+# SELF_EXEC: 500732|/opt/android-sdk/tools/bin/Traceback|Traceback --version
+# SELF_EXEC: 500732|/opt/pspdev/bin/Traceback|Traceback --version
+# SELF_EXEC: 500732|/home/eddyr/.local/bin/Traceback|Traceback --version
+# SELF_EXEC: 500732|/opt/pspdev/bin/Traceback|Traceback --version
+# SELF_EXEC_COUNT: 341
+# SHA: be5a0898d77e6026ce412b6f5f0c2b287bfcf47201b6f3dbed7ab2fd26e1b58c
+# exit: 1

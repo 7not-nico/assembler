@@ -28,7 +28,7 @@ Timestamp: 2026-08-01 154821
 ## Open edges
 
 - ~~`PROT.META.IDENTITY.md:16` reconstruction~~ — **resolved**: derived **PROT.RULE.SCHEMA** from the document's own identity-protocol enumeration (lines 76–78 pair MAXIM + RULE; the RULE-map iteration corrupted both line 16 and 78). Verified consistent; residual `X.SCHEMA` 0. All 24 corruption sites now carry derived-or-context-confirmed IDs.
-- Remaining stale IDs (8, enumerated in crossref-audit todo): PROT.LLM.SPECIFICATION (22), PROT.LIB.DIRECTORY.LAYER (13), PROT.TOOL.MORPHISM (11), PROT.LIB.PURITY.BOUNDARY (11), PROT.LIB.BOUNDARY (10), PROT.SEARCH.VECTOR.INDEX (10), PROT.META.ENTITY.ROUTING (7), PROT.LIB.MUTATION.STRATEGY (7) — decision or entity creation
+- Remaining stale IDs (8, enumerated in crossref-audit todo): PROT.LLM.SPECIFICATION (22), PROT.LIB.DIRECTORY.LAYER (13), PROT.TOOL.COMPOSITE (11), PROT.LIB.PURITY.BOUNDARY (11), PROT.LIB.BOUNDARY (10), PROT.SEARCH.VECTOR.INDEX (10), SPEC.ENTITY.ROUTING.TABLE (7), PROT.LIB.MUTATION.STRATEGY (7) — decision or entity creation
 - Trailing-dot false positives in the stale-refs regex (`PROT.META.IDENTITY.` ×11) — tool refinement candidate
 - Sandbox fixtures + template boilerplate dominate the residual 2187 — verify scope before cleanup
 - Wave-3b lesson: no experimental seds in production sweeps

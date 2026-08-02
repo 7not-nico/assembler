@@ -1,0 +1,150 @@
+# CMD: _sandbox/trace-exec.sh -- _sandbox/buggy-script.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T21:23:04-06:00
+# PID: 551716
+# DUR: 1436ms
+# exit: 0
+# GIT: assembler@490b1ca
+# BRANCH: main
+# SESSION: 8b19df1f
+# TASK: trace-exec-tracer
+# CLI: _sandbox/trace-exec.sh === trace-exec: 2026-08-01T21:23:03-06:00 ===
+# ARGS: -- _sandbox/buggy-script.sh 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== trace-exec: 2026-08-01T21:23:04-06:00 ===
+CMD: _sandbox/buggy-script.sh
+start
+mid
+done
+=== exit: 0 ===
+(no exec events captured)
+=== SUMMARY ===
+exit=0
+# OUT_LINES: 9
+# OUT_BYTES: 156
+# ERR_LINES: 0
+# EXEC: 551716|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh trace-exec-test --task trace-exec-tracer -- _sandbox/trace-exec.sh -- _sandbox/buggy-script.sh
+# EXEC: 551717|/usr/bin/date|date +%s%N
+# EXEC: 551721|/usr/bin/timeout|timeout 2 _sandbox/trace-exec.sh --version
+# EXEC: 551722|/usr/bin/head|head -1
+# EXEC: 551723|/usr/bin/tr|tr -d \n
+# EXEC: 551724|_sandbox/trace-exec.sh|_sandbox/trace-exec.sh --version
+# EXEC: 551724|/usr/bin/bash|bash _sandbox/trace-exec.sh --version
+# EXEC: 551725|/usr/bin/mktemp|mktemp -d
+# EXEC: 551726|/usr/bin/date|date -Is
+# EXEC: 551728|/usr/bin/rm|rm -rf /tmp/tmp.rUOOO2aF24
+# EXEC: 551729|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 551732|/usr/bin/git|git remote get-url origin
+# EXEC: 551730|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 551733|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 551735|/usr/bin/git|git branch --show-current
+# EXEC: 551737|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 551738|/usr/bin/head|head -1
+# EXEC: 551739|/usr/bin/tr|tr -d \n
+# EXEC: 551740|/usr/bin/bun|bun --version
+# EXEC: 551742|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 551743|/usr/bin/head|head -1
+# EXEC: 551744|/usr/bin/tr|tr -d \n
+# EXEC: 551745|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 551747|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 551748|/usr/bin/head|head -1
+# EXEC: 551749|/usr/bin/tr|tr -d \n
+# EXEC: 551750|/usr/bin/python3|python3 --version
+# EXEC: 551752|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 551753|/usr/bin/head|head -1
+# EXEC: 551754|/usr/bin/tr|tr -d \n
+# EXEC: 551755|/usr/bin/ruby|ruby --version
+# EXEC: 551759|/usr/bin/head|head -1
+# EXEC: 551758|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 551760|/usr/bin/tr|tr -d \n
+# EXEC: 551761|/usr/bin/rustc|rustc --version
+# EXEC: 551764|/usr/bin/timeout|timeout 2 go version
+# EXEC: 551765|/usr/bin/head|head -1
+# EXEC: 551766|/usr/bin/tr|tr -d \n
+# EXEC: 551767|/usr/bin/go|go version
+# EXEC: 551775|/usr/bin/head|head -1
+# EXEC: 551774|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 551776|/usr/bin/tr|tr -d \n
+# EXEC: 551777|/usr/bin/git|git --version
+# EXEC: 551779|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 551780|/usr/bin/head|head -1
+# EXEC: 551781|/usr/bin/tr|tr -d \n
+# EXEC: 551782|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 551784|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 551785|/usr/bin/head|head -1
+# EXEC: 551786|/usr/bin/tr|tr -d \n
+# EXEC: 551787|/usr/bin/date|date --version
+# EXEC: 551789|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 551790|/usr/bin/head|head -1
+# EXEC: 551791|/usr/bin/tr|tr -d \n
+# EXEC: 551792|/usr/bin/wc|wc --version
+# EXEC: 551794|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 551795|/usr/bin/head|head -1
+# EXEC: 551796|/usr/bin/tr|tr -d \n
+# EXEC: 551797|/usr/bin/cat|cat --version
+# EXEC: 551800|/usr/bin/head|head -1
+# EXEC: 551799|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 551801|/usr/bin/tr|tr -d \n
+# EXEC: 551802|/usr/bin/tee|tee --version
+# EXEC: 551804|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 551805|/usr/bin/head|head -1
+# EXEC: 551806|/usr/bin/tr|tr -d \n
+# EXEC: 551807|/usr/bin/mktemp|mktemp --version
+# EXEC: 551810|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 551811|/usr/bin/head|head -1
+# EXEC: 551812|/usr/bin/tr|tr -d \n
+# EXEC: 551813|/usr/bin/rm|rm --version
+# EXEC: 551820|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 551821|/usr/bin/head|head -1
+# EXEC: 551822|/usr/bin/tr|tr -d \n
+# EXEC: 551823|/usr/bin/timeout|timeout --version
+# EXEC: 551832|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 551833|/usr/bin/head|head -1
+# EXEC: 551834|/usr/bin/tr|tr -d \n
+# EXEC: 551835|/usr/bin/tr|tr --version
+# EXEC: 551839|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 551840|/usr/bin/head|head -1
+# EXEC: 551841|/usr/bin/tr|tr -d \n
+# EXEC: 551842|/usr/bin/head|head --version
+# EXEC: 551844|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 551845|/usr/bin/head|head -1
+# EXEC: 551846|/usr/bin/tr|tr -d \n
+# EXEC: 551847|/usr/bin/cut|cut --version
+# EXEC: 551849|/usr/bin/date|date +%s%N
+# EXEC: 551850|/usr/bin/sha256sum|sha256sum
+# EXEC: 551851|/usr/bin/cut|cut -c1-8
+# EXEC: 551853|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212303-trace-exec-test.log
+# EXEC: 551854|/usr/bin/date|date -Is
+# EXEC: 551855|/usr/bin/mktemp|mktemp
+# EXEC: 551856|/usr/bin/mktemp|mktemp
+# EXEC: 551857|_sandbox/trace-exec.sh|_sandbox/trace-exec.sh -- _sandbox/buggy-script.sh
+# EXEC: 551857|/usr/bin/bash|bash _sandbox/trace-exec.sh -- _sandbox/buggy-script.sh
+# EXEC: 551858|/usr/bin/mktemp|mktemp -d
+# EXEC: 551859|/usr/bin/date|date -Is
+# EXEC: 551860|_sandbox/buggy-script.sh|_sandbox/buggy-script.sh
+# EXEC: 551860|/usr/bin/bash|bash _sandbox/buggy-script.sh
+# EXEC: 551861|/usr/bin/sleep|sleep 1
+# EXEC: 551871|/usr/bin/ls|ls /nonexistent-dir
+# EXEC: 551872|/usr/bin/rm|rm -rf /tmp/tmp.DeKpepqrHy
+# EXEC: 551874|/usr/bin/wc|wc -l
+# EXEC: 551875|/usr/bin/tr|tr -d  
+# EXEC: 551877|/usr/bin/wc|wc -c
+# EXEC: 551878|/usr/bin/tr|tr -d  
+# EXEC: 551880|/usr/bin/wc|wc -l
+# EXEC: 551881|/usr/bin/tr|tr -d  
+# EXEC: 551882|/usr/bin/date|date +%s%N
+# EXEC: 551884|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212303-trace-exec-test.log
+# EXEC: 551886|/usr/bin/cat|cat /tmp/tmp.FWWjqQwPsC
+# EXEC: 551887|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212303-trace-exec-test.log
+# EXEC: 551888|/usr/bin/cat|cat /tmp/tmp.ZqvLByV4uK
+# EXEC: 551889|/usr/bin/cat|cat /tmp/tmp.ZqvLByV4uK
+# EXEC: 551890|/usr/bin/rm|rm -f /tmp/tmp.FWWjqQwPsC /tmp/tmp.ZqvLByV4uK
+# EXEC: 551892|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212303-trace-exec-test.log
+# EXEC: 551894|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212303-trace-exec-test.log
+# EXEC: 551896|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212303-trace-exec-test.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 ls=ls (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 sleep=sleep (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 119
+# SHA: 3fdb1c396be91d472596b1e04bd8803ed6ac3422641a24c71eb072ccc8c72587
+# exit: 0

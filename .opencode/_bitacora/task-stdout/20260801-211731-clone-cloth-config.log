@@ -1,0 +1,133 @@
+# CMD: git clone --depth 1 https://github.com/shedaniel/cloth-config.git _sandbox/cloth-config 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T21:17:31-06:00
+# PID: 545019
+# DUR: 1402ms
+# exit: 0
+# GIT: assembler@490b1ca
+# BRANCH: main
+# SESSION: 7c8f9c51
+# CLI: git git version 2.55.0
+# ARGS: clone --depth 1 https://github.com/shedaniel/cloth-config.git _sandbox/cloth-config 
+# CWD: /home/eddyr/assembler
+# --------------------
+Cloning into '_sandbox/cloth-config'...
+# OUT_LINES: 0
+# OUT_BYTES: 0
+# ERR_LINES: 1
+# EXEC: 545019|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh clone-cloth-config -- git clone --depth 1 https://github.com/shedaniel/cloth-config.git _sandbox/cloth-config
+# EXEC: 545020|/usr/bin/date|date +%s%N
+# EXEC: 545024|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 545025|/usr/bin/head|head -1
+# EXEC: 545026|/usr/bin/tr|tr -d \n
+# EXEC: 545027|/usr/bin/git|git --version
+# EXEC: 545028|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 545031|/usr/bin/git|git remote get-url origin
+# EXEC: 545029|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 545032|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 545034|/usr/bin/git|git branch --show-current
+# EXEC: 545036|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 545037|/usr/bin/head|head -1
+# EXEC: 545038|/usr/bin/tr|tr -d \n
+# EXEC: 545039|/usr/bin/bun|bun --version
+# EXEC: 545041|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 545042|/usr/bin/head|head -1
+# EXEC: 545043|/usr/bin/tr|tr -d \n
+# EXEC: 545044|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 545046|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 545047|/usr/bin/head|head -1
+# EXEC: 545048|/usr/bin/tr|tr -d \n
+# EXEC: 545049|/usr/bin/python3|python3 --version
+# EXEC: 545051|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 545052|/usr/bin/head|head -1
+# EXEC: 545053|/usr/bin/tr|tr -d \n
+# EXEC: 545054|/usr/bin/ruby|ruby --version
+# EXEC: 545057|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 545058|/usr/bin/head|head -1
+# EXEC: 545059|/usr/bin/tr|tr -d \n
+# EXEC: 545060|/usr/bin/rustc|rustc --version
+# EXEC: 545063|/usr/bin/timeout|timeout 2 go version
+# EXEC: 545064|/usr/bin/head|head -1
+# EXEC: 545065|/usr/bin/tr|tr -d \n
+# EXEC: 545066|/usr/bin/go|go version
+# EXEC: 545072|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 545073|/usr/bin/head|head -1
+# EXEC: 545074|/usr/bin/tr|tr -d \n
+# EXEC: 545075|/usr/bin/git|git --version
+# EXEC: 545077|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 545078|/usr/bin/head|head -1
+# EXEC: 545079|/usr/bin/tr|tr -d \n
+# EXEC: 545080|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 545082|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 545083|/usr/bin/head|head -1
+# EXEC: 545084|/usr/bin/tr|tr -d \n
+# EXEC: 545085|/usr/bin/date|date --version
+# EXEC: 545087|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 545088|/usr/bin/head|head -1
+# EXEC: 545089|/usr/bin/tr|tr -d \n
+# EXEC: 545090|/usr/bin/wc|wc --version
+# EXEC: 545092|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 545093|/usr/bin/head|head -1
+# EXEC: 545094|/usr/bin/tr|tr -d \n
+# EXEC: 545095|/usr/bin/cat|cat --version
+# EXEC: 545097|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 545098|/usr/bin/head|head -1
+# EXEC: 545099|/usr/bin/tr|tr -d \n
+# EXEC: 545100|/usr/bin/tee|tee --version
+# EXEC: 545102|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 545103|/usr/bin/head|head -1
+# EXEC: 545104|/usr/bin/tr|tr -d \n
+# EXEC: 545105|/usr/bin/mktemp|mktemp --version
+# EXEC: 545107|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 545108|/usr/bin/head|head -1
+# EXEC: 545109|/usr/bin/tr|tr -d \n
+# EXEC: 545110|/usr/bin/rm|rm --version
+# EXEC: 545112|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 545113|/usr/bin/head|head -1
+# EXEC: 545114|/usr/bin/tr|tr -d \n
+# EXEC: 545115|/usr/bin/timeout|timeout --version
+# EXEC: 545118|/usr/bin/head|head -1
+# EXEC: 545117|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 545119|/usr/bin/tr|tr -d \n
+# EXEC: 545120|/usr/bin/tr|tr --version
+# EXEC: 545122|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 545123|/usr/bin/head|head -1
+# EXEC: 545124|/usr/bin/tr|tr -d \n
+# EXEC: 545125|/usr/bin/head|head --version
+# EXEC: 545127|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 545128|/usr/bin/head|head -1
+# EXEC: 545129|/usr/bin/tr|tr -d \n
+# EXEC: 545130|/usr/bin/cut|cut --version
+# EXEC: 545133|/usr/bin/sha256sum|sha256sum
+# EXEC: 545132|/usr/bin/date|date +%s%N
+# EXEC: 545134|/usr/bin/cut|cut -c1-8
+# EXEC: 545136|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211731-clone-cloth-config.log
+# EXEC: 545137|/usr/bin/date|date -Is
+# EXEC: 545138|/usr/bin/mktemp|mktemp
+# EXEC: 545139|/usr/bin/mktemp|mktemp
+# EXEC: 545140|/usr/bin/git|git clone --depth 1 https://github.com/shedaniel/cloth-config.git _sandbox/cloth-config
+# EXEC: 545141|/usr/lib/git-core/git|/usr/lib/git-core/git remote-https origin https://github.com/shedaniel/cloth-config.git
+# EXEC: 545142|/usr/lib/git-core/git-remote-https|/usr/lib/git-core/git-remote-https origin https://github.com/shedaniel/cloth-config.git
+# EXEC: 545150|/usr/lib/git-core/git|/usr/lib/git-core/git --shallow-file /home/eddyr/assembler/_sandbox/cloth-config/.git/shallow.lock index-pack --stdin --fix-thin --keep=fetch-pack 545140 on elite
+# EXEC: 545155|/usr/lib/git-core/git|/usr/lib/git-core/git rev-list --objects --stdin --not --all --quiet --alternate-refs
+# EXEC: 545157|/usr/bin/wc|wc -l
+# EXEC: 545158|/usr/bin/tr|tr -d  
+# EXEC: 545160|/usr/bin/wc|wc -c
+# EXEC: 545161|/usr/bin/tr|tr -d  
+# EXEC: 545163|/usr/bin/wc|wc -l
+# EXEC: 545164|/usr/bin/tr|tr -d  
+# EXEC: 545165|/usr/bin/date|date +%s%N
+# EXEC: 545167|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211731-clone-cloth-config.log
+# EXEC: 545169|/usr/bin/cat|cat /tmp/tmp.KpMg8FCRRs
+# EXEC: 545170|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211731-clone-cloth-config.log
+# EXEC: 545171|/usr/bin/cat|cat /tmp/tmp.3xa9BxnQdn
+# EXEC: 545172|/usr/bin/cat|cat /tmp/tmp.3xa9BxnQdn
+# EXEC: 545173|/usr/bin/rm|rm -f /tmp/tmp.KpMg8FCRRs /tmp/tmp.3xa9BxnQdn
+# EXEC: 545175|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211731-clone-cloth-config.log
+# EXEC: 545177|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211731-clone-cloth-config.log
+# EXEC: 545179|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211731-clone-cloth-config.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 git=git version 2.55.0 git-remote-https=(no --version)
+# EXEC_COUNT: 111
+# SHA: d858a8975990e053ffff6be03ef8820343a2b2f6d894a17db3c758b29255ad84
+# exit: 0

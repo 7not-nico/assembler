@@ -8,7 +8,7 @@ Throughout this session, we encountered two distinct errors that produced the sa
 |---|---------------------------|---------------------------|
 | **Files** | `bench-vectors.ts`, `reindex-vectors.ts` | `search-vectors.ts`, `similar-vectors.ts` |
 | **Root cause** | `import("../tools/mcp-patlib-vector/embedder")` | `#!/usr/bin/env bun` instead of `export default tool` |
-| **Protocol violated** | PROT.TOOL.MORPHISM Gotcha 1, REF.LIB.DIRECTORY.LAYER Rule 7 | PROT.TOOL.DEFINITION Rules 1, 4, 9 |
+| **Protocol violated** | PROT.TOOL.COMPOSITE Gotcha 1, REF.LIB.DIRECTORY.LAYER Rule 7 | PROT.TOOL.DEFINITION Rules 1, 4, 9 |
 | **Detected by** | Code review, `rg import.*tools/` | Session startup validation |
 | **When it fails** | Runtime when tool runs (embedder not found if MCP dir removed) | Import time during tool discovery |
 | **Fix** | Extract to `_lib/embedder-onnx.ts` | Convert to `export default tool({...})` |

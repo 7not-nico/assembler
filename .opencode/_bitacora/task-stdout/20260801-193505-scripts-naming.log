@@ -1,0 +1,322 @@
+# CMD: bash .opencode/_scripts/fixtures/fixture-scripts-naming.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# DATE: 2026-08-01T19:35:05-06:00
+# PID: 480953
+# DUR: 144ms
+# exit: 0
+# GIT: assembler@087b240
+# BRANCH: main
+# SCOPE: _scripts
+# SESSION: scripts-fixtures
+# TASK: run-scripts
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_scripts/fixtures/fixture-scripts-naming.sh 
+# OUT: ruby r1-entity-naming
+# IN: r1-entity-naming.rb=8cba45a7b9e77a9590c1ca448dec3b64890425a112b275ed2cf23d5a67d04941
+# CWD: /home/eddyr/assembler
+# --------------------
+naming violations (298):
+ID                             | Type           | Violation | Detail                              
+-------------------------------|----------------|-----------|-------------------------------------
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+conscientious-objection        | investigations | lowercase | contains lowercase letter           
+conscientious-objection        | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+china                          | investigations | lowercase | contains lowercase letter           
+china                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+eu                             | investigations | lowercase | contains lowercase letter           
+eu                             | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+india                          | investigations | lowercase | contains lowercase letter           
+india                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+japan-korea                    | investigations | lowercase | contains lowercase letter           
+japan-korea                    | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+us-uk-western                  | investigations | lowercase | contains lowercase letter           
+us-uk-western                  | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+book-abandonment-meta-audit    | investigations | lowercase | contains lowercase letter           
+book-abandonment-meta-audit    | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+creative-coding-genealogy      | investigations | lowercase | contains lowercase letter           
+creative-coding-genealogy      | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+classroom-deliberation         | investigations | lowercase | contains lowercase letter           
+classroom-deliberation         | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+debate-based-pedagogy          | investigations | lowercase | contains lowercase letter           
+debate-based-pedagogy          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+interactional-diversity        | investigations | lowercase | contains lowercase letter           
+interactional-diversity        | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+interdisciplinary-discourse    | investigations | lowercase | contains lowercase letter           
+interdisciplinary-discourse    | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+rhetoric-argumentation         | investigations | lowercase | contains lowercase letter           
+rhetoric-argumentation         | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+conclusion                     | investigations | lowercase | contains lowercase letter           
+conclusion                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+brazil                         | investigations | lowercase | contains lowercase letter           
+brazil                         | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+china                          | investigations | lowercase | contains lowercase letter           
+china                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+france                         | investigations | lowercase | contains lowercase letter           
+france                         | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+germany                        | investigations | lowercase | contains lowercase letter           
+germany                        | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+israel                         | investigations | lowercase | contains lowercase letter           
+israel                         | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+italy                          | investigations | lowercase | contains lowercase letter           
+italy                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+japan                          | investigations | lowercase | contains lowercase letter           
+japan                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+korea                          | investigations | lowercase | contains lowercase letter           
+korea                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+netherlands                    | investigations | lowercase | contains lowercase letter           
+netherlands                    | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+poland                         | investigations | lowercase | contains lowercase letter           
+poland                         | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+russia                         | investigations | lowercase | contains lowercase letter           
+russia                         | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+scandinavia                    | investigations | lowercase | contains lowercase letter           
+scandinavia                    | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+southeast-asia                 | investigations | lowercase | contains lowercase letter           
+southeast-asia                 | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+spain-latam                    | investigations | lowercase | contains lowercase letter           
+spain-latam                    | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+us-uk                          | investigations | lowercase | contains lowercase letter           
+us-uk                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+fish-help-humans-meta-audit    | investigations | lowercase | contains lowercase letter           
+fish-help-humans-meta-audit    | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+DE                             | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+EU                             | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+FR                             | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+JP                             | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+concurrent-data-structures     | investigations | lowercase | contains lowercase letter           
+concurrent-data-structures     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+en-US                          | investigations | lowercase | contains lowercase letter           
+en-US                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+zh-CN                          | investigations | lowercase | contains lowercase letter           
+zh-CN                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+cross-regional-sources         | investigations | lowercase | contains lowercase letter           
+cross-regional-sources         | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+etymology-four                 | investigations | lowercase | contains lowercase letter           
+etymology-four                 | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+grammar-terms                  | investigations | lowercase | contains lowercase letter           
+grammar-terms                  | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+lambda-calculus                | investigations | lowercase | contains lowercase letter           
+lambda-calculus                | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+llm-as-lambda                  | investigations | lowercase | contains lowercase letter           
+llm-as-lambda                  | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+llm-weight                     | investigations | lowercase | contains lowercase letter           
+llm-weight                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+greek-apologia-meta-audit      | investigations | lowercase | contains lowercase letter           
+greek-apologia-meta-audit      | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+anglophone                     | investigations | lowercase | contains lowercase letter           
+anglophone                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+german                         | investigations | lowercase | contains lowercase letter           
+german                         | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+greek                          | investigations | lowercase | contains lowercase letter           
+greek                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+european-typed-lambda          | investigations | lowercase | contains lowercase letter           
+european-typed-lambda          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+lambda-foundations             | investigations | lowercase | contains lowercase letter           
+lambda-foundations             | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+lambda-llm                     | investigations | lowercase | contains lowercase letter           
+lambda-llm                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+english-us-uk                  | investigations | lowercase | contains lowercase letter           
+english-us-uk                  | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+france                         | investigations | lowercase | contains lowercase letter           
+france                         | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+germany                        | investigations | lowercase | contains lowercase letter           
+germany                        | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+japan                          | investigations | lowercase | contains lowercase letter           
+japan                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+french                         | investigations | lowercase | contains lowercase letter           
+french                         | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+german                         | investigations | lowercase | contains lowercase letter           
+german                         | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+greek                          | investigations | lowercase | contains lowercase letter           
+greek                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+latin-italic                   | investigations | lowercase | contains lowercase letter           
+latin-italic                   | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+german                         | investigations | lowercase | contains lowercase letter           
+german                         | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+greek                          | investigations | lowercase | contains lowercase letter           
+greek                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+latin                          | investigations | lowercase | contains lowercase letter           
+latin                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+german                         | investigations | lowercase | contains lowercase letter           
+german                         | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+greek                          | investigations | lowercase | contains lowercase letter           
+greek                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+latin-italic                   | investigations | lowercase | contains lowercase letter           
+latin-italic                   | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+round-1-quanta                 | investigations | lowercase | contains lowercase letter           
+round-1-quanta                 | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+round-2-natgeo                 | investigations | lowercase | contains lowercase letter           
+round-2-natgeo                 | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+round-3-conversation           | investigations | lowercase | contains lowercase letter           
+round-3-conversation           | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+round-4-aeon                   | investigations | lowercase | contains lowercase letter           
+round-4-aeon                   | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+round-5-undark                 | investigations | lowercase | contains lowercase letter           
+round-5-undark                 | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+round-A-factcheck-quanta       | investigations | lowercase | contains lowercase letter           
+round-A-factcheck-quanta       | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+round-B-factcheck-natgeo       | investigations | lowercase | contains lowercase letter           
+round-B-factcheck-natgeo       | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+round-C-factcheck-conversation | investigations | lowercase | contains lowercase letter           
+round-C-factcheck-conversation | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+round-D-factcheck-aeon         | investigations | lowercase | contains lowercase letter           
+round-D-factcheck-aeon         | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+round-E-factcheck-undark       | investigations | lowercase | contains lowercase letter           
+round-E-factcheck-undark       | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+east-asia                      | investigations | lowercase | contains lowercase letter           
+east-asia                      | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+india                          | investigations | lowercase | contains lowercase letter           
+india                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+russia-ee                      | investigations | lowercase | contains lowercase letter           
+russia-ee                      | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+scandinavia                    | investigations | lowercase | contains lowercase letter           
+scandinavia                    | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+us-uk                          | investigations | lowercase | contains lowercase letter           
+us-uk                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+western-europe                 | investigations | lowercase | contains lowercase letter           
+western-europe                 | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+east-asia                      | investigations | lowercase | contains lowercase letter           
+east-asia                      | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+eastern-europe                 | investigations | lowercase | contains lowercase letter           
+eastern-europe                 | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+latin-america                  | investigations | lowercase | contains lowercase letter           
+latin-america                  | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+me-africa                      | investigations | lowercase | contains lowercase letter           
+me-africa                      | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+na                             | investigations | lowercase | contains lowercase letter           
+na                             | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+western-europe                 | investigations | lowercase | contains lowercase letter           
+western-europe                 | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+anglosphere                    | investigations | lowercase | contains lowercase letter           
+anglosphere                    | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+continental-europe             | investigations | lowercase | contains lowercase letter           
+continental-europe             | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+east-asia                      | investigations | lowercase | contains lowercase letter           
+east-asia                      | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+nordic                         | investigations | lowercase | contains lowercase letter           
+nordic                         | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+semantic-weight-meta-audit     | investigations | lowercase | contains lowercase letter           
+semantic-weight-meta-audit     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+anglophone                     | investigations | lowercase | contains lowercase letter           
+anglophone                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+greek                          | investigations | lowercase | contains lowercase letter           
+greek                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+latin                          | investigations | lowercase | contains lowercase letter           
+latin                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+meta-audit                     | investigations | lowercase | contains lowercase letter           
+meta-audit                     | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+east-asia                      | investigations | lowercase | contains lowercase letter           
+east-asia                      | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+india                          | investigations | lowercase | contains lowercase letter           
+india                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+scandinavia                    | investigations | lowercase | contains lowercase letter           
+scandinavia                    | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+us-uk                          | investigations | lowercase | contains lowercase letter           
+us-uk                          | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+western-europe                 | investigations | lowercase | contains lowercase letter           
+western-europe                 | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+zpd-meta-audit                 | investigations | lowercase | contains lowercase letter           
+zpd-meta-audit                 | investigations | format    | does not match PREFIX.UPPER.SEGMENTS
+stud.colorary.writing          | linguistics    | lowercase | contains lowercase letter           
+stud.colorary.writing          | linguistics    | format    | does not match PREFIX.UPPER.SEGMENTS
+stud.declarative.writing       | linguistics    | lowercase | contains lowercase letter           
+stud.declarative.writing       | linguistics    | format    | does not match PREFIX.UPPER.SEGMENTS
+stud.imperative.writing        | linguistics    | lowercase | contains lowercase letter           
+stud.imperative.writing        | linguistics    | format    | does not match PREFIX.UPPER.SEGMENTS
+api-variants                   | notes          | lowercase | contains lowercase letter           
+api-variants                   | notes          | format    | does not match PREFIX.UPPER.SEGMENTS
+apologia-research              | notes          | lowercase | contains lowercase letter           
+apologia-research              | notes          | format    | does not match PREFIX.UPPER.SEGMENTS
+auto-music-plugin              | notes          | lowercase | contains lowercase letter           
+auto-music-plugin              | notes          | format    | does not match PREFIX.UPPER.SEGMENTS
+boson-particles                | notes          | lowercase | contains lowercase letter           
+boson-particles                | notes          | format    | does not match PREFIX.UPPER.SEGMENTS
+communication-system           | notes          | lowercase | contains lowercase letter           
+communication-system           | notes          | format    | does not match PREFIX.UPPER.SEGMENTS
+diagrams-on-patlib             | notes          | lowercase | contains lowercase letter           
+diagrams-on-patlib             | notes          | format    | does not match PREFIX.UPPER.SEGMENTS
+language-variants              | notes          | lowercase | contains lowercase letter           
+language-variants              | notes          | format    | does not match PREFIX.UPPER.SEGMENTS
+metadata-mcpsearch-project     | notes          | lowercase | contains lowercase letter           
+metadata-mcpsearch-project     | notes          | format    | does not match PREFIX.UPPER.SEGMENTS
+omarchy-commands               | notes          | lowercase | contains lowercase letter           
+omarchy-commands               | notes          | format    | does not match PREFIX.UPPER.SEGMENTS
+relating-to-standard-output    | notes          | lowercase | contains lowercase letter           
+relating-to-standard-output    | notes          | format    | does not match PREFIX.UPPER.SEGMENTS
+spec-audit-case-sensitive      | notes          | lowercase | contains lowercase letter           
+spec-audit-case-sensitive      | notes          | format    | does not match PREFIX.UPPER.SEGMENTS
+per-acm                        | persons        | lowercase | contains lowercase letter           
+per-acm                        | persons        | format    | does not match PREFIX.UPPER.SEGMENTS
+per-alan-turing                | persons        | lowercase | contains lowercase letter           
+per-alan-turing                | persons        | format    | does not match PREFIX.UPPER.SEGMENTS
+per-alonzo-church              | persons        | lowercase | contains lowercase letter           
+per-alonzo-church              | persons        | format    | does not match PREFIX.UPPER.SEGMENTS
+per-edsger-w-dijkstra          | persons        | lowercase | contains lowercase letter           
+per-edsger-w-dijkstra          | persons        | format    | does not match PREFIX.UPPER.SEGMENTS
+per-erich-fromm                | persons        | lowercase | contains lowercase letter           
+per-erich-fromm                | persons        | format    | does not match PREFIX.UPPER.SEGMENTS
+per-haskell-curry              | persons        | lowercase | contains lowercase letter           
+per-haskell-curry              | persons        | format    | does not match PREFIX.UPPER.SEGMENTS
+per-j-barkley-rosser           | persons        | lowercase | contains lowercase letter           
+per-j-barkley-rosser           | persons        | format    | does not match PREFIX.UPPER.SEGMENTS
+per-stephen-kleene             | persons        | lowercase | contains lowercase letter           
+per-stephen-kleene             | persons        | format    | does not match PREFIX.UPPER.SEGMENTS
+# OUT_LINES: 301
+# OUT_BYTES: 29725
+# ERR_LINES: 0
+# SHA: bfc41a17b813f670bbe40814e072c4b55c3817bb9aa1f03d215e4e0ade68c097

@@ -1,0 +1,28 @@
+# CMD: bash .opencode/_scripts/fixtures/fixture-numbers.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# DATE: 2026-08-01T19:22:45-06:00
+# PID: 472309
+# GIT: assembler@087b240
+# BRANCH: main
+# SCOPE: fixtures
+# SESSION: ten-fixtures
+# TASK: run-10
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_scripts/fixtures/fixture-numbers.sh 
+# IN: fixture-numbers.sh=66ed6ed50b3c0a6952e1ab31762a65dd9d75d979f0255abb2ec1a81e59215d75
+# CWD: /home/eddyr/assembler
+# --------------------
+1
+4
+9
+16
+25
+36
+49
+64
+# OUT_LINES: 8
+# OUT_BYTES: 21
+# ERR_LINES: 0
+# DUR: 54ms
+# SHA: 3d35d54f97cb2c01df472708b3b979f32a5358f9610b3d86bfb43455ab976529
+# exit: 0

@@ -1,0 +1,7 @@
+# CMD: echo hello world --flag=1 two\ words 
+# ARGS: hello world --flag=1 two\ words 
+# DATE: 2026-08-01T18:41:25-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+hello world --flag=1 two words
+# exit: 0

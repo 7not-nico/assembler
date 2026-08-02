@@ -1,0 +1,180 @@
+# CMD: bash _sandbox/trace-bug.sh -- sh -c echo\ start\;\ nonexistent-cmd\ 2\>/dev/null\;\ echo\ mid\ \|\ grep\ zzz\;\ echo\ end 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T20:58:20-06:00
+# PID: 531725
+# DUR: 391ms
+# exit: 1
+# GIT: assembler@087b240
+# BRANCH: main
+# SCOPE: _sandbox
+# SESSION: trace-bug
+# TASK: trace-bug
+# CLI: bash 5.3.15(1)-release
+# ARGS: _sandbox/trace-bug.sh -- sh -c echo\ start\;\ nonexistent-cmd\ 2\>/dev/null\;\ echo\ mid\ \|\ grep\ zzz\;\ echo\ end 
+# OUT: _sandbox/trace-bug.sh
+# IN: trace-bug.sh=05682779fd16f502ced90fc31a515c47ec1daa11a5646ab09f32b4d7eacf241b
+# CWD: /home/eddyr/assembler
+# --------------------
+=== trace-bug: 2026-08-01T20:58:20-06:00 ===
+CMD: sh -c echo start; nonexistent-cmd 2>/dev/null; echo mid | grep zzz; echo end
+=== exit: 1 ===
+=== L2 DEBUG TRAP (13 events) ===
+line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=[ "$XT" -eq 1 ]
+line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=exec 8> "$XT_LOG"
+line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=BASH_XTRACEFD=8
+line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=PS4='+[${BASH_SOURCE:-?}:${LINENO}:${FUNCNAME[0]:-main}] '
+line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=set -x
+line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=[ "$TXC" -eq 1 ]
+line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=command -v tracexec > /dev/null 2>&1
+line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=tracexec collect --format=json --successful-only -o "$EXEC_LOG" -- "$@"
+line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=STATUS=$?
+line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=set +x 2> /dev/null
+line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=echo "=== exit: $STATUS ==="
+line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=[ "$DBG" -eq 1 ]
+line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=echo "=== L2 DEBUG TRAP ($(wc -l < "$DBG_LOG") events) ==="
+line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=cat "$DBG_LOG"
+=== L1 XTRACE (10 lines) ===
+++[_sandbox/trace-bug.sh:50:main] echo 'line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=[ "$TXC" -eq 1 ]'
++[_sandbox/trace-bug.sh:50:main] '[' 1 -eq 1 ']'
+++[_sandbox/trace-bug.sh:50:main] echo 'line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=command -v tracexec > /dev/null 2>&1'
++[_sandbox/trace-bug.sh:50:main] command -v tracexec
+++[_sandbox/trace-bug.sh:51:main] echo 'line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=tracexec collect --format=json --successful-only -o "$EXEC_LOG" -- "$@"'
++[_sandbox/trace-bug.sh:51:main] tracexec collect --format=json --successful-only -o /tmp/tmp.a1VSYo6H8I/exec.log -- sh -c 'echo start; nonexistent-cmd 2>/dev/null; echo mid | grep zzz; echo end'
+++[_sandbox/trace-bug.sh:52:main] echo 'line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=STATUS=$?'
++[_sandbox/trace-bug.sh:52:main] STATUS=1
+++[_sandbox/trace-bug.sh:57:main] echo 'line=0 src=_sandbox/trace-bug.sh[0] fn=main cmd=set +x 2> /dev/null'
++[_sandbox/trace-bug.sh:57:main] set +x
+=== SUMMARY ===
+exit=1
+debug_events=23
+xtrace_lines=10
+Error: 
+   0: [91mEPERM: Operation not permitted[0m
+
+Location:
+   [35mcrates/tracexec-backend-ptrace/src/ptrace/engine.rs[0m:[35m76[0m
+
+Backtrace omitted. Run with RUST_BACKTRACE=1 environment variable to display it.
+Run with RUST_BACKTRACE=full to include source snippets.
+# OUT_LINES: 33
+# OUT_BYTES: 2307
+# ERR_LINES: 8
+# EXEC: 531725|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh trace-bug-demo --task trace-bug --scope _sandbox --out _sandbox/trace-bug.sh --in _sandbox/trace-bug.sh -- bash _sandbox/trace-bug.sh -- sh -c echo start; nonexistent-cmd 2>/dev/null; echo mid | grep zzz; echo end
+# EXEC: 531726|/usr/bin/date|date +%s%N
+# EXEC: 531729|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 531732|/usr/bin/git|git remote get-url origin
+# EXEC: 531730|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 531733|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 531735|/usr/bin/git|git branch --show-current
+# EXEC: 531737|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 531738|/usr/bin/head|head -1
+# EXEC: 531739|/usr/bin/tr|tr -d \n
+# EXEC: 531740|/usr/bin/bun|bun --version
+# EXEC: 531742|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 531743|/usr/bin/head|head -1
+# EXEC: 531744|/usr/bin/tr|tr -d \n
+# EXEC: 531745|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 531747|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 531748|/usr/bin/head|head -1
+# EXEC: 531749|/usr/bin/tr|tr -d \n
+# EXEC: 531750|/usr/bin/python3|python3 --version
+# EXEC: 531753|/usr/bin/head|head -1
+# EXEC: 531752|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 531754|/usr/bin/tr|tr -d \n
+# EXEC: 531755|/usr/bin/ruby|ruby --version
+# EXEC: 531758|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 531759|/usr/bin/head|head -1
+# EXEC: 531760|/usr/bin/tr|tr -d \n
+# EXEC: 531761|/usr/bin/rustc|rustc --version
+# EXEC: 531764|/usr/bin/timeout|timeout 2 go version
+# EXEC: 531765|/usr/bin/head|head -1
+# EXEC: 531766|/usr/bin/tr|tr -d \n
+# EXEC: 531767|/usr/bin/go|go version
+# EXEC: 531773|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 531774|/usr/bin/head|head -1
+# EXEC: 531775|/usr/bin/tr|tr -d \n
+# EXEC: 531776|/usr/bin/git|git --version
+# EXEC: 531778|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 531779|/usr/bin/head|head -1
+# EXEC: 531780|/usr/bin/tr|tr -d \n
+# EXEC: 531781|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 531783|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 531784|/usr/bin/head|head -1
+# EXEC: 531785|/usr/bin/tr|tr -d \n
+# EXEC: 531786|/usr/bin/date|date --version
+# EXEC: 531788|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 531789|/usr/bin/head|head -1
+# EXEC: 531790|/usr/bin/tr|tr -d \n
+# EXEC: 531791|/usr/bin/wc|wc --version
+# EXEC: 531793|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 531794|/usr/bin/head|head -1
+# EXEC: 531795|/usr/bin/tr|tr -d \n
+# EXEC: 531796|/usr/bin/cat|cat --version
+# EXEC: 531798|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 531799|/usr/bin/head|head -1
+# EXEC: 531800|/usr/bin/tr|tr -d \n
+# EXEC: 531801|/usr/bin/tee|tee --version
+# EXEC: 531803|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 531804|/usr/bin/head|head -1
+# EXEC: 531805|/usr/bin/tr|tr -d \n
+# EXEC: 531806|/usr/bin/mktemp|mktemp --version
+# EXEC: 531808|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 531809|/usr/bin/head|head -1
+# EXEC: 531810|/usr/bin/tr|tr -d \n
+# EXEC: 531811|/usr/bin/rm|rm --version
+# EXEC: 531813|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 531814|/usr/bin/head|head -1
+# EXEC: 531815|/usr/bin/tr|tr -d \n
+# EXEC: 531816|/usr/bin/timeout|timeout --version
+# EXEC: 531819|/usr/bin/head|head -1
+# EXEC: 531818|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 531820|/usr/bin/tr|tr -d \n
+# EXEC: 531821|/usr/bin/tr|tr --version
+# EXEC: 531823|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 531824|/usr/bin/head|head -1
+# EXEC: 531825|/usr/bin/tr|tr -d \n
+# EXEC: 531826|/usr/bin/head|head --version
+# EXEC: 531829|/usr/bin/head|head -1
+# EXEC: 531828|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 531830|/usr/bin/tr|tr -d \n
+# EXEC: 531831|/usr/bin/cut|cut --version
+# EXEC: 531833|/usr/bin/sha256sum|sha256sum _sandbox/trace-bug.sh
+# EXEC: 531834|/usr/bin/cut|cut -d  -f1
+# EXEC: 531836|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205820-trace-bug-demo.log
+# EXEC: 531837|/usr/bin/date|date -Is
+# EXEC: 531838|/usr/bin/mktemp|mktemp
+# EXEC: 531839|/usr/bin/mktemp|mktemp
+# EXEC: 531840|/usr/bin/bash|bash _sandbox/trace-bug.sh -- sh -c echo start; nonexistent-cmd 2>/dev/null; echo mid | grep zzz; echo end
+# EXEC: 531841|/usr/bin/mktemp|mktemp -d
+# EXEC: 531842|/usr/bin/date|date -Is
+# EXEC: 531843|/usr/bin/tracexec|tracexec collect --format=json --successful-only -o /tmp/tmp.a1VSYo6H8I/exec.log -- sh -c echo start; nonexistent-cmd 2>/dev/null; echo mid | grep zzz; echo end
+# EXEC: 531849|/usr/bin/wc|wc -l
+# EXEC: 531850|/usr/bin/cat|cat /tmp/tmp.a1VSYo6H8I/debug.log
+# EXEC: 531852|/usr/bin/wc|wc -l
+# EXEC: 531853|/usr/bin/cat|cat /tmp/tmp.a1VSYo6H8I/xtrace.log
+# EXEC: 531855|/usr/bin/wc|wc -l
+# EXEC: 531856|/usr/bin/tr|tr -d  
+# EXEC: 531858|/usr/bin/wc|wc -l
+# EXEC: 531859|/usr/bin/tr|tr -d  
+# EXEC: 531860|/usr/bin/rm|rm -rf /tmp/tmp.a1VSYo6H8I
+# EXEC: 531862|/usr/bin/wc|wc -l
+# EXEC: 531863|/usr/bin/tr|tr -d  
+# EXEC: 531865|/usr/bin/wc|wc -c
+# EXEC: 531866|/usr/bin/tr|tr -d  
+# EXEC: 531868|/usr/bin/wc|wc -l
+# EXEC: 531869|/usr/bin/tr|tr -d  
+# EXEC: 531870|/usr/bin/date|date +%s%N
+# EXEC: 531872|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205820-trace-bug-demo.log
+# EXEC: 531874|/usr/bin/cat|cat /tmp/tmp.BpQCQ65sjJ
+# EXEC: 531875|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205820-trace-bug-demo.log
+# EXEC: 531876|/usr/bin/cat|cat /tmp/tmp.nFwWvVPN20
+# EXEC: 531877|/usr/bin/cat|cat /tmp/tmp.nFwWvVPN20
+# EXEC: 531878|/usr/bin/rm|rm -f /tmp/tmp.BpQCQ65sjJ /tmp/tmp.nFwWvVPN20
+# EXEC: 531880|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205820-trace-bug-demo.log
+# EXEC: 531882|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205820-trace-bug-demo.log
+# EXEC: 531884|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205820-trace-bug-demo.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=(no --version) head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 tracexec=tracexec-core 0.17.0 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 114
+# SHA: d3c2bb5bc6d5106c5539535d9c94051f6943306756864d5dcd8f6340cd0cfd5e
+# exit: 1

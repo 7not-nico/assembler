@@ -1,0 +1,141 @@
+# CMD: ruby _sandbox/monte-carlo.rb 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-01T20:56:43-06:00
+# PID: 530123
+# DUR: 437ms
+# exit: 0
+# GIT: assembler@087b240
+# BRANCH: main
+# SCOPE: _sandbox
+# SESSION: monte-carlo
+# TASK: run-monte-carlo
+# CLI: ruby ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux]
+# ARGS: _sandbox/monte-carlo.rb 
+# OUT: _sandbox/monte-carlo.rb
+# IN: monte-carlo.rb=2aa6f01044fb81daad6c07e205404219188a69127741e605a862a2806b582dac
+# CWD: /home/eddyr/assembler
+# --------------------
+TRIALS=500
+PAIRS_PER_TRIAL=7
+OBS_MEAN=49.546
+OBS_STDDEV=6.341
+EXP_MEAN=49.0
+CHI2=32.159
+DOF=70
+P_VALUE=0.0
+FIT=fail
+RESULT=chi2:32.159;p:0.0;mean:49.55;trials:500
+# OUT_LINES: 10
+# OUT_BYTES: 163
+# ERR_LINES: 0
+# EXEC: 530123|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh monte-carlo --task run-monte-carlo --scope _sandbox --out _sandbox/monte-carlo.rb --in _sandbox/monte-carlo.rb -- ruby _sandbox/monte-carlo.rb
+# EXEC: 530124|/usr/bin/date|date +%s%N
+# EXEC: 530128|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 530129|/usr/bin/head|head -1
+# EXEC: 530130|/usr/bin/tr|tr -d \n
+# EXEC: 530131|/usr/bin/ruby|ruby --version
+# EXEC: 530133|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 530136|/usr/bin/git|git remote get-url origin
+# EXEC: 530134|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 530137|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 530139|/usr/bin/git|git branch --show-current
+# EXEC: 530141|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 530142|/usr/bin/head|head -1
+# EXEC: 530143|/usr/bin/tr|tr -d \n
+# EXEC: 530144|/usr/bin/bun|bun --version
+# EXEC: 530146|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 530147|/usr/bin/head|head -1
+# EXEC: 530148|/usr/bin/tr|tr -d \n
+# EXEC: 530149|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 530151|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 530152|/usr/bin/head|head -1
+# EXEC: 530153|/usr/bin/tr|tr -d \n
+# EXEC: 530154|/usr/bin/python3|python3 --version
+# EXEC: 530156|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 530157|/usr/bin/head|head -1
+# EXEC: 530158|/usr/bin/tr|tr -d \n
+# EXEC: 530159|/usr/bin/ruby|ruby --version
+# EXEC: 530162|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 530163|/usr/bin/head|head -1
+# EXEC: 530164|/usr/bin/tr|tr -d \n
+# EXEC: 530165|/usr/bin/rustc|rustc --version
+# EXEC: 530175|/usr/bin/timeout|timeout 2 go version
+# EXEC: 530176|/usr/bin/head|head -1
+# EXEC: 530177|/usr/bin/tr|tr -d \n
+# EXEC: 530178|/usr/bin/go|go version
+# EXEC: 530184|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 530185|/usr/bin/head|head -1
+# EXEC: 530186|/usr/bin/tr|tr -d \n
+# EXEC: 530187|/usr/bin/git|git --version
+# EXEC: 530189|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 530190|/usr/bin/head|head -1
+# EXEC: 530191|/usr/bin/tr|tr -d \n
+# EXEC: 530192|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 530194|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 530195|/usr/bin/head|head -1
+# EXEC: 530196|/usr/bin/tr|tr -d \n
+# EXEC: 530197|/usr/bin/date|date --version
+# EXEC: 530200|/usr/bin/head|head -1
+# EXEC: 530199|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 530201|/usr/bin/tr|tr -d \n
+# EXEC: 530202|/usr/bin/wc|wc --version
+# EXEC: 530204|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 530205|/usr/bin/head|head -1
+# EXEC: 530206|/usr/bin/tr|tr -d \n
+# EXEC: 530207|/usr/bin/cat|cat --version
+# EXEC: 530209|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 530210|/usr/bin/head|head -1
+# EXEC: 530211|/usr/bin/tr|tr -d \n
+# EXEC: 530212|/usr/bin/tee|tee --version
+# EXEC: 530214|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 530215|/usr/bin/head|head -1
+# EXEC: 530216|/usr/bin/tr|tr -d \n
+# EXEC: 530217|/usr/bin/mktemp|mktemp --version
+# EXEC: 530219|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 530220|/usr/bin/head|head -1
+# EXEC: 530221|/usr/bin/tr|tr -d \n
+# EXEC: 530222|/usr/bin/rm|rm --version
+# EXEC: 530224|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 530225|/usr/bin/head|head -1
+# EXEC: 530226|/usr/bin/tr|tr -d \n
+# EXEC: 530227|/usr/bin/timeout|timeout --version
+# EXEC: 530229|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 530230|/usr/bin/head|head -1
+# EXEC: 530231|/usr/bin/tr|tr -d \n
+# EXEC: 530232|/usr/bin/tr|tr --version
+# EXEC: 530234|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 530235|/usr/bin/head|head -1
+# EXEC: 530236|/usr/bin/tr|tr -d \n
+# EXEC: 530237|/usr/bin/head|head --version
+# EXEC: 530239|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 530240|/usr/bin/head|head -1
+# EXEC: 530241|/usr/bin/tr|tr -d \n
+# EXEC: 530242|/usr/bin/cut|cut --version
+# EXEC: 530244|/usr/bin/sha256sum|sha256sum _sandbox/monte-carlo.rb
+# EXEC: 530245|/usr/bin/cut|cut -d  -f1
+# EXEC: 530247|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205642-monte-carlo.log
+# EXEC: 530248|/usr/bin/date|date -Is
+# EXEC: 530249|/usr/bin/mktemp|mktemp
+# EXEC: 530250|/usr/bin/mktemp|mktemp
+# EXEC: 530251|/usr/bin/ruby|ruby _sandbox/monte-carlo.rb
+# EXEC: 530254|/usr/bin/wc|wc -l
+# EXEC: 530255|/usr/bin/tr|tr -d  
+# EXEC: 530257|/usr/bin/wc|wc -c
+# EXEC: 530258|/usr/bin/tr|tr -d  
+# EXEC: 530260|/usr/bin/wc|wc -l
+# EXEC: 530261|/usr/bin/tr|tr -d  
+# EXEC: 530262|/usr/bin/date|date +%s%N
+# EXEC: 530264|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205642-monte-carlo.log
+# EXEC: 530266|/usr/bin/cat|cat /tmp/tmp.TqhjFKoRZJ
+# EXEC: 530267|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205642-monte-carlo.log
+# EXEC: 530268|/usr/bin/cat|cat /tmp/tmp.Az3JWClIKn
+# EXEC: 530269|/usr/bin/cat|cat /tmp/tmp.Az3JWClIKn
+# EXEC: 530270|/usr/bin/rm|rm -f /tmp/tmp.TqhjFKoRZJ /tmp/tmp.Az3JWClIKn
+# EXEC: 530272|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205642-monte-carlo.log
+# EXEC: 530274|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205642-monte-carlo.log
+# EXEC: 530276|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205642-monte-carlo.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=(no --version) head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 106
+# SHA: f625d4a037405c0f786a5a5bc883de07dce8b3e18897c127cb49f54258a3d619
+# exit: 0

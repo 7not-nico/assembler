@@ -97,11 +97,11 @@ Every error in this session is explicitly covered by an existing protocol:
 | Error | Protocol that would have prevented it |
 |-------|---------------------------------------|
 | Shebang CLI in tools/ | PROT.TOOL.DEFINITION Rule 1, Gotcha |
-| Cross-tool import | PROT.TOOL.MORPHISM Gotcha 1 |
+| Cross-tool import | PROT.TOOL.COMPOSITE Gotcha 1 |
 | console.log instead of return | PROT.TOOL.DEFINITION Rule 4 |
 | Main().catch() instead of execute | PROT.TOOL.DEFINITION Rule 1 |
 | @toolclass on line 2 not 1 | PROT.TOOL.AUTOMATON Rule 6 |
-| Template copy from MCP server | PROT.TOOL.MORPHISM (MCP servers ≠ tools) |
+| Template copy from MCP server | PROT.TOOL.COMPOSITE (MCP servers ≠ tools) |
 
 The protocols existed before the errors occurred. The gaps were:
 1. Not knowing which protocols apply to which artifact types

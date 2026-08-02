@@ -1,0 +1,31 @@
+# CMD: bash .opencode/_scripts/fixtures/fixture-scripts-maxim.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# DATE: 2026-08-01T19:39:26-06:00
+# PID: 483822
+# DUR: 122ms
+# exit: 0
+# GIT: assembler@087b240
+# BRANCH: main
+# SCOPE: _scripts
+# SESSION: scripts-v2
+# TASK: run-scripts-v2
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_scripts/fixtures/fixture-scripts-maxim.sh 
+# OUT: ruby maxim
+# IN: r2-seed-audit.rb=7b72eb95b093f03df4d8cce66c21ba55a39e7274fd358b8d73ea5a38ce62149f
+# CWD: /home/eddyr/assembler
+# --------------------
+seed audit violations (7):
+File                 | Field | Value                      | Problem                  
+---------------------|-------|----------------------------|--------------------------
+01-abstractions.sql  | ring  | abstractions R2 prefix=01  | expected prefix 02 for R2
+01-linguistics.sql   | ring  | linguistics R2 prefix=01   | expected prefix 02 for R2
+03-nexus.sql         | ring  | nexus R2 prefix=03         | expected prefix 02 for R2
+04-protocols.sql     | ring  | protocols R0 prefix=04     | expected prefix 00 for R0
+05-patterns.sql      | ring  | patterns R1 prefix=05      | expected prefix 01 for R1
+06-illustrations.sql | ring  | illustrations R3 prefix=06 | expected prefix 03 for R3
+06-references.sql    | ring  | references R3 prefix=06    | expected prefix 03 for R3
+# OUT_LINES: 10
+# OUT_BYTES: 801
+# ERR_LINES: 0
+# SHA: b90cec91967048f4f03a72d2c496c1b361b31071ef73ec1f12ec1a96995229f5

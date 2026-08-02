@@ -8,7 +8,7 @@
 
 ## Error instances from vector-tooling-retrospective
 
-- [ ] cross-tool import → violates `REF.LIB.DIRECTORY.LAYER`, `PROT.TOOL.MORPHISM`
+- [ ] cross-tool import → violates `REF.LIB.DIRECTORY.LAYER`, `PROT.TOOL.COMPOSITE`
 - [ ] shebang CLI format → violates audit-tool rule 2, rule 8
 - [ ] MCP disabled config + present dir → violates clean-disable principle
 - [ ] dead libs after consumers disabled → violates `MAX.DRY` (dead code)
