@@ -2,7 +2,7 @@
 name: use-playwright-vision
 description: Use this skill when using Playwright MCP vision tools — it handles vision-mode mouse coordinate tools for visual element interaction
 state-profile: stateless
-type: reference
+nexus: NEX.BROWSER.STACK
 ---
 
 **Tools**

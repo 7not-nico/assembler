@@ -2,7 +2,7 @@
 name: reason-invariants
 description: Use this skill before and during any work in an invariant-bearing layer — identify the governing state facts, check them against the invariant/ files, reason about their violation signatures, and confirm the enforcement chain holds. Reference NEX.TOOL.SEQUENCE for the validation workflow
 state-profile: hybrid
-related: ["NEX.TOOL.SEQUENCE"]
+nexus: NEX.TOOL.SEQUENCE
 ---
 
 **Purpose**

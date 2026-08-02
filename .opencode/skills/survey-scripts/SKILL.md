@@ -1,10 +1,8 @@
 ---
 name: survey-scripts
-description: Use this skill when creating surveys under .opencode/_scripts/survey/ — it follows the survey workflow: check template/ for boilerplate, knowledge/ for Ruby reference, survey/ examples for patterns, and writes reports into report/
+description: Use this skill when creating surveys under .opencode/_shell/survey/ — it follows the survey workflow: check template/ for boilerplate, knowledge/ for Ruby reference, survey/ examples for patterns, and writes reports into report/
 state-profile: stateless
-related: ["RUL.REPORT.WRITE", "RUL.TODO.TRACK", "RUL.RUBY.FUNCTIONAL"]
-patterns: ["MAX.ATOMIC.CONCERN", "MAX.DRY", "MAX.RUBY.ONLY"]
-terms: ["IDENTITY.MAXIM", "IDENTITY.SCRIPT"]
+nexus: NEX.META.PROPOSAL
 ---
 
 **Procedure**
@@ -93,13 +91,9 @@ Choose the pattern that matches your subject. Infrastructure scans (like `dep-in
 - For non-entity surveys, `_rb/` modules (paths, frontmatter, report) may not apply. Use Ruby stdlib directly: `json`, `pathname`, `fileutils`, `stringio`.
 - Write reports manually by redirecting stdout: `ruby s01-script.rb > report/conclusions/s01-$(date -Iseconds).txt`
 - `survey/` is for analysis scripts only. Actions (migrations, renames, writes) belong in `r*-*.rb` scripts under `.opencode/_scripts/`.
-
-**Rules**
-
-- Every survey directory has 1–4 scripts
-- Every script has a unique `sNN-` prefix within its survey
-- No survey script writes files — output goes to stdout only
-- Reports route to `report/` manually or via pipe
-- Pure lambdas defined before IO sections
-- Ruby stdlib only — no gems, no external runtimes
-- New survey first checks existing surveys for overlap
+- Overcrowded survey — keep 1-4 scripts per directory; each script handles one concern
+- Script without sequence prefix — use a unique `sNN-` prefix within its survey
+- Survey script writing files — output goes to stdout only; reports route to `report/` manually or via pipe
+- IO before pure logic — define pure lambdas before IO sections
+- External runtime or gem — use Ruby stdlib only, no gems
+- Overlapping survey — check existing surveys for overlap before creating a new one

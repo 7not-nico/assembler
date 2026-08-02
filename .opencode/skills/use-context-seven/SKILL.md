@@ -2,7 +2,7 @@
 name: use-context-seven
 description: Use this skill when using Context7 MCP server — it resolves library IDs and fetches documentation for libraries and frameworks
 state-profile: stateless
-type: reference
+nexus: NEX.INVESTIGATION.STAGE
 ---
 
 **Gotchas**

@@ -1,22 +1,14 @@
 ---
-description: Anchor all sessions to core skills + patlib MCP + workflow rules
+description: Anchor every task to live skills — entity context, research, reasoning, and active tool families
 subtask: true
 ---
 
-Operate under seven anchored skills for every task:
+Anchor each task to the live skill set:
 
-1. **compose-web** — parallel-search_web_search (2-3 queries) → web_fetch (if needed) → Context7 resolve+query (library docs) → Playwright (dynamic pages) → mcp-log-search. CAPTCHA-blocked → `RUL.CAPTCHA.GATE`.
-
-2. **report-outcomes** — write conclusions to `report/conclusions/`, errors to `report/errors/`, walkthroughs to `report/walkthroughs/`, todo to `todo/` per MAX.ATOMIC.CONCERN
-
-3. **use-playwright-core** — navigate → snapshot → find/click/type → evaluate/screenshot for dynamic or JS-rendered content
-
-4. **knowledge-ruby** — for Ruby functional programming questions, read atomic files from `knowledge/` per skill procedure
-
-5. **read-maxims-protocols** — consult MAX.* for principles and PROT.* for contracts before every design and implementation decision
-
-6. **acquire-assets** — download images from JSTOR via Playwright + curl, register in `assets/assets.db` per `CMD.ACQUIRE.ASSET`
-
-7. **declare-grounded-entity** — web research validation → precedence derivation → paper acquisition → entity write-sync per `SKL.DECLARE.GROUNDED.ENTITY`
-
-**Always**: before any task, query patlib via `patlib_search`/`patlib_get`/`patlib_validate` (mcp-patlib) for entity context per `RUL.QUERY.PATLIB.CONTEXT`.
+1. **Query entity context first** — call `semantic_search` (mcp-semantic) before work; read live MAX.*, SPEC.*, PROT.*, RUL.* in ring order
+2. **Run research** — use `use-parallel-search` and `use-exa` for discovery, `use-context-seven` for library docs, `use-playwright-*` for dynamic pages; gate CAPTCHAs per `RUL.CAPTCHA.GATE`
+3. **Apply reasoning** — match `reason-quantitative` or `reason-verbal` to task mode; run `reason-invariants` before invariant-bearing work
+4. **Consult Ruby** — use `knowledge-ruby` for functional Ruby reference
+5. **Compose bash flows** — let `manage-bash-flows` script multi-step work; let `structure-stdout` shape pipe contracts
+6. **Conduct surveys** — run workflows via `survey-scripts` under `_shell/survey/`
+7. **Study new ground** — open uncharted topics via `study-foundations`; reshape skills via `refactor-skill`

@@ -2,13 +2,11 @@
 name: knowledge-ruby
 description: Use this skill when answering Ruby functional programming questions — it references knowledge/ as the authoritative source for atomic Ruby programming knowledge files
 state-profile: stateless
-type: reference
-related: [CMD.ANCHOR.WORKFLOW, RUL.LAMBDA.LINGUISTICS]
 ---
 
 **Procedure**
 
-0. When asked about Ruby, read the relevant atomic file from `knowledge/ruby/`:
+0. Read the relevant atomic file from `knowledge/ruby/` — when asked about Ruby, match the topic to its file:
 
    | File | Covers |
    |------|--------|

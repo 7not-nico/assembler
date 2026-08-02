@@ -2,7 +2,7 @@
 name: use-playwright-network-storage
 description: Use this skill when using Playwright MCP network tools — it covers network mocking, storage management, and authentication handling
 state-profile: stateless
-type: reference
+nexus: NEX.BROWSER.STACK
 ---
 
 **Availability** — most tools require `--caps=network` or `--caps=storage` on server launch.

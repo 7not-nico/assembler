@@ -2,12 +2,15 @@
 
 ## System
 
-The runtime is triple: **Go** (primary, `_golib/`), **Rust** (legacy, `_rs/` + `_bin/`), **Ruby** (legacy, `_rb/` + `r*.rb`).
+The runtime is bash-first: **Bash** (primary, `fixtures/` + launchers), **Go** (analysis engine, `_golib/`), **Rust** (legacy, `_rs/` + `_bin/`), **Ruby** (legacy, `_rb/` + `r*.rb`).
+Bash forms binary imperative shells; command scripts wrap launch and pipeline boundaries (per `RUL.CODE.BASH.SHELLS`). Bash leads the scripting layer — launchers, wrappers, and fixtures run bash-first.
 Go uses the standard library only. The build runs via `go build -o bin/assembler-cli ./cmd/assembler-cli` in `_golib/`.
 Rust uses edition 2021. The build runs via `cargo build --release` in `_rs/` or `_bin/`.
 Ruby uses stdlib only (`yaml`, `json`, `pathname`). Gems and builds stay out. `MAX.RUBY.ONLY` documents the constraint.
 
 ## Quick start
+
+Bash leads the layer: `rs` (launcher), `fixtures/` (test fixtures), `survey/` (workflows).
 
 ```bash
 _scripts/rs count            # Entities per type
@@ -17,9 +20,21 @@ _scripts/rs audit protocols  # Structural audit scoped to one type
 _scripts/rs rings            # Show topology
 ```
 
-The `rs` launcher execs the Go binary (`_golib/bin/assembler-cli`); the Rust binary serves as fallback.
+The `rs` launcher (bash) execs the Go binary (`_golib/bin/assembler-cli`); the Rust binary serves as fallback.
 
-## Go (primary)
+## Bash (primary)
+
+Bash scripts lead the scripting layer. They form binary imperative shells at the edge of the system (per `RUL.CODE.BASH.SHELLS`): the `rs` launcher, command wrappers, stdout pipelines, and the test fixtures under `fixtures/`. Bash wraps the Go/Rust/Ruby engines and shapes stdout for downstream consumers (per `NEX.ACQUIRE.PIPELINE`).
+
+| File | Role |
+|------|------|
+| `rs` | Launcher — execs the Go binary, falls back to Rust |
+| `fixtures/*.sh` | Test fixtures — exercise launchers, wrappers, audits, and survey workflows; emit KEY=value contract lines with `RESULT=pass\|fail:count` |
+| `bitacora-log.sh` routes | Commands pipe through the stdout wrapper for provenance capture |
+
+Fixtures run bash-first: shell scripts own audit and wrapper logic; Ruby fixtures remain legacy (`fixture-ruby-test.rb`).
+
+## Go (analysis engine)
 
 ### Module
 
@@ -87,12 +102,13 @@ ruby r6-patlib-sync.rb --dry      # preview targets, no writes
 
 | Path | Content |
 |------|---------|
-| `_golib/` | Go module — primary toolchain (lib packages + `cmd/assembler-cli`) |
+| `_golib/` | Go module — analysis engine (lib packages + `cmd/assembler-cli`) |
 | `_rb/` | Ruby lambda modules (16 files, legacy) |
 | `_rs/` | Rust library (15 modules, legacy) |
 | `_bin/` | Rust CLI crate (legacy) |
 | `schema/` | Stores the SQLite DB + seed files |
-| `survey/` | Holds 26 state analysis workflows |
+| `survey/` | Holds 26 state analysis workflows (bash-first scripts) |
+| `fixtures/` | Bash-first test fixtures (launchers, wrappers, audits) |
 | `report/`, `report/conclusions/`, `report/errors/`, `report/walkthroughs/` | Stores script output |
 | `docs/` | Stores reference docs for modules, entity types, violations |
 | `knowledge/` | Stores Ruby reference files (114 core docs) |

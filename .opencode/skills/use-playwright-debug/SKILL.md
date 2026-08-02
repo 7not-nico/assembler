@@ -2,7 +2,7 @@
 name: use-playwright-debug
 description: Use this skill when debugging with Playwright MCP — it covers code execution, assertions, tracing, video recording, and PDF capture
 state-profile: stateless
-type: reference
+nexus: NEX.BROWSER.STACK
 ---
 
 **Availability** — core tools always available. Assert/trace/video/PDF require capability flags.

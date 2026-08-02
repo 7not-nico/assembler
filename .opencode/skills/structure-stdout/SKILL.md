@@ -2,7 +2,7 @@
 name: structure-stdout
 description: Use this skill when writing or composing scripts whose stdout feeds another step, a log wrapper, or a human terminal — structure stdout pipes so downstream consumers extract the most value. Reference NEX.ACQUIRE.PIPELINE for keyed-line stage handoff and NEX.TOOL.SEQUENCE for the audit output contract
 state-profile: stateless
-related: ["NEX.ACQUIRE.PIPELINE", "NEX.TOOL.SEQUENCE"]
+nexus: NEX.ACQUIRE.PIPELINE
 ---
 
 **Purpose**

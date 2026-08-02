@@ -2,7 +2,7 @@
 name: use-exa
 description: Use this skill when using Exa MCP server — it performs semantic web search and clean content extraction from any URL
 state-profile: stateless
-type: reference
+nexus: NEX.INVESTIGATION.STAGE
 ---
 
 **Gotchas**

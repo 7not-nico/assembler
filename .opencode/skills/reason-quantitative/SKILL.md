@@ -2,8 +2,7 @@
 name: reason-quantitative
 description: Use this skill when performing QR-based analysis — it encodes situations into quantitative structure, models relationships, reasons, and communicates results
 state-profile: hybrid
-related: ["RUL.QUANTITATIVE.REASONING"]
-patterns: ["NEX.META.CANVAS"]
+nexus: NEX.META.CANVAS
 ---
 **Procedure**
 
@@ -23,10 +22,7 @@ patterns: ["NEX.META.CANVAS"]
 - Build model before calculating. Jumping to calculation without encoding produces numerically correct results that mismatch context
 - Implicit units or ranges — every variable must have an explicit unit and plausible range before modeling begins
 - Overprecision — match output precision to input measurement precision. Report at input precision level — 3 significant figures from 1-significant-figure input excluded
-
-**Rules**
-
-- Encoding precedes solving — Step 2 (model) completes before Step 3 (reason). Reordering excluded
-- Quantity list must have 2+ entries — a single variable can't form a relationship structure
-- Every relationship must reference variables from the scoped quantity list — no orphan quantities
-- Precision must be reported — explicit statement of significant figures or confidence interval in the communicate step
+- Calculating before encoding — complete Step 2 (model) before Step 3 (reason); reordering breaks the reasoning chain
+- Single-variable quantity list — scope 2+ entries; one variable can't form a relationship structure
+- Orphan quantities in relationships — reference only variables from the scoped quantity list
+- Precision omitted from the communicate step — state significant figures or a confidence interval explicitly

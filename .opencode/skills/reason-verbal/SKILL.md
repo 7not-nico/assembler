@@ -2,8 +2,7 @@
 name: reason-verbal
 description: Use this skill when performing verbal reasoning analysis — it surveys, extracts, structures, infers, evaluates, and communicates results systematically
 state-profile: hybrid
-related: ["RUL.QUANTITATIVE.REASONING", "TERM.VERBAL.REASONING"]
-patterns: ["NEX.META.CANVAS"]
+nexus: NEX.META.CANVAS
 ---
 **Procedure**
 
@@ -25,10 +24,7 @@ patterns: ["NEX.META.CANVAS"]
 - Inferences — anchored to specific textual evidence. Beyond-text claims: flagged as speculative.
 - Structural cues — paragraph breaks, transitions, headings each carry meaning. Document the organizational pattern before drawing conclusions.
 - Source scope — single-text conclusions require a limitations statement. Cross-reference when multiple sources available.
-
-**Rules**
-
-- Step order fixed as 1→2→3→4→5→6. Follow sequentially — reordering excluded
-- Inference anchoring — every inference requires a cited textual extract.
-- Vocabulary check — words with uncertain meaning identified before analysis.
-- Conclusion format — claim + evidence + reasoning chain, all three required.
+- Skipping steps — follow the fixed order 1→2→3→4→5→6 sequentially; reordering loses the evidence chain
+- Unanchored inference — cite the textual extract every inference rests on
+- Uncertain vocabulary unexamined — identify words with uncertain meaning before analysis begins
+- Conclusion missing a component — state claim, evidence, and reasoning chain; all three required

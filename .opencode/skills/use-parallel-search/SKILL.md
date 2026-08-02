@@ -2,7 +2,7 @@
 name: use-parallel-search
 description: Use this skill when using Parallel Search MCP server — it runs multi-query web searches and fetches pages
 state-profile: stateless
-type: reference
+nexus: NEX.INVESTIGATION.STAGE
 ---
 
 **Gotchas**

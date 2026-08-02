@@ -2,8 +2,7 @@
 name: study-foundations
 description: Use this skill when studying uncharted topics — it composes xrequire-foundations, concept decomposition, and xresearch-geo into a learning pipeline
 state-profile: hybrid
-related: ["SKL.ORCHESTRATE.RESEARCH", "SKL.SEARCH.GEO"]
-patterns: ["NEX.INVESTIGATION.PIPELINE.STAGE"]
+nexus: NEX.INVESTIGATION.STAGE
 ---
 **Procedure**
 
@@ -23,13 +22,9 @@ patterns: ["NEX.INVESTIGATION.PIPELINE.STAGE"]
 - Passing the original broad topic to `/xresearch-geo` instead of decomposed anchors — use confirmed sub-concepts as query anchors; the broad topic frames the search, anchors scope it
 - Skipping academic-source check risks citing non-peer-reviewed material — replace .com refs with .edu/.ac.* equivalents
 - Commercial ratio check after research — 20% threshold is report-level WARN (softer than search-geo's 30% compile block). Two-tier enforcement catches edges where individual regions pass. Aggregate quality drifts separately
-
-**Rules**
-
-- Step order fixed — foundations → decompose → research. Reordering excluded
-- Sub-concept count: 4-6, one question tool round per concept
-- Research anchors must be logged before `/xresearch-geo` call
-- RESEARCH status can be COMMERCIAL-HEAVY WARN even when all regions PASS — aggregate quality is a separate dimension from per-region availability
+- Reordering the pipeline — keep foundations → decompose → research fixed; each stage gates the next
+- Unlogged anchors before research — log confirmed sub-concepts before the `/xresearch-geo` call
+- RESEARCH marked PASS when aggregate quality drifts — set COMMERCIAL-HEAVY WARN even when all regions PASS; aggregate quality is a separate dimension from per-region availability
 
 **Report — per step:**
 - FOUNDATIONS — PASS, WARN, or FAIL

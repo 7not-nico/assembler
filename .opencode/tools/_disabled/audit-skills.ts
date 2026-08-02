@@ -18,7 +18,7 @@ const COMPAT_MAX_LENGTH = 500
 const SECTION_REQUIREMENTS: Record<string, string[]> = {
   reference: [],
   procedure: ["Procedure", "Gotchas"],
-  full: ["Trigger", "Procedure", "Gotchas", "Rules"],
+  full: ["Trigger", "Procedure", "Gotchas"],
 }
 
 export default tool({
@@ -62,6 +62,15 @@ export default tool({
 
       if (fm.compatibility && (fm.compatibility as string).length > COMPAT_MAX_LENGTH)
         violations.push({ file: `${dir}/SKILL.md`, message: `compatibility exceeds ${COMPAT_MAX_LENGTH} characters (${(fm.compatibility as string).length})` })
+
+      // nexus: optional single NEX.* entity (canonical frontmatter set; related/patterns/terms/type removed)
+      if (fm.nexus !== undefined && fm.nexus !== null && fm.nexus !== "") {
+        const nex = String(fm.nexus)
+        if (!/^NEX\.[A-Z0-9._-]+$/.test(nex))
+          violations.push({ file: `${dir}/SKILL.md`, message: `nexus "${nex}" must match NEX.{SEGMENTS} format` })
+      }
+      if (fm.related !== undefined || fm.patterns !== undefined || fm.terms !== undefined || fm.type !== undefined)
+        violations.push({ file: `${dir}/SKILL.md`, message: "Stale frontmatter field present — canonical set: name, description, state-profile, nexus" })
 
       if (fm.name) {
         const name = fm.name as string

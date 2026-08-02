@@ -2,7 +2,7 @@
 name: use-playwright-core
 description: Use this skill when using Playwright MCP browser automation — it covers navigation, clicking, typing, screenshots, and tab management tools
 state-profile: stateless
-type: reference
+nexus: NEX.BROWSER.STACK
 ---
 
 **Tools**

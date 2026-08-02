@@ -2,7 +2,7 @@
 name: manage-bash-flows
 description: Use this skill when a workflow runs as manual, repeated, or ad-hoc steps — detect the flow, generate atomic bash scripts per the atomic-script contract, compose them into orchestrators, and pipe every command through bitacora stdout logging. Reference NEX.META.ORCHESTRATION for phase separation and NEX.ACQUIRE.PIPELINE for stage composition
 state-profile: stateful-writer
-related: ["NEX.META.ORCHESTRATION", "NEX.ACQUIRE.PIPELINE"]
+nexus: NEX.ACQUIRE.PIPELINE
 ---
 
 **Purpose**

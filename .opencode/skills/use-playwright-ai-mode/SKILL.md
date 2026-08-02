@@ -2,7 +2,7 @@
 name: use-playwright-ai-mode
 description: Use this skill when using Playwright to interact with Google AI Mode (udm=50) — it covers navigation, chatting, and extracting structured responses
 state-profile: stateless
-type: reference
+nexus: NEX.BROWSER.STACK
 ---
 
 Google AI Mode (`udm=50`) renders an interactive LLM chat embedded in the search page. Use Playwright to navigate, ask, and extract the structured AI response from the DOM.
