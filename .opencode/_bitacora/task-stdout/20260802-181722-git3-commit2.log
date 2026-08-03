@@ -1,0 +1,154 @@
+# CMD: bash -c $'\ngit add _codex/_bitacora .opencode/_bitacora/task-todo/2026-08-02--git-push-record-fixes.md .opencode/_bitacora/task-stdout/20260802-1815* .opencode/_bitacora/task-stdout/20260802-1816* && git commit -m "bitacora: golf report, record-fixes, browse URL-mode test" && git push && git log --oneline -1' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T18:17:23-06:00
+# PID: 308378
+# DUR: 2032ms
+# exit: 0
+# GIT: assembler@85f0384
+# BRANCH: main
+# SESSION: e27d72e3
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\ngit add _codex/_bitacora .opencode/_bitacora/task-todo/2026-08-02--git-push-record-fixes.md .opencode/_bitacora/task-stdout/20260802-1815* .opencode/_bitacora/task-stdout/20260802-1816* && git commit -m "bitacora: golf report, record-fixes, browse URL-mode test" && git push && git log --oneline -1' 
+# CWD: /home/eddyr/assembler
+# --------------------
+[main 04c9f55] bitacora: golf report, record-fixes, browse URL-mode test
+ 12 files changed, 812 insertions(+)
+ create mode 100644 .opencode/_bitacora/task-stdout/20260802-181555-git3-instantiate.log
+ create mode 100644 .opencode/_bitacora/task-stdout/20260802-181603-git3-commit.log
+ create mode 100644 .opencode/_bitacora/task-stdout/20260802-181617-git3-debug.log
+ create mode 100644 .opencode/_bitacora/task-stdout/20260802-181631-git3-debug2.log
+ create mode 100644 .opencode/_bitacora/task-stdout/20260802-181640-git3-debug3.log
+ create mode 100644 .opencode/_bitacora/task-todo/2026-08-02--git-push-record-fixes.md
+ create mode 100644 _codex/_bitacora/task-report/20260802-145911-mgba-golf-acquire.md
+ create mode 100644 _codex/_bitacora/task-report/20260802-181121-mgba-record-fixes.md
+ create mode 100644 _codex/_bitacora/task-stdout/20260802-181121-mgba-fixes-stamp.log
+ create mode 100644 _codex/_bitacora/task-stdout/20260802-181128-mgba-fixes-lua-diff.log
+ create mode 100644 _codex/_bitacora/task-stdout/20260802-181713-mgba-url-mode-test.log
+ create mode 100644 _codex/_bitacora/task-todo/20260802-181121-mgba-record-fixes.md
+04c9f55 bitacora: golf report, record-fixes, browse URL-mode test
+To https://github.com/7not-nico/assembler.git
+   85f0384..04c9f55  main -> main
+# OUT_LINES: 15
+# OUT_BYTES: 1206
+# ERR_LINES: 2
+# EXEC: 308378|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh git3-commit2 -- bash -c 
+# EXEC: 308379|/usr/bin/date|date +%s%N
+# EXEC: 308382|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 308385|/usr/bin/git|git remote get-url origin
+# EXEC: 308383|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 308386|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 308388|/usr/bin/git|git branch --show-current
+# EXEC: 308390|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 308391|/usr/bin/head|head -1
+# EXEC: 308392|/usr/bin/tr|tr -d \n
+# EXEC: 308393|/usr/bin/bun|bun --version
+# EXEC: 308395|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 308396|/usr/bin/head|head -1
+# EXEC: 308397|/usr/bin/tr|tr -d \n
+# EXEC: 308398|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 308400|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 308401|/usr/bin/head|head -1
+# EXEC: 308402|/usr/bin/tr|tr -d \n
+# EXEC: 308403|/usr/bin/python3|python3 --version
+# EXEC: 308405|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 308406|/usr/bin/head|head -1
+# EXEC: 308407|/usr/bin/tr|tr -d \n
+# EXEC: 308408|/usr/bin/ruby|ruby --version
+# EXEC: 308412|/usr/bin/head|head -1
+# EXEC: 308411|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 308413|/usr/bin/tr|tr -d \n
+# EXEC: 308414|/usr/bin/rustc|rustc --version
+# EXEC: 308418|/usr/bin/timeout|timeout 2 go version
+# EXEC: 308419|/usr/bin/head|head -1
+# EXEC: 308420|/usr/bin/tr|tr -d \n
+# EXEC: 308421|/usr/bin/go|go version
+# EXEC: 308432|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 308433|/usr/bin/head|head -1
+# EXEC: 308434|/usr/bin/tr|tr -d \n
+# EXEC: 308435|/usr/bin/git|git --version
+# EXEC: 308438|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 308439|/usr/bin/head|head -1
+# EXEC: 308440|/usr/bin/tr|tr -d \n
+# EXEC: 308442|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 308444|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 308445|/usr/bin/head|head -1
+# EXEC: 308446|/usr/bin/tr|tr -d \n
+# EXEC: 308447|/usr/bin/date|date --version
+# EXEC: 308449|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 308450|/usr/bin/head|head -1
+# EXEC: 308451|/usr/bin/tr|tr -d \n
+# EXEC: 308452|/usr/bin/wc|wc --version
+# EXEC: 308454|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 308455|/usr/bin/head|head -1
+# EXEC: 308456|/usr/bin/tr|tr -d \n
+# EXEC: 308457|/usr/bin/cat|cat --version
+# EXEC: 308459|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 308460|/usr/bin/head|head -1
+# EXEC: 308461|/usr/bin/tr|tr -d \n
+# EXEC: 308462|/usr/bin/tee|tee --version
+# EXEC: 308464|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 308465|/usr/bin/head|head -1
+# EXEC: 308466|/usr/bin/tr|tr -d \n
+# EXEC: 308467|/usr/bin/mktemp|mktemp --version
+# EXEC: 308469|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 308470|/usr/bin/head|head -1
+# EXEC: 308471|/usr/bin/tr|tr -d \n
+# EXEC: 308472|/usr/bin/rm|rm --version
+# EXEC: 308474|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 308475|/usr/bin/head|head -1
+# EXEC: 308476|/usr/bin/tr|tr -d \n
+# EXEC: 308477|/usr/bin/timeout|timeout --version
+# EXEC: 308479|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 308480|/usr/bin/head|head -1
+# EXEC: 308481|/usr/bin/tr|tr -d \n
+# EXEC: 308482|/usr/bin/tr|tr --version
+# EXEC: 308484|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 308485|/usr/bin/head|head -1
+# EXEC: 308486|/usr/bin/tr|tr -d \n
+# EXEC: 308487|/usr/bin/head|head --version
+# EXEC: 308489|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 308490|/usr/bin/head|head -1
+# EXEC: 308491|/usr/bin/tr|tr -d \n
+# EXEC: 308492|/usr/bin/cut|cut --version
+# EXEC: 308494|/usr/bin/date|date +%s%N
+# EXEC: 308495|/usr/bin/sha256sum|sha256sum
+# EXEC: 308496|/usr/bin/cut|cut -c1-8
+# EXEC: 308498|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181722-git3-commit2.log
+# EXEC: 308499|/usr/bin/date|date -Is
+# EXEC: 308500|/usr/bin/mktemp|mktemp
+# EXEC: 308501|/usr/bin/mktemp|mktemp
+# EXEC: 308502|/usr/bin/bash|bash -c 
+# EXEC: 308503|/usr/bin/git|git add _codex/_bitacora .opencode/_bitacora/task-todo/2026-08-02--git-push-record-fixes.md .opencode/_bitacora/task-stdout/20260802-181555-git3-instantiate.log .opencode/_bitacora/task-stdout/20260802-181603-git3-commit.log .opencode/_bitacora/task-stdout/20260802-181617-git3-debug.log .opencode/_bitacora/task-stdout/20260802-181631-git3-debug2.log .opencode/_bitacora/task-stdout/20260802-181640-git3-debug3.log
+# EXEC: 308510|/usr/bin/git|git commit -m bitacora: golf report, record-fixes, browse URL-mode test
+# EXEC: 308523|/usr/lib/git-core/git|/usr/lib/git-core/git maintenance run --auto --no-quiet --detach
+# EXEC: 308525|/usr/bin/git|git push
+# EXEC: 308526|/usr/lib/git-core/git|/usr/lib/git-core/git remote-https origin https://github.com/7not-nico/assembler.git
+# EXEC: 308527|/usr/lib/git-core/git-remote-https|/usr/lib/git-core/git-remote-https origin https://github.com/7not-nico/assembler.git
+# EXEC: 308530|/bin/sh|/bin/sh -c /usr/bin/gh auth git-credential get /usr/bin/gh auth git-credential get
+# EXEC: 308530|/usr/bin/gh|/usr/bin/gh auth git-credential get
+# EXEC: 308548|/bin/sh|/bin/sh -c /usr/bin/gh auth git-credential store /usr/bin/gh auth git-credential store
+# EXEC: 308548|/usr/bin/gh|/usr/bin/gh auth git-credential store
+# EXEC: 308558|/usr/lib/git-core/git|/usr/lib/git-core/git send-pack --stateless-rpc --helper-status --thin --no-progress https://github.com/7not-nico/assembler.git/ --stdin
+# EXEC: 308560|/usr/lib/git-core/git|/usr/lib/git-core/git pack-objects --all-progress-implied --revs --stdout --thin --delta-base-offset -q
+# EXEC: 308502|/usr/bin/git|git log --oneline -1
+# EXEC: 308563|/usr/bin/wc|wc -l
+# EXEC: 308564|/usr/bin/tr|tr -d  
+# EXEC: 308566|/usr/bin/wc|wc -c
+# EXEC: 308567|/usr/bin/tr|tr -d  
+# EXEC: 308569|/usr/bin/wc|wc -l
+# EXEC: 308570|/usr/bin/tr|tr -d  
+# EXEC: 308571|/usr/bin/date|date +%s%N
+# EXEC: 308573|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181722-git3-commit2.log
+# EXEC: 308575|/usr/bin/cat|cat /tmp/tmp.uWmL5O4Gnl
+# EXEC: 308576|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181722-git3-commit2.log
+# EXEC: 308577|/usr/bin/cat|cat /tmp/tmp.KqGUwcdM1A
+# EXEC: 308578|/usr/bin/cat|cat /tmp/tmp.KqGUwcdM1A
+# EXEC: 308579|/usr/bin/rm|rm -f /tmp/tmp.uWmL5O4Gnl /tmp/tmp.KqGUwcdM1A
+# EXEC: 308581|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181722-git3-commit2.log
+# EXEC: 308583|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181722-git3-commit2.log
+# EXEC: 308585|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181722-git3-commit2.log
+# PROGS: sh=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 gh=gh version 2.97.0 (2026-07-31) git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 git=git version 2.55.0 git-remote-https=(no --version)
+# EXEC_COUNT: 116
+# SHA: 031f7a5e9c8e7c07c153aa484448cb60ecd1c4ca3b2feab387aa73a6cbe950d9
+# exit: 0

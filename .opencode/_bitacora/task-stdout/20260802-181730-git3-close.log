@@ -1,0 +1,142 @@
+# CMD: bash .opencode/_bitacora/bitacora-close.sh 2026-08-02--git-push-record-fixes.md git-push-record-fixes 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T18:17:31-06:00
+# PID: 308909
+# DUR: 492ms
+# exit: 0
+# GIT: assembler@04c9f55
+# BRANCH: main
+# SESSION: 868c84a7
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_bitacora/bitacora-close.sh 2026-08-02--git-push-record-fixes.md git-push-record-fixes 
+# CWD: /home/eddyr/assembler
+# --------------------
+TODO   /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--git-push-record-fixes.md
+REPORT /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-181731-git-push-record-fixes.md
+NEXT   fill the report: what was done, decisions, open edges, todo state; cite task-stdout logs
+# OUT_LINES: 3
+# OUT_BYTES: 294
+# ERR_LINES: 0
+# EXEC: 308909|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh git3-close -- bash .opencode/_bitacora/bitacora-close.sh 2026-08-02--git-push-record-fixes.md git-push-record-fixes
+# EXEC: 308910|/usr/bin/date|date +%s%N
+# EXEC: 308913|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 308916|/usr/bin/git|git remote get-url origin
+# EXEC: 308914|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 308917|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 308919|/usr/bin/git|git branch --show-current
+# EXEC: 308921|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 308922|/usr/bin/head|head -1
+# EXEC: 308923|/usr/bin/tr|tr -d \n
+# EXEC: 308924|/usr/bin/bun|bun --version
+# EXEC: 308926|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 308927|/usr/bin/head|head -1
+# EXEC: 308928|/usr/bin/tr|tr -d \n
+# EXEC: 308929|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 308931|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 308932|/usr/bin/head|head -1
+# EXEC: 308933|/usr/bin/tr|tr -d \n
+# EXEC: 308934|/usr/bin/python3|python3 --version
+# EXEC: 308936|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 308937|/usr/bin/head|head -1
+# EXEC: 308938|/usr/bin/tr|tr -d \n
+# EXEC: 308939|/usr/bin/ruby|ruby --version
+# EXEC: 308942|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 308943|/usr/bin/head|head -1
+# EXEC: 308944|/usr/bin/tr|tr -d \n
+# EXEC: 308945|/usr/bin/rustc|rustc --version
+# EXEC: 308948|/usr/bin/timeout|timeout 2 go version
+# EXEC: 308949|/usr/bin/head|head -1
+# EXEC: 308950|/usr/bin/tr|tr -d \n
+# EXEC: 308951|/usr/bin/go|go version
+# EXEC: 308957|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 308958|/usr/bin/head|head -1
+# EXEC: 308959|/usr/bin/tr|tr -d \n
+# EXEC: 308960|/usr/bin/git|git --version
+# EXEC: 308962|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 308963|/usr/bin/head|head -1
+# EXEC: 308964|/usr/bin/tr|tr -d \n
+# EXEC: 308965|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 308969|/usr/bin/tr|tr -d \n
+# EXEC: 308967|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 308968|/usr/bin/head|head -1
+# EXEC: 308970|/usr/bin/date|date --version
+# EXEC: 308972|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 308973|/usr/bin/head|head -1
+# EXEC: 308974|/usr/bin/tr|tr -d \n
+# EXEC: 308975|/usr/bin/wc|wc --version
+# EXEC: 308977|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 308978|/usr/bin/head|head -1
+# EXEC: 308979|/usr/bin/tr|tr -d \n
+# EXEC: 308980|/usr/bin/cat|cat --version
+# EXEC: 308982|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 308983|/usr/bin/head|head -1
+# EXEC: 308984|/usr/bin/tr|tr -d \n
+# EXEC: 308985|/usr/bin/tee|tee --version
+# EXEC: 308987|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 308988|/usr/bin/head|head -1
+# EXEC: 308989|/usr/bin/tr|tr -d \n
+# EXEC: 308990|/usr/bin/mktemp|mktemp --version
+# EXEC: 308992|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 308993|/usr/bin/head|head -1
+# EXEC: 308994|/usr/bin/tr|tr -d \n
+# EXEC: 308995|/usr/bin/rm|rm --version
+# EXEC: 308997|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 308998|/usr/bin/head|head -1
+# EXEC: 308999|/usr/bin/tr|tr -d \n
+# EXEC: 309000|/usr/bin/timeout|timeout --version
+# EXEC: 309002|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 309003|/usr/bin/head|head -1
+# EXEC: 309004|/usr/bin/tr|tr -d \n
+# EXEC: 309005|/usr/bin/tr|tr --version
+# EXEC: 309007|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 309008|/usr/bin/head|head -1
+# EXEC: 309009|/usr/bin/tr|tr -d \n
+# EXEC: 309010|/usr/bin/head|head --version
+# EXEC: 309012|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 309013|/usr/bin/head|head -1
+# EXEC: 309014|/usr/bin/tr|tr -d \n
+# EXEC: 309015|/usr/bin/cut|cut --version
+# EXEC: 309017|/usr/bin/date|date +%s%N
+# EXEC: 309018|/usr/bin/sha256sum|sha256sum
+# EXEC: 309019|/usr/bin/cut|cut -c1-8
+# EXEC: 309021|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181730-git3-close.log
+# EXEC: 309022|/usr/bin/date|date -Is
+# EXEC: 309023|/usr/bin/mktemp|mktemp
+# EXEC: 309024|/usr/bin/mktemp|mktemp
+# EXEC: 309025|/usr/bin/bash|bash .opencode/_bitacora/bitacora-close.sh 2026-08-02--git-push-record-fixes.md git-push-record-fixes
+# EXEC: 309027|/usr/bin/dirname|dirname .opencode/_bitacora/bitacora-close.sh
+# EXEC: 309028|/usr/bin/date|date +%Y-%m-%d
+# EXEC: 309029|/usr/bin/sed|sed -i s/^- \[ \]/- [x]/ /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--git-push-record-fixes.md
+# EXEC: 309030|/usr/bin/rg|rg -q ^Status: /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--git-push-record-fixes.md
+# EXEC: 309038|/usr/bin/sed|sed -i s/^Status:.*/Status: completed (2026-08-02)/ /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--git-push-record-fixes.md
+# EXEC: 309040|/usr/bin/bash|bash /home/eddyr/assembler/.opencode/_bitacora/bitacora-create.sh report git-push-record-fixes
+# EXEC: 309041|/usr/bin/sed|sed s/^CREATE //
+# EXEC: 309043|/usr/bin/dirname|dirname /home/eddyr/assembler/.opencode/_bitacora/bitacora-create.sh
+# EXEC: 309044|/usr/bin/bash|bash /home/eddyr/assembler/.opencode/_bitacora/bitacora-slugify.sh git-push-record-fixes
+# EXEC: 309046|/usr/bin/tr|tr [:upper:] [:lower:]
+# EXEC: 309047|/usr/bin/tr|tr -c [:alnum:] -
+# EXEC: 309048|/usr/bin/sed|sed -E s/-+/-/g; s/^-+//; s/-+$//
+# EXEC: 309049|/usr/bin/date|date +%Y%m%d-%H%M%S
+# EXEC: 309050|/usr/bin/date|date +%Y-%m-%d
+# EXEC: 309051|/usr/bin/cat|cat
+# EXEC: 309053|/usr/bin/wc|wc -l
+# EXEC: 309054|/usr/bin/tr|tr -d  
+# EXEC: 309056|/usr/bin/wc|wc -c
+# EXEC: 309057|/usr/bin/tr|tr -d  
+# EXEC: 309059|/usr/bin/wc|wc -l
+# EXEC: 309060|/usr/bin/tr|tr -d  
+# EXEC: 309061|/usr/bin/date|date +%s%N
+# EXEC: 309063|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181730-git3-close.log
+# EXEC: 309065|/usr/bin/cat|cat /tmp/tmp.qPGBZK6ENh
+# EXEC: 309066|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181730-git3-close.log
+# EXEC: 309067|/usr/bin/cat|cat /tmp/tmp.LksVYzCgIv
+# EXEC: 309068|/usr/bin/cat|cat /tmp/tmp.LksVYzCgIv
+# EXEC: 309069|/usr/bin/rm|rm -f /tmp/tmp.qPGBZK6ENh /tmp/tmp.LksVYzCgIv
+# EXEC: 309071|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181730-git3-close.log
+# EXEC: 309073|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181730-git3-close.log
+# EXEC: 309075|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181730-git3-close.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rg=ripgrep 15.2.0 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sed=/usr/bin/sed (GNU sed) 4.10 sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 118
+# SHA: 96ea6b1f449a66375ce994538d074f23bae9af9b7dd43bc3dd80aa356dc89a02
+# exit: 0
