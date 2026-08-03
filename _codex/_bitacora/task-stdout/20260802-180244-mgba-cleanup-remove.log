@@ -1,0 +1,8 @@
+# CMD: bash -c $'\ncd _codex/mgba-repo/roms\nrm -fv "Crash Bandicoot - The Huge Adventure (USA).gba" "Crash Bandicoot - The Huge Adventure (USA).sav" "Pokemon Prism v0.95 build 254 (Hotfix 5).gbc" "Pokemon Prism v0.95 build 254 (Hotfix 5).sav"' 
+# DATE: 2026-08-02T18:02:44-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+removed 'Crash Bandicoot - The Huge Adventure (USA).gba'
+removed 'Crash Bandicoot - The Huge Adventure (USA).sav'
+removed 'Pokemon Prism v0.95 build 254 (Hotfix 5).gbc'
+# exit: 0

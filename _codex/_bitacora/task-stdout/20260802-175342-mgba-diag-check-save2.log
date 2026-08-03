@@ -1,0 +1,10 @@
+# CMD: bash _codex/mgba-repo/scripts/check-save.sh _codex/mgba-repo/roms/mario-golf-advance-tour-usa.gba 
+# DATE: 2026-08-02T17:53:42-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+ROM=mario-golf-advance-tour-usa.gba
+SAV=mario-golf-advance-tour-usa.sav
+SAVSIZE=32768
+SAVMTIME=2026-08-02 15:05:37
+SS_COUNT=0
+# exit: 0

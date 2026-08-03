@@ -1,0 +1,18 @@
+# CMD: bash _codex/mgba-repo/scripts/inspect-rom.sh _codex/mgba-repo/roms/mario-golf-advance-tour-usa.gba 
+# DATE: 2026-08-02T17:52:34-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+SHA256=f58b827e5b1d2ccbd1cb5eab81d38a3dc6716f0ff6c2591475bb06a862bffc0f
+SIZE=16777216
+TYPE=Game Boy Advance ROM image: "MARIOGOLFGBA" (BMGE01, Rev.00)
+TITLE=MARIOGOLFGBA
+CODE=BMGE
+MAKER=0x3031
+VERSION=0x00
+MBC=0xn/a
+ROMSZ=0xn/a
+RAMSZ=0xn/a
+DEST=0xn/a
+HDRSUM=0x6b
+GLBSUM=0x0000
+# exit: 0

@@ -1,0 +1,51 @@
+# CMD: bash -c $'\necho "=== scripts/ ===" && ls _codex/mgba-repo/scripts/*.sh | wc -l && ls _codex/mgba-repo/scripts/\necho "=== _bitacora counts ===" && for d in task-todo task-report task-stdout; do printf "%s: %s\\n" "$d" "$(ls _codex/mgba-repo/_bitacora/$d 2>/dev/null | wc -l)"; done\necho "=== precept/ ===" && ls _codex/mgba-repo/precept/\necho "=== backup/ ===" && ls _codex/mgba-repo/backup/\necho "=== study/ ===" && ls _codex/mgba-repo/study/ | wc -l\necho "=== concept/ ===" && ls _codex/mgba-repo/concept/\necho "=== fixture/ ===" && ls _codex/mgba-repo/fixture/\necho "=== pattern/ ===" && ls _codex/mgba-repo/pattern/\necho "=== procedure/ ===" && ls _codex/mgba-repo/procedure/' 
+# DATE: 2026-08-02T17:45:36-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== scripts/ ===
+7
+acquire-rom.sh
+browse-romsfun.sh
+fetch-rom.sh
+launch-rom.sh
+playwright-fetch-rom.sh
+prepare-rom.sh
+verify-rom.sh
+=== _bitacora counts ===
+task-todo: 0
+task-report: 0
+task-stdout: 0
+=== precept/ ===
+acquire-gb-rom.md
+atomic-documents.md
+record-metrics.md
+run-fixtures.md
+use-ripgrep.md
+use-shared-browser.md
+verify-qalc.md
+=== backup/ ===
+binaries
+mgba-src
+study-monoliths
+=== study/ ===
+22
+=== concept/ ===
+event-driven-timing.md
+header-probe.md
+mbc-banking.md
+renderer-vtable.md
+sm83-execution-model.md
+=== fixture/ ===
+carts
+gen-cart.sh
+mbc-banking-test.c
+probe-headers-test.sh
+rtc-real-cart.sh
+slugify-test.sh
+test-cart.gb
+test-cart.zip
+=== pattern/ ===
+browser-acquisition-pipeline.md
+=== procedure/ ===
+acquire-gb-rom.md
+# exit: 0

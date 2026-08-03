@@ -1,0 +1,15 @@
+# CMD: bash -c pid=\$\(pgrep\ -x\ mgba\ \|\ tail\ -1\)\;\ echo\ \"PROBING\ pid=\$pid\"\;\ bash\ /home/eddyr/assembler/_codex/mgba-repo/scripts/probe-runtime.sh\ \"\$pid\" 
+# DATE: 2026-08-02T17:53:59-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+PROBING pid=278058
+PID=278058
+NAME=mgba
+STATE=S
+CPU=8.0
+RSS_KB=141664
+VSZ_KB=1056552
+THREADS=15
+ELAPSED_S=16.1
+CMD=/home/eddyr/assembler/_codex/mgba-repo/build/sdl/mgba roms/medabots-ax-metabee-ver-usa.gba
+# exit: 0

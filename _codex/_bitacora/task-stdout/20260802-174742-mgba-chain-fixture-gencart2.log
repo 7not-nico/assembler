@@ -1,0 +1,6 @@
+# CMD: bash -c cd\ _codex/mgba-repo\ \&\&\ bash\ fixture/gen-cart.sh\ fixture/test-cart.gb\ \&\&\ ls\ -la\ fixture/test-cart.gb 
+# DATE: 2026-08-02T17:47:42-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+fixture/gen-cart.sh: line 12: 2: size bytes required
+# exit: 1

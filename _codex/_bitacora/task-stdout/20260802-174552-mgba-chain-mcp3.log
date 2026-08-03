@@ -1,0 +1,6 @@
+# CMD: bash -c code=\$\(curl\ -s\ -o\ /dev/null\ -w\ \"%\{http_code\}\"\ --max-time\ 5\ http://127.0.0.1:9222/json/version\)\;\ echo\ \"HTTP\ \$code\" 
+# DATE: 2026-08-02T17:45:52-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+HTTP 200
+# exit: 0

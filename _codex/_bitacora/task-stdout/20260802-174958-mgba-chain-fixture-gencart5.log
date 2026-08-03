@@ -1,0 +1,9 @@
+# CMD: bash -c cd\ _codex/mgba-repo\ \&\&\ bash\ fixture/gen-cart.sh\ fixture/test-cart.gb\ 32768\ 00\ TESTCART\ \&\&\ ls\ -la\ fixture/test-cart.gb\ \&\&\ file\ fixture/test-cart.gb\ \&\&\ bash\ fixture/probe-headers-test.sh\ 2\>/dev/null\ \|\ rg\ -c\ \"\^PASS\" 
+# DATE: 2026-08-02T17:49:58-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+GEN   fixture/test-cart.gb (32768 B, type=0x00, title="TESTCART", banks=2)
+-rw-r--r-- 1 eddyr eddyr 32768 Aug  2 17:49 fixture/test-cart.gb
+fixture/test-cart.gb: Game Boy ROM image: "TESTCART       " (Rev.00) [ROM ONLY], ROM: 256Kbit, RAM: 64Kbit
+15
+# exit: 0

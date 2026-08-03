@@ -1,0 +1,7 @@
+# CMD: bash -c $'\npid=$(pgrep -x mgba | tail -1)\nif [ -z "$pid" ]; then\n  cd _codex/mgba-repo && bash scripts/launch-rom.sh roms/medabots-ax-metabee-ver-usa.gba >/dev/null 2>&1\n  sleep 2\n  pid=$(pgrep -x mgba | tail -1)\nfi\necho "PROBING pid=$pid"\nbash _codex/mgba-repo/scripts/probe-runtime.sh "$pid"' 
+# DATE: 2026-08-02T17:53:44-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+PROBING pid=278058
+bash: _codex/mgba-repo/scripts/probe-runtime.sh: No such file or directory
+# exit: 127

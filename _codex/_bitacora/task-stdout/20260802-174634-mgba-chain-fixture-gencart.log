@@ -1,0 +1,6 @@
+# CMD: bash -c cd\ _codex/mgba-repo\ \&\&\ bash\ fixture/gen-cart.sh\ \&\&\ ls\ -la\ fixture/test-cart.gb 
+# DATE: 2026-08-02T17:46:34-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+fixture/gen-cart.sh: line 11: 1: out path required
+# exit: 1

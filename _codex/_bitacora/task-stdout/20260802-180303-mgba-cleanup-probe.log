@@ -1,0 +1,6 @@
+# CMD: bash -c cd\ _codex/mgba-repo\ \&\&\ bash\ fixture/probe-headers-test.sh\ 2\>/dev/null\ \|\ rg\ \"\^OK\"\ \|\ wc\ -l 
+# DATE: 2026-08-02T18:03:03-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+8
+# exit: 0

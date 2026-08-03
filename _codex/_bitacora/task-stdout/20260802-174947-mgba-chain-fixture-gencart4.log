@@ -1,0 +1,6 @@
+# CMD: bash -c cd\ _codex/mgba-repo\ \&\&\ bash\ fixture/gen-cart.sh\ fixture/test-cart.gb\ 32768\ 00\ \&\&\ ls\ -la\ fixture/test-cart.gb\ \&\&\ file\ fixture/test-cart.gb 
+# DATE: 2026-08-02T17:49:47-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+fixture/gen-cart.sh: line 14: 4: title required
+# exit: 1

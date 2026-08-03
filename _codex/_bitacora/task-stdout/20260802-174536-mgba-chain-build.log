@@ -1,0 +1,7 @@
+# CMD: bash -c file\ _codex/mgba-repo/build/sdl/mgba\ \&\&\ _codex/mgba-repo/build/sdl/mgba\ --version\ 2\>\&1\ \|\ head\ -2 
+# DATE: 2026-08-02T17:45:36-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+_codex/mgba-repo/build/sdl/mgba: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=736fdbda4680e5843d382ccececb6279e39ef13f, for GNU/Linux 6.1.0, not stripped
+_codex/mgba-repo/build/sdl/mgba 0.11-1-71aa6c7-dirty (71aa6c7dab7654bfdbbd57e696f704671a97e55d-dirty)
+# exit: 0

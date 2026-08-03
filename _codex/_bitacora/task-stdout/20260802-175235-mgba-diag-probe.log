@@ -1,0 +1,7 @@
+# CMD: bash -c pid=\$\(pgrep\ -f\ \"build/sdl/mgba\"\ \|\ tail\ -1\)\;\ echo\ \"PROBING\ pid=\$pid\"\;\ bash\ _codex/mgba-repo/scripts/probe-runtime.sh\ \"\$pid\" 
+# DATE: 2026-08-02T17:52:35-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+PROBING pid=276971
+ERROR no such process: 276971
+# exit: 1

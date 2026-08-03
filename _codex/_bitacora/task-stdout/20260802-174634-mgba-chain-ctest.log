@@ -1,0 +1,13 @@
+# CMD: bash -c cd\ _codex/mgba-repo\ \&\&\ ctest\ --test-dir\ build\ --output-on-failure\ 2\>\&1\ \|\ tail\ -8 
+# DATE: 2026-08-02T17:46:34-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+      Start 32: util-text-codec
+32/33 Test #32: util-text-codec ..................   Passed    0.05 sec
+      Start 33: util-vfs
+33/33 Test #33: util-vfs .........................   Passed    0.05 sec
+
+100% tests passed out of 33
+
+Total Test time (real) =   1.85 sec
+# exit: 0

@@ -1,0 +1,3 @@
+# CMD: curl -s --max-time 5 http://127.0.0.1:9222/json/version 
+# DATE: 2026-08-02T17:45:24-06:00
+# CWD: /home/eddyr/assembler

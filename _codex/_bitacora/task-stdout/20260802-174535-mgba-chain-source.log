@@ -1,0 +1,15 @@
+# CMD: bash -c echo\ \"===\ mgba/\ tree\ status\ ===\"\ \&\&\ git\ -C\ _codex/mgba-repo/mgba\ status\ --short\ \&\&\ echo\ \"===\ backup\ restore\ points\ ===\"\ \&\&\ ls\ -d\ _codex/mgba-repo/backup/\*\ 2\>/dev/null 
+# DATE: 2026-08-02T17:45:35-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== mgba/ tree status ===
+ M src/gb/CMakeLists.txt
+ M src/script/engines/lua.c
+?? src/gb/test/banking.c
+?? src/gb/test/overrides.c
+?? src/gb/test/unlicensed.c
+=== backup restore points ===
+_codex/mgba-repo/backup/binaries
+_codex/mgba-repo/backup/mgba-src
+_codex/mgba-repo/backup/study-monoliths
+# exit: 0

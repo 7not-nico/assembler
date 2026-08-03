@@ -1,0 +1,12 @@
+# CMD: bash -c echo\ \"===\ shared\ _codex/_bitacora\ counts\ ===\"\ \&\&\ for\ d\ in\ task-todo\ task-report\ task-stdout\;\ do\ printf\ \"%s:\ %s\\n\"\ \"\$d\"\ \"\$\(ls\ _codex/_bitacora/\$d\ 2\>/dev/null\ \|\ wc\ -l\)\"\;\ done\ \&\&\ echo\ \"===\ mgba-tagged\ records\ ===\"\ \&\&\ ls\ _codex/_bitacora/task-todo/\ \|\ rg\ -c\ mgba\;\ ls\ _codex/_bitacora/task-report/\ \|\ rg\ -c\ mgba 
+# DATE: 2026-08-02T17:45:53-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== shared _codex/_bitacora counts ===
+task-todo: 16
+task-report: 24
+task-stdout: 426
+=== mgba-tagged records ===
+8
+7
+# exit: 0

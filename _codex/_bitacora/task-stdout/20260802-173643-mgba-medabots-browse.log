@@ -1,0 +1,17 @@
+# CMD: bash _codex/mgba-repo/scripts/browse-romsfun.sh Medabots game-boy-advance 60 
+# DATE: 2026-08-02T17:36:43-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+SEARCH https://romsfun.com/roms/game-boy-advance/?s=Medabots
+GAME https://romsfun.com/roms/game-boy-advance/medabots-ax-metabee-ver.html | Medabots AX: Metabee Ver.
+GAME https://romsfun.com/roms/game-boy-advance/medabots-rokusho.html | Medabots: Rokusho
+GAME https://romsfun.com/roms/game-boy-advance/medabots-ax-rokusho-version.html | Medabots AX: Rokusho Ver.
+GAME https://romsfun.com/roms/game-boy-advance/medabots-metabee.html | Medabots Metabee
+GAME https://romsfun.com/roms/game-boy-advance/medarot-g-kabuto-version.html | Medarot G: Kabuto Version
+GAME https://romsfun.com/roms/game-boy-advance/medarot-g-kuwagata-version.html | Medarot G: Kuwagata Version
+OPEN https://romsfun.com/roms/game-boy-advance/medabots-ax-metabee-ver.html
+DL https://romsfun.com/download/medabots-ax-metabee-ver-137573
+VARIANTS:
+1 https://romsfun.com/download/medabots-ax-metabee-ver-137573/1 | Medabots AX - Metabee Ver. (Europe) (En,Fr,De,Es,It)
+2 https://romsfun.com/download/medabots-ax-metabee-ver-137573/2 | Medabots AX - Metabee Ver. (USA)
+# exit: 0

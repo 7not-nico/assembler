@@ -1,0 +1,22 @@
+# CMD: bash _codex/mgba-repo/scripts/survey-roms.sh 
+# DATE: 2026-08-02T18:02:59-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+ROM=crash-bandicoot-the-huge-adventure-usa.gba SHA=6be639d1db21 SIZE=8388608 TITLE="CRASH" CODE=ACQE MBC=n/a
+ROM=fire-emblem-cerulean-crescent-v2-11.gba SHA=f4fa7c975891 SIZE=32789028 TITLE="FIREEMBLEM2E" CODE=BE8E MBC=n/a
+ROM=kirby-s-dream-land-2-usa-europe-sgb-enhanced.gb SHA=08ddc36709d5 SIZE=524288 TITLE="KIRBY2" CODE=n/a MBC=0x03
+ROM=mario-golf-advance-tour-usa.gba SHA=f58b827e5b1d SIZE=16777216 TITLE="MARIOGOLFGBA" CODE=BMGE MBC=n/a
+ROM=medabots-ax-metabee-ver-usa.gba SHA=7560329757de SIZE=8388608 TITLE="MEDABOTS MTB" CODE=AK8E MBC=n/a
+ROM=mega-man-world-5-dx-v1-6-1-switch-buster-dx-v2-0-1.gb SHA=0ec16a057916 SIZE=1048576 TITLE="MEGAMAN5 DX" CODE=n/a MBC=0x19
+ROM=metroid-re-fusion-v1-51.gba SHA=5026b4e9ca96 SIZE=8061080 TITLE="METROID4EUR" CODE=AMTP MBC=n/a
+ROM=pokemon-crystal-clear-v2-6-0.gbc SHA=c4585682d26c SIZE=2097152 TITLE="PM_CRYSTALBYTE" CODE=n/a MBC=0x10
+ROM=pokemon-peridot-v2-2-3.gbc SHA=bd71fc3bf9fc SIZE=2097152 TITLE="PM_PERIDOTBYTE" CODE=n/a MBC=0x10
+ROM=pokemon-prism-v0-95-build-254-hotfix-5.gbc SHA=dea0729edbc5 SIZE=2097152 TITLE="PM_PRISMPRSM" CODE=n/a MBC=0x10
+ROM=pok-mon-orange-v1-0.gbc SHA=265f134827e3 SIZE=2097152 TITLE="PKMNORANGEPKOR" CODE=n/a MBC=0x10
+ROM=sonic-advance-3-usa-en-ja-fr-de-es-it.gba SHA=f937fa93b97b SIZE=16777216 TITLE="SONICADVANC3" CODE=B3SE MBC=n/a
+ROM=test-cart.gb SHA=e8689e47842a SIZE=32768 TITLE="TEST CART 01" CODE=n/a MBC=0x01
+ROM=tetris-japan-en.gb SHA=7fde11dd4e59 SIZE=32768 TITLE="TETRIS" CODE=n/a MBC=0x00
+ROM=wario-land-3-world-en-ja.gbc SHA=b625ed03e755 SIZE=2097152 TITLE="WARIOLAND3AW8A" CODE=n/a MBC=0x1b
+ROM=yu-gi-oh-ultimate-masters-world-championship-tournament-2006-usa-en-ja-fr-de-es-it.gba SHA=f405c620da05 SIZE=33554432 TITLE="YUGIOHWCT06" CODE=BY6E MBC=n/a
+COUNT=16
+# exit: 0

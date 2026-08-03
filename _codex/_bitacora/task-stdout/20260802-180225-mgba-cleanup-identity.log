@@ -1,0 +1,9 @@
+# CMD: bash -c $'\ncd _codex/mgba-repo/roms\nsha256sum "Crash Bandicoot - The Huge Adventure (USA).gba" crash-bandicoot-the-huge-adventure-usa.gba\nsha256sum "Pokemon Prism v0.95 build 254 (Hotfix 5).gbc" pokemon-prism-v0-95-build-254-hotfix-5.gbc' 
+# DATE: 2026-08-02T18:02:25-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+6be639d1db218ca2bf2b1ff0ee0867334404cead5fb6684af4870d4644a15635  Crash Bandicoot - The Huge Adventure (USA).gba
+6be639d1db218ca2bf2b1ff0ee0867334404cead5fb6684af4870d4644a15635  crash-bandicoot-the-huge-adventure-usa.gba
+dea0729edbc5923f1af1fbd9c79e56cd7ff255642bca12f7fb146d506196077d  Pokemon Prism v0.95 build 254 (Hotfix 5).gbc
+dea0729edbc5923f1af1fbd9c79e56cd7ff255642bca12f7fb146d506196077d  pokemon-prism-v0-95-build-254-hotfix-5.gbc
+# exit: 0

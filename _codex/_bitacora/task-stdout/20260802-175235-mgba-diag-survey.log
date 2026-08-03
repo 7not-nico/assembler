@@ -1,0 +1,14 @@
+# CMD: bash _codex/mgba-repo/scripts/survey-roms.sh gba 
+# DATE: 2026-08-02T17:52:35-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+ROM=crash-bandicoot-the-huge-adventure-usa.gba SHA=6be639d1db21 SIZE=8388608 TITLE="CRASH" CODE=ACQE MBC=n/a
+ROM=Crash Bandicoot - The Huge Adventure (USA).gba SHA=6be639d1db21 SIZE=8388608 TITLE="CRASH" CODE=ACQE MBC=n/a
+ROM=fire-emblem-cerulean-crescent-v2-11.gba SHA=f4fa7c975891 SIZE=32789028 TITLE="FIREEMBLEM2E" CODE=BE8E MBC=n/a
+ROM=mario-golf-advance-tour-usa.gba SHA=f58b827e5b1d SIZE=16777216 TITLE="MARIOGOLFGBA" CODE=BMGE MBC=n/a
+ROM=medabots-ax-metabee-ver-usa.gba SHA=7560329757de SIZE=8388608 TITLE="MEDABOTS MTB" CODE=AK8E MBC=n/a
+ROM=metroid-re-fusion-v1-51.gba SHA=5026b4e9ca96 SIZE=8061080 TITLE="METROID4EUR" CODE=AMTP MBC=n/a
+ROM=sonic-advance-3-usa-en-ja-fr-de-es-it.gba SHA=f937fa93b97b SIZE=16777216 TITLE="SONICADVANC3" CODE=B3SE MBC=n/a
+ROM=yu-gi-oh-ultimate-masters-world-championship-tournament-2006-usa-en-ja-fr-de-es-it.gba SHA=f405c620da05 SIZE=33554432 TITLE="YUGIOHWCT06" CODE=BY6E MBC=n/a
+COUNT=8
+# exit: 0

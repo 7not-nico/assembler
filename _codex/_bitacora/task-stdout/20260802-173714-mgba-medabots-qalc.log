@@ -1,0 +1,7 @@
+# CMD: bash -c qalc\ -t\ \"8388608\ bytes\ to\ MiB\"\ \&\&\ qalc\ -t\ \"8\ MiB\ to\ Mbit\" 
+# DATE: 2026-08-02T17:37:14-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+8 MiB
+67.108 864 megabits
+# exit: 0

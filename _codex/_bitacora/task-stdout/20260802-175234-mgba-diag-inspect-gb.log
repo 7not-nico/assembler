@@ -1,0 +1,18 @@
+# CMD: bash _codex/mgba-repo/scripts/inspect-rom.sh _codex/mgba-repo/roms/tetris-japan-en.gb 
+# DATE: 2026-08-02T17:52:34-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+SHA256=7fde11dd4e594a6905deccd57943d2909ecb37665a030741c42155aeb346323b
+SIZE=32768
+TYPE=Game Boy ROM image: "TETRIS" (Rev.00) [ROM ONLY], ROM: 256Kbit
+TITLE=TETRIS
+CODE=n/a
+MAKER=0xn/a
+VERSION=0x00
+MBC=0x00
+ROMSZ=0x00
+RAMSZ=0x00
+DEST=0x00
+HDRSUM=0x0b
+GLBSUM=0x89b5
+# exit: 0
