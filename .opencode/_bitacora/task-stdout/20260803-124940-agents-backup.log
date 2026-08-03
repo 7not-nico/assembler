@@ -1,0 +1,20 @@
+# CMD: bash -c STAMP=\$\(date\ +%Y-%m-%dT%H%M%S\)\;\ DEST=/tmp/opencode/agents-backup-\$STAMP\;\ mkdir\ -p\ \"\$DEST\"\;\ cd\ /home/eddyr/assembler\ \&\&\ for\ f\ in\ \$\(find\ .\ -name\ \"AGENTS.md\"\ -not\ -path\ \"\*/.git/\*\"\ -not\ -path\ \"\*/node_modules/\*\"\ -not\ -path\ \"\*/.backups/\*\"\ -not\ -path\ \"\*/.archive/\*\"\ \|\ sort\)\;\ do\ mkdir\ -p\ \"\$DEST/\$\(dirname\ \"\$f\"\)\"\;\ cp\ \"\$f\"\ \"\$DEST/\$f\"\;\ done\;\ echo\ \"BACKUP_DEST=\$DEST\"\;\ find\ \"\$DEST\"\ -name\ \"AGENTS.md\"\ \|\ wc\ -l 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T12:49:40-06:00
+# PID: 304239
+# DUR: 294ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 46f32366
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c STAMP=\$\(date\ +%Y-%m-%dT%H%M%S\)\;\ DEST=/tmp/opencode/agents-backup-\$STAMP\;\ mkdir\ -p\ \"\$DEST\"\;\ cd\ /home/eddyr/assembler\ \&\&\ for\ f\ in\ \$\(find\ .\ -name\ \"AGENTS.md\"\ -not\ -path\ \"\*/.git/\*\"\ -not\ -path\ \"\*/node_modules/\*\"\ -not\ -path\ \"\*/.backups/\*\"\ -not\ -path\ \"\*/.archive/\*\"\ \|\ sort\)\;\ do\ mkdir\ -p\ \"\$DEST/\$\(dirname\ \"\$f\"\)\"\;\ cp\ \"\$f\"\ \"\$DEST/\$f\"\;\ done\;\ echo\ \"BACKUP_DEST=\$DEST\"\;\ find\ \"\$DEST\"\ -name\ \"AGENTS.md\"\ \|\ wc\ -l 
+# CWD: /home/eddyr/assembler
+# --------------------
+BACKUP_DEST=/tmp/opencode/agents-backup-2026-08-03T124940
+45
+# OUT_LINES: 2
+# OUT_BYTES: 61
+# ERR_LINES: 0
+# SHA: 2b1ab2037f41d17484b83d7f82610e4a952c1f96873822225d47e26069140390

@@ -1,0 +1,16 @@
+# CMD: bash -c ls\ -la\ /home/eddyr/assembler/_knowledge/rust-docs/learning/\ \&\&\ echo\ \"---template---\"\ \&\&\ ls\ -la\ /home/eddyr/assembler/_knowledge/_templates/notes-template.md\ \&\&\ echo\ \"---no\ md\ tables\ in\ notes---\"\ \&\&\ rg\ -c\ \"\^\\\|\"\ /home/eddyr/assembler/_knowledge/rust-docs/learning/\*.md\ \|\|\ echo\ \"0\ md\ tables\ —\ clean\" 
+# DATE: 2026-08-03T05:13:00-06:00
+# DUR: 11ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+total 12
+drwxr-xr-x 1 eddyr eddyr   80 Aug  3 05:12 .
+drwxr-xr-x 1 eddyr eddyr  128 Aug  3 05:08 ..
+-rw-r--r-- 1 eddyr eddyr 2751 Aug  3 05:11 epub-pipeline.md
+-rw-r--r-- 1 eddyr eddyr 1880 Aug  3 05:12 run-logged.md
+-rw-r--r-- 1 eddyr eddyr 2333 Aug  3 05:12 tracexec.md
+---template---
+-rw-r--r-- 1 eddyr eddyr 787 Aug  3 05:10 /home/eddyr/assembler/_knowledge/_templates/notes-template.md
+---no md tables in notes---
+0 md tables — clean
+# exit: 0

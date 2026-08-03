@@ -1,0 +1,22 @@
+# CMD: bash -c ls\ -la\ /home/eddyr/assembler/_knowledge/rust-docs/reference/\ \&\&\ echo\ \"---no\ md\ tables---\"\ \&\&\ rg\ -c\ \"\^\\\|\"\ /home/eddyr/assembler/_knowledge/rust-docs/reference/tracexec.md\ \|\|\ echo\ \"0\ md\ tables\ —\ clean\"\;\ echo\ \"---governs\ chain---\"\;\ rg\ -n\ \"reference/\"\ /home/eddyr/assembler/_knowledge/rust-docs/AGENTS.md\ \|\ head\ -3 
+# DATE: 2026-08-03T05:22:18-06:00
+# DUR: 20ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+30216<tracer>: "/usr/bin/bash" ["bash", "-c", "ls -la /home/eddyr/assembler/_knowledge/rust-docs/reference/ && echo \"---no md tables---\" && rg -c \"^\\|\" /home/eddyr/assembler/_knowledge/rust-docs/reference/tracexec.md || echo \"0 md tables — clean\"; echo \"---governs chain---\"; rg -n \"reference/\" /home/eddyr/assembler/_knowledge/rust-docs/AGENTS.md | head -3"] fd []
+30217<bash>: "/usr/bin/ls" ["ls", "-la", "/home/eddyr/assembler/_knowledge/rust-docs/reference/"] fd []
+total 12
+drwxr-xr-x 1 eddyr eddyr   46 Aug  3 05:22 .
+drwxr-xr-x 1 eddyr eddyr  128 Aug  3 05:08 ..
+-rw-r--r-- 1 eddyr eddyr  644 Aug  2 20:17 .template.md
+-rw-r--r-- 1 eddyr eddyr 4691 Aug  3 05:22 tracexec.md
+---no md tables---
+30218<bash>: "/usr/bin/rg" ["rg", "-c", "^\\|", "/home/eddyr/assembler/_knowledge/rust-docs/reference/tracexec.md"] fd []
+0 md tables — clean
+---governs chain---
+30219<bash>: "/usr/bin/rg" ["rg", "-n", "reference/", "/home/eddyr/assembler/_knowledge/rust-docs/AGENTS.md"] fd [stdout="pipe:[127712]", ]
+30220<bash>: "/usr/bin/head" ["head", "-3"] fd [stdin="pipe:[127712]", ]
+10:precept/ → concept/ → reference/ → fixture/    (script/ parallel)
+21:| `reference/` | verbatim quotes + claim mapping | `{name}.md` |
+31:reference/  CITATIONS — verbatim quotes, claim mapping
+# exit: 0

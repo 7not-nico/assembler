@@ -1,0 +1,14 @@
+# CMD: bash -c $'tracexec --help > /tmp/opencode/tracexec-help-live.txt 2>&1 && ruby -e "\nlive = File.read(\\"/tmp/opencode/tracexec-help-live.txt\\")\nref  = File.read(\\"/home/eddyr/assembler/_knowledge/rust-docs/reference/tracexec.md\\")\nblock = ref[/### Top-level help\\n\\n```\\n(.*?)\\n```/m, 1]\nif block == live\n  puts \\"FIDELITY: exact match — reference citation = live --help output\\"\nelse\n  puts \\"FIDELITY: MISMATCH\\"\n  puts \\"---live lines not in reference---\\"\n  (live.lines - block.lines).each { |l| puts \\"+\\" + l }\n  puts \\"---reference lines not in live---\\"\n  (block.lines - live.lines).each { |l| puts \\"-\\" + l }\nend\n"' 
+# DATE: 2026-08-03T05:34:00-06:00
+# DUR: 120ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+38703<tracer>: "/usr/bin/bash" ["bash", "-c", "tracexec --help > /tmp/opencode/tracexec-help-live.txt 2>&1 && ruby -e \"\nlive = File.read(\\\"/tmp/opencode/tracexec-help-live.txt\\\")\nref  = File.read(\\\"/home/eddyr/assembler/_knowledge/rust-docs/reference/tracexec.md\\\")\nblock = ref[/### Top-level help\\n\\n```\\n(.*?)\\n```/m, 1]\nif block == live\n  puts \\\"FIDELITY: exact match — reference citation = live --help output\\\"\nelse\n  puts \\\"FIDELITY: MISMATCH\\\"\n  puts \\\"---live lines not in reference---\\\"\n  (live.lines - block.lines).each { |l| puts \\\"+\\\" + l }\n  puts \\\"---reference lines not in live---\\\"\n  (block.lines - live.lines).each { |l| puts \\\"-\\\" + l }\nend\n\""] fd []
+38704<bash>: "/usr/bin/tracexec" ["tracexec", "--help"] fd [stdout="/tmp/opencode/tracexec-help-live.txt", stderr="/tmp/opencode/tracexec-help-live.txt", ]
+bash: command substitution: line 1: syntax error near unexpected token `.*?'
+bash: command substitution: line 1: `\n(.*?)\n'
+38703<bash>: "/usr/bin/ruby" ["ruby", "-e", "\nlive = File.read(\"/tmp/opencode/tracexec-help-live.txt\")\nref  = File.read(\"/home/eddyr/assembler/_knowledge/rust-docs/reference/tracexec.md\")\nblock = ref[/### Top-level help\\n\\n/m, 1]\nif block == live\n  puts \"FIDELITY: exact match — reference citation = live --help output\"\nelse\n  puts \"FIDELITY: MISMATCH\"\n  puts \"---live lines not in reference---\"\n  (live.lines - block.lines).each { |l| puts \"+\" + l }\n  puts \"---reference lines not in live---\"\n  (block.lines - live.lines).each { |l| puts \"-\" + l }\nend\n"] fd []
+-e:10:in '<main>': undefined method 'lines' for nil (NoMethodError)
+FIDELITY: MISMATCH
+---live lines not in reference---
+# exit: 1

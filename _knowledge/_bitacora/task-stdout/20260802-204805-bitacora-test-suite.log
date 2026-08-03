@@ -1,0 +1,62 @@
+# CMD: bash -c $'\nset -e\ncd _knowledge/_bitacora\necho "===1. init==="; bash bitacora-init.sh\necho; echo "===2. slugify==="\necho "  Hello, World! Test" | bash bitacora-slugify.sh 2>/dev/null || bash bitacora-slugify.sh "Hello, World! Test"\necho; echo "===3. create todo==="; bash bitacora-create.sh todo "bitacora suite test"\necho; echo "===4. create report==="; bash bitacora-create.sh report "bitacora suite test report"\necho; echo "===5. log==="; bash bitacora-log.sh suite-log -- echo "suite works"\necho; echo "===6. find==="; bash bitacora-find.sh suite\necho; echo "===7. close==="; bash bitacora-close.sh "2026-08-02--bitacora-suite-test.md" "bitacora suite test closed"\necho; echo "===8. kind guard==="\nif bash bitacora-create.sh nonsense "x" 2>&1 | rg -q "kind must be todo or report"; then echo "  guard OK"; else echo "  GUARD FAIL"; fi\necho; echo "===FINAL==="; ls task-todo task-report task-stdout | head -20' 
+# DATE: 2026-08-02T20:48:05-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+===1. init===
+EXISTS /home/eddyr/assembler/_knowledge/_bitacora/task-todo
+EXISTS /home/eddyr/assembler/_knowledge/_bitacora/task-report
+EXISTS /home/eddyr/assembler/_knowledge/_bitacora/task-stdout
+EXISTS /home/eddyr/assembler/_knowledge/_bitacora/README.md
+DONE   /home/eddyr/assembler/_knowledge/_bitacora
+
+===2. slugify===
+hello-world-test
+===3. create todo===
+CREATE /home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-02--bitacora-suite-test.md
+
+===4. create report===
+CREATE /home/eddyr/assembler/_knowledge/_bitacora/task-report/20260802-204805-bitacora-suite-test-report.md
+
+===5. log===
+# CMD: echo suite\ works 
+# DATE: 2026-08-02T20:48:05-06:00
+# CWD: /home/eddyr/assembler/_knowledge/_bitacora
+# --------------------
+suite works
+# exit: 0
+
+===6. find===
+task-todo      2026-08-02--bitacora-suite-test.md  [in progress (2026-08-02)]
+task-report    20260802-204805-bitacora-suite-test-report.md  [2026-08-02 20260802-204805]
+task-stdout    20260802-204805-bitacora-test-suite.log
+task-stdout    20260802-204805-suite-log.log
+
+===7. close===
+TODO   /home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-02--bitacora-suite-test.md
+REPORT /home/eddyr/assembler/_knowledge/_bitacora/task-report/20260802-204805-bitacora-suite-test-closed.md
+NEXT   fill the report: what was done, decisions, open edges, todo state; cite task-stdout logs
+
+===8. kind guard===
+  guard OK
+
+===FINAL===
+task-report:
+20260802-204539-test-knowledge-bitacora-close.md
+20260802-204805-bitacora-suite-test-closed.md
+20260802-204805-bitacora-suite-test-report.md
+
+task-stdout:
+20260802-201358-smoke-test.log
+20260802-202616-dryrun-check.log
+20260802-204539-smoke.log
+20260802-204626-study-todo-create.log
+20260802-204635-agents-ring-read.log
+20260802-204721-agents-ring-verify.log
+20260802-204805-bitacora-test-suite.log
+20260802-204805-suite-log.log
+
+task-todo:
+2026-08-02--bitacora-suite-test.md
+2026-08-02--study-rust-book-into-rust-docs.md
+2026-08-02--test-knowledge-bitacora.md
+# exit: 0

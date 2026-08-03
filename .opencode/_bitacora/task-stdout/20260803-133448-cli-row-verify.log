@@ -1,0 +1,27 @@
+# CMD: bash -c sqlite3\ /home/eddyr/assembler/.opencode/patlib.db\ \"SELECT\ id\,\ type\,\ source\,\ precedes\,\ tags\ FROM\ cli\ ORDER\ BY\ id\"\;\ echo\ \"---body/reference\ check---\"\;\ sqlite3\ /home/eddyr/assembler/.opencode/patlib.db\ \"SELECT\ id\,\ substr\(body\,1\,40\)\,\ substr\(reference\,1\,60\)\ FROM\ cli\ WHERE\ id=\\\"CLI.RIPGREP\\\"\" 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:34:48-06:00
+# PID: 348136
+# DUR: 82ms
+# exit: 1
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: abd66c41
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c sqlite3\ /home/eddyr/assembler/.opencode/patlib.db\ \"SELECT\ id\,\ type\,\ source\,\ precedes\,\ tags\ FROM\ cli\ ORDER\ BY\ id\"\;\ echo\ \"---body/reference\ check---\"\;\ sqlite3\ /home/eddyr/assembler/.opencode/patlib.db\ \"SELECT\ id\,\ substr\(body\,1\,40\)\,\ substr\(reference\,1\,60\)\ FROM\ cli\ WHERE\ id=\\\"CLI.RIPGREP\\\"\" 
+# CWD: /home/eddyr/assembler
+# --------------------
+CLI.COREUTILS|external|COG.COMPUTER.SCIENCE||coreutils,gnu,file,shell,text,unix,c,cli,tool
+CLI.PANDOC|external|COG.COMPUTER.SCIENCE||pandoc,converter,markup,markdown,latex,haskell,document,cli,tool
+CLI.RIPGREP|external|COG.COMPUTER.SCIENCE||ripgrep,rg,regex,search,grep,rust,cli,tool
+CLI.SED|external|COG.COMPUTER.SCIENCE||sed,stream,editor,text,regex,unix,c,cli,tool
+CLI.TRACEXEC|external|COG.COMPUTER.SCIENCE||tracexec,tracing,execve,ptrace,ebpf,debugger,rust,cli,tool
+---body/reference check---
+Error: in prepare, no such column: "CLI.RIPGREP" - should this be a string literal in single-quotes?
+  y,1,40), substr(reference,1,60) FROM cli WHERE id="CLI.RIPGREP"
+                                      error here ---^
+# OUT_LINES: 6
+# OUT_BYTES: 498
+# ERR_LINES: 3
+# SHA: e7e59211e4fae102ac0c49c669dec92f23ed6dd775d04e72951c067f00272937

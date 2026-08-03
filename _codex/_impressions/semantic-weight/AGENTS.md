@@ -1,12 +1,12 @@
 # semantic-weight — Cross-Region Research Index
 
-Schema-only project (no tool generation). Database-backed reference index for 5 rounds of cross-region linguistic research.
+Schema-only project (no tool generation). Database-backed reference index for 5 rounds of cross-region linguistic research
 
 ## Workflow
 
-1. Query the DB via `bun:sqlite` CLI or SQLite browser
-2. Edit `.md` source files in `sources/`, `fundamentals/`, etc.
-3. Re-run seed to update DB after edits
+- Query the DB via `bun:sqlite` CLI or SQLite browser
+- Edit `.md` source files in `sources/`, `fundamentals/`, etc
+- Re-run seed to update DB after edits
 
 ## Structure
 
@@ -32,6 +32,7 @@ semantic-weight/
 
 ## Tables
 
+```text
 | Table | Entity | PK | Notes |
 |-------|--------|----|-------|
 | `regions` | Regions | EN, DE, FR, ES, CN, RU | 6 language regions |
@@ -40,6 +41,7 @@ semantic-weight/
 | `researchers` | Key people | RES.ID | 21 indexed |
 | `gaps` | Cross-cutting gaps | GAP.ID | 10 identified |
 | `meta_analyses` | Systematic reviews | MA.ID | 0 found |
+```
 
 ## ID Format
 
@@ -47,4 +49,4 @@ semantic-weight/
 
 ## Additive Migration
 
-`ALTER TABLE ADD COLUMN` only — never `DROP` or `DELETE`.
+`ALTER TABLE ADD COLUMN` only — never `DROP` or `DELETE`

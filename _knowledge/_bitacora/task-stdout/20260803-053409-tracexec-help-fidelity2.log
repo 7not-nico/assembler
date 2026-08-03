@@ -1,0 +1,8 @@
+# CMD: bash -c $'ruby -e "\nlive = File.readlines(\\"/tmp/opencode/tracexec-help-live.txt\\").map(&:chomp)\nref  = File.readlines(\\"/home/eddyr/assembler/_knowledge/rust-docs/reference/tracexec.md\\").map(&:chomp)\nstart = ref.index(\\"### Top-level help\\") + 2\nblock = ref[(start+1)...(ref.index(\\"```\\", start))]\nif block == live\n  puts \\"FIDELITY: exact match — reference citation = live --help output\\"\nelse\n  puts \\"FIDELITY: MISMATCH\\"\n  puts \\"---live lines not in reference---\\"\n  (live - block).each { |l| puts \\"+\\" + l }\n  puts \\"---reference lines not in live---\\"\n  (block - live).each { |l| puts \\"-\\" + l }\nend\n"' 
+# DATE: 2026-08-03T05:34:09-06:00
+# DUR: 8ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+38830<tracer>: "/usr/bin/bash" ["bash", "-c", "ruby -e \"\nlive = File.readlines(\\\"/tmp/opencode/tracexec-help-live.txt\\\").map(&:chomp)\nref  = File.readlines(\\\"/home/eddyr/assembler/_knowledge/rust-docs/reference/tracexec.md\\\").map(&:chomp)\nstart = ref.index(\\\"### Top-level help\\\") + 2\nblock = ref[(start+1)...(ref.index(\\\"```\\\", start))]\nif block == live\n  puts \\\"FIDELITY: exact match — reference citation = live --help output\\\"\nelse\n  puts \\\"FIDELITY: MISMATCH\\\"\n  puts \\\"---live lines not in reference---\\\"\n  (live - block).each { |l| puts \\\"+\\\" + l }\n  puts \\\"---reference lines not in live---\\\"\n  (block - live).each { |l| puts \\\"-\\\" + l }\nend\n\""] fd []
+bash: -c: line 5: unexpected EOF while looking for matching ``'
+# exit: 2

@@ -1,0 +1,34 @@
+# CMD: bash -c find\ /home/eddyr/assembler/.opencode\ -name\ \"00-ddl.sql\"\ 2\>/dev/null\;\ ls\ /home/eddyr/assembler/.opencode/_schemas/\ 2\>/dev/null\ \|\ head\;\ echo\ \"---all\ ddl---\"\;\ find\ /home/eddyr/assembler\ -name\ \"\*ddl\*.sql\"\ -not\ -path\ \"\*/.git/\*\"\ 2\>/dev/null\ \|\ head\ -5 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:27:17-06:00
+# PID: 342411
+# DUR: 238ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 7ac8c880
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c find\ /home/eddyr/assembler/.opencode\ -name\ \"00-ddl.sql\"\ 2\>/dev/null\;\ ls\ /home/eddyr/assembler/.opencode/_schemas/\ 2\>/dev/null\ \|\ head\;\ echo\ \"---all\ ddl---\"\;\ find\ /home/eddyr/assembler\ -name\ \"\*ddl\*.sql\"\ -not\ -path\ \"\*/.git/\*\"\ 2\>/dev/null\ \|\ head\ -5 
+# CWD: /home/eddyr/assembler
+# --------------------
+/home/eddyr/assembler/.opencode/_schemas/seeds/00-ddl.sql
+02-notes.sql
+03-meta.sql
+04-skills.sql
+05-apologias.sql
+11-nexus.sql
+12-illustrations.sql
+13-entity-junctions.sql
+14-maxims.sql
+16-refs.sql
+17-cognitions.sql
+---all ddl---
+/home/eddyr/assembler/.opencode/_schemas/seeds/00-ddl.sql
+/home/eddyr/assembler/.opencode/_scripts/schema/ddl.sql
+/home/eddyr/assembler/_atelier/common/homophones/schemas/seeds/00-ddl.sql
+/home/eddyr/assembler/_atelier/darkestdungeon-code/.opencode/schemas/seeds/00-ddl.sql
+# OUT_LINES: 16
+# OUT_BYTES: 504
+# ERR_LINES: 0
+# SHA: 13df798578f22d29737418c7552c505b21cde1e75d8e7388035fc3d94ecaf064

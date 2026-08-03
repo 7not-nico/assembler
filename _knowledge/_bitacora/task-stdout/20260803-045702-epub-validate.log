@@ -1,0 +1,6 @@
+# CMD: bash -c ebook-convert\ /tmp/opencode/rust-book.epub\ /tmp/opencode/rust-book-validate.epub\ 2\>\&1\ \|\ rg\ -i\ \"error\|converted\"\ \|\ head\ -5\;\ echo\ \"exit:\ \$\{PIPESTATUS\[0\]\}\" 
+# DATE: 2026-08-03T04:57:02-06:00
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+exit: 0
+# exit: 0

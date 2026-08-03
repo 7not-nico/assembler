@@ -1,0 +1,18 @@
+# CMD: bash -c curl\ -sI\ https://doc.rust-lang.org/book/print.html\ \|\ head\ -8\;\ echo\ \"---summary\ check---\"\;\ curl\ -s\ https://doc.rust-lang.org/book/print.html\ -o\ /tmp/opencode/book-print.html\ \&\&\ ls\ -la\ /tmp/opencode/book-print.html\ \&\&\ rg\ -c\ \"\<h1\"\ /tmp/opencode/book-print.html\;\ echo\ \"---chapter\ titles---\"\;\ rg\ -o\ \"\<h1\[\^\>\]\*\>\[\^\<\]+\"\ /tmp/opencode/book-print.html\ \|\ head\ -25 
+# DATE: 2026-08-03T04:51:13-06:00
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+HTTP/2 200 
+content-type: text/html
+content-length: 1877626
+last-modified: Thu, 16 Jul 2026 12:12:57 GMT
+x-amz-version-id: TZtMDsNJvnURGOpV59isIr0YwbU2sN_0
+x-amz-storage-class: INTELLIGENT_TIERING
+server: AmazonS3
+date: Mon, 03 Aug 2026 10:51:13 GMT
+---summary check---
+-rw-r--r-- 1 eddyr eddyr 1877626 Aug  3 04:51 /tmp/opencode/book-print.html
+112
+---chapter titles---
+<h1 class="menu-title">The Rust Programming Language
+# exit: 0

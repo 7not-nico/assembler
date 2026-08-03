@@ -8,7 +8,7 @@ enforcement: Formality
 status: active
 priority: 2
 tags: [skill, identity, naming, convention, resolution, mcp]
-related: [PROT.SKILL.PROFILE, PROT.TOOL.AUTOMATON, PROT.LLM.SPECIFICATION]
+related: [PROT.SKILL.PROFILE, PROT.TOOL.AUTOMATON]
 ---
 
 Every skill follows `{action}-{domain}` naming. Directory matches name exactly. Resolution on invocation expands base segment to all prefixed skills plus domain-matching MCP servers. Skills compile from source files into patlib via write-sync.
@@ -45,9 +45,9 @@ Rule 8 — `state-profile` field declares the skill memory model per PROT.SKILL.
 
 ### Registration
 
-Rule 9 — Skill authors create one `SKILL.md` per directory. Frontmatter fields: name (required, matches directory), description (required, starts with "Use this skill when"), state-profile (required), nexus (optional, one NEX.* entity the skill composes).
+Rule 9 — Skill authors create one `SKILL.md` per skill. Frontmatter fields: name (required, matches directory), description (required, starts with "Use this skill when"), state-profile (required), nexus (optional, one NEX.* entity the skill composes). Dispatcher skills (`{domain}-dispatcher`) add `ref/{mode}.md` route files and nested `skill/{aspect}/SKILL.md` canonical skills per `.template/dispatcher/SKILL.md`.
 
-Rule 10 — `write-sync --type skills` compiles skill directories into patlib. Each directory produces one skills table entry.
+Rule 10 — `write-sync --type skills` compiles skill directories into patlib. Each `SKILL.md` produces one skills table entry — one per top-level skill plus one per nested dispatcher skill.
 
 ## Gotchas
 
@@ -58,10 +58,11 @@ Rule 10 — `write-sync --type skills` compiles skill directories into patlib. E
 - Directory name mismatches frontmatter name: Align frontmatter `name` to directory name — write-sync uses directory stem (Directory `search-protocols`; frontmatter name `search-patterns`)
 - Aspect skill misnamed as separate base: Use `{action}-{domain}-{aspect}` only when adding a focused variant. Base segment `search-protocols` is the canonical name (`search-per-type-protocols` instead of `search-protocols`)
 - state-profile field absent: Add `state-profile` matching PROT.SKILL.PROFILE — one of stateless, stateful-reader, stateful-writer, stateful-auditor, hybrid (Validation flags missing field)
+- Dispatcher skill without ref files or nested skills: Model on `.template/dispatcher/SKILL.md` — dispatchers route through `ref/{mode}.md` to nested `skill/{aspect}/SKILL.md` (Dispatcher routes to modes that do not exist)
 
 ## Enforcement
 
-`audit-skill` checks: name matches regex `^[a-z]+(-[a-z]+)+$`, directory matches name, frontmatter has required fields (name, description, state-profile). `mcp-spec-audit` runs before sync — protocol PRs pass 100/100. `read-validate` confirms resolver references match registered MCP servers.
+`read-validate` confirms resolver references match registered MCP servers. The structural sweep verifies skill compliance — frontmatter fields (name, description, state-profile, nexus), hyphenated lowercase names, directory-name match, zero markdown tables, even code-fence parity, and bold-only body headers.
 
 ## Applicability
 
@@ -70,8 +71,6 @@ All `.opencode/skills/` directories across root and subprojects. Skills authored
 ## See also
 
 - `PROT.SKILL.PROFILE` — skill memory model classification
-- `PROT.TOOL.AUTOMATON` — analogous I/O classification for tools
-- `PROT.LLM.SPECIFICATION` — contract + gotcha framing rules
 - `PROT.META.IDENTITY` — protocol identity format (reference for this file)
 - `RUL.USE.LOCAL.MCP.SERVERS` — prefer MCP over manual inspection
 - `RUL.QUERY.PATLIB.CONTEXT` — fallback to Custom IPC when MCP unavailable

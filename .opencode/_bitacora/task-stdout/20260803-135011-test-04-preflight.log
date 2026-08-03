@@ -1,0 +1,49 @@
+# CMD: bash -c head\ -30\ /home/eddyr/assembler/.opencode/_scripts/migrate-skill-metadata.sh\;\ echo\ \"---args\ check---\"\;\ grep\ -nE\ \"ARGV\|Usage\|--dry\|--check\"\ /home/eddyr/assembler/.opencode/_scripts/migrate-skill-metadata.sh\ \|\ head\ -8 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:50:11-06:00
+# PID: 365627
+# DUR: 94ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: ac9f3720
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c head\ -30\ /home/eddyr/assembler/.opencode/_scripts/migrate-skill-metadata.sh\;\ echo\ \"---args\ check---\"\;\ grep\ -nE\ \"ARGV\|Usage\|--dry\|--check\"\ /home/eddyr/assembler/.opencode/_scripts/migrate-skill-metadata.sh\ \|\ head\ -8 
+# CWD: /home/eddyr/assembler
+# --------------------
+#!/usr/bin/env bash
+# migrate-skill-metadata.sh — rewrite skills frontmatter to canonical set
+# Action (write): replaces related/patterns/terms with nexus in .opencode/skills/*/SKILL.md
+# Canonical frontmatter: name, description, state-profile, nexus (optional)
+# Drops: type, related, patterns, terms (stale metadata)
+set -uo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+SKILLS="$ROOT/.opencode/skills"
+
+# nexus mapping — reviewed, corrected from survey s02 proposals
+declare -A NEXUS=(
+  [bootstrap-db]="NEX.META.PROPOSAL"
+  [classify-tool]="NEX.TOOL.SEQUENCE"
+  [compose-web]="NEX.INVESTIGATION.STAGE"
+  [declare-grounded-entity]="NEX.META.PROPOSAL"
+  [guide-architecture]="NEX.TOOL.CHOICE"
+  [guide-reasoning]="NEX.META.CANVAS"
+  [judge-semantic]="NEX.META.PROPOSAL"
+  [knowledge-languages]=""
+  [manage-bash-flows]="NEX.ACQUIRE.PIPELINE"
+  [orchestrate-research]="NEX.INVESTIGATION.STAGE"
+  [propose-command]="NEX.META.PROPOSAL"
+  [propose-investigation]="NEX.META.PROPOSAL"
+  [propose-mcp]="NEX.META.PROPOSAL"
+  [propose-pattern]="NEX.META.PROPOSAL"
+  [propose-protocol]="NEX.META.PROPOSAL"
+  [propose-rule]="NEX.META.PROPOSAL"
+  [propose-term]="NEX.META.PROPOSAL"
+  [propose-tool]="NEX.META.PROPOSAL"
+---args check---
+# OUT_LINES: 31
+# OUT_BYTES: 1253
+# ERR_LINES: 0
+# SHA: aa99ac8e5b9031c2258450150eb8499b447d12b1f75ca1186e6667e584745694

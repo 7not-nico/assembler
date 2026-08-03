@@ -1,0 +1,28 @@
+# CMD: bash -c grep\ -n\ \"related:\"\ /home/eddyr/assembler/.opencode/_templates/CLI.template.md\;\ echo\ \"---\ other\ entity\ groups\ with\ related:\[\]\ ---\"\;\ grep\ -rl\ \"\^related:\ \\\[\\\]\"\ /home/eddyr/assembler/.opencode/entities/\ 2\>/dev/null\ \|\ head\ -8 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:22:22-06:00
+# PID: 337431
+# DUR: 81ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 45e513be
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c grep\ -n\ \"related:\"\ /home/eddyr/assembler/.opencode/_templates/CLI.template.md\;\ echo\ \"---\ other\ entity\ groups\ with\ related:\[\]\ ---\"\;\ grep\ -rl\ \"\^related:\ \\\[\\\]\"\ /home/eddyr/assembler/.opencode/entities/\ 2\>/dev/null\ \|\ head\ -8 
+# CWD: /home/eddyr/assembler
+# --------------------
+62:related: []
+--- other entity groups with related:[] ---
+/home/eddyr/assembler/.opencode/entities/protocols/PROT.LIB.CONTRACT.md
+/home/eddyr/assembler/.opencode/entities/protocols/PROT.LINGUISTIC.NOTATION.md
+/home/eddyr/assembler/.opencode/entities/protocols/PROT.META.DOMAIN.md
+/home/eddyr/assembler/.opencode/entities/protocols/PROT.META.IDENTITY.md
+/home/eddyr/assembler/.opencode/entities/protocols/PROT.PERSON.SCHEMA.md
+/home/eddyr/assembler/.opencode/entities/protocols/PROT.SCHEMA.AUGMENT.md
+/home/eddyr/assembler/.opencode/entities/protocols/PROT.SCHEMA.FORMAT.md
+/home/eddyr/assembler/.opencode/entities/protocols/PROT.SKILL.PROFILE.md
+# OUT_LINES: 10
+# OUT_BYTES: 647
+# ERR_LINES: 0
+# SHA: 697e58c8d04e066ba4f7352fa080ef2bb0e272d592ff7e6580784e8853cb4e69

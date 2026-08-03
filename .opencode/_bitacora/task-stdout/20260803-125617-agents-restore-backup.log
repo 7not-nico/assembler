@@ -1,0 +1,19 @@
+# CMD: bash -c BACKUP=/tmp/opencode/agents-backup-2026-08-03T124940\;\ cd\ /home/eddyr/assembler\ \&\&\ for\ f\ in\ \$\(find\ \"\$BACKUP\"\ -name\ \"AGENTS.md\"\ \|\ sort\)\;\ do\ rel=\"\$\{f#\$BACKUP/\}\"\;\ cp\ \"\$f\"\ \"\$rel\"\;\ done\;\ echo\ \"restored:\ \$\(find\ \"\$BACKUP\"\ -name\ AGENTS.md\ \|\ wc\ -l\)\" 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T12:56:17-06:00
+# PID: 311942
+# DUR: 124ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: b3888f98
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c BACKUP=/tmp/opencode/agents-backup-2026-08-03T124940\;\ cd\ /home/eddyr/assembler\ \&\&\ for\ f\ in\ \$\(find\ \"\$BACKUP\"\ -name\ \"AGENTS.md\"\ \|\ sort\)\;\ do\ rel=\"\$\{f#\$BACKUP/\}\"\;\ cp\ \"\$f\"\ \"\$rel\"\;\ done\;\ echo\ \"restored:\ \$\(find\ \"\$BACKUP\"\ -name\ AGENTS.md\ \|\ wc\ -l\)\" 
+# CWD: /home/eddyr/assembler
+# --------------------
+restored: 45
+# OUT_LINES: 1
+# OUT_BYTES: 13
+# ERR_LINES: 0
+# SHA: d1b1f131e5cca7dcc686a5901df0859e6e41b10cb9ed97d55d620a71a78045cd

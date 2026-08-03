@@ -1,0 +1,26 @@
+# CMD: bash -c $'\n# create.sh: move kind guard before FOLDER assignment (order + clarity)\npython3 - <<"PY"\nimport re\np = "_knowledge/_bitacora/bitacora-create.sh"\ns = open(p).read()\nold = """KIND=\\"${1:?kind required (todo|report)}\\"\nTOPIC=\\"${2:?topic required}\\"\nBITACORA=\\"$(cd \\"$(dirname \\"$0\\")\\" && pwd)\\"\nFOLDER=\\"task-$KIND\\"\n\ncase \\"$KIND\\" in\n  todo|report) ;;\n  *) echo \\"ERROR kind must be todo or report\\" >&2; exit 1 ;;\nesac"""\nnew = """KIND=\\"${1:?kind required (todo|report)}\\"\nTOPIC=\\"${2:?topic required}\\"\ncase \\"$KIND\\" in\n  todo|report) ;;\n  *) echo \\"ERROR kind must be todo or report\\" >&2; exit 1 ;;\nesac\nBITACORA=\\"$(cd \\"$(dirname \\"$0\\")\\" && pwd)\\"\nFOLDER=\\"task-$KIND\\""""\nassert old in s, "pattern not found"\ns = s.replace(old, new)\nopen(p, "w").write(s)\nprint("create.sh formatted")\nPY\n# normalize trailing whitespace in all scripts\nfor f in _knowledge/_bitacora/*.sh; do\n  sed -i "s/[[:space:]]*$//" "$f"\ndone\necho "trailing whitespace stripped"\n# syntax re-check\nfor s in _knowledge/_bitacora/*.sh; do bash -n "$s" && echo "OK $s" || echo "FAIL $s"; done' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:52:07-06:00
+# PID: 453326
+# DUR: 114ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: e705af61
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\n# create.sh: move kind guard before FOLDER assignment (order + clarity)\npython3 - <<"PY"\nimport re\np = "_knowledge/_bitacora/bitacora-create.sh"\ns = open(p).read()\nold = """KIND=\\"${1:?kind required (todo|report)}\\"\nTOPIC=\\"${2:?topic required}\\"\nBITACORA=\\"$(cd \\"$(dirname \\"$0\\")\\" && pwd)\\"\nFOLDER=\\"task-$KIND\\"\n\ncase \\"$KIND\\" in\n  todo|report) ;;\n  *) echo \\"ERROR kind must be todo or report\\" >&2; exit 1 ;;\nesac"""\nnew = """KIND=\\"${1:?kind required (todo|report)}\\"\nTOPIC=\\"${2:?topic required}\\"\ncase \\"$KIND\\" in\n  todo|report) ;;\n  *) echo \\"ERROR kind must be todo or report\\" >&2; exit 1 ;;\nesac\nBITACORA=\\"$(cd \\"$(dirname \\"$0\\")\\" && pwd)\\"\nFOLDER=\\"task-$KIND\\""""\nassert old in s, "pattern not found"\ns = s.replace(old, new)\nopen(p, "w").write(s)\nprint("create.sh formatted")\nPY\n# normalize trailing whitespace in all scripts\nfor f in _knowledge/_bitacora/*.sh; do\n  sed -i "s/[[:space:]]*$//" "$f"\ndone\necho "trailing whitespace stripped"\n# syntax re-check\nfor s in _knowledge/_bitacora/*.sh; do bash -n "$s" && echo "OK $s" || echo "FAIL $s"; done' 
+# CWD: /home/eddyr/assembler
+# --------------------
+create.sh formatted
+trailing whitespace stripped
+OK _knowledge/_bitacora/bitacora-close.sh
+OK _knowledge/_bitacora/bitacora-create.sh
+OK _knowledge/_bitacora/bitacora-find.sh
+OK _knowledge/_bitacora/bitacora-init.sh
+OK _knowledge/_bitacora/bitacora-log.sh
+OK _knowledge/_bitacora/bitacora-slugify.sh
+# OUT_LINES: 8
+# OUT_BYTES: 300
+# ERR_LINES: 0
+# SHA: 26c82e7b504d50ceed6f52587509efabf21839bc126efd40fd372cc3e05652d2

@@ -1,0 +1,38 @@
+# CMD: bash -c echo\ \"---all\ img\ refs\ in\ print.html---\"\;\ rg\ -o\ \"src=\\\"img/\[\^\\\"\]+\\\"\"\ /tmp/opencode/book-print.html\ \|\ sort\ -u\;\ echo\ \"---count---\"\;\ rg\ -o\ \"src=\\\"img/\[\^\\\"\]+\\\"\"\ /tmp/opencode/book-print.html\ \|\ sort\ -u\ \|\ wc\ -l\;\ echo\ \"---images\ in\ last\ epub---\"\;\ unzip\ -l\ /tmp/opencode/rust-book.epub\ 2\>/dev/null\ \|\ rg\ -o\ \"img/\[\^\ \]+\\.\(svg\|png\|jpg\|jpeg\|gif\)\"\ \|\ sort\ -u\ \|\ head\ -40 
+# DATE: 2026-08-03T05:14:00-06:00
+# DUR: 19ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+---all img refs in print.html---
+src="img/ferris/does_not_compile.svg"
+src="img/ferris/not_desired_behavior.svg"
+src="img/ferris/panics.svg"
+src="img/trpl04-01.svg"
+src="img/trpl04-02.svg"
+src="img/trpl04-03.svg"
+src="img/trpl04-04.svg"
+src="img/trpl04-05.svg"
+src="img/trpl04-06.svg"
+src="img/trpl04-07.svg"
+src="img/trpl14-01.png"
+src="img/trpl14-02.png"
+src="img/trpl14-03.png"
+src="img/trpl14-04.png"
+src="img/trpl15-01.svg"
+src="img/trpl15-02.svg"
+src="img/trpl15-03.svg"
+src="img/trpl15-04.svg"
+src="img/trpl17-01.svg"
+src="img/trpl17-02.svg"
+src="img/trpl17-03.svg"
+src="img/trpl17-04.svg"
+src="img/trpl17-05.svg"
+src="img/trpl17-06.svg"
+src="img/trpl17-07.svg"
+src="img/trpl17-08.svg"
+src="img/trpl17-09.svg"
+src="img/trpl21-01.png"
+---count---
+28
+---images in last epub---
+# exit: 0

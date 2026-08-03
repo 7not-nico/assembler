@@ -9,6 +9,10 @@ status: active
 ---
 # AMANDA {repo}-repo — Agent Instructions
 
+## Identity
+
+This file is the agent instruction file for the {repo} dive. It instantiates the delegation environment per `IDENTITY.AGENT`; it states only final absolute states per `RUL.AGENTS.STATE`; it stands self-contained per `SPEC.AGENTS.SELF.CONTAINED` — the file names no other agent instruction file, upstream or downstream.
+
 ## Domain
 
 This project dives the {repo} codebase — {one-sentence domain}. The dive {compiles/studies/extends/verifies} the source and documents the findings.

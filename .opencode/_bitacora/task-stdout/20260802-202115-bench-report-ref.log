@@ -1,0 +1,131 @@
+# CMD: bash -c rg\ -n\ \"write-report-template\|reportare\"\ _knowledge/_templates/script/bench.ts\ \|\ head\;\ echo\ \"---\"\;\ rg\ -n\ \"report\"\ _knowledge/_templates/script/bench.ts\ \|\ head 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:21:15-06:00
+# PID: 423238
+# DUR: 381ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: ad676a15
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c rg\ -n\ \"write-report-template\|reportare\"\ _knowledge/_templates/script/bench.ts\ \|\ head\;\ echo\ \"---\"\;\ rg\ -n\ \"report\"\ _knowledge/_templates/script/bench.ts\ \|\ head 
+# CWD: /home/eddyr/assembler
+# --------------------
+21:  ["write a session report with errors and findings", ["write-report-template.md"]],
+---
+21:  ["write a session report with errors and findings", ["write-report-template.md"]],
+# OUT_LINES: 3
+# OUT_BYTES: 180
+# ERR_LINES: 0
+# EXEC: 423238|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh bench-report-ref -- bash -c rg -n "write-report-template|reportare" _knowledge/_templates/script/bench.ts | head; echo "---"; rg -n "report" _knowledge/_templates/script/bench.ts | head
+# EXEC: 423239|/usr/bin/date|date +%s%N
+# EXEC: 423242|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 423245|/usr/bin/git|git remote get-url origin
+# EXEC: 423243|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 423246|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 423248|/usr/bin/git|git branch --show-current
+# EXEC: 423250|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 423251|/usr/bin/head|head -1
+# EXEC: 423252|/usr/bin/tr|tr -d \n
+# EXEC: 423253|/usr/bin/bun|bun --version
+# EXEC: 423255|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 423256|/usr/bin/head|head -1
+# EXEC: 423257|/usr/bin/tr|tr -d \n
+# EXEC: 423258|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 423260|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 423261|/usr/bin/head|head -1
+# EXEC: 423262|/usr/bin/tr|tr -d \n
+# EXEC: 423263|/usr/bin/python3|python3 --version
+# EXEC: 423265|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 423266|/usr/bin/head|head -1
+# EXEC: 423267|/usr/bin/tr|tr -d \n
+# EXEC: 423268|/usr/bin/ruby|ruby --version
+# EXEC: 423271|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 423272|/usr/bin/head|head -1
+# EXEC: 423273|/usr/bin/tr|tr -d \n
+# EXEC: 423274|/usr/bin/rustc|rustc --version
+# EXEC: 423278|/usr/bin/head|head -1
+# EXEC: 423277|/usr/bin/timeout|timeout 2 go version
+# EXEC: 423279|/usr/bin/tr|tr -d \n
+# EXEC: 423280|/usr/bin/go|go version
+# EXEC: 423287|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 423288|/usr/bin/head|head -1
+# EXEC: 423289|/usr/bin/tr|tr -d \n
+# EXEC: 423290|/usr/bin/git|git --version
+# EXEC: 423292|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 423293|/usr/bin/head|head -1
+# EXEC: 423294|/usr/bin/tr|tr -d \n
+# EXEC: 423295|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 423297|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 423298|/usr/bin/head|head -1
+# EXEC: 423299|/usr/bin/tr|tr -d \n
+# EXEC: 423300|/usr/bin/date|date --version
+# EXEC: 423302|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 423304|/usr/bin/tr|tr -d \n
+# EXEC: 423303|/usr/bin/head|head -1
+# EXEC: 423305|/usr/bin/wc|wc --version
+# EXEC: 423307|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 423308|/usr/bin/head|head -1
+# EXEC: 423309|/usr/bin/tr|tr -d \n
+# EXEC: 423310|/usr/bin/cat|cat --version
+# EXEC: 423312|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 423313|/usr/bin/head|head -1
+# EXEC: 423314|/usr/bin/tr|tr -d \n
+# EXEC: 423315|/usr/bin/tee|tee --version
+# EXEC: 423317|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 423318|/usr/bin/head|head -1
+# EXEC: 423319|/usr/bin/tr|tr -d \n
+# EXEC: 423320|/usr/bin/mktemp|mktemp --version
+# EXEC: 423322|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 423323|/usr/bin/head|head -1
+# EXEC: 423324|/usr/bin/tr|tr -d \n
+# EXEC: 423325|/usr/bin/rm|rm --version
+# EXEC: 423327|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 423328|/usr/bin/head|head -1
+# EXEC: 423329|/usr/bin/tr|tr -d \n
+# EXEC: 423330|/usr/bin/timeout|timeout --version
+# EXEC: 423332|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 423333|/usr/bin/head|head -1
+# EXEC: 423334|/usr/bin/tr|tr -d \n
+# EXEC: 423335|/usr/bin/tr|tr --version
+# EXEC: 423337|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 423338|/usr/bin/head|head -1
+# EXEC: 423339|/usr/bin/tr|tr -d \n
+# EXEC: 423340|/usr/bin/head|head --version
+# EXEC: 423344|/usr/bin/tr|tr -d \n
+# EXEC: 423342|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 423343|/usr/bin/head|head -1
+# EXEC: 423345|/usr/bin/cut|cut --version
+# EXEC: 423348|/usr/bin/sha256sum|sha256sum
+# EXEC: 423347|/usr/bin/date|date +%s%N
+# EXEC: 423349|/usr/bin/cut|cut -c1-8
+# EXEC: 423351|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202115-bench-report-ref.log
+# EXEC: 423352|/usr/bin/date|date -Is
+# EXEC: 423353|/usr/bin/mktemp|mktemp
+# EXEC: 423354|/usr/bin/mktemp|mktemp
+# EXEC: 423355|/usr/bin/bash|bash -c rg -n "write-report-template|reportare" _knowledge/_templates/script/bench.ts | head; echo "---"; rg -n "report" _knowledge/_templates/script/bench.ts | head
+# EXEC: 423356|/usr/bin/rg|rg -n write-report-template|reportare _knowledge/_templates/script/bench.ts
+# EXEC: 423357|/usr/bin/head|head
+# EXEC: 423358|/usr/bin/rg|rg -n report _knowledge/_templates/script/bench.ts
+# EXEC: 423359|/usr/bin/head|head
+# EXEC: 423361|/usr/bin/wc|wc -l
+# EXEC: 423362|/usr/bin/tr|tr -d  
+# EXEC: 423364|/usr/bin/wc|wc -c
+# EXEC: 423365|/usr/bin/tr|tr -d  
+# EXEC: 423367|/usr/bin/wc|wc -l
+# EXEC: 423368|/usr/bin/tr|tr -d  
+# EXEC: 423369|/usr/bin/date|date +%s%N
+# EXEC: 423371|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202115-bench-report-ref.log
+# EXEC: 423373|/usr/bin/cat|cat /tmp/tmp.mwGNZZtk2K
+# EXEC: 423374|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202115-bench-report-ref.log
+# EXEC: 423375|/usr/bin/cat|cat /tmp/tmp.TbaStpc3f1
+# EXEC: 423376|/usr/bin/cat|cat /tmp/tmp.TbaStpc3f1
+# EXEC: 423377|/usr/bin/rm|rm -f /tmp/tmp.mwGNZZtk2K /tmp/tmp.TbaStpc3f1
+# EXEC: 423379|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202115-bench-report-ref.log
+# EXEC: 423381|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202115-bench-report-ref.log
+# EXEC: 423383|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202115-bench-report-ref.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rg=ripgrep 15.2.0 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 107
+# SHA: 8fc8f486ecbc29bd477dc09e140de9cc591baa141158ce69ca0e5921d5d197d9
+# exit: 0

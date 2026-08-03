@@ -1,0 +1,23 @@
+# CMD: bash -c $'\ncd /tmp/opencode && cp /home/eddyr/assembler/_knowledge/rust-docs/fixture/ch01-hello-world.rs .\nrustc --edition 2021 ch01-hello-world.rs && ./ch01-hello-world && echo "FIXTURE COMPILES + RUNS OK" && rm -f ch01-hello-world ch01-hello-world.rs' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:58:56-06:00
+# PID: 458908
+# DUR: 764ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SCOPE: fixture
+# SESSION: 72ad1792
+# TASK: ch01
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\ncd /tmp/opencode && cp /home/eddyr/assembler/_knowledge/rust-docs/fixture/ch01-hello-world.rs .\nrustc --edition 2021 ch01-hello-world.rs && ./ch01-hello-world && echo "FIXTURE COMPILES + RUNS OK" && rm -f ch01-hello-world ch01-hello-world.rs' 
+# IN: ch01-hello-world.rs=457b200d0d745dbe26b71d0b3a12b5477d4baa41872686b3c03b77755cc0c236
+# CWD: /home/eddyr/assembler
+# --------------------
+Hello, world!
+FIXTURE COMPILES + RUNS OK
+# OUT_LINES: 2
+# OUT_BYTES: 41
+# ERR_LINES: 0
+# SHA: 863304b466a811e6058c0699c9c7d325bf86280589a81676d6868e306d4154e2

@@ -1,0 +1,17 @@
+# CMD: bash -c echo\ \"---rust-docs\ own\ repo\?---\"\;\ git\ -C\ /home/eddyr/assembler/_knowledge/rust-docs\ rev-parse\ --show-toplevel\ 2\>\&1\;\ echo\ \"---code-semantics\ own\ repo\?---\"\;\ git\ -C\ /home/eddyr/assembler/_knowledge/code-semantics\ rev-parse\ --show-toplevel\ 2\>\&1\;\ echo\ \"---gitignore\ rest---\"\;\ rg\ -n\ \"\\.gitkeep\|placeholders\"\ /home/eddyr/assembler/.gitignore 
+# DATE: 2026-08-03T05:31:35-06:00
+# DUR: 22ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+37414<tracer>: "/usr/bin/bash" ["bash", "-c", "echo \"---rust-docs own repo?---\"; git -C /home/eddyr/assembler/_knowledge/rust-docs rev-parse --show-toplevel 2>&1; echo \"---code-semantics own repo?---\"; git -C /home/eddyr/assembler/_knowledge/code-semantics rev-parse --show-toplevel 2>&1; echo \"---gitignore rest---\"; rg -n \"\\.gitkeep|placeholders\" /home/eddyr/assembler/.gitignore"] fd []
+---rust-docs own repo?---
+37415<bash>: "/usr/bin/git" ["git", "-C", "/home/eddyr/assembler/_knowledge/rust-docs", "rev-parse", "--show-toplevel"] fd []
+/home/eddyr/assembler
+---code-semantics own repo?---
+37416<bash>: "/usr/bin/git" ["git", "-C", "/home/eddyr/assembler/_knowledge/code-semantics", "rev-parse", "--show-toplevel"] fd []
+/home/eddyr/assembler
+---gitignore rest---
+37414<bash>: "/usr/bin/rg" ["rg", "-n", "\\.gitkeep|placeholders", "/home/eddyr/assembler/.gitignore"] fd []
+41:# with their contents, plus top-level placeholders
+53:!/_*/.gitkeep
+# exit: 0

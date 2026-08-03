@@ -1,0 +1,40 @@
+# CMD: bash -c $'\necho "===RING SECTION==="; sed -n "80,110p" _knowledge/rust-docs/AGENTS.md\necho; echo "===LINE COUNT==="; wc -l _knowledge/rust-docs/AGENTS.md' 
+# DATE: 2026-08-02T20:47:21-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+===RING SECTION===
+## Ring topology — project
+
+Every folder in this project belongs to one of six ordinal rings by role. Ring order governs dependency. Inner rings serve outer rings; outer rings never call inward.
+
+```text
+R0  Scripts     script/                 automation — run-logged.sh, registry population; serves every ring
+R1  Bitacora    _knowledge/_bitacora/   records + tooling — task-todo, task-report, task-stdout;
+                                        bitacora-create.sh, bitacora-close.sh, bitacora-find.sh,
+                                        bitacora-log.sh; shared substrate
+R2  Precept     precept/                governing rules — declarative action-domain files
+R3  Concept     concept/                study anchors — topic division, one file per chapter
+R4  Reference   reference/              distilled truth — citations with claim mapping
+R5  Fixture     fixture/                practice material — compilable per-chapter code
+```
+
+Support layers sit outside the ordinal chain:
+
+```text
+rings/    mirrored ring-topology specifications — read-only references
+skills/   symlinked skill catalog — live links to sources, never stale
+```
+
+Ring constraints:
+
+- Scripts serve every ring; bitacora records and logs every ring. Inner rings complete before outer rings advance (precept → concept → reference → fixture).
+- Fixture compiles against reference claims; reference distills from concept anchors; concept derives from precept rules.
+- Support layers inform the chain; they never govern it.
+
+## Ring specifications
+
+`rings/` holds ring-topology specifications mirrored from `.opencode/entities/specifications/`:
+
+===LINE COUNT===
+126 _knowledge/rust-docs/AGENTS.md
+# exit: 0

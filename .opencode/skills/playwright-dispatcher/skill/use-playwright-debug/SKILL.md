@@ -5,9 +5,9 @@ state-profile: stateless
 nexus: NEX.BROWSER.STACK
 ---
 
-**Availability** — core tools always available. Assert/trace/video/PDF require capability flags.
+Availability — core tools always available. Assert/trace/video/PDF require capability flags.
 
-**Tools**
+## Tools
 
 ```
   Tool                              Availability                         Parameters            Notes
@@ -25,7 +25,7 @@ nexus: NEX.BROWSER.STACK
   `browser_pdf_save`                `--caps=pdf`                         —                     Export current page as PDF to output dir
 ```
 
-**Gotchas**
+## Gotchas
 
 - `browser_run_code` receives a `page` object — full Playwright API available
 - `browser_evaluate` parameter is `function` in this MCP binding (`expression` excluded)

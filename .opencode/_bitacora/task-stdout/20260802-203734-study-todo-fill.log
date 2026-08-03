@@ -1,0 +1,128 @@
+# CMD: bash -c $'\ncat > .opencode/_bitacora/task-todo/2026-08-02--study-rust-book-into-rust-docs.md <<"EOF"\n# study rust book into rust-docs\n\nStatus: in progress (2026-08-02)\n\n## Tasks\n\n- [ ] Write study precepts (precept/)\n- [ ] ch01 Getting Started (concept + fixture)\n- [ ] ch02 Guessing Game\n- [ ] ch03 Common Concepts\n- [ ] ch04 Ownership\n- [ ] ch05 Structs\n- [ ] ch06 Enums + Pattern Matching\n- [ ] ch07 Modules\n- [ ] ch08 Collections\n- [ ] ch09 Error Handling\n- [ ] ch10 Generics, Traits, Lifetimes\n- [ ] ch11 Testing\n- [ ] ch12 CLI Project\n- [ ] ch13 Iterators + Closures\n- [ ] ch14 Cargo + Crates\n- [ ] ch15 Smart Pointers\n- [ ] ch16 Concurrency\n- [ ] ch17 Async\n- [ ] ch18 OOP\n- [ ] ch19 Patterns\n- [ ] ch20 Advanced Features\n- [ ] ch21 Web Server\n- [ ] Distill references (reference/)\n- [ ] Write session report + close\n\n## Context\n\n- Source: https://doc.rust-lang.org/book/ (Rust 1.90+, edition 2024)\n- Toolchain: rustc 1.97.1, fixtures compile with rustc --edition 2021\n- Per-chapter concepts (user decision)\nEOF\necho "todo filled"; wc -l .opencode/_bitacora/task-todo/2026-08-02--study-rust-book-into-rust-docs.md' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:37:35-06:00
+# PID: 441389
+# DUR: 381ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 6182316e
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\ncat > .opencode/_bitacora/task-todo/2026-08-02--study-rust-book-into-rust-docs.md <<"EOF"\n# study rust book into rust-docs\n\nStatus: in progress (2026-08-02)\n\n## Tasks\n\n- [ ] Write study precepts (precept/)\n- [ ] ch01 Getting Started (concept + fixture)\n- [ ] ch02 Guessing Game\n- [ ] ch03 Common Concepts\n- [ ] ch04 Ownership\n- [ ] ch05 Structs\n- [ ] ch06 Enums + Pattern Matching\n- [ ] ch07 Modules\n- [ ] ch08 Collections\n- [ ] ch09 Error Handling\n- [ ] ch10 Generics, Traits, Lifetimes\n- [ ] ch11 Testing\n- [ ] ch12 CLI Project\n- [ ] ch13 Iterators + Closures\n- [ ] ch14 Cargo + Crates\n- [ ] ch15 Smart Pointers\n- [ ] ch16 Concurrency\n- [ ] ch17 Async\n- [ ] ch18 OOP\n- [ ] ch19 Patterns\n- [ ] ch20 Advanced Features\n- [ ] ch21 Web Server\n- [ ] Distill references (reference/)\n- [ ] Write session report + close\n\n## Context\n\n- Source: https://doc.rust-lang.org/book/ (Rust 1.90+, edition 2024)\n- Toolchain: rustc 1.97.1, fixtures compile with rustc --edition 2021\n- Per-chapter concepts (user decision)\nEOF\necho "todo filled"; wc -l .opencode/_bitacora/task-todo/2026-08-02--study-rust-book-into-rust-docs.md' 
+# CWD: /home/eddyr/assembler
+# --------------------
+todo filled
+36 .opencode/_bitacora/task-todo/2026-08-02--study-rust-book-into-rust-docs.md
+# OUT_LINES: 2
+# OUT_BYTES: 91
+# ERR_LINES: 0
+# EXEC: 441389|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh study-todo-fill -- bash -c 
+# EXEC: 441390|/usr/bin/date|date +%s%N
+# EXEC: 441393|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 441396|/usr/bin/git|git remote get-url origin
+# EXEC: 441394|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 441397|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 441399|/usr/bin/git|git branch --show-current
+# EXEC: 441401|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 441402|/usr/bin/head|head -1
+# EXEC: 441403|/usr/bin/tr|tr -d \n
+# EXEC: 441404|/usr/bin/bun|bun --version
+# EXEC: 441406|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 441407|/usr/bin/head|head -1
+# EXEC: 441408|/usr/bin/tr|tr -d \n
+# EXEC: 441409|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 441411|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 441412|/usr/bin/head|head -1
+# EXEC: 441413|/usr/bin/tr|tr -d \n
+# EXEC: 441414|/usr/bin/python3|python3 --version
+# EXEC: 441416|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 441417|/usr/bin/head|head -1
+# EXEC: 441418|/usr/bin/tr|tr -d \n
+# EXEC: 441419|/usr/bin/ruby|ruby --version
+# EXEC: 441422|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 441423|/usr/bin/head|head -1
+# EXEC: 441424|/usr/bin/tr|tr -d \n
+# EXEC: 441425|/usr/bin/rustc|rustc --version
+# EXEC: 441428|/usr/bin/timeout|timeout 2 go version
+# EXEC: 441429|/usr/bin/head|head -1
+# EXEC: 441430|/usr/bin/tr|tr -d \n
+# EXEC: 441431|/usr/bin/go|go version
+# EXEC: 441437|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 441438|/usr/bin/head|head -1
+# EXEC: 441439|/usr/bin/tr|tr -d \n
+# EXEC: 441440|/usr/bin/git|git --version
+# EXEC: 441442|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 441443|/usr/bin/head|head -1
+# EXEC: 441444|/usr/bin/tr|tr -d \n
+# EXEC: 441445|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 441447|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 441448|/usr/bin/head|head -1
+# EXEC: 441449|/usr/bin/tr|tr -d \n
+# EXEC: 441450|/usr/bin/date|date --version
+# EXEC: 441453|/usr/bin/head|head -1
+# EXEC: 441452|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 441454|/usr/bin/tr|tr -d \n
+# EXEC: 441455|/usr/bin/wc|wc --version
+# EXEC: 441457|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 441458|/usr/bin/head|head -1
+# EXEC: 441459|/usr/bin/tr|tr -d \n
+# EXEC: 441460|/usr/bin/cat|cat --version
+# EXEC: 441462|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 441463|/usr/bin/head|head -1
+# EXEC: 441464|/usr/bin/tr|tr -d \n
+# EXEC: 441465|/usr/bin/tee|tee --version
+# EXEC: 441467|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 441468|/usr/bin/head|head -1
+# EXEC: 441469|/usr/bin/tr|tr -d \n
+# EXEC: 441470|/usr/bin/mktemp|mktemp --version
+# EXEC: 441472|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 441473|/usr/bin/head|head -1
+# EXEC: 441474|/usr/bin/tr|tr -d \n
+# EXEC: 441475|/usr/bin/rm|rm --version
+# EXEC: 441477|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 441478|/usr/bin/head|head -1
+# EXEC: 441479|/usr/bin/tr|tr -d \n
+# EXEC: 441480|/usr/bin/timeout|timeout --version
+# EXEC: 441482|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 441483|/usr/bin/head|head -1
+# EXEC: 441484|/usr/bin/tr|tr -d \n
+# EXEC: 441485|/usr/bin/tr|tr --version
+# EXEC: 441487|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 441488|/usr/bin/head|head -1
+# EXEC: 441489|/usr/bin/tr|tr -d \n
+# EXEC: 441490|/usr/bin/head|head --version
+# EXEC: 441500|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 441501|/usr/bin/head|head -1
+# EXEC: 441502|/usr/bin/tr|tr -d \n
+# EXEC: 441503|/usr/bin/cut|cut --version
+# EXEC: 441505|/usr/bin/date|date +%s%N
+# EXEC: 441506|/usr/bin/sha256sum|sha256sum
+# EXEC: 441507|/usr/bin/cut|cut -c1-8
+# EXEC: 441509|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203734-study-todo-fill.log
+# EXEC: 441510|/usr/bin/date|date -Is
+# EXEC: 441511|/usr/bin/mktemp|mktemp
+# EXEC: 441530|/usr/bin/mktemp|mktemp
+# EXEC: 441532|/usr/bin/bash|bash -c 
+# EXEC: 441533|/usr/bin/cat|cat
+# EXEC: 441532|/usr/bin/wc|wc -l .opencode/_bitacora/task-todo/2026-08-02--study-rust-book-into-rust-docs.md
+# EXEC: 441535|/usr/bin/wc|wc -l
+# EXEC: 441536|/usr/bin/tr|tr -d  
+# EXEC: 441542|/usr/bin/wc|wc -c
+# EXEC: 441543|/usr/bin/tr|tr -d  
+# EXEC: 441561|/usr/bin/wc|wc -l
+# EXEC: 441562|/usr/bin/tr|tr -d  
+# EXEC: 441573|/usr/bin/date|date +%s%N
+# EXEC: 441575|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203734-study-todo-fill.log
+# EXEC: 441577|/usr/bin/cat|cat /tmp/tmp.oHHtoG96e0
+# EXEC: 441578|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203734-study-todo-fill.log
+# EXEC: 441580|/usr/bin/cat|cat /tmp/tmp.kA1pzjSR2U
+# EXEC: 441587|/usr/bin/cat|cat /tmp/tmp.kA1pzjSR2U
+# EXEC: 441588|/usr/bin/rm|rm -f /tmp/tmp.oHHtoG96e0 /tmp/tmp.kA1pzjSR2U
+# EXEC: 441590|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203734-study-todo-fill.log
+# EXEC: 441593|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203734-study-todo-fill.log
+# EXEC: 441595|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203734-study-todo-fill.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 105
+# SHA: ff82e483a380450da8c7e58dabd9dbe86af202704e118e19121964e20751d4d5
+# exit: 0

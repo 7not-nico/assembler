@@ -1,0 +1,54 @@
+# CMD: bash -c perl\ /home/eddyr/assembler/.opencode/_scripts/embed-diagnose.pl\ 2\>\&1\ \|\ tail\ -8\;\ echo\ \"===\ persisted\ scripts\ ===\"\;\ ls\ /home/eddyr/assembler/.opencode/_scripts/\ \|\ grep\ -E\ \"\\.\(pl\|sh\)\$\|audit\"\  
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:45:22-06:00
+# PID: 357158
+# DUR: 144ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: cb43e493
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c perl\ /home/eddyr/assembler/.opencode/_scripts/embed-diagnose.pl\ 2\>\&1\ \|\ tail\ -8\;\ echo\ \"===\ persisted\ scripts\ ===\"\;\ ls\ /home/eddyr/assembler/.opencode/_scripts/\ \|\ grep\ -E\ \"\\.\(pl\|sh\)\$\|audit\"\  
+# CWD: /home/eddyr/assembler
+# --------------------
+  row count: 5
+  ids: CLI.COREUTILS|GNU Coreutils|## Identity, CLI.PANDOC|Pandoc|## Identity, CLI.RIPGREP|Ripgrep|## Identity, CLI.SED|Sed|## Identity, CLI.TRACEXEC|Tracexec|## Identity
+
+=== STAGE 5: embeddings store check ===
+  existing cli embeddings: 5
+  embedded ids: CLI.COREUTILS, CLI.PANDOC, CLI.RIPGREP, CLI.SED, CLI.TRACEXEC
+
+VERDICT: COMPLETE — cli table has 5 rows, all 5 embedded; 0-embed report was an already-present skip
+=== persisted scripts ===
+audit-format-compliance.sh
+convert-skill-format.pl
+embed-diagnose.pl
+migrate-skill-metadata.sh
+r1-illustration-audit.rb
+r1-maxim-audit.rb
+r1-nexus-audit.rb
+r1-pattern-audit.rb
+r1-person-audit.rb
+r1-protocol-audit.rb
+r1-skill-audit.rb
+r1-term-audit.rb
+r2-seed-audit.rb
+strip-inline-bold.pl
+357282<tracer>: "/usr/bin/bash" ["bash", "-c", "perl /home/eddyr/assembler/.opencode/_scripts/embed-diagnose.pl 2>&1 | tail -8; echo \"=== persisted scripts ===\"; ls /home/eddyr/assembler/.opencode/_scripts/ | grep -E \"\\.(pl|sh)$|audit\" "] fd [] with []
+357283<bash>: "/usr/bin/perl" ["perl", "/home/eddyr/assembler/.opencode/_scripts/embed-diagnose.pl"] fd [stdout="pipe:[1335396]", stderr="pipe:[1335396]", ] with [M"SHLVL"="3", M"_"="/usr/bin/perl"]
+357284<bash>: "/usr/bin/tail" ["tail", "-8"] fd [stdin="pipe:[1335396]", ] with [M"SHLVL"="3", M"_"="/usr/bin/tail"]
+357285<perl>: "/bin/sh" ["sh", "-c", "sqlite3 \"/home/eddyr/assembler/.opencode/patlib.db\" \"SELECT name FROM sqlite_master WHERE type='table' AND sql LIKE '%id TEXT%' AND sql LIKE '%title TEXT%' AND name NOT IN ('embeddings','fts_entities','entities_fts','meta','notes','sqlite_sequence')\" 2>&1"] fd [stdout="pipe:[1327737]", stderr="pipe:[1335396]", ] with [M"SHLVL"="3", M"_"="/usr/bin/perl"]
+357286<sh>: "/home/linuxbrew/.linuxbrew/bin/sqlite3" ["sqlite3", "/home/eddyr/assembler/.opencode/patlib.db", "SELECT name FROM sqlite_master WHERE type='table' AND sql LIKE '%id TEXT%' AND sql LIKE '%title TEXT%' AND name NOT IN ('embeddings','fts_entities','entities_fts','meta','notes','sqlite_sequence')"] fd [stdout="pipe:[1327737]", stderr="pipe:[1327737]", ] with [M"SHLVL"="4", M"_"="/home/linuxbrew/.linuxbrew/bin/sqlite3"]
+357287<perl>: "/bin/sh" ["sh", "-c", "sqlite3 \"/home/eddyr/assembler/.opencode/patlib.db\" \"PRAGMA table_info(cli)\" 2>&1"] fd [stdout="pipe:[1335399]", stderr="pipe:[1335396]", ] with [M"SHLVL"="3", M"_"="/usr/bin/perl"]
+357288<sh>: "/home/linuxbrew/.linuxbrew/bin/sqlite3" ["sqlite3", "/home/eddyr/assembler/.opencode/patlib.db", "PRAGMA table_info(cli)"] fd [stdout="pipe:[1335399]", stderr="pipe:[1335399]", ] with [M"SHLVL"="4", M"_"="/home/linuxbrew/.linuxbrew/bin/sqlite3"]
+357289<perl>: "/bin/sh" ["sh", "-c", "sqlite3 \"/home/eddyr/assembler/.opencode/patlib.db\" \"SELECT id, \"title\", \"body\", \"precedes\" FROM cli\" 2>&1"] fd [stdout="pipe:[1335401]", stderr="pipe:[1335396]", ] with [M"SHLVL"="3", M"_"="/usr/bin/perl"]
+357290<sh>: "/home/linuxbrew/.linuxbrew/bin/sqlite3" ["sqlite3", "/home/eddyr/assembler/.opencode/patlib.db", "SELECT id, title, body, precedes FROM cli"] fd [stdout="pipe:[1335401]", stderr="pipe:[1335401]", ] with [M"SHLVL"="4", M"_"="/home/linuxbrew/.linuxbrew/bin/sqlite3"]
+357291<perl>: "/bin/sh" ["sh", "-c", "sqlite3 \"/home/eddyr/assembler/.opencode/patlib-vector.db\" \"SELECT entity_id FROM embeddings WHERE entity_type='cli' ORDER BY entity_id\" 2>&1"] fd [stdout="pipe:[1334395]", stderr="pipe:[1335396]", ] with [M"SHLVL"="3", M"_"="/usr/bin/perl"]
+357292<sh>: "/home/linuxbrew/.linuxbrew/bin/sqlite3" ["sqlite3", "/home/eddyr/assembler/.opencode/patlib-vector.db", "SELECT entity_id FROM embeddings WHERE entity_type='cli' ORDER BY entity_id"] fd [stdout="pipe:[1334395]", stderr="pipe:[1334395]", ] with [M"SHLVL"="4", M"_"="/home/linuxbrew/.linuxbrew/bin/sqlite3"]
+357293<bash>: "/usr/bin/ls" ["ls", "/home/eddyr/assembler/.opencode/_scripts/"] fd [stdout="pipe:[1332522]", ] with [M"SHLVL"="3", M"_"="/usr/bin/ls"]
+357294<bash>: "/usr/bin/grep" ["grep", "-E", "\\.(pl|sh)$|audit"] fd [stdin="pipe:[1332522]", ] with [M"SHLVL"="3", M"_"="/usr/bin/grep"]
+# OUT_LINES: 23
+# OUT_BYTES: 753
+# ERR_LINES: 13
+# SHA: 4068b5d5d72e29ee0f6ee894ae3c4acafbb7a089eef238fef39cfd782e109b8f

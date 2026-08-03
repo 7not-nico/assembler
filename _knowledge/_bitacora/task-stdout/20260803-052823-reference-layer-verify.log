@@ -1,0 +1,17 @@
+# CMD: bash -c ls\ /home/eddyr/assembler/_knowledge/rust-docs/reference/\ \&\&\ echo\ \"---md\ tables\ check---\"\ \&\&\ rg\ -c\ \"\^\\\|\"\ /home/eddyr/assembler/_knowledge/rust-docs/reference/\*.md\ \|\|\ echo\ \"0\ md\ tables\ —\ all\ clean\" 
+# DATE: 2026-08-03T05:28:23-06:00
+# DUR: 16ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+34903<tracer>: "/usr/bin/bash" ["bash", "-c", "ls /home/eddyr/assembler/_knowledge/rust-docs/reference/ && echo \"---md tables check---\" && rg -c \"^\\|\" /home/eddyr/assembler/_knowledge/rust-docs/reference/*.md || echo \"0 md tables — all clean\""] fd []
+34904<bash>: "/usr/bin/ls" ["ls", "/home/eddyr/assembler/_knowledge/rust-docs/reference/"] fd []
+curl.md
+ebook.md
+pandoc.md
+rg.md
+tracexec.md
+unzip.md
+---md tables check---
+34905<bash>: "/usr/bin/rg" ["rg", "-c", "^\\|", "/home/eddyr/assembler/_knowledge/rust-docs/reference/curl.md", "/home/eddyr/assembler/_knowledge/rust-docs/reference/ebook.md", "/home/eddyr/assembler/_knowledge/rust-docs/reference/pandoc.md", "/home/eddyr/assembler/_knowledge/rust-docs/reference/rg.md", "/home/eddyr/assembler/_knowledge/rust-docs/reference/tracexec.md", "/home/eddyr/assembler/_knowledge/rust-docs/reference/unzip.md"] fd []
+0 md tables — all clean
+# exit: 0

@@ -1,0 +1,25 @@
+# CMD: bash ../../_bitacora/bitacora-close.sh 2026-08-03--toolchain-reference-help.md toolchain-reference-help 
+# DATE: 2026-08-03T05:28:27-06:00
+# DUR: 52ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+35093<tracer>: "/usr/bin/bash" ["bash", "../../_bitacora/bitacora-close.sh", "2026-08-03--toolchain-reference-help.md", "toolchain-reference-help"] fd []
+35095<bash>: "/usr/bin/dirname" ["dirname", "../../_bitacora/bitacora-close.sh"] fd [stdout="pipe:[147708]", ]
+35096<bash>: "/usr/bin/date" ["date", "+%Y-%m-%d"] fd [stdout="pipe:[139168]", ]
+35097<bash>: "/usr/bin/sed" ["sed", "-i", "s/^- \\[ \\]/- [x]/", "/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--toolchain-reference-help.md"] fd []
+35098<bash>: "/usr/bin/rg" ["rg", "-q", "^Status:", "/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--toolchain-reference-help.md"] fd []
+35099<bash>: "/usr/bin/sed" ["sed", "-i", "s/^Status:.*/Status: completed (2026-08-03)/", "/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--toolchain-reference-help.md"] fd []
+35101<bash>: "/usr/bin/bash" ["bash", "/home/eddyr/assembler/_knowledge/_bitacora/bitacora-create.sh", "report", "toolchain-reference-help"] fd [stdout="pipe:[146309]", ]
+35102<bash>: "/usr/bin/sed" ["sed", "s/^CREATE //"] fd [stdin="pipe:[146309]", stdout="pipe:[144742]", ]
+35104<bash>: "/usr/bin/dirname" ["dirname", "/home/eddyr/assembler/_knowledge/_bitacora/bitacora-create.sh"] fd [stdout="pipe:[147121]", ]
+35105<bash>: "/usr/bin/bash" ["bash", "/home/eddyr/assembler/_knowledge/_bitacora/bitacora-slugify.sh", "toolchain-reference-help"] fd [stdout="pipe:[146311]", ]
+35107<bash>: "/usr/bin/tr" ["tr", "[:upper:]", "[:lower:]"] fd [stdin="pipe:[146322]", stdout="pipe:[147135]", ]
+35108<bash>: "/usr/bin/tr" ["tr", "-c", "[:alnum:]", "-"] fd [stdin="pipe:[147135]", stdout="pipe:[147136]", ]
+35109<bash>: "/usr/bin/sed" ["sed", "-E", "s/-+/-/g; s/^-+//; s/-+$//"] fd [stdin="pipe:[147136]", stdout="pipe:[146311]", ]
+35110<bash>: "/usr/bin/date" ["date", "+%Y%m%d-%H%M%S"] fd [stdout="pipe:[147137]", ]
+35111<bash>: "/usr/bin/date" ["date", "+%Y-%m-%d"] fd [stdout="pipe:[139170]", ]
+35112<bash>: "/usr/bin/cat" ["cat"] fd [stdin="pipe:[139172]", stdout="/home/eddyr/assembler/_knowledge/_bitacora/task-report/20260803-052827-toolchain-reference-help.md", ]
+TODO   /home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--toolchain-reference-help.md
+REPORT /home/eddyr/assembler/_knowledge/_bitacora/task-report/20260803-052827-toolchain-reference-help.md
+NEXT   fill the report: what was done, decisions, open edges, todo state; cite task-stdout logs
+# exit: 0

@@ -1,0 +1,11 @@
+# CMD: bash -c rm\ -f\ /tmp/opencode/fidelity-check.rb\ /tmp/opencode/tracexec-help-live.txt\ /tmp/opencode/tracexec-log-help.txt\ \&\&\ echo\ \"temp\ files\ removed\"\;\ wc\ -l\ /home/eddyr/assembler/_knowledge/rust-docs/reference/tracexec.md 
+# DATE: 2026-08-03T05:38:37-06:00
+# DUR: 13ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+41621<tracer>: "/usr/bin/bash" ["bash", "-c", "rm -f /tmp/opencode/fidelity-check.rb /tmp/opencode/tracexec-help-live.txt /tmp/opencode/tracexec-log-help.txt && echo \"temp files removed\"; wc -l /home/eddyr/assembler/_knowledge/rust-docs/reference/tracexec.md"] fd []
+41622<bash>: "/usr/bin/rm" ["rm", "-f", "/tmp/opencode/fidelity-check.rb", "/tmp/opencode/tracexec-help-live.txt", "/tmp/opencode/tracexec-log-help.txt"] fd []
+temp files removed
+41621<bash>: "/usr/bin/wc" ["wc", "-l", "/home/eddyr/assembler/_knowledge/rust-docs/reference/tracexec.md"] fd []
+172 /home/eddyr/assembler/_knowledge/rust-docs/reference/tracexec.md
+# exit: 0

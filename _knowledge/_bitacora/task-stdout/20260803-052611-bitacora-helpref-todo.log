@@ -1,0 +1,16 @@
+# CMD: bash ../../_bitacora/bitacora-create.sh todo toolchain-reference-help 
+# DATE: 2026-08-03T05:26:11-06:00
+# DUR: 27ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+33052<tracer>: "/usr/bin/bash" ["bash", "../../_bitacora/bitacora-create.sh", "todo", "toolchain-reference-help"] fd []
+33054<bash>: "/usr/bin/dirname" ["dirname", "../../_bitacora/bitacora-create.sh"] fd [stdout="pipe:[139740]", ]
+33055<bash>: "/usr/bin/bash" ["bash", "/home/eddyr/assembler/_knowledge/_bitacora/bitacora-slugify.sh", "toolchain-reference-help"] fd [stdout="pipe:[137970]", ]
+33057<bash>: "/usr/bin/tr" ["tr", "[:upper:]", "[:lower:]"] fd [stdin="pipe:[140412]", stdout="pipe:[140413]", ]
+33058<bash>: "/usr/bin/tr" ["tr", "-c", "[:alnum:]", "-"] fd [stdin="pipe:[140413]", stdout="pipe:[140414]", ]
+33059<bash>: "/usr/bin/sed" ["sed", "-E", "s/-+/-/g; s/^-+//; s/-+$//"] fd [stdin="pipe:[140414]", stdout="pipe:[137970]", ]
+33060<bash>: "/usr/bin/date" ["date", "+%Y%m%d-%H%M%S"] fd [stdout="pipe:[139741]", ]
+33061<bash>: "/usr/bin/date" ["date", "+%Y-%m-%d"] fd [stdout="pipe:[139742]", ]
+33062<bash>: "/usr/bin/cat" ["cat"] fd [stdin="pipe:[140415]", stdout="/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--toolchain-reference-help.md", ]
+CREATE /home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--toolchain-reference-help.md
+# exit: 0

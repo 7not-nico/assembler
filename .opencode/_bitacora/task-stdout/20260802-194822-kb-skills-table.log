@@ -1,0 +1,157 @@
+# CMD: python3 -c $'\nimport sqlite3\nconn = sqlite3.connect(\'.opencode/patlib.db\')\nrows = conn.execute(\'SELECT id, title FROM skills ORDER BY id\').fetchall()\nprint(\'SKILLS ROWS:\', len(rows))\nfor r in rows: print(r[0], \'|\', r[1])\n' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T19:48:22-06:00
+# PID: 391532
+# DUR: 416ms
+# exit: 0
+# GIT: assembler@55903fc
+# BRANCH: main
+# SESSION: ad347b67
+# CLI: python3 Python 3.14.6
+# ARGS: -c $'\nimport sqlite3\nconn = sqlite3.connect(\'.opencode/patlib.db\')\nrows = conn.execute(\'SELECT id, title FROM skills ORDER BY id\').fetchall()\nprint(\'SKILLS ROWS:\', len(rows))\nfor r in rows: print(r[0], \'|\', r[1])\n' 
+# CWD: /home/eddyr/assembler
+# --------------------
+SKILLS ROWS: 28
+SKL.BITACORA.WORKFLOW | Bitacora Workflow
+SKL.KNOWLEDGE.LANGUAGES | Knowledge Languages
+SKL.MANAGE.BASH.FLOWS | Manage Bash Flows
+SKL.PLAYWRIGHT.DISPATCHER | Playwright Dispatcher
+SKL.REASON.INVARIANTS | Reason Invariants
+SKL.REASON.QUANTITATIVE | Reason Quantitative
+SKL.REASON.VERBAL | Reason Verbal
+SKL.REFACTOR.SKILL | Refactor Skill
+SKL.SEARCH.DISPATCHER | Search Dispatcher
+SKL.SEMANTIC.DISPATCHER | Semantic Dispatcher
+SKL.STRUCTURE.STDOUT | Structure Stdout
+SKL.STUDY.FOUNDATIONS | Study Foundations
+SKL.SURVEY.SCRIPTS | Survey Scripts
+SKL.USE.CONTEXT.SEVEN | Use Context Seven
+SKL.USE.EXA | Use Exa
+SKL.USE.PARALLEL.SEARCH | Use Parallel Search
+SKL.USE.PLAYWRIGHT.AI.MODE | Use Playwright Ai Mode
+SKL.USE.PLAYWRIGHT.CORE | Use Playwright Core
+SKL.USE.PLAYWRIGHT.DEBUG | Use Playwright Debug
+SKL.USE.PLAYWRIGHT.NETWORK.STORAGE | Use Playwright Network Storage
+SKL.USE.PLAYWRIGHT.VISION | Use Playwright Vision
+SKL.USE.SEMANTIC.DRIFT | Use Semantic Drift
+SKL.USE.SEMANTIC.EMBED | Use Semantic Embed
+SKL.USE.SEMANTIC.EVAL | Use Semantic Eval
+SKL.USE.SEMANTIC.PURGE | Use Semantic Purge
+SKL.USE.SEMANTIC.SEARCH | Use Semantic Search
+SKL.USE.SEMANTIC.STATS | Use Semantic Stats
+SKL.WORKFLOW.DISPATCHER | Workflow Dispatcher
+# OUT_LINES: 29
+# OUT_BYTES: 1244
+# ERR_LINES: 0
+# EXEC: 391532|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh kb-skills-table -- python3 -c 
+# EXEC: 391533|/usr/bin/date|date +%s%N
+# EXEC: 391537|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 391538|/usr/bin/head|head -1
+# EXEC: 391539|/usr/bin/tr|tr -d \n
+# EXEC: 391540|/usr/bin/python3|python3 --version
+# EXEC: 391541|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 391544|/usr/bin/git|git remote get-url origin
+# EXEC: 391542|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 391545|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 391547|/usr/bin/git|git branch --show-current
+# EXEC: 391549|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 391550|/usr/bin/head|head -1
+# EXEC: 391551|/usr/bin/tr|tr -d \n
+# EXEC: 391552|/usr/bin/bun|bun --version
+# EXEC: 391554|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 391555|/usr/bin/head|head -1
+# EXEC: 391556|/usr/bin/tr|tr -d \n
+# EXEC: 391557|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 391559|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 391560|/usr/bin/head|head -1
+# EXEC: 391561|/usr/bin/tr|tr -d \n
+# EXEC: 391562|/usr/bin/python3|python3 --version
+# EXEC: 391564|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 391565|/usr/bin/head|head -1
+# EXEC: 391566|/usr/bin/tr|tr -d \n
+# EXEC: 391567|/usr/bin/ruby|ruby --version
+# EXEC: 391570|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 391571|/usr/bin/head|head -1
+# EXEC: 391572|/usr/bin/tr|tr -d \n
+# EXEC: 391573|/usr/bin/rustc|rustc --version
+# EXEC: 391577|/usr/bin/head|head -1
+# EXEC: 391576|/usr/bin/timeout|timeout 2 go version
+# EXEC: 391578|/usr/bin/tr|tr -d \n
+# EXEC: 391579|/usr/bin/go|go version
+# EXEC: 391585|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 391586|/usr/bin/head|head -1
+# EXEC: 391587|/usr/bin/tr|tr -d \n
+# EXEC: 391588|/usr/bin/git|git --version
+# EXEC: 391590|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 391591|/usr/bin/head|head -1
+# EXEC: 391592|/usr/bin/tr|tr -d \n
+# EXEC: 391593|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 391595|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 391596|/usr/bin/head|head -1
+# EXEC: 391597|/usr/bin/tr|tr -d \n
+# EXEC: 391598|/usr/bin/date|date --version
+# EXEC: 391600|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 391601|/usr/bin/head|head -1
+# EXEC: 391602|/usr/bin/tr|tr -d \n
+# EXEC: 391603|/usr/bin/wc|wc --version
+# EXEC: 391605|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 391606|/usr/bin/head|head -1
+# EXEC: 391607|/usr/bin/tr|tr -d \n
+# EXEC: 391608|/usr/bin/cat|cat --version
+# EXEC: 391610|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 391611|/usr/bin/head|head -1
+# EXEC: 391612|/usr/bin/tr|tr -d \n
+# EXEC: 391613|/usr/bin/tee|tee --version
+# EXEC: 391615|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 391616|/usr/bin/head|head -1
+# EXEC: 391617|/usr/bin/tr|tr -d \n
+# EXEC: 391618|/usr/bin/mktemp|mktemp --version
+# EXEC: 391620|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 391621|/usr/bin/head|head -1
+# EXEC: 391622|/usr/bin/tr|tr -d \n
+# EXEC: 391623|/usr/bin/rm|rm --version
+# EXEC: 391625|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 391626|/usr/bin/head|head -1
+# EXEC: 391627|/usr/bin/tr|tr -d \n
+# EXEC: 391628|/usr/bin/timeout|timeout --version
+# EXEC: 391630|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 391631|/usr/bin/head|head -1
+# EXEC: 391632|/usr/bin/tr|tr -d \n
+# EXEC: 391633|/usr/bin/tr|tr --version
+# EXEC: 391635|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 391636|/usr/bin/head|head -1
+# EXEC: 391637|/usr/bin/tr|tr -d \n
+# EXEC: 391638|/usr/bin/head|head --version
+# EXEC: 391640|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 391641|/usr/bin/head|head -1
+# EXEC: 391642|/usr/bin/tr|tr -d \n
+# EXEC: 391643|/usr/bin/cut|cut --version
+# EXEC: 391645|/usr/bin/date|date +%s%N
+# EXEC: 391646|/usr/bin/sha256sum|sha256sum
+# EXEC: 391647|/usr/bin/cut|cut -c1-8
+# EXEC: 391649|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-194822-kb-skills-table.log
+# EXEC: 391650|/usr/bin/date|date -Is
+# EXEC: 391651|/usr/bin/mktemp|mktemp
+# EXEC: 391652|/usr/bin/mktemp|mktemp
+# EXEC: 391653|/usr/bin/python3|python3 -c 
+# EXEC: 391655|/usr/bin/wc|wc -l
+# EXEC: 391656|/usr/bin/tr|tr -d  
+# EXEC: 391659|/usr/bin/tr|tr -d  
+# EXEC: 391658|/usr/bin/wc|wc -c
+# EXEC: 391661|/usr/bin/wc|wc -l
+# EXEC: 391662|/usr/bin/tr|tr -d  
+# EXEC: 391663|/usr/bin/date|date +%s%N
+# EXEC: 391665|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-194822-kb-skills-table.log
+# EXEC: 391667|/usr/bin/cat|cat /tmp/tmp.JSYkNYsEGl
+# EXEC: 391668|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-194822-kb-skills-table.log
+# EXEC: 391669|/usr/bin/cat|cat /tmp/tmp.xPMsds7sSI
+# EXEC: 391670|/usr/bin/cat|cat /tmp/tmp.xPMsds7sSI
+# EXEC: 391671|/usr/bin/rm|rm -f /tmp/tmp.JSYkNYsEGl /tmp/tmp.xPMsds7sSI
+# EXEC: 391673|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-194822-kb-skills-table.log
+# EXEC: 391675|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-194822-kb-skills-table.log
+# EXEC: 391677|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-194822-kb-skills-table.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 107
+# SHA: de285cd92c49f36d74837e5078ac91ded333986dce558eb8a64267d5b304703e
+# exit: 0

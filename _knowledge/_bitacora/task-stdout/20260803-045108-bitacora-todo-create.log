@@ -1,0 +1,6 @@
+# CMD: bash ../../_bitacora/bitacora-create.sh todo rust-book-epub-script 
+# DATE: 2026-08-03T04:51:08-06:00
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+CREATE /home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--rust-book-epub-script.md
+# exit: 0

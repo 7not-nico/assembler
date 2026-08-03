@@ -1,0 +1,392 @@
+# CMD: bash -c $'\nfor f in _knowledge/rust-docs/rings/*.md; do\n  echo "=====$(basename $f)====="\n  head -60 "$f"\n  echo\ndone' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:32:32-06:00
+# PID: 435712
+# DUR: 403ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 37ea6698
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\nfor f in _knowledge/rust-docs/rings/*.md; do\n  echo "=====$(basename $f)====="\n  head -60 "$f"\n  echo\ndone' 
+# CWD: /home/eddyr/assembler
+# --------------------
+=====SPEC.CODE.ELEMENT.NAME.md=====
+**Code Element Name** — each element type follows one name convention. The convention sets noun class (abstract or concrete), element order, and agentive suffix pattern.
+
+## Noun classification
+
+Code element names resolve into two noun classes.
+
+**Abstract noun** — a concept, category, or relation; not sensorily-perceivable. Denotes what a thing *is*.
+
+**Concrete noun** — a physical, sensorily-perceivable entity. Denotes a specific, observable thing.
+
+## Element rules
+
+### Struct / Class
+
+One word, singular abstract noun, Upper case (PascalCase). Names the concept, not the instance.
+
+- Valid: `Processor`, `Repository`, `Factory`, `Registry`, `Engine`, `Pipeline`, `Context`, `Driver`
+- Invalid: `Processors` (plural), `data_handler` (snake_case, concrete noun), `processor` (lowercase)
+
+### Function
+
+One word, singular concrete noun, lowercase. Names a specific, observable thing the function operates on or returns.
+
+- Valid: `data`, `socket`, `buffer`, `key`, `handle`, `pool`, `record`, `item`
+- Invalid: `processData` (two words, verb-led), `processor` (agentive noun), `Parser` (Upper case)
+
+### Method
+
+One or two words, camelCase. When two words: first word is an optional concrete noun (the subject matter), second word is an agentive noun from verb root + `{vowel}r` suffix — names "one who performs the action" on that subject. When one word: agentive noun alone — subject is implicit in the struct receiver.
+
+**Pattern:** `[subjectNoun] + agentiveNoun`
+
+**Subject noun omitted when:** the concrete noun equals an existing function name (shadow prevention). The struct receiver provides the implied subject context.
+
+**Agentive suffix `{vowel}r`** — the verb root plus a vowel (`a`, `e`, `i`, `o`, `u`, `y`) followed by `r`:
+
+- `-er` — Germanic/common verbs: `parse→Parser`, `compile→Compiler`, `render→Renderer`, `build→Builder`, `encode→Encoder`, `decode→Decoder`, `cache→Cacher`
+- `-or` — Latinate verbs: `validate→Validator`, `process→Processor`, `connect→Connector`, `inspect→Inspector`, `aggregate→Aggregator`, `compute→Computer`
+- `-ar` — limited set: `lie→Liar`
+- `-ier` — verbs ending in `-y`: `copy→Copier`, `deny→Denier`, `amplify→Amplifier`
+- `-yer` — limited set: `say→Sayer`, `pay→Payer`
+
+Valid (two words): `entryParser`, `streamValidator`, `socketConnector`, `bufferCompiler`, `keyBuilder`, `poolInspector`
+
+Valid (one word, subject dropped): `parser`, `validator`, `connector`, `compiler`, `builder`, `inspector`
+
+Invalid: `parseData` (verb-led imperative), `dataParsing` (gerund), `dataValidation` (non-agentive derived noun), `dataParse` (bare infinitive, no agentive suffix), `dataParsers` (plural agentive)
+
+### Variable
+
+One word, singular concrete descriptor, lowercase. No verbs. The declaration sits at file top.
+
+- Valid: `index`, `count`, `handle`, `path`, `label`, `limit`, `port`, `size`
+- Invalid: `counter` (agentive noun), `itemList` (two words), `theIndex` (article prefix), `getIndex` (verb prefix)
+
+### Constant
+
+One word, singular abstract descriptor, Upper case (PascalCase). No verbs.
+
+- Valid: `MaxRetry`, `BufferSize`, `DefaultPort`, `Timeout`, `BaseUrl`
+
+=====SPEC.CODE.RING.TOPOLOGY.md=====
+**Code Ring Topology** — every script under `.opencode/_scripts/` belongs to one of seven ordinal rings by I/O type. Inner rings transform data purely; outer rings operate on I/O. Ring order governs dependency direction: scripts verify in ring order (innermost→outermost) and execute in reverse ring order (outermost→innermost).
+
+## Rings
+
+Ring 0 — PURE. Transforms data; no I/O, no side effects. Scripts carry the `r0-*` prefix.
+
+Ring 1 — DB-READ. Reads entity metadata from the SQLite schema database. No filesystem access beyond the DB. Scripts carry the `r1-*` prefix.
+
+Ring 2 — LOCAL-READ. Reads entity files from `.opencode/entities/`. Resolves cross-file references. Scripts carry the `r2-*` prefix.
+
+Ring 3 — REMOTE-READ. Analyzes across entity types; dumps in bulk. Reads from multiple sources. Scripts carry the `r3-*` prefix.
+
+Ring 4 — LOCAL-WRITE. Writes output files to `.opencode/entities/`. Scripts carry the `r4-*` prefix.
+
+Ring 5 — REMOTE-WRITE. Writes to remote systems, network calls, external APIs. Scripts carry the `r5-*` prefix.
+
+Ring 6 — DB-WRITE. Writes to the patlib database. Mutates the persistent store. Scripts carry the `r6-*` prefix.
+
+## Ring constraints
+
+- Scripts verify in ring order innermost→outermost: R0 validates before R1, R1 before R2, and so on through R6
+- Scripts execute in reverse ring order outermost→innermost: R6 calls R5, R5 calls R4, and so on inward. Inner rings never call outer rings
+- A script at ring N imports from `_rb/` modules (always ring 0) or from files at the same or inward ring
+
+## Code modules
+
+`_rb/` modules are ring 0 (PURE) — lambdas only, no I/O, no side effects. Every `r*` script imports from `_rb/` modules. No `_rb/` module imports another `_rb/` module — they are independent silos; `r*` scripts compose them.
+
+## Applicability
+
+All scripts under `.opencode/_scripts/` and all code files. Ring annotations (`# ring: N`) in script headers align with filename prefixes.
+
+---
+id: SPEC.CODE.RING.TOPOLOGY
+title: Code Ring Topology — Script Rings and Verification Order
+source: assembler
+summary: "Seven code rings govern script dependency and verification: R0 PURE → R6 DB-WRITE. Scripts verify inward→outward. Scripts execute outward→inward."
+specifies: Seven ordinal code rings (R0 PURE → R6 DB-WRITE)
+tags: [code, ring, topology, script, verification, purity, specification]
+status: active
+---
+
+=====SPEC.DIRECTORY.RING.TOPOLOGY.md=====
+**Directory Ring Topology** — every folder in the assembler belongs to one of four ordinal rings by position and underscore prefix. Ring 0 is the assembler root. Ring 1 holds domain folders that carry an underscore prefix directly in the root. Ring 2 holds folders that carry an underscore prefix inside a domain. Ring 3 holds plain folders inside a domain. The underscore prefix carries the ring signal.
+
+## R0
+
+- Assembler root — the top-level directory
+- Infrastructure as code — `.opencode/` with tooling, rules, and scripts, plus `.opencode/entities/` as the entity store
+- Shared `node_modules/` — serves all subprojects; root-level resolution shadows child folders when versions diverge
+- Shared `.playwright-mcp/` — serves all rings; browser automation state, downloads, and snapshots from every ring land here
+- Root files — `AGENTS.md`, `opencode.json`, `.gitignore`
+
+## R1
+
+- Domain folders — folders that carry an underscore prefix directly in the root: `_codex/`, `_knowledge/`, `_depot/`, `_trove/`, `_atelier/`
+- The underscore prefix marks a domain
+
+## R2
+
+- Domain infrastructure — folders that carry an underscore prefix inside a domain: `_codex/_templates/`, `_codex/_bitacora/`, `_knowledge/_templates/`
+- The underscore prefix marks infrastructure and records
+- Ring-2 record folders follow the `{?}-{concrete noun}` naming convention — `task-audit/`, `task-plan/`, `task-reference/`, `task-report/`, `task-survey/`, `task-todo/`. Every subfolder pairs a class prefix with a concrete noun; a bare noun or a bare prefix is invalid.
+
+## R3
+
+- Domain projects — plain folders inside a domain: `_codex/snes9x-repo/`, `_knowledge/rust-coding/`, `_atelier/one-timers/`
+- A plain name marks a project or content folder
+
+## Ring constraints
+
+- The underscore prefix signals the ring: R1 and R2 use underscores; R3 uses plain names. A folder never mixes the signals.
+- Scripts at the assembler root live inside `.opencode/_scripts/` — a root-level `scripts/` folder is invalid placement. The code ring system classifies every script inside it.
+- Ring order governs governance: R0 root instructions govern; R1 domains follow; R2 infrastructure serves the domain; R3 projects sit at the leaves.
+- A ring-3 project may carry its own AGENTS.md; the project instructions describe the project alone, per SPEC.AGENTS.SELF.CONTAINED.
+- The code ring system governs what lives inside `.opencode/_scripts/`; this ring system governs where folders sit.
+
+## Applicability
+
+All directory placement in the assembler: domain creation, infrastructure folders, and project folders.
+
+---
+id: SPEC.DIRECTORY.RING.TOPOLOGY
+title: Directory Ring Topology — R0 Root, R1 Domains, R2 Infrastructure, R3 Projects
+source: assembler
+summary: "Four ordinal directory rings govern folder placement: R0 assembler root, R1 domains that carry an underscore prefix in the root, R2 infrastructure that carries an underscore prefix inside domains, R3 plain project folders inside domains. The underscore prefix carries the ring signal."
+specifies: Four ordinal directory rings for folder placement
+tags: [directory, ring, topology, folder, placement, domain, specification]
+status: active
+---
+
+=====SPEC.KNOWLEDGE.CLASSIFICATION.TOPOLOGY.md=====
+**Knowledge Classification** — five topological spaces with ordinal rings. Each group has its own ring topology. Axiomatic entities are the formal foundation. Composition entities form the morphism pipeline.
+
+## Groups
+
+### Axiomatic
+
+```
+Ring 0: Maxim, Precept, Specification
+Ring 1: Identity
+Ring 2: Abstraction, Algorithm, Linguistic
+```
+
+- Maxims are orthogonal — no `precedes` between maxims, abstraction formalizes mathematical concepts, algorithm specifies mathematical procedures, linguistic encodes notation and language semantics.
+
+### Encyclopedic
+
+```
+Ring 0: Etymology
+Ring 1: Cognition
+Ring 2: Concept, Definition, Corpus
+Ring 3: Term
+Ring 4: Specialty
+```
+
+- Encyclopedic source points to the closest preceding entity — same ring when the chain continues, inner ring when the chain ends.
+
+### Composition
+
+```
+Ring 0: Protocol
+Ring 1: Pattern
+Ring 2: Nexus
+Ring 3: Illustration, Reference
+```
+
+- Protocol precedes Pattern, Pattern precedes Nexus, the morphism pipeline: protocol describes, pattern prescribes, nexus composes, illustration documents.
+
+### Architectonic
+
+```
+Ring 0: Agent
+Ring 1: Tool
+Ring 2: Command, Skill
+Ring 3: Rule
+
+```
+
+- Tool is the executable primitive, Command and Skill compose tools into workflows, Rule governs commands and skills.
+
+### Chronicle
+
+```
+Ring 0: Person
+Ring 1: Investigation, Apologia, Manifest
+Ring 2: Archive, Note
+```
+
+- Chronicle source points to any ring of any other group.
+
+
+
+=====SPEC.LANGUAGE.RING.TOPOLOGY.md=====
+**Language Ring Topology** — four language rings order the pattern design by capability. Lower rings sit inward; higher rings sit outward. Ordinal precedence governs the design: r0 → r1 → r2 → r3. Design starts at the innermost ring (r0 bash). Design moves one ring outward when the current ring does not suffice. Ring r3 (go and rust) terminates the chain.
+
+## Rings
+
+```
+r0  bash        innermost ring — the design base
+r1  ruby        scripts tied to a schema
+r2  typescript  OpenCode extension
+r3  go + rust   outermost ring — the capability terminus
+```
+
+Ring r0 (bash) forms imperative shells. The shells wrap tool wrappers, launch pipelines, and command sequences. Ring r0 holds the design base.
+
+Ring r1 (ruby) processes scripts tied to a schema. The scripts read and write through SQL schemas. Functional style governs the code. Ruby serves when bash lacks logic that models data.
+
+Ring r2 (typescript) extends OpenCode functionality. IPC tools, plugins, and MCP servers live under `.opencode/tools/`. The tools use shared `_lib/` modules. Typed boundaries wrap the imperative shell.
+
+Ring r3 (go and rust) powers systems and high-performance logic. ANN backends, binary transports, and computational kernels form the core. Go serves concurrency and compile speed. Rust serves speed and safety. Ring r3 holds the capability terminus.
+
+## Ordinal precedence
+
+The chain r0 → r1 → r2 → r3 governs the design. Lower rings sit inward; higher rings sit outward. Design starts at the innermost ring that suffices — r0 first. Design moves one ring outward when the current ring does not suffice. A pattern rests at the lowest (innermost) ring that satisfies its task.
+
+## Escalation rule
+
+Design starts at r0. Design moves to r1 when r0 does not suffice. Design continues ring by ring to r3. Ring r3 terminates the chain. No ring beyond it exists.
+
+## Applicability
+
+All pattern design in the workspace: tool creation, scripts that automate, and core-logic builds.
+
+---
+id: SPEC.LANGUAGE.RING.TOPOLOGY
+title: Language Ring Topology — r0 Bash Inward to r3 Go/Rust Outward
+source: assembler
+summary: "Four language rings order the pattern design by capability: r0 bash, r1 ruby, r2 typescript, r3 go and rust. Lower rings sit inward; higher rings sit outward. Ordinal precedence r0→r3 governs the design; patterns start at the innermost ring and move one ring outward when the current ring does not suffice. Ring r3 terminates the chain."
+specifies: Four ordinal language rings with inward-to-outward escalation for pattern design
+tags: [language, ring, topology, escalation, bash, ruby, typescript, go, rust, specification]
+status: active
+---
+
+# OUT_LINES: 258
+# OUT_BYTES: 13103
+# ERR_LINES: 0
+# EXEC: 435712|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh ring-spec-read -- bash -c 
+# EXEC: 435713|/usr/bin/date|date +%s%N
+# EXEC: 435716|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 435719|/usr/bin/git|git remote get-url origin
+# EXEC: 435717|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 435720|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 435722|/usr/bin/git|git branch --show-current
+# EXEC: 435724|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 435725|/usr/bin/head|head -1
+# EXEC: 435726|/usr/bin/tr|tr -d \n
+# EXEC: 435727|/usr/bin/bun|bun --version
+# EXEC: 435729|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 435730|/usr/bin/head|head -1
+# EXEC: 435731|/usr/bin/tr|tr -d \n
+# EXEC: 435732|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 435734|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 435735|/usr/bin/head|head -1
+# EXEC: 435736|/usr/bin/tr|tr -d \n
+# EXEC: 435737|/usr/bin/python3|python3 --version
+# EXEC: 435740|/usr/bin/head|head -1
+# EXEC: 435741|/usr/bin/tr|tr -d \n
+# EXEC: 435739|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 435742|/usr/bin/ruby|ruby --version
+# EXEC: 435745|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 435746|/usr/bin/head|head -1
+# EXEC: 435747|/usr/bin/tr|tr -d \n
+# EXEC: 435748|/usr/bin/rustc|rustc --version
+# EXEC: 435751|/usr/bin/timeout|timeout 2 go version
+# EXEC: 435752|/usr/bin/head|head -1
+# EXEC: 435753|/usr/bin/tr|tr -d \n
+# EXEC: 435754|/usr/bin/go|go version
+# EXEC: 435760|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 435761|/usr/bin/head|head -1
+# EXEC: 435762|/usr/bin/tr|tr -d \n
+# EXEC: 435763|/usr/bin/git|git --version
+# EXEC: 435765|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 435766|/usr/bin/head|head -1
+# EXEC: 435767|/usr/bin/tr|tr -d \n
+# EXEC: 435768|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 435770|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 435771|/usr/bin/head|head -1
+# EXEC: 435772|/usr/bin/tr|tr -d \n
+# EXEC: 435773|/usr/bin/date|date --version
+# EXEC: 435775|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 435776|/usr/bin/head|head -1
+# EXEC: 435777|/usr/bin/tr|tr -d \n
+# EXEC: 435778|/usr/bin/wc|wc --version
+# EXEC: 435780|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 435781|/usr/bin/head|head -1
+# EXEC: 435782|/usr/bin/tr|tr -d \n
+# EXEC: 435783|/usr/bin/cat|cat --version
+# EXEC: 435785|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 435786|/usr/bin/head|head -1
+# EXEC: 435787|/usr/bin/tr|tr -d \n
+# EXEC: 435788|/usr/bin/tee|tee --version
+# EXEC: 435790|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 435791|/usr/bin/head|head -1
+# EXEC: 435792|/usr/bin/tr|tr -d \n
+# EXEC: 435793|/usr/bin/mktemp|mktemp --version
+# EXEC: 435795|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 435796|/usr/bin/head|head -1
+# EXEC: 435797|/usr/bin/tr|tr -d \n
+# EXEC: 435798|/usr/bin/rm|rm --version
+# EXEC: 435800|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 435801|/usr/bin/head|head -1
+# EXEC: 435802|/usr/bin/tr|tr -d \n
+# EXEC: 435803|/usr/bin/timeout|timeout --version
+# EXEC: 435805|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 435806|/usr/bin/head|head -1
+# EXEC: 435807|/usr/bin/tr|tr -d \n
+# EXEC: 435808|/usr/bin/tr|tr --version
+# EXEC: 435810|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 435811|/usr/bin/head|head -1
+# EXEC: 435812|/usr/bin/tr|tr -d \n
+# EXEC: 435813|/usr/bin/head|head --version
+# EXEC: 435815|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 435816|/usr/bin/head|head -1
+# EXEC: 435817|/usr/bin/tr|tr -d \n
+# EXEC: 435818|/usr/bin/cut|cut --version
+# EXEC: 435820|/usr/bin/date|date +%s%N
+# EXEC: 435821|/usr/bin/sha256sum|sha256sum
+# EXEC: 435822|/usr/bin/cut|cut -c1-8
+# EXEC: 435824|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203232-ring-spec-read.log
+# EXEC: 435825|/usr/bin/date|date -Is
+# EXEC: 435826|/usr/bin/mktemp|mktemp
+# EXEC: 435827|/usr/bin/mktemp|mktemp
+# EXEC: 435828|/usr/bin/bash|bash -c 
+# EXEC: 435829|/usr/bin/basename|basename _knowledge/rust-docs/rings/SPEC.CODE.ELEMENT.NAME.md
+# EXEC: 435830|/usr/bin/head|head -60 _knowledge/rust-docs/rings/SPEC.CODE.ELEMENT.NAME.md
+# EXEC: 435831|/usr/bin/basename|basename _knowledge/rust-docs/rings/SPEC.CODE.RING.TOPOLOGY.md
+# EXEC: 435832|/usr/bin/head|head -60 _knowledge/rust-docs/rings/SPEC.CODE.RING.TOPOLOGY.md
+# EXEC: 435833|/usr/bin/basename|basename _knowledge/rust-docs/rings/SPEC.DIRECTORY.RING.TOPOLOGY.md
+# EXEC: 435834|/usr/bin/head|head -60 _knowledge/rust-docs/rings/SPEC.DIRECTORY.RING.TOPOLOGY.md
+# EXEC: 435835|/usr/bin/basename|basename _knowledge/rust-docs/rings/SPEC.KNOWLEDGE.CLASSIFICATION.TOPOLOGY.md
+# EXEC: 435836|/usr/bin/head|head -60 _knowledge/rust-docs/rings/SPEC.KNOWLEDGE.CLASSIFICATION.TOPOLOGY.md
+# EXEC: 435837|/usr/bin/basename|basename _knowledge/rust-docs/rings/SPEC.LANGUAGE.RING.TOPOLOGY.md
+# EXEC: 435838|/usr/bin/head|head -60 _knowledge/rust-docs/rings/SPEC.LANGUAGE.RING.TOPOLOGY.md
+# EXEC: 435840|/usr/bin/wc|wc -l
+# EXEC: 435841|/usr/bin/tr|tr -d  
+# EXEC: 435843|/usr/bin/wc|wc -c
+# EXEC: 435844|/usr/bin/tr|tr -d  
+# EXEC: 435846|/usr/bin/wc|wc -l
+# EXEC: 435847|/usr/bin/tr|tr -d  
+# EXEC: 435848|/usr/bin/date|date +%s%N
+# EXEC: 435850|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203232-ring-spec-read.log
+# EXEC: 435852|/usr/bin/cat|cat /tmp/tmp.Y23KceKGi4
+# EXEC: 435853|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203232-ring-spec-read.log
+# EXEC: 435854|/usr/bin/cat|cat /tmp/tmp.09K2yMWjh3
+# EXEC: 435855|/usr/bin/cat|cat /tmp/tmp.09K2yMWjh3
+# EXEC: 435856|/usr/bin/rm|rm -f /tmp/tmp.Y23KceKGi4 /tmp/tmp.09K2yMWjh3
+# EXEC: 435858|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203232-ring-spec-read.log
+# EXEC: 435860|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203232-ring-spec-read.log
+# EXEC: 435862|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203232-ring-spec-read.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 113
+# SHA: d097361b6f2231861d85c6bd35ae176d835a6aeceaef9636dbff39d2b1dedecf
+# exit: 0

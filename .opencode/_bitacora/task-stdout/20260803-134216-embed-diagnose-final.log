@@ -1,0 +1,19 @@
+# CMD: perl -c /tmp/opencode/embed-diagnose.pl 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:42:16-06:00
+# PID: 354694
+# DUR: 88ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 31ec2dec
+# CLI: perl unknown
+# ARGS: -c /tmp/opencode/embed-diagnose.pl 
+# CWD: /home/eddyr/assembler
+# --------------------
+/tmp/opencode/embed-diagnose.pl syntax OK
+# OUT_LINES: 0
+# OUT_BYTES: 0
+# ERR_LINES: 1
+# SHA: a4c751f76054e5a4c9c27eba621a727f85d15209f84a95dd7b08d4fc627eabb3

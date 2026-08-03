@@ -1,0 +1,52 @@
+# CMD: bash -c git\ -C\ /home/eddyr/assembler\ status\ --short\ \|\ head\ -40\;\ echo\ \"---new\ untracked\ in\ rust-docs---\"\;\ git\ -C\ /home/eddyr/assembler\ status\ --short\ _knowledge/rust-docs/\ \|\ head\ -30 
+# DATE: 2026-08-03T05:30:45-06:00
+# DUR: 31ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+36642<tracer>: "/usr/bin/bash" ["bash", "-c", "git -C /home/eddyr/assembler status --short | head -40; echo \"---new untracked in rust-docs---\"; git -C /home/eddyr/assembler status --short _knowledge/rust-docs/ | head -30"] fd []
+36643<bash>: "/usr/bin/git" ["git", "-C", "/home/eddyr/assembler", "status", "--short"] fd [stdout="pipe:[153782]", ]
+36644<bash>: "/usr/bin/head" ["head", "-40"] fd [stdin="pipe:[153782]", ]
+ M .gitignore
+ M .opencode/_bitacora/task-todo/skills-format-standardize.md
+ M .opencode/agents/lambda.md
+ M .opencode/commands/anchor-workflow.md
+ M .opencode/commands/yamls/anchor-workflow.yaml
+ M .opencode/entities/abstractions/ABS.ALPHA.CONVERSION.md
+ M .opencode/entities/identities/IDENTITY.BITACORA.md
+ M .opencode/entities/identities/IDENTITY.RULE.md
+ M .opencode/entities/illustrations/ILL.PROTOCOL.STRUCTURE.md
+ D .opencode/entities/notes/spec-audit-case-sensitive.md
+ D .opencode/entities/patterns/PAT.LLM.ADVANCED.md
+ D .opencode/entities/patterns/PAT.LLM.CONTENT.md
+ D .opencode/entities/protocols/PROT.LLM.SPECIFICATION.md
+ M .opencode/entities/protocols/PROT.MCP.TRANSPORT.md
+ M .opencode/entities/protocols/PROT.META.DOMAIN.md
+ M .opencode/entities/protocols/PROT.META.IDENTITY.md
+ M .opencode/entities/protocols/PROT.SKILL.SCHEMA.md
+ M .opencode/entities/specifications/SPEC.KNOWLEDGE.CLASSIFICATION.TOPOLOGY.md
+ M .opencode/skills/.template/SKILL.md
+ D .opencode/skills/bitacora-workflow/SKILL.md
+ D .opencode/skills/manage-bash-flows/SKILL.md
+ M .opencode/skills/refactor-skill/SKILL.md
+ D .opencode/skills/structure-stdout/SKILL.md
+ D .opencode/skills/survey-scripts/SKILL.md
+ D .opencode/skills/use-context-seven/SKILL.md
+ D .opencode/skills/use-exa/SKILL.md
+ D .opencode/skills/use-parallel-search/SKILL.md
+ D .opencode/tools/_disabled/audit-skills.ts
+ D _codex/_bitacora/task-report/20260802-192218-codex-templates-update.md
+ M _codex/_bitacora/task-todo/20260802-192218-codex-templates-update.md
+ M _codex/_templates/dive-agents-template.md
+ M _knowledge/_templates/AGENTS.md
+ M _knowledge/_templates/AGENTS.template.md
+ D _knowledge/_templates/_rustlib/.gitkeep
+ D _knowledge/_templates/_rustlib/Cargo.lock
+ D _knowledge/_templates/_rustlib/Cargo.toml
+ D _knowledge/_templates/_rustlib/src/lib.rs
+ D _knowledge/_templates/_rustlib/src/main.rs
+ D _knowledge/_templates/_rustlib/src/r0-index.rs
+ D _knowledge/_templates/_rustlib/src/r0-vector.rs
+---new untracked in rust-docs---
+36651<bash>: "/usr/bin/git" ["git", "-C", "/home/eddyr/assembler", "status", "--short", "_knowledge/rust-docs/"] fd [stdout="pipe:[153783]", ]
+36652<bash>: "/usr/bin/head" ["head", "-30"] fd [stdin="pipe:[153783]", ]
+# exit: 0

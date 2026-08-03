@@ -1,0 +1,10 @@
+# CMD: bash -c mkdir\ -p\ /tmp/opencode/rust-book-test\ \&\&\ cd\ /tmp/opencode/rust-book-test\ \&\&\ ruby\ /home/eddyr/assembler/_knowledge/rust-docs/script/fetch-epub.rb\ \&\&\ ls\ -la\ rust-book.epub 
+# DATE: 2026-08-03T04:57:40-06:00
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+[WARNING] Duplicate identifier 'the-rust-programming-language' at input line 185 column 153
+EPUB=rust-book.epub
+SIZE=1518517
+IMAGES=28
+-rw-r--r-- 1 eddyr eddyr 1518517 Aug  3 04:57 rust-book.epub
+# exit: 0

@@ -1,15 +1,15 @@
-**Language Ring Topology** — four language rings order the pattern design by capability. Lower rings sit inward; higher rings sit outward. Ordinal precedence governs the design: r0 → r1 → r2 → r3. Design starts at the innermost ring (r0 bash). Design moves one ring outward when the current ring does not suffice. Ring r3 (go and rust) terminates the chain.
+**Language Ring Topology** — four language rings order the pattern design by capability. Lower rings sit inward; higher rings sit outward. Ordinal precedence governs the design: r0 → r1 → r2 → r3. Design starts at the innermost ring (r0 bash). Design moves one ring outward when the current ring does not suffice. Ring r3 (go and rust) terminates the chain. Before moving into an outer Ring, ask for input on how to proceed.
 
 ## Rings
 
 ```
-r0  bash        innermost ring — the design base
+r0  bash + perl      innermost ring — the design base
 r1  ruby        scripts tied to a schema
 r2  typescript  OpenCode extension
 r3  go + rust   outermost ring — the capability terminus
 ```
 
-Ring r0 (bash) forms imperative shells. The shells wrap tool wrappers, launch pipelines, and command sequences. Ring r0 holds the design base.
+Ring r0 (bash and perl) forms imperative shells. The shells wrap tool wrappers, launch pipelines, and command sequences. Ring r0 holds the design base.
 
 Ring r1 (ruby) processes scripts tied to a schema. The scripts read and write through SQL schemas. Functional style governs the code. Ruby serves when bash lacks logic that models data.
 

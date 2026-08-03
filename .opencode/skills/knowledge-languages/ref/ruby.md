@@ -9,6 +9,13 @@
 - Compose pure functions; keep side effects light.
 - House fixtures under `.opencode/_scripts/fixtures`.
 
+**Format** — format before new work:
+
+- Run `standardrb --fix` on the file when present; install with `gem install standard`.
+- Run `rubocop -A` when standard misses; install with `gem install rubocop`.
+- Fall back to manual cleanup when both miss: align two-space indents, strip trailing whitespace, keep line length under 100.
+- Syntax-check with `ruby -c {file}` after cleanup; a clean parse precedes new code.
+
 **Naming** — `SPEC.CODE.ELEMENT.NAME` governs (Ruby: method):
 
 - Name the method camelCase with `[subjectNoun] + agentiveNoun`; the agentive joins the verb root with `{vowel}r`; drop the subject when it shadows a function name.

@@ -1,0 +1,36 @@
+# CMD: bash -c ls\ /home/eddyr/assembler/.opencode/_bitacora/task-todo/\ \|\ tail\ -5\;\ echo\ \"---\"\;\ ls\ /home/eddyr/assembler/.opencode/_bitacora/task-stdout/\ \|\ grep\ -E\ \"agents-\|skills-\"\ \|\ tail\ -12 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:08:39-06:00
+# PID: 322198
+# DUR: 83ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 0aab0372
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c ls\ /home/eddyr/assembler/.opencode/_bitacora/task-todo/\ \|\ tail\ -5\;\ echo\ \"---\"\;\ ls\ /home/eddyr/assembler/.opencode/_bitacora/task-stdout/\ \|\ grep\ -E\ \"agents-\|skills-\"\ \|\ tail\ -12 
+# CWD: /home/eddyr/assembler
+# --------------------
+TODO-seed-schema-plugin-hooks.md
+TODO-shared-deps-functional-core-cli-shell.md
+TODO-terminology-hooks-and-fswatch.md
+vector-search-audit.md
+vector-search-verified.md
+---
+20260803-125528-agents-tbl-residual.log
+20260803-125543-agents-backup-compare.log
+20260803-125617-agents-restore-backup.log
+20260803-125815-agents-convert-fixed.log
+20260803-125827-agents-table-integrity.log
+20260803-125834-agents-final-audit.log
+20260803-125846-agents-residual-mech.log
+20260803-125920-agents-convert-pass2b.log
+20260803-130623-agents-strip-periods.log
+20260803-130630-agents-audit-post-periods.log
+20260803-130800-agents-final-verify.log
+20260803-130839-agents-conv-report.log
+# OUT_LINES: 18
+# OUT_BYTES: 666
+# ERR_LINES: 0
+# SHA: 5b01a33a2a619c0a32fcc66076f5b9cee67deeb47ff3db88171b51f497147e49

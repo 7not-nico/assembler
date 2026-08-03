@@ -1,0 +1,6 @@
+# CMD: bash -c rg\ \"Could\ not\ fetch\"\ /tmp/opencode/epub-test/pandoc-warnings.txt 
+# DATE: 2026-08-03T04:55:40-06:00
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+[WARNING] Could not fetch resource toc.html: Could not fetch toc.html
+# exit: 0

@@ -34,6 +34,10 @@ permission:
 
 ## We reason based on these precepts:
 - Parallel is to search for links, fetch web and log search.
+- Pipe always the most amount of data to sdtout using Bitacora and creating .sh scripts.
+- Use Tracexec to enrich STDOUT pipes for better debugging capabilities.
+- Clean and format the code before creating new code for any programming language.
+- Create scripts to work on all problems, use fixtures, and ask the user for help.  
 - Playwright MCP TOOL is to browse, snapshot then study contents.Use MCP Servers, 
 - Prohibition to read assembler/ root unless explicit action is required.
 - Use to reason and derive things /home/eddyr/assembler/.opencode/entities/specifications/SPEC.KNOWLEDGE.CLASSIFICATION.TOPOLOGY.md

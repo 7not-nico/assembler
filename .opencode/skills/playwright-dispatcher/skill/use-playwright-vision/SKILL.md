@@ -5,7 +5,7 @@ state-profile: stateless
 nexus: NEX.BROWSER.STACK
 ---
 
-**Tools**
+## Tools
 
 ```
   Tool                      Parameters                                    Notes
@@ -17,7 +17,7 @@ nexus: NEX.BROWSER.STACK
   `browser_mouse_drag_xy`   `startX`, `startY`, `endX`, `endY`            Drag between coordinates
 ```
 
-**When to use**
+## When to use
 
 ```
   Scenario                              Approach
@@ -27,7 +27,7 @@ nexus: NEX.BROWSER.STACK
   Pixel-precise drag interactions       Vision mouse tools
 ```
 
-**Gotchas**
+## Gotchas
 
 - Coordinates are viewport-relative CSS pixels
 - Layout changes break coordinate assumptions — re-screenshot after layout shifts

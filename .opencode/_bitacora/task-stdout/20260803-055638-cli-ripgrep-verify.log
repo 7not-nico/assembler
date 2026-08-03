@@ -1,0 +1,148 @@
+# CMD: cat .opencode/entities/cli/CLI.RIPGREP.md 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T05:56:38-06:00
+# PID: 56241
+# DUR: 387ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: e3c40b7e
+# CLI: cat cat (GNU coreutils) 9.11
+# ARGS: .opencode/entities/cli/CLI.RIPGREP.md 
+# CWD: /home/eddyr/assembler
+# --------------------
+**Ripgrep** — a recursive regex search tool written in Rust by Andrew Gallant (BurntSushi), first released in 2016. It searches the current directory by default, respects `.gitignore` and `.ignore` rules, and writes matching lines to stdout with colorized output. The name combines "rip" — meaning fast, as in to rip through text — with "grep" to signal its speed.
+
+Ripgrep uses the Rust `regex` crate with SIMD optimizations, which places it among the fastest line-oriented search tools. It supports PCRE2 via the `-P` flag, smart case detection with `-S`, and JSON output with `--json` for programmatic consumption. VS Code embeds it as its default search engine. It ignores binary files and respects gitignore semantics automatically.
+
+---
+id: CLI.RIPGREP
+title: Ripgrep
+type: external
+source: COG.COMPUTER.SCIENCE
+precedes: []
+tags: ripgrep, rg, regex, search, grep, rust, cli, tool
+related: []
+reference:
+  - title: "Ripgrep — GitHub Repository"
+    url: https://github.com/BurntSushi/ripgrep
+  - title: "Ripgrep — Official Documentation"
+    url: https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md
+  - title: "Ripgrep — Manual Page"
+    url: https://man.archlinux.org/man/extra/ripgrep/rg.1.en
+---
+# OUT_LINES: 20
+# OUT_BYTES: 1224
+# ERR_LINES: 0
+# EXEC: 56241|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh cli-ripgrep-verify -- cat .opencode/entities/cli/CLI.RIPGREP.md
+# EXEC: 56242|/usr/bin/date|date +%s%N
+# EXEC: 56246|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 56247|/usr/bin/head|head -1
+# EXEC: 56248|/usr/bin/tr|tr -d \n
+# EXEC: 56249|/usr/bin/cat|cat --version
+# EXEC: 56250|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 56253|/usr/bin/git|git remote get-url origin
+# EXEC: 56251|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 56254|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 56256|/usr/bin/git|git branch --show-current
+# EXEC: 56258|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 56259|/usr/bin/head|head -1
+# EXEC: 56260|/usr/bin/tr|tr -d \n
+# EXEC: 56261|/usr/bin/bun|bun --version
+# EXEC: 56263|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 56264|/usr/bin/head|head -1
+# EXEC: 56265|/usr/bin/tr|tr -d \n
+# EXEC: 56266|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 56268|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 56269|/usr/bin/head|head -1
+# EXEC: 56270|/usr/bin/tr|tr -d \n
+# EXEC: 56271|/usr/bin/python3|python3 --version
+# EXEC: 56273|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 56274|/usr/bin/head|head -1
+# EXEC: 56275|/usr/bin/tr|tr -d \n
+# EXEC: 56276|/usr/bin/ruby|ruby --version
+# EXEC: 56280|/usr/bin/head|head -1
+# EXEC: 56279|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 56281|/usr/bin/tr|tr -d \n
+# EXEC: 56282|/usr/bin/rustc|rustc --version
+# EXEC: 56285|/usr/bin/timeout|timeout 2 go version
+# EXEC: 56286|/usr/bin/head|head -1
+# EXEC: 56287|/usr/bin/tr|tr -d \n
+# EXEC: 56288|/usr/bin/go|go version
+# EXEC: 56295|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 56296|/usr/bin/head|head -1
+# EXEC: 56297|/usr/bin/tr|tr -d \n
+# EXEC: 56298|/usr/bin/git|git --version
+# EXEC: 56301|/usr/bin/head|head -1
+# EXEC: 56300|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 56302|/usr/bin/tr|tr -d \n
+# EXEC: 56303|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 56305|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 56306|/usr/bin/head|head -1
+# EXEC: 56307|/usr/bin/tr|tr -d \n
+# EXEC: 56308|/usr/bin/date|date --version
+# EXEC: 56310|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 56311|/usr/bin/head|head -1
+# EXEC: 56312|/usr/bin/tr|tr -d \n
+# EXEC: 56313|/usr/bin/wc|wc --version
+# EXEC: 56315|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 56316|/usr/bin/head|head -1
+# EXEC: 56317|/usr/bin/tr|tr -d \n
+# EXEC: 56318|/usr/bin/cat|cat --version
+# EXEC: 56320|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 56321|/usr/bin/head|head -1
+# EXEC: 56322|/usr/bin/tr|tr -d \n
+# EXEC: 56323|/usr/bin/tee|tee --version
+# EXEC: 56325|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 56326|/usr/bin/head|head -1
+# EXEC: 56327|/usr/bin/tr|tr -d \n
+# EXEC: 56328|/usr/bin/mktemp|mktemp --version
+# EXEC: 56330|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 56331|/usr/bin/head|head -1
+# EXEC: 56332|/usr/bin/tr|tr -d \n
+# EXEC: 56333|/usr/bin/rm|rm --version
+# EXEC: 56335|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 56336|/usr/bin/head|head -1
+# EXEC: 56337|/usr/bin/tr|tr -d \n
+# EXEC: 56338|/usr/bin/timeout|timeout --version
+# EXEC: 56340|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 56341|/usr/bin/head|head -1
+# EXEC: 56342|/usr/bin/tr|tr -d \n
+# EXEC: 56343|/usr/bin/tr|tr --version
+# EXEC: 56345|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 56346|/usr/bin/head|head -1
+# EXEC: 56347|/usr/bin/tr|tr -d \n
+# EXEC: 56348|/usr/bin/head|head --version
+# EXEC: 56350|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 56351|/usr/bin/head|head -1
+# EXEC: 56352|/usr/bin/tr|tr -d \n
+# EXEC: 56353|/usr/bin/cut|cut --version
+# EXEC: 56355|/usr/bin/date|date +%s%N
+# EXEC: 56356|/usr/bin/sha256sum|sha256sum
+# EXEC: 56357|/usr/bin/cut|cut -c1-8
+# EXEC: 56359|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055638-cli-ripgrep-verify.log
+# EXEC: 56360|/usr/bin/date|date -Is
+# EXEC: 56361|/usr/bin/mktemp|mktemp
+# EXEC: 56362|/usr/bin/mktemp|mktemp
+# EXEC: 56363|/usr/bin/cat|cat .opencode/entities/cli/CLI.RIPGREP.md
+# EXEC: 56365|/usr/bin/wc|wc -l
+# EXEC: 56366|/usr/bin/tr|tr -d  
+# EXEC: 56368|/usr/bin/wc|wc -c
+# EXEC: 56369|/usr/bin/tr|tr -d  
+# EXEC: 56371|/usr/bin/wc|wc -l
+# EXEC: 56372|/usr/bin/tr|tr -d  
+# EXEC: 56373|/usr/bin/date|date +%s%N
+# EXEC: 56375|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055638-cli-ripgrep-verify.log
+# EXEC: 56377|/usr/bin/cat|cat /tmp/tmp.W07qknMHqv
+# EXEC: 56378|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055638-cli-ripgrep-verify.log
+# EXEC: 56379|/usr/bin/cat|cat /tmp/tmp.fITnUudbJF
+# EXEC: 56380|/usr/bin/cat|cat /tmp/tmp.fITnUudbJF
+# EXEC: 56381|/usr/bin/rm|rm -f /tmp/tmp.W07qknMHqv /tmp/tmp.fITnUudbJF
+# EXEC: 56383|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055638-cli-ripgrep-verify.log
+# EXEC: 56385|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055638-cli-ripgrep-verify.log
+# EXEC: 56387|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055638-cli-ripgrep-verify.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 107
+# SHA: 4742dbd89c4280fd8ed0ac9c111909e44131e9cd898770f1462e0aecac1ba555
+# exit: 0

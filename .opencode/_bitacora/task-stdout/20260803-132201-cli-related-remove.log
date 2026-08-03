@@ -1,0 +1,27 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/.opencode/entities/cli\ \&\&\ perl\ -pi\ -e\ \"s/\^related:\ \\\[\\\]\\n//\"\ CLI.COREUTILS.md\ CLI.PANDOC.md\ CLI.RIPGREP.md\ CLI.SED.md\ CLI.TRACEXEC.md\ \&\&\ echo\ \"---\ verify\ ---\"\ \&\&\ grep\ -c\ \"\^related:\"\ \*.md\;\ echo\ \"---\ frontmatter\ tail\ check\ ---\"\ \&\&\ grep\ -A1\ \"\^precedes:\"\ CLI.RIPGREP.md 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:22:01-06:00
+# PID: 337070
+# DUR: 82ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 5c012602
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cd\ /home/eddyr/assembler/.opencode/entities/cli\ \&\&\ perl\ -pi\ -e\ \"s/\^related:\ \\\[\\\]\\n//\"\ CLI.COREUTILS.md\ CLI.PANDOC.md\ CLI.RIPGREP.md\ CLI.SED.md\ CLI.TRACEXEC.md\ \&\&\ echo\ \"---\ verify\ ---\"\ \&\&\ grep\ -c\ \"\^related:\"\ \*.md\;\ echo\ \"---\ frontmatter\ tail\ check\ ---\"\ \&\&\ grep\ -A1\ \"\^precedes:\"\ CLI.RIPGREP.md 
+# CWD: /home/eddyr/assembler
+# --------------------
+--- verify ---
+CLI.COREUTILS.md:0
+CLI.PANDOC.md:0
+CLI.RIPGREP.md:0
+CLI.SED.md:0
+CLI.TRACEXEC.md:0
+--- frontmatter tail check ---
+precedes: []
+tags: ripgrep, rg, regex, search, grep, rust, cli, tool
+# OUT_LINES: 9
+# OUT_BYTES: 198
+# ERR_LINES: 0
+# SHA: e6c415f0f0ac129d9e3251336fab940c103cf4c5a54332807a8d8fd95a341923

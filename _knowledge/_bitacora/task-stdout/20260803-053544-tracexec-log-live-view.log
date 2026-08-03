@@ -1,0 +1,43 @@
+# CMD: bash -c sed\ -n\ \"1\,35p\"\ /tmp/opencode/tracexec-log-help.txt 
+# DATE: 2026-08-03T05:35:44-06:00
+# DUR: 11ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+40029<tracer>: "/usr/bin/bash" ["bash", "-c", "sed -n \"1,35p\" /tmp/opencode/tracexec-log-help.txt"] fd []
+40029<bash>: "/usr/bin/sed" ["sed", "-n", "1,35p", "/tmp/opencode/tracexec-log-help.txt"] fd []
+Run tracexec in logging mode
+
+Usage: tracexec log [OPTIONS] -- <CMD>...
+
+Arguments:
+  <CMD>...  command to be executed
+
+Options:
+      --more-colors
+          More colors
+      --less-colors
+          Less colors
+      --show-cmdline
+          Print commandline that (hopefully) reproduces what was executed. Note: file descriptors are not handled for now.
+      --no-show-cmdline
+          Don't print commandline that (hopefully) reproduces what was executed.
+      --show-interpreter
+          Try to show script interpreter indicated by shebang
+      --no-show-interpreter
+          Do not show script interpreter indicated by shebang
+      --foreground
+          Set the terminal foreground process group to tracee. This option is useful when tracexec is used interactively. [default]
+      --no-foreground
+          Do not set the terminal foreground process group to tracee
+      --diff-fd
+          Diff file descriptors with the original std{in/out/err}
+      --no-diff-fd
+          Do not diff file descriptors
+      --show-fd
+          Show file descriptors
+      --no-show-fd
+          Do not show file descriptors
+      --diff-env
+          Diff environment variables with the original environment
+      --no-diff-env
+# exit: 0

@@ -9,6 +9,11 @@
 - Use goroutines + channels for parallel work; prefer interfaces; return errors explicitly.
 - Format with gofmt; contain panics within boundaries.
 
+**Format** — format before new work:
+
+- Run `gofmt -w {file}` — the canonical formatter; installed at `/usr/bin/gofmt`.
+- Run `go vet ./...` after formatting; clean vet output precedes new code.
+
 **Naming** — `SPEC.CODE.ELEMENT.NAME` governs:
 
 - Name the struct with one singular abstract Upper word.

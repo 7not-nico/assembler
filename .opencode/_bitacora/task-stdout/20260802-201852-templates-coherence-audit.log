@@ -1,0 +1,233 @@
+# CMD: bash -c $'\necho "===1. SCAFFOLD-REFERENCED-FILES==="\nrg -o "\\$ROOT/_templates/[A-Za-z0-9._-]+" _knowledge/_templates/scaffold-knowledge.sh | sed "s|.*/||" | sort -u\necho\necho "===2. COPY-SKILLS-REF==="\nhead -30 _knowledge/_templates/copy-skills.sh\necho\necho "===3. GIT-TRACKED (tracked vs ignored)==="\ngit ls-files _knowledge/_templates/ | sed "s|_knowledge/_templates/||" | sort\necho "---IGNORED-COUNT---"\ngit check-ignore _knowledge/_templates/_rustlib/target/release/tpl-ann 2>/dev/null && echo "target IGNORED" || echo "target TRACKED??"\ngit check-ignore _knowledge/_templates/_golib/ann 2>/dev/null && echo "golib-ann IGNORED" || echo "golib-ann TRACKED??"' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:18:53-06:00
+# PID: 419965
+# DUR: 414ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 3f3c0999
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\necho "===1. SCAFFOLD-REFERENCED-FILES==="\nrg -o "\\$ROOT/_templates/[A-Za-z0-9._-]+" _knowledge/_templates/scaffold-knowledge.sh | sed "s|.*/||" | sort -u\necho\necho "===2. COPY-SKILLS-REF==="\nhead -30 _knowledge/_templates/copy-skills.sh\necho\necho "===3. GIT-TRACKED (tracked vs ignored)==="\ngit ls-files _knowledge/_templates/ | sed "s|_knowledge/_templates/||" | sort\necho "---IGNORED-COUNT---"\ngit check-ignore _knowledge/_templates/_rustlib/target/release/tpl-ann 2>/dev/null && echo "target IGNORED" || echo "target TRACKED??"\ngit check-ignore _knowledge/_templates/_golib/ann 2>/dev/null && echo "golib-ann IGNORED" || echo "golib-ann TRACKED??"' 
+# CWD: /home/eddyr/assembler
+# --------------------
+===1. SCAFFOLD-REFERENCED-FILES===
+
+===2. COPY-SKILLS-REF===
+#!/usr/bin/env bash
+# copy-skills.sh — copy SKILL.md files into a subproject docs/ dir, flattened
+# Usage: bash copy-skills.sh {dest-docs-dir} {skill-name}...
+# Copies each {skill}/SKILL.md → {dest-docs-dir}/{skill}.md
+set -euo pipefail
+
+DEST="${1:?dest-docs-dir required}"
+shift
+SKILLS_ROOT="$(cd "$(dirname "$0")/../../.opencode/skills" && pwd)"
+
+mkdir -p "$DEST"
+for skill in "$@"; do
+  src="$SKILLS_ROOT/$skill/SKILL.md"
+  if [ -f "$src" ]; then
+    cp "$src" "$DEST/$skill.md"
+    echo "  SKILL $skill → $DEST/$skill.md"
+  else
+    echo "  MISS  $skill (not found in $SKILLS_ROOT)"
+  fi
+done
+
+===3. GIT-TRACKED (tracked vs ignored)===
+AGENTS.md
+AGENTS.template.md
+anchor-workflow-template.md
+atomic-script-template.sh
+backup-template.md
+bitacora-template.md
+browse-playwright-template.md
+concept-template.md
+copy-skills.sh
+dive-agents-template.md
+dive-naming-conventions-template.md
+fixtures-template
+fixture-template.md
+format-template.md
+.gitkeep
+glossary-template.md
+_golib/ann.go
+_golib/.gitkeep
+_golib/go.mod
+guideline-template.md
+invariant-template.md
+_lib/ann-tpl.ts
+_lib/.gitkeep
+naming-conventions-template.md
+note-template.md
+pattern-template.md
+practice-template.md
+precedence-chain.md
+precept-atomic-documents-template.md
+precept-record-metrics-template.md
+precept-run-fixtures-template.md
+precept-template.md
+precept-use-ripgrep-template.md
+precept-use-shared-browser-template.md
+precept-verify-qalc-template.md
+procedure-template.md
+push-script-template.rb
+reference-template.md
+report/20260731-003332.md
+report/20260731-004058.md
+report/20260731-004633.md
+report/20260731-004827.md
+report/20260731-005130.md
+report/20260731-005632.md
+report/20260731-005830.md
+report/20260731-010123.md
+report/20260731-011644.md
+report/20260731-012848.md
+report/report-template.md
+research-template.md
+_rustlib/Cargo.lock
+_rustlib/Cargo.toml
+_rustlib/.gitkeep
+_rustlib/src/lib.rs
+_rustlib/src/main.rs
+_rustlib/src/r0-index.rs
+_rustlib/src/r0-vector.rs
+scaffold-knowledge.sh
+schema/templates.db
+schema-template.sql
+schema/templates.sql
+schema/templates-vector.db
+script/bench.ts
+script/push-registry.rb
+script/semantic-embed.ts
+script/semantic-search.ts
+script/stress.ts
+study-template.md
+write-reportare-template.md
+write-report-template.md
+---IGNORED-COUNT---
+_knowledge/_templates/_rustlib/target/release/tpl-ann
+target IGNORED
+_knowledge/_templates/_golib/ann
+golib-ann IGNORED
+# OUT_LINES: 100
+# OUT_BYTES: 2451
+# ERR_LINES: 0
+# EXEC: 419965|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh templates-coherence-audit -- bash -c 
+# EXEC: 419966|/usr/bin/date|date +%s%N
+# EXEC: 419969|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 419972|/usr/bin/git|git remote get-url origin
+# EXEC: 419970|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 419973|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 419975|/usr/bin/git|git branch --show-current
+# EXEC: 419978|/usr/bin/head|head -1
+# EXEC: 419977|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 419979|/usr/bin/tr|tr -d \n
+# EXEC: 419980|/usr/bin/bun|bun --version
+# EXEC: 419982|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 419983|/usr/bin/head|head -1
+# EXEC: 419984|/usr/bin/tr|tr -d \n
+# EXEC: 419985|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 419987|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 419988|/usr/bin/head|head -1
+# EXEC: 419989|/usr/bin/tr|tr -d \n
+# EXEC: 419990|/usr/bin/python3|python3 --version
+# EXEC: 419993|/usr/bin/head|head -1
+# EXEC: 419992|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 419994|/usr/bin/tr|tr -d \n
+# EXEC: 419995|/usr/bin/ruby|ruby --version
+# EXEC: 419998|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 419999|/usr/bin/head|head -1
+# EXEC: 420000|/usr/bin/tr|tr -d \n
+# EXEC: 420001|/usr/bin/rustc|rustc --version
+# EXEC: 420004|/usr/bin/timeout|timeout 2 go version
+# EXEC: 420005|/usr/bin/head|head -1
+# EXEC: 420006|/usr/bin/tr|tr -d \n
+# EXEC: 420007|/usr/bin/go|go version
+# EXEC: 420014|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 420015|/usr/bin/head|head -1
+# EXEC: 420016|/usr/bin/tr|tr -d \n
+# EXEC: 420017|/usr/bin/git|git --version
+# EXEC: 420019|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 420020|/usr/bin/head|head -1
+# EXEC: 420021|/usr/bin/tr|tr -d \n
+# EXEC: 420022|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 420024|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 420025|/usr/bin/head|head -1
+# EXEC: 420026|/usr/bin/tr|tr -d \n
+# EXEC: 420027|/usr/bin/date|date --version
+# EXEC: 420029|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 420030|/usr/bin/head|head -1
+# EXEC: 420031|/usr/bin/tr|tr -d \n
+# EXEC: 420032|/usr/bin/wc|wc --version
+# EXEC: 420034|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 420035|/usr/bin/head|head -1
+# EXEC: 420036|/usr/bin/tr|tr -d \n
+# EXEC: 420037|/usr/bin/cat|cat --version
+# EXEC: 420040|/usr/bin/head|head -1
+# EXEC: 420039|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 420041|/usr/bin/tr|tr -d \n
+# EXEC: 420042|/usr/bin/tee|tee --version
+# EXEC: 420044|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 420045|/usr/bin/head|head -1
+# EXEC: 420046|/usr/bin/tr|tr -d \n
+# EXEC: 420047|/usr/bin/mktemp|mktemp --version
+# EXEC: 420049|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 420050|/usr/bin/head|head -1
+# EXEC: 420051|/usr/bin/tr|tr -d \n
+# EXEC: 420052|/usr/bin/rm|rm --version
+# EXEC: 420054|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 420055|/usr/bin/head|head -1
+# EXEC: 420056|/usr/bin/tr|tr -d \n
+# EXEC: 420057|/usr/bin/timeout|timeout --version
+# EXEC: 420059|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 420060|/usr/bin/head|head -1
+# EXEC: 420061|/usr/bin/tr|tr -d \n
+# EXEC: 420062|/usr/bin/tr|tr --version
+# EXEC: 420064|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 420065|/usr/bin/head|head -1
+# EXEC: 420066|/usr/bin/tr|tr -d \n
+# EXEC: 420067|/usr/bin/head|head --version
+# EXEC: 420070|/usr/bin/head|head -1
+# EXEC: 420069|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 420071|/usr/bin/tr|tr -d \n
+# EXEC: 420072|/usr/bin/cut|cut --version
+# EXEC: 420074|/usr/bin/date|date +%s%N
+# EXEC: 420075|/usr/bin/sha256sum|sha256sum
+# EXEC: 420076|/usr/bin/cut|cut -c1-8
+# EXEC: 420078|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201852-templates-coherence-audit.log
+# EXEC: 420079|/usr/bin/date|date -Is
+# EXEC: 420080|/usr/bin/mktemp|mktemp
+# EXEC: 420081|/usr/bin/mktemp|mktemp
+# EXEC: 420082|/usr/bin/bash|bash -c 
+# EXEC: 420083|/usr/bin/rg|rg -o $ROOT/_templates/[A-Za-z0-9._-]+ _knowledge/_templates/scaffold-knowledge.sh
+# EXEC: 420084|/usr/bin/sed|sed s|.*/||
+# EXEC: 420085|/usr/bin/sort|sort -u
+# EXEC: 420086|/usr/bin/head|head -30 _knowledge/_templates/copy-skills.sh
+# EXEC: 420087|/usr/bin/git|git ls-files _knowledge/_templates/
+# EXEC: 420088|/usr/bin/sed|sed s|_knowledge/_templates/||
+# EXEC: 420089|/usr/bin/sort|sort
+# EXEC: 420090|/usr/bin/git|git check-ignore _knowledge/_templates/_rustlib/target/release/tpl-ann
+# EXEC: 420091|/usr/bin/git|git check-ignore _knowledge/_templates/_golib/ann
+# EXEC: 420094|/usr/bin/tr|tr -d  
+# EXEC: 420093|/usr/bin/wc|wc -l
+# EXEC: 420096|/usr/bin/wc|wc -c
+# EXEC: 420097|/usr/bin/tr|tr -d  
+# EXEC: 420100|/usr/bin/tr|tr -d  
+# EXEC: 420099|/usr/bin/wc|wc -l
+# EXEC: 420101|/usr/bin/date|date +%s%N
+# EXEC: 420103|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201852-templates-coherence-audit.log
+# EXEC: 420105|/usr/bin/cat|cat /tmp/tmp.g7nC2SSEgm
+# EXEC: 420106|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201852-templates-coherence-audit.log
+# EXEC: 420107|/usr/bin/cat|cat /tmp/tmp.UojAxxMQUc
+# EXEC: 420108|/usr/bin/cat|cat /tmp/tmp.UojAxxMQUc
+# EXEC: 420109|/usr/bin/rm|rm -f /tmp/tmp.g7nC2SSEgm /tmp/tmp.UojAxxMQUc
+# EXEC: 420111|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201852-templates-coherence-audit.log
+# EXEC: 420113|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201852-templates-coherence-audit.log
+# EXEC: 420115|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201852-templates-coherence-audit.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rg=ripgrep 15.2.0 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sed=/usr/bin/sed (GNU sed) 4.10 sha256sum=sha256sum (GNU coreutils) 9.11 sort=sort (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 112
+# SHA: f57f84a00c27ae5cae7517813274b643ce196233ed63a81c3995c28a114c5d6a
+# exit: 0

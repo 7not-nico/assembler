@@ -1,0 +1,23 @@
+# CMD: bash -c grep\ -n\ -E\ \"bash\|ruby\|cli\"\ /home/eddyr/assembler/.opencode/_scripts/schema/ddl.sql\ 2\>/dev/null\ \|\ head\ -10\;\ echo\ \"---tables\ in\ runtime\ ddl---\"\;\ grep\ -c\ \"CREATE\ TABLE\"\ /home/eddyr/assembler/.opencode/_scripts/schema/ddl.sql\ 2\>/dev/null\;\ echo\ \"---how\ bash/ruby\ created:\ search\ migrations---\"\;\ grep\ -rn\ -iE\ \"CREATE\ TABLE\ IF\ NOT\ EXISTS\ \(bash\|ruby\)\"\ /home/eddyr/assembler/.opencode/\ --include=\"\*.rb\"\ --include=\"\*.ts\"\ --include=\"\*.sql\"\ 2\>/dev/null\ \|\ grep\ -v\ node_modules\ \|\ head\ -5 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:27:45-06:00
+# PID: 343004
+# DUR: 192ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: fede44f7
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c grep\ -n\ -E\ \"bash\|ruby\|cli\"\ /home/eddyr/assembler/.opencode/_scripts/schema/ddl.sql\ 2\>/dev/null\ \|\ head\ -10\;\ echo\ \"---tables\ in\ runtime\ ddl---\"\;\ grep\ -c\ \"CREATE\ TABLE\"\ /home/eddyr/assembler/.opencode/_scripts/schema/ddl.sql\ 2\>/dev/null\;\ echo\ \"---how\ bash/ruby\ created:\ search\ migrations---\"\;\ grep\ -rn\ -iE\ \"CREATE\ TABLE\ IF\ NOT\ EXISTS\ \(bash\|ruby\)\"\ /home/eddyr/assembler/.opencode/\ --include=\"\*.rb\"\ --include=\"\*.ts\"\ --include=\"\*.sql\"\ 2\>/dev/null\ \|\ grep\ -v\ node_modules\ \|\ head\ -5 
+# CWD: /home/eddyr/assembler
+# --------------------
+---tables in runtime ddl---
+3
+---how bash/ruby created: search migrations---
+/home/eddyr/assembler/.opencode/_schemas/27-bash.sql:1:CREATE TABLE IF NOT EXISTS bash (
+/home/eddyr/assembler/.opencode/_schemas/28-ruby.sql:1:CREATE TABLE IF NOT EXISTS ruby (
+# OUT_LINES: 5
+# OUT_BYTES: 255
+# ERR_LINES: 0
+# SHA: 549f6fcbab2bbbdb1af820e4a3a561c60115b1dc831a118f8dad744cbd117915

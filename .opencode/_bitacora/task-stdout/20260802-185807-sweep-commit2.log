@@ -1,0 +1,126 @@
+# CMD: bash -c $'\ngit add _codex/_bitacora .opencode/_bitacora/task-stdout/20260802-181909-git-sweep.log .opencode/_bitacora/task-stdout/20260802-18194*-bitacora-audit*.log && git commit -m "bitacora: status sweep + chain-run report — uniform dive records" && git push && git log --oneline -2' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T18:58:08-06:00
+# PID: 343167
+# DUR: 378ms
+# exit: 128
+# GIT: assembler@ad9d618
+# BRANCH: main
+# SESSION: cf34eec3
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\ngit add _codex/_bitacora .opencode/_bitacora/task-stdout/20260802-181909-git-sweep.log .opencode/_bitacora/task-stdout/20260802-18194*-bitacora-audit*.log && git commit -m "bitacora: status sweep + chain-run report — uniform dive records" && git push && git log --oneline -2' 
+# CWD: /home/eddyr/assembler
+# --------------------
+fatal: pathspec '.opencode/_bitacora/task-stdout/20260802-18194*-bitacora-audit*.log' did not match any files
+# OUT_LINES: 0
+# OUT_BYTES: 0
+# ERR_LINES: 1
+# EXEC: 343167|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh sweep-commit2 -- bash -c 
+# EXEC: 343168|/usr/bin/date|date +%s%N
+# EXEC: 343171|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 343174|/usr/bin/git|git remote get-url origin
+# EXEC: 343172|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 343175|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 343177|/usr/bin/git|git branch --show-current
+# EXEC: 343179|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 343180|/usr/bin/head|head -1
+# EXEC: 343181|/usr/bin/tr|tr -d \n
+# EXEC: 343182|/usr/bin/bun|bun --version
+# EXEC: 343184|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 343185|/usr/bin/head|head -1
+# EXEC: 343186|/usr/bin/tr|tr -d \n
+# EXEC: 343187|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 343189|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 343190|/usr/bin/head|head -1
+# EXEC: 343191|/usr/bin/tr|tr -d \n
+# EXEC: 343192|/usr/bin/python3|python3 --version
+# EXEC: 343194|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 343195|/usr/bin/head|head -1
+# EXEC: 343196|/usr/bin/tr|tr -d \n
+# EXEC: 343197|/usr/bin/ruby|ruby --version
+# EXEC: 343200|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 343201|/usr/bin/head|head -1
+# EXEC: 343202|/usr/bin/tr|tr -d \n
+# EXEC: 343203|/usr/bin/rustc|rustc --version
+# EXEC: 343206|/usr/bin/timeout|timeout 2 go version
+# EXEC: 343207|/usr/bin/head|head -1
+# EXEC: 343208|/usr/bin/tr|tr -d \n
+# EXEC: 343209|/usr/bin/go|go version
+# EXEC: 343215|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 343216|/usr/bin/head|head -1
+# EXEC: 343217|/usr/bin/tr|tr -d \n
+# EXEC: 343218|/usr/bin/git|git --version
+# EXEC: 343222|/usr/bin/tr|tr -d \n
+# EXEC: 343220|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 343221|/usr/bin/head|head -1
+# EXEC: 343223|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 343225|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 343226|/usr/bin/head|head -1
+# EXEC: 343227|/usr/bin/tr|tr -d \n
+# EXEC: 343228|/usr/bin/date|date --version
+# EXEC: 343230|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 343231|/usr/bin/head|head -1
+# EXEC: 343232|/usr/bin/tr|tr -d \n
+# EXEC: 343233|/usr/bin/wc|wc --version
+# EXEC: 343235|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 343236|/usr/bin/head|head -1
+# EXEC: 343237|/usr/bin/tr|tr -d \n
+# EXEC: 343238|/usr/bin/cat|cat --version
+# EXEC: 343240|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 343241|/usr/bin/head|head -1
+# EXEC: 343242|/usr/bin/tr|tr -d \n
+# EXEC: 343243|/usr/bin/tee|tee --version
+# EXEC: 343245|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 343246|/usr/bin/head|head -1
+# EXEC: 343247|/usr/bin/tr|tr -d \n
+# EXEC: 343248|/usr/bin/mktemp|mktemp --version
+# EXEC: 343258|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 343259|/usr/bin/head|head -1
+# EXEC: 343260|/usr/bin/tr|tr -d \n
+# EXEC: 343261|/usr/bin/rm|rm --version
+# EXEC: 343263|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 343264|/usr/bin/head|head -1
+# EXEC: 343265|/usr/bin/tr|tr -d \n
+# EXEC: 343266|/usr/bin/timeout|timeout --version
+# EXEC: 343268|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 343269|/usr/bin/head|head -1
+# EXEC: 343270|/usr/bin/tr|tr -d \n
+# EXEC: 343271|/usr/bin/tr|tr --version
+# EXEC: 343273|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 343274|/usr/bin/head|head -1
+# EXEC: 343275|/usr/bin/tr|tr -d \n
+# EXEC: 343276|/usr/bin/head|head --version
+# EXEC: 343278|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 343279|/usr/bin/head|head -1
+# EXEC: 343280|/usr/bin/tr|tr -d \n
+# EXEC: 343281|/usr/bin/cut|cut --version
+# EXEC: 343283|/usr/bin/date|date +%s%N
+# EXEC: 343284|/usr/bin/sha256sum|sha256sum
+# EXEC: 343285|/usr/bin/cut|cut -c1-8
+# EXEC: 343287|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185807-sweep-commit2.log
+# EXEC: 343288|/usr/bin/date|date -Is
+# EXEC: 343289|/usr/bin/mktemp|mktemp
+# EXEC: 343290|/usr/bin/mktemp|mktemp
+# EXEC: 343291|/usr/bin/bash|bash -c 
+# EXEC: 343292|/usr/bin/git|git add _codex/_bitacora .opencode/_bitacora/task-stdout/20260802-181909-git-sweep.log .opencode/_bitacora/task-stdout/20260802-18194*-bitacora-audit*.log
+# EXEC: 343300|/usr/bin/wc|wc -l
+# EXEC: 343301|/usr/bin/tr|tr -d  
+# EXEC: 343303|/usr/bin/wc|wc -c
+# EXEC: 343304|/usr/bin/tr|tr -d  
+# EXEC: 343306|/usr/bin/wc|wc -l
+# EXEC: 343307|/usr/bin/tr|tr -d  
+# EXEC: 343308|/usr/bin/date|date +%s%N
+# EXEC: 343310|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185807-sweep-commit2.log
+# EXEC: 343312|/usr/bin/cat|cat /tmp/tmp.LH6ajFzWqJ
+# EXEC: 343313|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185807-sweep-commit2.log
+# EXEC: 343314|/usr/bin/cat|cat /tmp/tmp.eON21JtmZ7
+# EXEC: 343315|/usr/bin/cat|cat /tmp/tmp.eON21JtmZ7
+# EXEC: 343316|/usr/bin/rm|rm -f /tmp/tmp.LH6ajFzWqJ /tmp/tmp.eON21JtmZ7
+# EXEC: 343318|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185807-sweep-commit2.log
+# EXEC: 343320|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185807-sweep-commit2.log
+# EXEC: 343322|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185807-sweep-commit2.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 104
+# SHA: 9d7e24cd29c2489cff087114f838c26890a61d00f1dd05f92b3577c513e0d32e
+# exit: 128

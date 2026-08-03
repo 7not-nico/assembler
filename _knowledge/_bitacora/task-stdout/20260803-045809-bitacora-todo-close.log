@@ -1,0 +1,8 @@
+# CMD: bash ../../_bitacora/bitacora-close.sh 2026-08-03--rust-book-epub-script.md rust-book-epub-script 
+# DATE: 2026-08-03T04:58:09-06:00
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+TODO   /home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--rust-book-epub-script.md
+REPORT /home/eddyr/assembler/_knowledge/_bitacora/task-report/20260803-045809-rust-book-epub-script.md
+NEXT   fill the report: what was done, decisions, open edges, todo state; cite task-stdout logs
+# exit: 0

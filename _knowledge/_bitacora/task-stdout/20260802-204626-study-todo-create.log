@@ -1,0 +1,6 @@
+# CMD: bash _knowledge/_bitacora/bitacora-create.sh todo study\ rust\ book\ into\ rust-docs 
+# DATE: 2026-08-02T20:46:26-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+CREATE /home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-02--study-rust-book-into-rust-docs.md
+# exit: 0

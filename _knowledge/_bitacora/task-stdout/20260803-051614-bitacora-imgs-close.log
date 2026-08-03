@@ -1,0 +1,9 @@
+# CMD: bash ../../_bitacora/bitacora-close.sh 2026-08-03--playwright-missing-images.md playwright-missing-images 
+# DATE: 2026-08-03T05:16:14-06:00
+# DUR: 19ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+TODO   /home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--playwright-missing-images.md
+REPORT /home/eddyr/assembler/_knowledge/_bitacora/task-report/20260803-051614-playwright-missing-images.md
+NEXT   fill the report: what was done, decisions, open edges, todo state; cite task-stdout logs
+# exit: 0

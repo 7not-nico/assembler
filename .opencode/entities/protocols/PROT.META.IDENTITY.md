@@ -41,7 +41,7 @@ Each protocol body uses five content sections:
 
 ### Content rules
 
-- `## Protocol` uses predominantly positive instructions (min 3:1 positive-to-negative ratio per `PROT.LLM.SPECIFICATION`)
+- `## Protocol` uses predominantly positive instructions (min 3:1 positive-to-negative ratio per the LLM spec contract)
 - `## Gotchas` pairs every hard stop with a positive redirect
 - `## Enforcement` moves deterministic checks out of prompt into tool or convention
 - Tags use inline array `[tag1, tag2]` — use comma-separated format exclusively in `commands/yamls/` YAML files
@@ -53,12 +53,12 @@ Each protocol body uses five content sections:
 - Frontmatter missing required field: Add the missing field — id, title, source, summary, protocol, enforcement, status, priority, tags all required (Validation tool flags absent field)
 - Body section absent: Add all five required sections (Section list misses one of Protocol, Gotchas, Enforcement, Applicability, See also)
 - Gotchas section missing antipattern pairs: Pair each antipattern with a redirect — what to do instead (Hard stop without positive redirect)
-- Spec audit below 100: Fix violations before sync — positive framing, ratio, register (Violation from mcp-spec-audit)
+- Spec audit below 100: Fix violations before sync — positive framing, ratio, register (Violation from spec audit)
 - Protocol body names concrete entities: Move named content to a paired illustration. Protocol keeps abstract rule (Plugin or file name appears in numbered rules)
 
 ## Enforcement
 
-`mcp-spec-audit` runs before each sync. Protocol PRs pass 100/100. `read-validate` confirms frontmatter structure matches protocol entity type directory.
+Protocol PRs pass 100/100 on the LLM spec contract. `read-validate` confirms frontmatter structure matches protocol entity type directory.
 
 ## Applicability
 
@@ -68,7 +68,6 @@ Use patterns for general design principles, terms for operational labels, cognit
 
 ## See also
 
-- `PROT.LLM.SPECIFICATION` — contract + gotcha framing rules
 - `REF.META.NAMING.SCHEMA` — naming convention with prefix set
 - `SPEC.ENTITY.ROUTING.TABLE` — entity prefix routing table
 - `SPEC.ENTITY.DISTINCTION.BOUNDARY` — protocol vs pattern boundary

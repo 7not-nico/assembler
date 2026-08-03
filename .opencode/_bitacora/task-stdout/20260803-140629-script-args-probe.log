@@ -1,0 +1,54 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/.opencode/_scripts\ \&\&\ echo\ \"===\ r1\ arg\ expectations\ ===\"\;\ for\ f\ in\ r1-entity-classify.rb\ r1-entity-precedes-check.rb\ r1-protocol-audit.rb\ r1-skill-audit.rb\ r1-nexus-audit.rb\;\ do\ echo\ \"--\ \$f\"\;\ ruby\ \"\$f\"\ --help\ \</dev/null\ 2\>\&1\ \|\ head\ -3\;\ echo\ \"\ \ \ exit:\ \$\?\"\;\ done\;\ echo\ \"===\ r2\ arg\ expectations\ ===\"\;\ for\ f\ in\ r2-maxim-body-compose.rb\ r2-maxim-junction-blank.rb\ r2-ref-validate.rb\ r2-seed-audit.rb\;\ do\ echo\ \"--\ \$f\"\;\ ruby\ \"\$f\"\ --help\ \</dev/null\ 2\>\&1\ \|\ head\ -3\;\ echo\ \"\ \ \ exit:\ \$\?\"\;\ done 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T14:06:29-06:00
+# PID: 383982
+# DUR: 1142ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 6e86570a
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cd\ /home/eddyr/assembler/.opencode/_scripts\ \&\&\ echo\ \"===\ r1\ arg\ expectations\ ===\"\;\ for\ f\ in\ r1-entity-classify.rb\ r1-entity-precedes-check.rb\ r1-protocol-audit.rb\ r1-skill-audit.rb\ r1-nexus-audit.rb\;\ do\ echo\ \"--\ \$f\"\;\ ruby\ \"\$f\"\ --help\ \</dev/null\ 2\>\&1\ \|\ head\ -3\;\ echo\ \"\ \ \ exit:\ \$\?\"\;\ done\;\ echo\ \"===\ r2\ arg\ expectations\ ===\"\;\ for\ f\ in\ r2-maxim-body-compose.rb\ r2-maxim-junction-blank.rb\ r2-ref-validate.rb\ r2-seed-audit.rb\;\ do\ echo\ \"--\ \$f\"\;\ ruby\ \"\$f\"\ --help\ \</dev/null\ 2\>\&1\ \|\ head\ -3\;\ echo\ \"\ \ \ exit:\ \$\?\"\;\ done 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== r1 arg expectations ===
+-- r1-entity-classify.rb
+ID                                     | Type             | Tags                                                                                                                                                                             
+---------------------------------------|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ABS.ALPHA.CONVERSION                   | abstractions     | lambda-calculus, formal-methods, logic, computation, substitution, type-theory                                                                                                   
+   exit: 0
+-- r1-entity-precedes-check.rb
+ok — 507 entities, all precedes targets valid, 0 cycles
+   exit: 0
+-- r1-protocol-audit.rb
+r1-protocol-audit.rb: no Ruby script found in input (LoadError)
+   exit: 0
+-- r1-skill-audit.rb
+  [1ms] skill audit
+ok — 10 skills audit: 0 violations
+   exit: 0
+-- r1-nexus-audit.rb
+r1-nexus-audit.rb: no Ruby script found in input (LoadError)
+   exit: 0
+=== r2 arg expectations ===
+-- r2-maxim-body-compose.rb
+ok — 9 maxims, 0 compose violations
+   exit: 0
+-- r2-maxim-junction-blank.rb
+ok — 9 maxims, 0 blank gap violations
+   exit: 0
+-- r2-ref-validate.rb
+unresolvable refs:
+ID                                    | Type             | Unresolved                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+--------------------------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   exit: 0
+-- r2-seed-audit.rb
+seed audit violations (7):
+File                 | Field | Value                      | Problem                  
+---------------------|-------|----------------------------|--------------------------
+   exit: 0
+# OUT_LINES: 36
+# OUT_BYTES: 6759
+# ERR_LINES: 0
+# SHA: 3dc3a50a37fb6467b191f474348be4e738c44d5ab1a76f9e09cb6c63d7d2eb57

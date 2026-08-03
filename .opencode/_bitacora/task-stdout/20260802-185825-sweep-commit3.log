@@ -1,0 +1,150 @@
+# CMD: bash -c $'\ngit add _codex/_bitacora .opencode/_bitacora/task-stdout/20260802-181909-git-sweep.log && git commit -m "bitacora: status sweep + chain-run report — uniform dive records" && git push && git log --oneline -2' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T18:58:26-06:00
+# PID: 344169
+# DUR: 1948ms
+# exit: 0
+# GIT: assembler@ad9d618
+# BRANCH: main
+# SESSION: 16bf5cf3
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\ngit add _codex/_bitacora .opencode/_bitacora/task-stdout/20260802-181909-git-sweep.log && git commit -m "bitacora: status sweep + chain-run report — uniform dive records" && git push && git log --oneline -2' 
+# CWD: /home/eddyr/assembler
+# --------------------
+[main d818354] bitacora: status sweep + chain-run report — uniform dive records
+ 22 files changed, 339 insertions(+), 9 deletions(-)
+ create mode 100644 .opencode/_bitacora/task-stdout/20260802-181909-git-sweep.log
+ create mode 100644 _codex/_bitacora/task-report/20260802-174300-mgba-chain-run.md
+ create mode 100644 _codex/_bitacora/task-report/20260802-183026-bitacora-status-sweep.md
+ create mode 100644 _codex/_bitacora/task-stdout/20260802-181947-bitacora-audit-codex.log
+ create mode 100644 _codex/_bitacora/task-stdout/20260802-183026-bitacora-sweep-stamp.log
+ create mode 100644 _codex/_bitacora/task-stdout/20260802-183033-bitacora-sweep-run.log
+ create mode 100644 _codex/_bitacora/task-todo/20260802-183026-bitacora-status-sweep.md
+d818354 bitacora: status sweep + chain-run report — uniform dive records
+ad9d618 bitacora: finalize log sweep — git1-3 finalize, golf-check
+To https://github.com/7not-nico/assembler.git
+   ad9d618..d818354  main -> main
+# OUT_LINES: 11
+# OUT_BYTES: 890
+# ERR_LINES: 2
+# EXEC: 344169|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh sweep-commit3 -- bash -c 
+# EXEC: 344170|/usr/bin/date|date +%s%N
+# EXEC: 344173|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 344176|/usr/bin/git|git remote get-url origin
+# EXEC: 344174|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 344177|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 344179|/usr/bin/git|git branch --show-current
+# EXEC: 344181|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 344182|/usr/bin/head|head -1
+# EXEC: 344183|/usr/bin/tr|tr -d \n
+# EXEC: 344184|/usr/bin/bun|bun --version
+# EXEC: 344186|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 344187|/usr/bin/head|head -1
+# EXEC: 344188|/usr/bin/tr|tr -d \n
+# EXEC: 344189|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 344191|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 344192|/usr/bin/head|head -1
+# EXEC: 344193|/usr/bin/tr|tr -d \n
+# EXEC: 344194|/usr/bin/python3|python3 --version
+# EXEC: 344197|/usr/bin/head|head -1
+# EXEC: 344196|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 344198|/usr/bin/tr|tr -d \n
+# EXEC: 344199|/usr/bin/ruby|ruby --version
+# EXEC: 344202|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 344203|/usr/bin/head|head -1
+# EXEC: 344204|/usr/bin/tr|tr -d \n
+# EXEC: 344205|/usr/bin/rustc|rustc --version
+# EXEC: 344208|/usr/bin/timeout|timeout 2 go version
+# EXEC: 344209|/usr/bin/head|head -1
+# EXEC: 344210|/usr/bin/tr|tr -d \n
+# EXEC: 344211|/usr/bin/go|go version
+# EXEC: 344218|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 344219|/usr/bin/head|head -1
+# EXEC: 344220|/usr/bin/tr|tr -d \n
+# EXEC: 344221|/usr/bin/git|git --version
+# EXEC: 344223|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 344224|/usr/bin/head|head -1
+# EXEC: 344225|/usr/bin/tr|tr -d \n
+# EXEC: 344226|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 344228|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 344229|/usr/bin/head|head -1
+# EXEC: 344230|/usr/bin/tr|tr -d \n
+# EXEC: 344231|/usr/bin/date|date --version
+# EXEC: 344233|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 344234|/usr/bin/head|head -1
+# EXEC: 344235|/usr/bin/tr|tr -d \n
+# EXEC: 344236|/usr/bin/wc|wc --version
+# EXEC: 344238|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 344239|/usr/bin/head|head -1
+# EXEC: 344240|/usr/bin/tr|tr -d \n
+# EXEC: 344241|/usr/bin/cat|cat --version
+# EXEC: 344244|/usr/bin/head|head -1
+# EXEC: 344243|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 344245|/usr/bin/tr|tr -d \n
+# EXEC: 344246|/usr/bin/tee|tee --version
+# EXEC: 344248|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 344249|/usr/bin/head|head -1
+# EXEC: 344250|/usr/bin/tr|tr -d \n
+# EXEC: 344251|/usr/bin/mktemp|mktemp --version
+# EXEC: 344253|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 344254|/usr/bin/head|head -1
+# EXEC: 344255|/usr/bin/tr|tr -d \n
+# EXEC: 344256|/usr/bin/rm|rm --version
+# EXEC: 344259|/usr/bin/head|head -1
+# EXEC: 344258|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 344260|/usr/bin/tr|tr -d \n
+# EXEC: 344261|/usr/bin/timeout|timeout --version
+# EXEC: 344263|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 344264|/usr/bin/head|head -1
+# EXEC: 344265|/usr/bin/tr|tr -d \n
+# EXEC: 344266|/usr/bin/tr|tr --version
+# EXEC: 344268|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 344269|/usr/bin/head|head -1
+# EXEC: 344270|/usr/bin/tr|tr -d \n
+# EXEC: 344271|/usr/bin/head|head --version
+# EXEC: 344273|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 344274|/usr/bin/head|head -1
+# EXEC: 344275|/usr/bin/tr|tr -d \n
+# EXEC: 344276|/usr/bin/cut|cut --version
+# EXEC: 344278|/usr/bin/date|date +%s%N
+# EXEC: 344279|/usr/bin/sha256sum|sha256sum
+# EXEC: 344280|/usr/bin/cut|cut -c1-8
+# EXEC: 344282|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185825-sweep-commit3.log
+# EXEC: 344283|/usr/bin/date|date -Is
+# EXEC: 344284|/usr/bin/mktemp|mktemp
+# EXEC: 344285|/usr/bin/mktemp|mktemp
+# EXEC: 344286|/usr/bin/bash|bash -c 
+# EXEC: 344287|/usr/bin/git|git add _codex/_bitacora .opencode/_bitacora/task-stdout/20260802-181909-git-sweep.log
+# EXEC: 344294|/usr/bin/git|git commit -m bitacora: status sweep + chain-run report — uniform dive records
+# EXEC: 344307|/usr/lib/git-core/git|/usr/lib/git-core/git maintenance run --auto --no-quiet --detach
+# EXEC: 344309|/usr/bin/git|git push
+# EXEC: 344310|/usr/lib/git-core/git|/usr/lib/git-core/git remote-https origin https://github.com/7not-nico/assembler.git
+# EXEC: 344311|/usr/lib/git-core/git-remote-https|/usr/lib/git-core/git-remote-https origin https://github.com/7not-nico/assembler.git
+# EXEC: 344315|/bin/sh|/bin/sh -c /usr/bin/gh auth git-credential get /usr/bin/gh auth git-credential get
+# EXEC: 344315|/usr/bin/gh|/usr/bin/gh auth git-credential get
+# EXEC: 344327|/bin/sh|/bin/sh -c /usr/bin/gh auth git-credential store /usr/bin/gh auth git-credential store
+# EXEC: 344327|/usr/bin/gh|/usr/bin/gh auth git-credential store
+# EXEC: 344338|/usr/lib/git-core/git|/usr/lib/git-core/git send-pack --stateless-rpc --helper-status --thin --no-progress https://github.com/7not-nico/assembler.git/ --stdin
+# EXEC: 344340|/usr/lib/git-core/git|/usr/lib/git-core/git pack-objects --all-progress-implied --revs --stdout --thin --delta-base-offset -q
+# EXEC: 344286|/usr/bin/git|git log --oneline -2
+# EXEC: 344344|/usr/bin/wc|wc -l
+# EXEC: 344345|/usr/bin/tr|tr -d  
+# EXEC: 344347|/usr/bin/wc|wc -c
+# EXEC: 344348|/usr/bin/tr|tr -d  
+# EXEC: 344350|/usr/bin/wc|wc -l
+# EXEC: 344351|/usr/bin/tr|tr -d  
+# EXEC: 344352|/usr/bin/date|date +%s%N
+# EXEC: 344354|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185825-sweep-commit3.log
+# EXEC: 344356|/usr/bin/cat|cat /tmp/tmp.Rs1GzaqR4I
+# EXEC: 344357|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185825-sweep-commit3.log
+# EXEC: 344358|/usr/bin/cat|cat /tmp/tmp.1YtQcbDlQz
+# EXEC: 344359|/usr/bin/cat|cat /tmp/tmp.1YtQcbDlQz
+# EXEC: 344367|/usr/bin/rm|rm -f /tmp/tmp.Rs1GzaqR4I /tmp/tmp.1YtQcbDlQz
+# EXEC: 344369|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185825-sweep-commit3.log
+# EXEC: 344371|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185825-sweep-commit3.log
+# EXEC: 344373|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185825-sweep-commit3.log
+# PROGS: sh=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 gh=gh version 2.97.0 (2026-07-31) git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 git=git version 2.55.0 git-remote-https=(no --version)
+# EXEC_COUNT: 116
+# SHA: 64e753299bede702b1dbc1b2c0e54300380524077cf2276033db867eadbb4323
+# exit: 0

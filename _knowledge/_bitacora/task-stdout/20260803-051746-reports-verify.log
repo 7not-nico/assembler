@@ -1,0 +1,21 @@
+# CMD: bash -c for\ f\ in\ 20260803-045809-rust-book-epub-script.md\ 20260803-051335-learning-notes.md\ 20260803-051614-playwright-missing-images.md\;\ do\ echo\ \"===\ \$f\ ===\"\;\ wc\ -l\ \<\ \"/home/eddyr/assembler/_knowledge/_bitacora/task-report/\$f\"\;\ done\;\ echo\ \"---todos\ open---\"\;\ ls\ /home/eddyr/assembler/_knowledge/_bitacora/task-todo/ 
+# DATE: 2026-08-03T05:17:46-06:00
+# DUR: 7ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+=== 20260803-045809-rust-book-epub-script.md ===
+36
+=== 20260803-051335-learning-notes.md ===
+36
+=== 20260803-051614-playwright-missing-images.md ===
+31
+---todos open---
+2026-08-02--bitacora-suite-test.md
+2026-08-02--post-clean-test.md
+2026-08-02--study-rust-book-into-rust-docs.md
+2026-08-02--test-knowledge-bitacora.md
+2026-08-03--learning-notes.md
+2026-08-03--playwright-missing-images.md
+2026-08-03--rust-book-epub-script.md
+2026-08-03--study-rust-book-into-rust-docs.md
+# exit: 0

@@ -1,0 +1,58 @@
+# CMD: bash /tmp/opencode/cli-row-verify.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:37:40-06:00
+# PID: 350307
+# DUR: 85ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 782e77d6
+# CLI: bash 5.3.15(1)-release
+# ARGS: /tmp/opencode/cli-row-verify.sh 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== cli rows: metadata ===
+CLI.COREUTILS|external|COG.COMPUTER.SCIENCE||coreutils,gnu,file,shell,text,unix,c,cli,tool
+CLI.PANDOC|external|COG.COMPUTER.SCIENCE||pandoc,converter,markup,markdown,latex,haskell,document,cli,tool
+CLI.RIPGREP|external|COG.COMPUTER.SCIENCE||ripgrep,rg,regex,search,grep,rust,cli,tool
+CLI.SED|external|COG.COMPUTER.SCIENCE||sed,stream,editor,text,regex,unix,c,cli,tool
+CLI.TRACEXEC|external|COG.COMPUTER.SCIENCE||tracexec,tracing,execve,ptrace,ebpf,debugger,rust,cli,tool
+=== cli rows: body length + reference head ===
+CLI.COREUTILS|1167|["https://www.gnu.org/software/coreutils/","https://savannah.gnu.org/projects/coreutils/",
+CLI.PANDOC|1074|["https://pandoc.org","https://pandoc.org/MANUAL.html","https://github.com/jgm/pandoc","ht
+CLI.RIPGREP|931|["https://github.com/BurntSushi/ripgrep","https://github.com/BurntSushi/ripgrep/blob/maste
+CLI.SED|1087|["https://www.gnu.org/software/sed/manual/sed.html","https://en.wikipedia.org/wiki/Sed","h
+CLI.TRACEXEC|1126|["https://github.com/kxxt/tracexec","https://github.com/kxxt/tracexec/blob/main/README.md"
+=== body content sample (CLI.RIPGREP) ===
+## Identity
+
+- Ripgrep — a line-oriented search tool; Andrew Gallant (BurntSushi) builds it in Rust, with the first release in 2016
+- The name combines "rip" — meaning fast — with "grep" to signal its speed
+
+## Function
+
+- Ripgrep recursively searches the current directory for a regex pattern
+- It respects `.gitignore`, `.ignore`, and `.rgignore` rules by default
+- It supports PCRE2 via `-P`, smart case via `-S`, and JSON output via `--json`
+- It skips hidden and binary files automatically
+
+## Usage
+
+- Developers run `rg pattern` for fast search
+- Scripts read `--json` output for programmatic work
+- Flags such as `-t py` or `-C 3` scope the search
+
+## Design
+
+- Ripgrep builds on Rust's `regex` engine, which uses finite automata and SIMD
+- Parallel directory traversal places it among the fastest search tools
+
+## Ecosystem
+
+- VS Code embeds ripgrep as its default search engine
+- It carries the Unlicense and MIT licenses
+# OUT_LINES: 40
+# OUT_BYTES: 2062
+# ERR_LINES: 0
+# SHA: d3a4336ffb5ef7431fe9aba696091703af72d356f504be8e44d7f68f7e10f8fb

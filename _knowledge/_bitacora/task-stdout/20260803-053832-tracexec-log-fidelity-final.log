@@ -1,0 +1,9 @@
+# CMD: bash -c ruby\ /tmp/opencode/fidelity-check.rb 
+# DATE: 2026-08-03T05:38:32-06:00
+# DUR: 64ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+41481<tracer>: "/usr/bin/bash" ["bash", "-c", "ruby /tmp/opencode/fidelity-check.rb"] fd []
+41481<bash>: "/usr/bin/ruby" ["ruby", "/tmp/opencode/fidelity-check.rb"] fd []
+FIDELITY: exact match — log-mode citation = live tracexec log --help
+# exit: 0

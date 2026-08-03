@@ -1,0 +1,14 @@
+# CMD: bash -c rg\ -n\ \"Ring\ topology\|\^R\[0-9\]\|ring\ constraints\|Support\ layers\"\ _knowledge/rust-docs/AGENTS.md 
+# DATE: 2026-08-02T20:46:35-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+80:## Ring topology — project
+85:R0  Scripts     script/             automation — run-logged.sh, registry population; serves every ring
+86:R1  Bitacora    _knowledge/_bitacora/  session records — task-stdout, task-report, task-todo; shared substrate
+87:R2  Precept     precept/            governing rules — declarative action-domain files
+88:R3  Concept     concept/            study anchors — topic division, one file per chapter
+89:R4  Reference   reference/          distilled truth — citations with claim mapping
+90:R5  Fixture     fixture/            practice material — compilable per-chapter code
+93:Support layers sit outside the ordinal chain:
+104:- Support layers inform the chain; they never govern it.
+# exit: 0

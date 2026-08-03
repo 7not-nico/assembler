@@ -1,0 +1,46 @@
+# CMD: ruby /tmp/opencode/convert-skill-format.rb /home/eddyr/assembler/.opencode/skills 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T12:40:21-06:00
+# PID: 295565
+# DUR: 176ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 93547de2
+# CLI: ruby ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux]
+# ARGS: /tmp/opencode/convert-skill-format.rb /home/eddyr/assembler/.opencode/skills 
+# CWD: /home/eddyr/assembler
+# --------------------
+9 changes: /home/eddyr/assembler/.opencode/skills/knowledge-languages/SKILL.md
+7 changes: /home/eddyr/assembler/.opencode/skills/playwright-dispatcher/SKILL.md
+2 changes: /home/eddyr/assembler/.opencode/skills/playwright-dispatcher/skill/use-playwright-ai-mode/SKILL.md
+2 changes: /home/eddyr/assembler/.opencode/skills/playwright-dispatcher/skill/use-playwright-core/SKILL.md
+3 changes: /home/eddyr/assembler/.opencode/skills/playwright-dispatcher/skill/use-playwright-debug/SKILL.md
+4 changes: /home/eddyr/assembler/.opencode/skills/playwright-dispatcher/skill/use-playwright-network-storage/SKILL.md
+3 changes: /home/eddyr/assembler/.opencode/skills/playwright-dispatcher/skill/use-playwright-vision/SKILL.md
+14 changes: /home/eddyr/assembler/.opencode/skills/reason-invariants/SKILL.md
+7 changes: /home/eddyr/assembler/.opencode/skills/reason-quantitative/SKILL.md
+8 changes: /home/eddyr/assembler/.opencode/skills/reason-verbal/SKILL.md
+15 changes: /home/eddyr/assembler/.opencode/skills/refactor-skill/SKILL.md
+7 changes: /home/eddyr/assembler/.opencode/skills/search-dispatcher/SKILL.md
+2 changes: /home/eddyr/assembler/.opencode/skills/search-dispatcher/skill/use-exa/SKILL.md
+2 changes: /home/eddyr/assembler/.opencode/skills/search-dispatcher/skill/use-parallel-search/SKILL.md
+7 changes: /home/eddyr/assembler/.opencode/skills/semantic-dispatcher/SKILL.md
+2 changes: /home/eddyr/assembler/.opencode/skills/semantic-dispatcher/skill/use-semantic-drift/SKILL.md
+2 changes: /home/eddyr/assembler/.opencode/skills/semantic-dispatcher/skill/use-semantic-embed/SKILL.md
+2 changes: /home/eddyr/assembler/.opencode/skills/semantic-dispatcher/skill/use-semantic-eval/SKILL.md
+2 changes: /home/eddyr/assembler/.opencode/skills/semantic-dispatcher/skill/use-semantic-purge/SKILL.md
+2 changes: /home/eddyr/assembler/.opencode/skills/semantic-dispatcher/skill/use-semantic-search/SKILL.md
+2 changes: /home/eddyr/assembler/.opencode/skills/semantic-dispatcher/skill/use-semantic-stats/SKILL.md
+11 changes: /home/eddyr/assembler/.opencode/skills/study-foundations/SKILL.md
+7 changes: /home/eddyr/assembler/.opencode/skills/workflow-dispatcher/SKILL.md
+11 changes: /home/eddyr/assembler/.opencode/skills/workflow-dispatcher/skill/bitacora-workflow/SKILL.md
+16 changes: /home/eddyr/assembler/.opencode/skills/workflow-dispatcher/skill/manage-bash-flows/SKILL.md
+22 changes: /home/eddyr/assembler/.opencode/skills/workflow-dispatcher/skill/structure-stdout/SKILL.md
+16 changes: /home/eddyr/assembler/.opencode/skills/workflow-dispatcher/skill/survey-scripts/SKILL.md
+1 changes: /home/eddyr/assembler/.opencode/skills/workflow-dispatcher/skill/use-context-seven/SKILL.md
+# OUT_LINES: 28
+# OUT_BYTES: 2663
+# ERR_LINES: 0
+# SHA: aa4f534248dda432b2c10f812eac56f9fb4310cbcca8ee515c9e8da3ac31edbf

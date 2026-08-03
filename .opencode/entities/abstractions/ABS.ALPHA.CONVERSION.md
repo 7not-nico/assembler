@@ -12,7 +12,7 @@
 
 **De Bruijn indices** — alternative encoding that eliminates named variables, making α-conversion unnecessary.
 
-Exception to PROT.LLM.SPECIFICATION — this abstraction defines formal lambda calculus concepts (α-conversion rules, capture avoidance); as a definition it is exempt from the contract/gotcha framing rules that govern behavioral instructions.
+Exception to the LLM spec contract — this abstraction defines formal lambda calculus concepts (α-conversion rules, capture avoidance); as a definition it is exempt from the contract/gotcha framing rules that govern behavioral instructions.
 
 ---
 

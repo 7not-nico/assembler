@@ -1,0 +1,2 @@
+# CMD: bash -c rm\ -rf\ /tmp/opencode/rust-book-clean\ \&\&\ mkdir\ -p\ /tmp/opencode/rust-book-clean\ \&\&\ cd\ /tmp/opencode/rust-book-clean\ \&\&\ timeout\ 120\ ruby\ /home/eddyr/assembler/_knowledge/rust-docs/script/fetch-epub.rb\;\ echo\ \"exit:\ \$\?\" 
+# DATE: 2026-08-03T05:04:15-06:00

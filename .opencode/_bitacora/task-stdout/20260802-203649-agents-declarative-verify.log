@@ -1,0 +1,266 @@
+# CMD: bash -c $'\necho "===1. LINE COUNT==="; wc -l _knowledge/rust-docs/AGENTS.md\necho; echo "===2. PROSE-SECTION-SCAN (dash-led fragments outside code blocks)==="\nrg -n "^\\`[a-z]+\\/\\` —|^  [a-z-]+ →|Governs all work\\.$|— Declarative" _knowledge/rust-docs/AGENTS.md | head\necho "(should show only code-block lines)"\necho; echo "===3. RING + SKILLS SURVIVAL==="\nrg -n "R0  Scripts|R5  Fixture|12 symlinks|30 SKILL|copy-rings" _knowledge/rust-docs/AGENTS.md | head\necho; echo "===4. FULL FILE==="; cat _knowledge/rust-docs/AGENTS.md' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:36:49-06:00
+# PID: 440366
+# DUR: 428ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 8379bfb2
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\necho "===1. LINE COUNT==="; wc -l _knowledge/rust-docs/AGENTS.md\necho; echo "===2. PROSE-SECTION-SCAN (dash-led fragments outside code blocks)==="\nrg -n "^\\`[a-z]+\\/\\` —|^  [a-z-]+ →|Governs all work\\.$|— Declarative" _knowledge/rust-docs/AGENTS.md | head\necho "(should show only code-block lines)"\necho; echo "===3. RING + SKILLS SURVIVAL==="\nrg -n "R0  Scripts|R5  Fixture|12 symlinks|30 SKILL|copy-rings" _knowledge/rust-docs/AGENTS.md | head\necho; echo "===4. FULL FILE==="; cat _knowledge/rust-docs/AGENTS.md' 
+# CWD: /home/eddyr/assembler
+# --------------------
+===1. LINE COUNT===
+124 _knowledge/rust-docs/AGENTS.md
+
+===2. PROSE-SECTION-SCAN (dash-led fragments outside code blocks)===
+(should show only code-block lines)
+
+===3. RING + SKILLS SURVIVAL===
+43:`skills/` holds a symlinked skill catalog. The catalog links live to the sources — no copies, no staleness. Twelve symlinks resolve 30 SKILL.md files:
+85:R0  Scripts     script/             automation — run-logged.sh, registry population; serves every ring
+90:R5  Fixture     fixture/            practice material — compilable per-chapter code
+
+===4. FULL FILE===
+# rust-docs — AGENTS.md
+
+## Domain
+
+This project studies the Rust programming language from the official Rust Book. The study covers ownership, traits, concurrency, and tooling. The official Rust Book (doc.rust-lang.org/book) serves as the canonical source.
+
+## Precedence chain — obligatory
+
+The Learning Precedence Chain governs all work. Each layer completes before the next layer advances.
+
+`precept/` → `concept/` → `reference/` → `fixture/`
+
+`script/` runs parallel — automation and registry population serve any layer.
+
+Precepts state the rule. Concepts organize the study. Reference distills the verified truth. Fixtures practice the material. Work follows this order strictly.
+
+### Directory roles
+
+Precept files govern all work. Each precept file carries one declarative rule per action-domain. Precept files use the `{action}-{domain}.md` naming form, for example `prefer-official-reference.md`.
+
+Concept files organize the book into study anchors. Each concept file divides one topic into sub-concepts. Every concept arising from the study gets written — none skipped. Concept files use the `{topic}.md` naming form, for example `ownership.md`.
+
+Reference files distill conventions and citations from the official book. Each reference file carries verbatim quotes with claim mapping. Reference governs fixtures. Reference files use the `{name}.md` naming form, for example `conventions.md`.
+
+Fixture files hold practice code per book chapter. Each fixture file contains raw learning code. Reference governs fixtures. Fixture files use the `ch{NN}-{topic}.rs` naming form, for example `ch04-ownership.rs`.
+
+Script files provide automation and registry population. Each script file uses the `{action}-{subject}.rb` naming form, for example `push-registry.rb`. `run-logged.sh` logs any command into `_knowledge/_bitacora/task-stdout/` — `bash run-logged.sh {name} -- {command}`.
+
+## Layer semantics (governing rule)
+
+```text
+concept/    EVERY concept arising from study gets written — none skipped
+reference/  CITATIONS from the official book — verbatim quotes, claim mapping
+fixture/    compilable practice code — rustc must accept each file
+```
+
+## Toolchain
+
+Rust toolchain: rustc 1.97.1. Fixtures compile with `rustc --edition 2021 {file}.rs`.
+
+## Anchored skills
+
+`skills/` holds a symlinked skill catalog. The catalog links live to the sources — no copies, no staleness. Twelve symlinks resolve 30 SKILL.md files:
+
+```text
+workspace (relative → ../../../.opencode/skills/): knowledge-languages, playwright-dispatcher,
+    reason-invariants, reason-quantitative, reason-verbal, refactor-skill, search-dispatcher,
+    semantic-dispatcher, study-foundations, workflow-dispatcher
+home (absolute): find-skills → ~/.agents/skills/find-skills, omarchy → ~/.claude/skills/omarchy
+```
+
+### Semantic (entity context)
+
+`semantic-dispatcher` routes semantic MCP tasks: `use-semantic-search` (find patlib entities by meaning), `use-semantic-stats` (embedding counts), `use-semantic-drift` (patlib/vector consistency), `use-semantic-embed` (upsert vectors), `use-semantic-purge` (stale rows), `use-semantic-eval` (MRR/Recall/NDCG).
+
+### Search (web research)
+
+`search-dispatcher` routes web-search MCP tasks: `use-exa` (semantic search + clean extraction), `use-parallel-search` (multi-query search + fetch).
+
+### Playwright (browser)
+
+`playwright-dispatcher` routes browser automation: `use-playwright-core` (navigation, clicks, snapshots), `use-playwright-ai-mode` (Google AI Mode), `use-playwright-debug` (traces, assertions), `use-playwright-network-storage` (mocking, auth), `use-playwright-vision` (vision-mode coordinates).
+
+### Reasoning (analysis)
+
+`reason-quantitative` encodes situations into quantitative structure. `reason-verbal` surveys and structures verbal evidence. `reason-invariants` validates invariant-bearing layers.
+
+### Workflow (bookkeeping + scripting)
+
+`workflow-dispatcher` routes workflow tasks: `bitacora-workflow` (todo → log → report), `manage-bash-flows` (atomic bash scripts, orchestrators), `structure-stdout` (pipe contracts), `survey-scripts` (survey workflow), `use-context-seven` (library docs).
+
+### Study + language
+
+`study-foundations` runs the learning pipeline for uncharted topics (foundations → decompose → research). `knowledge-languages` dispatches language role/ring per `ref/{language}.md`.
+
+### Home + ecosystem
+
+`find-skills` discovers and installs skills. `omarchy` configures the desktop/system (hypr, waybar, walker, terminals). `refactor-skill` rewrites skills to the canonical format.
+
+## Ring topology — project
+
+Every folder in this project belongs to one of six ordinal rings by role. Ring order governs dependency. Inner rings serve outer rings; outer rings never call inward.
+
+```text
+R0  Scripts     script/             automation — run-logged.sh, registry population; serves every ring
+R1  Bitacora    _knowledge/_bitacora/  session records — task-stdout, task-report, task-todo; shared substrate
+R2  Precept     precept/            governing rules — declarative action-domain files
+R3  Concept     concept/            study anchors — topic division, one file per chapter
+R4  Reference   reference/          distilled truth — citations with claim mapping
+R5  Fixture     fixture/            practice material — compilable per-chapter code
+```
+
+Support layers sit outside the ordinal chain:
+
+```text
+rings/    mirrored ring-topology specifications — read-only references
+skills/   symlinked skill catalog — live links to sources, never stale
+```
+
+Ring constraints:
+
+- Scripts serve every ring; bitacora records every ring. Inner rings complete before outer rings advance (precept → concept → reference → fixture).
+- Fixture compiles against reference claims; reference distills from concept anchors; concept derives from precept rules.
+- Support layers inform the chain; they never govern it.
+
+## Ring specifications
+
+`rings/` holds ring-topology specifications mirrored from `.opencode/entities/specifications/`:
+
+```text
+SPEC.KNOWLEDGE.CLASSIFICATION.TOPOLOGY.md   — knowledge ring topology (governing)
+SPEC.CODE.RING.TOPOLOGY.md                  — code ring topology
+SPEC.DIRECTORY.RING.TOPOLOGY.md             — directory ring topology
+SPEC.LANGUAGE.RING.TOPOLOGY.md              — language ring topology
+SPEC.CODE.ELEMENT.NAME.md                   — element naming spec
+```
+
+## Sources
+
+The official Rust Book (doc.rust-lang.org/book) serves as the canonical reference for all claims. The archived rust-coding study (`.archive/rust-coding/`) holds prior glossary terms — cross-reference the terms, write new text.
+
+## Delegation
+
+Root provides patterns, terms, and shared substrate. This project owns the Rust Book study.
+# OUT_LINES: 136
+# OUT_BYTES: 7333
+# ERR_LINES: 0
+# EXEC: 440366|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh agents-declarative-verify -- bash -c 
+# EXEC: 440367|/usr/bin/date|date +%s%N
+# EXEC: 440370|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 440373|/usr/bin/git|git remote get-url origin
+# EXEC: 440371|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 440374|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 440376|/usr/bin/git|git branch --show-current
+# EXEC: 440378|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 440379|/usr/bin/head|head -1
+# EXEC: 440380|/usr/bin/tr|tr -d \n
+# EXEC: 440381|/usr/bin/bun|bun --version
+# EXEC: 440383|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 440384|/usr/bin/head|head -1
+# EXEC: 440385|/usr/bin/tr|tr -d \n
+# EXEC: 440386|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 440388|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 440389|/usr/bin/head|head -1
+# EXEC: 440390|/usr/bin/tr|tr -d \n
+# EXEC: 440391|/usr/bin/python3|python3 --version
+# EXEC: 440393|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 440394|/usr/bin/head|head -1
+# EXEC: 440395|/usr/bin/tr|tr -d \n
+# EXEC: 440396|/usr/bin/ruby|ruby --version
+# EXEC: 440399|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 440400|/usr/bin/head|head -1
+# EXEC: 440401|/usr/bin/tr|tr -d \n
+# EXEC: 440402|/usr/bin/rustc|rustc --version
+# EXEC: 440405|/usr/bin/timeout|timeout 2 go version
+# EXEC: 440406|/usr/bin/head|head -1
+# EXEC: 440407|/usr/bin/tr|tr -d \n
+# EXEC: 440408|/usr/bin/go|go version
+# EXEC: 440414|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 440415|/usr/bin/head|head -1
+# EXEC: 440416|/usr/bin/tr|tr -d \n
+# EXEC: 440417|/usr/bin/git|git --version
+# EXEC: 440419|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 440420|/usr/bin/head|head -1
+# EXEC: 440421|/usr/bin/tr|tr -d \n
+# EXEC: 440422|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 440424|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 440425|/usr/bin/head|head -1
+# EXEC: 440426|/usr/bin/tr|tr -d \n
+# EXEC: 440427|/usr/bin/date|date --version
+# EXEC: 440430|/usr/bin/head|head -1
+# EXEC: 440429|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 440431|/usr/bin/tr|tr -d \n
+# EXEC: 440432|/usr/bin/wc|wc --version
+# EXEC: 440434|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 440435|/usr/bin/head|head -1
+# EXEC: 440436|/usr/bin/tr|tr -d \n
+# EXEC: 440437|/usr/bin/cat|cat --version
+# EXEC: 440442|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 440443|/usr/bin/head|head -1
+# EXEC: 440445|/usr/bin/tr|tr -d \n
+# EXEC: 440447|/usr/bin/tee|tee --version
+# EXEC: 440449|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 440450|/usr/bin/head|head -1
+# EXEC: 440451|/usr/bin/tr|tr -d \n
+# EXEC: 440452|/usr/bin/mktemp|mktemp --version
+# EXEC: 440456|/usr/bin/tr|tr -d \n
+# EXEC: 440454|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 440455|/usr/bin/head|head -1
+# EXEC: 440457|/usr/bin/rm|rm --version
+# EXEC: 440460|/usr/bin/head|head -1
+# EXEC: 440459|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 440461|/usr/bin/tr|tr -d \n
+# EXEC: 440462|/usr/bin/timeout|timeout --version
+# EXEC: 440464|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 440465|/usr/bin/head|head -1
+# EXEC: 440466|/usr/bin/tr|tr -d \n
+# EXEC: 440467|/usr/bin/tr|tr --version
+# EXEC: 440470|/usr/bin/head|head -1
+# EXEC: 440469|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 440471|/usr/bin/tr|tr -d \n
+# EXEC: 440472|/usr/bin/head|head --version
+# EXEC: 440474|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 440475|/usr/bin/head|head -1
+# EXEC: 440476|/usr/bin/tr|tr -d \n
+# EXEC: 440477|/usr/bin/cut|cut --version
+# EXEC: 440479|/usr/bin/date|date +%s%N
+# EXEC: 440480|/usr/bin/sha256sum|sha256sum
+# EXEC: 440481|/usr/bin/cut|cut -c1-8
+# EXEC: 440483|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203649-agents-declarative-verify.log
+# EXEC: 440484|/usr/bin/date|date -Is
+# EXEC: 440485|/usr/bin/mktemp|mktemp
+# EXEC: 440486|/usr/bin/mktemp|mktemp
+# EXEC: 440487|/usr/bin/bash|bash -c 
+# EXEC: 440488|/usr/bin/wc|wc -l _knowledge/rust-docs/AGENTS.md
+# EXEC: 440489|/usr/bin/rg|rg -n ^`[a-z]+\/` —|^  [a-z-]+ →|Governs all work\.$|— Declarative _knowledge/rust-docs/AGENTS.md
+# EXEC: 440490|/usr/bin/head|head
+# EXEC: 440491|/usr/bin/rg|rg -n R0  Scripts|R5  Fixture|12 symlinks|30 SKILL|copy-rings _knowledge/rust-docs/AGENTS.md
+# EXEC: 440492|/usr/bin/head|head
+# EXEC: 440487|/usr/bin/cat|cat _knowledge/rust-docs/AGENTS.md
+# EXEC: 440494|/usr/bin/wc|wc -l
+# EXEC: 440495|/usr/bin/tr|tr -d  
+# EXEC: 440497|/usr/bin/wc|wc -c
+# EXEC: 440498|/usr/bin/tr|tr -d  
+# EXEC: 440500|/usr/bin/wc|wc -l
+# EXEC: 440501|/usr/bin/tr|tr -d  
+# EXEC: 440502|/usr/bin/date|date +%s%N
+# EXEC: 440504|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203649-agents-declarative-verify.log
+# EXEC: 440506|/usr/bin/cat|cat /tmp/tmp.4rEvXRUm2D
+# EXEC: 440507|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203649-agents-declarative-verify.log
+# EXEC: 440508|/usr/bin/cat|cat /tmp/tmp.EputyNRHPR
+# EXEC: 440509|/usr/bin/cat|cat /tmp/tmp.EputyNRHPR
+# EXEC: 440510|/usr/bin/rm|rm -f /tmp/tmp.4rEvXRUm2D /tmp/tmp.EputyNRHPR
+# EXEC: 440512|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203649-agents-declarative-verify.log
+# EXEC: 440514|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203649-agents-declarative-verify.log
+# EXEC: 440516|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203649-agents-declarative-verify.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rg=ripgrep 15.2.0 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 109
+# SHA: f8378e07eadcaf3147cb88423f78883482d413e4282b4d4174460713c9174387
+# exit: 0

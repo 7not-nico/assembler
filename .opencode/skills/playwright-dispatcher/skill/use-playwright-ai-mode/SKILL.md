@@ -7,7 +7,7 @@ nexus: NEX.BROWSER.STACK
 
 Google AI Mode (`udm=50`) renders an interactive LLM chat embedded in the search page. Use Playwright to navigate, ask, and extract the structured AI response from the DOM.
 
-**Technique**
+## Technique
 
 ```
   Step  Action                                                                                             Playwright tool
@@ -17,7 +17,7 @@ Google AI Mode (`udm=50`) renders an interactive LLM chat embedded in the search
   4     Wait for response to render, then re-snapshot                                                      `browser_wait_for` + `browser_snapshot`
 ```
 
-**Gotchas**
+## Gotchas
 
 - AI Mode appends `mstk=` session param on subsequent calls — always pass `udm=50` fresh
 - Console errors (JS tracking/analytics) are normal — ignore

@@ -13,6 +13,13 @@
 - Exit non-zero on failure.
 - Name the task and the call in the header comment.
 
+**Format** — format before new work:
+
+- Run `shfmt` on the file when present; install with `sudo pacman -S shfmt`.
+- Run `shellcheck` on the file when present; install with `sudo pacman -S shellcheck`.
+- Fall back to manual cleanup when both miss: trim trailing whitespace, collapse blank runs, align one space inside brackets.
+- Syntax-check with `bash -n {file}` after cleanup; a clean parse precedes new code.
+
 **Naming** — `SPEC.CODE.ELEMENT.NAME` governs:
 
 - Name the function with one singular concrete lowercase word.

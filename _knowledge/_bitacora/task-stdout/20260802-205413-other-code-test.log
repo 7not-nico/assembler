@@ -1,0 +1,78 @@
+# CMD: bash -c $'\nset -e\necho "===1. scaffold dry-run (exercises copy-rings, copy-skills, run-logged template)==="\nbash _knowledge/_templates/scaffold-knowledge.sh zz-format-test "Format test" --with-skills\necho "---TREE---"; find _knowledge/zz-format-test -maxdepth 1 | sort\necho "---RINGS---"; ls _knowledge/zz-format-test/rings/ | wc -l\necho "---SKILLS---"; ls _knowledge/zz-format-test/skills/ | wc -l\necho "---RUN-LOGGED---"; test -x _knowledge/zz-format-test/script/run-logged.sh && echo "executable OK"\necho "---AGENTS---"; head -1 _knowledge/zz-format-test/AGENTS.md\nmv _knowledge/zz-format-test /tmp/opencode/tpl-format-test\necho\necho "===2. copy-rings direct==="\nrm -rf /tmp/opencode/rings-fmt && mkdir -p /tmp/opencode/rings-fmt\nbash _knowledge/_templates/copy-rings.sh /tmp/opencode/rings-fmt | tail -1\necho\necho "===3. copy-skills direct==="\nrm -rf /tmp/opencode/skills-fmt && mkdir -p /tmp/opencode/skills-fmt\nbash _knowledge/_templates/copy-skills.sh /tmp/opencode/skills-fmt study-foundations | tail -1\nls -la /tmp/opencode/skills-fmt/\necho\necho "===4. deployed rust-docs logger==="\nbash _knowledge/rust-docs/script/run-logged.sh fmt-check -- echo "deployed logger OK"\necho\necho "===5. atomic-script template syntax==="\nbash -n _knowledge/_templates/atomic-script-template.sh && echo "atomic OK"\necho "===ALL PASS==="' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:54:13-06:00
+# PID: 456016
+# DUR: 297ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SCOPE: templates + rust-docs scripts
+# SESSION: d37570eb
+# TASK: other code cleanup
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\nset -e\necho "===1. scaffold dry-run (exercises copy-rings, copy-skills, run-logged template)==="\nbash _knowledge/_templates/scaffold-knowledge.sh zz-format-test "Format test" --with-skills\necho "---TREE---"; find _knowledge/zz-format-test -maxdepth 1 | sort\necho "---RINGS---"; ls _knowledge/zz-format-test/rings/ | wc -l\necho "---SKILLS---"; ls _knowledge/zz-format-test/skills/ | wc -l\necho "---RUN-LOGGED---"; test -x _knowledge/zz-format-test/script/run-logged.sh && echo "executable OK"\necho "---AGENTS---"; head -1 _knowledge/zz-format-test/AGENTS.md\nmv _knowledge/zz-format-test /tmp/opencode/tpl-format-test\necho\necho "===2. copy-rings direct==="\nrm -rf /tmp/opencode/rings-fmt && mkdir -p /tmp/opencode/rings-fmt\nbash _knowledge/_templates/copy-rings.sh /tmp/opencode/rings-fmt | tail -1\necho\necho "===3. copy-skills direct==="\nrm -rf /tmp/opencode/skills-fmt && mkdir -p /tmp/opencode/skills-fmt\nbash _knowledge/_templates/copy-skills.sh /tmp/opencode/skills-fmt study-foundations | tail -1\nls -la /tmp/opencode/skills-fmt/\necho\necho "===4. deployed rust-docs logger==="\nbash _knowledge/rust-docs/script/run-logged.sh fmt-check -- echo "deployed logger OK"\necho\necho "===5. atomic-script template syntax==="\nbash -n _knowledge/_templates/atomic-script-template.sh && echo "atomic OK"\necho "===ALL PASS==="' 
+# CWD: /home/eddyr/assembler
+# --------------------
+===1. scaffold dry-run (exercises copy-rings, copy-skills, run-logged template)===
+  RING SPEC.KNOWLEDGE.CLASSIFICATION.TOPOLOGY.md → /home/eddyr/assembler/_knowledge/zz-format-test/rings/SPEC.KNOWLEDGE.CLASSIFICATION.TOPOLOGY.md
+  RING SPEC.CODE.RING.TOPOLOGY.md → /home/eddyr/assembler/_knowledge/zz-format-test/rings/SPEC.CODE.RING.TOPOLOGY.md
+  RING SPEC.DIRECTORY.RING.TOPOLOGY.md → /home/eddyr/assembler/_knowledge/zz-format-test/rings/SPEC.DIRECTORY.RING.TOPOLOGY.md
+  RING SPEC.LANGUAGE.RING.TOPOLOGY.md → /home/eddyr/assembler/_knowledge/zz-format-test/rings/SPEC.LANGUAGE.RING.TOPOLOGY.md
+  RING SPEC.CODE.ELEMENT.NAME.md → /home/eddyr/assembler/_knowledge/zz-format-test/rings/SPEC.CODE.ELEMENT.NAME.md
+  SKILL study-foundations → ../../../.opencode/skills/study-foundations
+  SKILL knowledge-languages → ../../../.opencode/skills/knowledge-languages
+  SKILL reason-quantitative → ../../../.opencode/skills/reason-quantitative
+  SKILL reason-verbal → ../../../.opencode/skills/reason-verbal
+  SKILL reason-invariants → ../../../.opencode/skills/reason-invariants
+  SKILL semantic-dispatcher → ../../../.opencode/skills/semantic-dispatcher
+  SKILL search-dispatcher → ../../../.opencode/skills/search-dispatcher
+  SKILL playwright-dispatcher → ../../../.opencode/skills/playwright-dispatcher
+  SKILL workflow-dispatcher → ../../../.opencode/skills/workflow-dispatcher
+  SKILL refactor-skill → ../../../.opencode/skills/refactor-skill
+Scaffolded /home/eddyr/assembler/_knowledge/zz-format-test
+Chain: precept → concept → reference → fixture (script + rings parallel)
+---TREE---
+_knowledge/zz-format-test
+_knowledge/zz-format-test/AGENTS.md
+_knowledge/zz-format-test/concept
+_knowledge/zz-format-test/fixture
+_knowledge/zz-format-test/precept
+_knowledge/zz-format-test/reference
+_knowledge/zz-format-test/rings
+_knowledge/zz-format-test/script
+_knowledge/zz-format-test/skills
+---RINGS---
+5
+---SKILLS---
+10
+---RUN-LOGGED---
+executable OK
+---AGENTS---
+---
+
+===2. copy-rings direct===
+  RING SPEC.CODE.ELEMENT.NAME.md → /tmp/opencode/rings-fmt/SPEC.CODE.ELEMENT.NAME.md
+
+===3. copy-skills direct===
+  SKILL study-foundations → ../../../home/eddyr/assembler/.opencode/skills/study-foundations
+total 0
+drwxr-xr-x  2 eddyr eddyr  60 Aug  2 20:54 .
+drwxr-xr-x 10 eddyr eddyr 400 Aug  2 20:54 ..
+lrwxrwxrwx  1 eddyr eddyr  64 Aug  2 20:54 study-foundations -> ../../../home/eddyr/assembler/.opencode/skills/study-foundations
+
+===4. deployed rust-docs logger===
+# CMD: echo deployed\ logger\ OK 
+# DATE: 2026-08-02T20:54:14-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+deployed logger OK
+# exit: 0
+
+===5. atomic-script template syntax===
+atomic OK
+===ALL PASS===
+# OUT_LINES: 58
+# OUT_BYTES: 2716
+# ERR_LINES: 0
+# SHA: 208186106bfc574080532dc3b5074c3f8f3a42a08d1642e54f50b9c7cdbd6d62

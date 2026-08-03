@@ -1,0 +1,16 @@
+# CMD: bash -c for\ t\ in\ rg\ ruby\ curl\ pandoc\ ebook-convert\ zip\ unzip\ wget\ jq\;\ do\ printf\ \"%-14s\"\ \"\$t\"\;\ command\ -v\ \"\$t\"\ \>/dev/null\ 2\>\&1\ \&\&\ echo\ yes\ \|\|\ echo\ no\;\ done\;\ echo\ \"---ruby\ gems---\"\;\ ruby\ -e\ \"puts\ Gem::Specification.map\(\&:name\).grep\(/zip\|nokogiri\|http\|mechanize/\).sort\"\ 2\>/dev/null\ \|\|\ echo\ \"gem\ check\ failed\" 
+# DATE: 2026-08-03T04:50:41-06:00
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+rg            yes
+ruby          yes
+curl          yes
+pandoc        yes
+ebook-convert yes
+zip           yes
+unzip         yes
+wget          yes
+jq            yes
+---ruby gems---
+net-http
+# exit: 0

@@ -1,0 +1,21 @@
+# CMD: bash -c git\ -C\ /home/eddyr/assembler\ check-ignore\ -v\ _knowledge/rust-docs/learning/epub-pipeline.md\ _knowledge/rust-docs/reference/tracexec.md\ _knowledge/rust-docs/script/fetch-epub.rb\ _knowledge/rust-docs/AGENTS.md\ 2\>\&1\;\ echo\ \"exit:\ \$\?\"\;\ echo\ \"---gitignore\ relevant\ lines---\"\;\ rg\ -n\ \"knowledge\|learning\|reference\|_bitacora\|task-\"\ /home/eddyr/assembler/.gitignore\ \|\ head\ -20 
+# DATE: 2026-08-03T05:31:00-06:00
+# DUR: 17ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+36757<tracer>: "/usr/bin/bash" ["bash", "-c", "git -C /home/eddyr/assembler check-ignore -v _knowledge/rust-docs/learning/epub-pipeline.md _knowledge/rust-docs/reference/tracexec.md _knowledge/rust-docs/script/fetch-epub.rb _knowledge/rust-docs/AGENTS.md 2>&1; echo \"exit: $?\"; echo \"---gitignore relevant lines---\"; rg -n \"knowledge|learning|reference|_bitacora|task-\" /home/eddyr/assembler/.gitignore | head -20"] fd []
+36758<bash>: "/usr/bin/git" ["git", "-C", "/home/eddyr/assembler", "check-ignore", "-v", "_knowledge/rust-docs/learning/epub-pipeline.md", "_knowledge/rust-docs/reference/tracexec.md", "_knowledge/rust-docs/script/fetch-epub.rb", "_knowledge/rust-docs/AGENTS.md"] fd []
+.gitignore:43:/_*/*	_knowledge/rust-docs/learning/epub-pipeline.md
+.gitignore:43:/_*/*	_knowledge/rust-docs/reference/tracexec.md
+.gitignore:43:/_*/*	_knowledge/rust-docs/script/fetch-epub.rb
+.gitignore:43:/_*/*	_knowledge/rust-docs/AGENTS.md
+exit: 0
+---gitignore relevant lines---
+36759<bash>: "/usr/bin/rg" ["rg", "-n", "knowledge|learning|reference|_bitacora|task-", "/home/eddyr/assembler/.gitignore"] fd [stdout="pipe:[153835]", ]
+36760<bash>: "/usr/bin/head" ["head", "-20"] fd [stdin="pipe:[153835]", ]
+45:!/_*/_bitacora/
+46:!/_*/_bitacora/**
+60:_knowledge/_templates/schema/*.db
+61:_knowledge/_templates/schema/*.db-shm
+62:_knowledge/_templates/schema/*.db-wal
+# exit: 0

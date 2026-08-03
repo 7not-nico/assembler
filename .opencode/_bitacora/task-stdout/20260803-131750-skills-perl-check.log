@@ -1,0 +1,25 @@
+# CMD: bash -c grep\ -n\ \"\^-.\*\\\*\\\*\"\ /home/eddyr/assembler/.opencode/skills/playwright-dispatcher/skill/use-playwright-network-storage/SKILL.md\;\ echo\ \"---audit---\"\;\ bash\ /home/eddyr/assembler/.opencode/_scripts/audit-format-compliance.sh\ --root\ /home/eddyr/assembler\ --kind\ skills\ 2\>\&1\ \|\ tail\ -8 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:17:50-06:00
+# PID: 331648
+# DUR: 506ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 8f47a009
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c grep\ -n\ \"\^-.\*\\\*\\\*\"\ /home/eddyr/assembler/.opencode/skills/playwright-dispatcher/skill/use-playwright-network-storage/SKILL.md\;\ echo\ \"---audit---\"\;\ bash\ /home/eddyr/assembler/.opencode/_scripts/audit-format-compliance.sh\ --root\ /home/eddyr/assembler\ --kind\ skills\ 2\>\&1\ \|\ tail\ -8 
+# CWD: /home/eddyr/assembler
+# --------------------
+47:- `browser_route` patterns use glob syntax (`**` for recursive match)
+---audit---
+== skills ==
+  FAIL: /home/eddyr/assembler/_atelier/one-timers/comparisons-specs/camera-comparison/.opencode/skills/camera-compare/SKILL.md h2=0 bullets=14 bold=6 num=6 tbl=14 inline=1
+  FAIL: /home/eddyr/assembler/_atelier/one-timers/comparisons-specs/camera-comparison/.opencode/skills/camera-spec-decompose/SKILL.md h2=0 bullets=29 bold=6 num=10 tbl=0 inline=0
+  FAIL: /home/eddyr/assembler/.opencode/skills/playwright-dispatcher/skill/use-playwright-network-storage/SKILL.md h2=3 bullets=4 bold=0 num=0 tbl=0 inline=1
+PASS=27 FAIL=3
+# OUT_LINES: 7
+# OUT_BYTES: 622
+# ERR_LINES: 0
+# SHA: 6cb9e56cf2b14efdb46790809438c48f268c61a9fbf7ad8a176413c6deedf20e

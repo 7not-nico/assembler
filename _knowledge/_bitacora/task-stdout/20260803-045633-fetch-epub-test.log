@@ -1,0 +1,18 @@
+# CMD: bash -c cd\ /tmp/opencode\ \&\&\ ruby\ /home/eddyr/assembler/_knowledge/rust-docs/script/fetch-epub.rb\ /tmp/opencode/rust-book.epub\ \&\&\ echo\ \"---verify---\"\ \&\&\ unzip\ -l\ /tmp/opencode/rust-book.epub\ \|\ head\ -6\ \&\&\ echo\ \"---chapter\ count---\"\ \&\&\ unzip\ -l\ /tmp/opencode/rust-book.epub\ \|\ rg\ -c\ \"ch\[0-9\]+\\.xhtml\" 
+# DATE: 2026-08-03T04:56:33-06:00
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+[WARNING] Duplicate identifier 'the-rust-programming-language' at input line 185 column 153
+EPUB=/tmp/opencode/rust-book.epub
+SIZE=1518517
+IMAGES=28
+---verify---
+Archive:  /tmp/opencode/rust-book.epub
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+       20  08-03-2026 10:56   mimetype
+      252  08-03-2026 10:56   META-INF/container.xml
+      161  08-03-2026 10:56   META-INF/com.apple.ibooks.display-options.xml
+---chapter count---
+111
+# exit: 0

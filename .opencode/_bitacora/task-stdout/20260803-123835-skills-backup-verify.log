@@ -1,0 +1,23 @@
+# CMD: bash -c BACKUP=/home/eddyr/assembler/.opencode/skills/.backups/2026-08-03T123655\;\ LIVE=/home/eddyr/assembler/.opencode/skills\;\ echo\ \"===\ SKILL.md\ COUNTS\ ===\"\;\ echo\ \"live:\ \ \ \$\(find\ \$LIVE\ -name\ SKILL.md\ -not\ -path\ \"\*/.backups/\*\"\ \|\ wc\ -l\)\"\;\ echo\ \"backup:\ \$\(find\ \$BACKUP\ -name\ SKILL.md\ \|\ wc\ -l\)\"\;\ echo\ \"===\ DIFF\ CHECK\ \(all\ files\,\ excluding\ .backups\)\ ===\"\;\ diff\ -r\ --exclude=\".backups\"\ \"\$LIVE\"\ \"\$BACKUP\"\ \>\ /tmp/opencode/skills-backup-diff.txt\ 2\>\&1\ \&\&\ echo\ \"IDENTICAL:\ no\ differences\"\ \|\|\ \{\ echo\ \"DIFFERENCES\ FOUND:\"\;\ wc\ -l\ \<\ /tmp/opencode/skills-backup-diff.txt\;\ head\ -30\ /tmp/opencode/skills-backup-diff.txt\;\ \} 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T12:38:35-06:00
+# PID: 294294
+# DUR: 95ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 677e0d47
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c BACKUP=/home/eddyr/assembler/.opencode/skills/.backups/2026-08-03T123655\;\ LIVE=/home/eddyr/assembler/.opencode/skills\;\ echo\ \"===\ SKILL.md\ COUNTS\ ===\"\;\ echo\ \"live:\ \ \ \$\(find\ \$LIVE\ -name\ SKILL.md\ -not\ -path\ \"\*/.backups/\*\"\ \|\ wc\ -l\)\"\;\ echo\ \"backup:\ \$\(find\ \$BACKUP\ -name\ SKILL.md\ \|\ wc\ -l\)\"\;\ echo\ \"===\ DIFF\ CHECK\ \(all\ files\,\ excluding\ .backups\)\ ===\"\;\ diff\ -r\ --exclude=\".backups\"\ \"\$LIVE\"\ \"\$BACKUP\"\ \>\ /tmp/opencode/skills-backup-diff.txt\ 2\>\&1\ \&\&\ echo\ \"IDENTICAL:\ no\ differences\"\ \|\|\ \{\ echo\ \"DIFFERENCES\ FOUND:\"\;\ wc\ -l\ \<\ /tmp/opencode/skills-backup-diff.txt\;\ head\ -30\ /tmp/opencode/skills-backup-diff.txt\;\ \} 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== SKILL.md COUNTS ===
+live:   28
+backup: 28
+=== DIFF CHECK (all files, excluding .backups) ===
+IDENTICAL: no differences
+# OUT_LINES: 5
+# OUT_BYTES: 123
+# ERR_LINES: 0
+# SHA: c44f73c28a932c7a05fc5ddcedfa323d41ec0ced4f96d9efeaac46f1666e954a

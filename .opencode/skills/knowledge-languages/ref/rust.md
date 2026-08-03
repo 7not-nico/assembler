@@ -10,6 +10,11 @@
 - Keep heavy compute predictable and parallel-safe.
 - Guard standalone processes with the `import.meta.main` equivalent.
 
+**Format** — format before new work:
+
+- Run `cargo fmt` in the crate — rustfmt at `/usr/bin/rustfmt`; the project format precedes new code.
+- Run `cargo clippy -- -D warnings` after formatting; clean lint output precedes new code.
+
 **Naming** — `SPEC.CODE.ELEMENT.NAME` governs (Rust: struct, fn, method):
 
 - Name the struct with one singular abstract Upper word.

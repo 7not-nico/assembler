@@ -1,0 +1,37 @@
+# CMD: bash -c cd\ /home/eddyr/assembler\ \&\&\ echo\ \"===\ hyprland\ AGENTS.md:\ are\ the\ \^\ \\\\S\ lines\ inside\ fences\?\ ===\"\;\ awk\ \'BEGIN\{fence=0\}\ /\^\`\`\`/\{fence=\!fence\;\ print\ \"FENCE\ TOGGLE\ line\ \"\ NR\}\ \!fence\ \&\&\ /\^\ \\S/\{print\ \"\ \ OUTSIDE-FENCE\ leading-space\ line\ \"\ NR\ \":\ \"\ \$0\}\'\ _codex/Hyprland-repo/hyprland/AGENTS.md\ \|\ head\ -30 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T14:01:33-06:00
+# PID: 378486
+# DUR: 106ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 68520623
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cd\ /home/eddyr/assembler\ \&\&\ echo\ \"===\ hyprland\ AGENTS.md:\ are\ the\ \^\ \\\\S\ lines\ inside\ fences\?\ ===\"\;\ awk\ \'BEGIN\{fence=0\}\ /\^\`\`\`/\{fence=\!fence\;\ print\ \"FENCE\ TOGGLE\ line\ \"\ NR\}\ \!fence\ \&\&\ /\^\ \\S/\{print\ \"\ \ OUTSIDE-FENCE\ leading-space\ line\ \"\ NR\ \":\ \"\ \$0\}\'\ _codex/Hyprland-repo/hyprland/AGENTS.md\ \|\ head\ -30 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== hyprland AGENTS.md: are the ^ \S lines inside fences? ===
+  OUTSIDE-FENCE leading-space line 24:  - class: `CMyClass`
+  OUTSIDE-FENCE leading-space line 25:  - struct: `SMyStruct`
+  OUTSIDE-FENCE leading-space line 26:  - interface: `IMyInterface`
+  OUTSIDE-FENCE leading-space line 27:  - class (not struct) member variables: `m_variable`
+  OUTSIDE-FENCE leading-space line 33:  - Avoid complex classes / functions, prefer SRP
+  OUTSIDE-FENCE leading-space line 34:  - Consider using an observer pattern via hyprutils Signals where appropriate
+  OUTSIDE-FENCE leading-space line 35:  - Consider classic OOP patterns where appropriate: Strategy, Singleton, Proxy, etc
+  OUTSIDE-FENCE leading-space line 36:  - Watch out for typical bad practices in code: feature envy, LSP, etc
+  OUTSIDE-FENCE leading-space line 37:  - Use templating and inheritance to clean up code where appropriate
+  OUTSIDE-FENCE leading-space line 38:  - For obtaining singletons, use a `UP<CClass>& myClass();` pattern inside a namespace. This can be implemented in source as making and returning a static ptr
+  OUTSIDE-FENCE leading-space line 40:  - `using namespace std;`
+  OUTSIDE-FENCE leading-space line 41:  - leave uninitialized primitives (int, float, etc)
+  OUTSIDE-FENCE leading-space line 43:  - the C standard library. Use the C++ STL
+  OUTSIDE-FENCE leading-space line 44:  - `malloc` / `free` / etc
+  OUTSIDE-FENCE leading-space line 45:  - C-style pointers. Use SP<> WP<> and UP<> from hyprutils. These are Shared, Weak and Unique pointers respectively. C-style pointers may be used in select scenarios (e.g. destroying fns, where it's impossible to make a mistake) but everywhere else must not be used unless necessary
+  OUTSIDE-FENCE leading-space line 46:  - C-style casts. Use rc<>, sc<>, or cc<> from hyprutils. These are shorthands to equivalent C++ casts
+  OUTSIDE-FENCE leading-space line 48:  - violating clang-tidy (`.clang-tidy`)
+  OUTSIDE-FENCE leading-space line 49:  - manual C-style cleanup: `some_c_thing_new()` and `some_c_thing_free()` can be wrapped
+# OUT_LINES: 19
+# OUT_BYTES: 2063
+# ERR_LINES: 0
+# SHA: 87a45ac4e45003db73a54ef2f52c770876c26d0066bf416027e140036b89054d

@@ -4,29 +4,29 @@ description: Use this skill when refactoring skill files — it rewrites .openco
 state-profile: hybrid
 nexus: NEX.TOOL.SEQUENCE
 ---
-**Trigger**
+## Trigger
 
 Use this skill when a SKILL.md under `.opencode/skills/` deviates from the canonical format — structural mismatch, stale frontmatter, or missing sections.
 
-**Procedure**
+## Procedure
 
 When refactoring a skill:
 
-1. Read the current SKILL.md
-2. Read `.opencode/skills/.template/SKILL.md` — the canonical format; align structure to it
-3. Check against each criterion in `references/agentskills-criteria.md`
-4. Align frontmatter to `name` + `description` + `state-profile` + `nexus` (optional, one NEX.* ID)
-5. Ensure `state-profile` holds one of five values (see `PROT.SKILL.PROFILE`); add `nexus` when the skill composes a nexus entity
-6. Keep body sections to Trigger, Procedure, Gotchas — bold headers only
-7. Write Procedure as numbered imperative steps — "how to approach" phrasing
-8. Write Gotchas as antipattern → positive redirect pairs, 3+ entries
-9. Remove hardcoded absolute paths — use runtime queries or relative paths
-10. Remove voice or tone instructions — agent voice comes from rules
-11. Final check — under 500 lines / 5,000 tokens
+- Read the current SKILL.md
+- Read `.opencode/_templates/SKILL.template.md` — the canonical format; align structure to it. Dispatcher skills (routing to mode sub-skills) use the dispatcher variant pattern per the template's variant note
+- Check against each criterion in `references/agentskills-criteria.md`
+- Align frontmatter to `name` + `description` + `state-profile` + `nexus` (optional, one NEX.* ID)
+- Ensure `state-profile` holds one of five values (see `PROT.SKILL.PROFILE`); add `nexus` when the skill composes a nexus entity
+- Keep body sections to Trigger, Procedure, Gotchas — `##` categorical headings only
+- Write Procedure as junction bullets — one fact per bullet, no numbered steps
+- Write Gotchas as antipattern → positive redirect pairs, 3+ entries
+- Remove hardcoded absolute paths — use runtime queries or relative paths
+- Remove voice or tone instructions — agent voice comes from rules
+- Final check — under 500 lines / 5,000 tokens
 
-**Gotchas**
+## Gotchas
 
-- `##` headers in skill body — skills use **bold** section headers. Markdown `##` breaks visual consistency
+- Bold headers or numbered steps in skill body — skills use `##` categorical headings and junction bullets per `_templates/SKILL.template.md`
 - Rules or See also sections in skill body — skills carry Trigger, Procedure, Gotchas only. Format constraints belong in rules, references in the `nexus` field
 - Voice or tone instructions in skill body — agent voice comes from rules. Skills write procedural steps and gotchas without voice guidelines
 - Hardcoded absolute paths in skill body — skills use runtime queries or relative paths. Mark paths for skill.db resolution

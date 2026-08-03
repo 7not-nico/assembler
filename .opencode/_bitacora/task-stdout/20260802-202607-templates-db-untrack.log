@@ -1,0 +1,154 @@
+# CMD: bash -c $'\necho "===GITIGNORE-DB-RULES==="; rg -n "\\.db|templates|_rustlib|target" .gitignore | head -20\necho; echo "===TRACKED-DBS==="; git ls-files _knowledge/_templates/schema/ | rg "\\.db$"\necho; echo "===UNTRACK==="; git rm --cached _knowledge/_templates/schema/templates.db _knowledge/_templates/schema/templates-vector.db\necho; echo "===AFTER==="; git ls-files _knowledge/_templates/schema/' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:26:08-06:00
+# PID: 427831
+# DUR: 434ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: cce08d4f
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\necho "===GITIGNORE-DB-RULES==="; rg -n "\\.db|templates|_rustlib|target" .gitignore | head -20\necho; echo "===TRACKED-DBS==="; git ls-files _knowledge/_templates/schema/ | rg "\\.db$"\necho; echo "===UNTRACK==="; git rm --cached _knowledge/_templates/schema/templates.db _knowledge/_templates/schema/templates-vector.db\necho; echo "===AFTER==="; git ls-files _knowledge/_templates/schema/' 
+# CWD: /home/eddyr/assembler
+# --------------------
+===GITIGNORE-DB-RULES===
+3:*.db
+4:*.db-shm
+5:*.db-wal
+25:.opencode/_scripts/_bin/target/
+26:.opencode/_scripts/_rs/target/
+28:.opencode/_rustlib/target/
+29:.opencode/_rustlib/_disabled/target/
+32:*.db.*
+40:# the substrate _folders — bitacora, templates, impressions, scripts —
+47:!/_*/_templates/
+48:!/_*/_templates/**
+56:**/_rustlib/target/
+
+===TRACKED-DBS===
+_knowledge/_templates/schema/templates-vector.db
+_knowledge/_templates/schema/templates.db
+
+===UNTRACK===
+rm '_knowledge/_templates/schema/templates-vector.db'
+rm '_knowledge/_templates/schema/templates.db'
+
+===AFTER===
+_knowledge/_templates/schema/templates.sql
+# OUT_LINES: 24
+# OUT_BYTES: 628
+# ERR_LINES: 0
+# EXEC: 427831|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh templates-db-untrack -- bash -c 
+# EXEC: 427832|/usr/bin/date|date +%s%N
+# EXEC: 427835|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 427838|/usr/bin/git|git remote get-url origin
+# EXEC: 427836|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 427839|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 427841|/usr/bin/git|git branch --show-current
+# EXEC: 427844|/usr/bin/head|head -1
+# EXEC: 427843|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 427845|/usr/bin/tr|tr -d \n
+# EXEC: 427846|/usr/bin/bun|bun --version
+# EXEC: 427848|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 427849|/usr/bin/head|head -1
+# EXEC: 427850|/usr/bin/tr|tr -d \n
+# EXEC: 427851|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 427853|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 427854|/usr/bin/head|head -1
+# EXEC: 427855|/usr/bin/tr|tr -d \n
+# EXEC: 427856|/usr/bin/python3|python3 --version
+# EXEC: 427858|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 427859|/usr/bin/head|head -1
+# EXEC: 427860|/usr/bin/tr|tr -d \n
+# EXEC: 427861|/usr/bin/ruby|ruby --version
+# EXEC: 427864|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 427865|/usr/bin/head|head -1
+# EXEC: 427866|/usr/bin/tr|tr -d \n
+# EXEC: 427867|/usr/bin/rustc|rustc --version
+# EXEC: 427870|/usr/bin/timeout|timeout 2 go version
+# EXEC: 427871|/usr/bin/head|head -1
+# EXEC: 427872|/usr/bin/tr|tr -d \n
+# EXEC: 427873|/usr/bin/go|go version
+# EXEC: 427882|/usr/bin/tr|tr -d \n
+# EXEC: 427880|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 427881|/usr/bin/head|head -1
+# EXEC: 427883|/usr/bin/git|git --version
+# EXEC: 427885|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 427886|/usr/bin/head|head -1
+# EXEC: 427887|/usr/bin/tr|tr -d \n
+# EXEC: 427888|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 427892|/usr/bin/tr|tr -d \n
+# EXEC: 427890|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 427891|/usr/bin/head|head -1
+# EXEC: 427893|/usr/bin/date|date --version
+# EXEC: 427895|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 427896|/usr/bin/head|head -1
+# EXEC: 427897|/usr/bin/tr|tr -d \n
+# EXEC: 427898|/usr/bin/wc|wc --version
+# EXEC: 427900|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 427901|/usr/bin/head|head -1
+# EXEC: 427902|/usr/bin/tr|tr -d \n
+# EXEC: 427903|/usr/bin/cat|cat --version
+# EXEC: 427905|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 427906|/usr/bin/head|head -1
+# EXEC: 427907|/usr/bin/tr|tr -d \n
+# EXEC: 427908|/usr/bin/tee|tee --version
+# EXEC: 427910|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 427911|/usr/bin/head|head -1
+# EXEC: 427912|/usr/bin/tr|tr -d \n
+# EXEC: 427913|/usr/bin/mktemp|mktemp --version
+# EXEC: 427915|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 427916|/usr/bin/head|head -1
+# EXEC: 427917|/usr/bin/tr|tr -d \n
+# EXEC: 427918|/usr/bin/rm|rm --version
+# EXEC: 427921|/usr/bin/head|head -1
+# EXEC: 427920|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 427922|/usr/bin/tr|tr -d \n
+# EXEC: 427923|/usr/bin/timeout|timeout --version
+# EXEC: 427926|/usr/bin/head|head -1
+# EXEC: 427925|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 427927|/usr/bin/tr|tr -d \n
+# EXEC: 427928|/usr/bin/tr|tr --version
+# EXEC: 427930|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 427931|/usr/bin/head|head -1
+# EXEC: 427932|/usr/bin/tr|tr -d \n
+# EXEC: 427933|/usr/bin/head|head --version
+# EXEC: 427935|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 427936|/usr/bin/head|head -1
+# EXEC: 427937|/usr/bin/tr|tr -d \n
+# EXEC: 427938|/usr/bin/cut|cut --version
+# EXEC: 427940|/usr/bin/date|date +%s%N
+# EXEC: 427941|/usr/bin/sha256sum|sha256sum
+# EXEC: 427942|/usr/bin/cut|cut -c1-8
+# EXEC: 427944|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202607-templates-db-untrack.log
+# EXEC: 427945|/usr/bin/date|date -Is
+# EXEC: 427946|/usr/bin/mktemp|mktemp
+# EXEC: 427947|/usr/bin/mktemp|mktemp
+# EXEC: 427948|/usr/bin/bash|bash -c 
+# EXEC: 427949|/usr/bin/rg|rg -n \.db|templates|_rustlib|target .gitignore
+# EXEC: 427950|/usr/bin/head|head -20
+# EXEC: 427951|/usr/bin/git|git ls-files _knowledge/_templates/schema/
+# EXEC: 427952|/usr/bin/rg|rg \.db$
+# EXEC: 427953|/usr/bin/git|git rm --cached _knowledge/_templates/schema/templates.db _knowledge/_templates/schema/templates-vector.db
+# EXEC: 427948|/usr/bin/git|git ls-files _knowledge/_templates/schema/
+# EXEC: 427961|/usr/bin/wc|wc -l
+# EXEC: 427962|/usr/bin/tr|tr -d  
+# EXEC: 427964|/usr/bin/wc|wc -c
+# EXEC: 427965|/usr/bin/tr|tr -d  
+# EXEC: 427967|/usr/bin/wc|wc -l
+# EXEC: 427968|/usr/bin/tr|tr -d  
+# EXEC: 427969|/usr/bin/date|date +%s%N
+# EXEC: 427971|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202607-templates-db-untrack.log
+# EXEC: 427973|/usr/bin/cat|cat /tmp/tmp.jr2igG3Tei
+# EXEC: 427974|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202607-templates-db-untrack.log
+# EXEC: 427975|/usr/bin/cat|cat /tmp/tmp.Z0r4R3ztug
+# EXEC: 427976|/usr/bin/cat|cat /tmp/tmp.Z0r4R3ztug
+# EXEC: 427977|/usr/bin/rm|rm -f /tmp/tmp.jr2igG3Tei /tmp/tmp.Z0r4R3ztug
+# EXEC: 427979|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202607-templates-db-untrack.log
+# EXEC: 427981|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202607-templates-db-untrack.log
+# EXEC: 427983|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202607-templates-db-untrack.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rg=ripgrep 15.2.0 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 109
+# SHA: 4388dc8e9cf18666f792d68b7fd738795b7dbaf3634f55733bbd7344c4c374d8
+# exit: 0

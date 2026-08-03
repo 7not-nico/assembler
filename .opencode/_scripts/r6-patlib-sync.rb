@@ -73,6 +73,7 @@ Config = [
   ["ml", "machine-learning", backParser, %w[id title body source type paradigm subfield category precedes related tags reference created modified], nil],
   ["bash", "bash", backParser, %w[id title body source precedes related tags reference created modified], nil],
   ["ruby", "ruby", backParser, %w[id title body source precedes related tags reference created modified], nil],
+  ["cli", "cli", backParser, %w[id title body type source precedes tags reference created modified], nil],
   ["specifications", "specifications", backParser, %w[id title body source summary related tags reference created modified], nil],
   ["manifests", "manifests", backParser, %w[id title body source tags related created modified], nil],
 ]

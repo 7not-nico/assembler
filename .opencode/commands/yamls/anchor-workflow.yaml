@@ -1,8 +1,8 @@
 id: CMD.ANCHOR.WORKFLOW
 title: Anchor Workflow
-description: Anchor every task to the live skill set — semantic entity context, research MCPs, reasoning modes, Ruby reference, bash flows, surveys, and study skills
+description: Anchor every task to the live skill set — semantic entity context via semantic-dispatcher, web research via search-dispatcher, workflow modes via workflow-dispatcher, reasoning modes, language dispatcher, and study skills
 source: assembler
 tags: [workflow, anchor, skills, semantic, research, reasoning, bash]
 related: [RUL.CAPTCHA.GATE, SKL.SURVEY.SCRIPTS, SKL.MANAGE.BASH.FLOWS, SKL.STUDY.FOUNDATIONS]
 created: 2026-07-26T00:00:00.000Z
-modified: 2026-08-02T12:30:00.000Z
+modified: 2026-08-02T20:15:00.000Z

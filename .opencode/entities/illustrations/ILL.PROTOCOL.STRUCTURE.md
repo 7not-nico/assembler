@@ -59,7 +59,7 @@ Six standard sections in this order:
 
 ### Step 3: Content requirements
 
-- Protocol section uses predominantly positive instructions (3:1 positive ratio per PROT.LLM.SPECIFICATION)
+- Protocol section uses predominantly positive instructions (3:1 positive ratio per the LLM spec contract)
 - Gotchas pairs every violation with a positive redirect
 - Enforcement moves deterministic checks out of prompt into a tool
 - Tags use inline array `[tag1, tag2, tag3]` with comma separators
@@ -78,4 +78,3 @@ A protocol file carries two layers of rules: concrete field formats (this patter
 - `PROT.META.IDENTITY` — the protocol identity pattern this illustrates
 - `PROT.META.IDENTITY` — abstract governance rules for protocols
 - `REF.META.NAMING.SCHEMA` — naming convention for protocol IDs
-- `PROT.LLM.SPECIFICATION` — contract + gotcha framing rules

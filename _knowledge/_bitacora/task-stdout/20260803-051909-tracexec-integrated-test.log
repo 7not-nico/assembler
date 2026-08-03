@@ -1,0 +1,10 @@
+# CMD: bash -c bash\ -n\ run-logged.sh\ \&\&\ echo\ \"syntax\ OK\"\ \&\&\ sleep\ 0.5 
+# DATE: 2026-08-03T05:19:09-06:00
+# DUR: 514ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+28295<tracer>: "/usr/bin/bash" ["bash", "-c", "bash -n run-logged.sh && echo \"syntax OK\" && sleep 0.5"] fd []
+28296<bash>: "/usr/bin/bash" ["bash", "-n", "run-logged.sh"] fd []
+syntax OK
+28295<bash>: "/usr/bin/sleep" ["sleep", "0.5"] fd []
+# exit: 0

@@ -1,0 +1,21 @@
+# CMD: bash -c grep\ -n\ -iE\ \"bash\|ruby\|CREATE\ TABLE\"\ /home/eddyr/assembler/.opencode/_schemas/00-ddl.sql\ \|\ head\ -30\;\ echo\ \"---bash/ruby\ def---\"\;\ grep\ -n\ -A12\ \"CREATE\ TABLE.\*bash\\\|CREATE\ TABLE.\*ruby\"\ /home/eddyr/assembler/.opencode/_schemas/00-ddl.sql 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:27:08-06:00
+# PID: 342187
+# DUR: 80ms
+# exit: 2
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: c6f97fba
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c grep\ -n\ -iE\ \"bash\|ruby\|CREATE\ TABLE\"\ /home/eddyr/assembler/.opencode/_schemas/00-ddl.sql\ \|\ head\ -30\;\ echo\ \"---bash/ruby\ def---\"\;\ grep\ -n\ -A12\ \"CREATE\ TABLE.\*bash\\\|CREATE\ TABLE.\*ruby\"\ /home/eddyr/assembler/.opencode/_schemas/00-ddl.sql 
+# CWD: /home/eddyr/assembler
+# --------------------
+---bash/ruby def---
+grep: /home/eddyr/assembler/.opencode/_schemas/00-ddl.sql: No such file or directory
+grep: /home/eddyr/assembler/.opencode/_schemas/00-ddl.sql: No such file or directory
+# OUT_LINES: 1
+# OUT_BYTES: 20
+# ERR_LINES: 2
+# SHA: acb7564ae73a4e22e08f2eba39ab919a87d1cd45eb05843e3a638c5d446eeda7

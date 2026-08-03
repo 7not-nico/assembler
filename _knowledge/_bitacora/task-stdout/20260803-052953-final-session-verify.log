@@ -1,0 +1,30 @@
+# CMD: bash -c echo\ \"---reference\ layer---\"\;\ ls\ /home/eddyr/assembler/_knowledge/rust-docs/reference/\;\ echo\ \"---reports---\"\;\ ls\ /home/eddyr/assembler/_knowledge/_bitacora/task-report/\ \|\ rg\ \"20260803\"\;\ echo\ \"---todos\ completed---\"\;\ rg\ -l\ \"Status:\ completed\"\ /home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--\*.md 
+# DATE: 2026-08-03T05:29:53-06:00
+# DUR: 23ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+36060<tracer>: "/usr/bin/bash" ["bash", "-c", "echo \"---reference layer---\"; ls /home/eddyr/assembler/_knowledge/rust-docs/reference/; echo \"---reports---\"; ls /home/eddyr/assembler/_knowledge/_bitacora/task-report/ | rg \"20260803\"; echo \"---todos completed---\"; rg -l \"Status: completed\" /home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--*.md"] fd []
+---reference layer---
+36061<bash>: "/usr/bin/ls" ["ls", "/home/eddyr/assembler/_knowledge/rust-docs/reference/"] fd []
+curl.md
+ebook.md
+pandoc.md
+rg.md
+tracexec.md
+unzip.md
+---reports---
+36062<bash>: "/usr/bin/ls" ["ls", "/home/eddyr/assembler/_knowledge/_bitacora/task-report/"] fd [stdout="pipe:[147921]", ]
+36063<bash>: "/usr/bin/rg" ["rg", "20260803"] fd [stdin="pipe:[147921]", ]
+20260803-045809-rust-book-epub-script.md
+20260803-051335-learning-notes.md
+20260803-051614-playwright-missing-images.md
+20260803-052356-tracexec-reference.md
+20260803-052827-toolchain-reference-help.md
+---todos completed---
+36060<bash>: "/usr/bin/rg" ["rg", "-l", "Status: completed", "/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--learning-notes.md", "/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--playwright-missing-images.md", "/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--rust-book-epub-script.md", "/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--study-rust-book-into-rust-docs.md", "/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--toolchain-reference-help.md", "/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--tracexec-reference.md"] fd []
+/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--tracexec-reference.md
+/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--toolchain-reference-help.md
+/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--rust-book-epub-script.md
+/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--playwright-missing-images.md
+/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--learning-notes.md
+# exit: 0

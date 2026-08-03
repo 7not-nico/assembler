@@ -1,0 +1,129 @@
+# CMD: wc -l .opencode/entities/cli/.template.md 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T05:49:32-06:00
+# PID: 49551
+# DUR: 392ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 87328235
+# CLI: wc wc (GNU coreutils) 9.11
+# ARGS: -l .opencode/entities/cli/.template.md 
+# CWD: /home/eddyr/assembler
+# --------------------
+20 .opencode/entities/cli/.template.md
+# OUT_LINES: 1
+# OUT_BYTES: 39
+# ERR_LINES: 0
+# EXEC: 49551|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh cli-template-standalone -- wc -l .opencode/entities/cli/.template.md
+# EXEC: 49552|/usr/bin/date|date +%s%N
+# EXEC: 49556|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 49557|/usr/bin/head|head -1
+# EXEC: 49558|/usr/bin/tr|tr -d \n
+# EXEC: 49559|/usr/bin/wc|wc --version
+# EXEC: 49560|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 49563|/usr/bin/git|git remote get-url origin
+# EXEC: 49561|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 49564|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 49566|/usr/bin/git|git branch --show-current
+# EXEC: 49568|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 49569|/usr/bin/head|head -1
+# EXEC: 49570|/usr/bin/tr|tr -d \n
+# EXEC: 49571|/usr/bin/bun|bun --version
+# EXEC: 49573|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 49574|/usr/bin/head|head -1
+# EXEC: 49575|/usr/bin/tr|tr -d \n
+# EXEC: 49576|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 49578|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 49579|/usr/bin/head|head -1
+# EXEC: 49580|/usr/bin/tr|tr -d \n
+# EXEC: 49581|/usr/bin/python3|python3 --version
+# EXEC: 49583|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 49584|/usr/bin/head|head -1
+# EXEC: 49585|/usr/bin/tr|tr -d \n
+# EXEC: 49586|/usr/bin/ruby|ruby --version
+# EXEC: 49589|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 49590|/usr/bin/head|head -1
+# EXEC: 49591|/usr/bin/tr|tr -d \n
+# EXEC: 49592|/usr/bin/rustc|rustc --version
+# EXEC: 49595|/usr/bin/timeout|timeout 2 go version
+# EXEC: 49596|/usr/bin/head|head -1
+# EXEC: 49597|/usr/bin/tr|tr -d \n
+# EXEC: 49598|/usr/bin/go|go version
+# EXEC: 49605|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 49606|/usr/bin/head|head -1
+# EXEC: 49607|/usr/bin/tr|tr -d \n
+# EXEC: 49608|/usr/bin/git|git --version
+# EXEC: 49612|/usr/bin/tr|tr -d \n
+# EXEC: 49610|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 49611|/usr/bin/head|head -1
+# EXEC: 49613|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 49615|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 49616|/usr/bin/head|head -1
+# EXEC: 49617|/usr/bin/tr|tr -d \n
+# EXEC: 49618|/usr/bin/date|date --version
+# EXEC: 49620|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 49621|/usr/bin/head|head -1
+# EXEC: 49622|/usr/bin/tr|tr -d \n
+# EXEC: 49623|/usr/bin/wc|wc --version
+# EXEC: 49626|/usr/bin/head|head -1
+# EXEC: 49627|/usr/bin/tr|tr -d \n
+# EXEC: 49625|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 49628|/usr/bin/cat|cat --version
+# EXEC: 49630|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 49631|/usr/bin/head|head -1
+# EXEC: 49632|/usr/bin/tr|tr -d \n
+# EXEC: 49633|/usr/bin/tee|tee --version
+# EXEC: 49635|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 49636|/usr/bin/head|head -1
+# EXEC: 49637|/usr/bin/tr|tr -d \n
+# EXEC: 49638|/usr/bin/mktemp|mktemp --version
+# EXEC: 49640|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 49641|/usr/bin/head|head -1
+# EXEC: 49642|/usr/bin/tr|tr -d \n
+# EXEC: 49643|/usr/bin/rm|rm --version
+# EXEC: 49645|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 49646|/usr/bin/head|head -1
+# EXEC: 49647|/usr/bin/tr|tr -d \n
+# EXEC: 49648|/usr/bin/timeout|timeout --version
+# EXEC: 49650|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 49651|/usr/bin/head|head -1
+# EXEC: 49652|/usr/bin/tr|tr -d \n
+# EXEC: 49653|/usr/bin/tr|tr --version
+# EXEC: 49655|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 49656|/usr/bin/head|head -1
+# EXEC: 49657|/usr/bin/tr|tr -d \n
+# EXEC: 49658|/usr/bin/head|head --version
+# EXEC: 49660|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 49661|/usr/bin/head|head -1
+# EXEC: 49662|/usr/bin/tr|tr -d \n
+# EXEC: 49663|/usr/bin/cut|cut --version
+# EXEC: 49666|/usr/bin/sha256sum|sha256sum
+# EXEC: 49665|/usr/bin/date|date +%s%N
+# EXEC: 49667|/usr/bin/cut|cut -c1-8
+# EXEC: 49669|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-054931-cli-template-standalone.log
+# EXEC: 49670|/usr/bin/date|date -Is
+# EXEC: 49671|/usr/bin/mktemp|mktemp
+# EXEC: 49672|/usr/bin/mktemp|mktemp
+# EXEC: 49673|/usr/bin/wc|wc -l .opencode/entities/cli/.template.md
+# EXEC: 49675|/usr/bin/wc|wc -l
+# EXEC: 49676|/usr/bin/tr|tr -d  
+# EXEC: 49678|/usr/bin/wc|wc -c
+# EXEC: 49679|/usr/bin/tr|tr -d  
+# EXEC: 49681|/usr/bin/wc|wc -l
+# EXEC: 49682|/usr/bin/tr|tr -d  
+# EXEC: 49683|/usr/bin/date|date +%s%N
+# EXEC: 49685|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-054931-cli-template-standalone.log
+# EXEC: 49687|/usr/bin/cat|cat /tmp/tmp.MHhW4yGrS3
+# EXEC: 49688|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-054931-cli-template-standalone.log
+# EXEC: 49689|/usr/bin/cat|cat /tmp/tmp.0uU3aebmOU
+# EXEC: 49690|/usr/bin/cat|cat /tmp/tmp.0uU3aebmOU
+# EXEC: 49691|/usr/bin/rm|rm -f /tmp/tmp.MHhW4yGrS3 /tmp/tmp.0uU3aebmOU
+# EXEC: 49693|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-054931-cli-template-standalone.log
+# EXEC: 49695|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-054931-cli-template-standalone.log
+# EXEC: 49697|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-054931-cli-template-standalone.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 107
+# SHA: 4365dab8f30b8e3c89b02cfe4d26fc8d4b584073eb8f9b7dc535e5b0ebe8d095
+# exit: 0

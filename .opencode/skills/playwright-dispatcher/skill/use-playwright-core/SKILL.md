@@ -5,7 +5,7 @@ state-profile: stateless
 nexus: NEX.BROWSER.STACK
 ---
 
-**Tools**
+## Tools
 
 ```
   Tool                        Parameters                                      Notes
@@ -32,7 +32,7 @@ nexus: NEX.BROWSER.STACK
   `browser_wait_for`          `time?`, `text?`, `textGone?`                   Wait for condition
 ```
 
-**Gotchas**
+## Gotchas
 
 - Refs change after page navigation or DOM updates — always re-snapshot
 - `browser_find` finds text in snapshot; refs valid only from `browser_snapshot`

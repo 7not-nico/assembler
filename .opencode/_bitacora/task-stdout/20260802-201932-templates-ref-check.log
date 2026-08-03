@@ -1,0 +1,172 @@
+# CMD: bash -c $'\necho "===1. WHO REFERENCES the orphan precept-* templates?==="\nrg -l "precept-atomic-documents|precept-record-metrics|precept-run-fixtures|precept-use-ripgrep|precept-use-shared-browser|precept-verify-qalc|write-reportare" .opencode _knowledge _codex --glob "!*.db" --glob "!node_modules" 2>/dev/null | rg -v "_bitacora/task-stdout" | head -20\necho "(none = orphaned)"\necho\necho "===2. WHO REFERENCES _rustlib?==="\nrg -l "_rustlib|tpl-ann" _knowledge/_templates --glob "!*.db" --glob "!target/**" 2>/dev/null | head\necho\necho "===3. REPORT-TEMPLATES-FULL-DIFF==="\ndiff _knowledge/_templates/write-reportare-template.md _knowledge/_templates/write-report-template.md\necho\necho "===4. RUSTLIB-SRC-SIZE==="\ndu -sh _knowledge/_templates/_rustlib/src _knowledge/_templates/_rustlib/target 2>/dev/null\necho\necho "===5. DBS-TRACKED==="\ngit ls-files _knowledge/_templates/schema/ | head' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:19:32-06:00
+# PID: 421164
+# DUR: 560ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 8474fe41
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\necho "===1. WHO REFERENCES the orphan precept-* templates?==="\nrg -l "precept-atomic-documents|precept-record-metrics|precept-run-fixtures|precept-use-ripgrep|precept-use-shared-browser|precept-verify-qalc|write-reportare" .opencode _knowledge _codex --glob "!*.db" --glob "!node_modules" 2>/dev/null | rg -v "_bitacora/task-stdout" | head -20\necho "(none = orphaned)"\necho\necho "===2. WHO REFERENCES _rustlib?==="\nrg -l "_rustlib|tpl-ann" _knowledge/_templates --glob "!*.db" --glob "!target/**" 2>/dev/null | head\necho\necho "===3. REPORT-TEMPLATES-FULL-DIFF==="\ndiff _knowledge/_templates/write-reportare-template.md _knowledge/_templates/write-report-template.md\necho\necho "===4. RUSTLIB-SRC-SIZE==="\ndu -sh _knowledge/_templates/_rustlib/src _knowledge/_templates/_rustlib/target 2>/dev/null\necho\necho "===5. DBS-TRACKED==="\ngit ls-files _knowledge/_templates/schema/ | head' 
+# CWD: /home/eddyr/assembler
+# --------------------
+===1. WHO REFERENCES the orphan precept-* templates?===
+_knowledge/_templates/report/20260802-063345.md
+_codex/_templates/report/20260802-063345.md
+_knowledge/_templates/dive-naming-conventions-template.md
+_codex/_templates/dive-naming-conventions-template.md
+_codex/_bitacora/task-todo/20260802-192218-codex-templates-update.md
+_codex/_bitacora/task-report/20260802-063915-codex-templates-improve.md
+_codex/_templates/AGENTS.md
+_codex/_templates/shell/copy-templates.sh
+(none = orphaned)
+
+===2. WHO REFERENCES _rustlib?===
+_knowledge/_templates/report/20260731-012848.md
+_knowledge/_templates/report/20260731-011644.md
+_knowledge/_templates/_rustlib/Cargo.toml
+_knowledge/_templates/_rustlib/src/main.rs
+_knowledge/_templates/script/semantic-search.ts
+_knowledge/_templates/script/bench.ts
+
+===3. REPORT-TEMPLATES-FULL-DIFF===
+2,3c2,3
+< id: TEMPLATE.WRITE.REPORTARE
+< title: Write-Reportare Template — Metrics-Led Report Form
+---
+> id: TEMPLATE.WRITE.REPORT
+> title: Write-Report Template — Session Report Form
+5c5
+< purpose: "Metrics-led report template: quantitative values before narrative."
+---
+> purpose: "Session-report template: what was done, decisions, errors, findings, metrics."
+
+===4. RUSTLIB-SRC-SIZE===
+20K	_knowledge/_templates/_rustlib/src
+21M	_knowledge/_templates/_rustlib/target
+
+===5. DBS-TRACKED===
+_knowledge/_templates/schema/templates-vector.db
+_knowledge/_templates/schema/templates.db
+_knowledge/_templates/schema/templates.sql
+# OUT_LINES: 39
+# OUT_BYTES: 1459
+# ERR_LINES: 0
+# EXEC: 421164|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh templates-ref-check -- bash -c 
+# EXEC: 421165|/usr/bin/date|date +%s%N
+# EXEC: 421168|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 421171|/usr/bin/git|git remote get-url origin
+# EXEC: 421169|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 421172|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 421174|/usr/bin/git|git branch --show-current
+# EXEC: 421176|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 421177|/usr/bin/head|head -1
+# EXEC: 421178|/usr/bin/tr|tr -d \n
+# EXEC: 421179|/usr/bin/bun|bun --version
+# EXEC: 421181|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 421182|/usr/bin/head|head -1
+# EXEC: 421183|/usr/bin/tr|tr -d \n
+# EXEC: 421184|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 421186|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 421187|/usr/bin/head|head -1
+# EXEC: 421188|/usr/bin/tr|tr -d \n
+# EXEC: 421189|/usr/bin/python3|python3 --version
+# EXEC: 421191|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 421192|/usr/bin/head|head -1
+# EXEC: 421193|/usr/bin/tr|tr -d \n
+# EXEC: 421194|/usr/bin/ruby|ruby --version
+# EXEC: 421197|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 421198|/usr/bin/head|head -1
+# EXEC: 421199|/usr/bin/tr|tr -d \n
+# EXEC: 421202|/usr/bin/rustc|rustc --version
+# EXEC: 421205|/usr/bin/timeout|timeout 2 go version
+# EXEC: 421206|/usr/bin/head|head -1
+# EXEC: 421207|/usr/bin/tr|tr -d \n
+# EXEC: 421208|/usr/bin/go|go version
+# EXEC: 421214|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 421216|/usr/bin/tr|tr -d \n
+# EXEC: 421215|/usr/bin/head|head -1
+# EXEC: 421217|/usr/bin/git|git --version
+# EXEC: 421219|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 421220|/usr/bin/head|head -1
+# EXEC: 421221|/usr/bin/tr|tr -d \n
+# EXEC: 421222|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 421224|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 421225|/usr/bin/head|head -1
+# EXEC: 421226|/usr/bin/tr|tr -d \n
+# EXEC: 421227|/usr/bin/date|date --version
+# EXEC: 421231|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 421232|/usr/bin/head|head -1
+# EXEC: 421233|/usr/bin/tr|tr -d \n
+# EXEC: 421234|/usr/bin/wc|wc --version
+# EXEC: 421236|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 421237|/usr/bin/head|head -1
+# EXEC: 421238|/usr/bin/tr|tr -d \n
+# EXEC: 421239|/usr/bin/cat|cat --version
+# EXEC: 421241|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 421242|/usr/bin/head|head -1
+# EXEC: 421243|/usr/bin/tr|tr -d \n
+# EXEC: 421244|/usr/bin/tee|tee --version
+# EXEC: 421246|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 421247|/usr/bin/head|head -1
+# EXEC: 421248|/usr/bin/tr|tr -d \n
+# EXEC: 421249|/usr/bin/mktemp|mktemp --version
+# EXEC: 421251|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 421252|/usr/bin/head|head -1
+# EXEC: 421253|/usr/bin/tr|tr -d \n
+# EXEC: 421254|/usr/bin/rm|rm --version
+# EXEC: 421256|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 421257|/usr/bin/head|head -1
+# EXEC: 421258|/usr/bin/tr|tr -d \n
+# EXEC: 421259|/usr/bin/timeout|timeout --version
+# EXEC: 421261|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 421262|/usr/bin/head|head -1
+# EXEC: 421263|/usr/bin/tr|tr -d \n
+# EXEC: 421264|/usr/bin/tr|tr --version
+# EXEC: 421266|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 421267|/usr/bin/head|head -1
+# EXEC: 421268|/usr/bin/tr|tr -d \n
+# EXEC: 421269|/usr/bin/head|head --version
+# EXEC: 421271|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 421272|/usr/bin/head|head -1
+# EXEC: 421273|/usr/bin/tr|tr -d \n
+# EXEC: 421274|/usr/bin/cut|cut --version
+# EXEC: 421276|/usr/bin/date|date +%s%N
+# EXEC: 421277|/usr/bin/sha256sum|sha256sum
+# EXEC: 421278|/usr/bin/cut|cut -c1-8
+# EXEC: 421280|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201932-templates-ref-check.log
+# EXEC: 421281|/usr/bin/date|date -Is
+# EXEC: 421282|/usr/bin/mktemp|mktemp
+# EXEC: 421283|/usr/bin/mktemp|mktemp
+# EXEC: 421284|/usr/bin/bash|bash -c 
+# EXEC: 421285|/usr/bin/rg|rg -l precept-atomic-documents|precept-record-metrics|precept-run-fixtures|precept-use-ripgrep|precept-use-shared-browser|precept-verify-qalc|write-reportare .opencode _knowledge _codex --glob !*.db --glob !node_modules
+# EXEC: 421286|/usr/bin/rg|rg -v _bitacora/task-stdout
+# EXEC: 421287|/usr/bin/head|head -20
+# EXEC: 421299|/usr/bin/head|head
+# EXEC: 421298|/usr/bin/rg|rg -l _rustlib|tpl-ann _knowledge/_templates --glob !*.db --glob !target/**
+# EXEC: 421308|/usr/bin/diff|diff _knowledge/_templates/write-reportare-template.md _knowledge/_templates/write-report-template.md
+# EXEC: 421309|/usr/bin/du|du -sh _knowledge/_templates/_rustlib/src _knowledge/_templates/_rustlib/target
+# EXEC: 421310|/usr/bin/git|git ls-files _knowledge/_templates/schema/
+# EXEC: 421311|/usr/bin/head|head
+# EXEC: 421313|/usr/bin/wc|wc -l
+# EXEC: 421314|/usr/bin/tr|tr -d  
+# EXEC: 421316|/usr/bin/wc|wc -c
+# EXEC: 421317|/usr/bin/tr|tr -d  
+# EXEC: 421319|/usr/bin/wc|wc -l
+# EXEC: 421320|/usr/bin/tr|tr -d  
+# EXEC: 421321|/usr/bin/date|date +%s%N
+# EXEC: 421323|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201932-templates-ref-check.log
+# EXEC: 421325|/usr/bin/cat|cat /tmp/tmp.4guJSJsHBG
+# EXEC: 421326|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201932-templates-ref-check.log
+# EXEC: 421327|/usr/bin/cat|cat /tmp/tmp.P88PtP6bLz
+# EXEC: 421328|/usr/bin/cat|cat /tmp/tmp.P88PtP6bLz
+# EXEC: 421329|/usr/bin/rm|rm -f /tmp/tmp.4guJSJsHBG /tmp/tmp.P88PtP6bLz
+# EXEC: 421331|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201932-templates-ref-check.log
+# EXEC: 421333|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201932-templates-ref-check.log
+# EXEC: 421335|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201932-templates-ref-check.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 diff=diff (GNU diffutils) 3.12 du=du (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rg=ripgrep 15.2.0 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 112
+# SHA: a3d949a2d4996267155165056e9c9691bb7fbb4d2ecc0f00a0ece3ddbe446f23
+# exit: 0

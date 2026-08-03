@@ -1,0 +1,19 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/.opencode/skills\ \&\&\ PASS=0\;\ FAIL=0\;\ for\ f\ in\ \$\(find\ .\ -name\ \"SKILL.md\"\ -not\ -path\ \"\*/.backups/\*\"\ \|\ sort\)\;\ do\ bold=\$\(grep\ -c\ \"\^\\\*\\\*\"\ \"\$f\"\)\;\ num=\$\(grep\ -cE\ \"\^\[0-9\]+\\.\"\ \"\$f\"\)\;\ tbl=\$\(grep\ -c\ \"\^\|\"\ \"\$f\"\)\;\ cathead=\$\(grep\ -c\ \"\^##\ \"\ \"\$f\"\)\;\ desc=\$\(grep\ -c\ \"\^description:\ Use\ this\ skill\ when\"\ \"\$f\"\)\;\ if\ \[\ \"\$bold\"\ -eq\ 0\ \]\ \&\&\ \[\ \"\$num\"\ -eq\ 0\ \]\ \&\&\ \[\ \"\$tbl\"\ -eq\ 0\ \]\ \&\&\ \[\ \"\$cathead\"\ -ge\ 1\ \]\ \&\&\ \[\ \"\$desc\"\ -eq\ 1\ \]\;\ then\ PASS=\$\(\(PASS+1\)\)\;\ else\ FAIL=\$\(\(FAIL+1\)\)\;\ echo\ \"FAIL:\ \$f\"\;\ fi\;\ done\;\ echo\ \"PASS=\$PASS\ FAIL=\$FAIL\" 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T12:41:09-06:00
+# PID: 296749
+# DUR: 215ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 27296d4a
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cd\ /home/eddyr/assembler/.opencode/skills\ \&\&\ PASS=0\;\ FAIL=0\;\ for\ f\ in\ \$\(find\ .\ -name\ \"SKILL.md\"\ -not\ -path\ \"\*/.backups/\*\"\ \|\ sort\)\;\ do\ bold=\$\(grep\ -c\ \"\^\\\*\\\*\"\ \"\$f\"\)\;\ num=\$\(grep\ -cE\ \"\^\[0-9\]+\\.\"\ \"\$f\"\)\;\ tbl=\$\(grep\ -c\ \"\^\|\"\ \"\$f\"\)\;\ cathead=\$\(grep\ -c\ \"\^##\ \"\ \"\$f\"\)\;\ desc=\$\(grep\ -c\ \"\^description:\ Use\ this\ skill\ when\"\ \"\$f\"\)\;\ if\ \[\ \"\$bold\"\ -eq\ 0\ \]\ \&\&\ \[\ \"\$num\"\ -eq\ 0\ \]\ \&\&\ \[\ \"\$tbl\"\ -eq\ 0\ \]\ \&\&\ \[\ \"\$cathead\"\ -ge\ 1\ \]\ \&\&\ \[\ \"\$desc\"\ -eq\ 1\ \]\;\ then\ PASS=\$\(\(PASS+1\)\)\;\ else\ FAIL=\$\(\(FAIL+1\)\)\;\ echo\ \"FAIL:\ \$f\"\;\ fi\;\ done\;\ echo\ \"PASS=\$PASS\ FAIL=\$FAIL\" 
+# CWD: /home/eddyr/assembler
+# --------------------
+PASS=28 FAIL=0
+# OUT_LINES: 1
+# OUT_BYTES: 15
+# ERR_LINES: 0
+# SHA: d8f98367a083375b708d307bb8b864945586546e0e7daaa5bd3494ff427af925

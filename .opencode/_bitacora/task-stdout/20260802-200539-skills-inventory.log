@@ -1,0 +1,156 @@
+# CMD: bash -c $'\nfind _knowledge/rust-docs/skills -name SKILL.md | sed "s|_knowledge/rust-docs/skills/||; s|/SKILL.md||" | sort' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:05:40-06:00
+# PID: 406846
+# DUR: 410ms
+# exit: 0
+# GIT: assembler@55903fc
+# BRANCH: main
+# SESSION: 98304ccf
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\nfind _knowledge/rust-docs/skills -name SKILL.md | sed "s|_knowledge/rust-docs/skills/||; s|/SKILL.md||" | sort' 
+# CWD: /home/eddyr/assembler
+# --------------------
+find-skills
+knowledge-languages
+playwright-dispatcher
+playwright-dispatcher/skill/use-playwright-ai-mode
+playwright-dispatcher/skill/use-playwright-core
+playwright-dispatcher/skill/use-playwright-debug
+playwright-dispatcher/skill/use-playwright-network-storage
+playwright-dispatcher/skill/use-playwright-vision
+reason-invariants
+reason-quantitative
+reason-verbal
+refactor-skill
+search-dispatcher
+search-dispatcher/skill/use-exa
+search-dispatcher/skill/use-parallel-search
+semantic-dispatcher
+semantic-dispatcher/skill/use-semantic-drift
+semantic-dispatcher/skill/use-semantic-embed
+semantic-dispatcher/skill/use-semantic-eval
+semantic-dispatcher/skill/use-semantic-purge
+semantic-dispatcher/skill/use-semantic-search
+semantic-dispatcher/skill/use-semantic-stats
+study-foundations
+workflow-dispatcher
+workflow-dispatcher/skill/bitacora-workflow
+workflow-dispatcher/skill/manage-bash-flows
+workflow-dispatcher/skill/structure-stdout
+workflow-dispatcher/skill/survey-scripts
+workflow-dispatcher/skill/use-context-seven
+# OUT_LINES: 29
+# OUT_BYTES: 1016
+# ERR_LINES: 0
+# EXEC: 406846|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh skills-inventory -- bash -c 
+# EXEC: 406847|/usr/bin/date|date +%s%N
+# EXEC: 406850|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 406853|/usr/bin/git|git remote get-url origin
+# EXEC: 406851|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 406854|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 406856|/usr/bin/git|git branch --show-current
+# EXEC: 406858|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 406859|/usr/bin/head|head -1
+# EXEC: 406860|/usr/bin/tr|tr -d \n
+# EXEC: 406861|/usr/bin/bun|bun --version
+# EXEC: 406863|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 406864|/usr/bin/head|head -1
+# EXEC: 406865|/usr/bin/tr|tr -d \n
+# EXEC: 406866|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 406868|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 406869|/usr/bin/head|head -1
+# EXEC: 406870|/usr/bin/tr|tr -d \n
+# EXEC: 406871|/usr/bin/python3|python3 --version
+# EXEC: 406873|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 406874|/usr/bin/head|head -1
+# EXEC: 406875|/usr/bin/tr|tr -d \n
+# EXEC: 406876|/usr/bin/ruby|ruby --version
+# EXEC: 406879|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 406880|/usr/bin/head|head -1
+# EXEC: 406881|/usr/bin/tr|tr -d \n
+# EXEC: 406882|/usr/bin/rustc|rustc --version
+# EXEC: 406886|/usr/bin/head|head -1
+# EXEC: 406885|/usr/bin/timeout|timeout 2 go version
+# EXEC: 406887|/usr/bin/tr|tr -d \n
+# EXEC: 406888|/usr/bin/go|go version
+# EXEC: 406895|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 406896|/usr/bin/head|head -1
+# EXEC: 406897|/usr/bin/tr|tr -d \n
+# EXEC: 406898|/usr/bin/git|git --version
+# EXEC: 406900|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 406901|/usr/bin/head|head -1
+# EXEC: 406902|/usr/bin/tr|tr -d \n
+# EXEC: 406903|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 406905|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 406906|/usr/bin/head|head -1
+# EXEC: 406907|/usr/bin/tr|tr -d \n
+# EXEC: 406908|/usr/bin/date|date --version
+# EXEC: 406911|/usr/bin/head|head -1
+# EXEC: 406910|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 406912|/usr/bin/tr|tr -d \n
+# EXEC: 406913|/usr/bin/wc|wc --version
+# EXEC: 406915|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 406916|/usr/bin/head|head -1
+# EXEC: 406917|/usr/bin/tr|tr -d \n
+# EXEC: 406918|/usr/bin/cat|cat --version
+# EXEC: 406921|/usr/bin/head|head -1
+# EXEC: 406920|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 406922|/usr/bin/tr|tr -d \n
+# EXEC: 406923|/usr/bin/tee|tee --version
+# EXEC: 406925|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 406926|/usr/bin/head|head -1
+# EXEC: 406927|/usr/bin/tr|tr -d \n
+# EXEC: 406928|/usr/bin/mktemp|mktemp --version
+# EXEC: 406931|/usr/bin/head|head -1
+# EXEC: 406930|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 406932|/usr/bin/tr|tr -d \n
+# EXEC: 406933|/usr/bin/rm|rm --version
+# EXEC: 406935|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 406936|/usr/bin/head|head -1
+# EXEC: 406937|/usr/bin/tr|tr -d \n
+# EXEC: 406938|/usr/bin/timeout|timeout --version
+# EXEC: 406940|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 406941|/usr/bin/head|head -1
+# EXEC: 406942|/usr/bin/tr|tr -d \n
+# EXEC: 406943|/usr/bin/tr|tr --version
+# EXEC: 406945|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 406946|/usr/bin/head|head -1
+# EXEC: 406947|/usr/bin/tr|tr -d \n
+# EXEC: 406948|/usr/bin/head|head --version
+# EXEC: 406950|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 406951|/usr/bin/head|head -1
+# EXEC: 406952|/usr/bin/tr|tr -d \n
+# EXEC: 406953|/usr/bin/cut|cut --version
+# EXEC: 406955|/usr/bin/date|date +%s%N
+# EXEC: 406956|/usr/bin/sha256sum|sha256sum
+# EXEC: 406957|/usr/bin/cut|cut -c1-8
+# EXEC: 406960|/usr/bin/date|date -Is
+# EXEC: 406959|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-200539-skills-inventory.log
+# EXEC: 406961|/usr/bin/mktemp|mktemp
+# EXEC: 406963|/usr/bin/mktemp|mktemp
+# EXEC: 406964|/usr/bin/bash|bash -c 
+# EXEC: 406965|/usr/bin/find|find _knowledge/rust-docs/skills -name SKILL.md
+# EXEC: 406966|/usr/bin/sed|sed s|_knowledge/rust-docs/skills/||; s|/SKILL.md||
+# EXEC: 406967|/usr/bin/sort|sort
+# EXEC: 406969|/usr/bin/wc|wc -l
+# EXEC: 406970|/usr/bin/tr|tr -d  
+# EXEC: 406973|/usr/bin/tr|tr -d  
+# EXEC: 406972|/usr/bin/wc|wc -c
+# EXEC: 406980|/usr/bin/wc|wc -l
+# EXEC: 406981|/usr/bin/tr|tr -d  
+# EXEC: 406982|/usr/bin/date|date +%s%N
+# EXEC: 406984|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-200539-skills-inventory.log
+# EXEC: 406986|/usr/bin/cat|cat /tmp/tmp.hQI6CrZP2J
+# EXEC: 406987|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-200539-skills-inventory.log
+# EXEC: 406988|/usr/bin/cat|cat /tmp/tmp.aohSJJpuid
+# EXEC: 406989|/usr/bin/cat|cat /tmp/tmp.aohSJJpuid
+# EXEC: 406990|/usr/bin/rm|rm -f /tmp/tmp.hQI6CrZP2J /tmp/tmp.aohSJJpuid
+# EXEC: 406992|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-200539-skills-inventory.log
+# EXEC: 406994|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-200539-skills-inventory.log
+# EXEC: 406996|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-200539-skills-inventory.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 find=find (GNU findutils) 4.11.0-modified git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sed=/usr/bin/sed (GNU sed) 4.10 sha256sum=sha256sum (GNU coreutils) 9.11 sort=sort (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 106
+# SHA: 4828d1724b3b604ee0ea3e27db56ee8c668fd7df482c3060aa7653d832caec8c
+# exit: 0

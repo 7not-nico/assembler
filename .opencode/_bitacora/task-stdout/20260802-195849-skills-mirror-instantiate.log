@@ -1,0 +1,133 @@
+# CMD: bash .opencode/_bitacora/bitacora-create.sh todo mirror\ live\ skills\ into\ rust-docs 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T19:58:50-06:00
+# PID: 400308
+# DUR: 951ms
+# exit: 0
+# GIT: assembler@55903fc
+# BRANCH: main
+# SESSION: b3f4ecfe
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_bitacora/bitacora-create.sh todo mirror\ live\ skills\ into\ rust-docs 
+# CWD: /home/eddyr/assembler
+# --------------------
+CREATE /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--mirror-live-skills-into-rust-docs.md
+# OUT_LINES: 1
+# OUT_BYTES: 108
+# ERR_LINES: 0
+# EXEC: 400308|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh skills-mirror-instantiate -- bash .opencode/_bitacora/bitacora-create.sh todo mirror live skills into rust-docs
+# EXEC: 400309|/usr/bin/date|date +%s%N
+# EXEC: 400312|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 400315|/usr/bin/git|git remote get-url origin
+# EXEC: 400313|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 400316|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 400318|/usr/bin/git|git branch --show-current
+# EXEC: 400320|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 400321|/usr/bin/head|head -1
+# EXEC: 400322|/usr/bin/tr|tr -d \n
+# EXEC: 400323|/usr/bin/bun|bun --version
+# EXEC: 400325|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 400326|/usr/bin/head|head -1
+# EXEC: 400327|/usr/bin/tr|tr -d \n
+# EXEC: 400328|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 400330|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 400331|/usr/bin/head|head -1
+# EXEC: 400332|/usr/bin/tr|tr -d \n
+# EXEC: 400333|/usr/bin/python3|python3 --version
+# EXEC: 400335|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 400336|/usr/bin/head|head -1
+# EXEC: 400337|/usr/bin/tr|tr -d \n
+# EXEC: 400338|/usr/bin/ruby|ruby --version
+# EXEC: 400341|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 400342|/usr/bin/head|head -1
+# EXEC: 400343|/usr/bin/tr|tr -d \n
+# EXEC: 400344|/usr/bin/rustc|rustc --version
+# EXEC: 400348|/usr/bin/timeout|timeout 2 go version
+# EXEC: 400350|/usr/bin/tr|tr -d \n
+# EXEC: 400349|/usr/bin/head|head -1
+# EXEC: 400351|/usr/bin/go|go version
+# EXEC: 400358|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 400359|/usr/bin/head|head -1
+# EXEC: 400360|/usr/bin/tr|tr -d \n
+# EXEC: 400361|/usr/bin/git|git --version
+# EXEC: 400363|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 400364|/usr/bin/head|head -1
+# EXEC: 400365|/usr/bin/tr|tr -d \n
+# EXEC: 400366|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 400368|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 400369|/usr/bin/head|head -1
+# EXEC: 400370|/usr/bin/tr|tr -d \n
+# EXEC: 400371|/usr/bin/date|date --version
+# EXEC: 400373|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 400374|/usr/bin/head|head -1
+# EXEC: 400375|/usr/bin/tr|tr -d \n
+# EXEC: 400376|/usr/bin/wc|wc --version
+# EXEC: 400378|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 400379|/usr/bin/head|head -1
+# EXEC: 400380|/usr/bin/tr|tr -d \n
+# EXEC: 400381|/usr/bin/cat|cat --version
+# EXEC: 400383|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 400384|/usr/bin/head|head -1
+# EXEC: 400385|/usr/bin/tr|tr -d \n
+# EXEC: 400386|/usr/bin/tee|tee --version
+# EXEC: 400388|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 400389|/usr/bin/head|head -1
+# EXEC: 400390|/usr/bin/tr|tr -d \n
+# EXEC: 400391|/usr/bin/mktemp|mktemp --version
+# EXEC: 400393|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 400394|/usr/bin/head|head -1
+# EXEC: 400395|/usr/bin/tr|tr -d \n
+# EXEC: 400396|/usr/bin/rm|rm --version
+# EXEC: 400399|/usr/bin/head|head -1
+# EXEC: 400400|/usr/bin/tr|tr -d \n
+# EXEC: 400398|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 400401|/usr/bin/timeout|timeout --version
+# EXEC: 400405|/usr/bin/tr|tr -d \n
+# EXEC: 400403|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 400404|/usr/bin/head|head -1
+# EXEC: 400406|/usr/bin/tr|tr --version
+# EXEC: 400409|/usr/bin/head|head -1
+# EXEC: 400408|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 400410|/usr/bin/tr|tr -d \n
+# EXEC: 400411|/usr/bin/head|head --version
+# EXEC: 400413|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 400414|/usr/bin/head|head -1
+# EXEC: 400415|/usr/bin/tr|tr -d \n
+# EXEC: 400416|/usr/bin/cut|cut --version
+# EXEC: 400418|/usr/bin/date|date +%s%N
+# EXEC: 400420|/usr/bin/cut|cut -c1-8
+# EXEC: 400419|/usr/bin/sha256sum|sha256sum
+# EXEC: 400422|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-195849-skills-mirror-instantiate.log
+# EXEC: 400423|/usr/bin/date|date -Is
+# EXEC: 400424|/usr/bin/mktemp|mktemp
+# EXEC: 400425|/usr/bin/mktemp|mktemp
+# EXEC: 400426|/usr/bin/bash|bash .opencode/_bitacora/bitacora-create.sh todo mirror live skills into rust-docs
+# EXEC: 400428|/usr/bin/dirname|dirname .opencode/_bitacora/bitacora-create.sh
+# EXEC: 400429|/usr/bin/bash|bash /home/eddyr/assembler/.opencode/_bitacora/bitacora-slugify.sh mirror live skills into rust-docs
+# EXEC: 400432|/usr/bin/tr|tr -c [:alnum:] -
+# EXEC: 400431|/usr/bin/tr|tr [:upper:] [:lower:]
+# EXEC: 400433|/usr/bin/sed|sed -E s/-+/-/g; s/^-+//; s/-+$//
+# EXEC: 400434|/usr/bin/date|date +%Y%m%d-%H%M%S
+# EXEC: 400435|/usr/bin/date|date +%Y-%m-%d
+# EXEC: 400436|/usr/bin/cat|cat
+# EXEC: 400439|/usr/bin/tr|tr -d  
+# EXEC: 400438|/usr/bin/wc|wc -l
+# EXEC: 400441|/usr/bin/wc|wc -c
+# EXEC: 400442|/usr/bin/tr|tr -d  
+# EXEC: 400444|/usr/bin/wc|wc -l
+# EXEC: 400445|/usr/bin/tr|tr -d  
+# EXEC: 400446|/usr/bin/date|date +%s%N
+# EXEC: 400448|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-195849-skills-mirror-instantiate.log
+# EXEC: 400450|/usr/bin/cat|cat /tmp/tmp.rZGW1Bm4fn
+# EXEC: 400451|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-195849-skills-mirror-instantiate.log
+# EXEC: 400452|/usr/bin/cat|cat /tmp/tmp.szviWUmoHm
+# EXEC: 400453|/usr/bin/cat|cat /tmp/tmp.szviWUmoHm
+# EXEC: 400454|/usr/bin/rm|rm -f /tmp/tmp.rZGW1Bm4fn /tmp/tmp.szviWUmoHm
+# EXEC: 400456|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-195849-skills-mirror-instantiate.log
+# EXEC: 400458|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-195849-skills-mirror-instantiate.log
+# EXEC: 400460|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-195849-skills-mirror-instantiate.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sed=/usr/bin/sed (GNU sed) 4.10 sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 111
+# SHA: 670f0b4c0256ecfb728f8b3736569534b53cda7209b059f45aa65ba8402434da
+# exit: 0

@@ -1,0 +1,155 @@
+# CMD: bash -c $'\necho "===copy-skills.sh==="; cat _knowledge/_templates/copy-skills.sh\necho; echo "===SPEC-FILES (ring family)==="; ls .opencode/entities/specifications/ | rg "RING|TOPOLOGY|ELEMENT"' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:29:19-06:00
+# PID: 432044
+# DUR: 387ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 4d00c243
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\necho "===copy-skills.sh==="; cat _knowledge/_templates/copy-skills.sh\necho; echo "===SPEC-FILES (ring family)==="; ls .opencode/entities/specifications/ | rg "RING|TOPOLOGY|ELEMENT"' 
+# CWD: /home/eddyr/assembler
+# --------------------
+===copy-skills.sh===
+#!/usr/bin/env bash
+# copy-skills.sh — copy SKILL.md files into a subproject docs/ dir, flattened
+# Usage: bash copy-skills.sh {dest-docs-dir} {skill-name}...
+# Copies each {skill}/SKILL.md → {dest-docs-dir}/{skill}.md
+set -euo pipefail
+
+DEST="${1:?dest-docs-dir required}"
+shift
+SKILLS_ROOT="$(cd "$(dirname "$0")/../../.opencode/skills" && pwd)"
+
+mkdir -p "$DEST"
+for skill in "$@"; do
+  src="$SKILLS_ROOT/$skill/SKILL.md"
+  if [ -f "$src" ]; then
+    cp "$src" "$DEST/$skill.md"
+    echo "  SKILL $skill → $DEST/$skill.md"
+  else
+    echo "  MISS  $skill (not found in $SKILLS_ROOT)"
+  fi
+done
+
+===SPEC-FILES (ring family)===
+SPEC.CODE.ELEMENT.NAME.md
+SPEC.CODE.RING.TOPOLOGY.md
+SPEC.DIRECTORY.RING.TOPOLOGY.md
+SPEC.KNOWLEDGE.CLASSIFICATION.TOPOLOGY.md
+SPEC.LANGUAGE.RING.TOPOLOGY.md
+# OUT_LINES: 28
+# OUT_BYTES: 814
+# ERR_LINES: 0
+# EXEC: 432044|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh copy-skills-review -- bash -c 
+# EXEC: 432045|/usr/bin/date|date +%s%N
+# EXEC: 432048|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 432051|/usr/bin/git|git remote get-url origin
+# EXEC: 432049|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 432052|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 432054|/usr/bin/git|git branch --show-current
+# EXEC: 432058|/usr/bin/head|head -1
+# EXEC: 432057|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 432059|/usr/bin/tr|tr -d \n
+# EXEC: 432063|/usr/bin/bun|bun --version
+# EXEC: 432068|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 432069|/usr/bin/head|head -1
+# EXEC: 432070|/usr/bin/tr|tr -d \n
+# EXEC: 432071|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 432073|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 432074|/usr/bin/head|head -1
+# EXEC: 432075|/usr/bin/tr|tr -d \n
+# EXEC: 432076|/usr/bin/python3|python3 --version
+# EXEC: 432078|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 432079|/usr/bin/head|head -1
+# EXEC: 432080|/usr/bin/tr|tr -d \n
+# EXEC: 432081|/usr/bin/ruby|ruby --version
+# EXEC: 432084|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 432085|/usr/bin/head|head -1
+# EXEC: 432086|/usr/bin/tr|tr -d \n
+# EXEC: 432087|/usr/bin/rustc|rustc --version
+# EXEC: 432091|/usr/bin/timeout|timeout 2 go version
+# EXEC: 432092|/usr/bin/head|head -1
+# EXEC: 432093|/usr/bin/tr|tr -d \n
+# EXEC: 432094|/usr/bin/go|go version
+# EXEC: 432100|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 432101|/usr/bin/head|head -1
+# EXEC: 432102|/usr/bin/tr|tr -d \n
+# EXEC: 432103|/usr/bin/git|git --version
+# EXEC: 432105|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 432106|/usr/bin/head|head -1
+# EXEC: 432107|/usr/bin/tr|tr -d \n
+# EXEC: 432108|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 432110|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 432111|/usr/bin/head|head -1
+# EXEC: 432112|/usr/bin/tr|tr -d \n
+# EXEC: 432113|/usr/bin/date|date --version
+# EXEC: 432115|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 432116|/usr/bin/head|head -1
+# EXEC: 432117|/usr/bin/tr|tr -d \n
+# EXEC: 432118|/usr/bin/wc|wc --version
+# EXEC: 432121|/usr/bin/head|head -1
+# EXEC: 432120|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 432122|/usr/bin/tr|tr -d \n
+# EXEC: 432123|/usr/bin/cat|cat --version
+# EXEC: 432125|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 432126|/usr/bin/head|head -1
+# EXEC: 432127|/usr/bin/tr|tr -d \n
+# EXEC: 432128|/usr/bin/tee|tee --version
+# EXEC: 432132|/usr/bin/tr|tr -d \n
+# EXEC: 432130|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 432131|/usr/bin/head|head -1
+# EXEC: 432133|/usr/bin/mktemp|mktemp --version
+# EXEC: 432135|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 432136|/usr/bin/head|head -1
+# EXEC: 432137|/usr/bin/tr|tr -d \n
+# EXEC: 432138|/usr/bin/rm|rm --version
+# EXEC: 432144|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 432145|/usr/bin/head|head -1
+# EXEC: 432146|/usr/bin/tr|tr -d \n
+# EXEC: 432150|/usr/bin/timeout|timeout --version
+# EXEC: 432152|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 432153|/usr/bin/head|head -1
+# EXEC: 432154|/usr/bin/tr|tr -d \n
+# EXEC: 432155|/usr/bin/tr|tr --version
+# EXEC: 432157|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 432158|/usr/bin/head|head -1
+# EXEC: 432159|/usr/bin/tr|tr -d \n
+# EXEC: 432160|/usr/bin/head|head --version
+# EXEC: 432162|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 432163|/usr/bin/head|head -1
+# EXEC: 432164|/usr/bin/tr|tr -d \n
+# EXEC: 432165|/usr/bin/cut|cut --version
+# EXEC: 432167|/usr/bin/date|date +%s%N
+# EXEC: 432168|/usr/bin/sha256sum|sha256sum
+# EXEC: 432169|/usr/bin/cut|cut -c1-8
+# EXEC: 432172|/usr/bin/date|date -Is
+# EXEC: 432171|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202919-copy-skills-review.log
+# EXEC: 432173|/usr/bin/mktemp|mktemp
+# EXEC: 432174|/usr/bin/mktemp|mktemp
+# EXEC: 432175|/usr/bin/bash|bash -c 
+# EXEC: 432176|/usr/bin/cat|cat _knowledge/_templates/copy-skills.sh
+# EXEC: 432177|/usr/bin/ls|ls .opencode/entities/specifications/
+# EXEC: 432178|/usr/bin/rg|rg RING|TOPOLOGY|ELEMENT
+# EXEC: 432180|/usr/bin/wc|wc -l
+# EXEC: 432181|/usr/bin/tr|tr -d  
+# EXEC: 432183|/usr/bin/wc|wc -c
+# EXEC: 432184|/usr/bin/tr|tr -d  
+# EXEC: 432186|/usr/bin/wc|wc -l
+# EXEC: 432187|/usr/bin/tr|tr -d  
+# EXEC: 432188|/usr/bin/date|date +%s%N
+# EXEC: 432190|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202919-copy-skills-review.log
+# EXEC: 432192|/usr/bin/cat|cat /tmp/tmp.qbCPLRfc8g
+# EXEC: 432193|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202919-copy-skills-review.log
+# EXEC: 432194|/usr/bin/cat|cat /tmp/tmp.YPQveOsWCd
+# EXEC: 432195|/usr/bin/cat|cat /tmp/tmp.YPQveOsWCd
+# EXEC: 432196|/usr/bin/rm|rm -f /tmp/tmp.qbCPLRfc8g /tmp/tmp.YPQveOsWCd
+# EXEC: 432198|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202919-copy-skills-review.log
+# EXEC: 432200|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202919-copy-skills-review.log
+# EXEC: 432202|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202919-copy-skills-review.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 ls=ls (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rg=ripgrep 15.2.0 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 106
+# SHA: d2526af433175a489252f6eed9cf7ed72d16fb187283a6b54798bc18f0226d38
+# exit: 0

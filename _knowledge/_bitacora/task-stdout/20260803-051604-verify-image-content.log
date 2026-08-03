@@ -1,0 +1,9 @@
+# CMD: bash -c $'cd /tmp/opencode/rust-book-clean && ruby -e "\nsvgs = Dir[\\"verify/EPUB/media/*.svg\\"]\npngs = Dir[\\"verify/EPUB/media/*.png\\"]\nbad_svg = svgs.select { |f| !File.binread(f, 64).match?(/<svg|<\\?xml/i) }\nbad_png = pngs.select { |f| !File.binread(f, 8).start_with?(\\"\\\\x89PNG\\".b) }\nputs \\"SVGs: #{svgs.length}  bad: #{bad_svg.empty? ? \\"none\\" : bad_svg.join(\\", \\")}\\"\nputs \\"PNGs: #{pngs.length}  bad: #{bad_png.empty? ? \\"none\\" : bad_png.join(\\", \\")}\\"\nputs \\"VERDICT: #{bad_svg.empty? && bad_png.empty? ? \\"ALL VALID IMAGE CONTENT\\" : \\"INVALID FILES FOUND\\"}\\"\n"' 
+# DATE: 2026-08-03T05:16:04-06:00
+# DUR: 55ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+SVGs: 23  bad: none
+PNGs: 5  bad: none
+VERDICT: ALL VALID IMAGE CONTENT
+# exit: 0

@@ -1,0 +1,9 @@
+# CMD: bash -c ls\ -la\ /tmp/opencode/rust-book-validate.epub\ \&\&\ ebook-convert\ /tmp/opencode/rust-book.epub\ /tmp/opencode/rust-book-validate2.epub\ 2\>\&1\ \|\ tail\ -3 
+# DATE: 2026-08-03T04:57:15-06:00
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+-rw-r--r-- 1 eddyr eddyr 1490662 Aug  3 04:57 /tmp/opencode/rust-book-validate.epub
+Generating default cover
+EPUB output written to /tmp/opencode/rust-book-validate2.epub
+Output saved to   /tmp/opencode/rust-book-validate2.epub
+# exit: 0

@@ -1,0 +1,42 @@
+# CMD: bash -c sqlite3\ /home/eddyr/assembler/.opencode/patlib.db\ \".schema\ bash\"\ \;\ echo\ \"---ruby---\"\;\ sqlite3\ /home/eddyr/assembler/.opencode/patlib.db\ \".schema\ ruby\"\;\ echo\ \"---bash\ rows---\"\;\ sqlite3\ /home/eddyr/assembler/.opencode/patlib.db\ \"SELECT\ id\,\ title\ FROM\ bash\ LIMIT\ 3\"\ 2\>/dev/null 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:25:33-06:00
+# PID: 340567
+# DUR: 84ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 41beb8a8
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c sqlite3\ /home/eddyr/assembler/.opencode/patlib.db\ \".schema\ bash\"\ \;\ echo\ \"---ruby---\"\;\ sqlite3\ /home/eddyr/assembler/.opencode/patlib.db\ \".schema\ ruby\"\;\ echo\ \"---bash\ rows---\"\;\ sqlite3\ /home/eddyr/assembler/.opencode/patlib.db\ \"SELECT\ id\,\ title\ FROM\ bash\ LIMIT\ 3\"\ 2\>/dev/null 
+# CWD: /home/eddyr/assembler
+# --------------------
+CREATE TABLE bash (
+  id TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  body TEXT NOT NULL,
+  source TEXT,
+  related TEXT,
+  tags TEXT,
+  reference TEXT,
+  created TEXT NOT NULL,
+  modified TEXT NOT NULL
+, precedes TEXT);
+---ruby---
+CREATE TABLE ruby (
+  id TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  body TEXT NOT NULL,
+  source TEXT,
+  related TEXT,
+  tags TEXT,
+  reference TEXT,
+  created TEXT NOT NULL,
+  modified TEXT NOT NULL
+, precedes TEXT);
+---bash rows---
+# OUT_LINES: 24
+# OUT_BYTES: 463
+# ERR_LINES: 0
+# SHA: ff88dbc12b754e125d7872ea57b78130ea259140f693194cd93b6d203283102e

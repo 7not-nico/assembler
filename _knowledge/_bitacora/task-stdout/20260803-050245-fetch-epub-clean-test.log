@@ -1,0 +1,2 @@
+# CMD: bash -c mkdir\ -p\ /tmp/opencode/rust-book-clean\ \&\&\ cd\ /tmp/opencode/rust-book-clean\ \&\&\ ruby\ /home/eddyr/assembler/_knowledge/rust-docs/script/fetch-epub.rb 
+# DATE: 2026-08-03T05:02:45-06:00

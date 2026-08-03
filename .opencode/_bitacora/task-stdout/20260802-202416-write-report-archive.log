@@ -1,0 +1,131 @@
+# CMD: bash -c $'\nmv _knowledge/_templates/write-report-template.md _knowledge/.archive/templates-legacy/\necho "archived write-report-template.md"\necho "===ARCHIVE-NOW==="; ls _knowledge/.archive/templates-legacy/ | rg report' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:24:17-06:00
+# PID: 426089
+# DUR: 378ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: db80d36f
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\nmv _knowledge/_templates/write-report-template.md _knowledge/.archive/templates-legacy/\necho "archived write-report-template.md"\necho "===ARCHIVE-NOW==="; ls _knowledge/.archive/templates-legacy/ | rg report' 
+# CWD: /home/eddyr/assembler
+# --------------------
+archived write-report-template.md
+===ARCHIVE-NOW===
+write-reportare-template.md
+write-report-template.md
+# OUT_LINES: 4
+# OUT_BYTES: 105
+# ERR_LINES: 0
+# EXEC: 426089|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh write-report-archive -- bash -c 
+# EXEC: 426090|/usr/bin/date|date +%s%N
+# EXEC: 426093|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 426096|/usr/bin/git|git remote get-url origin
+# EXEC: 426094|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 426097|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 426099|/usr/bin/git|git branch --show-current
+# EXEC: 426102|/usr/bin/head|head -1
+# EXEC: 426101|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 426103|/usr/bin/tr|tr -d \n
+# EXEC: 426104|/usr/bin/bun|bun --version
+# EXEC: 426106|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 426107|/usr/bin/head|head -1
+# EXEC: 426108|/usr/bin/tr|tr -d \n
+# EXEC: 426109|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 426111|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 426112|/usr/bin/head|head -1
+# EXEC: 426113|/usr/bin/tr|tr -d \n
+# EXEC: 426114|/usr/bin/python3|python3 --version
+# EXEC: 426116|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 426117|/usr/bin/head|head -1
+# EXEC: 426118|/usr/bin/tr|tr -d \n
+# EXEC: 426119|/usr/bin/ruby|ruby --version
+# EXEC: 426122|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 426123|/usr/bin/head|head -1
+# EXEC: 426124|/usr/bin/tr|tr -d \n
+# EXEC: 426125|/usr/bin/rustc|rustc --version
+# EXEC: 426128|/usr/bin/timeout|timeout 2 go version
+# EXEC: 426129|/usr/bin/head|head -1
+# EXEC: 426130|/usr/bin/tr|tr -d \n
+# EXEC: 426131|/usr/bin/go|go version
+# EXEC: 426138|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 426139|/usr/bin/head|head -1
+# EXEC: 426140|/usr/bin/tr|tr -d \n
+# EXEC: 426141|/usr/bin/git|git --version
+# EXEC: 426143|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 426144|/usr/bin/head|head -1
+# EXEC: 426145|/usr/bin/tr|tr -d \n
+# EXEC: 426146|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 426148|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 426149|/usr/bin/head|head -1
+# EXEC: 426150|/usr/bin/tr|tr -d \n
+# EXEC: 426151|/usr/bin/date|date --version
+# EXEC: 426153|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 426154|/usr/bin/head|head -1
+# EXEC: 426155|/usr/bin/tr|tr -d \n
+# EXEC: 426156|/usr/bin/wc|wc --version
+# EXEC: 426158|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 426159|/usr/bin/head|head -1
+# EXEC: 426160|/usr/bin/tr|tr -d \n
+# EXEC: 426161|/usr/bin/cat|cat --version
+# EXEC: 426164|/usr/bin/head|head -1
+# EXEC: 426163|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 426165|/usr/bin/tr|tr -d \n
+# EXEC: 426166|/usr/bin/tee|tee --version
+# EXEC: 426168|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 426169|/usr/bin/head|head -1
+# EXEC: 426170|/usr/bin/tr|tr -d \n
+# EXEC: 426171|/usr/bin/mktemp|mktemp --version
+# EXEC: 426173|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 426174|/usr/bin/head|head -1
+# EXEC: 426175|/usr/bin/tr|tr -d \n
+# EXEC: 426176|/usr/bin/rm|rm --version
+# EXEC: 426178|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 426179|/usr/bin/head|head -1
+# EXEC: 426180|/usr/bin/tr|tr -d \n
+# EXEC: 426181|/usr/bin/timeout|timeout --version
+# EXEC: 426185|/usr/bin/head|head -1
+# EXEC: 426184|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 426186|/usr/bin/tr|tr -d \n
+# EXEC: 426187|/usr/bin/tr|tr --version
+# EXEC: 426189|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 426190|/usr/bin/head|head -1
+# EXEC: 426191|/usr/bin/tr|tr -d \n
+# EXEC: 426192|/usr/bin/head|head --version
+# EXEC: 426194|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 426195|/usr/bin/head|head -1
+# EXEC: 426196|/usr/bin/tr|tr -d \n
+# EXEC: 426197|/usr/bin/cut|cut --version
+# EXEC: 426199|/usr/bin/date|date +%s%N
+# EXEC: 426200|/usr/bin/sha256sum|sha256sum
+# EXEC: 426201|/usr/bin/cut|cut -c1-8
+# EXEC: 426203|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202416-write-report-archive.log
+# EXEC: 426204|/usr/bin/date|date -Is
+# EXEC: 426205|/usr/bin/mktemp|mktemp
+# EXEC: 426206|/usr/bin/mktemp|mktemp
+# EXEC: 426207|/usr/bin/bash|bash -c 
+# EXEC: 426208|/usr/bin/mv|mv _knowledge/_templates/write-report-template.md _knowledge/.archive/templates-legacy/
+# EXEC: 426209|/usr/bin/ls|ls _knowledge/.archive/templates-legacy/
+# EXEC: 426210|/usr/bin/rg|rg report
+# EXEC: 426212|/usr/bin/wc|wc -l
+# EXEC: 426213|/usr/bin/tr|tr -d  
+# EXEC: 426215|/usr/bin/wc|wc -c
+# EXEC: 426216|/usr/bin/tr|tr -d  
+# EXEC: 426218|/usr/bin/wc|wc -l
+# EXEC: 426219|/usr/bin/tr|tr -d  
+# EXEC: 426220|/usr/bin/date|date +%s%N
+# EXEC: 426222|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202416-write-report-archive.log
+# EXEC: 426224|/usr/bin/cat|cat /tmp/tmp.1iuGb9fpgq
+# EXEC: 426225|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202416-write-report-archive.log
+# EXEC: 426226|/usr/bin/cat|cat /tmp/tmp.mpYwLY1psD
+# EXEC: 426227|/usr/bin/cat|cat /tmp/tmp.mpYwLY1psD
+# EXEC: 426228|/usr/bin/rm|rm -f /tmp/tmp.1iuGb9fpgq /tmp/tmp.mpYwLY1psD
+# EXEC: 426230|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202416-write-report-archive.log
+# EXEC: 426232|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202416-write-report-archive.log
+# EXEC: 426234|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202416-write-report-archive.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 ls=ls (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 mv=mv (GNU coreutils) 9.11 python3=Python 3.14.6 rg=ripgrep 15.2.0 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 106
+# SHA: 96b605ad8d2b05810c9177474512973cedd4faa0e71ed50715ad2749be699d8e
+# exit: 0

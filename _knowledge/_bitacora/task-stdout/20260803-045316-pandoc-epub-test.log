@@ -1,0 +1,57 @@
+# CMD: bash -c mkdir\ -p\ /tmp/opencode/epub-test\ \&\&\ cd\ /tmp/opencode/epub-test\ \&\&\ pandoc\ ../book-print.html\ -f\ html\ -t\ epub3\ --metadata\ title=\"The\ Rust\ Programming\ Language\"\ --metadata\ lang=\"en\"\ -o\ book-test.epub\ \&\&\ ls\ -la\ book-test.epub\ \&\&\ unzip\ -l\ book-test.epub\ \|\ head\ -20 
+# DATE: 2026-08-03T04:53:16-06:00
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+[WARNING] Could not fetch resource toc.html: Could not fetch toc.html
+  InvalidUrlException "toc.html" "Invalid URL"
+[WARNING] Duplicate identifier 'the-rust-programming-language' at input line 185 column 153
+[WARNING] Could not fetch resource img/ferris/does_not_compile.svg: PandocResourceNotFound "img/ferris/does_not_compile.svg"
+[WARNING] Could not fetch resource img/ferris/panics.svg: PandocResourceNotFound "img/ferris/panics.svg"
+[WARNING] Could not fetch resource img/ferris/not_desired_behavior.svg: PandocResourceNotFound "img/ferris/not_desired_behavior.svg"
+[WARNING] Could not fetch resource img/trpl04-01.svg: PandocResourceNotFound "img/trpl04-01.svg"
+[WARNING] Could not fetch resource img/trpl04-02.svg: PandocResourceNotFound "img/trpl04-02.svg"
+[WARNING] Could not fetch resource img/trpl04-03.svg: PandocResourceNotFound "img/trpl04-03.svg"
+[WARNING] Could not fetch resource img/trpl04-04.svg: PandocResourceNotFound "img/trpl04-04.svg"
+[WARNING] Could not fetch resource img/trpl04-05.svg: PandocResourceNotFound "img/trpl04-05.svg"
+[WARNING] Could not fetch resource img/trpl04-06.svg: PandocResourceNotFound "img/trpl04-06.svg"
+[WARNING] Could not fetch resource img/trpl04-07.svg: PandocResourceNotFound "img/trpl04-07.svg"
+[WARNING] Could not fetch resource img/trpl14-01.png: PandocResourceNotFound "img/trpl14-01.png"
+[WARNING] Could not fetch resource img/trpl14-02.png: PandocResourceNotFound "img/trpl14-02.png"
+[WARNING] Could not fetch resource img/trpl14-03.png: PandocResourceNotFound "img/trpl14-03.png"
+[WARNING] Could not fetch resource img/trpl14-04.png: PandocResourceNotFound "img/trpl14-04.png"
+[WARNING] Could not fetch resource img/trpl15-01.svg: PandocResourceNotFound "img/trpl15-01.svg"
+[WARNING] Could not fetch resource img/trpl15-02.svg: PandocResourceNotFound "img/trpl15-02.svg"
+[WARNING] Could not fetch resource img/trpl15-03.svg: PandocResourceNotFound "img/trpl15-03.svg"
+[WARNING] Could not fetch resource img/trpl15-04.svg: PandocResourceNotFound "img/trpl15-04.svg"
+[WARNING] Could not fetch resource img/trpl17-01.svg: PandocResourceNotFound "img/trpl17-01.svg"
+[WARNING] Could not fetch resource img/trpl17-02.svg: PandocResourceNotFound "img/trpl17-02.svg"
+[WARNING] Could not fetch resource img/trpl17-03.svg: PandocResourceNotFound "img/trpl17-03.svg"
+[WARNING] Could not fetch resource img/trpl17-04.svg: PandocResourceNotFound "img/trpl17-04.svg"
+[WARNING] Could not fetch resource img/trpl17-05.svg: PandocResourceNotFound "img/trpl17-05.svg"
+[WARNING] Could not fetch resource img/trpl17-06.svg: PandocResourceNotFound "img/trpl17-06.svg"
+[WARNING] Could not fetch resource img/trpl17-07.svg: PandocResourceNotFound "img/trpl17-07.svg"
+[WARNING] Could not fetch resource img/trpl17-08.svg: PandocResourceNotFound "img/trpl17-08.svg"
+[WARNING] Could not fetch resource img/trpl17-09.svg: PandocResourceNotFound "img/trpl17-09.svg"
+[WARNING] Could not fetch resource img/trpl21-01.png: PandocResourceNotFound "img/trpl21-01.png"
+-rw-r--r-- 1 eddyr eddyr 723051 Aug  3 04:53 book-test.epub
+Archive:  book-test.epub
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+       20  08-03-2026 10:53   mimetype
+      252  08-03-2026 10:53   META-INF/container.xml
+      161  08-03-2026 10:53   META-INF/com.apple.ibooks.display-options.xml
+    15630  08-03-2026 10:53   EPUB/content.opf
+   116490  08-03-2026 10:53   EPUB/toc.ncx
+    71846  08-03-2026 10:53   EPUB/nav.xhtml
+      560  08-03-2026 10:53   EPUB/text/title_page.xhtml
+     3813  08-03-2026 10:53   EPUB/styles/stylesheet1.css
+     2045  08-03-2026 10:53   EPUB/text/ch001.xhtml
+     3486  08-03-2026 10:53   EPUB/text/ch002.xhtml
+    13028  08-03-2026 10:53   EPUB/text/ch003.xhtml
+      977  08-03-2026 10:53   EPUB/text/ch004.xhtml
+    12457  08-03-2026 10:53   EPUB/text/ch005.xhtml
+    14910  08-03-2026 10:53   EPUB/text/ch006.xhtml
+    17801  08-03-2026 10:53   EPUB/text/ch007.xhtml
+   108679  08-03-2026 10:53   EPUB/text/ch008.xhtml
+     1926  08-03-2026 10:53   EPUB/text/ch009.xhtml
+# exit: 0

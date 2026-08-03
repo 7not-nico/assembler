@@ -2,16 +2,16 @@
 
 ## Domain
 
-The `_templates/` folder hosts bootstrap templates for knowledge projects. This system scaffolds `_knowledge/` projects and tracks its own improvement. The registry database and the semantic engine record the template set and its history.
+The `_templates/` folder hosts bootstrap templates for knowledge projects. This system scaffolds `_knowledge/` projects and tracks its own improvement. The registry database and the semantic engine record the template set and its history
 
 ## Role
 
 The `_templates/` project owns four responsibilities:
 
-- **Project scaffolding** — `scaffold-knowledge.sh` creates the 13-layer chain.
-- **Template definitions** — per-layer boilerplate, naming conventions, and anchored skills live here.
-- **Registry and semantic search** — templates and reports stay queryable by meaning.
-- **Improvement loop** — `report/` records every session's errors and findings.
+- Project scaffolding — `scaffold-knowledge.sh` creates the 13-layer chain
+- Template definitions — per-layer boilerplate, naming conventions, and anchored skills live here
+- Registry and semantic search — templates and reports stay queryable by meaning
+- Improvement loop — `report/` records every session's errors and findings
 
 ## Toolchain
 
@@ -62,7 +62,7 @@ format/ → precept/ → procedure/ → research/ → concept/ → note/ → bit
 → glossary/ → schema/ → script/ → reference/ → fixtures/ → practice/
 ```
 
-Scaffolds create this chain. The `_templates/` project is the chain's source, not a member.
+Scaffolds create this chain. The `_templates/` project is the chain's source, not a member
 
 ## Layer semantics (governing rule)
 
@@ -75,12 +75,12 @@ reference/  CITATIONS from the site — verbatim quotes, claim mapping
 
 ## Naming conventions
 
-`reference/naming-conventions.md` (template at `naming-conventions-template.md`) defines the 13-layer patterns, rationale, rules, and exceptions.
+`reference/naming-conventions.md` (template at `naming-conventions-template.md`) defines the 13-layer patterns, rationale, rules, and exceptions
 
 ## Formatting conventions
 
-- Code blocks take precedence over md tables — all templates use code blocks.
-- Template artifacts contain no md tables.
+- Code blocks take precedence over md tables — all templates use code blocks
+- Template artifacts contain no md tables
 
 ## Session reports — improvement loop (obligatory)
 
@@ -92,7 +92,7 @@ shape:    report/report-template.md
 content:  what was done, decisions, errors found, findings, open edges, todo state
 ```
 
-Errors and findings feed template fixes — each session improves the next. `templates.db` records the per-session error and finding counts.
+Errors and findings feed template fixes — each session improves the next. `templates.db` records the per-session error and finding counts
 
 ## Template inventory
 
@@ -107,4 +107,4 @@ Errors and findings feed template fixes — each session improves the next. `tem
 
 ## Delegation
 
-Root provides patterns, terms, and shared substrate (`_lib/embed.ts`, `_lib/score.ts` — imported, never modified). This project owns the knowledge-project bootstrap system.
+Root provides patterns, terms, and shared substrate (`_lib/embed.ts`, `_lib/score.ts` — imported, never modified). This project owns the knowledge-project bootstrap system

@@ -4,18 +4,18 @@ description: Use this skill when studying uncharted topics — it composes xrequ
 state-profile: hybrid
 nexus: NEX.INVESTIGATION.STAGE
 ---
-**Procedure**
+## Procedure
 
-1. Run command `/xrequire-foundations` — pass topic inferred from context.
-2. On WARN or FAIL — report gap to user. Ask: "Continue research or seed missing entities first?"
-3. On user continue or PASS — decompose topic via question tool. Offer 4-6 sub-concepts derived from topic structure.
-4. Log confirmed sub-concepts as query anchors.
-5. Pass topic + anchors to `/xresearch-geo` for cross-region authoritative search. Prefer academic sources (.edu, .ac.*) over commercial (.com) — replace .com refs with academic equivalents.
-   **After `/xresearch-geo` completes:** calculate commercial-source ratio across all regions. If > 20% across the compiled manifest, tag RESEARCH as COMMERCIAL-HEAVY WARN and run a secondary replacement pass before accepting.
-   **Schema output** — decomposed anchors produce per-anchor seed files: `raw/schemas/{anchor-name}.sql` + shared `raw/schemas/db.sql`.
-6. Report manifest path on completion.
+- Run command `/xrequire-foundations` — pass topic inferred from context.
+- On WARN or FAIL — report gap to user. Ask: "Continue research or seed missing entities first?"
+- On user continue or PASS — decompose topic via question tool. Offer 4-6 sub-concepts derived from topic structure.
+- Log confirmed sub-concepts as query anchors.
+- Pass topic + anchors to `/xresearch-geo` for cross-region authoritative search. Prefer academic sources (.edu, .ac.*) over commercial (.com) — replace .com refs with academic equivalents.
+   After `/xresearch-geo` completes: calculate commercial-source ratio across all regions. If > 20% across the compiled manifest, tag RESEARCH as COMMERCIAL-HEAVY WARN and run a secondary replacement pass before accepting.
+   Schema output — decomposed anchors produce per-anchor seed files: `raw/schemas/{anchor-name}.sql` + shared `raw/schemas/db.sql`.
+- Report manifest path on completion.
 
-**Gotchas**
+## Gotchas
 
 - Running research before foundations — always complete `/xrequire-foundations` first; research scope depends on gap severity
 - Decomposing too many sub-concepts — limit to 4-6; more than 8 dilutes research focus and causes query drift
@@ -26,7 +26,7 @@ nexus: NEX.INVESTIGATION.STAGE
 - Unlogged anchors before research — log confirmed sub-concepts before the `/xresearch-geo` call
 - RESEARCH marked PASS when aggregate quality drifts — set COMMERCIAL-HEAVY WARN even when all regions PASS; aggregate quality is a separate dimension from per-region availability
 
-**Report — per step:**
+## Report — per step:
 - FOUNDATIONS — PASS, WARN, or FAIL
 - DECOMPOSITION — PASS or SKIP
 - RESEARCH — PASS or FAIL

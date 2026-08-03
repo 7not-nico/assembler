@@ -5,9 +5,9 @@ state-profile: stateless
 nexus: NEX.BROWSER.STACK
 ---
 
-**Availability** — most tools require `--caps=network` or `--caps=storage` on server launch.
+Availability — most tools require `--caps=network` or `--caps=storage` on server launch.
 
-**Tools — network**
+## Tools — network
 
 ```
   Tool                         Capability  Parameters                                                                   Notes
@@ -18,7 +18,7 @@ nexus: NEX.BROWSER.STACK
   `browser_network_state_set`  `network`   `state` (`online`/`offline`)                                                 Test offline mode
 ```
 
-**Tools — storage**
+## Tools — storage
 
 ```
   Tool                             Capability  Parameters                                                               Notes
@@ -41,7 +41,7 @@ nexus: NEX.BROWSER.STACK
   `browser_set_storage_state`      `storage`   `path`                                                                   Restore saved state
 ```
 
-**Gotchas**
+## Gotchas
 
 - Route/network/storage tools unavailable without corresponding `--caps=` flag
 - `browser_route` patterns use glob syntax (`**` for recursive match)

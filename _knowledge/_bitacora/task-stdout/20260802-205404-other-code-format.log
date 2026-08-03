@@ -1,0 +1,25 @@
+# CMD: bash -c $'\n# strip trailing whitespace\nfor f in _knowledge/_templates/*.sh _knowledge/rust-docs/script/*.sh; do\n  sed -i "s/[[:space:]]*$//" "$f"\ndone\necho "whitespace stripped"\n# syntax re-check\nfor s in _knowledge/_templates/*.sh _knowledge/rust-docs/script/*.sh; do bash -n "$s" && echo "OK $s" || echo "FAIL $s"; done' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:54:04-06:00
+# PID: 455733
+# DUR: 98ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: ea111738
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\n# strip trailing whitespace\nfor f in _knowledge/_templates/*.sh _knowledge/rust-docs/script/*.sh; do\n  sed -i "s/[[:space:]]*$//" "$f"\ndone\necho "whitespace stripped"\n# syntax re-check\nfor s in _knowledge/_templates/*.sh _knowledge/rust-docs/script/*.sh; do bash -n "$s" && echo "OK $s" || echo "FAIL $s"; done' 
+# CWD: /home/eddyr/assembler
+# --------------------
+whitespace stripped
+OK _knowledge/_templates/atomic-script-template.sh
+OK _knowledge/_templates/copy-rings.sh
+OK _knowledge/_templates/copy-skills.sh
+OK _knowledge/_templates/run-logged-template.sh
+OK _knowledge/_templates/scaffold-knowledge.sh
+OK _knowledge/rust-docs/script/run-logged.sh
+# OUT_LINES: 7
+# OUT_BYTES: 290
+# ERR_LINES: 0
+# SHA: 13cd70a90a530a951add0499c550d44bc45cb46d7ae3df0a95f40719adebbe1d

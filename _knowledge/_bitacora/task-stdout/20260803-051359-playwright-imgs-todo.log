@@ -1,0 +1,7 @@
+# CMD: bash ../../_bitacora/bitacora-create.sh todo playwright-missing-images 
+# DATE: 2026-08-03T05:13:59-06:00
+# DUR: 11ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+CREATE /home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--playwright-missing-images.md
+# exit: 0

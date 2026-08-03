@@ -1,0 +1,46 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/.opencode/skills\ \&\&\ for\ f\ in\ \$\(find\ .\ -name\ \"SKILL.md\"\ -not\ -path\ \"\*/.backups/\*\"\ \|\ sort\)\;\ do\ name=\$\(grep\ -c\ \"\^name:\"\ \"\$f\"\)\;\ desc=\$\(grep\ -c\ \"\^description:\ Use\ this\ skill\ when\"\ \"\$f\"\)\;\ sp=\$\(grep\ -c\ \"\^state-profile:\"\ \"\$f\"\)\;\ nexus=\$\(grep\ -c\ \"\^nexus:\"\ \"\$f\"\)\;\ bold=\$\(grep\ -c\ \"\^\\\*\\\*\"\ \"\$f\"\)\;\ numsteps=\$\(grep\ -cE\ \"\^\[0-9\]+\\.\"\ \"\$f\"\)\;\ tables=\$\(grep\ -c\ \"\^\|\"\ \"\$f\"\)\;\ cathead=\$\(grep\ -c\ \"\^##\ Trigger\\\|\^##\ Procedure\\\|\^##\ Gotchas\"\ \"\$f\"\)\;\ printf\ \"%-55s\ name=%d\ descOK=%d\ state=%d\ nexus=%d\ bold=%d\ num=%d\ tbl=%d\ catHead=%d\\n\"\ \"\$f\"\ \"\$name\"\ \"\$desc\"\ \"\$sp\"\ \"\$nexus\"\ \"\$bold\"\ \"\$numsteps\"\ \"\$tables\"\ \"\$cathead\"\;\ done 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T12:35:04-06:00
+# PID: 291764
+# DUR: 280ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: bb674ed0
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cd\ /home/eddyr/assembler/.opencode/skills\ \&\&\ for\ f\ in\ \$\(find\ .\ -name\ \"SKILL.md\"\ -not\ -path\ \"\*/.backups/\*\"\ \|\ sort\)\;\ do\ name=\$\(grep\ -c\ \"\^name:\"\ \"\$f\"\)\;\ desc=\$\(grep\ -c\ \"\^description:\ Use\ this\ skill\ when\"\ \"\$f\"\)\;\ sp=\$\(grep\ -c\ \"\^state-profile:\"\ \"\$f\"\)\;\ nexus=\$\(grep\ -c\ \"\^nexus:\"\ \"\$f\"\)\;\ bold=\$\(grep\ -c\ \"\^\\\*\\\*\"\ \"\$f\"\)\;\ numsteps=\$\(grep\ -cE\ \"\^\[0-9\]+\\.\"\ \"\$f\"\)\;\ tables=\$\(grep\ -c\ \"\^\|\"\ \"\$f\"\)\;\ cathead=\$\(grep\ -c\ \"\^##\ Trigger\\\|\^##\ Procedure\\\|\^##\ Gotchas\"\ \"\$f\"\)\;\ printf\ \"%-55s\ name=%d\ descOK=%d\ state=%d\ nexus=%d\ bold=%d\ num=%d\ tbl=%d\ catHead=%d\\n\"\ \"\$f\"\ \"\$name\"\ \"\$desc\"\ \"\$sp\"\ \"\$nexus\"\ \"\$bold\"\ \"\$numsteps\"\ \"\$tables\"\ \"\$cathead\"\;\ done 
+# CWD: /home/eddyr/assembler
+# --------------------
+./knowledge-languages/SKILL.md                          name=1 descOK=1 state=1 nexus=1 bold=3 num=6 tbl=0 catHead=0
+./playwright-dispatcher/SKILL.md                        name=1 descOK=1 state=1 nexus=1 bold=3 num=4 tbl=0 catHead=0
+./playwright-dispatcher/skill/use-playwright-ai-mode/SKILL.md name=1 descOK=1 state=1 nexus=1 bold=2 num=0 tbl=0 catHead=0
+./playwright-dispatcher/skill/use-playwright-core/SKILL.md name=1 descOK=1 state=1 nexus=1 bold=2 num=0 tbl=0 catHead=0
+./playwright-dispatcher/skill/use-playwright-debug/SKILL.md name=1 descOK=1 state=1 nexus=1 bold=3 num=0 tbl=0 catHead=0
+./playwright-dispatcher/skill/use-playwright-network-storage/SKILL.md name=1 descOK=1 state=1 nexus=1 bold=4 num=0 tbl=0 catHead=0
+./playwright-dispatcher/skill/use-playwright-vision/SKILL.md name=1 descOK=1 state=1 nexus=1 bold=3 num=0 tbl=0 catHead=0
+./reason-invariants/SKILL.md                            name=1 descOK=0 state=1 nexus=1 bold=6 num=8 tbl=0 catHead=0
+./reason-quantitative/SKILL.md                          name=1 descOK=1 state=1 nexus=1 bold=2 num=5 tbl=0 catHead=0
+./reason-verbal/SKILL.md                                name=1 descOK=1 state=1 nexus=1 bold=2 num=6 tbl=0 catHead=0
+./refactor-skill/SKILL.md                               name=1 descOK=1 state=1 nexus=1 bold=3 num=11 tbl=0 catHead=0
+./search-dispatcher/SKILL.md                            name=1 descOK=1 state=1 nexus=1 bold=3 num=4 tbl=0 catHead=0
+./search-dispatcher/skill/use-exa/SKILL.md              name=1 descOK=1 state=1 nexus=1 bold=2 num=0 tbl=0 catHead=0
+./search-dispatcher/skill/use-parallel-search/SKILL.md  name=1 descOK=1 state=1 nexus=1 bold=2 num=0 tbl=0 catHead=0
+./semantic-dispatcher/SKILL.md                          name=1 descOK=1 state=1 nexus=1 bold=3 num=4 tbl=0 catHead=0
+./semantic-dispatcher/skill/use-semantic-drift/SKILL.md name=1 descOK=1 state=1 nexus=1 bold=2 num=0 tbl=0 catHead=0
+./semantic-dispatcher/skill/use-semantic-embed/SKILL.md name=1 descOK=1 state=1 nexus=1 bold=2 num=0 tbl=0 catHead=0
+./semantic-dispatcher/skill/use-semantic-eval/SKILL.md  name=1 descOK=1 state=1 nexus=1 bold=2 num=0 tbl=0 catHead=0
+./semantic-dispatcher/skill/use-semantic-purge/SKILL.md name=1 descOK=1 state=1 nexus=1 bold=2 num=0 tbl=0 catHead=0
+./semantic-dispatcher/skill/use-semantic-search/SKILL.md name=1 descOK=1 state=1 nexus=1 bold=2 num=0 tbl=0 catHead=0
+./semantic-dispatcher/skill/use-semantic-stats/SKILL.md name=1 descOK=1 state=1 nexus=1 bold=2 num=0 tbl=0 catHead=0
+./study-foundations/SKILL.md                            name=1 descOK=1 state=1 nexus=1 bold=3 num=6 tbl=0 catHead=0
+./workflow-dispatcher/skill/bitacora-workflow/SKILL.md  name=1 descOK=0 state=1 nexus=1 bold=3 num=8 tbl=0 catHead=0
+./workflow-dispatcher/skill/manage-bash-flows/SKILL.md  name=1 descOK=1 state=1 nexus=1 bold=7 num=9 tbl=0 catHead=0
+./workflow-dispatcher/SKILL.md                          name=1 descOK=1 state=1 nexus=1 bold=3 num=4 tbl=0 catHead=0
+./workflow-dispatcher/skill/structure-stdout/SKILL.md   name=1 descOK=1 state=1 nexus=1 bold=6 num=16 tbl=0 catHead=0
+./workflow-dispatcher/skill/survey-scripts/SKILL.md     name=1 descOK=1 state=1 nexus=1 bold=3 num=12 tbl=0 catHead=0
+./workflow-dispatcher/skill/use-context-seven/SKILL.md  name=1 descOK=1 state=1 nexus=1 bold=1 num=0 tbl=0 catHead=0
+# OUT_LINES: 28
+# OUT_BYTES: 3312
+# ERR_LINES: 0
+# SHA: 4846c2cc2288cc0ea74deb268fad10994333b66bb6009174324bf550846d9506

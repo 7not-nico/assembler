@@ -1,7 +1,7 @@
 #!/usr/bin/env bun
 // bench.ts — evaluate semantic search across a fixed query suite
 // Usage: bun run script/bench.ts [--field content] — prints per-query top-hit + score
-// Uses Rust tpl-ann batch verb — ONE spawn serves the whole suite (no per-query stall).
+// Uses Go ann-tpl batch verb — ONE spawn serves the whole suite (no per-query stall).
 import { Database } from "bun:sqlite"
 import { vector } from "../../../.opencode/_lib/embed.ts"
 import * as path from "node:path"
@@ -9,7 +9,6 @@ import * as fs from "node:fs"
 
 const ROOT = path.resolve(import.meta.dir, "..")
 const DB_PATH = path.join(ROOT, "schema", "templates-vector.db")
-const BIN = path.join(ROOT, "_rustlib", "target", "release", "tpl-ann")
 const FIELD = process.argv.find(a => a.startsWith("--field="))?.split("=")[1] || "content"
 
 const SUITE: [string, string[]][] = [
@@ -18,7 +17,7 @@ const SUITE: [string, string[]][] = [
   ["capture dynamic page content with browser automation", ["browse-playwright-template.md"]],
   ["sharp library failed to load native libvips", ["20260731-004633.md", "20260731-005130.md"]],
   ["hands-on exercise drill validating conventions", ["practice-template.md"]],
-  ["write a session report with errors and findings", ["write-report-template.md"]],
+  ["write a session report with errors and findings", ["report-template.md"]],
   ["structural format definition governing file shape", ["format-template.md"]],
 ]
 
@@ -42,7 +41,7 @@ try {
 }
 
 let correct = 0
-console.log(`field=${FIELD}  vectors=${vectors.length}  (Rust batch ANN)\n`)
+console.log(`field=${FIELD}  vectors=${vectors.length}  (Go batch ANN)\n`)
 for (let i = 0; i < SUITE.length; i++) {
   const [q, accepts] = SUITE[i]
   const top = topIndices[i]

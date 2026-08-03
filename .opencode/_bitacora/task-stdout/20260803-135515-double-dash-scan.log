@@ -1,0 +1,23 @@
+# CMD: bash -c cd\ /home/eddyr/assembler\ \&\&\ echo\ \"===\ double\ em-dash\ scan\ all\ skills\ ===\"\;\ for\ f\ in\ \$\(find\ .opencode/skills\ -name\ SKILL.md\ -not\ -path\ \"\*/.backups/\*\"\ \|\ sort\)\;\ do\ n=\$\(grep\ -c\ \"—\ —\"\ \"\$f\"\ 2\>/dev/null\)\;\ \[\ \"\$n\"\ -gt\ 0\ \]\ \&\&\ echo\ \"\$n:\ \$f\"\;\ done\;\ echo\ \"===\ double-dash\ sample\ from\ backup\ vs\ live\ \(reason-invariants\ line\ 24\)\ ===\"\;\ sed\ -n\ \"24p\"\ .opencode/skills/.backups/2026-08-03T123655/reason-invariants/SKILL.md\;\ echo\ \"---live---\"\;\ sed\ -n\ \"24p\"\ .opencode/skills/reason-invariants/SKILL.md 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:55:15-06:00
+# PID: 372245
+# DUR: 124ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: cde460e2
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cd\ /home/eddyr/assembler\ \&\&\ echo\ \"===\ double\ em-dash\ scan\ all\ skills\ ===\"\;\ for\ f\ in\ \$\(find\ .opencode/skills\ -name\ SKILL.md\ -not\ -path\ \"\*/.backups/\*\"\ \|\ sort\)\;\ do\ n=\$\(grep\ -c\ \"—\ —\"\ \"\$f\"\ 2\>/dev/null\)\;\ \[\ \"\$n\"\ -gt\ 0\ \]\ \&\&\ echo\ \"\$n:\ \$f\"\;\ done\;\ echo\ \"===\ double-dash\ sample\ from\ backup\ vs\ live\ \(reason-invariants\ line\ 24\)\ ===\"\;\ sed\ -n\ \"24p\"\ .opencode/skills/.backups/2026-08-03T123655/reason-invariants/SKILL.md\;\ echo\ \"---live---\"\;\ sed\ -n\ \"24p\"\ .opencode/skills/reason-invariants/SKILL.md 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== double em-dash scan all skills ===
+=== double-dash sample from backup vs live (reason-invariants line 24) ===
+1. **Locate the invariant layer** — find `invariant/` in the project root. List every `{domain}-{constraint}.md` file. Treat the layer as the outermost fact set.
+---live---
+ - Locate the invariant layer — �� find `invariant/` in the project root. List every `{domain}-{constraint}.md` file. Treat the layer as the outermost fact set.
+# OUT_LINES: 5
+# OUT_BYTES: 452
+# ERR_LINES: 0
+# SHA: aeb572c1ff9eefeb495b00d92f57d366a1b9d2c332033d92719f6e2c049bce1a

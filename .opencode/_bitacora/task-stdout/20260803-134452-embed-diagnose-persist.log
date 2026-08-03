@@ -1,0 +1,24 @@
+# CMD: bash -c cp\ /tmp/opencode/embed-diagnose.pl\ /home/eddyr/assembler/.opencode/_scripts/embed-diagnose.pl\ \&\&\ chmod\ +x\ /home/eddyr/assembler/.opencode/_scripts/embed-diagnose.pl\ \&\&\ perl\ -c\ /home/eddyr/assembler/.opencode/_scripts/embed-diagnose.pl\ \&\&\ echo\ PERSISTED 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:44:52-06:00
+# PID: 356531
+# DUR: 96ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 5d6ba303
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cp\ /tmp/opencode/embed-diagnose.pl\ /home/eddyr/assembler/.opencode/_scripts/embed-diagnose.pl\ \&\&\ chmod\ +x\ /home/eddyr/assembler/.opencode/_scripts/embed-diagnose.pl\ \&\&\ perl\ -c\ /home/eddyr/assembler/.opencode/_scripts/embed-diagnose.pl\ \&\&\ echo\ PERSISTED 
+# CWD: /home/eddyr/assembler
+# --------------------
+PERSISTED
+356657<tracer>: "/usr/bin/bash" ["bash", "-c", "cp /tmp/opencode/embed-diagnose.pl /home/eddyr/assembler/.opencode/_scripts/embed-diagnose.pl && chmod +x /home/eddyr/assembler/.opencode/_scripts/embed-diagnose.pl && perl -c /home/eddyr/assembler/.opencode/_scripts/embed-diagnose.pl && echo PERSISTED"] fd [] with []
+356658<bash>: "/usr/bin/cp" ["cp", "/tmp/opencode/embed-diagnose.pl", "/home/eddyr/assembler/.opencode/_scripts/embed-diagnose.pl"] fd [] with [M"SHLVL"="3", M"_"="/usr/bin/cp"]
+356659<bash>: "/usr/bin/chmod" ["chmod", "+x", "/home/eddyr/assembler/.opencode/_scripts/embed-diagnose.pl"] fd [] with [M"SHLVL"="3", M"_"="/usr/bin/chmod"]
+356660<bash>: "/usr/bin/perl" ["perl", "-c", "/home/eddyr/assembler/.opencode/_scripts/embed-diagnose.pl"] fd [] with [M"SHLVL"="3", M"_"="/usr/bin/perl"]
+/home/eddyr/assembler/.opencode/_scripts/embed-diagnose.pl syntax OK
+# OUT_LINES: 1
+# OUT_BYTES: 10
+# ERR_LINES: 5
+# SHA: 6fd6886e2d2981d18c0c73c0c0ea3c7756cb2af01060433611eaa1f974335b80

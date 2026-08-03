@@ -1,0 +1,25 @@
+# CMD: bash ../../_bitacora/bitacora-close.sh 2026-08-03--tracexec-reference.md tracexec-reference 
+# DATE: 2026-08-03T05:23:56-06:00
+# DUR: 70ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+31158<tracer>: "/usr/bin/bash" ["bash", "../../_bitacora/bitacora-close.sh", "2026-08-03--tracexec-reference.md", "tracexec-reference"] fd []
+31160<bash>: "/usr/bin/dirname" ["dirname", "../../_bitacora/bitacora-close.sh"] fd [stdout="pipe:[130482]", ]
+31161<bash>: "/usr/bin/date" ["date", "+%Y-%m-%d"] fd [stdout="pipe:[132587]", ]
+31162<bash>: "/usr/bin/sed" ["sed", "-i", "s/^- \\[ \\]/- [x]/", "/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--tracexec-reference.md"] fd []
+31163<bash>: "/usr/bin/rg" ["rg", "-q", "^Status:", "/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--tracexec-reference.md"] fd []
+31164<bash>: "/usr/bin/sed" ["sed", "-i", "s/^Status:.*/Status: completed (2026-08-03)/", "/home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--tracexec-reference.md"] fd []
+31166<bash>: "/usr/bin/bash" ["bash", "/home/eddyr/assembler/_knowledge/_bitacora/bitacora-create.sh", "report", "tracexec-reference"] fd [stdout="pipe:[132589]", ]
+31167<bash>: "/usr/bin/sed" ["sed", "s/^CREATE //"] fd [stdin="pipe:[132589]", stdout="pipe:[131642]", ]
+31169<bash>: "/usr/bin/dirname" ["dirname", "/home/eddyr/assembler/_knowledge/_bitacora/bitacora-create.sh"] fd [stdout="pipe:[133343]", ]
+31171<bash>: "/usr/bin/bash" ["bash", "/home/eddyr/assembler/_knowledge/_bitacora/bitacora-slugify.sh", "tracexec-reference"] fd [stdout="pipe:[133345]", ]
+31173<bash>: "/usr/bin/tr" ["tr", "[:upper:]", "[:lower:]"] fd [stdin="pipe:[133359]", stdout="pipe:[133362]", ]
+31175<bash>: "/usr/bin/sed" ["sed", "-E", "s/-+/-/g; s/^-+//; s/-+$//"] fd [stdin="pipe:[133365]", stdout="pipe:[133345]", ]
+31174<bash>: "/usr/bin/tr" ["tr", "-c", "[:alnum:]", "-"] fd [stdin="pipe:[133362]", stdout="pipe:[133365]", ]
+31176<bash>: "/usr/bin/date" ["date", "+%Y%m%d-%H%M%S"] fd [stdout="pipe:[134513]", ]
+31177<bash>: "/usr/bin/date" ["date", "+%Y-%m-%d"] fd [stdout="pipe:[130484]", ]
+31178<bash>: "/usr/bin/cat" ["cat"] fd [stdin="pipe:[128720]", stdout="/home/eddyr/assembler/_knowledge/_bitacora/task-report/20260803-052356-tracexec-reference.md", ]
+TODO   /home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--tracexec-reference.md
+REPORT /home/eddyr/assembler/_knowledge/_bitacora/task-report/20260803-052356-tracexec-reference.md
+NEXT   fill the report: what was done, decisions, open edges, todo state; cite task-stdout logs
+# exit: 0

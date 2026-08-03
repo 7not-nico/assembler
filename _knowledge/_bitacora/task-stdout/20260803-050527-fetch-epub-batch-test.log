@@ -1,0 +1,14 @@
+# CMD: bash -c rm\ -rf\ /tmp/opencode/rust-book-clean\ \&\&\ mkdir\ -p\ /tmp/opencode/rust-book-clean\ \&\&\ cd\ /tmp/opencode/rust-book-clean\ \&\&\ timeout\ 150\ ruby\ /home/eddyr/assembler/_knowledge/rust-docs/script/fetch-epub.rb\;\ echo\ \"exit:\ \$\?\" 
+# DATE: 2026-08-03T05:05:27-06:00
+# DUR: 7982ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+FETCH=1877626
+IMGS=28/28
+CONVERT=start
+[WARNING] Duplicate identifier 'the-rust-programming-language' at input line 185 column 153
+CONVERT=done
+EPUB=rust-book.epub
+SIZE=1518517
+exit: 0
+# exit: 0

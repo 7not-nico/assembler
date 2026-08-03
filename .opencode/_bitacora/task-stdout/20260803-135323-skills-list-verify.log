@@ -1,0 +1,46 @@
+# CMD: bash -c cd\ /home/eddyr/assembler\ \&\&\ find\ .opencode/skills\ -name\ SKILL.md\ -not\ -path\ \"\*/.backups/\*\"\ \|\ sort\ \|\ nl 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:53:23-06:00
+# PID: 370399
+# DUR: 79ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 0bd1b5eb
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cd\ /home/eddyr/assembler\ \&\&\ find\ .opencode/skills\ -name\ SKILL.md\ -not\ -path\ \"\*/.backups/\*\"\ \|\ sort\ \|\ nl 
+# CWD: /home/eddyr/assembler
+# --------------------
+     1	.opencode/skills/knowledge-languages/SKILL.md
+     2	.opencode/skills/playwright-dispatcher/SKILL.md
+     3	.opencode/skills/playwright-dispatcher/skill/use-playwright-ai-mode/SKILL.md
+     4	.opencode/skills/playwright-dispatcher/skill/use-playwright-core/SKILL.md
+     5	.opencode/skills/playwright-dispatcher/skill/use-playwright-debug/SKILL.md
+     6	.opencode/skills/playwright-dispatcher/skill/use-playwright-network-storage/SKILL.md
+     7	.opencode/skills/playwright-dispatcher/skill/use-playwright-vision/SKILL.md
+     8	.opencode/skills/reason-invariants/SKILL.md
+     9	.opencode/skills/reason-quantitative/SKILL.md
+    10	.opencode/skills/reason-verbal/SKILL.md
+    11	.opencode/skills/refactor-skill/SKILL.md
+    12	.opencode/skills/search-dispatcher/SKILL.md
+    13	.opencode/skills/search-dispatcher/skill/use-exa/SKILL.md
+    14	.opencode/skills/search-dispatcher/skill/use-parallel-search/SKILL.md
+    15	.opencode/skills/semantic-dispatcher/SKILL.md
+    16	.opencode/skills/semantic-dispatcher/skill/use-semantic-drift/SKILL.md
+    17	.opencode/skills/semantic-dispatcher/skill/use-semantic-embed/SKILL.md
+    18	.opencode/skills/semantic-dispatcher/skill/use-semantic-eval/SKILL.md
+    19	.opencode/skills/semantic-dispatcher/skill/use-semantic-purge/SKILL.md
+    20	.opencode/skills/semantic-dispatcher/skill/use-semantic-search/SKILL.md
+    21	.opencode/skills/semantic-dispatcher/skill/use-semantic-stats/SKILL.md
+    22	.opencode/skills/study-foundations/SKILL.md
+    23	.opencode/skills/workflow-dispatcher/skill/bitacora-workflow/SKILL.md
+    24	.opencode/skills/workflow-dispatcher/skill/manage-bash-flows/SKILL.md
+    25	.opencode/skills/workflow-dispatcher/SKILL.md
+    26	.opencode/skills/workflow-dispatcher/skill/structure-stdout/SKILL.md
+    27	.opencode/skills/workflow-dispatcher/skill/survey-scripts/SKILL.md
+    28	.opencode/skills/workflow-dispatcher/skill/use-context-seven/SKILL.md
+# OUT_LINES: 28
+# OUT_BYTES: 1928
+# ERR_LINES: 0
+# SHA: 611787487aed3a070c6ea811bb155c97e2e00ce5d17bbc0c074cd6d6afbfe615

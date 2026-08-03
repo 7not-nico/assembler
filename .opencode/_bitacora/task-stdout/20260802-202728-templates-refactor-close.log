@@ -1,0 +1,137 @@
+# CMD: bash -c $'\ncd .opencode/_bitacora\n# mark todos complete\npython3 - <<"PY"\np = "task-todo/2026-08-02--refactor-knowledge-templates-for-coherence.md"\ns = open(p).read()\ns = s.replace("- [ ] task one", "- [x] Audit template set for incoherence")\ns = s.replace("- [ ] task two", "- [x] Archive dead weight to .archive/templates-legacy")\ns += """\n- [x] Rewrite scaffold-knowledge.sh — lean chain default\n- [x] Rewrite AGENTS.template.md + _templates/AGENTS.md — lean chain, updated inventory\n- [x] Fix bench.ts + semantic-search.ts — Go backend, live report path\n- [x] Archive write-report + write-reportare (stale report forms)\n- [x] Untrack binary DBs, re-ignore in .gitignore\n- [x] Dry-run scaffold verification (2 runs)\n"""\ns = s.replace("Status: in progress (2026-08-02)", "Status: complete (2026-08-02)")\nopen(p, "w").write(s)\nprint("todo updated")\nPY\n# write report into _templates/report/ + root task-report/\nTS=$(date +%Y%m%d-%H%M%S)\ncat > ../_knowledge/_templates/report/$TS.md <<"EOF"\n# Templates refactor — coherence pass\n\n**Date:** 2026-08-02\n**Project:** `_knowledge/_templates/` — bootstrap system\n\n## What was done\n\n- Audited the template set (3 surveys): found 6 orphaned precepts, typo `write-reportare`, extensionless `fixtures-template`, failed `_rustlib` ANN experiment, binary DBs tracked in git, 13-layer scaffold chain matching no live project.\n- Archived 12 dead-weight items to `_knowledge/.archive/templates-legacy/`: `_rustlib/`, 6 orphaned precepts, both stale report templates, `fixtures-template`, 2 dive templates.\n- Rewrote `scaffold-knowledge.sh` — lean chain (`precept/ concept/ reference/ fixture/` + `script/` parallel) matching rust-docs; report copy points at live `report/report-template.md`; `--with-skills` copies 10 live skills (find-skills dropped — home-sourced).\n- Created `run-logged-template.sh` — generalized `_knowledge/{project}/script/` logger.\n- Rewrote `AGENTS.template.md` + `_templates/AGENTS.md` — lean chain, updated inventory, archive location documented.\n- Fixed `bench.ts` (dead Rust BIN ref, Go label, report path) + `semantic-search.ts` comment.\n- Untracked `schema/templates.db` + `templates-vector.db`; added re-ignore rules after the substrate un-ignore.\n- Dry-ran scaffold twice — lean dirs, AGENTS.md, templates, run-logged.sh, 10 skills verified.\n\n## Decisions\n\n- Lean chain as scaffold default; 13-layer topology stays in `precedence-chain.md` as reference.\n- Archive over delete — nothing lost, `templates-legacy/` consultable.\n- Go ANN (`_golib/ann`) stays the semantic backend; Rust experiment archived with its lesson documented.\n- Binary DBs untracked per root convention (only `.sql` is source).\n\n## Open edges\n\n- `copy-skills.sh` resolves only `.opencode/skills/` — home-sourced skills (find-skills, omarchy) need manual mirroring.\n- Codex-side templates (`_codex/_templates/`) still carry the old 13-layer set — read-only, intentionally untouched.\n\n## Todo state\n\n- `2026-08-02--refactor-knowledge-templates-for-coherence.md` — all tasks complete.\n\n## Logs\n\n- task-stdout: templates-survey, templates-coherence-audit, templates-detail-audit, templates-archive, write-report-archive, ann-wiring-check, templates-db-untrack, scaffold-dry-run, fixes-verify, templates-refactor-close\nEOF\necho "report written to _templates/report/$TS.md"\n# root task-report copy\ncp ../_knowledge/_templates/report/$TS.md task-report/$TS-templates-refactor.md\necho "root copy: task-report/$TS-templates-refactor.md"\nls task-report/ | tail -3' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:27:28-06:00
+# PID: 429875
+# DUR: 395ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: a2ff1759
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\ncd .opencode/_bitacora\n# mark todos complete\npython3 - <<"PY"\np = "task-todo/2026-08-02--refactor-knowledge-templates-for-coherence.md"\ns = open(p).read()\ns = s.replace("- [ ] task one", "- [x] Audit template set for incoherence")\ns = s.replace("- [ ] task two", "- [x] Archive dead weight to .archive/templates-legacy")\ns += """\n- [x] Rewrite scaffold-knowledge.sh — lean chain default\n- [x] Rewrite AGENTS.template.md + _templates/AGENTS.md — lean chain, updated inventory\n- [x] Fix bench.ts + semantic-search.ts — Go backend, live report path\n- [x] Archive write-report + write-reportare (stale report forms)\n- [x] Untrack binary DBs, re-ignore in .gitignore\n- [x] Dry-run scaffold verification (2 runs)\n"""\ns = s.replace("Status: in progress (2026-08-02)", "Status: complete (2026-08-02)")\nopen(p, "w").write(s)\nprint("todo updated")\nPY\n# write report into _templates/report/ + root task-report/\nTS=$(date +%Y%m%d-%H%M%S)\ncat > ../_knowledge/_templates/report/$TS.md <<"EOF"\n# Templates refactor — coherence pass\n\n**Date:** 2026-08-02\n**Project:** `_knowledge/_templates/` — bootstrap system\n\n## What was done\n\n- Audited the template set (3 surveys): found 6 orphaned precepts, typo `write-reportare`, extensionless `fixtures-template`, failed `_rustlib` ANN experiment, binary DBs tracked in git, 13-layer scaffold chain matching no live project.\n- Archived 12 dead-weight items to `_knowledge/.archive/templates-legacy/`: `_rustlib/`, 6 orphaned precepts, both stale report templates, `fixtures-template`, 2 dive templates.\n- Rewrote `scaffold-knowledge.sh` — lean chain (`precept/ concept/ reference/ fixture/` + `script/` parallel) matching rust-docs; report copy points at live `report/report-template.md`; `--with-skills` copies 10 live skills (find-skills dropped — home-sourced).\n- Created `run-logged-template.sh` — generalized `_knowledge/{project}/script/` logger.\n- Rewrote `AGENTS.template.md` + `_templates/AGENTS.md` — lean chain, updated inventory, archive location documented.\n- Fixed `bench.ts` (dead Rust BIN ref, Go label, report path) + `semantic-search.ts` comment.\n- Untracked `schema/templates.db` + `templates-vector.db`; added re-ignore rules after the substrate un-ignore.\n- Dry-ran scaffold twice — lean dirs, AGENTS.md, templates, run-logged.sh, 10 skills verified.\n\n## Decisions\n\n- Lean chain as scaffold default; 13-layer topology stays in `precedence-chain.md` as reference.\n- Archive over delete — nothing lost, `templates-legacy/` consultable.\n- Go ANN (`_golib/ann`) stays the semantic backend; Rust experiment archived with its lesson documented.\n- Binary DBs untracked per root convention (only `.sql` is source).\n\n## Open edges\n\n- `copy-skills.sh` resolves only `.opencode/skills/` — home-sourced skills (find-skills, omarchy) need manual mirroring.\n- Codex-side templates (`_codex/_templates/`) still carry the old 13-layer set — read-only, intentionally untouched.\n\n## Todo state\n\n- `2026-08-02--refactor-knowledge-templates-for-coherence.md` — all tasks complete.\n\n## Logs\n\n- task-stdout: templates-survey, templates-coherence-audit, templates-detail-audit, templates-archive, write-report-archive, ann-wiring-check, templates-db-untrack, scaffold-dry-run, fixes-verify, templates-refactor-close\nEOF\necho "report written to _templates/report/$TS.md"\n# root task-report copy\ncp ../_knowledge/_templates/report/$TS.md task-report/$TS-templates-refactor.md\necho "root copy: task-report/$TS-templates-refactor.md"\nls task-report/ | tail -3' 
+# CWD: /home/eddyr/assembler
+# --------------------
+todo updated
+report written to _templates/report/20260802-202728.md
+root copy: task-report/20260802-202728-templates-refactor.md
+verification-gap-analysis.md
+walkthroughs
+what-we-learned-about-tool-format.md
+bash: line 23: ../_knowledge/_templates/report/20260802-202728.md: No such file or directory
+cp: cannot stat '../_knowledge/_templates/report/20260802-202728.md': No such file or directory
+# OUT_LINES: 6
+# OUT_BYTES: 208
+# ERR_LINES: 2
+# EXEC: 429875|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh templates-refactor-close -- bash -c 
+# EXEC: 429876|/usr/bin/date|date +%s%N
+# EXEC: 429879|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 429882|/usr/bin/git|git remote get-url origin
+# EXEC: 429880|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 429883|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 429885|/usr/bin/git|git branch --show-current
+# EXEC: 429887|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 429888|/usr/bin/head|head -1
+# EXEC: 429889|/usr/bin/tr|tr -d \n
+# EXEC: 429890|/usr/bin/bun|bun --version
+# EXEC: 429899|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 429900|/usr/bin/head|head -1
+# EXEC: 429901|/usr/bin/tr|tr -d \n
+# EXEC: 429902|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 429904|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 429905|/usr/bin/head|head -1
+# EXEC: 429906|/usr/bin/tr|tr -d \n
+# EXEC: 429907|/usr/bin/python3|python3 --version
+# EXEC: 429909|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 429910|/usr/bin/head|head -1
+# EXEC: 429911|/usr/bin/tr|tr -d \n
+# EXEC: 429912|/usr/bin/ruby|ruby --version
+# EXEC: 429915|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 429916|/usr/bin/head|head -1
+# EXEC: 429917|/usr/bin/tr|tr -d \n
+# EXEC: 429918|/usr/bin/rustc|rustc --version
+# EXEC: 429921|/usr/bin/timeout|timeout 2 go version
+# EXEC: 429922|/usr/bin/head|head -1
+# EXEC: 429923|/usr/bin/tr|tr -d \n
+# EXEC: 429924|/usr/bin/go|go version
+# EXEC: 429931|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 429932|/usr/bin/head|head -1
+# EXEC: 429933|/usr/bin/tr|tr -d \n
+# EXEC: 429934|/usr/bin/git|git --version
+# EXEC: 429936|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 429937|/usr/bin/head|head -1
+# EXEC: 429938|/usr/bin/tr|tr -d \n
+# EXEC: 429939|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 429941|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 429942|/usr/bin/head|head -1
+# EXEC: 429943|/usr/bin/tr|tr -d \n
+# EXEC: 429944|/usr/bin/date|date --version
+# EXEC: 429947|/usr/bin/head|head -1
+# EXEC: 429946|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 429948|/usr/bin/tr|tr -d \n
+# EXEC: 429949|/usr/bin/wc|wc --version
+# EXEC: 429951|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 429952|/usr/bin/head|head -1
+# EXEC: 429953|/usr/bin/tr|tr -d \n
+# EXEC: 429954|/usr/bin/cat|cat --version
+# EXEC: 429956|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 429957|/usr/bin/head|head -1
+# EXEC: 429958|/usr/bin/tr|tr -d \n
+# EXEC: 429959|/usr/bin/tee|tee --version
+# EXEC: 429962|/usr/bin/head|head -1
+# EXEC: 429961|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 429963|/usr/bin/tr|tr -d \n
+# EXEC: 429964|/usr/bin/mktemp|mktemp --version
+# EXEC: 429967|/usr/bin/head|head -1
+# EXEC: 429966|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 429968|/usr/bin/tr|tr -d \n
+# EXEC: 429969|/usr/bin/rm|rm --version
+# EXEC: 429971|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 429972|/usr/bin/head|head -1
+# EXEC: 429973|/usr/bin/tr|tr -d \n
+# EXEC: 429974|/usr/bin/timeout|timeout --version
+# EXEC: 429976|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 429977|/usr/bin/head|head -1
+# EXEC: 429978|/usr/bin/tr|tr -d \n
+# EXEC: 429979|/usr/bin/tr|tr --version
+# EXEC: 429982|/usr/bin/head|head -1
+# EXEC: 429981|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 429983|/usr/bin/tr|tr -d \n
+# EXEC: 429984|/usr/bin/head|head --version
+# EXEC: 429986|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 429987|/usr/bin/head|head -1
+# EXEC: 429988|/usr/bin/tr|tr -d \n
+# EXEC: 429989|/usr/bin/cut|cut --version
+# EXEC: 429991|/usr/bin/date|date +%s%N
+# EXEC: 429992|/usr/bin/sha256sum|sha256sum
+# EXEC: 429993|/usr/bin/cut|cut -c1-8
+# EXEC: 429995|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202728-templates-refactor-close.log
+# EXEC: 429996|/usr/bin/date|date -Is
+# EXEC: 429997|/usr/bin/mktemp|mktemp
+# EXEC: 429998|/usr/bin/mktemp|mktemp
+# EXEC: 429999|/usr/bin/bash|bash -c 
+# EXEC: 430000|/usr/bin/python3|python3 -
+# EXEC: 430001|/usr/bin/date|date +%Y%m%d-%H%M%S
+# EXEC: 430003|/usr/bin/cp|cp ../_knowledge/_templates/report/20260802-202728.md task-report/20260802-202728-templates-refactor.md
+# EXEC: 430004|/usr/bin/ls|ls task-report/
+# EXEC: 430005|/usr/bin/tail|tail -3
+# EXEC: 430007|/usr/bin/wc|wc -l
+# EXEC: 430008|/usr/bin/tr|tr -d  
+# EXEC: 430010|/usr/bin/wc|wc -c
+# EXEC: 430011|/usr/bin/tr|tr -d  
+# EXEC: 430013|/usr/bin/wc|wc -l
+# EXEC: 430014|/usr/bin/tr|tr -d  
+# EXEC: 430015|/usr/bin/date|date +%s%N
+# EXEC: 430017|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202728-templates-refactor-close.log
+# EXEC: 430019|/usr/bin/cat|cat /tmp/tmp.IG3RtUjWCq
+# EXEC: 430020|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202728-templates-refactor-close.log
+# EXEC: 430021|/usr/bin/cat|cat /tmp/tmp.tVtoIVJ331
+# EXEC: 430022|/usr/bin/cat|cat /tmp/tmp.tVtoIVJ331
+# EXEC: 430023|/usr/bin/rm|rm -f /tmp/tmp.IG3RtUjWCq /tmp/tmp.tVtoIVJ331
+# EXEC: 430025|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202728-templates-refactor-close.log
+# EXEC: 430027|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202728-templates-refactor-close.log
+# EXEC: 430029|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202728-templates-refactor-close.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cp=cp (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 ls=ls (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tail=tail (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 108
+# SHA: 9706b24eb1d7fa209daa0610afe136fb8ccfc41d723253a5b7a76f77004b9e7a
+# exit: 0

@@ -1,7 +1,7 @@
 #!/usr/bin/env bun
 // semantic-search.ts — hybrid semantic + keyword search over _templates/ vector store
 // CLI tool (Bun). Usage: bun run script/semantic-search.ts --query TEXT [--k N] [--field purpose|content]
-// Hybrid: semantic cosine (Rust tpl-ann heavy scoring; _lib/score.ts fallback) fused with FTS5 keyword rank.
+// Hybrid: semantic cosine (Go ann-tpl heavy scoring; _lib/score.ts fallback) fused with FTS5 keyword rank.
 import { Database } from "bun:sqlite"
 import { vector } from "../../../.opencode/_lib/embed.ts"
 import * as path from "node:path"

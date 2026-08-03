@@ -1,0 +1,50 @@
+# CMD: bash -c cd\ /home/eddyr/assembler\ \&\&\ echo\ \"===\ hyprland\ AGENTS.md\ lines\ with\ leading\ space\ ===\"\;\ LC_ALL=C\ grep\ -nP\ \"\^\ \\S\"\ _codex/Hyprland-repo/hyprland/AGENTS.md\ \|\ head\ -20\;\ echo\ \"===\ single-space-bullet\ count\ \(\^\ -\ \)\ vs\ 2-space\ \(\^\ \ -\ \)\ vs\ 3-space\ \(\^\ \ \ -\ \)\ ===\"\;\ for\ f\ in\ .opencode/skills/reason-invariants/SKILL.md\ .opencode/skills/reason-quantitative/SKILL.md\ .opencode/skills/reason-verbal/SKILL.md\ .opencode/skills/workflow-dispatcher/skill/manage-bash-flows/SKILL.md\ .opencode/skills/workflow-dispatcher/skill/structure-stdout/SKILL.md\ .opencode/skills/workflow-dispatcher/skill/survey-scripts/SKILL.md\;\ do\ echo\ \"--\ \$f\"\;\ echo\ \"\ \ 1sp:\ \$\(LC_ALL=C\ grep\ -cP\ \"\^\ -\ \"\ \"\$f\"\)\ \ 2sp:\ \$\(LC_ALL=C\ grep\ -cP\ \"\^\ \ \[\^\ -\]\"\ \"\$f\"\)\ \ 3sp:\ \$\(LC_ALL=C\ grep\ -cP\ \"\^\ \ \ -\ \"\ \"\$f\"\)\"\;\ done 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T14:00:12-06:00
+# PID: 377582
+# DUR: 138ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: c557a01a
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cd\ /home/eddyr/assembler\ \&\&\ echo\ \"===\ hyprland\ AGENTS.md\ lines\ with\ leading\ space\ ===\"\;\ LC_ALL=C\ grep\ -nP\ \"\^\ \\S\"\ _codex/Hyprland-repo/hyprland/AGENTS.md\ \|\ head\ -20\;\ echo\ \"===\ single-space-bullet\ count\ \(\^\ -\ \)\ vs\ 2-space\ \(\^\ \ -\ \)\ vs\ 3-space\ \(\^\ \ \ -\ \)\ ===\"\;\ for\ f\ in\ .opencode/skills/reason-invariants/SKILL.md\ .opencode/skills/reason-quantitative/SKILL.md\ .opencode/skills/reason-verbal/SKILL.md\ .opencode/skills/workflow-dispatcher/skill/manage-bash-flows/SKILL.md\ .opencode/skills/workflow-dispatcher/skill/structure-stdout/SKILL.md\ .opencode/skills/workflow-dispatcher/skill/survey-scripts/SKILL.md\;\ do\ echo\ \"--\ \$f\"\;\ echo\ \"\ \ 1sp:\ \$\(LC_ALL=C\ grep\ -cP\ \"\^\ -\ \"\ \"\$f\"\)\ \ 2sp:\ \$\(LC_ALL=C\ grep\ -cP\ \"\^\ \ \[\^\ -\]\"\ \"\$f\"\)\ \ 3sp:\ \$\(LC_ALL=C\ grep\ -cP\ \"\^\ \ \ -\ \"\ \"\$f\"\)\"\;\ done 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== hyprland AGENTS.md lines with leading space ===
+24: - class: `CMyClass`
+25: - struct: `SMyStruct`
+26: - interface: `IMyInterface`
+27: - class (not struct) member variables: `m_variable`
+33: - Avoid complex classes / functions, prefer SRP
+34: - Consider using an observer pattern via hyprutils Signals where appropriate
+35: - Consider classic OOP patterns where appropriate: Strategy, Singleton, Proxy, etc
+36: - Watch out for typical bad practices in code: feature envy, LSP, etc
+37: - Use templating and inheritance to clean up code where appropriate
+38: - For obtaining singletons, use a `UP<CClass>& myClass();` pattern inside a namespace. This can be implemented in source as making and returning a static ptr
+40: - `using namespace std;`
+41: - leave uninitialized primitives (int, float, etc)
+43: - the C standard library. Use the C++ STL
+44: - `malloc` / `free` / etc
+45: - C-style pointers. Use SP<> WP<> and UP<> from hyprutils. These are Shared, Weak and Unique pointers respectively. C-style pointers may be used in select scenarios (e.g. destroying fns, where it's impossible to make a mistake) but everywhere else must not be used unless necessary
+46: - C-style casts. Use rc<>, sc<>, or cc<> from hyprutils. These are shorthands to equivalent C++ casts
+48: - violating clang-tidy (`.clang-tidy`)
+49: - manual C-style cleanup: `some_c_thing_new()` and `some_c_thing_free()` can be wrapped
+=== single-space-bullet count (^ - ) vs 2-space (^  - ) vs 3-space (^   - ) ===
+-- .opencode/skills/reason-invariants/SKILL.md
+  1sp: 8  2sp: 0  3sp: 4
+-- .opencode/skills/reason-quantitative/SKILL.md
+  1sp: 5  2sp: 0  3sp: 0
+-- .opencode/skills/reason-verbal/SKILL.md
+  1sp: 6  2sp: 0  3sp: 0
+-- .opencode/skills/workflow-dispatcher/skill/manage-bash-flows/SKILL.md
+  1sp: 9  2sp: 0  3sp: 0
+-- .opencode/skills/workflow-dispatcher/skill/structure-stdout/SKILL.md
+  1sp: 16  2sp: 0  3sp: 0
+-- .opencode/skills/workflow-dispatcher/skill/survey-scripts/SKILL.md
+  1sp: 12  2sp: 5  3sp: 16
+# OUT_LINES: 32
+# OUT_BYTES: 1992
+# ERR_LINES: 0
+# SHA: 66b69dfa1c1e4b247b7c63e18bd2416d54a2b0287f2c7ba22ced35125abafeee

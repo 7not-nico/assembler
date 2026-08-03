@@ -1,0 +1,171 @@
+# CMD: bash -c $'\necho "===1. AGENTS.md ring + skills sections==="\nsed -n "29,50p" _knowledge/rust-docs/AGENTS.md\necho; echo "===2. copy-skills symlink mode test==="\nrm -rf /tmp/opencode/skills-test && mkdir -p /tmp/opencode/skills-test\nbash _knowledge/_templates/copy-skills.sh /tmp/opencode/skills-test study-foundations semantic-dispatcher\nls -la /tmp/opencode/skills-test/\necho "---resolve check---"\nls /tmp/opencode/skills-test/study-foundations/SKILL.md /tmp/opencode/skills-test/semantic-dispatcher/SKILL.md' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:34:52-06:00
+# PID: 438735
+# DUR: 433ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: de366e86
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\necho "===1. AGENTS.md ring + skills sections==="\nsed -n "29,50p" _knowledge/rust-docs/AGENTS.md\necho; echo "===2. copy-skills symlink mode test==="\nrm -rf /tmp/opencode/skills-test && mkdir -p /tmp/opencode/skills-test\nbash _knowledge/_templates/copy-skills.sh /tmp/opencode/skills-test study-foundations semantic-dispatcher\nls -la /tmp/opencode/skills-test/\necho "---resolve check---"\nls /tmp/opencode/skills-test/study-foundations/SKILL.md /tmp/opencode/skills-test/semantic-dispatcher/SKILL.md' 
+# CWD: /home/eddyr/assembler
+# --------------------
+===1. AGENTS.md ring + skills sections===
+## Layer semantics (governing rule)
+
+```text
+concept/    EVERY concept arising from study gets written — none skipped
+reference/  CITATIONS from the official book — verbatim quotes, claim mapping
+fixture/    compilable practice code — rustc must accept each file
+```
+
+## Toolchain
+
+Rust toolchain: rustc 1.97.1. Fixtures compile with `rustc --edition 2021 {file}.rs`.
+
+## Anchored skills
+
+`skills/` — symlinked skill catalog, live links to the sources (no copies, no staleness). 12 symlinks resolve 30 SKILL.md files:
+
+```text
+workspace (relative → ../../../.opencode/skills/): knowledge-languages, playwright-dispatcher,
+    reason-invariants, reason-quantitative, reason-verbal, refactor-skill, search-dispatcher,
+    semantic-dispatcher, study-foundations, workflow-dispatcher
+home (absolute): find-skills → ~/.agents/skills/find-skills, omarchy → ~/.claude/skills/omarchy
+```
+
+===2. copy-skills symlink mode test===
+  SKILL study-foundations → ../../../home/eddyr/assembler/.opencode/skills/study-foundations
+  SKILL semantic-dispatcher → ../../../home/eddyr/assembler/.opencode/skills/semantic-dispatcher
+total 0
+drwxr-xr-x 2 eddyr eddyr  80 Aug  2 20:34 .
+drwxr-xr-x 7 eddyr eddyr 340 Aug  2 20:34 ..
+lrwxrwxrwx 1 eddyr eddyr  66 Aug  2 20:34 semantic-dispatcher -> ../../../home/eddyr/assembler/.opencode/skills/semantic-dispatcher
+lrwxrwxrwx 1 eddyr eddyr  64 Aug  2 20:34 study-foundations -> ../../../home/eddyr/assembler/.opencode/skills/study-foundations
+---resolve check---
+/tmp/opencode/skills-test/semantic-dispatcher/SKILL.md
+/tmp/opencode/skills-test/study-foundations/SKILL.md
+# OUT_LINES: 35
+# OUT_BYTES: 1655
+# ERR_LINES: 0
+# EXEC: 438735|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh ring-symlink-verify -- bash -c 
+# EXEC: 438736|/usr/bin/date|date +%s%N
+# EXEC: 438739|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 438742|/usr/bin/git|git remote get-url origin
+# EXEC: 438740|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 438743|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 438745|/usr/bin/git|git branch --show-current
+# EXEC: 438747|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 438748|/usr/bin/head|head -1
+# EXEC: 438749|/usr/bin/tr|tr -d \n
+# EXEC: 438750|/usr/bin/bun|bun --version
+# EXEC: 438752|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 438753|/usr/bin/head|head -1
+# EXEC: 438754|/usr/bin/tr|tr -d \n
+# EXEC: 438755|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 438757|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 438758|/usr/bin/head|head -1
+# EXEC: 438759|/usr/bin/tr|tr -d \n
+# EXEC: 438761|/usr/bin/python3|python3 --version
+# EXEC: 438763|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 438764|/usr/bin/head|head -1
+# EXEC: 438765|/usr/bin/tr|tr -d \n
+# EXEC: 438766|/usr/bin/ruby|ruby --version
+# EXEC: 438769|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 438770|/usr/bin/head|head -1
+# EXEC: 438771|/usr/bin/tr|tr -d \n
+# EXEC: 438772|/usr/bin/rustc|rustc --version
+# EXEC: 438775|/usr/bin/timeout|timeout 2 go version
+# EXEC: 438776|/usr/bin/head|head -1
+# EXEC: 438777|/usr/bin/tr|tr -d \n
+# EXEC: 438778|/usr/bin/go|go version
+# EXEC: 438784|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 438785|/usr/bin/head|head -1
+# EXEC: 438786|/usr/bin/tr|tr -d \n
+# EXEC: 438787|/usr/bin/git|git --version
+# EXEC: 438789|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 438790|/usr/bin/head|head -1
+# EXEC: 438791|/usr/bin/tr|tr -d \n
+# EXEC: 438792|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 438796|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 438797|/usr/bin/head|head -1
+# EXEC: 438798|/usr/bin/tr|tr -d \n
+# EXEC: 438799|/usr/bin/date|date --version
+# EXEC: 438825|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 438826|/usr/bin/head|head -1
+# EXEC: 438827|/usr/bin/tr|tr -d \n
+# EXEC: 438831|/usr/bin/wc|wc --version
+# EXEC: 438839|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 438840|/usr/bin/head|head -1
+# EXEC: 438841|/usr/bin/tr|tr -d \n
+# EXEC: 438843|/usr/bin/cat|cat --version
+# EXEC: 438845|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 438846|/usr/bin/head|head -1
+# EXEC: 438847|/usr/bin/tr|tr -d \n
+# EXEC: 438848|/usr/bin/tee|tee --version
+# EXEC: 438850|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 438851|/usr/bin/head|head -1
+# EXEC: 438852|/usr/bin/tr|tr -d \n
+# EXEC: 438853|/usr/bin/mktemp|mktemp --version
+# EXEC: 438857|/usr/bin/tr|tr -d \n
+# EXEC: 438855|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 438856|/usr/bin/head|head -1
+# EXEC: 438858|/usr/bin/rm|rm --version
+# EXEC: 438860|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 438861|/usr/bin/head|head -1
+# EXEC: 438862|/usr/bin/tr|tr -d \n
+# EXEC: 438863|/usr/bin/timeout|timeout --version
+# EXEC: 438865|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 438866|/usr/bin/head|head -1
+# EXEC: 438867|/usr/bin/tr|tr -d \n
+# EXEC: 438868|/usr/bin/tr|tr --version
+# EXEC: 438870|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 438871|/usr/bin/head|head -1
+# EXEC: 438872|/usr/bin/tr|tr -d \n
+# EXEC: 438873|/usr/bin/head|head --version
+# EXEC: 438875|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 438876|/usr/bin/head|head -1
+# EXEC: 438877|/usr/bin/tr|tr -d \n
+# EXEC: 438878|/usr/bin/cut|cut --version
+# EXEC: 438880|/usr/bin/date|date +%s%N
+# EXEC: 438881|/usr/bin/sha256sum|sha256sum
+# EXEC: 438882|/usr/bin/cut|cut -c1-8
+# EXEC: 438884|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203451-ring-symlink-verify.log
+# EXEC: 438885|/usr/bin/date|date -Is
+# EXEC: 438886|/usr/bin/mktemp|mktemp
+# EXEC: 438887|/usr/bin/mktemp|mktemp
+# EXEC: 438888|/usr/bin/bash|bash -c 
+# EXEC: 438889|/usr/bin/sed|sed -n 29,50p _knowledge/rust-docs/AGENTS.md
+# EXEC: 438890|/usr/bin/rm|rm -rf /tmp/opencode/skills-test
+# EXEC: 438891|/usr/bin/mkdir|mkdir -p /tmp/opencode/skills-test
+# EXEC: 438892|/usr/bin/bash|bash _knowledge/_templates/copy-skills.sh /tmp/opencode/skills-test study-foundations semantic-dispatcher
+# EXEC: 438894|/usr/bin/dirname|dirname _knowledge/_templates/copy-skills.sh
+# EXEC: 438896|/usr/bin/mkdir|mkdir -p /tmp/opencode/skills-test
+# EXEC: 438897|/usr/bin/python3|python3 -c import os,sys;print(os.path.relpath('/home/eddyr/assembler/.opencode/skills/study-foundations','/tmp/opencode/skills-test'))
+# EXEC: 438898|/usr/bin/ln|ln -sfn ../../../home/eddyr/assembler/.opencode/skills/study-foundations /tmp/opencode/skills-test/study-foundations
+# EXEC: 438899|/usr/bin/python3|python3 -c import os,sys;print(os.path.relpath('/home/eddyr/assembler/.opencode/skills/semantic-dispatcher','/tmp/opencode/skills-test'))
+# EXEC: 438900|/usr/bin/ln|ln -sfn ../../../home/eddyr/assembler/.opencode/skills/semantic-dispatcher /tmp/opencode/skills-test/semantic-dispatcher
+# EXEC: 438901|/usr/bin/ls|ls -la /tmp/opencode/skills-test/
+# EXEC: 438888|/usr/bin/ls|ls /tmp/opencode/skills-test/study-foundations/SKILL.md /tmp/opencode/skills-test/semantic-dispatcher/SKILL.md
+# EXEC: 438904|/usr/bin/wc|wc -l
+# EXEC: 438905|/usr/bin/tr|tr -d  
+# EXEC: 438907|/usr/bin/wc|wc -c
+# EXEC: 438908|/usr/bin/tr|tr -d  
+# EXEC: 438910|/usr/bin/wc|wc -l
+# EXEC: 438911|/usr/bin/tr|tr -d  
+# EXEC: 438912|/usr/bin/date|date +%s%N
+# EXEC: 438914|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203451-ring-symlink-verify.log
+# EXEC: 438916|/usr/bin/cat|cat /tmp/tmp.4MYIVL2ODZ
+# EXEC: 438917|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203451-ring-symlink-verify.log
+# EXEC: 438918|/usr/bin/cat|cat /tmp/tmp.p45T2Mcpfh
+# EXEC: 438919|/usr/bin/cat|cat /tmp/tmp.p45T2Mcpfh
+# EXEC: 438920|/usr/bin/rm|rm -f /tmp/tmp.4MYIVL2ODZ /tmp/tmp.p45T2Mcpfh
+# EXEC: 438922|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203451-ring-symlink-verify.log
+# EXEC: 438924|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203451-ring-symlink-verify.log
+# EXEC: 438926|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-203451-ring-symlink-verify.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 ln=ln (GNU coreutils) 9.11 ls=ls (GNU coreutils) 9.11 mkdir=mkdir (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sed=/usr/bin/sed (GNU sed) 4.10 sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 115
+# SHA: 77544811b1d1b6d3c16d23cc548cd2029cb668feac0b08ab2ff98f81af67a70d
+# exit: 0

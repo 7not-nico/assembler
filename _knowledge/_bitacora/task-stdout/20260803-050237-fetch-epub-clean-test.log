@@ -1,0 +1,7 @@
+# CMD: bash -c cd\ /tmp/opencode/rust-book-clean\ \&\&\ mkdir\ -p\ /tmp/opencode/rust-book-clean\ \&\&\ cd\ /tmp/opencode/rust-book-clean\ \&\&\ ruby\ /home/eddyr/assembler/_knowledge/rust-docs/script/fetch-epub.rb 
+# DATE: 2026-08-03T05:02:37-06:00
+# DUR: 4ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+bash: line 1: cd: /tmp/opencode/rust-book-clean: No such file or directory
+# exit: 1

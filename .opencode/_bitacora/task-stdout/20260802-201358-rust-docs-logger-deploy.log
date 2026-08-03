@@ -1,0 +1,137 @@
+# CMD: bash _knowledge/rust-docs/script/run-logged.sh smoke-test -- echo run-logged\ smoke\ test\ OK 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:13:58-06:00
+# PID: 414804
+# DUR: 422ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 2ce9510b
+# CLI: bash 5.3.15(1)-release
+# ARGS: _knowledge/rust-docs/script/run-logged.sh smoke-test -- echo run-logged\ smoke\ test\ OK 
+# CWD: /home/eddyr/assembler
+# --------------------
+# CMD: echo run-logged\ smoke\ test\ OK 
+# DATE: 2026-08-02T20:13:58-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+run-logged smoke test OK
+# exit: 0
+# OUT_LINES: 6
+# OUT_BYTES: 162
+# ERR_LINES: 0
+# EXEC: 414804|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh rust-docs-logger-deploy -- bash _knowledge/rust-docs/script/run-logged.sh smoke-test -- echo run-logged smoke test OK
+# EXEC: 414805|/usr/bin/date|date +%s%N
+# EXEC: 414808|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 414811|/usr/bin/git|git remote get-url origin
+# EXEC: 414809|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 414812|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 414814|/usr/bin/git|git branch --show-current
+# EXEC: 414818|/usr/bin/tr|tr -d \n
+# EXEC: 414816|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 414817|/usr/bin/head|head -1
+# EXEC: 414819|/usr/bin/bun|bun --version
+# EXEC: 414821|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 414822|/usr/bin/head|head -1
+# EXEC: 414823|/usr/bin/tr|tr -d \n
+# EXEC: 414824|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 414827|/usr/bin/head|head -1
+# EXEC: 414826|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 414828|/usr/bin/tr|tr -d \n
+# EXEC: 414829|/usr/bin/python3|python3 --version
+# EXEC: 414838|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 414839|/usr/bin/head|head -1
+# EXEC: 414840|/usr/bin/tr|tr -d \n
+# EXEC: 414841|/usr/bin/ruby|ruby --version
+# EXEC: 414844|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 414845|/usr/bin/head|head -1
+# EXEC: 414846|/usr/bin/tr|tr -d \n
+# EXEC: 414847|/usr/bin/rustc|rustc --version
+# EXEC: 414850|/usr/bin/timeout|timeout 2 go version
+# EXEC: 414851|/usr/bin/head|head -1
+# EXEC: 414852|/usr/bin/tr|tr -d \n
+# EXEC: 414853|/usr/bin/go|go version
+# EXEC: 414860|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 414861|/usr/bin/head|head -1
+# EXEC: 414862|/usr/bin/tr|tr -d \n
+# EXEC: 414863|/usr/bin/git|git --version
+# EXEC: 414865|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 414866|/usr/bin/head|head -1
+# EXEC: 414867|/usr/bin/tr|tr -d \n
+# EXEC: 414868|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 414870|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 414871|/usr/bin/head|head -1
+# EXEC: 414872|/usr/bin/tr|tr -d \n
+# EXEC: 414873|/usr/bin/date|date --version
+# EXEC: 414875|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 414876|/usr/bin/head|head -1
+# EXEC: 414877|/usr/bin/tr|tr -d \n
+# EXEC: 414878|/usr/bin/wc|wc --version
+# EXEC: 414880|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 414881|/usr/bin/head|head -1
+# EXEC: 414882|/usr/bin/tr|tr -d \n
+# EXEC: 414883|/usr/bin/cat|cat --version
+# EXEC: 414885|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 414886|/usr/bin/head|head -1
+# EXEC: 414887|/usr/bin/tr|tr -d \n
+# EXEC: 414888|/usr/bin/tee|tee --version
+# EXEC: 414890|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 414891|/usr/bin/head|head -1
+# EXEC: 414892|/usr/bin/tr|tr -d \n
+# EXEC: 414893|/usr/bin/mktemp|mktemp --version
+# EXEC: 414896|/usr/bin/head|head -1
+# EXEC: 414895|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 414897|/usr/bin/tr|tr -d \n
+# EXEC: 414898|/usr/bin/rm|rm --version
+# EXEC: 414900|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 414901|/usr/bin/head|head -1
+# EXEC: 414902|/usr/bin/tr|tr -d \n
+# EXEC: 414903|/usr/bin/timeout|timeout --version
+# EXEC: 414912|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 414913|/usr/bin/head|head -1
+# EXEC: 414914|/usr/bin/tr|tr -d \n
+# EXEC: 414915|/usr/bin/tr|tr --version
+# EXEC: 414917|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 414918|/usr/bin/head|head -1
+# EXEC: 414919|/usr/bin/tr|tr -d \n
+# EXEC: 414920|/usr/bin/head|head --version
+# EXEC: 414922|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 414923|/usr/bin/head|head -1
+# EXEC: 414924|/usr/bin/tr|tr -d \n
+# EXEC: 414925|/usr/bin/cut|cut --version
+# EXEC: 414927|/usr/bin/date|date +%s%N
+# EXEC: 414928|/usr/bin/sha256sum|sha256sum
+# EXEC: 414929|/usr/bin/cut|cut -c1-8
+# EXEC: 414932|/usr/bin/date|date -Is
+# EXEC: 414931|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201358-rust-docs-logger-deploy.log
+# EXEC: 414933|/usr/bin/mktemp|mktemp
+# EXEC: 414934|/usr/bin/mktemp|mktemp
+# EXEC: 414935|/usr/bin/bash|bash _knowledge/rust-docs/script/run-logged.sh smoke-test -- echo run-logged smoke test OK
+# EXEC: 414937|/usr/bin/dirname|dirname _knowledge/rust-docs/script/run-logged.sh
+# EXEC: 414939|/usr/bin/mkdir|mkdir -p /home/eddyr/assembler/_knowledge/_bitacora/task-stdout
+# EXEC: 414940|/usr/bin/date|date +%Y%m%d-%H%M%S
+# EXEC: 414943|/usr/bin/tee|tee /home/eddyr/assembler/_knowledge/_bitacora/task-stdout/20260802-201358-smoke-test.log
+# EXEC: 414944|/usr/bin/date|date -Is
+# EXEC: 414947|/usr/bin/tee|tee -a /home/eddyr/assembler/_knowledge/_bitacora/task-stdout/20260802-201358-smoke-test.log
+# EXEC: 414949|/usr/bin/tee|tee -a /home/eddyr/assembler/_knowledge/_bitacora/task-stdout/20260802-201358-smoke-test.log
+# EXEC: 414951|/usr/bin/wc|wc -l
+# EXEC: 414952|/usr/bin/tr|tr -d  
+# EXEC: 414954|/usr/bin/wc|wc -c
+# EXEC: 414955|/usr/bin/tr|tr -d  
+# EXEC: 414957|/usr/bin/wc|wc -l
+# EXEC: 414958|/usr/bin/tr|tr -d  
+# EXEC: 414959|/usr/bin/date|date +%s%N
+# EXEC: 414961|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201358-rust-docs-logger-deploy.log
+# EXEC: 414963|/usr/bin/cat|cat /tmp/tmp.sukUXDfjPE
+# EXEC: 414964|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201358-rust-docs-logger-deploy.log
+# EXEC: 414965|/usr/bin/cat|cat /tmp/tmp.NVCj8I7NIK
+# EXEC: 414966|/usr/bin/cat|cat /tmp/tmp.NVCj8I7NIK
+# EXEC: 414967|/usr/bin/rm|rm -f /tmp/tmp.sukUXDfjPE /tmp/tmp.NVCj8I7NIK
+# EXEC: 414969|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201358-rust-docs-logger-deploy.log
+# EXEC: 414971|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201358-rust-docs-logger-deploy.log
+# EXEC: 414973|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201358-rust-docs-logger-deploy.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mkdir=mkdir (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 110
+# SHA: c0c4c5f1ecb8aca2f4c92a36491ddc99b1b4e7fb15a1553e9e2c646128594120
+# exit: 0

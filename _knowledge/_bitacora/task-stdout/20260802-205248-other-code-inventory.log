@@ -1,0 +1,44 @@
+# CMD: bash -c $'\necho "===TEMPLATE SCRIPTS==="; ls -la _knowledge/_templates/*.sh\necho; echo "===RUST-DOCS SCRIPTS==="; ls -la _knowledge/rust-docs/script/*.sh\necho; echo "===SYNTAX CHECK==="; for s in _knowledge/_templates/*.sh _knowledge/rust-docs/script/*.sh; do bash -n "$s" && echo "OK $s" || echo "FAIL $s"; done\necho; echo "===LINE COUNTS==="; wc -l _knowledge/_templates/*.sh _knowledge/rust-docs/script/*.sh' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:52:49-06:00
+# PID: 454502
+# DUR: 91ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: b8137de0
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\necho "===TEMPLATE SCRIPTS==="; ls -la _knowledge/_templates/*.sh\necho; echo "===RUST-DOCS SCRIPTS==="; ls -la _knowledge/rust-docs/script/*.sh\necho; echo "===SYNTAX CHECK==="; for s in _knowledge/_templates/*.sh _knowledge/rust-docs/script/*.sh; do bash -n "$s" && echo "OK $s" || echo "FAIL $s"; done\necho; echo "===LINE COUNTS==="; wc -l _knowledge/_templates/*.sh _knowledge/rust-docs/script/*.sh' 
+# CWD: /home/eddyr/assembler
+# --------------------
+===TEMPLATE SCRIPTS===
+-rw-r--r-- 1 eddyr eddyr  868 Aug  2 07:15 _knowledge/_templates/atomic-script-template.sh
+-rwxr-xr-x 1 eddyr eddyr 1068 Aug  2 20:29 _knowledge/_templates/copy-rings.sh
+-rwxr-xr-x 1 eddyr eddyr 1015 Aug  2 20:34 _knowledge/_templates/copy-skills.sh
+-rw-r--r-- 1 eddyr eddyr 1221 Aug  2 20:22 _knowledge/_templates/run-logged-template.sh
+-rwxr-xr-x 1 eddyr eddyr 2441 Aug  2 20:30 _knowledge/_templates/scaffold-knowledge.sh
+
+===RUST-DOCS SCRIPTS===
+-rwxr-xr-x 1 eddyr eddyr 1378 Aug  2 20:13 _knowledge/rust-docs/script/run-logged.sh
+
+===SYNTAX CHECK===
+OK _knowledge/_templates/atomic-script-template.sh
+OK _knowledge/_templates/copy-rings.sh
+OK _knowledge/_templates/copy-skills.sh
+OK _knowledge/_templates/run-logged-template.sh
+OK _knowledge/_templates/scaffold-knowledge.sh
+OK _knowledge/rust-docs/script/run-logged.sh
+
+===LINE COUNTS===
+  25 _knowledge/_templates/atomic-script-template.sh
+  37 _knowledge/_templates/copy-rings.sh
+  26 _knowledge/_templates/copy-skills.sh
+  36 _knowledge/_templates/run-logged-template.sh
+  57 _knowledge/_templates/scaffold-knowledge.sh
+  38 _knowledge/rust-docs/script/run-logged.sh
+ 219 total
+# OUT_LINES: 26
+# OUT_BYTES: 1160
+# ERR_LINES: 0
+# SHA: a4154b5a2eed9bcda9fd260fad38cdc52b4ea0039e6da56b731406cf577dbaf4

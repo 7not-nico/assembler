@@ -1,0 +1,26 @@
+# CMD: bash -c echo\ \"---img\ src\ samples---\"\;\ rg\ -o\ \"src=\\\"\[\^\\\"\]+\\\"\"\ /tmp/opencode/book-print.html\ \|\ sort\ -u\ \|\ head\ -15\;\ echo\ \"---count\ distinct\ img---\"\;\ rg\ -o\ \"src=\\\"\[\^\\\"\]+\\\"\"\ /tmp/opencode/book-print.html\ \|\ sort\ -u\ \|\ wc\ -l\;\ echo\ \"---toc.html\ reference---\"\;\ rg\ -n\ \"toc\\.html\"\ /tmp/opencode/book-print.html\ \|\ head\ -3\;\ echo\ \"---base\ tag---\"\;\ rg\ -o\ \"\<base\[\^\>\]\*\>\"\ /tmp/opencode/book-print.html\ \|\ head\ -3 
+# DATE: 2026-08-03T04:53:44-06:00
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+---img src samples---
+src="book-a0b12cfe.js"
+src="clipboard-1626706a.min.js"
+src="elasticlunr-ef4e11c1.min.js"
+src="ferris-2317480c.js"
+src="highlight-abc7f01d.js"
+src="img/ferris/does_not_compile.svg"
+src="img/ferris/not_desired_behavior.svg"
+src="img/ferris/panics.svg"
+src="img/trpl04-01.svg"
+src="img/trpl04-02.svg"
+src="img/trpl04-03.svg"
+src="img/trpl04-04.svg"
+src="img/trpl04-05.svg"
+src="img/trpl04-06.svg"
+src="img/trpl04-07.svg"
+---count distinct img---
+37
+---toc.html reference---
+113:                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+---base tag---
+# exit: 0

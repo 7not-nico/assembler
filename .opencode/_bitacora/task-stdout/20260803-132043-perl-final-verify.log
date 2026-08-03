@@ -1,0 +1,22 @@
+# CMD: bash -c perl\ -c\ /home/eddyr/assembler/.opencode/_scripts/strip-inline-bold.pl\ \&\&\ perl\ -c\ /home/eddyr/assembler/.opencode/_scripts/convert-skill-format.pl\ \&\&\ echo\ \"BOTH\ SYNTAX\ OK\"\;\ bash\ /home/eddyr/assembler/.opencode/_scripts/audit-format-compliance.sh\ --root\ /home/eddyr/assembler\ --kind\ all\ 2\>\&1\ \|\ tail\ -1 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:20:43-06:00
+# PID: 335421
+# DUR: 1081ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 07944f5c
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c perl\ -c\ /home/eddyr/assembler/.opencode/_scripts/strip-inline-bold.pl\ \&\&\ perl\ -c\ /home/eddyr/assembler/.opencode/_scripts/convert-skill-format.pl\ \&\&\ echo\ \"BOTH\ SYNTAX\ OK\"\;\ bash\ /home/eddyr/assembler/.opencode/_scripts/audit-format-compliance.sh\ --root\ /home/eddyr/assembler\ --kind\ all\ 2\>\&1\ \|\ tail\ -1 
+# CWD: /home/eddyr/assembler
+# --------------------
+BOTH SYNTAX OK
+PASS=75 FAIL=0
+/home/eddyr/assembler/.opencode/_scripts/strip-inline-bold.pl syntax OK
+/home/eddyr/assembler/.opencode/_scripts/convert-skill-format.pl syntax OK
+# OUT_LINES: 2
+# OUT_BYTES: 30
+# ERR_LINES: 2
+# SHA: dff8135b19e6b372b65975cd997f429ef0b7a77dba8c91e058e66f6d0b00cf67

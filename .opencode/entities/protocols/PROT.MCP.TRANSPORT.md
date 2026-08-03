@@ -57,7 +57,7 @@ Two transport approaches serve different throughput and configuration needs:
 
 ## Applicability
 
-Every local MCP server under `.opencode/tools/mcp-*/`. Root servers (`mcp-patlib`, `mcp-spec-audit`) and project servers (`mcp-ludoteca`) follow the same stdio transport contract.
+Every local MCP server under `.opencode/tools/mcp-*/`. Root servers (`mcp-patlib`) and project servers (`mcp-ludoteca`) follow the same stdio transport contract.
 
 ## See also
 

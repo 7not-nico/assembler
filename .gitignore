@@ -34,6 +34,7 @@ _depot/draw/
 
 # backup snapshot dirs (rule/skill pre-rewrite copies)
 .backups/
+**/_backups/
 
 # compound aggregator domains — _{abstract-noun}/ folders
 # domain project contents live in their own repos; the root repo tracks
@@ -55,6 +56,11 @@ _depot/draw/
 # build artifacts inside tracked _folders stay out
 **/_rustlib/target/
 **/_golib/ann
+
+# binary DBs inside tracked _folders stay out (substrate un-ignore re-includes _templates/**)
+_knowledge/_templates/schema/*.db
+_knowledge/_templates/schema/*.db-shm
+_knowledge/_templates/schema/*.db-wal
 
 # pdf research documents stay out
 _trove/**/*.pdf

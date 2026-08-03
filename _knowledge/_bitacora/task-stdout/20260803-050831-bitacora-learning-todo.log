@@ -1,0 +1,7 @@
+# CMD: bash ../../_bitacora/bitacora-create.sh todo learning-notes 
+# DATE: 2026-08-03T05:08:31-06:00
+# DUR: 10ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+CREATE /home/eddyr/assembler/_knowledge/_bitacora/task-todo/2026-08-03--learning-notes.md
+# exit: 0

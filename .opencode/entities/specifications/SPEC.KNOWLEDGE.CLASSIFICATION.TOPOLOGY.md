@@ -18,7 +18,7 @@ Ring 2: Abstraction, Algorithm, Linguistic
 Ring 0: Etymology
 Ring 1: Cognition
 Ring 2: Concept, Definition, Corpus
-Ring 3: Term
+Ring 3: Term, CLI
 Ring 4: Specialty
 ```
 
@@ -38,9 +38,10 @@ Ring 3: Illustration, Reference
 ### Architectonic
 
 ```
-Ring 0: Tool
-Ring 1: Command, Skill
-Ring 2: Rule
+Ring 0: Agent
+Ring 1: Tool
+Ring 2: Command, Skill
+Ring 3: Rule
 
 ```
 

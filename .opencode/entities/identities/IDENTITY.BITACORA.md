@@ -6,7 +6,7 @@ title: Bitacora — Record Container Entity
 source: SPEC.DIRECTORY.RING.TOPOLOGY
 group: composition
 ring: R2
-naming: {?}-{concrete noun} subfolders
+naming: '{?}-{concrete noun} subfolders'
 tags: bitacora,record,container,identity,infrastructure
 related: [IDENTITY.SPECIFICATION, SPEC.DIRECTORY.RING.TOPOLOGY, SPEC.NAMING.WORD.CLASS]
 reference:

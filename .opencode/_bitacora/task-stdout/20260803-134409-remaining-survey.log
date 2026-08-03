@@ -1,0 +1,55 @@
+# CMD: bash -c echo\ \"===\ /tmp/opencode\ scripts\ ===\"\;\ ls\ /tmp/opencode/\*.sh\ /tmp/opencode/\*.pl\ /tmp/opencode/\*.rb\ 2\>/dev/null\;\ echo\ \"===\ persisted\ in\ _scripts\ ===\"\;\ ls\ /home/eddyr/assembler/.opencode/_scripts/\*.pl\ 2\>/dev/null\;\ ls\ /home/eddyr/assembler/.opencode/_scripts/audit-format-compliance.sh\ 2\>/dev/null\;\ echo\ \"===\ todo\ state\ ===\"\;\ grep\ -l\ \"in\ progress\"\ /home/eddyr/assembler/.opencode/_bitacora/task-todo/\*.md\ 2\>/dev/null\ \|\ head\ -5\;\ echo\ \"===\ git\ status\ ===\"\;\ cd\ /home/eddyr/assembler\ \&\&\ git\ status\ --short\ 2\>/dev/null\ \|\ head\ -15 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:44:09-06:00
+# PID: 356053
+# DUR: 103ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 9f0a894a
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c echo\ \"===\ /tmp/opencode\ scripts\ ===\"\;\ ls\ /tmp/opencode/\*.sh\ /tmp/opencode/\*.pl\ /tmp/opencode/\*.rb\ 2\>/dev/null\;\ echo\ \"===\ persisted\ in\ _scripts\ ===\"\;\ ls\ /home/eddyr/assembler/.opencode/_scripts/\*.pl\ 2\>/dev/null\;\ ls\ /home/eddyr/assembler/.opencode/_scripts/audit-format-compliance.sh\ 2\>/dev/null\;\ echo\ \"===\ todo\ state\ ===\"\;\ grep\ -l\ \"in\ progress\"\ /home/eddyr/assembler/.opencode/_bitacora/task-todo/\*.md\ 2\>/dev/null\ \|\ head\ -5\;\ echo\ \"===\ git\ status\ ===\"\;\ cd\ /home/eddyr/assembler\ \&\&\ git\ status\ --short\ 2\>/dev/null\ \|\ head\ -15 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== /tmp/opencode scripts ===
+/tmp/opencode/audit-agents-clean.sh
+/tmp/opencode/audit-agents-format.sh
+/tmp/opencode/cli-row-verify.sh
+/tmp/opencode/convert-agents-format.rb
+/tmp/opencode/convert-agents-pass2.rb
+/tmp/opencode/convert-skill-format.pl
+/tmp/opencode/convert-skill-format.rb
+/tmp/opencode/embed-diagnose.pl
+/tmp/opencode/strip-inline-bold.pl
+/tmp/opencode/strip-trailing-periods.rb
+=== persisted in _scripts ===
+/home/eddyr/assembler/.opencode/_scripts/convert-skill-format.pl
+/home/eddyr/assembler/.opencode/_scripts/strip-inline-bold.pl
+/home/eddyr/assembler/.opencode/_scripts/audit-format-compliance.sh
+=== todo state ===
+/home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--go-scripts-toolchain.md
+/home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--remaining-work-queue.md
+/home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--resolve-remaining-stale-protocol-ids.md
+/home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--add-parse-failure-and-sync-coverage-check-to-audit-suite.md
+/home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--deferred-tooling-and-spec-drift-follow-ups-from-identity-agent-task.md
+=== git status ===
+ M .gitignore
+ D .opencode/_bitacora/bitacora-log.original.sh
+ M .opencode/_bitacora/bitacora-log.sh
+ M .opencode/_bitacora/task-todo/skills-format-standardize.md
+ M .opencode/_scripts/AGENTS.md
+ M .opencode/_scripts/fixtures/fixture-original-wrapper.sh
+ M .opencode/_scripts/r6-patlib-sync.rb
+ M .opencode/_shell/AGENTS.md
+ M .opencode/agents/lambda.md
+ M .opencode/commands/anchor-workflow.md
+ M .opencode/commands/yamls/anchor-workflow.yaml
+ M .opencode/entities/abstractions/ABS.ALPHA.CONVERSION.md
+ M .opencode/entities/identities/IDENTITY.BITACORA.md
+ M .opencode/entities/identities/IDENTITY.RULE.md
+ M .opencode/entities/illustrations/ILL.PROTOCOL.STRUCTURE.md
+# OUT_LINES: 37
+# OUT_BYTES: 1866
+# ERR_LINES: 0
+# SHA: 01094b597fb1b071970bc9fda76ede564421abab98e61e38ca8ceb474a76f2ec

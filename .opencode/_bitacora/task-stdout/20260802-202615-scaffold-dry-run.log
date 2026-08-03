@@ -1,0 +1,241 @@
+# CMD: bash -c $'\necho "===1. DB-IGNORE-CHECK==="\ngit check-ignore _knowledge/_templates/schema/templates.db _knowledge/_templates/schema/templates-vector.db && echo "DBS IGNORED" || echo "DBS NOT IGNORED"\necho\necho "===2. SCAFFOLD DRY-RUN==="\nrm -rf /tmp/opencode/tpl-scaffold-test\nmkdir -p /tmp/opencode/tpl-scaffold-test\n# scaffold writes to _knowledge/{name} — use a scratch name then move\nbash _knowledge/_templates/scaffold-knowledge.sh zz-scaffold-test "Scaffold dry-run test" --with-skills\necho "---TREE---"\nfind _knowledge/zz-scaffold-test -maxdepth 2 | sort\necho "---AGENTS-HEAD---"\nhead -15 _knowledge/zz-scaffold-test/AGENTS.md\necho "---RUN-LOGGED-PATH-CHECK---"\nbash _knowledge/zz-scaffold-test/script/run-logged.sh dryrun-check -- echo "dry run OK" && cat _knowledge/_bitacora/task-stdout/*dryrun-check.log | tail -3\necho "---SKILLS-COUNT---"\nfind _knowledge/zz-scaffold-test/skills -name SKILL.md | wc -l\necho "---CLEANUP---"\nmv _knowledge/zz-scaffold-test /tmp/opencode/tpl-scaffold-test/ && echo "moved to /tmp/opencode/tpl-scaffold-test"' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:26:16-06:00
+# PID: 428219
+# DUR: 533ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 3c8ce449
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\necho "===1. DB-IGNORE-CHECK==="\ngit check-ignore _knowledge/_templates/schema/templates.db _knowledge/_templates/schema/templates-vector.db && echo "DBS IGNORED" || echo "DBS NOT IGNORED"\necho\necho "===2. SCAFFOLD DRY-RUN==="\nrm -rf /tmp/opencode/tpl-scaffold-test\nmkdir -p /tmp/opencode/tpl-scaffold-test\n# scaffold writes to _knowledge/{name} — use a scratch name then move\nbash _knowledge/_templates/scaffold-knowledge.sh zz-scaffold-test "Scaffold dry-run test" --with-skills\necho "---TREE---"\nfind _knowledge/zz-scaffold-test -maxdepth 2 | sort\necho "---AGENTS-HEAD---"\nhead -15 _knowledge/zz-scaffold-test/AGENTS.md\necho "---RUN-LOGGED-PATH-CHECK---"\nbash _knowledge/zz-scaffold-test/script/run-logged.sh dryrun-check -- echo "dry run OK" && cat _knowledge/_bitacora/task-stdout/*dryrun-check.log | tail -3\necho "---SKILLS-COUNT---"\nfind _knowledge/zz-scaffold-test/skills -name SKILL.md | wc -l\necho "---CLEANUP---"\nmv _knowledge/zz-scaffold-test /tmp/opencode/tpl-scaffold-test/ && echo "moved to /tmp/opencode/tpl-scaffold-test"' 
+# CWD: /home/eddyr/assembler
+# --------------------
+===1. DB-IGNORE-CHECK===
+DBS NOT IGNORED
+
+===2. SCAFFOLD DRY-RUN===
+  SKILL study-foundations → /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/study-foundations.md
+  SKILL knowledge-languages → /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/knowledge-languages.md
+  SKILL reason-quantitative → /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/reason-quantitative.md
+  SKILL reason-verbal → /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/reason-verbal.md
+  SKILL reason-invariants → /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/reason-invariants.md
+  SKILL semantic-dispatcher → /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/semantic-dispatcher.md
+  SKILL search-dispatcher → /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/search-dispatcher.md
+  SKILL playwright-dispatcher → /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/playwright-dispatcher.md
+  SKILL workflow-dispatcher → /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/workflow-dispatcher.md
+  SKILL refactor-skill → /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/refactor-skill.md
+  MISS  find-skills (not found in /home/eddyr/assembler/.opencode/skills)
+Scaffolded /home/eddyr/assembler/_knowledge/zz-scaffold-test
+Chain: precept → concept → reference → fixture (script parallel)
+---TREE---
+_knowledge/zz-scaffold-test
+_knowledge/zz-scaffold-test/AGENTS.md
+_knowledge/zz-scaffold-test/concept
+_knowledge/zz-scaffold-test/concept/.template.md
+_knowledge/zz-scaffold-test/fixture
+_knowledge/zz-scaffold-test/fixture/.template.md
+_knowledge/zz-scaffold-test/precept
+_knowledge/zz-scaffold-test/precept/.template.md
+_knowledge/zz-scaffold-test/precept/write-report.md
+_knowledge/zz-scaffold-test/reference
+_knowledge/zz-scaffold-test/reference/naming-conventions.md
+_knowledge/zz-scaffold-test/reference/.template.md
+_knowledge/zz-scaffold-test/script
+_knowledge/zz-scaffold-test/script/run-logged.sh
+_knowledge/zz-scaffold-test/skills
+_knowledge/zz-scaffold-test/skills/knowledge-languages.md
+_knowledge/zz-scaffold-test/skills/playwright-dispatcher.md
+_knowledge/zz-scaffold-test/skills/reason-invariants.md
+_knowledge/zz-scaffold-test/skills/reason-quantitative.md
+_knowledge/zz-scaffold-test/skills/reason-verbal.md
+_knowledge/zz-scaffold-test/skills/refactor-skill.md
+_knowledge/zz-scaffold-test/skills/search-dispatcher.md
+_knowledge/zz-scaffold-test/skills/semantic-dispatcher.md
+_knowledge/zz-scaffold-test/skills/study-foundations.md
+_knowledge/zz-scaffold-test/skills/workflow-dispatcher.md
+---AGENTS-HEAD---
+---
+id: TEMPLATE.AGENTS
+title: AGENTS Template — Project Instructions Bootstrap
+layer: agents
+purpose: "Bootstraps a project's AGENTS.md: domain, lean chain, toolchain, sources."
+naming: AGENTS.md
+tags: [template, agents, bootstrap]
+status: active
+---
+# zz-scaffold-test — AGENTS.md
+
+## Domain
+
+Scaffold dry-run test
+
+---RUN-LOGGED-PATH-CHECK---
+# CMD: echo dry\ run\ OK 
+# DATE: 2026-08-02T20:26:16-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+dry run OK
+# exit: 0
+# --------------------
+dry run OK
+# exit: 0
+---SKILLS-COUNT---
+0
+---CLEANUP---
+moved to /tmp/opencode/tpl-scaffold-test
+# OUT_LINES: 73
+# OUT_BYTES: 3202
+# ERR_LINES: 0
+# EXEC: 428219|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh scaffold-dry-run -- bash -c 
+# EXEC: 428220|/usr/bin/date|date +%s%N
+# EXEC: 428223|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 428226|/usr/bin/git|git remote get-url origin
+# EXEC: 428224|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 428227|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 428229|/usr/bin/git|git branch --show-current
+# EXEC: 428231|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 428232|/usr/bin/head|head -1
+# EXEC: 428233|/usr/bin/tr|tr -d \n
+# EXEC: 428234|/usr/bin/bun|bun --version
+# EXEC: 428236|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 428237|/usr/bin/head|head -1
+# EXEC: 428238|/usr/bin/tr|tr -d \n
+# EXEC: 428239|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 428241|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 428242|/usr/bin/head|head -1
+# EXEC: 428243|/usr/bin/tr|tr -d \n
+# EXEC: 428244|/usr/bin/python3|python3 --version
+# EXEC: 428246|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 428247|/usr/bin/head|head -1
+# EXEC: 428248|/usr/bin/tr|tr -d \n
+# EXEC: 428249|/usr/bin/ruby|ruby --version
+# EXEC: 428252|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 428253|/usr/bin/head|head -1
+# EXEC: 428254|/usr/bin/tr|tr -d \n
+# EXEC: 428255|/usr/bin/rustc|rustc --version
+# EXEC: 428258|/usr/bin/timeout|timeout 2 go version
+# EXEC: 428259|/usr/bin/head|head -1
+# EXEC: 428260|/usr/bin/tr|tr -d \n
+# EXEC: 428261|/usr/bin/go|go version
+# EXEC: 428267|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 428268|/usr/bin/head|head -1
+# EXEC: 428269|/usr/bin/tr|tr -d \n
+# EXEC: 428270|/usr/bin/git|git --version
+# EXEC: 428272|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 428273|/usr/bin/head|head -1
+# EXEC: 428274|/usr/bin/tr|tr -d \n
+# EXEC: 428275|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 428277|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 428278|/usr/bin/head|head -1
+# EXEC: 428279|/usr/bin/tr|tr -d \n
+# EXEC: 428280|/usr/bin/date|date --version
+# EXEC: 428282|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 428283|/usr/bin/head|head -1
+# EXEC: 428284|/usr/bin/tr|tr -d \n
+# EXEC: 428285|/usr/bin/wc|wc --version
+# EXEC: 428287|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 428288|/usr/bin/head|head -1
+# EXEC: 428289|/usr/bin/tr|tr -d \n
+# EXEC: 428290|/usr/bin/cat|cat --version
+# EXEC: 428292|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 428293|/usr/bin/head|head -1
+# EXEC: 428294|/usr/bin/tr|tr -d \n
+# EXEC: 428295|/usr/bin/tee|tee --version
+# EXEC: 428297|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 428298|/usr/bin/head|head -1
+# EXEC: 428299|/usr/bin/tr|tr -d \n
+# EXEC: 428300|/usr/bin/mktemp|mktemp --version
+# EXEC: 428302|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 428303|/usr/bin/head|head -1
+# EXEC: 428304|/usr/bin/tr|tr -d \n
+# EXEC: 428305|/usr/bin/rm|rm --version
+# EXEC: 428307|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 428308|/usr/bin/head|head -1
+# EXEC: 428309|/usr/bin/tr|tr -d \n
+# EXEC: 428310|/usr/bin/timeout|timeout --version
+# EXEC: 428312|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 428313|/usr/bin/head|head -1
+# EXEC: 428314|/usr/bin/tr|tr -d \n
+# EXEC: 428315|/usr/bin/tr|tr --version
+# EXEC: 428317|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 428318|/usr/bin/head|head -1
+# EXEC: 428319|/usr/bin/tr|tr -d \n
+# EXEC: 428320|/usr/bin/head|head --version
+# EXEC: 428322|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 428323|/usr/bin/head|head -1
+# EXEC: 428324|/usr/bin/tr|tr -d \n
+# EXEC: 428325|/usr/bin/cut|cut --version
+# EXEC: 428327|/usr/bin/date|date +%s%N
+# EXEC: 428328|/usr/bin/sha256sum|sha256sum
+# EXEC: 428329|/usr/bin/cut|cut -c1-8
+# EXEC: 428331|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202615-scaffold-dry-run.log
+# EXEC: 428332|/usr/bin/date|date -Is
+# EXEC: 428333|/usr/bin/mktemp|mktemp
+# EXEC: 428334|/usr/bin/mktemp|mktemp
+# EXEC: 428335|/usr/bin/bash|bash -c 
+# EXEC: 428336|/usr/bin/git|git check-ignore _knowledge/_templates/schema/templates.db _knowledge/_templates/schema/templates-vector.db
+# EXEC: 428337|/usr/bin/rm|rm -rf /tmp/opencode/tpl-scaffold-test
+# EXEC: 428338|/usr/bin/mkdir|mkdir -p /tmp/opencode/tpl-scaffold-test
+# EXEC: 428339|/usr/bin/bash|bash _knowledge/_templates/scaffold-knowledge.sh zz-scaffold-test Scaffold dry-run test --with-skills
+# EXEC: 428341|/usr/bin/dirname|dirname _knowledge/_templates/scaffold-knowledge.sh
+# EXEC: 428342|/usr/bin/mkdir|mkdir -p /home/eddyr/assembler/_knowledge/zz-scaffold-test/precept /home/eddyr/assembler/_knowledge/zz-scaffold-test/concept /home/eddyr/assembler/_knowledge/zz-scaffold-test/reference /home/eddyr/assembler/_knowledge/zz-scaffold-test/fixture /home/eddyr/assembler/_knowledge/zz-scaffold-test/script
+# EXEC: 428343|/usr/bin/sed|sed -e s|{PROJECT-NAME}|zz-scaffold-test|g -e s|{domain statement}|Scaffold dry-run test|g -e s|{domain}|Scaffold dry-run test|g /home/eddyr/assembler/_knowledge/_templates/AGENTS.template.md
+# EXEC: 428344|/usr/bin/cp|cp /home/eddyr/assembler/_knowledge/_templates/precept-template.md /home/eddyr/assembler/_knowledge/zz-scaffold-test/precept/.template.md
+# EXEC: 428345|/usr/bin/cp|cp /home/eddyr/assembler/_knowledge/_templates/report/report-template.md /home/eddyr/assembler/_knowledge/zz-scaffold-test/precept/write-report.md
+# EXEC: 428346|/usr/bin/cp|cp /home/eddyr/assembler/_knowledge/_templates/concept-template.md /home/eddyr/assembler/_knowledge/zz-scaffold-test/concept/.template.md
+# EXEC: 428347|/usr/bin/cp|cp /home/eddyr/assembler/_knowledge/_templates/reference-template.md /home/eddyr/assembler/_knowledge/zz-scaffold-test/reference/.template.md
+# EXEC: 428348|/usr/bin/cp|cp /home/eddyr/assembler/_knowledge/_templates/naming-conventions-template.md /home/eddyr/assembler/_knowledge/zz-scaffold-test/reference/naming-conventions.md
+# EXEC: 428349|/usr/bin/cp|cp /home/eddyr/assembler/_knowledge/_templates/fixture-template.md /home/eddyr/assembler/_knowledge/zz-scaffold-test/fixture/.template.md
+# EXEC: 428350|/usr/bin/cp|cp /home/eddyr/assembler/_knowledge/_templates/run-logged-template.sh /home/eddyr/assembler/_knowledge/zz-scaffold-test/script/run-logged.sh
+# EXEC: 428351|/usr/bin/chmod|chmod +x /home/eddyr/assembler/_knowledge/zz-scaffold-test/script/run-logged.sh
+# EXEC: 428352|/usr/bin/bash|bash /home/eddyr/assembler/_knowledge/_templates/copy-skills.sh /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills study-foundations knowledge-languages reason-quantitative reason-verbal reason-invariants semantic-dispatcher search-dispatcher playwright-dispatcher workflow-dispatcher refactor-skill find-skills
+# EXEC: 428354|/usr/bin/dirname|dirname /home/eddyr/assembler/_knowledge/_templates/copy-skills.sh
+# EXEC: 428355|/usr/bin/mkdir|mkdir -p /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills
+# EXEC: 428356|/usr/bin/cp|cp /home/eddyr/assembler/.opencode/skills/study-foundations/SKILL.md /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/study-foundations.md
+# EXEC: 428357|/usr/bin/cp|cp /home/eddyr/assembler/.opencode/skills/knowledge-languages/SKILL.md /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/knowledge-languages.md
+# EXEC: 428358|/usr/bin/cp|cp /home/eddyr/assembler/.opencode/skills/reason-quantitative/SKILL.md /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/reason-quantitative.md
+# EXEC: 428359|/usr/bin/cp|cp /home/eddyr/assembler/.opencode/skills/reason-verbal/SKILL.md /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/reason-verbal.md
+# EXEC: 428360|/usr/bin/cp|cp /home/eddyr/assembler/.opencode/skills/reason-invariants/SKILL.md /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/reason-invariants.md
+# EXEC: 428361|/usr/bin/cp|cp /home/eddyr/assembler/.opencode/skills/semantic-dispatcher/SKILL.md /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/semantic-dispatcher.md
+# EXEC: 428362|/usr/bin/cp|cp /home/eddyr/assembler/.opencode/skills/search-dispatcher/SKILL.md /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/search-dispatcher.md
+# EXEC: 428363|/usr/bin/cp|cp /home/eddyr/assembler/.opencode/skills/playwright-dispatcher/SKILL.md /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/playwright-dispatcher.md
+# EXEC: 428364|/usr/bin/cp|cp /home/eddyr/assembler/.opencode/skills/workflow-dispatcher/SKILL.md /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/workflow-dispatcher.md
+# EXEC: 428365|/usr/bin/cp|cp /home/eddyr/assembler/.opencode/skills/refactor-skill/SKILL.md /home/eddyr/assembler/_knowledge/zz-scaffold-test/skills/refactor-skill.md
+# EXEC: 428366|/usr/bin/find|find _knowledge/zz-scaffold-test -maxdepth 2
+# EXEC: 428367|/usr/bin/sort|sort
+# EXEC: 428368|/usr/bin/head|head -15 _knowledge/zz-scaffold-test/AGENTS.md
+# EXEC: 428369|/usr/bin/bash|bash _knowledge/zz-scaffold-test/script/run-logged.sh dryrun-check -- echo dry run OK
+# EXEC: 428371|/usr/bin/dirname|dirname _knowledge/zz-scaffold-test/script/run-logged.sh
+# EXEC: 428373|/usr/bin/mkdir|mkdir -p /home/eddyr/assembler/_knowledge/_bitacora/task-stdout
+# EXEC: 428374|/usr/bin/date|date +%Y%m%d-%H%M%S
+# EXEC: 428377|/usr/bin/tee|tee /home/eddyr/assembler/_knowledge/_bitacora/task-stdout/20260802-202616-dryrun-check.log
+# EXEC: 428378|/usr/bin/date|date -Is
+# EXEC: 428381|/usr/bin/tee|tee -a /home/eddyr/assembler/_knowledge/_bitacora/task-stdout/20260802-202616-dryrun-check.log
+# EXEC: 428383|/usr/bin/tee|tee -a /home/eddyr/assembler/_knowledge/_bitacora/task-stdout/20260802-202616-dryrun-check.log
+# EXEC: 428384|/usr/bin/cat|cat _knowledge/_bitacora/task-stdout/20260802-202616-dryrun-check.log
+# EXEC: 428385|/usr/bin/tail|tail -3
+# EXEC: 428386|/usr/bin/find|find _knowledge/zz-scaffold-test/skills -name SKILL.md
+# EXEC: 428387|/usr/bin/wc|wc -l
+# EXEC: 428388|/usr/bin/mv|mv _knowledge/zz-scaffold-test /tmp/opencode/tpl-scaffold-test/
+# EXEC: 428391|/usr/bin/tr|tr -d  
+# EXEC: 428390|/usr/bin/wc|wc -l
+# EXEC: 428393|/usr/bin/wc|wc -c
+# EXEC: 428394|/usr/bin/tr|tr -d  
+# EXEC: 428396|/usr/bin/wc|wc -l
+# EXEC: 428397|/usr/bin/tr|tr -d  
+# EXEC: 428398|/usr/bin/date|date +%s%N
+# EXEC: 428400|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202615-scaffold-dry-run.log
+# EXEC: 428402|/usr/bin/cat|cat /tmp/tmp.EqjgLC0HEd
+# EXEC: 428403|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202615-scaffold-dry-run.log
+# EXEC: 428404|/usr/bin/cat|cat /tmp/tmp.7bXcIRfkjO
+# EXEC: 428405|/usr/bin/cat|cat /tmp/tmp.7bXcIRfkjO
+# EXEC: 428406|/usr/bin/rm|rm -f /tmp/tmp.EqjgLC0HEd /tmp/tmp.7bXcIRfkjO
+# EXEC: 428408|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202615-scaffold-dry-run.log
+# EXEC: 428410|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202615-scaffold-dry-run.log
+# EXEC: 428412|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202615-scaffold-dry-run.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 chmod=chmod (GNU coreutils) 9.11 cp=cp (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 find=find (GNU findutils) 4.11.0-modified git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mkdir=mkdir (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 mv=mv (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sed=/usr/bin/sed (GNU sed) 4.10 sha256sum=sha256sum (GNU coreutils) 9.11 sort=sort (GNU coreutils) 9.11 tail=tail (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 147
+# SHA: 82cd86f4f79f820ece353e9860d189cda583094407fa714879f82afac96deda3
+# exit: 0

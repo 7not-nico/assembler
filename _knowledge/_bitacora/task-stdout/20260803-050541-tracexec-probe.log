@@ -1,0 +1,9 @@
+# CMD: bash -c command\ -v\ tracexec\ \&\&\ tracexec\ --version\ 2\>\&1\ \|\ head\ -2\ \|\|\ echo\ \"tracexec\ not\ on\ PATH\"\;\ ls\ /usr/bin/tracexec\ /usr/local/bin/tracexec\ 2\>/dev/null 
+# DATE: 2026-08-03T05:05:41-06:00
+# DUR: 11ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+/usr/bin/tracexec
+tracexec-core 0.17.0
+/usr/bin/tracexec
+# exit: 2

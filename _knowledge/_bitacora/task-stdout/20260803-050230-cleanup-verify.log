@@ -1,0 +1,9 @@
+# CMD: bash -c bash\ -n\ run-logged.sh\ \&\&\ echo\ \"run-logged.sh\ syntax\ OK\"\ \&\&\ ruby\ -c\ fetch-epub.rb\ \&\&\ echo\ \"fetch-epub.rb\ syntax\ OK\" 
+# DATE: 2026-08-03T05:02:30-06:00
+# DUR: 16ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+run-logged.sh syntax OK
+Syntax OK
+fetch-epub.rb syntax OK
+# exit: 0

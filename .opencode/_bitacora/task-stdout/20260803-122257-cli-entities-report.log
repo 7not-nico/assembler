@@ -1,0 +1,30 @@
+# CMD: bash -c ls\ /home/eddyr/assembler/.opencode/entities/cli/\ \&\&\ echo\ \"---\"\ \&\&\ wc\ -l\ /home/eddyr/assembler/.opencode/entities/cli/\*.md 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T12:22:57-06:00
+# PID: 283319
+# DUR: 80ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 596084d5
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c ls\ /home/eddyr/assembler/.opencode/entities/cli/\ \&\&\ echo\ \"---\"\ \&\&\ wc\ -l\ /home/eddyr/assembler/.opencode/entities/cli/\*.md 
+# CWD: /home/eddyr/assembler
+# --------------------
+CLI.COREUTILS.md
+CLI.PANDOC.md
+CLI.RIPGREP.md
+CLI.SED.md
+CLI.TRACEXEC.md
+---
+  45 /home/eddyr/assembler/.opencode/entities/cli/CLI.COREUTILS.md
+  46 /home/eddyr/assembler/.opencode/entities/cli/CLI.PANDOC.md
+  44 /home/eddyr/assembler/.opencode/entities/cli/CLI.RIPGREP.md
+  45 /home/eddyr/assembler/.opencode/entities/cli/CLI.SED.md
+  46 /home/eddyr/assembler/.opencode/entities/cli/CLI.TRACEXEC.md
+ 226 total
+# OUT_LINES: 12
+# OUT_BYTES: 411
+# ERR_LINES: 0
+# SHA: 7169a41e0ff81f441e5a2b7d5a995e3fde8064579d05e6e006a7520e769c4e8e

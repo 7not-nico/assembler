@@ -1,0 +1,129 @@
+# CMD: rg -n source: .opencode/entities/cli/ 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T05:54:15-06:00
+# PID: 54262
+# DUR: 395ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 87e299ca
+# CLI: rg ripgrep 15.2.0
+# ARGS: -n source: .opencode/entities/cli/ 
+# CWD: /home/eddyr/assembler
+# --------------------
+.opencode/entities/cli/CLI.RIPGREP.md:9:source: COG.COMPUTER.SCIENCE
+# OUT_LINES: 1
+# OUT_BYTES: 69
+# ERR_LINES: 0
+# EXEC: 54262|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh cli-source-fix -- rg -n source: .opencode/entities/cli/
+# EXEC: 54263|/usr/bin/date|date +%s%N
+# EXEC: 54267|/usr/bin/timeout|timeout 2 rg --version
+# EXEC: 54268|/usr/bin/head|head -1
+# EXEC: 54269|/usr/bin/tr|tr -d \n
+# EXEC: 54270|/usr/bin/rg|rg --version
+# EXEC: 54271|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 54274|/usr/bin/git|git remote get-url origin
+# EXEC: 54272|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 54275|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 54277|/usr/bin/git|git branch --show-current
+# EXEC: 54279|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 54280|/usr/bin/head|head -1
+# EXEC: 54281|/usr/bin/tr|tr -d \n
+# EXEC: 54282|/usr/bin/bun|bun --version
+# EXEC: 54284|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 54285|/usr/bin/head|head -1
+# EXEC: 54286|/usr/bin/tr|tr -d \n
+# EXEC: 54287|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 54289|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 54290|/usr/bin/head|head -1
+# EXEC: 54291|/usr/bin/tr|tr -d \n
+# EXEC: 54292|/usr/bin/python3|python3 --version
+# EXEC: 54294|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 54295|/usr/bin/head|head -1
+# EXEC: 54296|/usr/bin/tr|tr -d \n
+# EXEC: 54297|/usr/bin/ruby|ruby --version
+# EXEC: 54300|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 54301|/usr/bin/head|head -1
+# EXEC: 54302|/usr/bin/tr|tr -d \n
+# EXEC: 54303|/usr/bin/rustc|rustc --version
+# EXEC: 54306|/usr/bin/timeout|timeout 2 go version
+# EXEC: 54307|/usr/bin/head|head -1
+# EXEC: 54308|/usr/bin/tr|tr -d \n
+# EXEC: 54309|/usr/bin/go|go version
+# EXEC: 54315|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 54316|/usr/bin/head|head -1
+# EXEC: 54317|/usr/bin/tr|tr -d \n
+# EXEC: 54318|/usr/bin/git|git --version
+# EXEC: 54320|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 54321|/usr/bin/head|head -1
+# EXEC: 54322|/usr/bin/tr|tr -d \n
+# EXEC: 54323|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 54326|/usr/bin/head|head -1
+# EXEC: 54325|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 54327|/usr/bin/tr|tr -d \n
+# EXEC: 54328|/usr/bin/date|date --version
+# EXEC: 54330|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 54331|/usr/bin/head|head -1
+# EXEC: 54332|/usr/bin/tr|tr -d \n
+# EXEC: 54333|/usr/bin/wc|wc --version
+# EXEC: 54335|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 54336|/usr/bin/head|head -1
+# EXEC: 54337|/usr/bin/tr|tr -d \n
+# EXEC: 54338|/usr/bin/cat|cat --version
+# EXEC: 54340|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 54341|/usr/bin/head|head -1
+# EXEC: 54342|/usr/bin/tr|tr -d \n
+# EXEC: 54343|/usr/bin/tee|tee --version
+# EXEC: 54345|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 54346|/usr/bin/head|head -1
+# EXEC: 54347|/usr/bin/tr|tr -d \n
+# EXEC: 54348|/usr/bin/mktemp|mktemp --version
+# EXEC: 54350|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 54351|/usr/bin/head|head -1
+# EXEC: 54352|/usr/bin/tr|tr -d \n
+# EXEC: 54353|/usr/bin/rm|rm --version
+# EXEC: 54355|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 54356|/usr/bin/head|head -1
+# EXEC: 54357|/usr/bin/tr|tr -d \n
+# EXEC: 54358|/usr/bin/timeout|timeout --version
+# EXEC: 54360|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 54361|/usr/bin/head|head -1
+# EXEC: 54362|/usr/bin/tr|tr -d \n
+# EXEC: 54363|/usr/bin/tr|tr --version
+# EXEC: 54365|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 54366|/usr/bin/head|head -1
+# EXEC: 54367|/usr/bin/tr|tr -d \n
+# EXEC: 54368|/usr/bin/head|head --version
+# EXEC: 54370|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 54371|/usr/bin/head|head -1
+# EXEC: 54372|/usr/bin/tr|tr -d \n
+# EXEC: 54373|/usr/bin/cut|cut --version
+# EXEC: 54375|/usr/bin/date|date +%s%N
+# EXEC: 54376|/usr/bin/sha256sum|sha256sum
+# EXEC: 54377|/usr/bin/cut|cut -c1-8
+# EXEC: 54380|/usr/bin/date|date -Is
+# EXEC: 54379|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055415-cli-source-fix.log
+# EXEC: 54381|/usr/bin/mktemp|mktemp
+# EXEC: 54382|/usr/bin/mktemp|mktemp
+# EXEC: 54383|/usr/bin/rg|rg -n source: .opencode/entities/cli/
+# EXEC: 54393|/usr/bin/wc|wc -l
+# EXEC: 54394|/usr/bin/tr|tr -d  
+# EXEC: 54396|/usr/bin/wc|wc -c
+# EXEC: 54397|/usr/bin/tr|tr -d  
+# EXEC: 54399|/usr/bin/wc|wc -l
+# EXEC: 54400|/usr/bin/tr|tr -d  
+# EXEC: 54401|/usr/bin/date|date +%s%N
+# EXEC: 54403|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055415-cli-source-fix.log
+# EXEC: 54405|/usr/bin/cat|cat /tmp/tmp.gaoJHCmFoJ
+# EXEC: 54406|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055415-cli-source-fix.log
+# EXEC: 54407|/usr/bin/cat|cat /tmp/tmp.1AwdkaSj4B
+# EXEC: 54408|/usr/bin/cat|cat /tmp/tmp.1AwdkaSj4B
+# EXEC: 54409|/usr/bin/rm|rm -f /tmp/tmp.gaoJHCmFoJ /tmp/tmp.1AwdkaSj4B
+# EXEC: 54411|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055415-cli-source-fix.log
+# EXEC: 54413|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055415-cli-source-fix.log
+# EXEC: 54415|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055415-cli-source-fix.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rg=ripgrep 15.2.0 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 107
+# SHA: 729930f3f83e31902eb04db99a7e88d133df3c1ff3192a8c577278e83f22e8c1
+# exit: 0

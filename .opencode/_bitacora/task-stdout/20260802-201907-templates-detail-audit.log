@@ -1,0 +1,237 @@
+# CMD: bash -c $'\necho "===1. SCAFFOLD FULL==="; cat _knowledge/_templates/scaffold-knowledge.sh\necho; echo "===2. DUP-CHECK: write-reportare vs write-report==="\ndiff _knowledge/_templates/write-reportare-template.md _knowledge/_templates/write-report-template.md && echo "IDENTICAL" || echo "DIFFER (see above)"\necho; echo "===3. fixtures-template (no ext) vs fixture-template==="\ncat _knowledge/_templates/fixtures-template; echo "---"; head -12 _knowledge/_templates/fixture-template.md\necho; echo "===4. AGENTS.md _rustlib lesson==="\nrg -n "Rust|_rustlib|0.4|Go\\+binary" _knowledge/_templates/AGENTS.md' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:19:07-06:00
+# PID: 420374
+# DUR: 387ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: a881249d
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\necho "===1. SCAFFOLD FULL==="; cat _knowledge/_templates/scaffold-knowledge.sh\necho; echo "===2. DUP-CHECK: write-reportare vs write-report==="\ndiff _knowledge/_templates/write-reportare-template.md _knowledge/_templates/write-report-template.md && echo "IDENTICAL" || echo "DIFFER (see above)"\necho; echo "===3. fixtures-template (no ext) vs fixture-template==="\ncat _knowledge/_templates/fixtures-template; echo "---"; head -12 _knowledge/_templates/fixture-template.md\necho; echo "===4. AGENTS.md _rustlib lesson==="\nrg -n "Rust|_rustlib|0.4|Go\\+binary" _knowledge/_templates/AGENTS.md' 
+# CWD: /home/eddyr/assembler
+# --------------------
+===1. SCAFFOLD FULL===
+#!/usr/bin/env bash
+# scaffold-knowledge.sh — create a new knowledge project from templates
+# Usage: bash scaffold-knowledge.sh {project-name} "{domain statement}" [--with-skills]
+#   --with-skills: copy anchored skills into docs/ (anchor-workflow pattern)
+# Creates: _knowledge/{name}/ with full chain structure + AGENTS.md
+
+set -euo pipefail
+
+NAME="$1"
+DOMAIN="${2:-Knowledge project}"
+WITH_SKILLS=0
+for arg in "${@:3}"; do
+  case "$arg" in
+    --with-skills) WITH_SKILLS=1 ;;
+  esac
+done
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+DEST="$ROOT/$NAME"
+
+if [ -d "$DEST" ]; then
+  echo "ERROR: $DEST exists" >&2
+  exit 1
+fi
+
+# Chain directories
+mkdir -p "$DEST"/{format,precept,procedure,research,concept,note,bitacora,glossary,schema,script,reference,fixtures,practice,docs}
+
+# AGENTS.md from template
+sed -e "s|{PROJECT-NAME}|$NAME|g" -e "s|{domain statement}|$DOMAIN|g" -e "s|{domain}|$DOMAIN|g" \
+  "$ROOT/_templates/AGENTS.template.md" > "$DEST/AGENTS.md"
+
+# Copy remaining templates as reference boilerplate
+cp "$ROOT/_templates"/format-template.md   "$DEST/format/.template.md" 2>/dev/null || true
+cp "$ROOT/_templates"/precept-template.md  "$DEST/precept/.template.md" 2>/dev/null || true
+cp "$ROOT/_templates"/write-report-template.md "$DEST/precept/write-report.md" 2>/dev/null || true
+cp "$ROOT/_templates"/procedure-template.md "$DEST/procedure/.template.md" 2>/dev/null || true
+cp "$ROOT/_templates"/browse-playwright-template.md "$DEST/procedure/.browse-playwright.template.md" 2>/dev/null || true
+cp "$ROOT/_templates"/research-template.md  "$DEST/research/.template.md" 2>/dev/null || true
+cp "$ROOT/_templates"/concept-template.md   "$DEST/concept/.template.md" 2>/dev/null || true
+cp "$ROOT/_templates"/note-template.md      "$DEST/note/.template.md" 2>/dev/null || true
+cp "$ROOT/_templates"/bitacora-template.md  "$DEST/bitacora/.template.md" 2>/dev/null || true
+cp "$ROOT/_templates"/glossary-template.md  "$DEST/glossary/.template.md" 2>/dev/null || true
+cp "$ROOT/_templates"/reference-template.md "$DEST/reference/.template.md" 2>/dev/null || true
+cp "$ROOT/_templates"/naming-conventions-template.md "$DEST/reference/naming-conventions.md" 2>/dev/null || true
+cp "$ROOT/_templates"/practice-template.md  "$DEST/practice/.template.md" 2>/dev/null || true
+
+# Schema + script (name from project)
+SCHEMA_NAME="${NAME//-/_}"
+sed "s/{NAME}/$SCHEMA_NAME/g" "$ROOT/_templates/schema-template.sql" > "$DEST/schema/$SCHEMA_NAME.sql"
+sed -e "s/{ACTION}-{SUBJECT}/push-registry/g" -e "s/{action}-{subject}/push-registry/g" -e "s/{NAME}/$SCHEMA_NAME/g" \
+  "$ROOT/_templates/push-script-template.rb" > "$DEST/script/push-registry.rb"
+chmod +x "$DEST/script/push-registry.rb"
+
+# Anchor workflow: copy skills into docs/ (optional --with-skills)
+if [ "$WITH_SKILLS" -eq 1 ]; then
+  bash "$ROOT/_templates/copy-skills.sh" "$DEST/docs" \
+    compose-web orchestrate-research study-foundations search-papers \
+    use-playwright-core use-playwright-ai-mode use-playwright-debug \
+    use-playwright-network-storage use-playwright-vision \
+    use-parallel-search use-exa use-context-seven \
+    read-maxims-protocols guide-reasoning report-outcomes query-nerdfont
+fi
+
+echo "Scaffolded $DEST"
+echo "Chain: format → precept → procedure → research → concept → note → bitacora → glossary → schema → script → reference → fixtures → practice"
+
+===2. DUP-CHECK: write-reportare vs write-report===
+2,3c2,3
+< id: TEMPLATE.WRITE.REPORTARE
+< title: Write-Reportare Template — Metrics-Led Report Form
+---
+> id: TEMPLATE.WRITE.REPORT
+> title: Write-Report Template — Session Report Form
+5c5
+< purpose: "Metrics-led report template: quantitative values before narrative."
+---
+> purpose: "Session-report template: what was done, decisions, errors, findings, metrics."
+DIFFER (see above)
+
+===3. fixtures-template (no ext) vs fixture-template===
+-- ch{NN}-{ASPECT}.{ext} — {purpose, e.g. practice config}
+-- Layer: fixtures/ — raw practice material, governed by reference conventions
+-- Source: {URL} ({YYYY-MM-DD}), {version}
+
+-- {fixture content — complete, runnable example}
+
+-- Header fields (per rust-coding convention):
+-- Source: {URL}
+-- Module: {what this fixture demonstrates}
+-- Compile: {how to verify it}
+---
+---
+id: TEMPLATE.FIXTURE
+title: Fixture Template — Atomic Regression Harness Form
+layer: fixture/
+purpose: "Atomic regression-harness template: purpose, build/run commands, assertion set."
+naming: action-domain-test.ext
+tags: [template, fixture, regression]
+status: active
+---
+# {action}-{domain}-test.{ext} — atomic fixture
+
+**Layer:** fixture/
+
+===4. AGENTS.md _rustlib lesson===
+45:    lesson: transport, not language — Rust+JSON was 0.4× (serialization dominates);
+46:            Go+binary wins. Spawn with stdin: TypedArray per Bun docs (no pipes).
+# OUT_LINES: 108
+# OUT_BYTES: 4828
+# ERR_LINES: 0
+# EXEC: 420374|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh templates-detail-audit -- bash -c 
+# EXEC: 420375|/usr/bin/date|date +%s%N
+# EXEC: 420378|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 420381|/usr/bin/git|git remote get-url origin
+# EXEC: 420379|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 420382|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 420384|/usr/bin/git|git branch --show-current
+# EXEC: 420386|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 420387|/usr/bin/head|head -1
+# EXEC: 420388|/usr/bin/tr|tr -d \n
+# EXEC: 420389|/usr/bin/bun|bun --version
+# EXEC: 420391|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 420392|/usr/bin/head|head -1
+# EXEC: 420393|/usr/bin/tr|tr -d \n
+# EXEC: 420394|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 420396|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 420397|/usr/bin/head|head -1
+# EXEC: 420398|/usr/bin/tr|tr -d \n
+# EXEC: 420399|/usr/bin/python3|python3 --version
+# EXEC: 420401|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 420402|/usr/bin/head|head -1
+# EXEC: 420403|/usr/bin/tr|tr -d \n
+# EXEC: 420404|/usr/bin/ruby|ruby --version
+# EXEC: 420407|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 420408|/usr/bin/head|head -1
+# EXEC: 420409|/usr/bin/tr|tr -d \n
+# EXEC: 420410|/usr/bin/rustc|rustc --version
+# EXEC: 420413|/usr/bin/timeout|timeout 2 go version
+# EXEC: 420414|/usr/bin/head|head -1
+# EXEC: 420415|/usr/bin/tr|tr -d \n
+# EXEC: 420416|/usr/bin/go|go version
+# EXEC: 420422|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 420423|/usr/bin/head|head -1
+# EXEC: 420424|/usr/bin/tr|tr -d \n
+# EXEC: 420425|/usr/bin/git|git --version
+# EXEC: 420427|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 420428|/usr/bin/head|head -1
+# EXEC: 420429|/usr/bin/tr|tr -d \n
+# EXEC: 420430|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 420432|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 420433|/usr/bin/head|head -1
+# EXEC: 420434|/usr/bin/tr|tr -d \n
+# EXEC: 420435|/usr/bin/date|date --version
+# EXEC: 420437|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 420438|/usr/bin/head|head -1
+# EXEC: 420439|/usr/bin/tr|tr -d \n
+# EXEC: 420440|/usr/bin/wc|wc --version
+# EXEC: 420444|/usr/bin/tr|tr -d \n
+# EXEC: 420442|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 420443|/usr/bin/head|head -1
+# EXEC: 420445|/usr/bin/cat|cat --version
+# EXEC: 420447|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 420448|/usr/bin/head|head -1
+# EXEC: 420449|/usr/bin/tr|tr -d \n
+# EXEC: 420450|/usr/bin/tee|tee --version
+# EXEC: 420454|/usr/bin/tr|tr -d \n
+# EXEC: 420452|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 420453|/usr/bin/head|head -1
+# EXEC: 420455|/usr/bin/mktemp|mktemp --version
+# EXEC: 420457|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 420458|/usr/bin/head|head -1
+# EXEC: 420459|/usr/bin/tr|tr -d \n
+# EXEC: 420460|/usr/bin/rm|rm --version
+# EXEC: 420462|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 420463|/usr/bin/head|head -1
+# EXEC: 420464|/usr/bin/tr|tr -d \n
+# EXEC: 420465|/usr/bin/timeout|timeout --version
+# EXEC: 420467|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 420468|/usr/bin/head|head -1
+# EXEC: 420469|/usr/bin/tr|tr -d \n
+# EXEC: 420470|/usr/bin/tr|tr --version
+# EXEC: 420472|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 420473|/usr/bin/head|head -1
+# EXEC: 420474|/usr/bin/tr|tr -d \n
+# EXEC: 420475|/usr/bin/head|head --version
+# EXEC: 420477|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 420478|/usr/bin/head|head -1
+# EXEC: 420479|/usr/bin/tr|tr -d \n
+# EXEC: 420480|/usr/bin/cut|cut --version
+# EXEC: 420482|/usr/bin/date|date +%s%N
+# EXEC: 420483|/usr/bin/sha256sum|sha256sum
+# EXEC: 420484|/usr/bin/cut|cut -c1-8
+# EXEC: 420486|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201907-templates-detail-audit.log
+# EXEC: 420487|/usr/bin/date|date -Is
+# EXEC: 420488|/usr/bin/mktemp|mktemp
+# EXEC: 420489|/usr/bin/mktemp|mktemp
+# EXEC: 420490|/usr/bin/bash|bash -c 
+# EXEC: 420491|/usr/bin/cat|cat _knowledge/_templates/scaffold-knowledge.sh
+# EXEC: 420492|/usr/bin/diff|diff _knowledge/_templates/write-reportare-template.md _knowledge/_templates/write-report-template.md
+# EXEC: 420493|/usr/bin/cat|cat _knowledge/_templates/fixtures-template
+# EXEC: 420494|/usr/bin/head|head -12 _knowledge/_templates/fixture-template.md
+# EXEC: 420490|/usr/bin/rg|rg -n Rust|_rustlib|0.4|Go\+binary _knowledge/_templates/AGENTS.md
+# EXEC: 420496|/usr/bin/wc|wc -l
+# EXEC: 420497|/usr/bin/tr|tr -d  
+# EXEC: 420499|/usr/bin/wc|wc -c
+# EXEC: 420500|/usr/bin/tr|tr -d  
+# EXEC: 420502|/usr/bin/wc|wc -l
+# EXEC: 420503|/usr/bin/tr|tr -d  
+# EXEC: 420504|/usr/bin/date|date +%s%N
+# EXEC: 420506|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201907-templates-detail-audit.log
+# EXEC: 420508|/usr/bin/cat|cat /tmp/tmp.tRQZHR1mt4
+# EXEC: 420509|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201907-templates-detail-audit.log
+# EXEC: 420510|/usr/bin/cat|cat /tmp/tmp.Y0z7B9zSZs
+# EXEC: 420511|/usr/bin/cat|cat /tmp/tmp.Y0z7B9zSZs
+# EXEC: 420512|/usr/bin/rm|rm -f /tmp/tmp.tRQZHR1mt4 /tmp/tmp.Y0z7B9zSZs
+# EXEC: 420514|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201907-templates-detail-audit.log
+# EXEC: 420516|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201907-templates-detail-audit.log
+# EXEC: 420518|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-201907-templates-detail-audit.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 diff=diff (GNU diffutils) 3.12 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rg=ripgrep 15.2.0 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 108
+# SHA: fe96001578db3524c378cbd4bc16a802064b25ec7b69fe5a70a569f1f192bc84
+# exit: 0

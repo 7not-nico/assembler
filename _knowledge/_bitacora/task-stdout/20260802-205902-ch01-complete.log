@@ -1,0 +1,38 @@
+# CMD: bash -c $'\npython3 - <<"PY"\np = "_knowledge/_bitacora/task-todo/2026-08-02--study-rust-book-into-rust-docs.md"\ns = open(p).read()\ns = s.replace("- [ ] ch01 Getting Started (concept + fixture)", "- [x] ch01 Getting Started (concept + fixture)")\nopen(p, "w").write(s)\nprint("ch01 marked done")\nPY\necho "===CONCEPTS==="; ls _knowledge/rust-docs/concept/ | rg -v template\necho "===FIXTURES==="; ls _knowledge/rust-docs/fixture/ | rg -v template\necho "===PRECEPTS==="; ls _knowledge/rust-docs/precept/ | rg -v template' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:59:02-06:00
+# PID: 459253
+# DUR: 117ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 59b9e016
+# TASK: ch01
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\npython3 - <<"PY"\np = "_knowledge/_bitacora/task-todo/2026-08-02--study-rust-book-into-rust-docs.md"\ns = open(p).read()\ns = s.replace("- [ ] ch01 Getting Started (concept + fixture)", "- [x] ch01 Getting Started (concept + fixture)")\nopen(p, "w").write(s)\nprint("ch01 marked done")\nPY\necho "===CONCEPTS==="; ls _knowledge/rust-docs/concept/ | rg -v template\necho "===FIXTURES==="; ls _knowledge/rust-docs/fixture/ | rg -v template\necho "===PRECEPTS==="; ls _knowledge/rust-docs/precept/ | rg -v template' 
+# CWD: /home/eddyr/assembler
+# --------------------
+ch01 marked done
+===CONCEPTS===
+ahead-of-time-compilation.md
+cargo-manifest.md
+cargo.md
+edition.md
+main-function.md
+println-macro.md
+rustc.md
+rustup.md
+===FIXTURES===
+ch01-hello-world.rs
+===PRECEPTS===
+cite-every-claim.md
+compile-every-fixture.md
+cross-reference-archive.md
+official-source-first.md
+study-one-chapter.md
+write-every-concept.md
+# OUT_LINES: 19
+# OUT_BYTES: 343
+# ERR_LINES: 0
+# SHA: 4f75c76e36885c597224588eb4a2ecc5736f9bd3cfaff73aae43c9b2ce70f797

@@ -21,7 +21,7 @@ Every protocol belongs to one enforcement domain. The domain is the first segmen
 
 3. **No concrete examples in rules** — parenthetical illustrations, sample values, and specific instances excluded. Principle alone must be self-evident.
 
-4. **LLM spec compliance required before sync** — protocol body must pass `mcp-spec-audit` at 100/100.
+4. **LLM spec compliance required before sync** — protocol body must pass the LLM spec contract at 100/100.
 
 5. **Examples deferred to gotchas** — concrete antipatterns and redirects belong in the gotchas table only.
 
@@ -30,14 +30,14 @@ Every protocol belongs to one enforcement domain. The domain is the first segmen
 - `PROT.DB.SCHEMA` instead of `PROT.SCHEMA.DB.SCHEMA`: Use `SCHEMA` — conventions about schema structure (Domain outside canonical set)
 - Example inside a numbered rule: Move instance to gotchas table (Parenthetical instance or sample value)
 - Rule with vague language: Replace with actionable directive (Aspirational wording, lacking actionable directive)
-- Spec audit below 100: Fix violations before sync (Violation from mcp-spec-audit)
+- Spec audit below 100: Fix violations before sync (Violation from spec audit)
 - Domain prefix omitted: Insert domain: `PROT.{DOMAIN}.{TOPIC}` (ID starts with `PROT.{TOPIC}` with no domain)
 - Two domains for one protocol: Pick the enforcement domain; subject area irrelevant (ID includes multiple domain segments)
 - `CONTENT` protocol absent: Create `PROT.CONTENT.{TOPIC}` — governs visible documentation conventions (Project `.md` files outside `.opencode` lack governance)
 
 ## Enforcement
 
-Code review. The domain prefix is validated against the canonical set. Rules are checked for concrete examples. `mcp-spec-audit` runs before each sync.
+Code review. The domain prefix is validated against the canonical set. Rules are checked for concrete examples. The LLM spec contract runs before each sync.
 
 ## Applicability
 
@@ -46,4 +46,3 @@ All protocol files within the AMANDA assembler ecosystem — every `.md` file in
 ## See also
 
 - `PROT.META.DOMAIN` — this protocol
-- `mcp-spec-audit` — LLM spec compliance checker

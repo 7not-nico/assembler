@@ -1,0 +1,59 @@
+# CMD: bash -c rg\ --version\ 2\>\&1\ \|\ head\ -2\;\ echo\ \"===RG\ HELP===\"\;\ rg\ --help\ 2\>\&1\ \|\ head\ -40\;\ echo\ \"===RUBY===\"\;\ ruby\ --version\ 2\>\&1\;\ ruby\ -e\ \"puts\ RUBY_DESCRIPTION\" 
+# DATE: 2026-08-03T05:26:59-06:00
+# DUR: 79ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+33833<tracer>: "/usr/bin/bash" ["bash", "-c", "rg --version 2>&1 | head -2; echo \"===RG HELP===\"; rg --help 2>&1 | head -40; echo \"===RUBY===\"; ruby --version 2>&1; ruby -e \"puts RUBY_DESCRIPTION\""] fd []
+33834<bash>: "/usr/bin/rg" ["rg", "--version"] fd [stdout="pipe:[140218]", stderr="pipe:[140218]", ]
+33835<bash>: "/usr/bin/head" ["head", "-2"] fd [stdin="pipe:[140218]", ]
+ripgrep 15.2.0
+
+===RG HELP===
+33836<bash>: "/usr/bin/rg" ["rg", "--help"] fd [stdout="pipe:[140219]", stderr="pipe:[140219]", ]
+33837<bash>: "/usr/bin/head" ["head", "-40"] fd [stdin="pipe:[140219]", ]
+ripgrep 15.2.0
+Andrew Gallant <jamslam@gmail.com>
+
+ripgrep (rg) recursively searches the current directory for lines matching
+a regex pattern. By default, ripgrep will respect gitignore rules and
+automatically skip hidden files/directories and binary files.
+
+Use -h for short descriptions and --help for more details.
+
+Project home page: https://github.com/BurntSushi/ripgrep
+
+USAGE:
+    rg [OPTIONS] PATTERN [PATH ...]
+    rg [OPTIONS] -e PATTERN ... [PATH ...]
+    rg [OPTIONS] -f PATTERNFILE ... [PATH ...]
+    rg [OPTIONS] --files [PATH ...]
+    rg [OPTIONS] --type-list
+    command | rg [OPTIONS] PATTERN
+    rg [OPTIONS] --help
+    rg [OPTIONS] --version
+
+POSITIONAL ARGUMENTS:
+    <PATTERN>
+        A regular expression used for searching. To match a pattern beginning
+        with a dash, use the -e/--regexp flag.
+
+        For example, to search for the literal '-foo', you can use this flag:
+
+            rg -e -foo
+
+        You can also use the special '--' delimiter to indicate that no more
+        flags will be provided. Namely, the following is equivalent to the
+        above:
+
+            rg -- -foo
+
+    <PATH>...
+        A file or directory to search. Directories are searched recursively.
+        File paths specified on the command line override glob and ignore
+        rules.
+===RUBY===
+33838<bash>: "/usr/bin/ruby" ["ruby", "--version"] fd []
+ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux]
+33833<bash>: "/usr/bin/ruby" ["ruby", "-e", "puts RUBY_DESCRIPTION"] fd []
+ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux]
+# exit: 0

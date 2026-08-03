@@ -1,0 +1,36 @@
+# CMD: bash -c cd\ /home/eddyr/assembler\ \&\&\ echo\ \"===\ all\ invalid\ UTF-8\ sequences\ in\ reason-invariants\ ===\"\;\ LC_ALL=C\ grep\ -nP\ \"\[\\x80-\\xBF\]\(\?\!\[\\x80-\\xBF\]\)\|\[\\xC0-\\xDF\]\(\?\!\[\\x80-\\xBF\]\)\|\[\\xE0-\\xEF\]\(\?\!\[\\x80-\\xBF\]\{2\}\)\|\[\\xF0-\\xF7\]\(\?\!\[\\x80-\\xBF\]\{3\}\)\"\ .opencode/skills/reason-invariants/SKILL.md\ 2\>/dev/null\ \|\ head\ -20\;\ echo\ \"===\ line\ count\ of\ file\ ===\"\;\ wc\ -l\ .opencode/skills/reason-invariants/SKILL.md 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:55:34-06:00
+# PID: 372779
+# DUR: 69ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 09410d7a
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cd\ /home/eddyr/assembler\ \&\&\ echo\ \"===\ all\ invalid\ UTF-8\ sequences\ in\ reason-invariants\ ===\"\;\ LC_ALL=C\ grep\ -nP\ \"\[\\x80-\\xBF\]\(\?\!\[\\x80-\\xBF\]\)\|\[\\xC0-\\xDF\]\(\?\!\[\\x80-\\xBF\]\)\|\[\\xE0-\\xEF\]\(\?\!\[\\x80-\\xBF\]\{2\}\)\|\[\\xF0-\\xF7\]\(\?\!\[\\x80-\\xBF\]\{3\}\)\"\ .opencode/skills/reason-invariants/SKILL.md\ 2\>/dev/null\ \|\ head\ -20\;\ echo\ \"===\ line\ count\ of\ file\ ===\"\;\ wc\ -l\ .opencode/skills/reason-invariants/SKILL.md 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== all invalid UTF-8 sequences in reason-invariants ===
+3:description: Use this skill when working in an invariant-bearing layer â€” identify the governing state facts, check them against the invariant/ files, reason about their violation signatures, and confirm the enforcement chain holds. Reference NEX.TOOL.SEQUENCE for the validation workflow
+10:Identify the always-true state predicates that govern the work. Verify the current state against them. Reason through violation signatures before acting. Consult the `invariant/` layer first â€” it precedes all work layers.
+24: - Locate the invariant layer â€” €” find `invariant/` in the project root. List every `{domain}-{constraint}.md` file. Treat the layer as the outermost fact set.
+26: - Read the governing invariants â€” €” read the matching invariant files for the task domain. Extract from each:
+27:   - The invariant â€” one declarative predicate sentence
+28:   - The formal â€” the good state, the forbidden state, and what the forbidden state means
+29:   - The violation signature â€” the observable symptom or check that detects the forbidden state
+30:   - The enforced-by chain â€” precept, pattern, and procedure links
+32: - Map the task to the facts â€” €” name the invariants the task preserves and the invariants at risk. Name the forbidden state the task could enter.
+34: - Check the current state â€” €” run each violation-signature check before acting. Use the check command from the invariant file (`curl` probe, process count, file existence, DB query). Record PASS or FAIL per invariant.
+36: - Trace the enforcement chain â€” €” follow the enforced-by links. Confirm each precept, pattern, and procedure exists and routes the work through it. The invariant cites its enforcers; read the linked files for the mechanism.
+38: - Guard the risk surface â€” €” state the enforcement step that keeps each at-risk invariant inside its allowed state. Apply the enforcing procedure's steps, the enforcing pattern's structure, and the enforcing precept's rule.
+40: - Re-check after the mutation â€” €” re-run the violation-signature checks after the task's write phase. Confirm the forbidden state stayed unreachable; record the outcome.
+42: - Record the instance â€” €” note the date, incident, and outcome in the invariant's `## Instance` section on success. Record the failure signature, the enforcement gap, and the corrective step on violation.
+66:- Consult the `invariant/` layer before scripts, bitacora, precepts, or study â€” it precedes all work layers
+=== line count of file ===
+69 .opencode/skills/reason-invariants/SKILL.md
+# OUT_LINES: 18
+# OUT_BYTES: 2604
+# ERR_LINES: 0
+# SHA: 143c8f9b75d6e486b15e0a8d27c3c0098f70e76916a6a3aee8c5c8432f1cfbe3

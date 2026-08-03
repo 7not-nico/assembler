@@ -1,0 +1,9 @@
+# CMD: bash -c mkdir\ -p\ /home/eddyr/assembler/_knowledge/rust-docs/learning\ \&\&\ ls\ -la\ /home/eddyr/assembler/_knowledge/rust-docs/learning 
+# DATE: 2026-08-03T05:08:50-06:00
+# DUR: 6ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+total 0
+drwxr-xr-x 1 eddyr eddyr   0 Aug  3 05:08 .
+drwxr-xr-x 1 eddyr eddyr 128 Aug  3 05:08 ..
+# exit: 0

@@ -1,0 +1,10 @@
+# CMD: bash -c cd\ /tmp/opencode\ \&\&\ sed\ \"s#src=\\\"img/#src=\\\"https://doc.rust-lang.org/book/img/#g\"\ book-print.html\ \>\ book-abs.html\ \&\&\ cd\ epub-test\ \&\&\ pandoc\ ../book-abs.html\ -f\ html\ -t\ epub3\ --metadata\ title=\"The\ Rust\ Programming\ Language\"\ --metadata\ lang=\"en\"\ -o\ book-abs.epub\ 2\>pandoc-warnings.txt\;\ echo\ \"exit:\ \$\?\"\;\ echo\ \"---warnings\ summary---\"\;\ rg\ -c\ \"Could\ not\ fetch\"\ pandoc-warnings.txt\ \|\|\ echo\ \"0\ fetch\ warnings\"\;\ ls\ -la\ book-abs.epub\;\ unzip\ -l\ book-abs.epub\ \|\ rg\ -c\ \"\\.svg\|\\.png\"\ \|\|\ echo\ \"0\ images\ embedded\" 
+# DATE: 2026-08-03T04:55:14-06:00
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+exit: 0
+---warnings summary---
+1
+-rw-r--r-- 1 eddyr eddyr 1518517 Aug  3 04:55 book-abs.epub
+28
+# exit: 0

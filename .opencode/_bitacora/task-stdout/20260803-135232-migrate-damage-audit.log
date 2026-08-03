@@ -1,0 +1,83 @@
+# CMD: bash -c cd\ /home/eddyr/assembler\ \&\&\ for\ f\ in\ .opencode/skills/knowledge-languages/SKILL.md\ .opencode/skills/reason-invariants/SKILL.md\ .opencode/skills/reason-quantitative/SKILL.md\ .opencode/skills/reason-verbal/SKILL.md\ .opencode/skills/refactor-skill/SKILL.md\ .opencode/skills/study-foundations/SKILL.md\;\ do\ b=\".opencode/skills/.backups/2026-08-03T123655/\$\{f#.opencode/skills/\}\"\;\ echo\ \"===\ \$f\ ===\"\;\ echo\ \"\ \ backup\ frontmatter:\"\;\ sed\ -n\ \"1\,8p\"\ \"\$b\"\ \|\ grep\ -E\ \"\^\[a-z-\]+:\"\ \|\ head\ -6\;\ echo\ \"\ \ live\ frontmatter:\"\;\ sed\ -n\ \"1\,8p\"\ \"\$f\"\ \|\ grep\ -E\ \"\^\[a-z-\]+:\"\ \|\ head\ -6\;\ done 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:52:32-06:00
+# PID: 369066
+# DUR: 78ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 23afb380
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cd\ /home/eddyr/assembler\ \&\&\ for\ f\ in\ .opencode/skills/knowledge-languages/SKILL.md\ .opencode/skills/reason-invariants/SKILL.md\ .opencode/skills/reason-quantitative/SKILL.md\ .opencode/skills/reason-verbal/SKILL.md\ .opencode/skills/refactor-skill/SKILL.md\ .opencode/skills/study-foundations/SKILL.md\;\ do\ b=\".opencode/skills/.backups/2026-08-03T123655/\$\{f#.opencode/skills/\}\"\;\ echo\ \"===\ \$f\ ===\"\;\ echo\ \"\ \ backup\ frontmatter:\"\;\ sed\ -n\ \"1\,8p\"\ \"\$b\"\ \|\ grep\ -E\ \"\^\[a-z-\]+:\"\ \|\ head\ -6\;\ echo\ \"\ \ live\ frontmatter:\"\;\ sed\ -n\ \"1\,8p\"\ \"\$f\"\ \|\ grep\ -E\ \"\^\[a-z-\]+:\"\ \|\ head\ -6\;\ done 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== .opencode/skills/knowledge-languages/SKILL.md ===
+  backup frontmatter:
+name: knowledge-languages
+description: Use this skill when answering programming-language questions — dispatch bash, ruby, go, rust, typescript to role and ring conventions per ref/{language}.md.
+state-profile: stateless
+nexus: NEX.TOOL.CHOICE
+  live frontmatter:
+name: knowledge-languages
+description: Use this skill when answering programming-language questions — dispatch bash, ruby, go, rust, typescript to role and ring conventions per ref/{language}.md
+state-profile: stateless
+=== .opencode/skills/reason-invariants/SKILL.md ===
+  backup frontmatter:
+name: reason-invariants
+description: Use this skill before and during any work in an invariant-bearing layer — identify the governing state facts, check them against the invariant/ files, reason about their violation signatures, and confirm the enforcement chain holds. Reference NEX.TOOL.SEQUENCE for the validation workflow
+state-profile: hybrid
+nexus: NEX.TOOL.SEQUENCE
+  live frontmatter:
+name: reason-invariants
+description: Use this skill when working in an invariant-bearing layer — identify the governing state facts, check them against the invariant/ files, reason about their violation signatures, and confirm the enforcement chain holds. Reference NEX.TOOL.SEQUENCE for the validation workflow
+state-profile: hybrid
+nexus: NEX.TOOL.SEQUENCE
+=== .opencode/skills/reason-quantitative/SKILL.md ===
+  backup frontmatter:
+name: reason-quantitative
+description: Use this skill when performing QR-based analysis — it encodes situations into quantitative structure, models relationships, reasons, and communicates results
+state-profile: hybrid
+nexus: NEX.META.CANVAS
+  live frontmatter:
+name: reason-quantitative
+description: Use this skill when performing QR-based analysis — it encodes situations into quantitative structure, models relationships, reasons, and communicates results
+state-profile: hybrid
+nexus: NEX.META.CANVAS
+=== .opencode/skills/reason-verbal/SKILL.md ===
+  backup frontmatter:
+name: reason-verbal
+description: Use this skill when performing verbal reasoning analysis — it surveys, extracts, structures, infers, evaluates, and communicates results systematically
+state-profile: hybrid
+nexus: NEX.META.CANVAS
+  live frontmatter:
+name: reason-verbal
+description: Use this skill when performing verbal reasoning analysis — it surveys, extracts, structures, infers, evaluates, and communicates results systematically
+state-profile: hybrid
+nexus: NEX.META.CANVAS
+=== .opencode/skills/refactor-skill/SKILL.md ===
+  backup frontmatter:
+name: refactor-skill
+description: Use this skill when refactoring skill files — it rewrites .opencode/skills/ files to follow the canonical skill format
+state-profile: hybrid
+nexus: NEX.TOOL.SEQUENCE
+  live frontmatter:
+name: refactor-skill
+description: Use this skill when refactoring skill files — it rewrites .opencode/skills/ files to follow the canonical skill format
+state-profile: hybrid
+nexus: NEX.TOOL.SEQUENCE
+=== .opencode/skills/study-foundations/SKILL.md ===
+  backup frontmatter:
+name: study-foundations
+description: Use this skill when studying uncharted topics — it composes xrequire-foundations, concept decomposition, and xresearch-geo into a learning pipeline
+state-profile: hybrid
+nexus: NEX.INVESTIGATION.STAGE
+  live frontmatter:
+name: study-foundations
+description: Use this skill when studying uncharted topics — it composes xrequire-foundations, concept decomposition, and xresearch-geo into a learning pipeline
+state-profile: hybrid
+nexus: NEX.INVESTIGATION.STAGE
+# OUT_LINES: 65
+# OUT_BYTES: 3601
+# ERR_LINES: 0
+# SHA: 2c9f15080d6c0de7e0c6afce9d5333850cf93c6602dfdc12293bd868d62f4312

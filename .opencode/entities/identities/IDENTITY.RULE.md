@@ -16,6 +16,4 @@ reference:
     url: https://opencode.ai/docs
   - title: SPEC.KNOWLEDGE.VECTOR.SEMANTICS — vector edge semantics
     url: https://opencode.ai/docs
-  - title: PROT.LLM.SPECIFICATION — LLM spec compliance
-    url: https://opencode.ai/docs
 ---

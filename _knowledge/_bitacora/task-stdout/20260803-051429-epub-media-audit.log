@@ -1,0 +1,39 @@
+# CMD: bash -c echo\ \"---media\ files\ in\ epub---\"\;\ unzip\ -l\ /tmp/opencode/rust-book.epub\ \|\ rg\ -i\ \"media\|\\.svg\|\\.png\"\ \;\ echo\ \"---count---\"\;\ unzip\ -l\ /tmp/opencode/rust-book.epub\ \|\ rg\ -ic\ \"media\"\;\ echo\ \"---last\ fetch\ images\ dir---\"\;\ ls\ /tmp/opencode/rust-book-clean/\ 2\>/dev/null\;\ find\ /tmp\ -maxdepth\ 1\ -name\ \"rustbook-imgs\*\"\ 2\>/dev/null 
+# DATE: 2026-08-03T05:14:29-06:00
+# DUR: 17ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+---media files in epub---
+     8491  08-03-2026 10:56   EPUB/media/file27.png
+     5218  08-03-2026 10:56   EPUB/media/file26.svg
+     3225  08-03-2026 10:56   EPUB/media/file25.svg
+     4233  08-03-2026 10:56   EPUB/media/file24.svg
+     3623  08-03-2026 10:56   EPUB/media/file23.svg
+     2687  08-03-2026 10:56   EPUB/media/file22.svg
+     1713  08-03-2026 10:56   EPUB/media/file21.svg
+     5143  08-03-2026 10:56   EPUB/media/file20.svg
+     4342  08-03-2026 10:56   EPUB/media/file19.svg
+     4901  08-03-2026 10:56   EPUB/media/file18.svg
+     3824  08-03-2026 10:56   EPUB/media/file17.svg
+     5447  08-03-2026 10:56   EPUB/media/file16.svg
+     1536  08-03-2026 10:56   EPUB/media/file15.svg
+     3145  08-03-2026 10:56   EPUB/media/file14.svg
+   275579  08-03-2026 10:56   EPUB/media/file13.png
+   206064  08-03-2026 10:56   EPUB/media/file12.png
+   259295  08-03-2026 10:56   EPUB/media/file11.png
+   275661  08-03-2026 10:56   EPUB/media/file10.png
+     9670  08-03-2026 10:56   EPUB/media/file9.svg
+     6598  08-03-2026 10:56   EPUB/media/file8.svg
+     6942  08-03-2026 10:56   EPUB/media/file7.svg
+     7504  08-03-2026 10:56   EPUB/media/file6.svg
+    10097  08-03-2026 10:56   EPUB/media/file5.svg
+     7411  08-03-2026 10:56   EPUB/media/file4.svg
+     5284  08-03-2026 10:56   EPUB/media/file3.svg
+     6311  08-03-2026 10:56   EPUB/media/file2.svg
+     6282  08-03-2026 10:56   EPUB/media/file1.svg
+     6766  08-03-2026 10:56   EPUB/media/file0.svg
+---count---
+28
+---last fetch images dir---
+rust-book.epub
+# exit: 0

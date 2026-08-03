@@ -1,0 +1,133 @@
+# CMD: bash .opencode/_bitacora/bitacora-create.sh todo study\ rust\ book\ into\ rust-docs 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T19:52:26-06:00
+# PID: 394911
+# DUR: 392ms
+# exit: 0
+# GIT: assembler@55903fc
+# BRANCH: main
+# SESSION: 688d65c3
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_bitacora/bitacora-create.sh todo study\ rust\ book\ into\ rust-docs 
+# CWD: /home/eddyr/assembler
+# --------------------
+CREATE /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--study-rust-book-into-rust-docs.md
+# OUT_LINES: 1
+# OUT_BYTES: 105
+# ERR_LINES: 0
+# EXEC: 394911|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh rust-docs-instantiate -- bash .opencode/_bitacora/bitacora-create.sh todo study rust book into rust-docs
+# EXEC: 394912|/usr/bin/date|date +%s%N
+# EXEC: 394915|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 394918|/usr/bin/git|git remote get-url origin
+# EXEC: 394916|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 394919|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 394921|/usr/bin/git|git branch --show-current
+# EXEC: 394923|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 394924|/usr/bin/head|head -1
+# EXEC: 394925|/usr/bin/tr|tr -d \n
+# EXEC: 394926|/usr/bin/bun|bun --version
+# EXEC: 394928|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 394929|/usr/bin/head|head -1
+# EXEC: 394930|/usr/bin/tr|tr -d \n
+# EXEC: 394931|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 394933|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 394934|/usr/bin/head|head -1
+# EXEC: 394935|/usr/bin/tr|tr -d \n
+# EXEC: 394936|/usr/bin/python3|python3 --version
+# EXEC: 394938|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 394939|/usr/bin/head|head -1
+# EXEC: 394940|/usr/bin/tr|tr -d \n
+# EXEC: 394941|/usr/bin/ruby|ruby --version
+# EXEC: 394944|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 394945|/usr/bin/head|head -1
+# EXEC: 394946|/usr/bin/tr|tr -d \n
+# EXEC: 394947|/usr/bin/rustc|rustc --version
+# EXEC: 394950|/usr/bin/timeout|timeout 2 go version
+# EXEC: 394951|/usr/bin/head|head -1
+# EXEC: 394952|/usr/bin/tr|tr -d \n
+# EXEC: 394953|/usr/bin/go|go version
+# EXEC: 394960|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 394961|/usr/bin/head|head -1
+# EXEC: 394962|/usr/bin/tr|tr -d \n
+# EXEC: 394963|/usr/bin/git|git --version
+# EXEC: 394965|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 394966|/usr/bin/head|head -1
+# EXEC: 394967|/usr/bin/tr|tr -d \n
+# EXEC: 394968|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 394971|/usr/bin/head|head -1
+# EXEC: 394970|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 394972|/usr/bin/tr|tr -d \n
+# EXEC: 394973|/usr/bin/date|date --version
+# EXEC: 394975|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 394976|/usr/bin/head|head -1
+# EXEC: 394977|/usr/bin/tr|tr -d \n
+# EXEC: 394978|/usr/bin/wc|wc --version
+# EXEC: 394980|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 394981|/usr/bin/head|head -1
+# EXEC: 394982|/usr/bin/tr|tr -d \n
+# EXEC: 394983|/usr/bin/cat|cat --version
+# EXEC: 394985|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 394986|/usr/bin/head|head -1
+# EXEC: 394987|/usr/bin/tr|tr -d \n
+# EXEC: 394988|/usr/bin/tee|tee --version
+# EXEC: 394990|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 394991|/usr/bin/head|head -1
+# EXEC: 394992|/usr/bin/tr|tr -d \n
+# EXEC: 394993|/usr/bin/mktemp|mktemp --version
+# EXEC: 394995|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 394996|/usr/bin/head|head -1
+# EXEC: 394997|/usr/bin/tr|tr -d \n
+# EXEC: 394998|/usr/bin/rm|rm --version
+# EXEC: 395000|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 395001|/usr/bin/head|head -1
+# EXEC: 395002|/usr/bin/tr|tr -d \n
+# EXEC: 395003|/usr/bin/timeout|timeout --version
+# EXEC: 395005|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 395006|/usr/bin/head|head -1
+# EXEC: 395007|/usr/bin/tr|tr -d \n
+# EXEC: 395008|/usr/bin/tr|tr --version
+# EXEC: 395010|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 395011|/usr/bin/head|head -1
+# EXEC: 395012|/usr/bin/tr|tr -d \n
+# EXEC: 395013|/usr/bin/head|head --version
+# EXEC: 395015|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 395016|/usr/bin/head|head -1
+# EXEC: 395017|/usr/bin/tr|tr -d \n
+# EXEC: 395018|/usr/bin/cut|cut --version
+# EXEC: 395022|/usr/bin/cut|cut -c1-8
+# EXEC: 395020|/usr/bin/date|date +%s%N
+# EXEC: 395021|/usr/bin/sha256sum|sha256sum
+# EXEC: 395024|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-195226-rust-docs-instantiate.log
+# EXEC: 395025|/usr/bin/date|date -Is
+# EXEC: 395026|/usr/bin/mktemp|mktemp
+# EXEC: 395027|/usr/bin/mktemp|mktemp
+# EXEC: 395029|/usr/bin/bash|bash .opencode/_bitacora/bitacora-create.sh todo study rust book into rust-docs
+# EXEC: 395031|/usr/bin/dirname|dirname .opencode/_bitacora/bitacora-create.sh
+# EXEC: 395032|/usr/bin/bash|bash /home/eddyr/assembler/.opencode/_bitacora/bitacora-slugify.sh study rust book into rust-docs
+# EXEC: 395034|/usr/bin/tr|tr [:upper:] [:lower:]
+# EXEC: 395035|/usr/bin/tr|tr -c [:alnum:] -
+# EXEC: 395036|/usr/bin/sed|sed -E s/-+/-/g; s/^-+//; s/-+$//
+# EXEC: 395037|/usr/bin/date|date +%Y%m%d-%H%M%S
+# EXEC: 395038|/usr/bin/date|date +%Y-%m-%d
+# EXEC: 395039|/usr/bin/cat|cat
+# EXEC: 395041|/usr/bin/wc|wc -l
+# EXEC: 395042|/usr/bin/tr|tr -d  
+# EXEC: 395044|/usr/bin/wc|wc -c
+# EXEC: 395045|/usr/bin/tr|tr -d  
+# EXEC: 395047|/usr/bin/wc|wc -l
+# EXEC: 395048|/usr/bin/tr|tr -d  
+# EXEC: 395049|/usr/bin/date|date +%s%N
+# EXEC: 395051|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-195226-rust-docs-instantiate.log
+# EXEC: 395053|/usr/bin/cat|cat /tmp/tmp.xTUkpfXtqI
+# EXEC: 395054|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-195226-rust-docs-instantiate.log
+# EXEC: 395055|/usr/bin/cat|cat /tmp/tmp.8itNxzqE3P
+# EXEC: 395056|/usr/bin/cat|cat /tmp/tmp.8itNxzqE3P
+# EXEC: 395057|/usr/bin/rm|rm -f /tmp/tmp.xTUkpfXtqI /tmp/tmp.8itNxzqE3P
+# EXEC: 395059|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-195226-rust-docs-instantiate.log
+# EXEC: 395061|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-195226-rust-docs-instantiate.log
+# EXEC: 395063|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-195226-rust-docs-instantiate.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sed=/usr/bin/sed (GNU sed) 4.10 sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 111
+# SHA: ce77e2cea59ee2ddd3a8bf83d329074b9b6ad05f647811c1d724e666214d64b0
+# exit: 0

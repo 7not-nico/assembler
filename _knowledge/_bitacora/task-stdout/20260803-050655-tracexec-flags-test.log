@@ -1,0 +1,8 @@
+# CMD: bash -c tracexec\ log\ --successful-only\ --no-show-fd\ --no-show-env\ --no-show-cwd\ --\ sh\ -c\ \"echo\ hi\ \>\ /dev/null\;\ echo\ done\" 
+# DATE: 2026-08-03T05:06:55-06:00
+# DUR: 12ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+21024<tracer>: "/usr/bin/sh" ["sh", "-c", "echo hi > /dev/null; echo done"] fd []
+done
+# exit: 0

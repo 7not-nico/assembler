@@ -1,0 +1,48 @@
+# CMD: ruby /tmp/opencode/convert-agents-format.rb /home/eddyr/assembler 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T12:52:37-06:00
+# PID: 307218
+# DUR: 1783ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: fc11ed34
+# CLI: ruby ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux]
+# ARGS: /tmp/opencode/convert-agents-format.rb /home/eddyr/assembler 
+# CWD: /home/eddyr/assembler
+# --------------------
+48 changes: /home/eddyr/assembler/.opencode/_scripts/AGENTS.md
+15 changes: /home/eddyr/assembler/.opencode/_shell/AGENTS.md
+4 changes: /home/eddyr/assembler/_atelier/common/bitacora/AGENTS.md
+0 changes: /home/eddyr/assembler/_atelier/common/homophones/AGENTS.md
+0 changes: /home/eddyr/assembler/_atelier/common/palestra/AGENTS.md
+0 changes: /home/eddyr/assembler/_atelier/common/trump-voices/AGENTS.md
+0 changes: /home/eddyr/assembler/_atelier/darkestdungeon-code/AGENTS.md
+0 changes: /home/eddyr/assembler/_atelier/one-timers/CR-news-outlets/AGENTS.md
+0 changes: /home/eddyr/assembler/_atelier/one-timers/comparisons-specs/gear-specs/AGENTS.md
+0 changes: /home/eddyr/assembler/_atelier/one-timers/ludoteca/AGENTS.md
+0 changes: /home/eddyr/assembler/_atelier/one-timers/mcp-search-docs/AGENTS.md
+0 changes: /home/eddyr/assembler/_atelier/one-timers/medcodes/AGENTS.md
+0 changes: /home/eddyr/assembler/_atelier/one-timers/tablet-comparison/AGENTS.md
+0 changes: /home/eddyr/assembler/_atelier/pythontts-cli/AGENTS.md
+1 changes: /home/eddyr/assembler/_atelier/study-sessions/category-theory/AGENTS.md
+0 changes: /home/eddyr/assembler/_atelier/study-sessions/constructive-drawing/AGENTS.md
+0 changes: /home/eddyr/assembler/_atelier/study-sessions/linguistic/AGENTS.md
+1 changes: /home/eddyr/assembler/_atelier/study-sessions/reasoning/AGENTS.md
+1 changes: /home/eddyr/assembler/_atelier/study-sessions/thoughtlog/AGENTS.md
+0 changes: /home/eddyr/assembler/_codex/_impressions/semantic-weight/AGENTS.md
+0 changes: /home/eddyr/assembler/_codex/mgba-repo/AGENTS.md
+9 changes: /home/eddyr/assembler/_codex/rimworld-code/.opencode/AGENTS.md
+1 changes: /home/eddyr/assembler/_codex/snes9x-repo/AGENTS.md
+0 changes: /home/eddyr/assembler/_codex/sqlite-repo/sqlite/AGENTS.md
+17 changes: /home/eddyr/assembler/_codex/teenycode-repo/.opencode/AGENTS.md
+0 changes: /home/eddyr/assembler/_depot/AGENTS.md
+0 changes: /home/eddyr/assembler/_depot/scripts/AGENTS.md
+0 changes: /home/eddyr/assembler/_knowledge/rust-docs/AGENTS.md
+18 changes: /home/eddyr/assembler/_trove/.opencode/AGENTS.md
+0 changes: /home/eddyr/assembler/_trove/AGENTS.md
+# OUT_LINES: 30
+# OUT_BYTES: 2122
+# ERR_LINES: 0
+# SHA: cda3ba31198560997fd50cff09472dcbde1e3314ad7220692afcf33e1f74c639

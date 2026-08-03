@@ -1,0 +1,34 @@
+# CMD: bash -c tracexec\ log\ --help\ \>\ /tmp/opencode/tracexec-log-help.txt\ 2\>\&1\ \&\&\ ruby\ /tmp/opencode/fidelity-check.rb 
+# DATE: 2026-08-03T05:35:33-06:00
+# DUR: 68ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+39901<tracer>: "/usr/bin/bash" ["bash", "-c", "tracexec log --help > /tmp/opencode/tracexec-log-help.txt 2>&1 && ruby /tmp/opencode/fidelity-check.rb"] fd []
+39902<bash>: "/usr/bin/tracexec" ["tracexec", "log", "--help"] fd [stdout="/tmp/opencode/tracexec-log-help.txt", stderr="/tmp/opencode/tracexec-log-help.txt", ]
+39901<bash>: "/usr/bin/ruby" ["ruby", "/tmp/opencode/fidelity-check.rb"] fd []
+FIDELITY: MISMATCH — cited lines missing from live output
+-      --show-cmdline        Print commandline that (hopefully) reproduces what was executed.
+-                            Note: file descriptors are not handled for now.
+-      --show-interpreter    Try to show script interpreter indicated by shebang
+-      --foreground          Set the terminal foreground process group to tracee. [default]
+-      --diff-fd             Diff file descriptors with the original std{in/out/err}
+-      --show-fd             Show file descriptors
+-      --diff-env            Diff environment variables with the original environment
+-      --show-env            Show environment variables
+-      --show-comm           Show comm
+-      --show-argv           Show argv
+-      --show-filename       Show filename
+-      --show-cwd            Show cwd
+-      --decode-errno        Decode errno values
+-      --successful-only     Only show successful calls
+-      --resolve-proc-self-exe  Resolve /proc/self/exe symlink
+-      --hide-cloexec-fds    Hide CLOEXEC fds
+-      --timestamp           Show timestamp information
+-      --seccomp-bpf <SECCOMP_BPF>  [default: auto] [possible values: auto, on, off]
+-      --polling-interval <POLLING_INTERVAL>  Polling interval, in microseconds. -1(default) disables polling.
+-      --show-all-events     Set the default filter to show all events.
+-      --filter <FILTER>     Set the default filter for events. [default: warning,error,exec,tracee-exit]
+-      --filter-include <FILTER_INCLUDE>  Also include the events specified here. [default: <empty>]
+-      --filter-exclude <FILTER_EXCLUDE>  Exclude the events specified here. [default: <empty>]
+-  -o, --output <OUTPUT>     Output, stderr by default. A single hyphen '-' represents stdout.
+# exit: 0

@@ -1,0 +1,52 @@
+# CMD: bash -c cat\ /home/eddyr/assembler/.opencode/_schemas/27-bash.sql\;\ echo\ \"---ruby---\"\;\ cat\ /home/eddyr/assembler/.opencode/_schemas/28-ruby.sql\;\ echo\ \"---next\ number\ check---\"\;\ ls\ /home/eddyr/assembler/.opencode/_schemas/\ \|\ sort\ \|\ tail\ -8 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:27:53-06:00
+# PID: 343388
+# DUR: 95ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: fdf7c337
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cat\ /home/eddyr/assembler/.opencode/_schemas/27-bash.sql\;\ echo\ \"---ruby---\"\;\ cat\ /home/eddyr/assembler/.opencode/_schemas/28-ruby.sql\;\ echo\ \"---next\ number\ check---\"\;\ ls\ /home/eddyr/assembler/.opencode/_schemas/\ \|\ sort\ \|\ tail\ -8 
+# CWD: /home/eddyr/assembler
+# --------------------
+CREATE TABLE IF NOT EXISTS bash (
+  id TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  body TEXT NOT NULL,
+  source TEXT,
+  related TEXT,
+  tags TEXT,
+  reference TEXT,
+  created TEXT NOT NULL,
+  modified TEXT NOT NULL
+);
+ALTER TABLE bash ADD COLUMN precedes TEXT;
+---ruby---
+CREATE TABLE IF NOT EXISTS ruby (
+  id TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  body TEXT NOT NULL,
+  source TEXT,
+  related TEXT,
+  tags TEXT,
+  reference TEXT,
+  created TEXT NOT NULL,
+  modified TEXT NOT NULL
+);
+ALTER TABLE ruby ADD COLUMN precedes TEXT;
+---next number check---
+cor1-patterns.sql
+enr2-definitions.sql
+enr2-taxonomy.sql
+enr3-terms.sql
+llm-spec.sql
+mcp.sql
+r0-vector.sql
+seeds
+# OUT_LINES: 34
+# OUT_BYTES: 668
+# ERR_LINES: 0
+# SHA: 00d95d9a9911cf732b8da116c480c5dbe699c7c721b2ac89785af3ea22c08f6e

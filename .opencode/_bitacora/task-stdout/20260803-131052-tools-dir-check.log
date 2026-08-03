@@ -1,0 +1,54 @@
+# CMD: bash -c cat\ /home/eddyr/assembler/.opencode/tools/embed-entity.ts\ \|\ head\ -15\;\ echo\ \"===\"\;\ cat\ /home/eddyr/assembler/.opencode/_scripts/migrate-skill-metadata.sh\ \|\ head\ -20 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:10:52-06:00
+# PID: 324305
+# DUR: 91ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 93458b06
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cat\ /home/eddyr/assembler/.opencode/tools/embed-entity.ts\ \|\ head\ -15\;\ echo\ \"===\"\;\ cat\ /home/eddyr/assembler/.opencode/_scripts/migrate-skill-metadata.sh\ \|\ head\ -20 
+# CWD: /home/eddyr/assembler
+# --------------------
+// @toolclass TRNS
+// exports: default
+// purity: io
+// depends-on: _lib/paths, _lib/embed, _lib/errors, bun:sqlite
+
+import { tool } from "@opencode-ai/plugin"
+import { crash } from "../_lib/errors"
+import { batch, Model } from "../_lib/embed"
+import { Database } from "bun:sqlite"
+import { Root } from "../_lib/paths"
+import { join } from "path"
+
+const Internal = new Set([
+  "embeddings", "fts_entities", "entities_fts",
+  "meta", "notes", "sqlite_sequence",
+===
+#!/usr/bin/env bash
+# migrate-skill-metadata.sh — rewrite skills frontmatter to canonical set
+# Action (write): replaces related/patterns/terms with nexus in .opencode/skills/*/SKILL.md
+# Canonical frontmatter: name, description, state-profile, nexus (optional)
+# Drops: type, related, patterns, terms (stale metadata)
+set -uo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+SKILLS="$ROOT/.opencode/skills"
+
+# nexus mapping — reviewed, corrected from survey s02 proposals
+declare -A NEXUS=(
+  [bootstrap-db]="NEX.META.PROPOSAL"
+  [classify-tool]="NEX.TOOL.SEQUENCE"
+  [compose-web]="NEX.INVESTIGATION.STAGE"
+  [declare-grounded-entity]="NEX.META.PROPOSAL"
+  [guide-architecture]="NEX.TOOL.CHOICE"
+  [guide-reasoning]="NEX.META.CANVAS"
+  [judge-semantic]="NEX.META.PROPOSAL"
+  [knowledge-languages]=""
+# OUT_LINES: 36
+# OUT_BYTES: 1291
+# ERR_LINES: 0
+# SHA: bcc70862e0dda6959d869fd656b778ce05c465018cd2e893d52e3046f42ce098

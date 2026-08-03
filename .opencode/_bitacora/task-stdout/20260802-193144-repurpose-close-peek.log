@@ -1,0 +1,155 @@
+# CMD: bash -c head\ -30\ .opencode/_bitacora/bitacora-close.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T19:31:44-06:00
+# PID: 375651
+# DUR: 375ms
+# exit: 0
+# GIT: assembler@55903fc
+# BRANCH: main
+# SESSION: 7d0d4cf0
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c head\ -30\ .opencode/_bitacora/bitacora-close.sh 
+# CWD: /home/eddyr/assembler
+# --------------------
+#!/usr/bin/env bash
+# bitacora-close.sh — complete a todo and scaffold its task report
+# Usage: bash bitacora-close.sh {todo-file} {report-topic}
+#   todo-file: path or basename inside task-todo/
+# Completes all pending items, stamps the Status line, then creates
+# the report via bitacora-create.sh. Prints TODO and REPORT paths.
+set -euo pipefail
+
+TODO="${1:?todo file required (path or name in task-todo/)}"
+TOPIC="${2:?report topic required}"
+BITACORA="$(cd "$(dirname "$0")" && pwd)"
+TODO_DIR="$BITACORA/task-todo"
+DATE="$(date +%Y-%m-%d)"
+
+if [ -f "$TODO" ]; then
+  FILE="$TODO"
+else
+  FILE="$TODO_DIR/$TODO"
+fi
+[ -f "$FILE" ] || { echo "ERROR todo not found: $TODO" >&2; exit 1; }
+
+sed -i 's/^- \[ \]/- [x]/' "$FILE"
+if rg -q "^Status:" "$FILE"; then
+  sed -i "s/^Status:.*/Status: completed ($DATE)/" "$FILE"
+else
+  printf "\nStatus: completed (%s)\n" "$DATE" >> "$FILE"
+fi
+
+REPORT="$(bash "$BITACORA/bitacora-create.sh" report "$TOPIC" | sed 's/^CREATE //')"
+echo "TODO   $FILE"
+# OUT_LINES: 30
+# OUT_BYTES: 990
+# ERR_LINES: 0
+# EXEC: 375651|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh repurpose-close-peek -- bash -c head -30 .opencode/_bitacora/bitacora-close.sh
+# EXEC: 375652|/usr/bin/date|date +%s%N
+# EXEC: 375655|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 375658|/usr/bin/git|git remote get-url origin
+# EXEC: 375656|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 375659|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 375661|/usr/bin/git|git branch --show-current
+# EXEC: 375663|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 375664|/usr/bin/head|head -1
+# EXEC: 375665|/usr/bin/tr|tr -d \n
+# EXEC: 375666|/usr/bin/bun|bun --version
+# EXEC: 375668|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 375669|/usr/bin/head|head -1
+# EXEC: 375670|/usr/bin/tr|tr -d \n
+# EXEC: 375671|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 375673|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 375674|/usr/bin/head|head -1
+# EXEC: 375675|/usr/bin/tr|tr -d \n
+# EXEC: 375676|/usr/bin/python3|python3 --version
+# EXEC: 375678|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 375679|/usr/bin/head|head -1
+# EXEC: 375680|/usr/bin/tr|tr -d \n
+# EXEC: 375681|/usr/bin/ruby|ruby --version
+# EXEC: 375684|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 375685|/usr/bin/head|head -1
+# EXEC: 375686|/usr/bin/tr|tr -d \n
+# EXEC: 375687|/usr/bin/rustc|rustc --version
+# EXEC: 375690|/usr/bin/timeout|timeout 2 go version
+# EXEC: 375691|/usr/bin/head|head -1
+# EXEC: 375692|/usr/bin/tr|tr -d \n
+# EXEC: 375693|/usr/bin/go|go version
+# EXEC: 375699|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 375700|/usr/bin/head|head -1
+# EXEC: 375701|/usr/bin/tr|tr -d \n
+# EXEC: 375702|/usr/bin/git|git --version
+# EXEC: 375704|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 375705|/usr/bin/head|head -1
+# EXEC: 375706|/usr/bin/tr|tr -d \n
+# EXEC: 375707|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 375709|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 375710|/usr/bin/head|head -1
+# EXEC: 375711|/usr/bin/tr|tr -d \n
+# EXEC: 375712|/usr/bin/date|date --version
+# EXEC: 375714|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 375715|/usr/bin/head|head -1
+# EXEC: 375716|/usr/bin/tr|tr -d \n
+# EXEC: 375717|/usr/bin/wc|wc --version
+# EXEC: 375719|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 375720|/usr/bin/head|head -1
+# EXEC: 375721|/usr/bin/tr|tr -d \n
+# EXEC: 375722|/usr/bin/cat|cat --version
+# EXEC: 375724|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 375725|/usr/bin/head|head -1
+# EXEC: 375726|/usr/bin/tr|tr -d \n
+# EXEC: 375727|/usr/bin/tee|tee --version
+# EXEC: 375729|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 375730|/usr/bin/head|head -1
+# EXEC: 375731|/usr/bin/tr|tr -d \n
+# EXEC: 375732|/usr/bin/mktemp|mktemp --version
+# EXEC: 375734|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 375735|/usr/bin/head|head -1
+# EXEC: 375736|/usr/bin/tr|tr -d \n
+# EXEC: 375737|/usr/bin/rm|rm --version
+# EXEC: 375739|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 375740|/usr/bin/head|head -1
+# EXEC: 375741|/usr/bin/tr|tr -d \n
+# EXEC: 375742|/usr/bin/timeout|timeout --version
+# EXEC: 375744|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 375745|/usr/bin/head|head -1
+# EXEC: 375746|/usr/bin/tr|tr -d \n
+# EXEC: 375747|/usr/bin/tr|tr --version
+# EXEC: 375749|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 375750|/usr/bin/head|head -1
+# EXEC: 375751|/usr/bin/tr|tr -d \n
+# EXEC: 375752|/usr/bin/head|head --version
+# EXEC: 375754|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 375755|/usr/bin/head|head -1
+# EXEC: 375756|/usr/bin/tr|tr -d \n
+# EXEC: 375757|/usr/bin/cut|cut --version
+# EXEC: 375759|/usr/bin/date|date +%s%N
+# EXEC: 375760|/usr/bin/sha256sum|sha256sum
+# EXEC: 375761|/usr/bin/cut|cut -c1-8
+# EXEC: 375763|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-193144-repurpose-close-peek.log
+# EXEC: 375764|/usr/bin/date|date -Is
+# EXEC: 375765|/usr/bin/mktemp|mktemp
+# EXEC: 375766|/usr/bin/mktemp|mktemp
+# EXEC: 375767|/usr/bin/bash|bash -c head -30 .opencode/_bitacora/bitacora-close.sh
+# EXEC: 375767|/usr/bin/head|head -30 .opencode/_bitacora/bitacora-close.sh
+# EXEC: 375769|/usr/bin/wc|wc -l
+# EXEC: 375770|/usr/bin/tr|tr -d  
+# EXEC: 375772|/usr/bin/wc|wc -c
+# EXEC: 375773|/usr/bin/tr|tr -d  
+# EXEC: 375775|/usr/bin/wc|wc -l
+# EXEC: 375776|/usr/bin/tr|tr -d  
+# EXEC: 375777|/usr/bin/date|date +%s%N
+# EXEC: 375779|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-193144-repurpose-close-peek.log
+# EXEC: 375781|/usr/bin/cat|cat /tmp/tmp.UcrkjpRZiy
+# EXEC: 375782|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-193144-repurpose-close-peek.log
+# EXEC: 375783|/usr/bin/cat|cat /tmp/tmp.487kV8R212
+# EXEC: 375784|/usr/bin/cat|cat /tmp/tmp.487kV8R212
+# EXEC: 375785|/usr/bin/rm|rm -f /tmp/tmp.UcrkjpRZiy /tmp/tmp.487kV8R212
+# EXEC: 375787|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-193144-repurpose-close-peek.log
+# EXEC: 375789|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-193144-repurpose-close-peek.log
+# EXEC: 375791|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-193144-repurpose-close-peek.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 104
+# SHA: d755b02f202cba101ad9ce219197ea24d7d39e72f8a8d17865d869910b50a98d
+# exit: 0

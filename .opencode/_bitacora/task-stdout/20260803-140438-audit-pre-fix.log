@@ -1,0 +1,28 @@
+# CMD: bash /home/eddyr/assembler/.opencode/_scripts/audit-format-compliance.sh --root /home/eddyr/assembler --kind all 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T14:04:38-06:00
+# PID: 380557
+# DUR: 1168ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: a0e4d74e
+# CLI: bash 5.3.15(1)-release
+# ARGS: /home/eddyr/assembler/.opencode/_scripts/audit-format-compliance.sh --root /home/eddyr/assembler --kind all 
+# CWD: /home/eddyr/assembler
+# --------------------
+== skills ==
+  FAIL: /home/eddyr/assembler/.opencode/skills/reason-invariants/SKILL.md h2=6 bullets=21 bold=0 num=0 tbl=0 inline=0 lead=8
+  FAIL: /home/eddyr/assembler/.opencode/skills/reason-quantitative/SKILL.md h2=2 bullets=8 bold=0 num=0 tbl=0 inline=0 lead=5
+  FAIL: /home/eddyr/assembler/.opencode/skills/reason-verbal/SKILL.md h2=2 bullets=8 bold=0 num=0 tbl=0 inline=0 lead=6
+  FAIL: /home/eddyr/assembler/.opencode/skills/workflow-dispatcher/skill/manage-bash-flows/SKILL.md h2=7 bullets=24 bold=0 num=0 tbl=0 inline=0 lead=9
+  FAIL: /home/eddyr/assembler/.opencode/skills/workflow-dispatcher/skill/structure-stdout/SKILL.md h2=6 bullets=16 bold=0 num=0 tbl=0 inline=0 lead=16
+  FAIL: /home/eddyr/assembler/.opencode/skills/workflow-dispatcher/skill/survey-scripts/SKILL.md h2=2 bullets=12 bold=0 num=0 tbl=0 inline=0 lead=12
+== agents ==
+  FAIL: /home/eddyr/assembler/_codex/Hyprland-repo/hyprland/AGENTS.md h2=3 bullets=22 bold=0 num=0 tbl=0 inline=0 lead=18
+PASS=68 FAIL=7
+# OUT_LINES: 10
+# OUT_BYTES: 985
+# ERR_LINES: 0
+# SHA: b7897b053c16bbc203ba65d1d88ae9c981b91f767c9b08473ae7e090b8ae2022

@@ -1,0 +1,28 @@
+# CMD: bash -c BACKUP=/tmp/opencode/agents-backup-2026-08-03T124940\;\ echo\ \"===\ backup\ palestra\ around\ table\ ===\"\;\ grep\ -n\ \"\^\|\"\ \"\$BACKUP/_atelier/common/palestra/AGENTS.md\"\ \|\ head\ -3\;\ echo\ \"===\ live\ palestra\ lines\ 20-24\ ===\"\;\ sed\ -n\ \"20\,24p\"\ /home/eddyr/assembler/_atelier/common/palestra/AGENTS.md 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T12:55:43-06:00
+# PID: 311293
+# DUR: 81ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: f526075b
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c BACKUP=/tmp/opencode/agents-backup-2026-08-03T124940\;\ echo\ \"===\ backup\ palestra\ around\ table\ ===\"\;\ grep\ -n\ \"\^\|\"\ \"\$BACKUP/_atelier/common/palestra/AGENTS.md\"\ \|\ head\ -3\;\ echo\ \"===\ live\ palestra\ lines\ 20-24\ ===\"\;\ sed\ -n\ \"20\,24p\"\ /home/eddyr/assembler/_atelier/common/palestra/AGENTS.md 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== backup palestra around table ===
+20:| Tool name | Description | Key args |
+21:|-----------|-------------|----------|
+22:| sync | Sync sources/*.md to the database | (no args) |
+=== live palestra lines 20-24 ===
+```text
+```text
+| Tool name | Description | Key args ||-----------|-------------|----------|| sync | Sync sources/*.md to the database | (no args) || plan | View the study plan | (no args) || note | Add or replace a note for a source | --id (required), --body (required) || bitacora | Log an architectural decision or list recent entries | --text (optional), --affected (optional) || status | Set the study status for a source | --id (required), --status (pending, reading, done) || priority | Set the study priority for a source | --id (required), --priority (number) || check | Check DB integrity: orphans, duplicates, missing frontmatter | (no args) || validate | Full validation: frontmatter, IDs, FKs, DB integrity | (no args) |``````
+
+All tools are orthogonal — each imports only `.opencode/lib/db.ts`, never another tool.
+# OUT_LINES: 10
+# OUT_BYTES: 1046
+# ERR_LINES: 0
+# SHA: 4cd8db81188b837276f4bec250f840dd7e4e1f7feeeca091aa5609c3e89a27c5

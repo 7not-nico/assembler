@@ -1,0 +1,49 @@
+# CMD: bash /tmp/opencode/audit-agents-clean.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T12:54:31-06:00
+# PID: 309624
+# DUR: 686ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 379e5e2e
+# CLI: bash 5.3.15(1)-release
+# ARGS: /tmp/opencode/audit-agents-clean.sh 
+# CWD: /home/eddyr/assembler
+# --------------------
+STILL: ./_atelier/a01-harness-llm/AGENTS.md h2=5 b=0 bold=0 num=0 tbl=0 inline=0
+STILL: ./_atelier/common/homophones/AGENTS.md h2=7 b=0 bold=0 num=0 tbl=2 inline=0
+STILL: ./_atelier/common/palestra/AGENTS.md h2=7 b=17 bold=0 num=0 tbl=2 inline=0
+STILL: ./_atelier/common/trump-voices/AGENTS.md h2=7 b=17 bold=0 num=0 tbl=1 inline=0
+STILL: ./_atelier/darkestdungeon-code/AGENTS.md h2=5 b=6 bold=0 num=0 tbl=2 inline=0
+STILL: ./_atelier/one-timers/comparisons-specs/gear-specs/AGENTS.md h2=9 b=19 bold=0 num=0 tbl=2 inline=0
+STILL: ./_atelier/one-timers/CR-news-outlets/AGENTS.md h2=10 b=15 bold=1 num=0 tbl=2 inline=0
+STILL: ./_atelier/one-timers/ludoteca/AGENTS.md h2=11 b=11 bold=0 num=0 tbl=6 inline=0
+STILL: ./_atelier/one-timers/mcp-search-docs/AGENTS.md h2=10 b=12 bold=0 num=0 tbl=1 inline=0
+STILL: ./_atelier/one-timers/medcodes/AGENTS.md h2=11 b=16 bold=0 num=0 tbl=1 inline=0
+STILL: ./_atelier/one-timers/tablet-comparison/AGENTS.md h2=9 b=11 bold=0 num=0 tbl=1 inline=0
+STILL: ./_atelier/pythontts-cli/AGENTS.md h2=6 b=9 bold=0 num=0 tbl=1 inline=0
+STILL: ./_atelier/study-sessions/category-theory/AGENTS.md h2=6 b=10 bold=0 num=0 tbl=1 inline=0
+STILL: ./_atelier/study-sessions/constructive-drawing/AGENTS.md h2=11 b=34 bold=0 num=0 tbl=8 inline=0
+STILL: ./_atelier/study-sessions/linguistic/AGENTS.md h2=7 b=14 bold=0 num=0 tbl=1 inline=0
+STILL: ./_atelier/study-sessions/reasoning/AGENTS.md h2=6 b=11 bold=0 num=0 tbl=2 inline=0
+STILL: ./_codex/_impressions/semantic-weight/AGENTS.md h2=6 b=7 bold=0 num=0 tbl=1 inline=0
+STILL: ./_codex/mgba-repo/AGENTS.md h2=9 b=30 bold=0 num=0 tbl=1 inline=0
+STILL: ./_codex/neovim-repo/neovim/AGENTS.md h2=1 b=0 bold=0 num=0 tbl=0 inline=0
+STILL: ./_codex/rimworld-code/.opencode/AGENTS.md h2=3 b=2 bold=0 num=0 tbl=1 inline=0
+STILL: ./_codex/snes9x-repo/AGENTS.md h2=10 b=35 bold=0 num=0 tbl=2 inline=0
+STILL: ./_codex/sqlite-repo/sqlite/AGENTS.md h2=8 b=20 bold=0 num=0 tbl=1 inline=0
+STILL: ./_depot/AGENTS.md h2=6 b=9 bold=0 num=0 tbl=5 inline=6
+STILL: ./_depot/scripts/AGENTS.md h2=5 b=0 bold=0 num=0 tbl=2 inline=0
+STILL: ./_knowledge/AGENTS.md h2=0 b=0 bold=0 num=0 tbl=0 inline=0
+STILL: ./_knowledge/rust-docs/AGENTS.md h2=10 b=0 bold=0 num=0 tbl=2 inline=0
+STILL: ./.opencode/_scripts/AGENTS.md h2=5 b=5 bold=0 num=0 tbl=2 inline=0
+STILL: ./.opencode/_shell/AGENTS.md h2=3 b=0 bold=0 num=0 tbl=0 inline=0
+STILL: ./_trove/AGENTS.md h2=7 b=4 bold=0 num=0 tbl=2 inline=0
+STILL: ./_trove/.opencode/AGENTS.md h2=1 b=0 bold=0 num=0 tbl=0 inline=0
+COMPLIANT=15
+# OUT_LINES: 31
+# OUT_BYTES: 2513
+# ERR_LINES: 0
+# SHA: 26602b672ef9c201af7cbb32c05bbae9d6e5a2f98c08cdcf5c5852706e3b1a9c

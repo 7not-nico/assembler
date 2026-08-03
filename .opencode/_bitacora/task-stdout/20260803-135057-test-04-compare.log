@@ -1,0 +1,53 @@
+# CMD: bash -c echo\ \"===\ current\ frontmatter\ ===\"\;\ head\ -6\ /home/eddyr/assembler/.opencode/skills/knowledge-languages/SKILL.md\;\ echo\ \"===\ backup\ frontmatter\ \(12:36\)\ ===\"\;\ head\ -6\ /home/eddyr/assembler/.opencode/skills/.backups/2026-08-03T123655/knowledge-languages/SKILL.md\;\ echo\ \"===\ diff\ backup\ vs\ current\ ===\"\;\ diff\ /home/eddyr/assembler/.opencode/skills/.backups/2026-08-03T123655/knowledge-languages/SKILL.md\ /home/eddyr/assembler/.opencode/skills/knowledge-languages/SKILL.md\ \|\ head\ -20 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:50:57-06:00
+# PID: 366707
+# DUR: 91ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 61226f33
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c echo\ \"===\ current\ frontmatter\ ===\"\;\ head\ -6\ /home/eddyr/assembler/.opencode/skills/knowledge-languages/SKILL.md\;\ echo\ \"===\ backup\ frontmatter\ \(12:36\)\ ===\"\;\ head\ -6\ /home/eddyr/assembler/.opencode/skills/.backups/2026-08-03T123655/knowledge-languages/SKILL.md\;\ echo\ \"===\ diff\ backup\ vs\ current\ ===\"\;\ diff\ /home/eddyr/assembler/.opencode/skills/.backups/2026-08-03T123655/knowledge-languages/SKILL.md\ /home/eddyr/assembler/.opencode/skills/knowledge-languages/SKILL.md\ \|\ head\ -20 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== current frontmatter ===
+---
+name: knowledge-languages
+description: Use this skill when answering programming-language questions — dispatch bash, ruby, go, rust, typescript to role and ring conventions per ref/{language}.md
+state-profile: stateless
+---
+
+=== backup frontmatter (12:36) ===
+---
+name: knowledge-languages
+description: Use this skill when answering programming-language questions — dispatch bash, ruby, go, rust, typescript to role and ring conventions per ref/{language}.md.
+state-profile: stateless
+nexus: NEX.TOOL.CHOICE
+---
+=== diff backup vs current ===
+3c3
+< description: Use this skill when answering programming-language questions — dispatch bash, ruby, go, rust, typescript to role and ring conventions per ref/{language}.md.
+---
+> description: Use this skill when answering programming-language questions — dispatch bash, ruby, go, rust, typescript to role and ring conventions per ref/{language}.md
+5d4
+< nexus: NEX.TOOL.CHOICE
+8c7
+< **Trigger**
+---
+> ## Trigger
+12c11
+< **Procedure**
+---
+> ## Procedure
+14,19c13,18
+< 1. Format the existing code first — run the language's formatter before new work; the reference file names the tool and the fallback.
+< 2. Match the language to its file — `ref/bash.md`, `ref/ruby.md`, `ref/go.md`, `ref/rust.md`, `ref/typescript.md`.
+< 3. Read the file before code.
+< 4. Apply the role test per `SPEC.LANGUAGE.ROLE.MAP` — schema SQL selects ruby; speed/binary/kernel selects rust or go; command/process sequencing selects bash; OpenCode extension selects typescript.
+< 5. Apply the ring test per `SPEC.LANGUAGE.RING.TOPOLOGY` — start r0 (bash); escalate one ring outward when it does not suffice; r3 terminates the chain.
+# OUT_LINES: 35
+# OUT_BYTES: 1700
+# ERR_LINES: 0
+# SHA: f5a96e5e3d46e4e9fc0ce4c7dd0df8bc50d3719f9ae9ba577f03815de1c122c6

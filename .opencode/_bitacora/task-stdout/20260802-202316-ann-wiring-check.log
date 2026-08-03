@@ -1,0 +1,207 @@
+# CMD: bash -c $'\necho "===_lib/ann-tpl.ts==="; cat _knowledge/_templates/_lib/ann-tpl.ts\necho; echo "===semantic-search.ts _rustlib refs==="; rg -n "_rustlib|tpl-ann|ann-tpl|_golib|GoBin|goBin|ann\\b" _knowledge/_templates/script/semantic-search.ts | head -20\necho; echo "===semantic-embed.ts _rustlib refs==="; rg -n "_rustlib|tpl-ann|_golib" _knowledge/_templates/script/semantic-embed.ts | head\necho; echo "===stress.ts refs==="; rg -n "_rustlib|tpl-ann|_golib|ann-tpl" _knowledge/_templates/script/stress.ts | head' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T20:23:16-06:00
+# PID: 424988
+# DUR: 388ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 2271fae8
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\necho "===_lib/ann-tpl.ts==="; cat _knowledge/_templates/_lib/ann-tpl.ts\necho; echo "===semantic-search.ts _rustlib refs==="; rg -n "_rustlib|tpl-ann|ann-tpl|_golib|GoBin|goBin|ann\\b" _knowledge/_templates/script/semantic-search.ts | head -20\necho; echo "===semantic-embed.ts _rustlib refs==="; rg -n "_rustlib|tpl-ann|_golib" _knowledge/_templates/script/semantic-embed.ts | head\necho; echo "===stress.ts refs==="; rg -n "_rustlib|tpl-ann|_golib|ann-tpl" _knowledge/_templates/script/stress.ts | head' 
+# CWD: /home/eddyr/assembler
+# --------------------
+===_lib/ann-tpl.ts===
+// ann-tpl.ts — Go binary ANN endpoint for _templates semantic search
+// purity: io
+// depends-on: _golib/ann (Go binary, built via `go build -o ann .` in _golib/)
+
+// Spawns the Go ANN worker with BINARY transport (raw f32 little-endian) —
+// protocol: header nq|nv|dim|k (4×uint32 LE) → nq*dim queries → nv*dim pool
+// → per-query k + k×(idx uint32, score f32). ~3.8× faster than in-process TS at
+// scale (10k vectors); JSON transport defeated Rust (0.4×) — transport, not
+// language, is the lever.
+//
+// Safety boundary: CLI tools run as standalone processes (import.meta.main guard),
+// so spawning is safe. IPC contexts must use in-process scoring, never this module.
+
+import * as path from "node:path"
+
+const ROOT = path.resolve(import.meta.dir, "..")
+const BIN = path.join(ROOT, "_golib", "ann")
+
+export type Hit = { index: number; score: number }
+
+/// Batch top-k over one pool. queries/pool are Float32Array rows; returns per-query hits.
+export async function batch(queries: Float32Array[], pool: Float32Array[], k: number): Promise<Hit[][]> {
+  const nq = queries.length
+  const nv = pool.length
+  const dim = queries[0]?.length ?? 0
+
+  // Header + payload — binary buffers passed directly as stdin (Bun.spawn accepts TypedArray)
+  const hdr = new Uint8Array(16)
+  const dv = new DataView(hdr.buffer)
+  dv.setUint32(0, nq, true)
+  dv.setUint32(4, nv, true)
+  dv.setUint32(8, dim, true)
+  dv.setUint32(12, k, true)
+
+  const qbuf = new Uint8Array(nq * dim * 4)
+  const qdv = new DataView(qbuf.buffer)
+  for (let i = 0; i < nq; i++) for (let j = 0; j < dim; j++) qdv.setFloat32((i * dim + j) * 4, queries[i][j], true)
+
+  const pbuf = new Uint8Array(nv * dim * 4)
+  const pdv = new DataView(pbuf.buffer)
+  for (let i = 0; i < nv; i++) for (let j = 0; j < dim; j++) pdv.setFloat32((i * dim + j) * 4, pool[i][j], true)
+
+  const input = new Uint8Array(16 + qbuf.length + pbuf.length)
+  input.set(hdr, 0)
+  input.set(qbuf, 16)
+  input.set(pbuf, 16 + qbuf.length)
+
+  const proc = Bun.spawn([BIN], { stdin: input, stdout: "pipe", stderr: "pipe" })
+  const out = await Bun.readableStreamToArrayBuffer(proc.stdout)
+  await proc.exited
+
+  // Decode: per query — uint32 k, then k×(idx uint32, score f32)
+  const view = new DataView(out)
+  const results: Hit[][] = []
+  let off = 0
+  for (let q = 0; q < nq; q++) {
+    const kk = view.getUint32(off, true); off += 4
+    const hits: Hit[] = []
+    for (let h = 0; h < kk; h++) {
+      const index = view.getUint32(off, true); off += 4
+      const score = view.getFloat32(off, true); off += 4
+      hits.push({ index, score })
+    }
+    results.push(hits)
+  }
+  return results
+}
+
+===semantic-search.ts _rustlib refs===
+4:// Hybrid: semantic cosine (Rust tpl-ann heavy scoring; _lib/score.ts fallback) fused with FTS5 keyword rank.
+18:      const { batch } = await import("../_lib/ann-tpl.ts")
+
+===semantic-embed.ts _rustlib refs===
+
+===stress.ts refs===
+# OUT_LINES: 76
+# OUT_BYTES: 2942
+# ERR_LINES: 0
+# EXEC: 424988|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh ann-wiring-check -- bash -c 
+# EXEC: 424989|/usr/bin/date|date +%s%N
+# EXEC: 424992|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 424995|/usr/bin/git|git remote get-url origin
+# EXEC: 424993|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 424996|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 424998|/usr/bin/git|git branch --show-current
+# EXEC: 425000|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 425001|/usr/bin/head|head -1
+# EXEC: 425002|/usr/bin/tr|tr -d \n
+# EXEC: 425003|/usr/bin/bun|bun --version
+# EXEC: 425005|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 425006|/usr/bin/head|head -1
+# EXEC: 425007|/usr/bin/tr|tr -d \n
+# EXEC: 425008|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 425010|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 425011|/usr/bin/head|head -1
+# EXEC: 425012|/usr/bin/tr|tr -d \n
+# EXEC: 425013|/usr/bin/python3|python3 --version
+# EXEC: 425015|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 425016|/usr/bin/head|head -1
+# EXEC: 425017|/usr/bin/tr|tr -d \n
+# EXEC: 425018|/usr/bin/ruby|ruby --version
+# EXEC: 425021|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 425022|/usr/bin/head|head -1
+# EXEC: 425023|/usr/bin/tr|tr -d \n
+# EXEC: 425024|/usr/bin/rustc|rustc --version
+# EXEC: 425028|/usr/bin/head|head -1
+# EXEC: 425027|/usr/bin/timeout|timeout 2 go version
+# EXEC: 425029|/usr/bin/tr|tr -d \n
+# EXEC: 425030|/usr/bin/go|go version
+# EXEC: 425036|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 425037|/usr/bin/head|head -1
+# EXEC: 425038|/usr/bin/tr|tr -d \n
+# EXEC: 425039|/usr/bin/git|git --version
+# EXEC: 425041|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 425042|/usr/bin/head|head -1
+# EXEC: 425043|/usr/bin/tr|tr -d \n
+# EXEC: 425044|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 425047|/usr/bin/head|head -1
+# EXEC: 425046|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 425048|/usr/bin/tr|tr -d \n
+# EXEC: 425049|/usr/bin/date|date --version
+# EXEC: 425051|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 425052|/usr/bin/head|head -1
+# EXEC: 425053|/usr/bin/tr|tr -d \n
+# EXEC: 425054|/usr/bin/wc|wc --version
+# EXEC: 425056|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 425057|/usr/bin/head|head -1
+# EXEC: 425058|/usr/bin/tr|tr -d \n
+# EXEC: 425059|/usr/bin/cat|cat --version
+# EXEC: 425061|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 425062|/usr/bin/head|head -1
+# EXEC: 425063|/usr/bin/tr|tr -d \n
+# EXEC: 425064|/usr/bin/tee|tee --version
+# EXEC: 425066|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 425067|/usr/bin/head|head -1
+# EXEC: 425068|/usr/bin/tr|tr -d \n
+# EXEC: 425069|/usr/bin/mktemp|mktemp --version
+# EXEC: 425071|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 425072|/usr/bin/head|head -1
+# EXEC: 425073|/usr/bin/tr|tr -d \n
+# EXEC: 425074|/usr/bin/rm|rm --version
+# EXEC: 425078|/usr/bin/tr|tr -d \n
+# EXEC: 425076|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 425077|/usr/bin/head|head -1
+# EXEC: 425079|/usr/bin/timeout|timeout --version
+# EXEC: 425082|/usr/bin/head|head -1
+# EXEC: 425083|/usr/bin/tr|tr -d \n
+# EXEC: 425081|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 425084|/usr/bin/tr|tr --version
+# EXEC: 425086|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 425087|/usr/bin/head|head -1
+# EXEC: 425088|/usr/bin/tr|tr -d \n
+# EXEC: 425089|/usr/bin/head|head --version
+# EXEC: 425091|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 425092|/usr/bin/head|head -1
+# EXEC: 425093|/usr/bin/tr|tr -d \n
+# EXEC: 425094|/usr/bin/cut|cut --version
+# EXEC: 425096|/usr/bin/date|date +%s%N
+# EXEC: 425097|/usr/bin/sha256sum|sha256sum
+# EXEC: 425098|/usr/bin/cut|cut -c1-8
+# EXEC: 425100|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202316-ann-wiring-check.log
+# EXEC: 425101|/usr/bin/date|date -Is
+# EXEC: 425102|/usr/bin/mktemp|mktemp
+# EXEC: 425103|/usr/bin/mktemp|mktemp
+# EXEC: 425104|/usr/bin/bash|bash -c 
+# EXEC: 425105|/usr/bin/cat|cat _knowledge/_templates/_lib/ann-tpl.ts
+# EXEC: 425106|/usr/bin/rg|rg -n _rustlib|tpl-ann|ann-tpl|_golib|GoBin|goBin|ann\b _knowledge/_templates/script/semantic-search.ts
+# EXEC: 425107|/usr/bin/head|head -20
+# EXEC: 425108|/usr/bin/rg|rg -n _rustlib|tpl-ann|_golib _knowledge/_templates/script/semantic-embed.ts
+# EXEC: 425109|/usr/bin/head|head
+# EXEC: 425110|/usr/bin/rg|rg -n _rustlib|tpl-ann|_golib|ann-tpl _knowledge/_templates/script/stress.ts
+# EXEC: 425111|/usr/bin/head|head
+# EXEC: 425113|/usr/bin/wc|wc -l
+# EXEC: 425114|/usr/bin/tr|tr -d  
+# EXEC: 425116|/usr/bin/wc|wc -c
+# EXEC: 425117|/usr/bin/tr|tr -d  
+# EXEC: 425119|/usr/bin/wc|wc -l
+# EXEC: 425120|/usr/bin/tr|tr -d  
+# EXEC: 425121|/usr/bin/date|date +%s%N
+# EXEC: 425123|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202316-ann-wiring-check.log
+# EXEC: 425125|/usr/bin/cat|cat /tmp/tmp.Ea8Z339gUX
+# EXEC: 425126|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202316-ann-wiring-check.log
+# EXEC: 425127|/usr/bin/cat|cat /tmp/tmp.N2OiPXyUG2
+# EXEC: 425128|/usr/bin/cat|cat /tmp/tmp.N2OiPXyUG2
+# EXEC: 425129|/usr/bin/rm|rm -f /tmp/tmp.Ea8Z339gUX /tmp/tmp.N2OiPXyUG2
+# EXEC: 425131|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202316-ann-wiring-check.log
+# EXEC: 425133|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202316-ann-wiring-check.log
+# EXEC: 425135|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-202316-ann-wiring-check.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rg=ripgrep 15.2.0 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 110
+# SHA: 8b099324b0f18dca97c88d9835932571435b0cfdc055051ab82202e8ee41c72a
+# exit: 0

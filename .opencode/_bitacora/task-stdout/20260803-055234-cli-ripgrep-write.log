@@ -1,0 +1,133 @@
+# CMD: ls -la .opencode/entities/cli/ 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T05:52:34-06:00
+# PID: 52694
+# DUR: 392ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: e3d7b45d
+# CLI: ls ls (GNU coreutils) 9.11
+# ARGS: -la .opencode/entities/cli/ 
+# CWD: /home/eddyr/assembler
+# --------------------
+total 8
+drwxr-xr-x 1 eddyr eddyr   52 Aug  3 05:52 .
+drwxr-xr-x 1 eddyr eddyr  486 Aug  3 05:40 ..
+-rw-r--r-- 1 eddyr eddyr 1266 Aug  3 05:52 CLI.RIPGREP.md
+-rw-r--r-- 1 eddyr eddyr  573 Aug  3 05:50 .template.md
+# OUT_LINES: 5
+# OUT_BYTES: 213
+# ERR_LINES: 0
+# EXEC: 52694|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh cli-ripgrep-write -- ls -la .opencode/entities/cli/
+# EXEC: 52695|/usr/bin/date|date +%s%N
+# EXEC: 52700|/usr/bin/head|head -1
+# EXEC: 52699|/usr/bin/timeout|timeout 2 ls --version
+# EXEC: 52701|/usr/bin/tr|tr -d \n
+# EXEC: 52702|/usr/bin/ls|ls --version
+# EXEC: 52703|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 52706|/usr/bin/git|git remote get-url origin
+# EXEC: 52704|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 52707|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 52709|/usr/bin/git|git branch --show-current
+# EXEC: 52711|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 52712|/usr/bin/head|head -1
+# EXEC: 52713|/usr/bin/tr|tr -d \n
+# EXEC: 52714|/usr/bin/bun|bun --version
+# EXEC: 52716|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 52717|/usr/bin/head|head -1
+# EXEC: 52718|/usr/bin/tr|tr -d \n
+# EXEC: 52719|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 52721|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 52722|/usr/bin/head|head -1
+# EXEC: 52723|/usr/bin/tr|tr -d \n
+# EXEC: 52724|/usr/bin/python3|python3 --version
+# EXEC: 52726|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 52727|/usr/bin/head|head -1
+# EXEC: 52728|/usr/bin/tr|tr -d \n
+# EXEC: 52729|/usr/bin/ruby|ruby --version
+# EXEC: 52739|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 52740|/usr/bin/head|head -1
+# EXEC: 52741|/usr/bin/tr|tr -d \n
+# EXEC: 52742|/usr/bin/rustc|rustc --version
+# EXEC: 52745|/usr/bin/timeout|timeout 2 go version
+# EXEC: 52746|/usr/bin/head|head -1
+# EXEC: 52747|/usr/bin/tr|tr -d \n
+# EXEC: 52748|/usr/bin/go|go version
+# EXEC: 52754|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 52755|/usr/bin/head|head -1
+# EXEC: 52756|/usr/bin/tr|tr -d \n
+# EXEC: 52757|/usr/bin/git|git --version
+# EXEC: 52759|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 52760|/usr/bin/head|head -1
+# EXEC: 52761|/usr/bin/tr|tr -d \n
+# EXEC: 52762|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 52764|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 52765|/usr/bin/head|head -1
+# EXEC: 52766|/usr/bin/tr|tr -d \n
+# EXEC: 52767|/usr/bin/date|date --version
+# EXEC: 52770|/usr/bin/head|head -1
+# EXEC: 52769|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 52771|/usr/bin/tr|tr -d \n
+# EXEC: 52772|/usr/bin/wc|wc --version
+# EXEC: 52774|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 52775|/usr/bin/head|head -1
+# EXEC: 52776|/usr/bin/tr|tr -d \n
+# EXEC: 52777|/usr/bin/cat|cat --version
+# EXEC: 52779|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 52780|/usr/bin/head|head -1
+# EXEC: 52781|/usr/bin/tr|tr -d \n
+# EXEC: 52782|/usr/bin/tee|tee --version
+# EXEC: 52784|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 52785|/usr/bin/head|head -1
+# EXEC: 52786|/usr/bin/tr|tr -d \n
+# EXEC: 52787|/usr/bin/mktemp|mktemp --version
+# EXEC: 52789|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 52790|/usr/bin/head|head -1
+# EXEC: 52791|/usr/bin/tr|tr -d \n
+# EXEC: 52792|/usr/bin/rm|rm --version
+# EXEC: 52794|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 52795|/usr/bin/head|head -1
+# EXEC: 52796|/usr/bin/tr|tr -d \n
+# EXEC: 52797|/usr/bin/timeout|timeout --version
+# EXEC: 52799|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 52800|/usr/bin/head|head -1
+# EXEC: 52801|/usr/bin/tr|tr -d \n
+# EXEC: 52802|/usr/bin/tr|tr --version
+# EXEC: 52804|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 52805|/usr/bin/head|head -1
+# EXEC: 52806|/usr/bin/tr|tr -d \n
+# EXEC: 52807|/usr/bin/head|head --version
+# EXEC: 52809|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 52810|/usr/bin/head|head -1
+# EXEC: 52811|/usr/bin/tr|tr -d \n
+# EXEC: 52812|/usr/bin/cut|cut --version
+# EXEC: 52814|/usr/bin/date|date +%s%N
+# EXEC: 52815|/usr/bin/sha256sum|sha256sum
+# EXEC: 52816|/usr/bin/cut|cut -c1-8
+# EXEC: 52818|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055234-cli-ripgrep-write.log
+# EXEC: 52819|/usr/bin/date|date -Is
+# EXEC: 52820|/usr/bin/mktemp|mktemp
+# EXEC: 52821|/usr/bin/mktemp|mktemp
+# EXEC: 52822|/usr/bin/ls|ls -la .opencode/entities/cli/
+# EXEC: 52824|/usr/bin/wc|wc -l
+# EXEC: 52825|/usr/bin/tr|tr -d  
+# EXEC: 52827|/usr/bin/wc|wc -c
+# EXEC: 52828|/usr/bin/tr|tr -d  
+# EXEC: 52830|/usr/bin/wc|wc -l
+# EXEC: 52831|/usr/bin/tr|tr -d  
+# EXEC: 52832|/usr/bin/date|date +%s%N
+# EXEC: 52834|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055234-cli-ripgrep-write.log
+# EXEC: 52836|/usr/bin/cat|cat /tmp/tmp.qhD7C1NAKH
+# EXEC: 52837|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055234-cli-ripgrep-write.log
+# EXEC: 52838|/usr/bin/cat|cat /tmp/tmp.Hi3cKnDIbb
+# EXEC: 52839|/usr/bin/cat|cat /tmp/tmp.Hi3cKnDIbb
+# EXEC: 52840|/usr/bin/rm|rm -f /tmp/tmp.qhD7C1NAKH /tmp/tmp.Hi3cKnDIbb
+# EXEC: 52842|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055234-cli-ripgrep-write.log
+# EXEC: 52844|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055234-cli-ripgrep-write.log
+# EXEC: 52846|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260803-055234-cli-ripgrep-write.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 ls=ls (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 107
+# SHA: fe45e601a2895cd8961da142204bbfdc954a283ef8da13e0d18b548bbe327934
+# exit: 0

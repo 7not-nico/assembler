@@ -1,0 +1,53 @@
+# CMD: bash -c cd\ /home/eddyr/assembler\ \&\&\ echo\ \"===\ iconv\ UTF-8\ validity\ per\ skill\ ===\"\;\ BAD=0\;\ for\ f\ in\ \$\(find\ .opencode/skills\ -name\ SKILL.md\ -not\ -path\ \"\*/.backups/\*\"\ \|\ sort\)\;\ do\ if\ \!\ iconv\ -f\ UTF-8\ -t\ UTF-8\ \"\$f\"\ \>\ /dev/null\ 2\>\&1\;\ then\ echo\ \"INVALID:\ \$f\"\;\ BAD=\$\(\(BAD+1\)\)\;\ fi\;\ done\;\ \[\ \$BAD\ -eq\ 0\ \]\ \&\&\ echo\ \"all\ skills\ VALID\ UTF-8\"\;\ echo\ \"===\ stray\ 80\ 94\ byte\ scan\ ===\"\;\ BAD2=0\;\ for\ f\ in\ \$\(find\ .opencode/skills\ -name\ SKILL.md\ -not\ -path\ \"\*/.backups/\*\"\ \|\ sort\)\;\ do\ if\ LC_ALL=C\ grep\ -qP\ \"\\x80\\x94\"\ \"\$f\"\ 2\>/dev/null\;\ then\ echo\ \"STRAY-80-94:\ \$f\"\;\ BAD2=\$\(\(BAD2+1\)\)\;\ fi\;\ done\;\ \[\ \$BAD2\ -eq\ 0\ \]\ \&\&\ echo\ \"no\ stray\ 80\ 94\ bytes\" 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:57:05-06:00
+# PID: 374275
+# DUR: 160ms
+# exit: 1
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 90fd78ae
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cd\ /home/eddyr/assembler\ \&\&\ echo\ \"===\ iconv\ UTF-8\ validity\ per\ skill\ ===\"\;\ BAD=0\;\ for\ f\ in\ \$\(find\ .opencode/skills\ -name\ SKILL.md\ -not\ -path\ \"\*/.backups/\*\"\ \|\ sort\)\;\ do\ if\ \!\ iconv\ -f\ UTF-8\ -t\ UTF-8\ \"\$f\"\ \>\ /dev/null\ 2\>\&1\;\ then\ echo\ \"INVALID:\ \$f\"\;\ BAD=\$\(\(BAD+1\)\)\;\ fi\;\ done\;\ \[\ \$BAD\ -eq\ 0\ \]\ \&\&\ echo\ \"all\ skills\ VALID\ UTF-8\"\;\ echo\ \"===\ stray\ 80\ 94\ byte\ scan\ ===\"\;\ BAD2=0\;\ for\ f\ in\ \$\(find\ .opencode/skills\ -name\ SKILL.md\ -not\ -path\ \"\*/.backups/\*\"\ \|\ sort\)\;\ do\ if\ LC_ALL=C\ grep\ -qP\ \"\\x80\\x94\"\ \"\$f\"\ 2\>/dev/null\;\ then\ echo\ \"STRAY-80-94:\ \$f\"\;\ BAD2=\$\(\(BAD2+1\)\)\;\ fi\;\ done\;\ \[\ \$BAD2\ -eq\ 0\ \]\ \&\&\ echo\ \"no\ stray\ 80\ 94\ bytes\" 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== iconv UTF-8 validity per skill ===
+INVALID: .opencode/skills/reason-quantitative/SKILL.md
+INVALID: .opencode/skills/reason-verbal/SKILL.md
+INVALID: .opencode/skills/workflow-dispatcher/skill/manage-bash-flows/SKILL.md
+INVALID: .opencode/skills/workflow-dispatcher/skill/structure-stdout/SKILL.md
+INVALID: .opencode/skills/workflow-dispatcher/skill/survey-scripts/SKILL.md
+=== stray 80 94 byte scan ===
+STRAY-80-94: .opencode/skills/knowledge-languages/SKILL.md
+STRAY-80-94: .opencode/skills/playwright-dispatcher/SKILL.md
+STRAY-80-94: .opencode/skills/playwright-dispatcher/skill/use-playwright-ai-mode/SKILL.md
+STRAY-80-94: .opencode/skills/playwright-dispatcher/skill/use-playwright-core/SKILL.md
+STRAY-80-94: .opencode/skills/playwright-dispatcher/skill/use-playwright-debug/SKILL.md
+STRAY-80-94: .opencode/skills/playwright-dispatcher/skill/use-playwright-network-storage/SKILL.md
+STRAY-80-94: .opencode/skills/playwright-dispatcher/skill/use-playwright-vision/SKILL.md
+STRAY-80-94: .opencode/skills/reason-invariants/SKILL.md
+STRAY-80-94: .opencode/skills/reason-quantitative/SKILL.md
+STRAY-80-94: .opencode/skills/reason-verbal/SKILL.md
+STRAY-80-94: .opencode/skills/refactor-skill/SKILL.md
+STRAY-80-94: .opencode/skills/search-dispatcher/SKILL.md
+STRAY-80-94: .opencode/skills/search-dispatcher/skill/use-exa/SKILL.md
+STRAY-80-94: .opencode/skills/search-dispatcher/skill/use-parallel-search/SKILL.md
+STRAY-80-94: .opencode/skills/semantic-dispatcher/SKILL.md
+STRAY-80-94: .opencode/skills/semantic-dispatcher/skill/use-semantic-drift/SKILL.md
+STRAY-80-94: .opencode/skills/semantic-dispatcher/skill/use-semantic-embed/SKILL.md
+STRAY-80-94: .opencode/skills/semantic-dispatcher/skill/use-semantic-eval/SKILL.md
+STRAY-80-94: .opencode/skills/semantic-dispatcher/skill/use-semantic-purge/SKILL.md
+STRAY-80-94: .opencode/skills/semantic-dispatcher/skill/use-semantic-search/SKILL.md
+STRAY-80-94: .opencode/skills/semantic-dispatcher/skill/use-semantic-stats/SKILL.md
+STRAY-80-94: .opencode/skills/study-foundations/SKILL.md
+STRAY-80-94: .opencode/skills/workflow-dispatcher/skill/bitacora-workflow/SKILL.md
+STRAY-80-94: .opencode/skills/workflow-dispatcher/skill/manage-bash-flows/SKILL.md
+STRAY-80-94: .opencode/skills/workflow-dispatcher/SKILL.md
+STRAY-80-94: .opencode/skills/workflow-dispatcher/skill/structure-stdout/SKILL.md
+STRAY-80-94: .opencode/skills/workflow-dispatcher/skill/survey-scripts/SKILL.md
+STRAY-80-94: .opencode/skills/workflow-dispatcher/skill/use-context-seven/SKILL.md
+# OUT_LINES: 35
+# OUT_BYTES: 2502
+# ERR_LINES: 0
+# SHA: 0affc9227d798198c417970e4208fc2e87cdab733fcc0c002c030387c44f4e50

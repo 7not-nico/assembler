@@ -1,0 +1,649 @@
+# CMD: bash /tmp/opencode/audit-agents-clean.sh 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T12:53:20-06:00
+# PID: 308439
+# DUR: 629ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 39f7c076
+# CLI: bash 5.3.15(1)-release
+# ARGS: /tmp/opencode/audit-agents-clean.sh 
+# CWD: /home/eddyr/assembler
+# --------------------
+STILL: ./AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/a01-harness-llm/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/common/bitacora/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/common/homophones/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/common/nerdfont/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/common/palestra/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/common/trump-voices/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/darkestdungeon-code/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/one-timers/comparisons-specs/camera-comparison/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/one-timers/comparisons-specs/gear-specs/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/one-timers/CR-news-outlets/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/one-timers/ludoteca/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/one-timers/mcp-search-docs/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/one-timers/medcodes/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/one-timers/tablet-comparison/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/pythontts-cli/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/study-sessions/category-theory/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/study-sessions/constructive-drawing/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/study-sessions/linguistic/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/study-sessions/reasoning/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_atelier/study-sessions/thoughtlog/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_codex/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_codex/Hyprland-repo/hyprland/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_codex/_impressions/semantic-weight/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_codex/mgba-repo/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_codex/mgba-repo/template/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_codex/neovim-repo/neovim/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_codex/rimworld-code/.opencode/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_codex/snes9x-repo/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_codex/sqlite-repo/sqlite/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_codex/teenycode-repo/.opencode/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_codex/teenycode-repo/teenycode/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_codex/_templates/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_codex/yazi-repo/yazi/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_depot/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_depot/scripts/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_knowledge/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_knowledge/code-semantics/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_knowledge/rust-docs/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_knowledge/_templates/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./.opencode/_scripts/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./.opencode/_shell/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_trove/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_trove/.opencode/AGENTS.md h2= b= bold= num= tbl= inline=
+STILL: ./_trove/_templates/AGENTS.md h2= b= bold= num= tbl= inline=
+COMPLIANT=0
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^## /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^- /{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^[0-9]+\./{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^\|/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+awk: cmd. line:1: BEGIN{in=0} /^```/{in=!in; next} !in && /^-[^-]*\*\*/{c++} END{print c+0}
+awk: cmd. line:1:       ^ syntax error
+/tmp/opencode/audit-agents-clean.sh: line 13: [: : integer expected
+# OUT_LINES: 46
+# OUT_BYTES: 3434
+# ERR_LINES: 585
+# SHA: 20cc0df37ed66ec89df625844a894f09e1304aed1908315cf82671827924603f

@@ -1,0 +1,21 @@
+# CMD: bash -c L=\$\(ls\ -t\ /home/eddyr/assembler/_knowledge/_bitacora/task-stdout/\*tracexec-integrated-test.log\ \|\ head\ -1\)\ \&\&\ echo\ \"log:\ \$L\"\ \&\&\ rg\ -c\ \"tracer\>\"\ \"\$L\"\ \&\&\ echo\ \"---header\ order---\"\ \&\&\ rg\ \"\^\(#\ \)\"\ \"\$L\"\ \|\ head\ -8 
+# DATE: 2026-08-03T05:20:19-06:00
+# DUR: 22ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+29011<tracer>: "/usr/bin/bash" ["bash", "-c", "L=$(ls -t /home/eddyr/assembler/_knowledge/_bitacora/task-stdout/*tracexec-integrated-test.log | head -1) && echo \"log: $L\" && rg -c \"tracer>\" \"$L\" && echo \"---header order---\" && rg \"^(# )\" \"$L\" | head -8"] fd []
+29013<bash>: "/usr/bin/ls" ["ls", "-t", "/home/eddyr/assembler/_knowledge/_bitacora/task-stdout/20260803-051909-tracexec-integrated-test.log"] fd [stdout="pipe:[125137]", ]
+29014<bash>: "/usr/bin/head" ["head", "-1"] fd [stdin="pipe:[125137]", stdout="pipe:[123119]", ]
+log: /home/eddyr/assembler/_knowledge/_bitacora/task-stdout/20260803-051909-tracexec-integrated-test.log
+29015<bash>: "/usr/bin/rg" ["rg", "-c", "tracer>", "/home/eddyr/assembler/_knowledge/_bitacora/task-stdout/20260803-051909-tracexec-integrated-test.log"] fd []
+1
+---header order---
+29016<bash>: "/usr/bin/rg" ["rg", "^(# )", "/home/eddyr/assembler/_knowledge/_bitacora/task-stdout/20260803-051909-tracexec-integrated-test.log"] fd [stdout="pipe:[122765]", ]
+29017<bash>: "/usr/bin/head" ["head", "-8"] fd [stdin="pipe:[122765]", ]
+# CMD: bash -c bash\ -n\ run-logged.sh\ \&\&\ echo\ \"syntax\ OK\"\ \&\&\ sleep\ 0.5 
+# DATE: 2026-08-03T05:19:09-06:00
+# DUR: 514ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+# exit: 0
+# exit: 0

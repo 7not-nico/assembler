@@ -1,0 +1,20 @@
+# CMD: bash -c cp\ /tmp/opencode/strip-inline-bold.pl\ /home/eddyr/assembler/.opencode/_scripts/strip-inline-bold.pl\ \&\&\ cp\ /tmp/opencode/convert-skill-format.pl\ /home/eddyr/assembler/.opencode/_scripts/convert-skill-format.pl\ \&\&\ chmod\ +x\ /home/eddyr/assembler/.opencode/_scripts/strip-inline-bold.pl\ /home/eddyr/assembler/.opencode/_scripts/convert-skill-format.pl\ \&\&\ ls\ -la\ /home/eddyr/assembler/.opencode/_scripts/\*.pl 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T13:20:05-06:00
+# PID: 334873
+# DUR: 83ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 9bbf6827
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cp\ /tmp/opencode/strip-inline-bold.pl\ /home/eddyr/assembler/.opencode/_scripts/strip-inline-bold.pl\ \&\&\ cp\ /tmp/opencode/convert-skill-format.pl\ /home/eddyr/assembler/.opencode/_scripts/convert-skill-format.pl\ \&\&\ chmod\ +x\ /home/eddyr/assembler/.opencode/_scripts/strip-inline-bold.pl\ /home/eddyr/assembler/.opencode/_scripts/convert-skill-format.pl\ \&\&\ ls\ -la\ /home/eddyr/assembler/.opencode/_scripts/\*.pl 
+# CWD: /home/eddyr/assembler
+# --------------------
+-rwxr-xr-x 1 eddyr eddyr 2115 Aug  3 13:20 /home/eddyr/assembler/.opencode/_scripts/convert-skill-format.pl
+-rwxr-xr-x 1 eddyr eddyr 1084 Aug  3 13:20 /home/eddyr/assembler/.opencode/_scripts/strip-inline-bold.pl
+# OUT_LINES: 2
+# OUT_BYTES: 213
+# ERR_LINES: 0
+# SHA: 683269f1b2783cae6ca7c38cce135de5f0d589d9069fa3c4ba1d630cab5b7a54

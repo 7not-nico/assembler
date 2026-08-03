@@ -1,0 +1,13 @@
+# CMD: bash -c ruby\ /tmp/opencode/fidelity-check.rb 
+# DATE: 2026-08-03T05:34:27-06:00
+# DUR: 105ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+39166<tracer>: "/usr/bin/bash" ["bash", "-c", "ruby /tmp/opencode/fidelity-check.rb"] fd []
+39166<bash>: "/usr/bin/ruby" ["ruby", "/tmp/opencode/fidelity-check.rb"] fd []
+/tmp/opencode/fidelity-check.rb:4:in 'Array#index': wrong number of arguments (given 2, expected 0..1) (ArgumentError)
+
+block = ref[(start + 1)...ref.index("```", start)]
+                                    ^^^^^^^^^^^^
+	from /tmp/opencode/fidelity-check.rb:4:in '<main>'
+# exit: 1

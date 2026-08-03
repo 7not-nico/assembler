@@ -1,0 +1,12 @@
+# CMD: bash -c $'cd /tmp/opencode/rust-book-clean && ruby -e "\nrequire \\"open3\\"\nrefs = %w[img/ferris/does_not_compile.svg img/ferris/not_desired_behavior.svg img/ferris/panics.svg img/trpl04-01.svg img/trpl04-02.svg img/trpl04-03.svg img/trpl04-04.svg img/trpl04-05.svg img/trpl04-06.svg img/trpl04-07.svg img/trpl14-01.png img/trpl14-02.png img/trpl14-03.png img/trpl14-04.png img/trpl15-01.svg img/trpl15-02.svg img/trpl15-03.svg img/trpl15-04.svg img/trpl17-01.svg img/trpl17-02.svg img/trpl17-03.svg img/trpl17-04.svg img/trpl17-05.svg img/trpl17-06.svg img/trpl17-07.svg img/trpl17-08.svg img/trpl17-09.svg img/trpl21-01.png]\nout, = Open3.capture2(\\"unzip\\", \\"-l\\", \\"rust-book.epub\\")\nmedia = out.scan(/EPUB\\/media\\/file\\d+\\.(svg|png)/)\nputs \\"EPUB media files: #{media.length}\\"\nputs \\"html refs:        #{refs.length}\\"\nputs \\"match:            #{media.length == refs.length ? \\"ALL PRESENT\\" : \\"MISMATCH\\"}\\"\n# extract and verify each file is non-empty\nOpen3.capture2(\\"unzip\\", \\"-o\\", \\"rust-book.epub\\", \\"-d\\", \\"verify\\")\nmissing = refs.select { |r| !File.exist?(File.join(\\"verify/EPUB/media\\", \\"file\\" + refs.index(r).to_s + (r.end_with?(\\".png\\") ? \\".png\\" : \\".svg\\"))) }\nputs \\"missing:          #{missing.empty? ? \\"none\\" : missing.join(\\", \\")}\\"\nempty = Dir[\\"verify/EPUB/media/*\\"].select { |f| File.size(f) == 0 }\nputs \\"empty files:      #{empty.empty? ? \\"none\\" : empty.join(\\", \\")}\\"\ntotal = Dir[\\"verify/EPUB/media/*\\"].sum { |f| File.size(f) }\nputs \\"total bytes:      #{total}\\"\n"' 
+# DATE: 2026-08-03T05:15:54-06:00
+# DUR: 89ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+EPUB media files: 28
+html refs:        28
+match:            ALL PRESENT
+missing:          none
+empty files:      none
+total bytes:      1146992
+# exit: 0

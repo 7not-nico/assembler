@@ -1,0 +1,89 @@
+# CMD: bash -c curl\ --help\ all\ 2\>\&1\ \|\ head\ -80 
+# DATE: 2026-08-03T05:26:32-06:00
+# DUR: 18ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+33536<tracer>: "/usr/bin/bash" ["bash", "-c", "curl --help all 2>&1 | head -80"] fd []
+33537<bash>: "/usr/bin/curl" ["curl", "--help", "all"] fd [stdout="pipe:[142880]", stderr="pipe:[142880]", ]
+33538<bash>: "/usr/bin/head" ["head", "-80"] fd [stdin="pipe:[142880]", ]
+     --abstract-unix-socket <path>  Connect via abstract Unix domain socket
+     --alt-svc <filename>          Enable alt-svc with this cache file
+     --anyauth                     Pick any authentication method
+ -a, --append                      Append to target file when uploading
+     --aws-sigv4 <provider1[:prvdr2[:reg[:srv]]]>  AWS V4 signature auth
+     --basic                       HTTP Basic Authentication
+     --ca-native                   Load CA certs from the OS
+     --cacert <file>               CA certificate to verify peer against
+     --capath <dir>                CA directory to verify peer against
+ -E, --cert <certificate[:password]>  Client certificate file and password
+     --cert-status                 Verify server cert status OCSP-staple
+     --cert-type <type>            Certificate type (DER/PEM/ENG/PROV/P12)
+     --ciphers <list>              TLS 1.2 (1.1, 1.0) ciphers to use
+     --compressed                  Request compressed response
+     --compressed-ssh              Enable SSH compression
+ -K, --config <file>               Read config from a file
+     --connect-timeout <seconds>   Maximum time allowed to connect
+     --connect-to <HOST1:PORT1:HOST2:PORT2>  Connect to host2 instead of host1
+ -C, --continue-at <offset>        Resumed transfer offset
+ -b, --cookie <data|filename>      Send cookies from string/load from file
+ -c, --cookie-jar <filename>       Save cookies to <filename> after operation
+     --create-dirs                 Create necessary local directory hierarchy
+     --create-file-mode <mode>     File mode for created files
+     --crlf                        Convert LF to CRLF in upload
+     --crlfile <file>              Certificate Revocation list
+     --curves <list>               (EC) TLS key exchange algorithms to request
+ -d, --data <data>                 HTTP POST data
+     --data-ascii <data>           HTTP POST ASCII data
+     --data-binary <data>          HTTP POST binary data
+     --data-raw <data>             HTTP POST data, '@' allowed
+     --data-urlencode <data>       HTTP POST data URL encoded
+     --delegation <LEVEL>          GSS-API delegation permission
+     --digest                      HTTP Digest Authentication
+ -q, --disable                     Disable .curlrc
+     --disable-eprt                Inhibit using EPRT or LPRT
+     --disable-epsv                Inhibit using EPSV
+     --disallow-username-in-url    Disallow username in URL
+     --dns-interface <interface>   Interface to use for DNS requests
+     --dns-ipv4-addr <address>     IPv4 address to use for DNS requests
+     --dns-ipv6-addr <address>     IPv6 address to use for DNS requests
+     --dns-servers <addresses>     DNS server addrs to use
+     --doh-cert-status             Verify DoH server cert status OCSP-staple
+     --doh-insecure                Allow insecure DoH server connections
+     --doh-url <URL>               Resolve hostnames over DoH
+     --dump-ca-embed            Write the embedded CA bundle to standard output
+ -D, --dump-header <filename>      Write the received headers to <filename>
+     --ech <config>                Configure ECH
+     --egd-file <file>             EGD socket path for random data
+     --engine <name>               Crypto engine to use
+     --etag-compare <file>         Load ETag from file
+     --etag-save <file>            Parse incoming ETag and save to a file
+     --expect100-timeout <seconds>  How long to wait for 100-continue
+ -f, --fail                        Fail fast with no output on HTTP errors
+     --fail-early                  Fail on first transfer error
+     --fail-with-body              Fail on HTTP errors but save the body
+     --false-start                 Enable TLS False Start
+     --follow                      Follow redirects per spec
+ -F, --form <name=content>         Specify multipart MIME data
+     --form-escape                 Escape form fields using backslash
+     --form-string <name=string>   Specify multipart MIME data
+     --ftp-account <data>          Account data string
+     --ftp-alternative-to-user <command>  String to replace USER [name]
+     --ftp-create-dirs             Create the remote dirs if not present
+     --ftp-method <method>         Control CWD usage
+     --ftp-pasv                    Send PASV/EPSV instead of PORT
+ -P, --ftp-port <address>          Send PORT instead of PASV
+     --ftp-pret                    Send PRET before PASV
+     --ftp-skip-pasv-ip            Skip the IP address for PASV
+     --ftp-ssl-ccc                 Send CCC after authenticating
+     --ftp-ssl-ccc-mode <active/passive>  Set CCC mode
+     --ftp-ssl-control             Require TLS for login, clear for transfer
+ -G, --get                         Put the post data in the URL and use GET
+ -g, --globoff                     Disable URL globbing with {} and []
+     --happy-eyeballs-timeout-ms <ms>  Time for IPv6 before IPv4
+     --haproxy-clientip <ip>       Set address in HAProxy PROXY
+     --haproxy-protocol            Send HAProxy PROXY protocol v1 header
+ -I, --head                        Show document info only
+ -H, --header <header/@file>       Pass custom header(s) to server
+ -h, --help <subject>              Get help for commands
+     --hostpubmd5 <md5>            Acceptable MD5 hash of host public key
+# exit: 0

@@ -1,0 +1,126 @@
+# CMD: bash -c tracexec\ --help\ 2\>\&1\;\ echo\ \"===LOG\ HELP===\"\;\ tracexec\ log\ --help\ 2\>\&1 
+# DATE: 2026-08-03T05:21:35-06:00
+# DUR: 18ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+29722<tracer>: "/usr/bin/bash" ["bash", "-c", "tracexec --help 2>&1; echo \"===LOG HELP===\"; tracexec log --help 2>&1"] fd []
+29723<bash>: "/usr/bin/tracexec" ["tracexec", "--help"] fd []
+Core crate of tracexec [Internal implementation! DO NOT DEPEND ON!]
+
+Usage: tracexec [OPTIONS] <COMMAND>
+
+Commands:
+  log                   Run tracexec in logging mode
+  tui                   Run tracexec in TUI mode, stdin/out/err are redirected to /dev/null by default
+  generate-completions  Generate shell completions for tracexec
+  collect               Collect exec events and export them
+  ebpf                  Experimental ebpf mode
+  help                  Print this message or the help of the given subcommand(s)
+
+Options:
+      --color <COLOR>      Control whether colored output is enabled. This flag has no effect on TUI mode. [default: auto] [possible values: auto, always, never]
+  -C, --cwd <CWD>          Change current directory to this path before doing anything
+  -P, --profile <PROFILE>  Load profile from this path
+      --no-profile         Do not load profiles
+  -u, --user <USER>        Run as user. This option is only available when running tracexec as root
+  -h, --help               Print help
+  -V, --version            Print version
+===LOG HELP===
+29726<bash>: "/usr/bin/tracexec" ["tracexec", "log", "--help"] fd []
+Run tracexec in logging mode
+
+Usage: tracexec log [OPTIONS] -- <CMD>...
+
+Arguments:
+  <CMD>...  command to be executed
+
+Options:
+      --more-colors
+          More colors
+      --less-colors
+          Less colors
+      --show-cmdline
+          Print commandline that (hopefully) reproduces what was executed. Note: file descriptors are not handled for now.
+      --no-show-cmdline
+          Don't print commandline that (hopefully) reproduces what was executed.
+      --show-interpreter
+          Try to show script interpreter indicated by shebang
+      --no-show-interpreter
+          Do not show script interpreter indicated by shebang
+      --foreground
+          Set the terminal foreground process group to tracee. This option is useful when tracexec is used interactively. [default]
+      --no-foreground
+          Do not set the terminal foreground process group to tracee
+      --diff-fd
+          Diff file descriptors with the original std{in/out/err}
+      --no-diff-fd
+          Do not diff file descriptors
+      --show-fd
+          Show file descriptors
+      --no-show-fd
+          Do not show file descriptors
+      --diff-env
+          Diff environment variables with the original environment
+      --no-diff-env
+          Do not diff environment variables
+      --show-env
+          Show environment variables
+      --no-show-env
+          Do not show environment variables
+      --show-comm
+          Show comm
+      --no-show-comm
+          Do not show comm
+      --show-argv
+          Show argv
+      --no-show-argv
+          Do not show argv
+      --show-filename
+          Show filename
+      --no-show-filename
+          Do not show filename
+      --show-cwd
+          Show cwd
+      --no-show-cwd
+          Do not show cwd
+      --decode-errno
+          Decode errno values
+      --no-decode-errno
+          Do not decode errno values
+      --successful-only
+          Only show successful calls
+      --fd-in-cmdline
+          [Experimental] Try to reproduce file descriptors in commandline. This might result in an unexecutable cmdline if pipes, sockets, etc. are involved.
+      --stdio-in-cmdline
+          [Experimental] Try to reproduce stdio in commandline. This might result in an unexecutable cmdline if pipes, sockets, etc. are involved.
+      --resolve-proc-self-exe
+          Resolve /proc/self/exe symlink
+      --no-resolve-proc-self-exe
+          Do not resolve /proc/self/exe symlink
+      --hide-cloexec-fds
+          Hide CLOEXEC fds
+      --no-hide-cloexec-fds
+          Do not hide CLOEXEC fds
+      --timestamp
+          Show timestamp information
+      --no-timestamp
+          Do not show timestamp information
+      --inline-timestamp-format <INLINE_TIMESTAMP_FORMAT>
+          Set the format of inline timestamp. See https://docs.rs/chrono/latest/chrono/format/strftime/index.html for available options.
+      --seccomp-bpf <SECCOMP_BPF>
+          Controls whether to enable seccomp-bpf optimization, which greatly improves performance [default: auto] [possible values: auto, on, off]
+      --polling-interval <POLLING_INTERVAL>
+          Polling interval, in microseconds. -1(default) disables polling.
+      --show-all-events
+          Set the default filter to show all events. This option can be used in combination with --filter-exclude to exclude some unwanted events.
+      --filter <FILTER>
+          Set the default filter for events. [default: warning,error,exec,tracee-exit]
+      --filter-include <FILTER_INCLUDE>
+          Aside from the default filter, also include the events specified here. [default: <empty>]
+      --filter-exclude <FILTER_EXCLUDE>
+          Exclude the events specified here from the default filter. [default: <empty>]
+  -o, --output <OUTPUT>
+          Output, stderr by default. A single hyphen '-' represents stdout.
+  -h, --help
+          Print help
+# exit: 0

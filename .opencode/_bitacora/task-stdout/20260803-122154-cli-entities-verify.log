@@ -1,0 +1,51 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/.opencode/entities/cli\ \&\&\ echo\ \"===\ FILES\ ===\"\;\ ls\;\ echo\ \"===\ -ed\ FORM\ SCAN\ ===\"\;\ for\ f\ in\ \*.md\;\ do\ echo\ \"--\ \$f\"\;\ grep\ -oiE\ \"\\b\[a-z\]+ed\\b\"\ \"\$f\"\ \|\ grep\ -vE\ \"\^\(the\|and\|for\|are\|file\|line\|mode\|use\|code\|output\|filtered\|extended\)\$\"\ \|\ sort\ \|\ uniq\ -c\;\ done\;\ echo\ \"===\ BULLET\ COUNTS\ ===\"\;\ for\ f\ in\ \*.md\;\ do\ echo\ \"--\ \$f:\ \$\(grep\ -c\ \"\^-\ \"\ \"\$f\"\)\ bullets\"\;\ done 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T12:21:54-06:00
+# PID: 282228
+# DUR: 95ms
+# exit: 0
+# GIT: assembler@d622f4f
+# BRANCH: main
+# SESSION: 516906f8
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cd\ /home/eddyr/assembler/.opencode/entities/cli\ \&\&\ echo\ \"===\ FILES\ ===\"\;\ ls\;\ echo\ \"===\ -ed\ FORM\ SCAN\ ===\"\;\ for\ f\ in\ \*.md\;\ do\ echo\ \"--\ \$f\"\;\ grep\ -oiE\ \"\\b\[a-z\]+ed\\b\"\ \"\$f\"\ \|\ grep\ -vE\ \"\^\(the\|and\|for\|are\|file\|line\|mode\|use\|code\|output\|filtered\|extended\)\$\"\ \|\ sort\ \|\ uniq\ -c\;\ done\;\ echo\ \"===\ BULLET\ COUNTS\ ===\"\;\ for\ f\ in\ \*.md\;\ do\ echo\ \"--\ \$f:\ \$\(grep\ -c\ \"\^-\ \"\ \"\$f\"\)\ bullets\"\;\ done 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== FILES ===
+CLI.COREUTILS.md
+CLI.PANDOC.md
+CLI.RIPGREP.md
+CLI.SED.md
+CLI.TRACEXEC.md
+=== -ed FORM SCAN ===
+-- CLI.COREUTILS.md
+      1 embedded
+      1 expected
+      2 named
+      1 related
+-- CLI.PANDOC.md
+      1 related
+-- CLI.RIPGREP.md
+      1 oriented
+      1 related
+      1 speed
+-- CLI.SED.md
+      1 qed
+      1 related
+      7 sed
+     10 Sed
+      1 SED
+-- CLI.TRACEXEC.md
+      1 piped
+      1 related
+=== BULLET COUNTS ===
+-- CLI.COREUTILS.md: 12 bullets
+-- CLI.PANDOC.md: 13 bullets
+-- CLI.RIPGREP.md: 13 bullets
+-- CLI.SED.md: 12 bullets
+-- CLI.TRACEXEC.md: 13 bullets
+# OUT_LINES: 33
+# OUT_BYTES: 588
+# ERR_LINES: 0
+# SHA: e5c271ef38232f10e30cb72dc5ea66e975c9b356967f4d20f1c0d70182e1f363

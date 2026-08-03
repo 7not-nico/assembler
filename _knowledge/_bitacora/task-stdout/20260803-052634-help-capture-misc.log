@@ -1,0 +1,90 @@
+# CMD: bash -c wget\ --help\ 2\>\&1\ \|\ head\ -30\;\ echo\ \"===JQ===\"\;\ jq\ --help\ 2\>\&1\ \|\ head\ -30\;\ echo\ \"===TIMEOUT===\"\;\ timeout\ --help\ 2\>\&1\ \|\ head\ -15 
+# DATE: 2026-08-03T05:26:34-06:00
+# DUR: 28ms
+# CWD: /home/eddyr/assembler/_knowledge/rust-docs/script
+# --------------------
+33606<tracer>: "/usr/bin/bash" ["bash", "-c", "wget --help 2>&1 | head -30; echo \"===JQ===\"; jq --help 2>&1 | head -30; echo \"===TIMEOUT===\"; timeout --help 2>&1 | head -15"] fd []
+33608<bash>: "/usr/bin/head" ["head", "-30"] fd [stdin="pipe:[140602]", ]
+33607<bash>: "/usr/bin/wget" ["wget", "--help"] fd [stdout="pipe:[140602]", stderr="pipe:[140602]", ]
+GNU Wget 1.25.0, a non-interactive network retriever.
+Usage: wget [OPTION]... [URL]...
+
+Mandatory arguments to long options are mandatory for short options too.
+
+Startup:
+  -V,  --version                   display the version of Wget and exit
+  -h,  --help                      print this help
+  -b,  --background                go to background after startup
+  -e,  --execute=COMMAND           execute a `.wgetrc'-style command
+
+Logging and input file:
+  -o,  --output-file=FILE          log messages to FILE
+  -a,  --append-output=FILE        append messages to FILE
+  -d,  --debug                     print lots of debugging information
+  -q,  --quiet                     quiet (no output)
+  -v,  --verbose                   be verbose (this is the default)
+  -nv, --no-verbose                turn off verboseness, without being quiet
+       --report-speed=TYPE         output bandwidth as TYPE.  TYPE can be bits
+  -i,  --input-file=FILE           download URLs found in local or external FILE
+  -F,  --force-html                treat input file as HTML
+  -B,  --base=URL                  resolves HTML input-file links (-i -F)
+                                     relative to URL
+       --config=FILE               specify config file to use
+       --no-config                 do not read any config file
+       --rejected-log=FILE         log reasons for URL rejection to FILE
+
+Download:
+  -t,  --tries=NUMBER              set number of retries to NUMBER (0 unlimits)
+       --retry-connrefused         retry even if connection is refused
+===JQ===
+33609<bash>: "/usr/bin/jq" ["jq", "--help"] fd [stdout="pipe:[140603]", stderr="pipe:[140603]", ]
+33610<bash>: "/usr/bin/head" ["head", "-30"] fd [stdin="pipe:[140603]", ]
+jq - commandline JSON processor [version 1.8.2]
+
+Usage:	jq [options] <jq filter> [file...]
+	jq [options] --args <jq filter> [strings...]
+	jq [options] --jsonargs <jq filter> [JSON_TEXTS...]
+
+jq is a tool for processing JSON inputs, applying the given filter to
+its JSON text inputs and producing the filter's results as JSON on
+standard output.
+
+The simplest filter is ., which copies jq's input to its output
+unmodified except for formatting. For more advanced filters see
+the jq(1) manpage ("man jq") and/or https://jqlang.org/.
+
+Example:
+
+	$ echo '{"foo": 0}' | jq .
+	{
+	  "foo": 0
+	}
+
+Command options:
+  -n, --null-input          use `null` as the single input value;
+  -R, --raw-input           read each line as string instead of JSON;
+  -s, --slurp               read all inputs into an array and use it as
+                            the single input value;
+  -c, --compact-output      compact instead of pretty-printed output;
+  -r, --raw-output          output strings without escapes and quotes;
+      --raw-output0         implies -r and output NUL after each output;
+  -j, --join-output         implies -r and output without newline after
+===TIMEOUT===
+33611<bash>: "/usr/bin/timeout" ["timeout", "--help"] fd [stdout="pipe:[140604]", stderr="pipe:[140604]", ]
+33612<bash>: "/usr/bin/head" ["head", "-15"] fd [stdin="pipe:[140604]", ]
+Usage: timeout [OPTION]... DURATION COMMAND [ARG]...
+Start COMMAND, and kill it if still running after DURATION.
+
+Mandatory arguments to long options are mandatory for short options too.
+  ]8;;https://www.gnu.org/software/coreutils/manual/coreutils.html#timeout-f\[1m-f, --foreground[0m]8;;\
+         when not running timeout directly from a shell prompt,
+         allow COMMAND to read from the TTY and get TTY signals;
+         in this mode, children of COMMAND will not be timed out
+  ]8;;https://www.gnu.org/software/coreutils/manual/coreutils.html#timeout-k\[1m-k, --kill-after=DURATION[0m]8;;\
+         also send a KILL signal if COMMAND is still running
+         this long after the initial signal was sent
+  ]8;;https://www.gnu.org/software/coreutils/manual/coreutils.html#timeout-p\[1m-p, --preserve-status[0m]8;;\
+         exit with the same status as COMMAND,
+         even when the command times out
+  ]8;;https://www.gnu.org/software/coreutils/manual/coreutils.html#timeout-s\[1m-s, --signal=SIGNAL[0m]8;;\
+# exit: 0
