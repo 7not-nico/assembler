@@ -1,0 +1,148 @@
+# CMD: bash -c $'\ngit add .opencode/_bitacora/task-report/20260802-180637-git-push-mgba-session2.md .opencode/_bitacora/task-stdout/20260802-180622-git2-add.log .opencode/_bitacora/task-stdout/20260802-180628-git2-commit-push.log .opencode/_bitacora/task-stdout/20260802-180636-git2-close.log && git commit -m "bitacora: git-push-mgba-session2 logs and report" && git push && git log --oneline -3' 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T18:07:37-06:00
+# PID: 292286
+# DUR: 1770ms
+# exit: 0
+# GIT: assembler@a0d1dc3
+# BRANCH: main
+# SESSION: ed4e1291
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c $'\ngit add .opencode/_bitacora/task-report/20260802-180637-git-push-mgba-session2.md .opencode/_bitacora/task-stdout/20260802-180622-git2-add.log .opencode/_bitacora/task-stdout/20260802-180628-git2-commit-push.log .opencode/_bitacora/task-stdout/20260802-180636-git2-close.log && git commit -m "bitacora: git-push-mgba-session2 logs and report" && git push && git log --oneline -3' 
+# CWD: /home/eddyr/assembler
+# --------------------
+[main 85f0384] bitacora: git-push-mgba-session2 logs and report
+ 4 files changed, 487 insertions(+)
+ create mode 100644 .opencode/_bitacora/task-report/20260802-180637-git-push-mgba-session2.md
+ create mode 100644 .opencode/_bitacora/task-stdout/20260802-180622-git2-add.log
+ create mode 100644 .opencode/_bitacora/task-stdout/20260802-180628-git2-commit-push.log
+ create mode 100644 .opencode/_bitacora/task-stdout/20260802-180636-git2-close.log
+85f0384 bitacora: git-push-mgba-session2 logs and report
+a0d1dc3 bitacora: mgba session2 records — medabots, chain run, diagnostics, cleanup
+8995132 bitacora: git-push session logs and report
+To https://github.com/7not-nico/assembler.git
+   a0d1dc3..85f0384  main -> main
+# OUT_LINES: 9
+# OUT_BYTES: 641
+# ERR_LINES: 2
+# EXEC: 292286|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh git2-finalize -- bash -c 
+# EXEC: 292287|/usr/bin/date|date +%s%N
+# EXEC: 292290|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 292293|/usr/bin/git|git remote get-url origin
+# EXEC: 292291|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 292294|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 292296|/usr/bin/git|git branch --show-current
+# EXEC: 292299|/usr/bin/head|head -1
+# EXEC: 292298|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 292300|/usr/bin/tr|tr -d \n
+# EXEC: 292301|/usr/bin/bun|bun --version
+# EXEC: 292304|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 292305|/usr/bin/head|head -1
+# EXEC: 292306|/usr/bin/tr|tr -d \n
+# EXEC: 292307|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 292309|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 292310|/usr/bin/head|head -1
+# EXEC: 292311|/usr/bin/tr|tr -d \n
+# EXEC: 292312|/usr/bin/python3|python3 --version
+# EXEC: 292314|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 292315|/usr/bin/head|head -1
+# EXEC: 292316|/usr/bin/tr|tr -d \n
+# EXEC: 292317|/usr/bin/ruby|ruby --version
+# EXEC: 292322|/usr/bin/tr|tr -d \n
+# EXEC: 292320|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 292321|/usr/bin/head|head -1
+# EXEC: 292323|/usr/bin/rustc|rustc --version
+# EXEC: 292326|/usr/bin/timeout|timeout 2 go version
+# EXEC: 292327|/usr/bin/head|head -1
+# EXEC: 292328|/usr/bin/tr|tr -d \n
+# EXEC: 292329|/usr/bin/go|go version
+# EXEC: 292335|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 292336|/usr/bin/head|head -1
+# EXEC: 292337|/usr/bin/tr|tr -d \n
+# EXEC: 292338|/usr/bin/git|git --version
+# EXEC: 292340|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 292341|/usr/bin/head|head -1
+# EXEC: 292342|/usr/bin/tr|tr -d \n
+# EXEC: 292343|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 292345|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 292346|/usr/bin/head|head -1
+# EXEC: 292347|/usr/bin/tr|tr -d \n
+# EXEC: 292348|/usr/bin/date|date --version
+# EXEC: 292350|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 292351|/usr/bin/head|head -1
+# EXEC: 292352|/usr/bin/tr|tr -d \n
+# EXEC: 292353|/usr/bin/wc|wc --version
+# EXEC: 292355|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 292356|/usr/bin/head|head -1
+# EXEC: 292357|/usr/bin/tr|tr -d \n
+# EXEC: 292358|/usr/bin/cat|cat --version
+# EXEC: 292360|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 292361|/usr/bin/head|head -1
+# EXEC: 292362|/usr/bin/tr|tr -d \n
+# EXEC: 292363|/usr/bin/tee|tee --version
+# EXEC: 292365|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 292366|/usr/bin/head|head -1
+# EXEC: 292367|/usr/bin/tr|tr -d \n
+# EXEC: 292368|/usr/bin/mktemp|mktemp --version
+# EXEC: 292370|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 292371|/usr/bin/head|head -1
+# EXEC: 292372|/usr/bin/tr|tr -d \n
+# EXEC: 292373|/usr/bin/rm|rm --version
+# EXEC: 292375|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 292376|/usr/bin/head|head -1
+# EXEC: 292377|/usr/bin/tr|tr -d \n
+# EXEC: 292378|/usr/bin/timeout|timeout --version
+# EXEC: 292380|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 292381|/usr/bin/head|head -1
+# EXEC: 292382|/usr/bin/tr|tr -d \n
+# EXEC: 292383|/usr/bin/tr|tr --version
+# EXEC: 292385|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 292386|/usr/bin/head|head -1
+# EXEC: 292387|/usr/bin/tr|tr -d \n
+# EXEC: 292388|/usr/bin/head|head --version
+# EXEC: 292390|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 292391|/usr/bin/head|head -1
+# EXEC: 292392|/usr/bin/tr|tr -d \n
+# EXEC: 292393|/usr/bin/cut|cut --version
+# EXEC: 292395|/usr/bin/date|date +%s%N
+# EXEC: 292396|/usr/bin/sha256sum|sha256sum
+# EXEC: 292397|/usr/bin/cut|cut -c1-8
+# EXEC: 292399|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180736-git2-finalize.log
+# EXEC: 292400|/usr/bin/date|date -Is
+# EXEC: 292401|/usr/bin/mktemp|mktemp
+# EXEC: 292402|/usr/bin/mktemp|mktemp
+# EXEC: 292403|/usr/bin/bash|bash -c 
+# EXEC: 292404|/usr/bin/git|git add .opencode/_bitacora/task-report/20260802-180637-git-push-mgba-session2.md .opencode/_bitacora/task-stdout/20260802-180622-git2-add.log .opencode/_bitacora/task-stdout/20260802-180628-git2-commit-push.log .opencode/_bitacora/task-stdout/20260802-180636-git2-close.log
+# EXEC: 292411|/usr/bin/git|git commit -m bitacora: git-push-mgba-session2 logs and report
+# EXEC: 292424|/usr/lib/git-core/git|/usr/lib/git-core/git maintenance run --auto --no-quiet --detach
+# EXEC: 292426|/usr/bin/git|git push
+# EXEC: 292427|/usr/lib/git-core/git|/usr/lib/git-core/git remote-https origin https://github.com/7not-nico/assembler.git
+# EXEC: 292428|/usr/lib/git-core/git-remote-https|/usr/lib/git-core/git-remote-https origin https://github.com/7not-nico/assembler.git
+# EXEC: 292431|/bin/sh|/bin/sh -c /usr/bin/gh auth git-credential get /usr/bin/gh auth git-credential get
+# EXEC: 292431|/usr/bin/gh|/usr/bin/gh auth git-credential get
+# EXEC: 292443|/bin/sh|/bin/sh -c /usr/bin/gh auth git-credential store /usr/bin/gh auth git-credential store
+# EXEC: 292443|/usr/bin/gh|/usr/bin/gh auth git-credential store
+# EXEC: 292453|/usr/lib/git-core/git|/usr/lib/git-core/git send-pack --stateless-rpc --helper-status --thin --no-progress https://github.com/7not-nico/assembler.git/ --stdin
+# EXEC: 292455|/usr/lib/git-core/git|/usr/lib/git-core/git pack-objects --all-progress-implied --revs --stdout --thin --delta-base-offset -q
+# EXEC: 292403|/usr/bin/git|git log --oneline -3
+# EXEC: 292458|/usr/bin/wc|wc -l
+# EXEC: 292459|/usr/bin/tr|tr -d  
+# EXEC: 292461|/usr/bin/wc|wc -c
+# EXEC: 292462|/usr/bin/tr|tr -d  
+# EXEC: 292464|/usr/bin/wc|wc -l
+# EXEC: 292465|/usr/bin/tr|tr -d  
+# EXEC: 292466|/usr/bin/date|date +%s%N
+# EXEC: 292468|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180736-git2-finalize.log
+# EXEC: 292470|/usr/bin/cat|cat /tmp/tmp.6cZ7VNVs0I
+# EXEC: 292471|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180736-git2-finalize.log
+# EXEC: 292472|/usr/bin/cat|cat /tmp/tmp.rwrewaTLIW
+# EXEC: 292473|/usr/bin/cat|cat /tmp/tmp.rwrewaTLIW
+# EXEC: 292474|/usr/bin/rm|rm -f /tmp/tmp.6cZ7VNVs0I /tmp/tmp.rwrewaTLIW
+# EXEC: 292476|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180736-git2-finalize.log
+# EXEC: 292478|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180736-git2-finalize.log
+# EXEC: 292480|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180736-git2-finalize.log
+# PROGS: sh=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 gh=gh version 2.97.0 (2026-07-31) git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 git=git version 2.55.0 git-remote-https=(no --version)
+# EXEC_COUNT: 116
+# SHA: 1e533870f6534a7025d6d123803a2e44af769e4213543154f9fd13aa83328031
+# exit: 0
