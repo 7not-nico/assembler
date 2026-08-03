@@ -11,3 +11,5 @@
 - [x] verify final counts (roms/ = 40, AGENTS.md = 40)
 - [x] probe the 10 recovered ROMs (title + size content evidence)
 - [x] append verification table to reconciliation report
+
+Status: completed (2026-08-02)

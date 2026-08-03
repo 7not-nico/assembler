@@ -7,3 +7,5 @@
 - [x] prepare → slugify into roms/
 - [x] launch detached snes9x + health-check process
 - [x] write task report
+
+Status: completed (2026-08-02)

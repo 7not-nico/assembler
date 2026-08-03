@@ -11,3 +11,5 @@ Yu-Gi-Oh! Ultimate Masters: World Championship Tournament 2006 acquisition for t
 - [x] Qalc quantitative claims (size ↔ MiB ↔ Mbit)
 - [x] Update `precept/acquire-gb-rom.md` Instance section — record the acquisition
 - [x] Write the session report `_codex/_bitacora/task-report/20260802-151814-mgba-yugioh-acquire.md`
+
+Status: completed (2026-08-02)

@@ -11,3 +11,5 @@ Medabots acquisition for the mGBA dive (Natsume, 2002, GBA). Follows the establi
 - [x] Qalc quantitative claims (size ↔ MiB ↔ Mbit)
 - [x] Update `precept/acquire-gb-rom.md` Instance section — record the acquisition
 - [x] Write the session report `_codex/_bitacora/task-report/20260802-173402-mgba-medabots-acquire.md`
+
+Status: completed (2026-08-02)

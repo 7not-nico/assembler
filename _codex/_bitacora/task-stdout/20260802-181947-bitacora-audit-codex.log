@@ -1,0 +1,27 @@
+# CMD: bash -c $'\necho "=== _codex todos (open/closed) ==="\nfor t in _codex/_bitacora/task-todo/*.md; do\n  st=$(rg -m1 "^Status:" "$t" 2>/dev/null | sed "s/^Status: *//")\n  printf "%-45s [%s]\\n" "$(basename "$t")" "${st:-open-no-status}"\ndone\necho "=== todos without reports (today) ==="\nfor t in _codex/_bitacora/task-todo/20260802-*.md; do\n  b=$(basename "$t" .md)\n  r="_codex/_bitacora/task-report/$b.md"\n  [ -f "$r" ] || echo "MISSING report for $b"\ndone' 
+# DATE: 2026-08-02T18:19:47-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+=== _codex todos (open/closed) ===
+20260731-093638-snes9x-compile.md             [in progress (2026-07-31 19:10)]
+20260731-215500-precedence-mcp-first.md       [open-no-status]
+20260731-215607-twinbee-2-acquire.md          [open-no-status]
+20260731-220000-ninja-warrior-acquire.md      [open-no-status]
+20260731-220443-un-squadron-acquire.md        [open-no-status]
+20260731-220916-chrono-trigger-acquire.md     [open-no-status]
+20260731-222222-precedence-chain-run.md       [open-no-status]
+20260731-234226-mgba-dive.md                  [open-no-status]
+20260801-000809-mgba-chain-run.md             [open-no-status]
+20260802-063915-codex-templates-improve.md    [open-no-status]
+20260802-144908-mgba-agents-align.md          [open-no-status]
+20260802-145911-mgba-golf-acquire.md          [open-no-status]
+20260802-150805-mgba-sonic-acquire.md         [open-no-status]
+20260802-151814-mgba-yugioh-acquire.md        [open-no-status]
+20260802-173402-mgba-medabots-acquire.md      [open-no-status]
+20260802-174300-mgba-chain-run.md             [open-no-status]
+20260802-175112-mgba-diagnostics-scripts.md   [open-no-status]
+20260802-180157-mgba-roms-cleanup.md          [open-no-status]
+20260802-181121-mgba-record-fixes.md          [open-no-status]
+=== todos without reports (today) ===
+MISSING report for 20260802-174300-mgba-chain-run
+# exit: 0

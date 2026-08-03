@@ -6,3 +6,5 @@
 - [x] update `snes9x-repo/invariant/precedence-chain.md` (formal chain)
 - [x] update `_templates/dive-agents-template.md` (template chain)
 - [x] grep verify: no stale invariant-first chain strings (except historical report)
+
+Status: completed (2026-08-02)

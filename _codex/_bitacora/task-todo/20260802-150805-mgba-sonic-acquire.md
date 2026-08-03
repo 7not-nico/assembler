@@ -11,3 +11,5 @@ Sonic Advance 3 acquisition for the mGBA dive (Sonic Team, 2004, GBA, 128 Mbit r
 - [x] Update `precept/acquire-gb-rom.md` Instance section — record the acquisition
 - [x] Write the session report `_codex/_bitacora/task-report/20260802-150805-mgba-sonic-acquire.md`
 - [x] Swap cleanup — kill mod instance, remove mod ROM/zip/sav (user chose retail USA)
+
+Status: completed (2026-08-02)

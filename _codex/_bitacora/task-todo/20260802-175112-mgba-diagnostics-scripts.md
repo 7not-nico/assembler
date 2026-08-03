@@ -10,3 +10,5 @@ Add atomic bash diagnostic scripts to the mGBA dive (`scripts/`) that emit riche
 - [x] Test each script against real dive data (logged; inspect/survey/probe/check)
 - [x] Update the dive AGENTS.md scripts list (7 → 11)
 - [x] Write the session report `_codex/_bitacora/task-report/20260802-175112-mgba-diagnostics-scripts.md`
+
+Status: completed (2026-08-02)

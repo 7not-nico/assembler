@@ -1,0 +1,26 @@
+# CMD: bash -c $'\ncd _codex/_bitacora/task-todo\nDATE="2026-08-02"\nSTAMPED=0\nSKIPPED=0\nfor t in *.md; do\n  # already has a Status line?\n  if rg -q "^Status:" "$t"; then SKIPPED=$((SKIPPED+1)); echo "SKIP status-exists $t"; continue; fi\n  # zero unchecked items?\n  if rg -q "^- \\[ \\]" "$t"; then SKIPPED=$((SKIPPED+1)); echo "SKIP unchecked $t"; continue; fi\n  printf "\\nStatus: completed (%s)\\n" "$DATE" >> "$t"\n  STAMPED=$((STAMPED+1))\n  echo "STAMP $t"\ndone\necho "RESULT stamped=$STAMPED skipped=$SKIPPED"' 
+# DATE: 2026-08-02T18:30:33-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+SKIP status-exists 20260731-093638-snes9x-compile.md
+STAMP 20260731-215500-precedence-mcp-first.md
+STAMP 20260731-215607-twinbee-2-acquire.md
+STAMP 20260731-220000-ninja-warrior-acquire.md
+STAMP 20260731-220443-un-squadron-acquire.md
+STAMP 20260731-220916-chrono-trigger-acquire.md
+STAMP 20260731-222222-precedence-chain-run.md
+SKIP unchecked 20260731-234226-mgba-dive.md
+SKIP unchecked 20260801-000809-mgba-chain-run.md
+SKIP unchecked 20260802-063915-codex-templates-improve.md
+STAMP 20260802-144908-mgba-agents-align.md
+STAMP 20260802-145911-mgba-golf-acquire.md
+STAMP 20260802-150805-mgba-sonic-acquire.md
+STAMP 20260802-151814-mgba-yugioh-acquire.md
+STAMP 20260802-173402-mgba-medabots-acquire.md
+SKIP unchecked 20260802-174300-mgba-chain-run.md
+STAMP 20260802-175112-mgba-diagnostics-scripts.md
+STAMP 20260802-180157-mgba-roms-cleanup.md
+STAMP 20260802-181121-mgba-record-fixes.md
+SKIP unchecked 20260802-183026-bitacora-status-sweep.md
+RESULT stamped=14 skipped=6
+# exit: 0

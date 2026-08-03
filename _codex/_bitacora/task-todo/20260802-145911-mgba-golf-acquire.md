@@ -22,3 +22,5 @@
 ## Open edges (future todos)
 
 - None expected
+
+Status: completed (2026-08-02)

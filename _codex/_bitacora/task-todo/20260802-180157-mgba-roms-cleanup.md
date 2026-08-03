@@ -9,3 +9,5 @@ Remove the unslugged duplicate ROMs surfaced by `survey-roms.sh` (open edge from
 - [x] Re-run `survey-roms.sh` — duplicates gone, NONSLUG clean (logged)
 - [x] Re-run `probe-headers-test.sh` — real-ROM pass count after the prism twin removal (logged)
 - [x] Write the session report `_codex/_bitacora/task-report/20260802-180157-mgba-roms-cleanup.md`
+
+Status: completed (2026-08-02)

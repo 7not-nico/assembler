@@ -16,3 +16,5 @@
 ## Open edges (future todos)
 
 - None expected — dive content stays; wording only
+
+Status: completed (2026-08-02)
