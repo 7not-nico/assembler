@@ -1,10 +1,14 @@
 # AMANDA assembler — Agent Instructions
 
+## Identity
+
+This file is the agent instruction file for the assembler workspace root. It instantiates the delegation environment per `IDENTITY.AGENT`; it states only final absolute states per `RUL.AGENTS.STATE`; it stands self-contained per `SPEC.AGENTS.SELF.CONTAINED`.
+
 ## System
 
 The assembler runs on Bun + TypeScript, executing source directly. Deps live in `.opencode/package.json`. The database uses `bun:sqlite`; migrations add columns (`ALTER TABLE ADD COLUMN`); existing tables and rows persist. `patlib.db` lives under `.opencode/`; subprojects keep their own `.db`. The directory runs as a git repository at `github.com/7not-nico/assembler`; `.gitignore` excludes runtime artifacts, codex clones, and binary media.
 
-Projects with their own AGENTS.md delegate before work inside (`_knowledge/rust-coding/`, `_knowledge/hypr-docs/`, `_codex/`, `.opencode/_scripts/`, `.opencode/_shell/`); `_atelier/` holds plain project folders whose subprojects carry their own AGENTS.md. Knowledge projects follow the obligatory chain `precept/ → procedure/ → note/ → bitacora/ → glossary/ → reference/ → fixtures/`; new ones scaffold with `bash _knowledge/_templates/scaffold-knowledge.sh {name} "{domain}" [--with-skills]` (13-layer chain). Session reports land in `_knowledge/_templates/report/`.
+Subdirectories with their own agent instructions delegate before work inside them (per `RUL.PROJECT.DELEGATION`); `_atelier/` holds plain project folders whose subprojects delegate the same way. Knowledge projects follow the obligatory chain `precept/ → procedure/ → note/ → bitacora/ → glossary/ → reference/ → fixtures/`; new ones scaffold with `bash _knowledge/_templates/scaffold-knowledge.sh {name} "{domain}" [--with-skills]` (13-layer chain). Session reports land in `_knowledge/_templates/report/`.
 
 Task reference: `.opencode/_bitacora/task-reference/query-patlib.md` (query flags), `entity-schema.md` (schema). Flow docs: `.opencode/_scripts/dataflow/semantic-engine.md`.
 
@@ -40,3 +44,7 @@ Root `.opencode/tools/` hosts Shebang CLI tools (semantic engine), importing `..
 | `.opencode/entities/terms/` | `{PREFIX}.{DOMAIN}.{SUBJECT}.md` | 3-segment uppercase dotted ID. Terms. Backmatter. |
 | `.opencode/commands/` | `yamls/{verb}-{domain}.yaml` | Verb-domain YAML registry. |
 | `.opencode/entities/maxims/` | `{PREFIX}.{DOMAIN}.{SUBJECT}.md` | 3-segment uppercase dotted ID. Maxims. Frontmatter. |
+
+## Delegation
+
+This project owns the assembler workspace: root tooling, entity conventions, bitacora records, and the semantic engine.
