@@ -1,0 +1,39 @@
+# CMD: bash -c git\ -C\ _codex/mgba-repo/mgba\ diff\ src/script/engines/lua.c\ \|\ head\ -40\ \&\&\ echo\ \"===\ CMake\ TEST_FILES\ ===\"\ \&\&\ git\ -C\ _codex/mgba-repo/mgba\ diff\ src/gb/CMakeLists.txt 
+# DATE: 2026-08-02T18:11:28-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+diff --git i/src/script/engines/lua.c w/src/script/engines/lua.c
+index b405705..592d898 100644
+--- i/src/script/engines/lua.c
++++ w/src/script/engines/lua.c
+@@ -1377,7 +1377,7 @@ int _luaGetTable(lua_State* lua) {
+ 	char key[MAX_KEY_SIZE];
+ 	int type = lua_type(lua, -1);
+ 	const char* keyPtr = NULL;
+-	int64_t intKey;
++	int64_t intKey = 0;
+ 	switch (type) {
+ 	case LUA_TNUMBER:
+ 		intKey = lua_tointeger(lua, -1);
+=== CMake TEST_FILES ===
+diff --git i/src/gb/CMakeLists.txt w/src/gb/CMakeLists.txt
+index a02ab37..9623796 100644
+--- i/src/gb/CMakeLists.txt
++++ w/src/gb/CMakeLists.txt
+@@ -35,11 +35,14 @@ set(DEBUGGER_FILES
+ 	debugger/symbols.c)
+ 
+ set(TEST_FILES
++	test/banking.c
+ 	test/core.c
+ 	test/gbx.c
+ 	test/mbc.c
+ 	test/memory.c
+-	test/rtc.c)
++	test/overrides.c
++	test/rtc.c
++	test/unlicensed.c)
+ 
+ source_group("GB board" FILES ${SOURCE_FILES})
+ source_group("GB extras" FILES ${EXTRA_FILES} ${SIO_FILES})
+# exit: 0

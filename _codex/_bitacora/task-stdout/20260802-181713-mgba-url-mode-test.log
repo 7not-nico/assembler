@@ -1,0 +1,12 @@
+# CMD: bash _codex/mgba-repo/scripts/browse-romsfun.sh https://romsfun.com/roms/game-boy-advance/sonic-advance-3.html game-boy-advance 60 
+# DATE: 2026-08-02T18:17:13-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+OPEN https://romsfun.com/roms/game-boy-advance/sonic-advance-3.html
+DL https://romsfun.com/download/sonic-advance-3-3797
+VARIANTS:
+1 https://romsfun.com/download/sonic-advance-3-3797/1 | Sonic Advance 3 (Europe) (En,Ja,Fr,De,Es,It) (Beta)
+2 https://romsfun.com/download/sonic-advance-3-3797/2 | Sonic Advance 3 (Europe) (En,Ja,Fr,De,Es,It)
+3 https://romsfun.com/download/sonic-advance-3-3797/3 | Sonic Advance 3 (Japan) (En,Ja,Fr,De,Es,It)
+4 https://romsfun.com/download/sonic-advance-3-3797/4 | Sonic Advance 3 (USA) (En,Ja,Fr,De,Es,It)
+# exit: 0
