@@ -1,0 +1,39 @@
+# CMD: bash -c cd\ /home/eddyr/assembler\ \&\&\ echo\ \"===\ archived\ r6\ location\ ===\"\;\ ls\ -la\ .opencode/_scripts/.archive/r6-patlib-sync.rb\ 2\>/dev/null\;\ echo\ \"===\ patlib\ sync\ references\ outside\ .archive\ ===\"\;\ grep\ -rl\ \"patlib.db\"\ --include=\"\*.ts\"\ --include=\"\*.sh\"\ --include=\"\*.pl\"\ .opencode/tools\ .opencode/_scripts\ 2\>/dev/null\ \|\ head\ -8\;\ echo\ \"===\ patlib\ db\ tools\ ===\"\;\ ls\ .opencode/tools/\*.ts\ 2\>/dev/null\ \|\ head\ -12\;\ echo\ \"===\ does\ _scripts\ AGENTS.md\ audit\ pass\ now\ ===\"\;\ bash\ .opencode/_scripts/audit-format-compliance.sh\ --kind\ agents\ --root\ /home/eddyr/assembler\ 2\>\&1\ \|\ tail\ -1 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T16:57:32-06:00
+# PID: 472950
+# DUR: 859ms
+# exit: 0
+# GIT: assembler@2c214e2
+# BRANCH: main
+# SESSION: 6eb67369
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cd\ /home/eddyr/assembler\ \&\&\ echo\ \"===\ archived\ r6\ location\ ===\"\;\ ls\ -la\ .opencode/_scripts/.archive/r6-patlib-sync.rb\ 2\>/dev/null\;\ echo\ \"===\ patlib\ sync\ references\ outside\ .archive\ ===\"\;\ grep\ -rl\ \"patlib.db\"\ --include=\"\*.ts\"\ --include=\"\*.sh\"\ --include=\"\*.pl\"\ .opencode/tools\ .opencode/_scripts\ 2\>/dev/null\ \|\ head\ -8\;\ echo\ \"===\ patlib\ db\ tools\ ===\"\;\ ls\ .opencode/tools/\*.ts\ 2\>/dev/null\ \|\ head\ -12\;\ echo\ \"===\ does\ _scripts\ AGENTS.md\ audit\ pass\ now\ ===\"\;\ bash\ .opencode/_scripts/audit-format-compliance.sh\ --kind\ agents\ --root\ /home/eddyr/assembler\ 2\>\&1\ \|\ tail\ -1 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== archived r6 location ===
+-rw-r--r-- 1 eddyr eddyr 12095 Aug  3 13:32 .opencode/_scripts/.archive/r6-patlib-sync.rb
+=== patlib sync references outside .archive ===
+.opencode/tools/_disabled/audit-commands.ts
+.opencode/tools/_disabled/audit-patterns.ts
+.opencode/tools/_disabled/audit-rules.ts
+.opencode/tools/_disabled/audit-terms.ts
+.opencode/tools/_disabled/write-sync.ts
+.opencode/tools/embed-entity.ts
+.opencode/tools/semantic-drift.ts
+.opencode/tools/semantic-embed.ts
+=== patlib db tools ===
+.opencode/tools/embed-entity.ts
+.opencode/tools/semantic-drift.ts
+.opencode/tools/semantic-embed.ts
+.opencode/tools/semantic-eval.ts
+.opencode/tools/semantic-purge.ts
+.opencode/tools/semantic-search.ts
+.opencode/tools/semantic-stats.ts
+=== does _scripts AGENTS.md audit pass now ===
+PASS=45 FAIL=0
+# OUT_LINES: 21
+# OUT_BYTES: 799
+# ERR_LINES: 0
+# SHA: 30802067eebb67984bdeea1d48a623f4c999b56f7c86872a2052b8deb820b78b

@@ -1,0 +1,42 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/.opencode/_scripts\ \&\&\ echo\ \"===\ survey\ ruby\ files\ \(sample\)\ ===\"\;\ find\ survey\ -name\ \"\*.rb\"\ \|\ head\ -8\;\ echo\ \"===\ survey\ total\ files\ by\ type\ ===\"\;\ find\ survey\ -type\ f\ \|\ sed\ \"s/.\*\\.//\"\ \|\ sort\ \|\ uniq\ -c\ \|\ sort\ -rn\ \|\ head\ -8\;\ echo\ \"===\ fixture\ ruby\ ===\"\;\ find\ fixtures\ -name\ \"\*.rb\"\;\ echo\ \"===\ active\ top-level\ non-rb\ scripts\ ===\"\;\ ls\ -1\ \*.sh\ \*.pl\ 2\>/dev/null\;\ echo\ \"===\ rs/_golib/_bin\ state\ ===\"\;\ ls\ -la\ rs\ _golib/bin/assembler-cli\ _bin/target/release/assembler-cli\ 2\>/dev/null 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T16:57:14-06:00
+# PID: 472536
+# DUR: 75ms
+# exit: 0
+# GIT: assembler@2c214e2
+# BRANCH: main
+# SESSION: 9afb0ee9
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cd\ /home/eddyr/assembler/.opencode/_scripts\ \&\&\ echo\ \"===\ survey\ ruby\ files\ \(sample\)\ ===\"\;\ find\ survey\ -name\ \"\*.rb\"\ \|\ head\ -8\;\ echo\ \"===\ survey\ total\ files\ by\ type\ ===\"\;\ find\ survey\ -type\ f\ \|\ sed\ \"s/.\*\\.//\"\ \|\ sort\ \|\ uniq\ -c\ \|\ sort\ -rn\ \|\ head\ -8\;\ echo\ \"===\ fixture\ ruby\ ===\"\;\ find\ fixtures\ -name\ \"\*.rb\"\;\ echo\ \"===\ active\ top-level\ non-rb\ scripts\ ===\"\;\ ls\ -1\ \*.sh\ \*.pl\ 2\>/dev/null\;\ echo\ \"===\ rs/_golib/_bin\ state\ ===\"\;\ ls\ -la\ rs\ _golib/bin/assembler-cli\ _bin/target/release/assembler-cli\ 2\>/dev/null 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== survey ruby files (sample) ===
+survey/identities-migration/m01-check-readiness.rb
+survey/identities-migration/m02-analyze-protocol-identities.rb
+survey/identities-migration/m03-impact-analysis.rb
+survey/identities-migration/m04-validate-ids.rb
+survey/identities-extraction/e01-read-protocol-files.rb
+survey/identities-extraction/e02-generate-identities.rb
+survey/identities-extraction/e03-verify-extraction.rb
+survey/identities-extraction/e04-summary-report.rb
+=== survey total files by type ===
+     65 rb
+      3 sh
+=== fixture ruby ===
+fixtures/fixture-ruby-test.rb
+=== active top-level non-rb scripts ===
+audit-format-compliance.sh
+convert-skill-format.pl
+embed-diagnose.pl
+migrate-skill-metadata.sh
+strip-inline-bold.pl
+=== rs/_golib/_bin state ===
+-rwxr-xr-x 2 eddyr eddyr 4029952 Aug  1 13:58 _bin/target/release/assembler-cli
+-rwxr-xr-x 1 eddyr eddyr 3256275 Aug  1 18:10 _golib/bin/assembler-cli
+-rwxr-xr-x 1 eddyr eddyr     280 Aug  2 07:15 rs
+# OUT_LINES: 24
+# OUT_BYTES: 958
+# ERR_LINES: 0
+# SHA: c10d3774e8cdc29a84ccd29190df8a54c061ea2ae91cf78e125793343f7c01a0
