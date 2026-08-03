@@ -1,0 +1,1621 @@
+# CMD: bash .opencode/_bitacora/bitacora-find.sh bitacora-workflow-run 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-02T19:06:17-06:00
+# PID: 352803
+# DUR: 4400ms
+# exit: 0
+# GIT: assembler@d818354
+# BRANCH: main
+# SESSION: 13a85613
+# CLI: bash 5.3.15(1)-release
+# ARGS: .opencode/_bitacora/bitacora-find.sh bitacora-workflow-run 
+# CWD: /home/eddyr/assembler
+# --------------------
+task-report    20260802-190602-bitacora-workflow-run.md  [2026-08-02 20260802-190602]
+task-stdout    20260802-190420-bitacora-run-instantiate.log
+task-stdout    20260802-190551-bitacora-run-execute.log
+task-stdout    20260802-190602-bitacora-run-close.log
+task-stdout    20260802-190616-bitacora-run-verify.log
+task-todo      2026-08-02--bitacora-workflow-run.md  [completed (2026-08-02)]
+# OUT_LINES: 6
+# OUT_BYTES: 389
+# ERR_LINES: 0
+# EXEC: 352803|/usr/bin/bash|bash .opencode/_bitacora/bitacora-log.sh bitacora-run-verify -- bash .opencode/_bitacora/bitacora-find.sh bitacora-workflow-run
+# EXEC: 352804|/usr/bin/date|date +%s%N
+# EXEC: 352807|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 352810|/usr/bin/git|git remote get-url origin
+# EXEC: 352808|/usr/bin/basename|basename https://github.com/7not-nico/assembler.git
+# EXEC: 352811|/usr/bin/git|git rev-parse --short HEAD
+# EXEC: 352813|/usr/bin/git|git branch --show-current
+# EXEC: 352815|/usr/bin/timeout|timeout 2 bun --version
+# EXEC: 352816|/usr/bin/head|head -1
+# EXEC: 352817|/usr/bin/tr|tr -d \n
+# EXEC: 352818|/usr/bin/bun|bun --version
+# EXEC: 352821|/usr/bin/head|head -1
+# EXEC: 352820|/usr/bin/timeout|timeout 2 node --version
+# EXEC: 352822|/usr/bin/tr|tr -d \n
+# EXEC: 352823|/home/eddyr/.local/share/mise/installs/node/25.2.1/bin/node|node --version
+# EXEC: 352825|/usr/bin/timeout|timeout 2 python3 --version
+# EXEC: 352826|/usr/bin/head|head -1
+# EXEC: 352827|/usr/bin/tr|tr -d \n
+# EXEC: 352828|/usr/bin/python3|python3 --version
+# EXEC: 352832|/usr/bin/tr|tr -d \n
+# EXEC: 352830|/usr/bin/timeout|timeout 2 ruby --version
+# EXEC: 352831|/usr/bin/head|head -1
+# EXEC: 352833|/usr/bin/ruby|ruby --version
+# EXEC: 352836|/usr/bin/timeout|timeout 2 rustc --version
+# EXEC: 352837|/usr/bin/head|head -1
+# EXEC: 352838|/usr/bin/tr|tr -d \n
+# EXEC: 352839|/usr/bin/rustc|rustc --version
+# EXEC: 352842|/usr/bin/timeout|timeout 2 go version
+# EXEC: 352843|/usr/bin/head|head -1
+# EXEC: 352844|/usr/bin/tr|tr -d \n
+# EXEC: 352845|/usr/bin/go|go version
+# EXEC: 352851|/usr/bin/timeout|timeout 2 git --version
+# EXEC: 352852|/usr/bin/head|head -1
+# EXEC: 352853|/usr/bin/tr|tr -d \n
+# EXEC: 352854|/usr/bin/git|git --version
+# EXEC: 352856|/usr/bin/timeout|timeout 2 sha256sum --version
+# EXEC: 352857|/usr/bin/head|head -1
+# EXEC: 352858|/usr/bin/tr|tr -d \n
+# EXEC: 352859|/usr/bin/sha256sum|sha256sum --version
+# EXEC: 352861|/usr/bin/timeout|timeout 2 date --version
+# EXEC: 352862|/usr/bin/head|head -1
+# EXEC: 352863|/usr/bin/tr|tr -d \n
+# EXEC: 352864|/usr/bin/date|date --version
+# EXEC: 352867|/usr/bin/timeout|timeout 2 wc --version
+# EXEC: 352868|/usr/bin/head|head -1
+# EXEC: 352869|/usr/bin/tr|tr -d \n
+# EXEC: 352870|/usr/bin/wc|wc --version
+# EXEC: 352872|/usr/bin/timeout|timeout 2 cat --version
+# EXEC: 352873|/usr/bin/head|head -1
+# EXEC: 352874|/usr/bin/tr|tr -d \n
+# EXEC: 352875|/usr/bin/cat|cat --version
+# EXEC: 352877|/usr/bin/timeout|timeout 2 tee --version
+# EXEC: 352878|/usr/bin/head|head -1
+# EXEC: 352879|/usr/bin/tr|tr -d \n
+# EXEC: 352880|/usr/bin/tee|tee --version
+# EXEC: 352882|/usr/bin/timeout|timeout 2 mktemp --version
+# EXEC: 352883|/usr/bin/head|head -1
+# EXEC: 352884|/usr/bin/tr|tr -d \n
+# EXEC: 352885|/usr/bin/mktemp|mktemp --version
+# EXEC: 352888|/usr/bin/head|head -1
+# EXEC: 352887|/usr/bin/timeout|timeout 2 rm --version
+# EXEC: 352889|/usr/bin/tr|tr -d \n
+# EXEC: 352890|/usr/bin/rm|rm --version
+# EXEC: 352892|/usr/bin/timeout|timeout 2 timeout --version
+# EXEC: 352893|/usr/bin/head|head -1
+# EXEC: 352894|/usr/bin/tr|tr -d \n
+# EXEC: 352895|/usr/bin/timeout|timeout --version
+# EXEC: 352897|/usr/bin/timeout|timeout 2 tr --version
+# EXEC: 352898|/usr/bin/head|head -1
+# EXEC: 352899|/usr/bin/tr|tr -d \n
+# EXEC: 352900|/usr/bin/tr|tr --version
+# EXEC: 352902|/usr/bin/timeout|timeout 2 head --version
+# EXEC: 352903|/usr/bin/head|head -1
+# EXEC: 352904|/usr/bin/tr|tr -d \n
+# EXEC: 352905|/usr/bin/head|head --version
+# EXEC: 352907|/usr/bin/timeout|timeout 2 cut --version
+# EXEC: 352908|/usr/bin/head|head -1
+# EXEC: 352909|/usr/bin/tr|tr -d \n
+# EXEC: 352910|/usr/bin/cut|cut --version
+# EXEC: 352912|/usr/bin/date|date +%s%N
+# EXEC: 352913|/usr/bin/sha256sum|sha256sum
+# EXEC: 352914|/usr/bin/cut|cut -c1-8
+# EXEC: 352916|/usr/bin/tee|tee /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190616-bitacora-run-verify.log
+# EXEC: 352917|/usr/bin/date|date -Is
+# EXEC: 352918|/usr/bin/mktemp|mktemp
+# EXEC: 352919|/usr/bin/mktemp|mktemp
+# EXEC: 352920|/usr/bin/bash|bash .opencode/_bitacora/bitacora-find.sh bitacora-workflow-run
+# EXEC: 352922|/usr/bin/dirname|dirname .opencode/_bitacora/bitacora-find.sh
+# EXEC: 352923|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-audit/commands.log
+# EXEC: 352924|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352925|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-audit/commands.log
+# EXEC: 352926|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-plan/2026-07-26-protocol-violations.md
+# EXEC: 352927|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352928|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-plan/2026-07-26-protocol-violations.md
+# EXEC: 352929|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-reference/assembler-architecture.md
+# EXEC: 352930|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352931|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-reference/assembler-architecture.md
+# EXEC: 352932|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-reference/entity-schema.md
+# EXEC: 352933|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352934|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-reference/entity-schema.md
+# EXEC: 352935|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-reference/query-patlib.md
+# EXEC: 352936|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352937|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-reference/query-patlib.md
+# EXEC: 352938|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-24T000000.md
+# EXEC: 352939|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352940|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-24T000000.md
+# EXEC: 352941|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-24T000001.md
+# EXEC: 352942|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352943|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-24T000001.md
+# EXEC: 352944|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-24T234540.md
+# EXEC: 352945|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352946|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-24T234540.md
+# EXEC: 352947|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-24T235000.md
+# EXEC: 352948|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352949|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-24T235000.md
+# EXEC: 352950|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-25T022422Z.md
+# EXEC: 352951|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352952|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-25T022422Z.md
+# EXEC: 352953|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-25T150000-audit-maxim-fixes.md
+# EXEC: 352954|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352955|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-25T150000-audit-maxim-fixes.md
+# EXEC: 352956|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-27T011744Z.md
+# EXEC: 352957|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352958|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-27T011744Z.md
+# EXEC: 352959|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-27T015526Z.md
+# EXEC: 352960|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352961|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-27T015526Z.md
+# EXEC: 352962|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-27T022229Z.md
+# EXEC: 352963|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352964|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-27T022229Z.md
+# EXEC: 352965|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-27T022820Z.md
+# EXEC: 352966|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352967|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-27T022820Z.md
+# EXEC: 352968|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-28T10-35-00.md
+# EXEC: 352969|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352970|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-28T10-35-00.md
+# EXEC: 352972|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260730-234415.md
+# EXEC: 352973|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352974|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260730-234415.md
+# EXEC: 352975|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-30-flynn-taxonomy-papers.md
+# EXEC: 352976|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352977|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-30-flynn-taxonomy-papers.md
+# EXEC: 352979|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352978|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-30-mcp-techrxiv-papers.md
+# EXEC: 352980|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-30-mcp-techrxiv-papers.md
+# EXEC: 352981|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-30-semantic-engine-final.md
+# EXEC: 352982|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352983|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-30-semantic-engine-final.md
+# EXEC: 352984|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-30-semantic-engine.md
+# EXEC: 352985|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352986|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-30-semantic-engine.md
+# EXEC: 352987|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-30-semantic-search-lock-fix.md
+# EXEC: 352988|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352989|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-30-semantic-search-lock-fix.md
+# EXEC: 352991|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352990|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-30-semantic-search-rewire.md
+# EXEC: 352992|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-30-semantic-search-rewire.md
+# EXEC: 352993|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260731-001327.md
+# EXEC: 352994|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352995|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260731-001327.md
+# EXEC: 352996|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260731-215000-mcp-rom-acquire.md
+# EXEC: 352997|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 352998|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260731-215000-mcp-rom-acquire.md
+# EXEC: 352999|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-31-document-variant-metrics.md
+# EXEC: 353000|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353001|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-31-document-variant-metrics.md
+# EXEC: 353002|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-31-embedding-batch-illustration.md
+# EXEC: 353003|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353004|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-31-embedding-batch-illustration.md
+# EXEC: 353005|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-31-pattern-identity-batch-update.md
+# EXEC: 353006|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353007|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-31-pattern-identity-batch-update.md
+# EXEC: 353008|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-31-pattern-identity-correction.md
+# EXEC: 353009|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353010|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-31-pattern-identity-correction.md
+# EXEC: 353011|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260731-semantic-drift-tool.md
+# EXEC: 353012|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353014|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260731-semantic-drift-tool.md
+# EXEC: 353015|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-31-semantic-embedding-fix.md
+# EXEC: 353016|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353017|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-31-semantic-embedding-fix.md
+# EXEC: 353018|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-31-semantic-embedding-metrics.md
+# EXEC: 353019|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353020|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-31-semantic-embedding-metrics.md
+# EXEC: 353021|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-31-semantic-evaluation.md
+# EXEC: 353022|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353023|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/2026-07-31-semantic-evaluation.md
+# EXEC: 353024|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-123920-bitacora-tooling-shell-scripts.md
+# EXEC: 353025|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353026|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-123920-bitacora-tooling-shell-scripts.md
+# EXEC: 353027|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-133339-agents-md-communication-compliance.md
+# EXEC: 353028|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353029|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-133339-agents-md-communication-compliance.md
+# EXEC: 353030|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-143523-audit-wrappers-fix.md
+# EXEC: 353031|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353032|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-143523-audit-wrappers-fix.md
+# EXEC: 353033|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-143523-scripts-health-audit.md
+# EXEC: 353034|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353035|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-143523-scripts-health-audit.md
+# EXEC: 353036|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-151403-go-scripts-toolchain-port.md
+# EXEC: 353037|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353038|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-151403-go-scripts-toolchain-port.md
+# EXEC: 353039|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-154821-go-port-completion-and-rename-waves.md
+# EXEC: 353040|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353041|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-154821-go-port-completion-and-rename-waves.md
+# EXEC: 353042|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-160742-atomic-bitacora-commands.md
+# EXEC: 353043|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353044|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-160742-atomic-bitacora-commands.md
+# EXEC: 353045|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-175104-git-repo-initialization.md
+# EXEC: 353046|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353047|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-175104-git-repo-initialization.md
+# EXEC: 353048|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-180338-rules-skills-overhaul.md
+# EXEC: 353049|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353050|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-180338-rules-skills-overhaul.md
+# EXEC: 353051|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-2046-bitacora-log-tracing.md
+# EXEC: 353052|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353053|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260801-2046-bitacora-log-tracing.md
+# EXEC: 353054|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-074634-language-ring-topology.md
+# EXEC: 353055|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353056|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-074634-language-ring-topology.md
+# EXEC: 353057|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-084451-spec-communication-rules.md
+# EXEC: 353058|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353059|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-084451-spec-communication-rules.md
+# EXEC: 353060|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-090240-communication-proper-english-rule.md
+# EXEC: 353061|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353062|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-090240-communication-proper-english-rule.md
+# EXEC: 353063|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-095300-communication-rules-fixture.md
+# EXEC: 353064|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353065|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-095300-communication-rules-fixture.md
+# EXEC: 353066|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-120900-skills-format-standardize.md
+# EXEC: 353067|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353068|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-120900-skills-format-standardize.md
+# EXEC: 353069|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-123017-skills-standardize-anchor-rewrite.md
+# EXEC: 353070|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353071|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-123017-skills-standardize-anchor-rewrite.md
+# EXEC: 353072|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-124500-skills-body-format-imperative.md
+# EXEC: 353073|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353074|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-124500-skills-body-format-imperative.md
+# EXEC: 353075|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-125500-skills-tables-codeblocks.md
+# EXEC: 353076|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353077|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-125500-skills-tables-codeblocks.md
+# EXEC: 353079|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353078|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-131500-skills-template-updates.md
+# EXEC: 353080|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-131500-skills-template-updates.md
+# EXEC: 353081|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-153057-bitacora-workflow-skill.md
+# EXEC: 353082|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353083|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-153057-bitacora-workflow-skill.md
+# EXEC: 353084|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-155604-language-dispatcher-skill.md
+# EXEC: 353085|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353086|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-155604-language-dispatcher-skill.md
+# EXEC: 353087|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-160738-playwright-dispatcher-ref.md
+# EXEC: 353088|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353089|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-160738-playwright-dispatcher-ref.md
+# EXEC: 353090|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-161203-git-push-skill-dispatchers.md
+# EXEC: 353091|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353092|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-161203-git-push-skill-dispatchers.md
+# EXEC: 353093|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-180637-git-push-mgba-session2.md
+# EXEC: 353094|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353095|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-180637-git-push-mgba-session2.md
+# EXEC: 353096|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-181546-declare-identity-entity-identity-agent-grounded-in-agents-md.md
+# EXEC: 353097|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353098|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-181546-declare-identity-entity-identity-agent-grounded-in-agents-md.md
+# EXEC: 353099|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-181731-git-push-record-fixes.md
+# EXEC: 353100|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353101|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-181731-git-push-record-fixes.md
+# EXEC: 353102|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-183000-skills-db-vector-reconcile.md
+# EXEC: 353103|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353104|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-183000-skills-db-vector-reconcile.md
+# EXEC: 353105|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-190602-bitacora-workflow-run.md
+# EXEC: 353106|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353108|/usr/bin/rg|rg -m1 ^Timestamp: /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-190602-bitacora-workflow-run.md
+# EXEC: 353109|/usr/bin/sed|sed s/^Timestamp: *//
+# EXEC: 353110|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-190602-bitacora-workflow-run.md
+# EXEC: 353111|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-201500-dispatcher-expansion.md
+# EXEC: 353112|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353113|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-201500-dispatcher-expansion.md
+# EXEC: 353115|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353114|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-mcp-semantic.md
+# EXEC: 353116|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-mcp-semantic.md
+# EXEC: 353117|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-semantic-engine-test.md
+# EXEC: 353118|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353119|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/20260802-semantic-engine-test.md
+# EXEC: 353120|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/autonomous-behavior.md
+# EXEC: 353121|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353122|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/autonomous-behavior.md
+# EXEC: 353123|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/batch-math-ratio.md
+# EXEC: 353124|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353125|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/batch-math-ratio.md
+# EXEC: 353126|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/captcha-check.md
+# EXEC: 353127|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353128|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/captcha-check.md
+# EXEC: 353129|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/database-inventory.md
+# EXEC: 353130|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353131|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/database-inventory.md
+# EXEC: 353133|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353132|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/dependency-flow-analysis.md
+# EXEC: 353134|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/dependency-flow-analysis.md
+# EXEC: 353135|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/disabled-tools-inventory.md
+# EXEC: 353136|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353137|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/disabled-tools-inventory.md
+# EXEC: 353138|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/entity-classification.md
+# EXEC: 353139|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353140|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/entity-classification.md
+# EXEC: 353141|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/entity-ontology-quickref.md
+# EXEC: 353142|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353143|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/entity-ontology-quickref.md
+# EXEC: 353144|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/error-message-catalog.md
+# EXEC: 353145|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353146|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/error-message-catalog.md
+# EXEC: 353147|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/error-prevention-strategies.md
+# EXEC: 353148|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353149|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/error-prevention-strategies.md
+# EXEC: 353150|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/exception-analysis.md
+# EXEC: 353151|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353152|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/exception-analysis.md
+# EXEC: 353153|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/final-audit.md
+# EXEC: 353154|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353155|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/final-audit.md
+# EXEC: 353156|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/format-violation-patterns.md
+# EXEC: 353157|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353158|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/format-violation-patterns.md
+# EXEC: 353159|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/historical-tool-format-audit.md
+# EXEC: 353160|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353161|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/historical-tool-format-audit.md
+# EXEC: 353162|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/hybrid-search-improvements.md
+# EXEC: 353163|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353164|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/hybrid-search-improvements.md
+# EXEC: 353165|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/import-interceptor-analysis.md
+# EXEC: 353166|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353167|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/import-interceptor-analysis.md
+# EXEC: 353168|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/lib-usage-by-tool.md
+# EXEC: 353169|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353170|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/lib-usage-by-tool.md
+# EXEC: 353171|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/maxim-violations-current-state.md
+# EXEC: 353172|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353173|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/maxim-violations-current-state.md
+# EXEC: 353174|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/mcp-patlib-vector-deps.md
+# EXEC: 353175|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353176|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/mcp-patlib-vector-deps.md
+# EXEC: 353177|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/mcp-server-inventory.md
+# EXEC: 353178|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353179|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/mcp-server-inventory.md
+# EXEC: 353180|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/node-modules-symlink-audit.md
+# EXEC: 353181|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353182|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/node-modules-symlink-audit.md
+# EXEC: 353183|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/opencode-tool-discovery-flow.md
+# EXEC: 353184|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353185|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/opencode-tool-discovery-flow.md
+# EXEC: 353186|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/paper-library-index.md
+# EXEC: 353187|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353188|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/paper-library-index.md
+# EXEC: 353189|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/protocol-audit.md
+# EXEC: 353190|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353191|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/protocol-audit.md
+# EXEC: 353192|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/protocol-violations-vector-tools.md
+# EXEC: 353193|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353194|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/protocol-violations-vector-tools.md
+# EXEC: 353195|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/remediation-cost-analysis.md
+# EXEC: 353196|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353197|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/remediation-cost-analysis.md
+# EXEC: 353198|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/rules-affecting-tools.md
+# EXEC: 353199|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353200|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/rules-affecting-tools.md
+# EXEC: 353201|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/schema-migration.md
+# EXEC: 353202|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353203|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/schema-migration.md
+# EXEC: 353204|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/secrets-and-credentials.md
+# EXEC: 353205|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353206|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/secrets-and-credentials.md
+# EXEC: 353207|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/shared-dep-audit.md
+# EXEC: 353208|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353209|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/shared-dep-audit.md
+# EXEC: 353210|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/shared-failure-analysis.md
+# EXEC: 353211|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353212|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/shared-failure-analysis.md
+# EXEC: 353213|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/shebang-cli-risk-assessment.md
+# EXEC: 353214|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353215|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/shebang-cli-risk-assessment.md
+# EXEC: 353216|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/side-effect-during-import.md
+# EXEC: 353217|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353218|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/side-effect-during-import.md
+# EXEC: 353219|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/skill-inventory.md
+# EXEC: 353220|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353221|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/skill-inventory.md
+# EXEC: 353222|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/stale-config-references.md
+# EXEC: 353223|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353224|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/stale-config-references.md
+# EXEC: 353225|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/storage-audit.md
+# EXEC: 353226|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353227|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/storage-audit.md
+# EXEC: 353228|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/subproject-map.md
+# EXEC: 353229|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353230|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/subproject-map.md
+# EXEC: 353231|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/system-health.md
+# EXEC: 353232|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353233|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/system-health.md
+# EXEC: 353234|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/taxonomy-derivation-maxims.md
+# EXEC: 353235|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353236|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/taxonomy-derivation-maxims.md
+# EXEC: 353237|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/tool-audit-compliance.md
+# EXEC: 353238|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353239|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/tool-audit-compliance.md
+# EXEC: 353240|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/tool-creation-checklist.md
+# EXEC: 353241|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353242|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/tool-creation-checklist.md
+# EXEC: 353243|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/tool-error-postmortem.md
+# EXEC: 353244|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353245|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/tool-error-postmortem.md
+# EXEC: 353246|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/tool-group-compliance.md
+# EXEC: 353247|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353248|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/tool-group-compliance.md
+# EXEC: 353249|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/two-errors-one-symptom.md
+# EXEC: 353250|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353251|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/two-errors-one-symptom.md
+# EXEC: 353252|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/vector-engine-analysis.md
+# EXEC: 353253|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353254|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/vector-engine-analysis.md
+# EXEC: 353255|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/vector-search-improvements.md
+# EXEC: 353256|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353257|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/vector-search-improvements.md
+# EXEC: 353258|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/vector-search-monolith-extraction.md
+# EXEC: 353259|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353260|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/vector-search-monolith-extraction.md
+# EXEC: 353261|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/vector-search-performance.md
+# EXEC: 353262|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353263|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/vector-search-performance.md
+# EXEC: 353264|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/vector-tooling-retrospective.md
+# EXEC: 353265|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353266|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/vector-tooling-retrospective.md
+# EXEC: 353267|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/vector-tooling-revival-plan.md
+# EXEC: 353268|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353269|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/vector-tooling-revival-plan.md
+# EXEC: 353270|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/verification-gap-analysis.md
+# EXEC: 353271|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353272|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/verification-gap-analysis.md
+# EXEC: 353273|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-report/what-we-learned-about-tool-format.md
+# EXEC: 353274|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353275|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-report/what-we-learned-about-tool-format.md
+# EXEC: 353276|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-124904-audit-wrappers-before.log
+# EXEC: 353277|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353278|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-124904-audit-wrappers-before.log
+# EXEC: 353279|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-132512-agents-md-verify.log
+# EXEC: 353280|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353281|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-132512-agents-md-verify.log
+# EXEC: 353282|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-132851-agents-md-compliance.log
+# EXEC: 353283|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353284|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-132851-agents-md-compliance.log
+# EXEC: 353285|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-133334-agents-md-negation-verify.log
+# EXEC: 353286|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353287|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-133334-agents-md-negation-verify.log
+# EXEC: 353288|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-134741-agents-md-fully-affirmative-verify.log
+# EXEC: 353289|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353290|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-134741-agents-md-fully-affirmative-verify.log
+# EXEC: 353291|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-135251-wrappers-build.log
+# EXEC: 353292|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353300|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-135251-wrappers-build.log
+# EXEC: 353301|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-151828-stale-refs-sweep.log
+# EXEC: 353302|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353303|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-151828-stale-refs-sweep.log
+# EXEC: 353311|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-151915-protocol-rename-wave.log
+# EXEC: 353312|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353313|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-151915-protocol-rename-wave.log
+# EXEC: 353314|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-152019-rename-verify.log
+# EXEC: 353315|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353316|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-152019-rename-verify.log
+# EXEC: 353317|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-152250-protocol-rename-wave-2.log
+# EXEC: 353318|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353319|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-152250-protocol-rename-wave-2.log
+# EXEC: 353320|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-152426-rename-verify-2.log
+# EXEC: 353321|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353322|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-152426-rename-verify-2.log
+# EXEC: 353323|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-152536-protocol-rename-wave-3.log
+# EXEC: 353324|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353325|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-152536-protocol-rename-wave-3.log
+# EXEC: 353326|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-152716-protocol-rename-wave-3b.log
+# EXEC: 353327|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353328|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-152716-protocol-rename-wave-3b.log
+# EXEC: 353329|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-153223-corruption-repair.log
+# EXEC: 353330|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353331|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-153223-corruption-repair.log
+# EXEC: 353332|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-153627-corruption-repair-2.log
+# EXEC: 353333|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353334|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-153627-corruption-repair-2.log
+# EXEC: 353335|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-153710-nexus-sweep-illustrations.log
+# EXEC: 353336|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353337|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-153710-nexus-sweep-illustrations.log
+# EXEC: 353338|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-153717-verify-after-repair.log
+# EXEC: 353339|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353340|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-153717-verify-after-repair.log
+# EXEC: 353341|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-155248-meta-identity-derive.log
+# EXEC: 353342|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353343|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-155248-meta-identity-derive.log
+# EXEC: 353344|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-160725-atomic-commands-verify.log
+# EXEC: 353345|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353346|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-160725-atomic-commands-verify.log
+# EXEC: 353347|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162239-git-stage-rules.log
+# EXEC: 353348|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353349|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162239-git-stage-rules.log
+# EXEC: 353350|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162414-git-commit-rules.log
+# EXEC: 353351|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353352|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162414-git-commit-rules.log
+# EXEC: 353353|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162509-git-commit-skills.log
+# EXEC: 353354|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353355|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162509-git-commit-skills.log
+# EXEC: 353356|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162608-skill-backups-rename.log
+# EXEC: 353357|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353358|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162608-skill-backups-rename.log
+# EXEC: 353359|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162621-skill-backups-local-commit.log
+# EXEC: 353360|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353361|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162621-skill-backups-local-commit.log
+# EXEC: 353362|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162712-skill-backups-local-commit2.log
+# EXEC: 353363|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353364|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162712-skill-backups-local-commit2.log
+# EXEC: 353365|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162746-git-commit-commands.log
+# EXEC: 353366|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353367|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162746-git-commit-commands.log
+# EXEC: 353368|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162825-git-commit-tools-lib.log
+# EXEC: 353369|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353370|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162825-git-commit-tools-lib.log
+# EXEC: 353371|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162907-git-commit-scripts.log
+# EXEC: 353372|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353373|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-162907-git-commit-scripts.log
+# EXEC: 353374|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-163017-git-commit-rustlib.log
+# EXEC: 353375|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353376|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-163017-git-commit-rustlib.log
+# EXEC: 353377|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-163249-git-clean-rustlib-target.log
+# EXEC: 353378|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353379|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-163249-git-clean-rustlib-target.log
+# EXEC: 353380|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-163410-git-rewrite-rustlib.log
+# EXEC: 353381|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353382|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-163410-git-rewrite-rustlib.log
+# EXEC: 353383|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-163416-git-push-rustlib.log
+# EXEC: 353384|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353385|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-163416-git-push-rustlib.log
+# EXEC: 353386|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-163440-git-batch-a-opencode.log
+# EXEC: 353387|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353388|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-163440-git-batch-a-opencode.log
+# EXEC: 353389|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-163446-git-batch-b-knowledge.log
+# EXEC: 353390|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353391|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-163446-git-batch-b-knowledge.log
+# EXEC: 353392|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-163501-git-batch-c-atelier.log
+# EXEC: 353393|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353394|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-163501-git-batch-c-atelier.log
+# EXEC: 353395|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-163814-git-rewrite-atelier.log
+# EXEC: 353396|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353397|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-163814-git-rewrite-atelier.log
+# EXEC: 353398|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-164431-git-aggregators.log
+# EXEC: 353399|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353400|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-164431-git-aggregators.log
+# EXEC: 353401|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-164624-git-inner-gitkeeps.log
+# EXEC: 353402|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353403|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-164624-git-inner-gitkeeps.log
+# EXEC: 353404|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-164642-git-inner-gitkeeps-f.log
+# EXEC: 353405|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353406|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-164642-git-inner-gitkeeps-f.log
+# EXEC: 353408|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353407|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-165309-git-inner-folders-contents.log
+# EXEC: 353409|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-165309-git-inner-folders-contents.log
+# EXEC: 353410|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-165440-git-inner-folders-v2.log
+# EXEC: 353411|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353412|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-165440-git-inner-folders-v2.log
+# EXEC: 353413|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-172149-git-substrate-v2.log
+# EXEC: 353414|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353415|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-172149-git-substrate-v2.log
+# EXEC: 353416|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-172211-git-substrate-v3.log
+# EXEC: 353417|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353418|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-172211-git-substrate-v3.log
+# EXEC: 353419|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-172235-git-substrate-v4.log
+# EXEC: 353420|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353421|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-172235-git-substrate-v4.log
+# EXEC: 353422|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-172325-git-substrate-v5.log
+# EXEC: 353423|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353424|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-172325-git-substrate-v5.log
+# EXEC: 353425|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-173504-git-branch-main.log
+# EXEC: 353426|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353427|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-173504-git-branch-main.log
+# EXEC: 353428|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-174205-git-skills-logs.log
+# EXEC: 353429|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353430|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-174205-git-skills-logs.log
+# EXEC: 353431|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-174812-git-ignore-root-fix.log
+# EXEC: 353432|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353433|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-174812-git-ignore-root-fix.log
+# EXEC: 353434|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-174906-git-ann-sources.log
+# EXEC: 353435|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353436|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-174906-git-ann-sources.log
+# EXEC: 353437|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-175048-git-gc-prune.log
+# EXEC: 353438|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353439|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-175048-git-gc-prune.log
+# EXEC: 353440|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-175236-git-close-session.log
+# EXEC: 353441|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353442|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-175236-git-close-session.log
+# EXEC: 353443|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-180410-stale-id-wave-4.log
+# EXEC: 353444|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353445|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-180410-stale-id-wave-4.log
+# EXEC: 353446|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-180437-git-stale-wave4-commit.log
+# EXEC: 353447|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353448|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-180437-git-stale-wave4-commit.log
+# EXEC: 353449|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-181031-stale-refs-regex-fix.log
+# EXEC: 353450|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353451|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-181031-stale-refs-regex-fix.log
+# EXEC: 353452|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-181055-git-stale-regex-commit.log
+# EXEC: 353453|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353454|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-181055-git-stale-regex-commit.log
+# EXEC: 353455|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-181355-git-protocols-create-verify.log
+# EXEC: 353456|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353457|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-181355-git-protocols-create-verify.log
+# EXEC: 353458|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-181414-git-protocols-create.log
+# EXEC: 353459|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353460|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-181414-git-protocols-create.log
+# EXEC: 353461|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-183417-skill-list.log
+# EXEC: 353462|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353463|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-183417-skill-list.log
+# EXEC: 353464|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-183552-skill-list.log
+# EXEC: 353465|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353466|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-183552-skill-list.log
+# EXEC: 353467|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-183700-skill-list.log
+# EXEC: 353468|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353469|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-183700-skill-list.log
+# EXEC: 353470|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-183742-skill-list.log
+# EXEC: 353471|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353472|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-183742-skill-list.log
+# EXEC: 353473|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-184117-skill-list.log
+# EXEC: 353474|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353475|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-184117-skill-list.log
+# EXEC: 353476|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-184125-probe.log
+# EXEC: 353477|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353478|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-184125-probe.log
+# EXEC: 353479|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-184330-skill-list.log
+# EXEC: 353480|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353481|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-184330-skill-list.log
+# EXEC: 353482|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-184347-probe.log
+# EXEC: 353483|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353484|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-184347-probe.log
+# EXEC: 353485|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-184532-skill-list.log
+# EXEC: 353486|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353487|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-184532-skill-list.log
+# EXEC: 353488|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185128-count-only.log
+# EXEC: 353489|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353490|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185128-count-only.log
+# EXEC: 353491|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185128-skill-list.log
+# EXEC: 353492|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353493|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185128-skill-list.log
+# EXEC: 353494|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185128-solo.log
+# EXEC: 353495|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353496|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185128-solo.log
+# EXEC: 353497|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185202-skill-list.log
+# EXEC: 353498|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353499|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185202-skill-list.log
+# EXEC: 353500|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185314-env-probe.log
+# EXEC: 353501|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353502|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185314-env-probe.log
+# EXEC: 353503|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185339-skill-list.log
+# EXEC: 353504|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353505|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185339-skill-list.log
+# EXEC: 353506|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185744-skill-list.log
+# EXEC: 353507|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353508|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185744-skill-list.log
+# EXEC: 353509|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185752-err-test.log
+# EXEC: 353510|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353511|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185752-err-test.log
+# EXEC: 353512|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185922-fixture-args.log
+# EXEC: 353513|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353514|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185922-fixture-args.log
+# EXEC: 353515|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185947-fixture-stderr.log
+# EXEC: 353516|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353517|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-185947-fixture-stderr.log
+# EXEC: 353518|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190004-fixture-keyed.log
+# EXEC: 353519|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353520|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190004-fixture-keyed.log
+# EXEC: 353521|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190014-fixture-keyed2.log
+# EXEC: 353522|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353523|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190014-fixture-keyed2.log
+# EXEC: 353524|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190145-fixture-keyed.log
+# EXEC: 353525|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353526|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190145-fixture-keyed.log
+# EXEC: 353527|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190207-skill-list.log
+# EXEC: 353528|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353529|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190207-skill-list.log
+# EXEC: 353530|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190231-fixture-stderr.log
+# EXEC: 353531|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353532|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190231-fixture-stderr.log
+# EXEC: 353533|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190356-fixture-args.log
+# EXEC: 353534|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353535|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190356-fixture-args.log
+# EXEC: 353536|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190505-fixture-args.log
+# EXEC: 353537|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353538|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190505-fixture-args.log
+# EXEC: 353539|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190653-fixture-args.log
+# EXEC: 353540|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353541|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190653-fixture-args.log
+# EXEC: 353542|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190732-fixture-keyed.log
+# EXEC: 353543|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353544|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190732-fixture-keyed.log
+# EXEC: 353545|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190955-fixture-args.log
+# EXEC: 353546|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353547|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-190955-fixture-args.log
+# EXEC: 353548|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-191033-fixture-keyed.log
+# EXEC: 353549|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353550|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-191033-fixture-keyed.log
+# EXEC: 353551|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-191202-skill-list.log
+# EXEC: 353552|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353553|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-191202-skill-list.log
+# EXEC: 353554|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-191240-fixture-stderr.log
+# EXEC: 353555|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353556|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-191240-fixture-stderr.log
+# EXEC: 353557|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-191322-fixture-keyed.log
+# EXEC: 353558|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353559|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-191322-fixture-keyed.log
+# EXEC: 353560|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192011-fixture-args.log
+# EXEC: 353561|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353562|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192011-fixture-args.log
+# EXEC: 353563|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192245-fixture-args.log
+# EXEC: 353564|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353565|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192245-fixture-args.log
+# EXEC: 353566|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192245-fixture-keyed.log
+# EXEC: 353567|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353568|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192245-fixture-keyed.log
+# EXEC: 353569|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192245-fixture-numbers.log
+# EXEC: 353570|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353571|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192245-fixture-numbers.log
+# EXEC: 353572|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192245-fixture-stderr.log
+# EXEC: 353573|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353574|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192245-fixture-stderr.log
+# EXEC: 353575|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192245-skill-list.log
+# EXEC: 353576|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353577|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192245-skill-list.log
+# EXEC: 353578|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192314-fixture-multiline.log
+# EXEC: 353579|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353580|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192314-fixture-multiline.log
+# EXEC: 353581|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192314-fixture-slow.log
+# EXEC: 353582|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353583|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192314-fixture-slow.log
+# EXEC: 353584|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192316-fixture-both.log
+# EXEC: 353585|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353586|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192316-fixture-both.log
+# EXEC: 353587|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192316-fixture-empty.log
+# EXEC: 353588|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353589|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192316-fixture-empty.log
+# EXEC: 353590|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192316-fixture-env.log
+# EXEC: 353591|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353592|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192316-fixture-env.log
+# EXEC: 353593|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192557-skill-list.log
+# EXEC: 353594|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353595|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192557-skill-list.log
+# EXEC: 353596|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192826-fixture-args.log
+# EXEC: 353597|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353598|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-192826-fixture-args.log
+# EXEC: 353599|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193015-fixture-stderr.log
+# EXEC: 353600|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353601|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193015-fixture-stderr.log
+# EXEC: 353602|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193434-scripts-count.log
+# EXEC: 353603|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353604|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193434-scripts-count.log
+# EXEC: 353605|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193445-scripts-idmatch.log
+# EXEC: 353606|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353607|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193445-scripts-idmatch.log
+# EXEC: 353608|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193505-scripts-naming.log
+# EXEC: 353609|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353610|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193505-scripts-naming.log
+# EXEC: 353612|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353611|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193612-scripts-schema.log
+# EXEC: 353613|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193612-scripts-schema.log
+# EXEC: 353614|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193921-scripts-audit.log
+# EXEC: 353615|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353616|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193921-scripts-audit.log
+# EXEC: 353617|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193921-scripts-list.log
+# EXEC: 353618|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353619|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193921-scripts-list.log
+# EXEC: 353620|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193921-scripts-precedes.log
+# EXEC: 353621|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353622|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193921-scripts-precedes.log
+# EXEC: 353623|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193921-scripts-rings.log
+# EXEC: 353624|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353625|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193921-scripts-rings.log
+# EXEC: 353626|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193926-scripts-maxim.log
+# EXEC: 353627|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353628|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193926-scripts-maxim.log
+# EXEC: 353629|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193926-scripts-protocol.log
+# EXEC: 353630|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353631|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-193926-scripts-protocol.log
+# EXEC: 353632|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-194015-scripts-protocol.log
+# EXEC: 353633|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353634|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-194015-scripts-protocol.log
+# EXEC: 353635|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-194219-fixture-ruby-test.log
+# EXEC: 353636|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353637|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-194219-fixture-ruby-test.log
+# EXEC: 353638|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-194448-fixture-args.log
+# EXEC: 353639|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353640|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-194448-fixture-args.log
+# EXEC: 353641|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200020-progs-demo.log
+# EXEC: 353642|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353643|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200020-progs-demo.log
+# EXEC: 353644|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200150-scripts-count.log
+# EXEC: 353645|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353646|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200150-scripts-count.log
+# EXEC: 353647|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200327-exec-demo.log
+# EXEC: 353648|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353649|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200327-exec-demo.log
+# EXEC: 353650|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200353-exec-demo.log
+# EXEC: 353651|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353652|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200353-exec-demo.log
+# EXEC: 353653|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200406-exec-demo.log
+# EXEC: 353654|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353655|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200406-exec-demo.log
+# EXEC: 353656|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200745-twopass-demo.log
+# EXEC: 353657|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353658|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200745-twopass-demo.log
+# EXEC: 353659|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200946-twopass-demo.log
+# EXEC: 353660|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353661|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-200946-twopass-demo.log
+# EXEC: 353662|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-203150-inner-probe.log
+# EXEC: 353663|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353664|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-203150-inner-probe.log
+# EXEC: 353665|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-203406-onepass-demo.log
+# EXEC: 353666|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353667|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-203406-onepass-demo.log
+# EXEC: 353668|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-203501-scripts-count.log
+# EXEC: 353669|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353670|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-203501-scripts-count.log
+# EXEC: 353671|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-203657-ruby-fixture.log
+# EXEC: 353672|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353673|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-203657-ruby-fixture.log
+# EXEC: 353674|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204043-ruby-trace.log
+# EXEC: 353675|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353676|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204043-ruby-trace.log
+# EXEC: 353677|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204043-ruby-trace.trace.perfetto
+# EXEC: 353678|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353679|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204043-ruby-trace.trace.perfetto
+# EXEC: 353680|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204253-trace-json.log
+# EXEC: 353681|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353682|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204253-trace-json.log
+# EXEC: 353683|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204254-trace-perf.log
+# EXEC: 353684|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353685|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204254-trace-perf.log
+# EXEC: 353686|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204254-trace-perf.trace.perfetto
+# EXEC: 353687|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353688|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204254-trace-perf.trace.perfetto
+# EXEC: 353689|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204412-trace-perf2.log
+# EXEC: 353690|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353691|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204412-trace-perf2.log
+# EXEC: 353692|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204412-trace-perf2.trace.perfetto
+# EXEC: 353693|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353694|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204412-trace-perf2.trace.perfetto
+# EXEC: 353695|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204427-trace-json2.log
+# EXEC: 353696|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353697|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204427-trace-json2.log
+# EXEC: 353698|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204427-trace-json2.trace.json
+# EXEC: 353699|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353700|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204427-trace-json2.trace.json
+# EXEC: 353701|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204427-trace-perf3.log
+# EXEC: 353702|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353703|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204427-trace-perf3.log
+# EXEC: 353704|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204427-trace-perf3.trace.perfetto
+# EXEC: 353705|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353706|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-204427-trace-perf3.trace.perfetto
+# EXEC: 353707|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205009-ruby-interp.log
+# EXEC: 353708|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353709|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205009-ruby-interp.log
+# EXEC: 353710|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205347-random-sum.log
+# EXEC: 353711|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353712|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205347-random-sum.log
+# EXEC: 353713|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205407-random-sum2.log
+# EXEC: 353714|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353715|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205407-random-sum2.log
+# EXEC: 353716|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205412-random-sum3.log
+# EXEC: 353717|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353718|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205412-random-sum3.log
+# EXEC: 353719|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205449-random-1.log
+# EXEC: 353720|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353721|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205449-random-1.log
+# EXEC: 353722|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205450-random-2.log
+# EXEC: 353723|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353724|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205450-random-2.log
+# EXEC: 353725|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205450-random-3.log
+# EXEC: 353726|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353727|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205450-random-3.log
+# EXEC: 353728|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205548-random-stats.log
+# EXEC: 353729|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353730|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205548-random-stats.log
+# EXEC: 353731|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205642-monte-carlo.log
+# EXEC: 353732|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353733|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205642-monte-carlo.log
+# EXEC: 353734|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205709-monte-carlo.log
+# EXEC: 353735|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353736|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205709-monte-carlo.log
+# EXEC: 353737|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205820-trace-bug-demo.log
+# EXEC: 353738|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353739|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205820-trace-bug-demo.log
+# EXEC: 353740|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205840-trace-bug-demo2.log
+# EXEC: 353741|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353742|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-205840-trace-bug-demo2.log
+# EXEC: 353743|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-210058-trace-live-demo.log
+# EXEC: 353744|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353745|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-210058-trace-live-demo.log
+# EXEC: 353746|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-210321-trace-stream-demo.log
+# EXEC: 353747|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353748|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-210321-trace-stream-demo.log
+# EXEC: 353749|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-210424-go-probe.log
+# EXEC: 353750|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353751|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-210424-go-probe.log
+# EXEC: 353752|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211147-fixture-ruby-sim.log
+# EXEC: 353753|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353754|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211147-fixture-ruby-sim.log
+# EXEC: 353755|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211731-clone-cloth-config.log
+# EXEC: 353756|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353757|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211731-clone-cloth-config.log
+# EXEC: 353758|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211919-fixture-cloth-config.log
+# EXEC: 353759|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353760|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211919-fixture-cloth-config.log
+# EXEC: 353761|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211956-cloth-api-surface.log
+# EXEC: 353762|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353763|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-211956-cloth-api-surface.log
+# EXEC: 353764|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212032-cloth-api-methods.log
+# EXEC: 353765|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353766|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212032-cloth-api-methods.log
+# EXEC: 353767|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212042-cloth-entries-list.log
+# EXEC: 353768|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353769|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212042-cloth-entries-list.log
+# EXEC: 353770|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212042-cloth-entry-types.log
+# EXEC: 353771|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353772|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212042-cloth-entry-types.log
+# EXEC: 353773|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212046-cloth-builder-sig.log
+# EXEC: 353774|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353775|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212046-cloth-builder-sig.log
+# EXEC: 353776|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212108-fixture-cloth-api.log
+# EXEC: 353777|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353778|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212108-fixture-cloth-api.log
+# EXEC: 353779|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212131-cloth-methods-full.log
+# EXEC: 353780|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353781|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212131-cloth-methods-full.log
+# EXEC: 353782|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212303-trace-exec-test.log
+# EXEC: 353783|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353784|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212303-trace-exec-test.log
+# EXEC: 353785|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212654-fixture-trace-useful.log
+# EXEC: 353786|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353787|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212654-fixture-trace-useful.log
+# EXEC: 353788|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212710-fixture-cloth-api.log
+# EXEC: 353789|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353790|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-212710-fixture-cloth-api.log
+# EXEC: 353791|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213449-trace-strace-deferred.log
+# EXEC: 353792|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353793|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213449-trace-strace-deferred.log
+# EXEC: 353794|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213635-fixture-trace-strace.log
+# EXEC: 353795|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353796|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213635-fixture-trace-strace.log
+# EXEC: 353797|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213755-use-trace-useful.log
+# EXEC: 353798|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353799|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213755-use-trace-useful.log
+# EXEC: 353800|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213802-use-trace-rich.log
+# EXEC: 353801|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353802|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213802-use-trace-rich.log
+# EXEC: 353803|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213811-use-trace-rich.log
+# EXEC: 353804|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353805|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213811-use-trace-rich.log
+# EXEC: 353806|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213815-use-trace-strace.log
+# EXEC: 353807|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353808|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-213815-use-trace-strace.log
+# EXEC: 353809|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-214033-use-trace-rich-fixed.log
+# EXEC: 353810|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353811|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-214033-use-trace-rich-fixed.log
+# EXEC: 353812|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-215151-fixture-trace-native.log
+# EXEC: 353813|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353814|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-215151-fixture-trace-native.log
+# EXEC: 353815|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-215403-fixture-trace-native-fixed.log
+# EXEC: 353816|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353817|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-215403-fixture-trace-native-fixed.log
+# EXEC: 353818|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-215520-original-baseline.log
+# EXEC: 353819|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353820|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-215520-original-baseline.log
+# EXEC: 353821|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-215553-original-verify.log
+# EXEC: 353822|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353823|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-215553-original-verify.log
+# EXEC: 353824|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-215755-original-meta-test.log
+# EXEC: 353825|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353826|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-215755-original-meta-test.log
+# EXEC: 353827|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220026-fixture-ruby-sim-original.log
+# EXEC: 353828|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353829|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220026-fixture-ruby-sim-original.log
+# EXEC: 353830|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220113-fixture-original-wrapper-578499.log
+# EXEC: 353831|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353832|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220113-fixture-original-wrapper-578499.log
+# EXEC: 353833|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220140-fixture-original-wrapper-579026.log
+# EXEC: 353834|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353835|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220140-fixture-original-wrapper-579026.log
+# EXEC: 353836|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 353837|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353838|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper-579300.log
+# EXEC: 353839|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper.log
+# EXEC: 353840|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353841|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220144-fixture-original-wrapper.log
+# EXEC: 353842|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 353843|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353844|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220145-fixture-original-wrapper-579591.log
+# EXEC: 353845|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220550-fixture-cloth-api.sh.log
+# EXEC: 353846|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353847|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220550-fixture-cloth-api.sh.log
+# EXEC: 353848|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220550-fixture-cloth-config.sh.log
+# EXEC: 353849|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353850|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220550-fixture-cloth-config.sh.log
+# EXEC: 353851|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220754-fixture-cloth-api.sh.log
+# EXEC: 353852|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353853|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220754-fixture-cloth-api.sh.log
+# EXEC: 353854|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220754-fixture-cloth-config.sh.log
+# EXEC: 353855|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353856|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220754-fixture-cloth-config.sh.log
+# EXEC: 353857|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220834-fixture-cloth-animators.sh.log
+# EXEC: 353858|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353859|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220834-fixture-cloth-animators.sh.log
+# EXEC: 353860|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220834-fixture-cloth-api.sh.log
+# EXEC: 353861|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353862|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220834-fixture-cloth-api.sh.log
+# EXEC: 353863|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220834-fixture-cloth-config.sh.log
+# EXEC: 353864|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353865|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220834-fixture-cloth-config.sh.log
+# EXEC: 353866|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220834-fixture-cloth-entries.sh.log
+# EXEC: 353867|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353868|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220834-fixture-cloth-entries.sh.log
+# EXEC: 353869|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220834-fixture-cloth-serializers.sh.log
+# EXEC: 353870|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353871|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220834-fixture-cloth-serializers.sh.log
+# EXEC: 353872|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220850-fixture-cloth-serializers.log
+# EXEC: 353873|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353874|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220850-fixture-cloth-serializers.log
+# EXEC: 353876|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353875|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220920-fixture-cloth-serializers.log
+# EXEC: 353877|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220920-fixture-cloth-serializers.log
+# EXEC: 353878|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220934-fixture-cloth-animators.sh.log
+# EXEC: 353879|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353880|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220934-fixture-cloth-animators.sh.log
+# EXEC: 353881|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220934-fixture-cloth-api.sh.log
+# EXEC: 353882|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353883|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220934-fixture-cloth-api.sh.log
+# EXEC: 353884|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220934-fixture-cloth-config.sh.log
+# EXEC: 353885|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353886|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220934-fixture-cloth-config.sh.log
+# EXEC: 353887|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220934-fixture-cloth-serializers.sh.log
+# EXEC: 353888|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353889|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220934-fixture-cloth-serializers.sh.log
+# EXEC: 353890|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220935-fixture-cloth-entries.sh.log
+# EXEC: 353891|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353892|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-220935-fixture-cloth-entries.sh.log
+# EXEC: 353893|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-221311-fixture-cloth-docs.log
+# EXEC: 353894|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353895|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-221311-fixture-cloth-docs.log
+# EXEC: 353896|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-221331-fixture-cloth-docs.log
+# EXEC: 353897|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353898|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260801-221331-fixture-cloth-docs.log
+# EXEC: 353899|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-071518-semantic-search-help.log
+# EXEC: 353900|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353901|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-071518-semantic-search-help.log
+# EXEC: 353902|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-071529-patlib-tables.log
+# EXEC: 353903|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353904|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-071529-patlib-tables.log
+# EXEC: 353906|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353905|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074043-language-ring-sync.log
+# EXEC: 353907|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074043-language-ring-sync.log
+# EXEC: 353908|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074323-language-ring-sync.log
+# EXEC: 353909|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353910|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074323-language-ring-sync.log
+# EXEC: 353911|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074332-language-ring-embed.log
+# EXEC: 353912|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353913|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074332-language-ring-embed.log
+# EXEC: 353914|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074429-language-ring-drift.log
+# EXEC: 353915|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353916|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-074429-language-ring-drift.log
+# EXEC: 353917|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-081827-comm-specs-sync.log
+# EXEC: 353918|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353919|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-081827-comm-specs-sync.log
+# EXEC: 353920|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-081831-comm-specs-embed.log
+# EXEC: 353921|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353922|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-081831-comm-specs-embed.log
+# EXEC: 353923|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-084431-comm-specs-sync2.log
+# EXEC: 353924|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353925|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-084431-comm-specs-sync2.log
+# EXEC: 353926|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-084435-comm-specs-embed2.log
+# EXEC: 353927|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353928|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-084435-comm-specs-embed2.log
+# EXEC: 353929|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-084446-comm-specs-drift2.log
+# EXEC: 353930|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353931|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-084446-comm-specs-drift2.log
+# EXEC: 353932|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-084555-templates-copy-codex.log
+# EXEC: 353933|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353934|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-084555-templates-copy-codex.log
+# EXEC: 353935|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-084927-templates-overwrite-shared.log
+# EXEC: 353936|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353937|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-084927-templates-overwrite-shared.log
+# EXEC: 353938|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090134-sync-proper-english-rule.log
+# EXEC: 353939|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353940|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090134-sync-proper-english-rule.log
+# EXEC: 353942|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090135-embed-proper-english-rule.log
+# EXEC: 353943|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353944|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090135-embed-proper-english-rule.log
+# EXEC: 353945|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090136-drift-check-proper-english-rule.log
+# EXEC: 353946|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353947|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090136-drift-check-proper-english-rule.log
+# EXEC: 353948|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090221-verify-proper-english-rule.log
+# EXEC: 353949|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353955|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-090221-verify-proper-english-rule.log
+# EXEC: 353956|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-091906-templates-push-registry.log
+# EXEC: 353957|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353958|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-091906-templates-push-registry.log
+# EXEC: 353959|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-092354-fixture-comm-rules.log
+# EXEC: 353960|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353962|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-092354-fixture-comm-rules.log
+# EXEC: 353964|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-092932-fixture-comm-rules-2.log
+# EXEC: 353965|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353966|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-092932-fixture-comm-rules-2.log
+# EXEC: 353967|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-093326-fixture-comm-rules-3.log
+# EXEC: 353968|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353969|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-093326-fixture-comm-rules-3.log
+# EXEC: 353970|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-093644-fixture-comm-rules-4.log
+# EXEC: 353971|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353972|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-093644-fixture-comm-rules-4.log
+# EXEC: 353973|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-093822-fixture-comm-rules-5.log
+# EXEC: 353974|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353975|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-093822-fixture-comm-rules-5.log
+# EXEC: 353976|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094042-fixture-comm-rules-6.log
+# EXEC: 353977|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353978|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094042-fixture-comm-rules-6.log
+# EXEC: 353979|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094623-fixture-comm-rules-bash.log
+# EXEC: 353980|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353981|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094623-fixture-comm-rules-bash.log
+# EXEC: 353982|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094722-fixture-comm-rules-bash2.log
+# EXEC: 353983|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353984|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094722-fixture-comm-rules-bash2.log
+# EXEC: 353985|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094737-fixture-comm-rules-pass.log
+# EXEC: 353986|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353987|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094737-fixture-comm-rules-pass.log
+# EXEC: 353988|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094801-comm-rules-sync.log
+# EXEC: 353989|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353990|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094801-comm-rules-sync.log
+# EXEC: 353991|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094841-comm-rules-embed.log
+# EXEC: 353992|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353993|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094841-comm-rules-embed.log
+# EXEC: 353994|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094926-comm-rules-drift.log
+# EXEC: 353995|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353996|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-094926-comm-rules-drift.log
+# EXEC: 353997|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-095002-comm-rules-embed-force.log
+# EXEC: 353998|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 353999|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-095002-comm-rules-embed-force.log
+# EXEC: 354000|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-095010-comm-rules-drift2.log
+# EXEC: 354001|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354002|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-095010-comm-rules-drift2.log
+# EXEC: 354003|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105452-semantic-stats.log
+# EXEC: 354004|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354005|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105452-semantic-stats.log
+# EXEC: 354006|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105500-semantic-drift.log
+# EXEC: 354007|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354008|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105500-semantic-drift.log
+# EXEC: 354009|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105520-semantic-search-1.log
+# EXEC: 354010|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354011|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105520-semantic-search-1.log
+# EXEC: 354012|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105528-semantic-search-2.log
+# EXEC: 354013|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354014|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105528-semantic-search-2.log
+# EXEC: 354015|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105534-semantic-search-3.log
+# EXEC: 354016|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354017|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105534-semantic-search-3.log
+# EXEC: 354018|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105924-semantic-eval.log
+# EXEC: 354019|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354020|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105924-semantic-eval.log
+# EXEC: 354021|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105949-semantic-eval-passage.log
+# EXEC: 354022|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354023|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-105949-semantic-eval-passage.log
+# EXEC: 354024|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-110004-semantic-eval-body.log
+# EXEC: 354025|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354026|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-110004-semantic-eval-body.log
+# EXEC: 354027|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-110004-semantic-eval-title.log
+# EXEC: 354028|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354029|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-110004-semantic-eval-title.log
+# EXEC: 354030|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-110932-semantic-engine-probe.log
+# EXEC: 354031|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354032|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-110932-semantic-engine-probe.log
+# EXEC: 354033|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-111131-probe-s01.log
+# EXEC: 354034|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354035|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-111131-probe-s01.log
+# EXEC: 354036|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-111422-probe-s03-eval-body.log
+# EXEC: 354037|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354038|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-111422-probe-s03-eval-body.log
+# EXEC: 354039|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-114151-skills-metadata-probe.log
+# EXEC: 354040|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354041|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-114151-skills-metadata-probe.log
+# EXEC: 354042|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115343-skills-metadata-survey.log
+# EXEC: 354043|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354044|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115343-skills-metadata-survey.log
+# EXEC: 354045|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115650-skills-metadata-migrate.log
+# EXEC: 354046|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354047|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115650-skills-metadata-migrate.log
+# EXEC: 354048|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115746-skills-metadata-migrate-2.log
+# EXEC: 354049|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354050|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115746-skills-metadata-migrate-2.log
+# EXEC: 354051|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115751-skills-metadata-verify.log
+# EXEC: 354052|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354053|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-115751-skills-metadata-verify.log
+# EXEC: 354054|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-120124-verify-rules-declarative.log
+# EXEC: 354055|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354056|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-120124-verify-rules-declarative.log
+# EXEC: 354057|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-120208-verify-rules-declarative.log
+# EXEC: 354058|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354059|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-120208-verify-rules-declarative.log
+# EXEC: 354060|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-152330-skill-bitacora-instantiate.log
+# EXEC: 354061|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354062|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-152330-skill-bitacora-instantiate.log
+# EXEC: 354063|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-153056-skill-bitacora-close.log
+# EXEC: 354064|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354065|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-153056-skill-bitacora-close.log
+# EXEC: 354066|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-153456-skill-bitacora-verify.log
+# EXEC: 354067|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354068|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-153456-skill-bitacora-verify.log
+# EXEC: 354069|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-154135-lang-dispatch-instantiate.log
+# EXEC: 354070|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354071|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-154135-lang-dispatch-instantiate.log
+# EXEC: 354072|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-155603-lang-dispatch-remove-old.log
+# EXEC: 354073|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354074|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-155603-lang-dispatch-remove-old.log
+# EXEC: 354075|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-155604-lang-dispatch-close.log
+# EXEC: 354076|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354077|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-155604-lang-dispatch-close.log
+# EXEC: 354078|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-155947-playwright-dispatch-instantiate.log
+# EXEC: 354079|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354080|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-155947-playwright-dispatch-instantiate.log
+# EXEC: 354081|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160009-lang-ref-rename.log
+# EXEC: 354082|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354083|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160009-lang-ref-rename.log
+# EXEC: 354085|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354084|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160429-module-restructure.log
+# EXEC: 354086|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160429-module-restructure.log
+# EXEC: 354087|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160529-dispatcher-root-restructure.log
+# EXEC: 354088|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354089|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160529-dispatcher-root-restructure.log
+# EXEC: 354090|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160737-playwright-dispatch-close.log
+# EXEC: 354091|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354092|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160737-playwright-dispatch-close.log
+# EXEC: 354093|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160933-git-push-instantiate.log
+# EXEC: 354094|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354095|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160933-git-push-instantiate.log
+# EXEC: 354096|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160934-git-inspect.log
+# EXEC: 354097|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354098|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-160934-git-inspect.log
+# EXEC: 354099|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-161103-git-add.log
+# EXEC: 354100|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354101|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-161103-git-add.log
+# EXEC: 354102|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-161122-git-commit-push.log
+# EXEC: 354103|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354104|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-161122-git-commit-push.log
+# EXEC: 354105|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-161203-git-push-close.log
+# EXEC: 354106|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354107|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-161203-git-push-close.log
+# EXEC: 354108|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-161320-git-finalize.log
+# EXEC: 354109|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354110|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-161320-git-finalize.log
+# EXEC: 354111|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-174743-identity-agent-declare.log
+# EXEC: 354112|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354113|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-174743-identity-agent-declare.log
+# EXEC: 354114|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-175109-identity-agent-declare.log
+# EXEC: 354115|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354116|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-175109-identity-agent-declare.log
+# EXEC: 354117|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-175545-skills-db-reconcile.log
+# EXEC: 354118|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354119|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-175545-skills-db-reconcile.log
+# EXEC: 354120|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180557-identity-agent-report.log
+# EXEC: 354121|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354122|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180557-identity-agent-report.log
+# EXEC: 354123|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180602-git2-instantiate.log
+# EXEC: 354124|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354125|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180602-git2-instantiate.log
+# EXEC: 354126|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180603-git2-inspect.log
+# EXEC: 354127|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354128|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180603-git2-inspect.log
+# EXEC: 354129|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180622-git2-add.log
+# EXEC: 354130|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354131|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180622-git2-add.log
+# EXEC: 354132|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180628-git2-commit-push.log
+# EXEC: 354133|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354134|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180628-git2-commit-push.log
+# EXEC: 354135|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180636-git2-close.log
+# EXEC: 354136|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354137|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180636-git2-close.log
+# EXEC: 354138|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180736-git2-finalize.log
+# EXEC: 354139|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354140|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-180736-git2-finalize.log
+# EXEC: 354141|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181555-git3-instantiate.log
+# EXEC: 354142|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354143|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181555-git3-instantiate.log
+# EXEC: 354144|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181603-git3-commit.log
+# EXEC: 354145|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354146|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181603-git3-commit.log
+# EXEC: 354147|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181617-git3-debug.log
+# EXEC: 354148|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354149|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181617-git3-debug.log
+# EXEC: 354150|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181631-git3-debug2.log
+# EXEC: 354151|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354152|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181631-git3-debug2.log
+# EXEC: 354153|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181640-git3-debug3.log
+# EXEC: 354154|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354155|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181640-git3-debug3.log
+# EXEC: 354156|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181713-git3-golf-check.log
+# EXEC: 354157|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354158|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181713-git3-golf-check.log
+# EXEC: 354159|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181722-git3-commit2.log
+# EXEC: 354160|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354161|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181722-git3-commit2.log
+# EXEC: 354162|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181730-git3-close.log
+# EXEC: 354163|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354164|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181730-git3-close.log
+# EXEC: 354165|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181853-git3-finalize.log
+# EXEC: 354166|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354167|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181853-git3-finalize.log
+# EXEC: 354168|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181909-git-sweep.log
+# EXEC: 354169|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354170|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-181909-git-sweep.log
+# EXEC: 354171|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-182111-bitacora-audit-root.log
+# EXEC: 354172|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354173|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-182111-bitacora-audit-root.log
+# EXEC: 354175|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354174|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-182924-skills-db-reconcile-2.log
+# EXEC: 354176|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-182924-skills-db-reconcile-2.log
+# EXEC: 354177|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-184809-skills-drop-related-column.log
+# EXEC: 354178|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354179|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-184809-skills-drop-related-column.log
+# EXEC: 354180|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185748-patterns-purge-llm.log
+# EXEC: 354181|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354182|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185748-patterns-purge-llm.log
+# EXEC: 354183|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185759-sweep-commit.log
+# EXEC: 354184|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354185|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185759-sweep-commit.log
+# EXEC: 354186|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185807-sweep-commit2.log
+# EXEC: 354187|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354188|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185807-sweep-commit2.log
+# EXEC: 354189|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185816-sweep-ls.log
+# EXEC: 354190|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354191|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185816-sweep-ls.log
+# EXEC: 354192|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185825-sweep-commit3.log
+# EXEC: 354193|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354194|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185825-sweep-commit3.log
+# EXEC: 354195|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185855-patterns-insert-embedding-batch.log
+# EXEC: 354196|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354197|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-185855-patterns-insert-embedding-batch.log
+# EXEC: 354198|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190420-bitacora-run-instantiate.log
+# EXEC: 354199|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354200|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190420-bitacora-run-instantiate.log
+# EXEC: 354201|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190420-bitacora-run-instantiate.log
+# EXEC: 354202|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190551-bitacora-run-execute.log
+# EXEC: 354203|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354204|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190551-bitacora-run-execute.log
+# EXEC: 354205|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190551-bitacora-run-execute.log
+# EXEC: 354206|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190602-bitacora-run-close.log
+# EXEC: 354207|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354208|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190602-bitacora-run-close.log
+# EXEC: 354209|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190602-bitacora-run-close.log
+# EXEC: 354210|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190616-bitacora-run-verify.log
+# EXEC: 354211|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354212|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190616-bitacora-run-verify.log
+# EXEC: 354213|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190616-bitacora-run-verify.log
+# EXEC: 354214|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-survey/2026-07-28-assess-harness-survey.md
+# EXEC: 354215|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354216|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-survey/2026-07-28-assess-harness-survey.md
+# EXEC: 354217|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-07-24--execution-phases.md
+# EXEC: 354218|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354219|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-07-24--execution-phases.md
+# EXEC: 354220|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-07-24--language-recommendation.md
+# EXEC: 354221|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354222|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-07-24--language-recommendation.md
+# EXEC: 354223|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-07-24--rust-native-plan.md
+# EXEC: 354224|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354225|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-07-24--rust-native-plan.md
+# EXEC: 354226|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-07-24--vector-search-revive.md
+# EXEC: 354227|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354228|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-07-24--vector-search-revive.md
+# EXEC: 354229|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-07-26T203043.md
+# EXEC: 354230|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354231|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-07-26T203043.md
+# EXEC: 354232|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-07-27T184135.md
+# EXEC: 354233|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354234|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-07-27T184135.md
+# EXEC: 354236|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354235|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--audit-wrappers-fix.md
+# EXEC: 354237|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--audit-wrappers-fix.md
+# EXEC: 354238|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--bitacora-tooling.md
+# EXEC: 354239|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354240|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--bitacora-tooling.md
+# EXEC: 354241|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--continue-session-queue.md
+# EXEC: 354242|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354243|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--continue-session-queue.md
+# EXEC: 354244|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--go-scripts-toolchain.md
+# EXEC: 354245|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354246|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--go-scripts-toolchain.md
+# EXEC: 354247|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--remaining-work-queue.md
+# EXEC: 354248|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354249|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--remaining-work-queue.md
+# EXEC: 354250|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--resolve-remaining-stale-protocol-ids.md
+# EXEC: 354251|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354252|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--resolve-remaining-stale-protocol-ids.md
+# EXEC: 354253|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--rules-skills-overhaul-remaining.md
+# EXEC: 354254|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354255|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--rules-skills-overhaul-remaining.md
+# EXEC: 354256|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--scripts-health-audit.md
+# EXEC: 354257|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354258|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-01--scripts-health-audit.md
+# EXEC: 354259|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--add-parse-failure-and-sync-coverage-check-to-audit-suite.md
+# EXEC: 354260|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354261|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--add-parse-failure-and-sync-coverage-check-to-audit-suite.md
+# EXEC: 354262|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--bitacora-workflow-run.md
+# EXEC: 354263|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354265|/usr/bin/rg|rg -m1 ^Status: /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--bitacora-workflow-run.md
+# EXEC: 354266|/usr/bin/sed|sed s/^Status: *//
+# EXEC: 354267|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--bitacora-workflow-run.md
+# EXEC: 354268|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--bitacora-workflow-skill.md
+# EXEC: 354269|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354270|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--bitacora-workflow-skill.md
+# EXEC: 354271|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--communication-proper-english-rule.md
+# EXEC: 354272|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354273|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--communication-proper-english-rule.md
+# EXEC: 354274|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--communication-rules-fixture.md
+# EXEC: 354275|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354276|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--communication-rules-fixture.md
+# EXEC: 354277|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--communication-rules-followup.md
+# EXEC: 354278|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354279|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--communication-rules-followup.md
+# EXEC: 354280|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--declare-identity-entity-identity-agent-grounded-in-agents-md.md
+# EXEC: 354281|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354282|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--declare-identity-entity-identity-agent-grounded-in-agents-md.md
+# EXEC: 354283|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--git-push-mgba-session2.md
+# EXEC: 354284|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354285|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--git-push-mgba-session2.md
+# EXEC: 354286|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--git-push-record-fixes.md
+# EXEC: 354287|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354288|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--git-push-record-fixes.md
+# EXEC: 354289|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--git-push-skill-dispatchers.md
+# EXEC: 354290|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354291|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--git-push-skill-dispatchers.md
+# EXEC: 354292|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--language-dispatcher-skill.md
+# EXEC: 354293|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354294|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--language-dispatcher-skill.md
+# EXEC: 354295|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--language-ring-topology.md
+# EXEC: 354296|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354297|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--language-ring-topology.md
+# EXEC: 354298|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--playwright-dispatcher-ref.md
+# EXEC: 354299|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354300|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--playwright-dispatcher-ref.md
+# EXEC: 354301|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--spec-communication-rules.md
+# EXEC: 354302|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354303|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/2026-08-02--spec-communication-rules.md
+# EXEC: 354304|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/batch-math-ratio.md
+# EXEC: 354305|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354306|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/batch-math-ratio.md
+# EXEC: 354307|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/batch-ratio-papers.md
+# EXEC: 354308|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354309|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/batch-ratio-papers.md
+# EXEC: 354310|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/bitacora-log-tracing.md
+# EXEC: 354311|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354312|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/bitacora-log-tracing.md
+# EXEC: 354313|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/classification-ratio.md
+# EXEC: 354314|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354315|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/classification-ratio.md
+# EXEC: 354316|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/code-infrastructure.md
+# EXEC: 354317|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354318|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/code-infrastructure.md
+# EXEC: 354319|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/crossref-audit.md
+# EXEC: 354320|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354321|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/crossref-audit.md
+# EXEC: 354322|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/embedding-improvement.md
+# EXEC: 354323|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354324|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/embedding-improvement.md
+# EXEC: 354325|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/extract-embedder-onnx.md
+# EXEC: 354326|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354327|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/extract-embedder-onnx.md
+# EXEC: 354328|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/extract-vector-reindex.md
+# EXEC: 354329|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354330|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/extract-vector-reindex.md
+# EXEC: 354331|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/maxim-error-devise.md
+# EXEC: 354332|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354333|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/maxim-error-devise.md
+# EXEC: 354334|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/mcp-rom-acquire.md
+# EXEC: 354335|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354336|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/mcp-rom-acquire.md
+# EXEC: 354337|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/mcp-semantic.md
+# EXEC: 354338|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354339|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/mcp-semantic.md
+# EXEC: 354340|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/patlib-db-hardening.md
+# EXEC: 354341|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354342|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/patlib-db-hardening.md
+# EXEC: 354343|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/post-extraction-remaining.md
+# EXEC: 354344|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354345|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/post-extraction-remaining.md
+# EXEC: 354346|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/post-migration-tasks.md
+# EXEC: 354347|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354348|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/post-migration-tasks.md
+# EXEC: 354349|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/protocol-audit-update.md
+# EXEC: 354350|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354351|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/protocol-audit-update.md
+# EXEC: 354352|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/protocol-final-audit.md
+# EXEC: 354353|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354354|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/protocol-final-audit.md
+# EXEC: 354355|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/README.md
+# EXEC: 354356|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354357|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/README.md
+# EXEC: 354358|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/reindex-tool.md
+# EXEC: 354359|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354360|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/reindex-tool.md
+# EXEC: 354361|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/reindex-vectors-cli.md
+# EXEC: 354362|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354363|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/reindex-vectors-cli.md
+# EXEC: 354364|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/remaining-system-tasks.md
+# EXEC: 354365|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354366|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/remaining-system-tasks.md
+# EXEC: 354367|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/remaining-tasks.md
+# EXEC: 354368|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354369|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/remaining-tasks.md
+# EXEC: 354370|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/reports-created.md
+# EXEC: 354371|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354372|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/reports-created.md
+# EXEC: 354373|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/rewrite-agents-communication.md
+# EXEC: 354374|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354375|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/rewrite-agents-communication.md
+# EXEC: 354376|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/schema-split-complete.md
+# EXEC: 354377|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354378|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/schema-split-complete.md
+# EXEC: 354379|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/semantic-engine-test.md
+# EXEC: 354380|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354381|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/semantic-engine-test.md
+# EXEC: 354382|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/SESSION_PROGRESS.md
+# EXEC: 354383|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354384|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/SESSION_PROGRESS.md
+# EXEC: 354385|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/skills-format-standardize.md
+# EXEC: 354386|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354387|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/skills-format-standardize.md
+# EXEC: 354388|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/sync-module.md
+# EXEC: 354389|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354390|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/sync-module.md
+# EXEC: 354391|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/taxonomy-derivation-maxims.md
+# EXEC: 354392|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354393|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/taxonomy-derivation-maxims.md
+# EXEC: 354395|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354394|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/terms-classification.md
+# EXEC: 354396|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/terms-classification.md
+# EXEC: 354397|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/terms-classify-first-batch.md
+# EXEC: 354398|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354399|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/terms-classify-first-batch.md
+# EXEC: 354400|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/test-devise.md
+# EXEC: 354401|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354402|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/test-devise.md
+# EXEC: 354403|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-auto-sync-misses-agent-writes.md
+# EXEC: 354404|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354405|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-auto-sync-misses-agent-writes.md
+# EXEC: 354406|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-cognition-concept-definition-entity-setup.md
+# EXEC: 354407|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354408|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-cognition-concept-definition-entity-setup.md
+# EXEC: 354409|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-complete-hook-scope-audit.md
+# EXEC: 354410|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354411|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-complete-hook-scope-audit.md
+# EXEC: 354412|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-hook-event-three-tier-model.md
+# EXEC: 354413|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354414|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-hook-event-three-tier-model.md
+# EXEC: 354415|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO.md
+# EXEC: 354416|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354417|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO.md
+# EXEC: 354418|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-nexus-layer-choice-event-model.md
+# EXEC: 354419|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354420|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-nexus-layer-choice-event-model.md
+# EXEC: 354421|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-pat-lib-contract-enforcement.md
+# EXEC: 354422|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354423|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-pat-lib-contract-enforcement.md
+# EXEC: 354424|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-seed-schema-plugin-hooks.md
+# EXEC: 354425|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354426|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-seed-schema-plugin-hooks.md
+# EXEC: 354427|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-shared-deps-functional-core-cli-shell.md
+# EXEC: 354428|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354429|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-shared-deps-functional-core-cli-shell.md
+# EXEC: 354430|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-terminology-hooks-and-fswatch.md
+# EXEC: 354431|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354432|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/TODO-terminology-hooks-and-fswatch.md
+# EXEC: 354433|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/vector-search-audit.md
+# EXEC: 354434|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354435|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/vector-search-audit.md
+# EXEC: 354436|/usr/bin/basename|basename /home/eddyr/assembler/.opencode/_bitacora/task-todo/vector-search-verified.md
+# EXEC: 354437|/usr/bin/rg|rg -qi bitacora-workflow-run
+# EXEC: 354438|/usr/bin/rg|rg -qi bitacora-workflow-run /home/eddyr/assembler/.opencode/_bitacora/task-todo/vector-search-verified.md
+# EXEC: 354440|/usr/bin/wc|wc -l
+# EXEC: 354441|/usr/bin/tr|tr -d  
+# EXEC: 354443|/usr/bin/wc|wc -c
+# EXEC: 354444|/usr/bin/tr|tr -d  
+# EXEC: 354446|/usr/bin/wc|wc -l
+# EXEC: 354447|/usr/bin/tr|tr -d  
+# EXEC: 354448|/usr/bin/date|date +%s%N
+# EXEC: 354450|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190616-bitacora-run-verify.log
+# EXEC: 354452|/usr/bin/cat|cat /tmp/tmp.5wTqvFF7AS
+# EXEC: 354453|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190616-bitacora-run-verify.log
+# EXEC: 354454|/usr/bin/cat|cat /tmp/tmp.VfUXQLfGWO
+# EXEC: 354455|/usr/bin/cat|cat /tmp/tmp.VfUXQLfGWO
+# EXEC: 354456|/usr/bin/rm|rm -f /tmp/tmp.5wTqvFF7AS /tmp/tmp.VfUXQLfGWO
+# EXEC: 354458|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190616-bitacora-run-verify.log
+# EXEC: 354460|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190616-bitacora-run-verify.log
+# EXEC: 354462|/usr/bin/tee|tee -a /home/eddyr/assembler/.opencode/_bitacora/task-stdout/20260802-190616-bitacora-run-verify.log
+# PROGS: node=v25.2.1 basename=basename (GNU coreutils) 9.11 bash=GNU bash, version 5.3.15(1)-release (x86_64-pc-linux-gnu) bun=1.3.14 cat=cat (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 dirname=dirname (GNU coreutils) 9.11 git=git version 2.55.0 go=go version go1.26.5-X:nodwarf5 linux/amd64 head=head (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 python3=Python 3.14.6 rg=ripgrep 15.2.0 rm=rm (GNU coreutils) 9.11 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) sed=/usr/bin/sed (GNU sed) 4.10 sha256sum=sha256sum (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11
+# EXEC_COUNT: 1594
+# SHA: f748de20a057f9490a035ceaa34b453c7b492d01e324d9d9bbbf9574c9461919
+# exit: 0
