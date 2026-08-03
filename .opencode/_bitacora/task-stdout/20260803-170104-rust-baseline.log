@@ -1,0 +1,27 @@
+# CMD: bash -c echo\ \"===\ rustc\ ===\"\;\ rustc\ --version\;\ echo\ \"===\ cargo\ ===\"\;\ cargo\ --version\;\ echo\ \"===\ rustup\?\ ===\"\;\ which\ rustup\ \&\&\ rustup\ toolchain\ list\ 2\>\&1\ \|\|\ echo\ \"no\ rustup\"\;\ echo\ \"===\ rust-toolchain\ files\ ===\"\;\ find\ /home/eddyr/assembler\ -maxdepth\ 4\ -name\ \"rust-toolchain\*\"\ -not\ -path\ \"\*/node_modules/\*\"\ -not\ -path\ \"\*/.git/\*\"\ 2\>/dev/null 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T17:01:04-06:00
+# PID: 477420
+# DUR: 298ms
+# exit: 0
+# GIT: assembler@2c214e2
+# BRANCH: main
+# SESSION: 82d7754b
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c echo\ \"===\ rustc\ ===\"\;\ rustc\ --version\;\ echo\ \"===\ cargo\ ===\"\;\ cargo\ --version\;\ echo\ \"===\ rustup\?\ ===\"\;\ which\ rustup\ \&\&\ rustup\ toolchain\ list\ 2\>\&1\ \|\|\ echo\ \"no\ rustup\"\;\ echo\ \"===\ rust-toolchain\ files\ ===\"\;\ find\ /home/eddyr/assembler\ -maxdepth\ 4\ -name\ \"rust-toolchain\*\"\ -not\ -path\ \"\*/node_modules/\*\"\ -not\ -path\ \"\*/.git/\*\"\ 2\>/dev/null 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== rustc ===
+rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1)
+=== cargo ===
+cargo 1.97.1 (c980f4866 2026-06-30) (Arch Linux rust 1:1.97.1-1.1)
+=== rustup? ===
+no rustup
+=== rust-toolchain files ===
+/home/eddyr/assembler/_codex/helix-repo/helix/rust-toolchain.toml
+which: no rustup in (/home/eddyr/.cache/.bun/bin:/home/eddyr/.cache/.bun/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/eddyr/.local/share/mise/installs/java/latest/bin:/home/eddyr/.local/share/mise/installs/node/25.2.1/bin:/home/eddyr/.local/share/omarchy/bin:/home/eddyr/.local/share/mise/shims:/home/eddyr/.local/share/omarchy/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:/opt/android-sdk/tools/bin:/usr/share/dotnet:/home/eddyr/.dotnet/tools:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/pspdev/bin:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:/opt/android-sdk/tools/bin:/opt/pspdev/bin:/home/eddyr/.local/bin:/opt/pspdev/bin)
+# OUT_LINES: 8
+# OUT_BYTES: 283
+# ERR_LINES: 1
+# SHA: edb05586e8e8b7264f7389bad158a42d91ee696532d2f559fbeffb63c5d667d6

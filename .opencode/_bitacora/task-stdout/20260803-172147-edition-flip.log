@@ -1,0 +1,21 @@
+# CMD: bash -c cd\ /home/eddyr/assembler\ \&\&\ for\ f\ in\ .opencode/_rustlib/Cargo.toml\ .opencode/_scripts/_rs/Cargo.toml\ .opencode/_scripts/_bin/Cargo.toml\;\ do\ cp\ \"\$f\"\ \"/tmp/opencode/\$\(basename\ \$\(dirname\ \$f\)\)-Cargo-2021.bak\"\;\ perl\ -pi\ -e\ \"s/edition\ =\ \\\"2021\\\"/edition\ =\ \\\"2024\\\"/\"\ \"\$f\"\;\ echo\ \"\$f\ -\>\ \$\(grep\ -oP\ \"edition\ =\ \\\"\\d+\\\"\"\ \"\$f\"\)\"\;\ done 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T17:21:47-06:00
+# PID: 493539
+# DUR: 107ms
+# exit: 0
+# GIT: assembler@2c214e2
+# BRANCH: main
+# SESSION: 48c07ba5
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cd\ /home/eddyr/assembler\ \&\&\ for\ f\ in\ .opencode/_rustlib/Cargo.toml\ .opencode/_scripts/_rs/Cargo.toml\ .opencode/_scripts/_bin/Cargo.toml\;\ do\ cp\ \"\$f\"\ \"/tmp/opencode/\$\(basename\ \$\(dirname\ \$f\)\)-Cargo-2021.bak\"\;\ perl\ -pi\ -e\ \"s/edition\ =\ \\\"2021\\\"/edition\ =\ \\\"2024\\\"/\"\ \"\$f\"\;\ echo\ \"\$f\ -\>\ \$\(grep\ -oP\ \"edition\ =\ \\\"\\d+\\\"\"\ \"\$f\"\)\"\;\ done 
+# CWD: /home/eddyr/assembler
+# --------------------
+.opencode/_rustlib/Cargo.toml -> edition = "2024"
+.opencode/_scripts/_rs/Cargo.toml -> edition = "2024"
+.opencode/_scripts/_bin/Cargo.toml -> edition = "2024"
+# OUT_LINES: 3
+# OUT_BYTES: 159
+# ERR_LINES: 0
+# SHA: 182166c835d90ffd3075ea0f1d4d0c01334603994961e7927b8dcf6e7a9c9911

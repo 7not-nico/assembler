@@ -1,0 +1,29 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/.opencode/_scripts\ \&\&\ echo\ \"===\ rs\ runs\ \(Go\ primary\)\ ===\"\;\ ./rs\ count\ 2\>\&1\ \|\ tail\ -2\;\ echo\ \"===\ Rust\ fallback\ forced\ \(rename\ Go\ bin\ aside\)\ ===\"\;\ mv\ _golib/bin/assembler-cli\ _golib/bin/assembler-cli.bak\ \&\&\ ./rs\ audit\ protocols\ 2\>\&1\ \|\ tail\ -1\;\ mv\ _golib/bin/assembler-cli.bak\ _golib/bin/assembler-cli\ \&\&\ echo\ \"\(Go\ bin\ restored\)\"\;\ echo\ \"===\ assemble\ ANN\ twin\ smoke\ ===\"\;\ echo\ \"\{\\\"vectors\\\":\[\[1.0\,0.0\]\,\[0.0\,1.0\]\]\}\"\ \|\ /home/eddyr/assembler/.opencode/_rustlib/target/release/assemble\ 2\>\&1\ \|\ head\ -3\ \|\|\ echo\ \"assemble\ needs\ score\|hit\|unit\ mode\"\;\ echo\ \"===\ assemble\ score\ mode\ ===\"\;\ echo\ \"\{\\\"query\\\":\[1.0\,0.0\,0.0\,0.0\]\,\\\"vectors\\\":\[\[1.0\,0.0\,0.0\,0.0\]\,\[0.0\,1.0\,0.0\,0.0\]\]\}\"\ \|\ /home/eddyr/assembler/.opencode/_rustlib/target/release/assemble\ score\ 2\>\&1\ \|\ head\ -3 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T17:02:29-06:00
+# PID: 479769
+# DUR: 223ms
+# exit: 0
+# GIT: assembler@2c214e2
+# BRANCH: main
+# SESSION: b340870c
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cd\ /home/eddyr/assembler/.opencode/_scripts\ \&\&\ echo\ \"===\ rs\ runs\ \(Go\ primary\)\ ===\"\;\ ./rs\ count\ 2\>\&1\ \|\ tail\ -2\;\ echo\ \"===\ Rust\ fallback\ forced\ \(rename\ Go\ bin\ aside\)\ ===\"\;\ mv\ _golib/bin/assembler-cli\ _golib/bin/assembler-cli.bak\ \&\&\ ./rs\ audit\ protocols\ 2\>\&1\ \|\ tail\ -1\;\ mv\ _golib/bin/assembler-cli.bak\ _golib/bin/assembler-cli\ \&\&\ echo\ \"\(Go\ bin\ restored\)\"\;\ echo\ \"===\ assemble\ ANN\ twin\ smoke\ ===\"\;\ echo\ \"\{\\\"vectors\\\":\[\[1.0\,0.0\]\,\[0.0\,1.0\]\]\}\"\ \|\ /home/eddyr/assembler/.opencode/_rustlib/target/release/assemble\ 2\>\&1\ \|\ head\ -3\ \|\|\ echo\ \"assemble\ needs\ score\|hit\|unit\ mode\"\;\ echo\ \"===\ assemble\ score\ mode\ ===\"\;\ echo\ \"\{\\\"query\\\":\[1.0\,0.0\,0.0\,0.0\]\,\\\"vectors\\\":\[\[1.0\,0.0\,0.0\,0.0\]\,\[0.0\,1.0\,0.0\,0.0\]\]\}\"\ \|\ /home/eddyr/assembler/.opencode/_rustlib/target/release/assemble\ score\ 2\>\&1\ \|\ head\ -3 
+# CWD: /home/eddyr/assembler
+# --------------------
+=== rs runs (Go primary) ===
+taxonomies       | 3    
+terms            | 28   
+=== Rust fallback forced (rename Go bin aside) ===
+audit ok — 46 entities of type 'protocols', 0 faults
+(Go bin restored)
+=== assemble ANN twin smoke ===
+Error: usage: assemble <score|hit|unit>
+  Pipe JSON to stdin
+=== assemble score mode ===
+Error: missing 'first'
+# OUT_LINES: 11
+# OUT_BYTES: 347
+# ERR_LINES: 0
+# SHA: b7df009a4f8258a0d41452de6f222fce5cc5f86cd1d305d7137134a5feba1a4d

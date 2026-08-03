@@ -1,0 +1,23 @@
+# CMD: bash -c cd\ /home/eddyr/assembler/.opencode/_scripts/_bin\ \&\&\ cargo\ build\ --release\ 2\>\&1\ \|\ tail\ -6\ \&\&\ echo\ \"===\ binary\ ===\"\ \&\&\ ls\ -la\ target/release/assembler-cli 
+# ENV: bun=1.3.14 node=v25.2.1 python3=Python 3.14.6 ruby=ruby 3.4.10 (2026-06-30 revision 2b0b7728dc) +PRISM [x86_64-linux] rustc=rustc 1.97.1 (8bab26f4f 2026-07-14) (Arch Linux rust 1:1.97.1-1.1) go=go version go1.26.5-X:nodwarf5 linux/amd64
+# TOOLS: git=git version 2.55.0 sha256sum=sha256sum (GNU coreutils) 9.11 date=date (GNU coreutils) 9.11 wc=wc (GNU coreutils) 9.11 cat=cat (GNU coreutils) 9.11 tee=tee (GNU coreutils) 9.11 mktemp=mktemp (GNU coreutils) 9.11 rm=rm (GNU coreutils) 9.11 timeout=timeout (GNU coreutils) 9.11 tr=tr (GNU coreutils) 9.11 head=head (GNU coreutils) 9.11 cut=cut (GNU coreutils) 9.11
+# DATE: 2026-08-03T17:02:20-06:00
+# PID: 479463
+# DUR: 3255ms
+# exit: 0
+# GIT: assembler@2c214e2
+# BRANCH: main
+# SESSION: fe20aa7b
+# CLI: bash 5.3.15(1)-release
+# ARGS: -c cd\ /home/eddyr/assembler/.opencode/_scripts/_bin\ \&\&\ cargo\ build\ --release\ 2\>\&1\ \|\ tail\ -6\ \&\&\ echo\ \"===\ binary\ ===\"\ \&\&\ ls\ -la\ target/release/assembler-cli 
+# CWD: /home/eddyr/assembler
+# --------------------
+   Compiling assembler-scripts v0.1.0 (/home/eddyr/assembler/.opencode/_scripts/_rs)
+   Compiling assembler-cli v0.1.0 (/home/eddyr/assembler/.opencode/_scripts/_bin)
+    Finished `release` profile [optimized] target(s) in 3.17s
+=== binary ===
+-rwxr-xr-x 2 eddyr eddyr 4029952 Aug  3 17:02 target/release/assembler-cli
+# OUT_LINES: 5
+# OUT_BYTES: 319
+# ERR_LINES: 0
+# SHA: 68ec3cf2e80c826edef6e37cd1492770dbcec99b96ef546ca683bce0c16cdf9a
