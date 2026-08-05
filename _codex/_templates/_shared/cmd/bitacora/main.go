@@ -38,9 +38,9 @@ func main() {
 			desc = argv[2]
 		}
 		now := time.Now()
-		ts := now.Format("20060102-150405")
-		rec := Record{subdir: "task-todo", topic: topic, ts: ts}
-		path, err := recordWrite(rec, todoBody(topic, desc, now.Format("2006-01-02")))
+		ts := now.Format(_TsFormat)
+		rec := Record{subdir: _TodoSubdir, topic: topic, ts: ts}
+		path, err := recordWrite(rec, todoBody(topic, desc, now.Format(_DateFormat)))
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "ERROR %v\n", err)
 			os.Exit(1)
@@ -56,9 +56,9 @@ func main() {
 			desc = argv[2]
 		}
 		now := time.Now()
-		ts := now.Format("20060102-150405")
-		rec := Record{subdir: "task-report", topic: topic, ts: ts}
-		path, err := recordWrite(rec, reportBody(ts, topic, desc, now.Format("2006-01-02")))
+		ts := now.Format(_TsFormat)
+		rec := Record{subdir: _ReportSubdir, topic: topic, ts: ts}
+		path, err := recordWrite(rec, reportBody(ts, topic, desc, now.Format(_DateFormat)))
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "ERROR %v\n", err)
 			os.Exit(1)

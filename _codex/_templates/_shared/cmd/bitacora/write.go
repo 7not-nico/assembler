@@ -38,7 +38,7 @@ func recordWrite(rec Record, body string) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	recDir := filepath.Join(base, "_bitacora", rec.subdir)
+	recDir := filepath.Join(base, _RecordRoot, rec.subdir)
 	if err := os.MkdirAll(recDir, 0o755); err != nil {
 		return "", err
 	}

@@ -18,5 +18,5 @@ type Record struct {
 
 // path — {base}/_bitacora/{subdir}/{ts}-{topic}.md
 func (r Record) path(base string) string {
-	return filepath.Join(base, "_bitacora", r.subdir, fmt.Sprintf("%s-%s.md", r.ts, r.topic))
+	return filepath.Join(base, _RecordRoot, r.subdir, fmt.Sprintf("%s-%s.md", r.ts, r.topic))
 }

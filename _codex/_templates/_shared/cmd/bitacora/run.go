@@ -27,13 +27,13 @@ func cmdRun(name string, trace bool, cmd []string) int {
 		fmt.Fprintf(os.Stderr, "ERROR %v\n", err)
 		return 1
 	}
-	stdoutDir := filepath.Join(base, "_bitacora", "task-stdout")
+	stdoutDir := filepath.Join(base, _RecordRoot, _StdoutSubdir)
 	if err := os.MkdirAll(stdoutDir, 0o755); err != nil {
 		fmt.Fprintf(os.Stderr, "ERROR %v\n", err)
 		return 1
 	}
 	now := time.Now()
-	ts := now.Format("20060102-150405")
+	ts := now.Format(_TsFormat)
 	logPath := filepath.Join(stdoutDir, ts+"-"+name+".log")
 
 	// one handle for the whole frame — header, streamed body, tail
