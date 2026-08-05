@@ -1,0 +1,10 @@
+{
+  "name": "mcp-instantiator",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP wrapper exposing the codex instantiator flows (acquire, stop, fetch, browse, build, launch, verify, trace) as agent tools",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.16.0",
+    "zod": "^4.0.0"
+  }
+}

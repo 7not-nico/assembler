@@ -32,7 +32,16 @@ This project dives the {repo} codebase — {one-sentence domain}. The dive {comp
 - `pattern/` holds code morphisms. Each carries structure, verification, and a session instance.
 - `procedure/` holds numbered step chains — one per code morphism. Procedures compose with patterns.
 - `_bitacora/` stores the shared record under `_codex/`. Every file carries the `{YYYYMMDD}-{HHMMSS}-` prefix.
-- `template/` holds the layer templates + precedences — the source of forms for new layer files; propagates via `copy-templates.sh`.
+- `template/` holds the layer templates + precedences — the source of forms for new layer files; propagates via `script/copy-templates.sh`.
+
+## Tooling — codex instantiation
+
+- `_templates/instantiator/` holds shared code for projects — the canonical implementations (`acquire-game`, `stop-process`, `fetch-download`, `browse-romsfun`, `build-cmake`, `launch-emulator`, `verify-archive`, `trace-evidence`).
+- `_templates/wrapper/` holds wrappers — the interface this project invokes; projects call wrappers, never implementations. Each wrapper resolves `_codex` from its own location and delegates to one canonical implementation.
+- `_templates/shell/` holds shells codex needs to operate (`bitacora-run`, `run-logged`, `slugify`, `start-browser*`); `_templates/script/` holds scripts codex needs to operate (`fetch-repo`, `scaffold-knowledge`, `copy-templates`, `copy-skills`, Ruby/TS tools).
+- `scripts/codex.sh {tool} [-- {args}]` — the dive's generic dispatcher; resolves `_codex` by walking up from any depth and execs `_templates/wrapper/{tool}.sh`. Tools: `run-bitacora`, `acquire-game`, `stop-process`, `fetch-download`, `browse-romsfun`, `build-cmake`, `launch-emulator`, `verify-archive`, `trace-evidence`.
+- A dive needing a codex tool adds a thin `scripts/` entry resolving `_codex` and delegating to the shared wrapper — the interface, never the implementation.
+- The bitacora chain: dive entry → `wrapper/run-bitacora.sh {name} [--trace] -- {cmd}` → `shell/bitacora-run.sh` → `_codex/_bitacora/task-stdout/{timestamp}-{name}.log`; `--trace` adds tracexec exec-tree enrichment; the tail appends `# DUR:`, `# DATE:`, `# exit:`.
 
 ## Build flow
 
@@ -99,7 +108,7 @@ The authoritative list of every edited code line. Diff anchor: `backup/{repo}-sr
 
 ## Records
 
-Every session writes timestamped files into `_codex/_bitacora/`. The todo precedes work; the report follows completion; every command output flows through `run-logged.sh` into `_bitacora/task-stdout/`. Reports carry metrics — build, tests, acquisitions, fixtures. Knowledge gained lands in its layer: invariant (state fact) → precept (rule) → concept (knowledge) → procedure (steps) → pattern (morphism) → study (architecture) → fixture (proof). Templates for the dive layers live in `_codex/_templates/` and propagate via `copy-templates.sh`.
+Every session writes timestamped files into `_codex/_bitacora/`. The todo precedes work; the report follows completion; every command output flows through `scripts/codex.sh run-bitacora {name} [--trace] -- {command}` into `_bitacora/task-stdout/`. Reports carry metrics — build, tests, acquisitions, fixtures. Knowledge gained lands in its layer: invariant (state fact) → precept (rule) → concept (knowledge) → procedure (steps) → pattern (morphism) → study (architecture) → fixture (proof). Templates for the dive layers live in `_codex/_templates/` and propagate via `script/copy-templates.sh`.
 
 ## Delegation
 
