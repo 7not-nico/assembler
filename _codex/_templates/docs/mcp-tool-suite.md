@@ -50,6 +50,24 @@ initialize → notifications/initialized → tools/list → tools/call
 
 Each tool call routes through the wrapper → canonical chain; the keyed result lines prove the delegation. Full 8-tool listing and live calls verified 2026-08-05.
 
+## Hardcoded values — the schema rule (2026-08-05)
+
+Hardcoded values live in **exactly one place**: `instantiator/schema/seed.sql` (the `shell_values` table, SQL-seed pattern). The citation chain:
+
+```text
+instantiator/schema/seed.sql  ← the only home for constants (9 rows)
+        ↓ cited by
+the .sh tools (7)             ← source lookup.sh, use SCHEMA_* vars
+        ↓ wrapped in
+wrapper/                      ← thin delegation
+        ↓ cited by
+the MCP server                ← default-free, passes through
+```
+
+- `00-ddl.sql` defines `shell_values`; `seed.sql` seeds it (CDP ports, CONSOLE_VALID, timeouts, TRACE_HEAD, IMAGE_EXTS, LAUNCH_LOG, FETCH_SELECTOR); `lookup.sh` exports each row as `SCHEMA_{KEY}`
+- The MCP servers carry **no defaults** — the shells own every default via the schema; a caller that omits an arg lets the shell's schema value apply
+- Verified: `inst_verify` → wrapper → verify-archive.sh → schema returns `OK Mega Man Zero 2 (USA).gba (8388608 B)`. Commit `fc5feaf`.
+
 ## Records
 
 - `_codex/_bitacora/task-reference/20260805-mcp-verify-issue.md` — the extension-gap issue (fixed)
