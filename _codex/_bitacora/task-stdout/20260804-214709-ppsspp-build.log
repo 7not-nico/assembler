@@ -1,0 +1,72 @@
+# CMD: cmake --build /home/eddyr/assembler/_codex/ppsspp-repo/build -j8 
+# DATE: 2026-08-04T21:47:09-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+[  0%] Built target GenericCodeGen
+[  1%] Built target utils
+[  1%] Built target OGLCompiler
+[  2%] Built target xxhash
+[  2%] Built target OSDependent
+[  4%] Built target miniupnpc
+[  4%] Built target snappy
+[  4%] Built target minimp3
+[  4%] Building CXX object ext/at3_standalone/CMakeFiles/at3_standalone.dir/compat.cpp.o
+[  4%] Built target gason
+[  4%] Built target udis86
+[  8%] Built target lua
+[ 11%] Built target rcheevos
+[ 11%] Built target spirv-cross-core
+[ 12%] Built target cityhash
+[ 12%] Built target vma
+[ 13%] Built target kirk
+[ 13%] Built target pugixml
+[ 14%] Built target 7zip
+[ 15%] Built target sfmt19937
+[ 15%] Built target xbrz
+[ 18%] Built target libzstd_static
+[ 18%] Building CXX object ext/imgui/CMakeFiles/imgui.dir/imgui_impl_thin3d.cpp.o
+[ 19%] Built target chdr
+[ 20%] Built target discord-rpc
+[ 26%] Built target armips
+[ 26%] Building CXX object ext/imgui/CMakeFiles/imgui.dir/imgui_impl_platform.cpp.o
+[ 26%] Generating something_that_never_exists
+[ 27%] Built target cpu_features
+-- Found Git: /usr/bin/git (found version "2.55.0")
+[ 27%] Built target spirv-cross-glsl
+[ 28%] Built target basis_universal
+[ 28%] Built target GitVersion
+[ 32%] Built target MachineIndependent
+[ 32%] Built target spirv-cross-cpp
+[ 33%] Built target spirv-cross-msl
+[ 33%] Built target spirv-cross-hlsl
+[ 33%] Built target glslang
+[ 34%] Built target SPIRV
+[ 34%] Building CXX object GPU/CMakeFiles/GPU.dir/Software/DrawPixelX86.cpp.o
+[ 34%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/VertexDecoderX86.cpp.o
+[ 34%] Building CXX object GPU/CMakeFiles/GPU.dir/GLES/StencilBufferGLES.cpp.o
+[ 34%] Building CXX object GPU/CMakeFiles/GPU.dir/Software/SamplerX86.cpp.o
+[ 35%] Building CXX object GPU/CMakeFiles/GPU.dir/GLES/GPU_GLES.cpp.o
+[ 35%] Linking CXX static library ../../lib/libat3_standalone.a
+[ 36%] Built target at3_standalone
+[ 36%] Building CXX object GPU/CMakeFiles/GPU.dir/GLES/FragmentTestCacheGLES.cpp.o
+[ 36%] Building CXX object GPU/CMakeFiles/GPU.dir/GLES/FramebufferManagerGLES.cpp.o
+[ 36%] Linking CXX static library ../../lib/libimgui.a
+[ 37%] Built target imgui
+[ 37%] Building CXX object GPU/CMakeFiles/GPU.dir/GLES/ShaderManagerGLES.cpp.o
+[ 37%] Building CXX object GPU/CMakeFiles/GPU.dir/GLES/StateMappingGLES.cpp.o
+[ 37%] Building CXX object Common/CMakeFiles/Common.dir/ABI.cpp.o
+[ 37%] Building CXX object Common/CMakeFiles/Common.dir/Thunk.cpp.o
+[ 38%] Building CXX object Common/CMakeFiles/Common.dir/x64Analyzer.cpp.o
+[ 38%] Building CXX object Common/CMakeFiles/Common.dir/x64Emitter.cpp.o
+[ 38%] Building CXX object GPU/CMakeFiles/GPU.dir/GLES/TextureCacheGLES.cpp.o
+[ 38%] Building CXX object Common/CMakeFiles/Common.dir/ArmEmitter.cpp.o
+[ 38%] Building CXX object Common/CMakeFiles/Common.dir/Arm64Emitter.cpp.o
+[ 38%] Building CXX object GPU/CMakeFiles/GPU.dir/GLES/DrawEngineGLES.cpp.o
+[ 38%] Building CXX object Common/CMakeFiles/Common.dir/RiscVEmitter.cpp.o
+[ 38%] Building CXX object GPU/CMakeFiles/GPU.dir/Vulkan/DebugVisVulkan.cpp.o
+[ 38%] Building CXX object Common/CMakeFiles/Common.dir/LoongArch64Emitter.cpp.o
+[ 38%] Building CXX object GPU/CMakeFiles/GPU.dir/Vulkan/DrawEngineVulkan.cpp.o
+[ 39%] Building CXX object Common/CMakeFiles/Common.dir/VR/PPSSPPVR.cpp.o
+[ 39%] Building CXX object Common/CMakeFiles/Common.dir/Serialize/Serializer.cpp.o
+[ 39%] Building CXX object GPU/CMakeFiles/GPU.dir/Vulkan/FramebufferManagerVulkan.cpp.o
+[ 40%] Building CXX object GPU/CMakeFiles/GPU.dir/Vulkan/GPU_Vulkan.cpp.o

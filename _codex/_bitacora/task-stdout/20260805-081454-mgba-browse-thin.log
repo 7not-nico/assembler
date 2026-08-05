@@ -1,0 +1,9 @@
+# CMD: bash mgba-repo/scripts/browse-romsfun.sh kirby-s-dream-land-2 20 
+# DATE: 2026-08-05T08:14:54-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+SEARCH https://romsfun.com/roms/60/?s=kirby-s-dream-land-2
+ERROR no game matches kirby-s-dream-land-2
+# DUR: 1562ms
+# DATE: 2026-08-05T08:14:55-06:00
+# exit: 1

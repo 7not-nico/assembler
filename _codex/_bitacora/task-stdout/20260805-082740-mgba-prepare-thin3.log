@@ -1,0 +1,8 @@
+# CMD: bash mgba-repo/scripts/prepare-rom.sh mgba-repo/fixture/carts/mbc1-64k.zip 
+# DATE: 2026-08-05T08:27:40-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/mbc1-64k.gb
+# DUR: 40ms
+# DATE: 2026-08-05T08:27:41-06:00
+# exit: 0

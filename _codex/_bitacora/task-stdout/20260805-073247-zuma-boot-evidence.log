@@ -1,0 +1,37 @@
+# CMD: bash -c rg\ -n\ \"Booted\|ULUS\|EBOOT.BIN\|DiscID\|PPGe\|SwapChain\|Vulkan\|main\ thread\|Creating\|:\ \[A-Za-z\]+\ :\"\ /tmp/tmp.vPDOkluNHL\ \|\ head\ -30 
+# DATE: 2026-08-05T07:32:47-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+2:31:22:798 Vulkan/VulkanLoader.cpp:462 I[G3D]: VulkanMayBeAvailable: Device allowed ('SDL:Linux')
+3:31:22:799 Vulkan/VulkanLoader.cpp:401 I[G3D]: Vulkan library loaded ('libvulkan.so')
+4:31:22:799 Vulkan/VulkanLoader.cpp:511 I[G3D]: VulkanMayBeAvailable: Enumerating instance extensions
+5:31:22:834 Vulkan/VulkanLoader.cpp:522 I[G3D]: VulkanMayBeAvailable: Instance extension count: 26
+6:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_KHR_device_group_creation (00000001)
+7:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_KHR_display (00000017)
+8:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_KHR_external_fence_capabilities (00000001)
+9:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_KHR_external_memory_capabilities (00000001)
+10:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_KHR_external_semaphore_capabilities (00000001)
+11:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_KHR_get_display_properties2 (00000001)
+12:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_KHR_get_physical_device_properties2 (00000002)
+13:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_KHR_get_surface_capabilities2 (00000001)
+14:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_KHR_surface (00000019)
+15:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_KHR_surface_protected_capabilities (00000001)
+16:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_KHR_wayland_surface (00000006)
+17:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_KHR_xcb_surface (00000006)
+18:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_KHR_xlib_surface (00000006)
+19:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_EXT_acquire_drm_display (00000001)
+20:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_EXT_acquire_xlib_display (00000001)
+21:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_EXT_debug_report (0000000a)
+22:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_EXT_debug_utils (00000002)
+23:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_EXT_direct_mode_display (00000001)
+24:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_EXT_display_surface_counter (00000001)
+25:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_EXT_headless_surface (00000001)
+26:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_KHR_surface_maintenance1 (00000001)
+27:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_EXT_surface_maintenance1 (00000001)
+28:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_EXT_swapchain_colorspace (00000005)
+29:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_KHR_portability_enumeration (00000001)
+30:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_LUNARG_direct_driver_loading (00000001)
+31:31:22:834 Vulkan/VulkanLoader.cpp:530 I[G3D]: VulkanMaybeAvailable: Instance extension found: VK_EXT_layer_settings (00000002)
+# DUR: 7ms
+# DATE: 2026-08-05T07:32:47-06:00
+# exit: 0

@@ -1,0 +1,40 @@
+# CMD: bash -c rg\ -n\ \"add_test\|enable_testing\|unittest\|UNITTEST\"\ ppsspp/CMakeLists.txt\ ppsspp/test/CMakeLists.txt\ 2\>/dev/null\ \|\ head\ -40 
+# DATE: 2026-08-05T06:51:54-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+ppsspp/CMakeLists.txt:4:enable_testing()
+ppsspp/CMakeLists.txt:189:option(UNITTEST "Set to ON to generate the unittest target" ${UNITTEST})
+ppsspp/CMakeLists.txt:1382:if(UNITTEST)
+ppsspp/CMakeLists.txt:1384:		unittest/UnitTest.cpp
+ppsspp/CMakeLists.txt:1385:		unittest/TestShaderGenerators.cpp
+ppsspp/CMakeLists.txt:1386:		unittest/TestArmEmitter.cpp
+ppsspp/CMakeLists.txt:1387:		unittest/TestArm64Emitter.cpp
+ppsspp/CMakeLists.txt:1388:		unittest/TestIRPassSimplify.cpp
+ppsspp/CMakeLists.txt:1389:		unittest/TestX64Emitter.cpp
+ppsspp/CMakeLists.txt:1390:		unittest/TestVertexJit.cpp
+ppsspp/CMakeLists.txt:1391:		unittest/TestVFS.cpp
+ppsspp/CMakeLists.txt:1392:		unittest/TestZipSlip.cpp
+ppsspp/CMakeLists.txt:1393:		unittest/TestLzrc.cpp
+ppsspp/CMakeLists.txt:1394:		unittest/TestTextureReplacer.cpp
+ppsspp/CMakeLists.txt:1395:		unittest/TestRiscVEmitter.cpp
+ppsspp/CMakeLists.txt:1396:		unittest/TestLoongArch64Emitter.cpp
+ppsspp/CMakeLists.txt:1397:		unittest/TestSoftwareGPUJit.cpp
+ppsspp/CMakeLists.txt:1398:		unittest/TestThreadManager.cpp
+ppsspp/CMakeLists.txt:1399:		unittest/JitHarness.cpp
+ppsspp/CMakeLists.txt:1435:	setup_target_project(PPSSPPUnitTest unittest)
+ppsspp/CMakeLists.txt:1436:	add_test(arm64_emitter PPSSPPUnitTest Arm64Emitter)
+ppsspp/CMakeLists.txt:1437:	add_test(arm_emitter PPSSPPUnitTest ArmEmitter)
+ppsspp/CMakeLists.txt:1438:	add_test(x64_emitter PPSSPPUnitTest X64Emitter)
+ppsspp/CMakeLists.txt:1439:	add_test(vertex_jit PPSSPPUnitTest VertexJit)
+ppsspp/CMakeLists.txt:1440:	add_test(asin PPSSPPUnitTest Asin)
+ppsspp/CMakeLists.txt:1441:	add_test(sincos PPSSPPUnitTest SinCos)
+ppsspp/CMakeLists.txt:1442:	add_test(vfpu_sincos PPSSPPUnitTest VFPUSinCos)
+ppsspp/CMakeLists.txt:1443:	add_test(math_util PPSSPPUnitTest MathUtil)
+ppsspp/CMakeLists.txt:1444:	add_test(parsers PPSSPPUnitTest Parsers)
+ppsspp/CMakeLists.txt:1445:	add_test(jit PPSSPPUnitTest Jit)
+ppsspp/CMakeLists.txt:1446:	add_test(matrix_transpose PPSSPPUnitTest VFPUMatrixTranspose)
+ppsspp/CMakeLists.txt:1447:	add_test(parse_lbn PPSSPPUnitTest ParseLBN)
+ppsspp/CMakeLists.txt:1448:	add_test(quick_texhash PPSSPPUnitTest QuickTexHash)
+ppsspp/CMakeLists.txt:1449:	add_test(clz PPSSPPUnitTest CLZ)
+ppsspp/CMakeLists.txt:1450:	add_test(shadergen PPSSPPUnitTest ShaderGenerators)
+# exit: 0

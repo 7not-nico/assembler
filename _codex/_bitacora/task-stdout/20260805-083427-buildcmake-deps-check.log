@@ -1,0 +1,8 @@
+# CMD: bash _templates/instantiator/build-cmake.sh /tmp/opencode/no-such-build-dir --no-build 
+# DATE: 2026-08-05T08:34:27-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+ERROR no configured build tree: /tmp/opencode/no-such-build-dir
+# DUR: 3ms
+# DATE: 2026-08-05T08:34:27-06:00
+# exit: 1

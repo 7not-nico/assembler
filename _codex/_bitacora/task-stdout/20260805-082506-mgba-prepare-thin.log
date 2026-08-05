@@ -1,0 +1,9 @@
+# CMD: bash mgba-repo/scripts/prepare-rom.sh mgba-repo/fixture/carts/mbc1-64k.zip 
+# DATE: 2026-08-05T08:25:06-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+ERROR no game image inside mgba-repo/fixture/carts/mbc1-64k.zip
+
+# DUR: 44ms
+# DATE: 2026-08-05T08:25:06-06:00
+# exit: 1

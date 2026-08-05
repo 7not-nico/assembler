@@ -1,0 +1,9 @@
+# CMD: bash -c bash\ scripts/kill-ppsspp.sh\;\ rm\ -f\ /dev/shm/PPSSPP_ID\;\ pgrep\ -ax\ PPSSPPSDL\ \|\|\ echo\ \"chain\ stopped\" 
+# DATE: 2026-08-05T07:31:07-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+ppsspp chain stopped
+chain stopped
+# DUR: 2109ms
+# DATE: 2026-08-05T07:31:09-06:00
+# exit: 0

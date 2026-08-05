@@ -1,0 +1,9 @@
+# CMD: bash -c mv\ \"/tmp/opencode/zuma/Zuma\ \(USA\).iso\"\ roms/zuma-usa.iso\ \&\&\ ls\ -la\ roms/zuma-usa.iso\ \&\&\ pgrep\ -ax\ PPSSPPSDL\ \|\|\ echo\ \"no\ emulator\ running\" 
+# DATE: 2026-08-05T07:31:02-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+-rw-r--r-- 1 eddyr eddyr 127205376 Jun 27 02:17 roms/zuma-usa.iso
+14157 ./build-quiet/PPSSPPSDL roms/burnin-rubber-usa.cso
+# DUR: 102ms
+# DATE: 2026-08-05T07:31:02-06:00
+# exit: 0

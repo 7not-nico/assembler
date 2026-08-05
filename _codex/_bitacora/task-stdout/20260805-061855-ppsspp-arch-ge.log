@@ -1,0 +1,34 @@
+# CMD: bash -c rg\ -n\ \"GeList\|Enqueue\|stall\|draw\|Vertex\|ListID\|idle\"\ Core/HLE/sceGe.cpp\ \|\ head\ -14\;\ echo\ ===\;\ rg\ -n\ \"u32\ sceGe\|int\ sceGe\|__GeInit\|__GeDoState\"\ Core/HLE/sceGe.cpp\ \|\ head\ -14 
+# DATE: 2026-08-05T06:18:55-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp
+# --------------------
+51:static WaitingThreadList drawWaitingThreads;
+230:	drawWaitingThreads.clear();
+267:	Do(p, drawWaitingThreads);
+303:		drawWaitingThreads.push_back(__KernelGetCurThread());
+330:		return __GeTriggerWait(WAITTYPE_GEDRAWSYNC, waitId, drawWaitingThreads);
+355:u32 sceGeListEnQueue(u32 listAddress, u32 stallAddress, int callbackId, u32 optParamAddr) {
+356:	auto optParam = PSPPointer<PspGeListArgs>::Create(optParamAddr);
+359:	u32 listID = gpu->EnqueueList(listAddress, stallAddress, __GeSubIntrBase(callbackId), optParam, false, &runList);
+372:		"%08x=sceGeListEnQueue(addr=%08x, stall=%08x, cbid=%08x, param=%08x) ticks=%lld", listID,
+373:		listAddress, stallAddress, callbackId, optParamAddr, (long long)CoreTiming::GetTicks());
+377:u32 sceGeListEnQueueHead(u32 listAddress, u32 stallAddress, int callbackId, u32 optParamAddr) {
+379:		"sceGeListEnQueueHead(addr=%08x, stall=%08x, cbid=%08x, param=%08x) ticks=%lld",
+380:		listAddress, stallAddress, callbackId, optParamAddr, (long long)CoreTiming::GetTicks());
+381:	auto optParam = PSPPointer<PspGeListArgs>::Create(optParamAddr);
+===
+217:void __GeInit() {
+238:void __GeDoState(PointerWrap &p) {
+339:static u32 sceGeEdramGetAddr() {
+346:static u32 sceGeEdramGetSize() {
+355:u32 sceGeListEnQueue(u32 listAddress, u32 stallAddress, int callbackId, u32 optParamAddr) {
+377:u32 sceGeListEnQueueHead(u32 listAddress, u32 stallAddress, int callbackId, u32 optParamAddr) {
+399:static int sceGeListDeQueue(u32 listID) {
+406:static int sceGeListUpdateStallAddr(u32 displayListID, u32 stallAddress) {
+426:int sceGeListSync(u32 displayListID, u32 mode) {
+432:static u32 sceGeDrawSync(u32 mode) {
+442:static int sceGeContinue() {
+457:static int sceGeBreak(u32 mode, u32 unknownPtr) {
+478:static u32 sceGeSetCallback(u32 structAddr) {
+514:static int sceGeUnsetCallback(u32 cbID) {
+# exit: 0

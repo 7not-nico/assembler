@@ -1,0 +1,10 @@
+# CMD: bash _templates/instantiator/verify-archive.sh ppsspp-repo/roms/zuma-usa.iso 
+# DATE: 2026-08-05T08:24:50-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+OK   bare image
+IMAGE=ppsspp-repo/roms/zuma-usa.iso
+SIZE=127205376
+# DUR: 12ms
+# DATE: 2026-08-05T08:24:50-06:00
+# exit: 0

@@ -1,0 +1,10 @@
+# CMD: bash _templates/instantiator/acquire-game.sh ppsspp-repo/roms/zuma-usa.iso /tmp/opencode/acquire-stage-test 
+# DATE: 2026-08-05T08:27:49-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+IMAGE=/tmp/opencode/acquire-stage-test/zuma-usa.iso
+SIZE=127205376
+STATUS=0
+# DUR: 122ms
+# DATE: 2026-08-05T08:27:49-06:00
+# exit: 0

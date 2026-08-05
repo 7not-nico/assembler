@@ -1,0 +1,12 @@
+# CMD: bash _templates/instantiator/fetch-download.sh https://romsfun.com/download/nonexistent-0/1 12 
+# DATE: 2026-08-05T08:34:15-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+NAV  https://romsfun.com/download/nonexistent-0/1
+ERROR locator.waitFor: Timeout 12000ms exceeded.
+Call log:
+[2m  - waiting for locator('a[href*="token="]').first() to be visible[22m
+
+# DUR: 12742ms
+# DATE: 2026-08-05T08:34:27-06:00
+# exit: 1

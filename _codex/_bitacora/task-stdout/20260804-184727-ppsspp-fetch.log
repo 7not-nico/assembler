@@ -1,0 +1,6 @@
+# CMD: bash _codex/_templates/shell/fetch-repo.sh https://github.com/hrydgard/ppsspp.git /home/eddyr/assembler/_codex 
+# DATE: 2026-08-04T18:47:27-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+REFUSE /home/eddyr/assembler/_codex/ppsspp-repo (non-empty — move or clear it first)
+# exit: 1

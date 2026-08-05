@@ -1,0 +1,8 @@
+# CMD: bash -c sleep\ 0.2\;\ echo\ header-check 
+# DATE: 2026-08-05T06:59:58-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+header-check
+# DUR: 205ms
+# DATE: 2026-08-05T06:59:59-06:00
+# exit: 0

@@ -1,0 +1,11 @@
+# CMD: bash -c ls\ ppsspp/test/\;\ echo\ ---\;\ ls\ ppsspp/test/unittest/\ \|\ head\ -40\;\ echo\ ---\;\ find\ ppsspp/test\ -maxdepth\ 2\ -name\ \"\*.cpp\"\ \|\ wc\ -l 
+# DATE: 2026-08-05T06:51:53-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+ls: cannot access 'ppsspp/test/': No such file or directory
+---
+ls: cannot access 'ppsspp/test/unittest/': No such file or directory
+---
+find: ‘ppsspp/test’: No such file or directory
+0
+# exit: 0

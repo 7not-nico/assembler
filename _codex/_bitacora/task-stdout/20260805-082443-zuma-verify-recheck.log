@@ -1,0 +1,10 @@
+# CMD: bash _templates/instantiator/verify-archive.sh /tmp/opencode/acquire-test2/zuma-usa.iso 
+# DATE: 2026-08-05T08:24:43-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+OK   bare image
+IMAGE=/tmp/opencode/acquire-test2/zuma-usa.iso
+SIZE=127205376
+# DUR: 19ms
+# DATE: 2026-08-05T08:24:43-06:00
+# exit: 0

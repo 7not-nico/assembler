@@ -1,0 +1,11 @@
+# CMD: bash mgba-repo/scripts/fetch-rom.sh https://romsfun.com/download/kirbys-dream-land-2-2-111887/1 90 
+# DATE: 2026-08-05T08:37:32-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+NAV  https://romsfun.com/download/kirbys-dream-land-2-2-111887/1
+LINK https://statics.romsfun.com/GameBoy/Kirby%27s%20Dream%20Land%202%20%28USA%2C%20Europe%29%20%28SGB%20Enhanced%29.zip?token=cHxfalBlRlhND3c4WHNZZVFVQBN0dw%3D%3D
+SAVE /home/eddyr/assembler/.opencode/.playwright-mcp/kirby-s-dream-land-2-usa-europe-sgb-enhanced.zip (Kirby's Dream Land 2 (USA, Europe) (SGB Enhanced).zip)
+SAVEDPATH=/home/eddyr/assembler/.opencode/.playwright-mcp/kirby-s-dream-land-2-usa-europe-sgb-enhanced.zip
+# DUR: 8882ms
+# DATE: 2026-08-05T08:37:41-06:00
+# exit: 0

@@ -1,0 +1,10 @@
+# CMD: bash snes9x-repo/scripts/launch-rom.sh snes9x-repo/roms/actraiser-usa-arcade.sfc 
+# DATE: 2026-08-05T08:29:28-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+snes9x-repo/roms/actraiser-usa-arcade.sfc: Super NES ROM image "ACTRAISER-ARCADE" (USA), LoROM, ROM size: 1024KB, RAM size: 1KB
+LAUNCH /home/eddyr/assembler/_codex/snes9x-repo/snes9x/unix/snes9x snes9x-repo/roms/actraiser-usa-arcade.sfc
+RUN   pid=105954 log=/tmp/opencode/snes9x-launch.log
+# DUR: 2022ms
+# DATE: 2026-08-05T08:29:30-06:00
+# exit: 0

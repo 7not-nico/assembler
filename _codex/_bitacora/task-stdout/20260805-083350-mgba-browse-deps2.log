@@ -1,0 +1,20 @@
+# CMD: bash mgba-repo/scripts/browse-romsfun.sh kirby game-boy 20 
+# DATE: 2026-08-05T08:33:50-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+SEARCH https://romsfun.com/roms/game-boy/?s=kirby
+GAME https://romsfun.com/roms/game-boy/kirbys-dream-land-2-2.html | Kirby's Dream Land 2
+GAME https://romsfun.com/roms/game-boy/kirbys-dream-land-2.html | Kirby’s Dream Land 2
+GAME https://romsfun.com/roms/game-boy/kirbys-block-ball.html | Kirby’s Block Ball
+GAME https://romsfun.com/roms/game-boy/kirbys-dream-land.html | Kirby’s Dream Land
+GAME https://romsfun.com/roms/game-boy/kirbys-pinball-land.html | Kirby’s Pinball Land
+GAME https://romsfun.com/roms/game-boy/retroid.html | Retroid
+GAME https://romsfun.com/roms/game-boy/the-legend-of-zelda-links-awakening.html | The Legend of Zelda: Link’s Awakening
+GAME https://romsfun.com/roms/game-boy/kingdom-crusade.html | Kingdom Crusade
+OPEN https://romsfun.com/roms/game-boy/kirbys-dream-land-2-2.html
+DL https://romsfun.com/download/kirbys-dream-land-2-2-111887
+VARIANTS:
+1 https://romsfun.com/download/kirbys-dream-land-2-2-111887/1 | Kirby's Dream Land 2 (USA, Europe) (SGB Enhanced)
+# DUR: 1373ms
+# DATE: 2026-08-05T08:33:51-06:00
+# exit: 0

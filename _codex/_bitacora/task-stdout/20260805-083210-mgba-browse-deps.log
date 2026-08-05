@@ -1,0 +1,8 @@
+# CMD: bash mgba-repo/scripts/browse-romsfun.sh kirby game-boy 20 
+# DATE: 2026-08-05T08:32:10-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+ERROR playwright-core missing at /home/eddyr/assembler/_codex/_templates/_templates/node_modules/playwright-core
+# DUR: 23ms
+# DATE: 2026-08-05T08:32:10-06:00
+# exit: 1

@@ -1,0 +1,13 @@
+# CMD: bash -c rg\ -n\ -i\ \"pbp\"\ ppsspp/Core/FileSystems/\ \|\ head\ -40\;\ echo\ ---\;\ rg\ -n\ -i\ \"PBPSection\|PARAM.SFO\|0x50425000\|PBP\ magic\"\ ppsspp/Core/ELF/\ \|\ head\ -20 
+# DATE: 2026-08-05T06:37:31-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+ppsspp/Core/FileSystems/ISOFileSystem.cpp:479:	// as PBP or CSO when they were originally the other type.
+ppsspp/Core/FileSystems/BlockDevices.h:154:// For encrypted ISOs in PBP files.
+ppsspp/Core/FileSystems/BlockDevices.cpp:251:	} else if (!memcmp(buffer, "\x00PBP", 4)) {
+ppsspp/Core/FileSystems/BlockDevices.cpp:816:		// regular PBP.
+ppsspp/Core/FileSystems/BlockDevices.cpp:817:		errorString_ = "Not a NPDRM PBP ISO";
+---
+ppsspp/Core/ELF/PBPReader.h:27:	PBP_PARAM_SFO,
+ppsspp/Core/ELF/PBPReader.cpp:57:	// This is only used to get the PARAM.SFO, so let's have a strict 256MB file size limit for sanity.
+# exit: 0

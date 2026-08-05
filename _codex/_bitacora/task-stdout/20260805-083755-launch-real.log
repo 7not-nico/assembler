@@ -1,0 +1,10 @@
+# CMD: bash mgba-repo/scripts/launch-rom.sh mgba-repo/roms/kirby-s-dream-land-2-usa-europe-sgb-enhanced.gb 
+# DATE: 2026-08-05T08:37:55-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+mgba-repo/roms/kirby-s-dream-land-2-usa-europe-sgb-enhanced.gb: Game Boy ROM image: "KIRBY2" (Rev.00) [SGB] [MBC1+RAM+BATT], ROM: 4Mbit, RAM: 64Kbit
+LAUNCH /home/eddyr/assembler/_codex/mgba-repo/build/sdl/mgba mgba-repo/roms/kirby-s-dream-land-2-usa-europe-sgb-enhanced.gb
+RUN   pid=112130 log=/tmp/opencode/mgba-launch.log
+# DUR: 2016ms
+# DATE: 2026-08-05T08:37:57-06:00
+# exit: 0

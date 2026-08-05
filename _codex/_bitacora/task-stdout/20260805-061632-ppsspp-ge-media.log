@@ -1,0 +1,76 @@
+# CMD: bash -c sed\ -n\ \"60\,120p\"\ Core/MIPS/MIPSTables.cpp\;\ echo\ ===\;\ rg\ -n\ \"RegisterAction\|Table\|opcode\|func\"\ Core/MIPS/MIPSTables.cpp\ \|\ head\ -10\;\ echo\ ===\;\ rg\ -n\ \"class\ MediaEngine\|MediaEngine\|__MpegInit\|GetNextVideoFrame\|VideoStep\"\ Core/HW/MediaEngine.h\ \|\ head\ -10 
+# DATE: 2026-08-05T06:16:32-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp
+# --------------------
+	ALLEGREX0,
+	Emu,
+	Rese,
+	NumEncodings,
+
+	Instruc = -1,
+	Inval = -2,
+};
+
+struct MIPSInstruction {
+	MipsEncoding altEncoding;
+	const char *name;
+	MIPSComp::MIPSCompileFunc compile;
+	MIPSDisFunc disasm;
+	MIPSInterpretFunc interpret;
+	//MIPSInstructionInfo information;
+	MIPSInfo flags;
+};
+
+#define INVALID {Inval}
+#define INVALID_X_8 INVALID,INVALID,INVALID,INVALID,INVALID,INVALID,INVALID,INVALID
+
+#define ENCODING(a) {a}
+#define INSTR(name, comp, dis, inter, flags) {Instruc, name, comp, dis, inter, MIPSInfo(flags)}
+
+#define JITFUNC(f) (&MIPSFrontendInterface::f)
+
+using namespace MIPSDis;
+using namespace MIPSInt;
+using namespace MIPSComp;
+
+// %s/&Jit::\(.\{-}\),/JITFUNC(\1),/g
+
+// regregreg instructions
+static const MIPSInstruction tableImmediate[64] = // xxxxxx ..... ..... ................
+{
+	//0
+	ENCODING(Spec),
+	ENCODING(RegI),
+	INSTR("j",    JITFUNC(Comp_Jump), Dis_JumpType, Int_JumpType, IS_JUMP|IN_IMM26|DELAYSLOT),
+	INSTR("jal",  JITFUNC(Comp_Jump), Dis_JumpType, Int_JumpType, IS_JUMP|IN_IMM26|OUT_RA|DELAYSLOT),
+	INSTR("beq",  JITFUNC(Comp_RelBranch), Dis_RelBranch2, Int_RelBranch, IS_CONDBRANCH|IN_IMM16|IN_RS|IN_RT|DELAYSLOT|CONDTYPE_EQ),
+	INSTR("bne",  JITFUNC(Comp_RelBranch), Dis_RelBranch2, Int_RelBranch, IS_CONDBRANCH|IN_IMM16|IN_RS|IN_RT|DELAYSLOT|CONDTYPE_NE),
+	INSTR("blez", JITFUNC(Comp_RelBranch), Dis_RelBranch,  Int_RelBranch, IS_CONDBRANCH|IN_IMM16|IN_RS|DELAYSLOT|CONDTYPE_LEZ),
+	INSTR("bgtz", JITFUNC(Comp_RelBranch), Dis_RelBranch,  Int_RelBranch, IS_CONDBRANCH|IN_IMM16|IN_RS|DELAYSLOT|CONDTYPE_GTZ),
+	//8
+	INSTR("addi",  JITFUNC(Comp_IType), Dis_addi,   Int_IType, IN_RS|IN_IMM16|OUT_RT),
+	INSTR("addiu", JITFUNC(Comp_IType), Dis_addi,   Int_IType, IN_RS|IN_IMM16|OUT_RT),
+	INSTR("slti",  JITFUNC(Comp_IType), Dis_IType,  Int_IType, IN_RS|IN_IMM16|OUT_RT),
+	INSTR("sltiu", JITFUNC(Comp_IType), Dis_IType,  Int_IType, IN_RS|IN_IMM16|OUT_RT),
+	INSTR("andi",  JITFUNC(Comp_IType), Dis_IType,  Int_IType, IN_RS|IN_IMM16|OUT_RT),
+	INSTR("ori",   JITFUNC(Comp_IType), Dis_ori,    Int_IType, IN_RS|IN_IMM16|OUT_RT),
+	INSTR("xori",  JITFUNC(Comp_IType), Dis_IType,  Int_IType, IN_RS|IN_IMM16|OUT_RT),
+	INSTR("lui",   JITFUNC(Comp_IType), Dis_IType1, Int_IType, IN_IMM16|OUT_RT),
+	//16
+	ENCODING(Cop0), //cop0
+	ENCODING(Cop1), //cop1
+	ENCODING(Cop2), //cop2
+	INVALID, //copU
+
+	INSTR("beql",  JITFUNC(Comp_RelBranch), Dis_RelBranch2, Int_RelBranch, IS_CONDBRANCH|IN_IMM16|IN_RS|IN_RT|DELAYSLOT|LIKELY|CONDTYPE_EQ), //L = likely
+===
+28:#include "Core/MIPS/MIPSTables.h"
+843:static const MIPSInstruction *mipsTables[NumEncodings] = {
+882:// TODO : generate smart dispatcher functions from above tables
+894:		const MIPSInstruction *table = mipsTables[encoding];
+1015:				// This is common for all IN_MEM/OUT_MEM funcs.
+===
+53:class MediaEngine {
+55:	MediaEngine();
+56:	~MediaEngine();
+# exit: 0

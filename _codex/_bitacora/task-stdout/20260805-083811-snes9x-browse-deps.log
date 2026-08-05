@@ -1,0 +1,22 @@
+# CMD: bash snes9x-repo/scripts/browse-romsfun.sh zelda 20 super-nintendo 
+# DATE: 2026-08-05T08:38:11-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=zelda
+GAME https://romsfun.com/roms/super-nintendo/bs-the-legend-of-zelda-mottzilla-patch.html | BS The Legend of Zelda “MottZilla Patch”
+GAME https://romsfun.com/roms/super-nintendo/the-legend-of-zelda-goddess-of-wisdom.html | The Legend of Zelda: Goddess of Wisdom
+GAME https://romsfun.com/roms/super-nintendo/the-legend-of-zelda-third-quest.html | The Legend of Zelda: Third Quest
+GAME https://romsfun.com/roms/super-nintendo/the-legend-of-zelda-fourth-quest.html | The Legend of Zelda: Fourth Quest
+GAME https://romsfun.com/roms/super-nintendo/bs-the-legend-of-zelda-ancient-stone-tablets-master-quest.html | BS The Legend of Zelda: Ancient Stone Tablets – Master Quest
+GAME https://romsfun.com/roms/super-nintendo/the-legend-of-zelda-allhallows-eve.html | The Legend of Zelda: Allhallows Eve
+GAME https://romsfun.com/roms/super-nintendo/the-legend-of-zelda-triforce-of-the-gods.html | The Legend of Zelda – Triforce of the Gods
+GAME https://romsfun.com/roms/super-nintendo/legend-of-zelda-the-a-link-to-the-past.html | The Legend of Zelda: A Link to the Past
+GAME https://romsfun.com/roms/super-nintendo/bs-legend-of-zelda-the-ancient-stone-tablets-chapter-4.html | BS Legend of Zelda The – Ancient Stone Tablets – Chapter 4
+GAME https://romsfun.com/roms/super-nintendo/bs-legend-of-zelda-the-ancient-stone-tablets-chapter-3.html | BS Legend of Zelda The – Ancient Stone Tablets – Chapter 3
+OPEN https://romsfun.com/roms/super-nintendo/bs-the-legend-of-zelda-mottzilla-patch.html
+DL https://romsfun.com/download/bs-the-legend-of-zelda-mottzilla-patch-217943
+VARIANTS:
+1 https://romsfun.com/download/bs-the-legend-of-zelda-mottzilla-patch-217943/1 | BS-Zelda MottZilla Patch
+# DUR: 1686ms
+# DATE: 2026-08-05T08:38:12-06:00
+# exit: 0

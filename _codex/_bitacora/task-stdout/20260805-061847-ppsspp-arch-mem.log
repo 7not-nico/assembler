@@ -1,0 +1,8 @@
+# CMD: bash -c sed\ -n\ \"75\,110p\"\ Core/MemMap.h\;\ echo\ ===\;\ rg\ -n\ \"MemoryMap_Setup\|userMemory\|kernelMemory\|SetMemory\"\ Core/MemMap.cpp\ \|\ head\ -10 
+# DATE: 2026-08-05T06:18:47-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+sed: can't read Core/MemMap.h: No such file or directory
+===
+rg: Core/MemMap.cpp: IO error for operation on Core/MemMap.cpp: No such file or directory (os error 2)
+# exit: 0

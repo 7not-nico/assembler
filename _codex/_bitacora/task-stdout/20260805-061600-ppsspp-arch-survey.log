@@ -1,0 +1,47 @@
+# CMD: bash -c ls\ Core/MIPS/\;\ echo\ ===\;\ rg\ -n\ \"Interpreter\|MIPSInterpret\|while\|Interpret\|Step\"\ Core/MIPS/MIPS.cpp\ \|\ head\ -12 
+# DATE: 2026-08-05T06:16:00-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp
+# --------------------
+ARM
+ARM64
+fake
+IR
+JitCommon
+LoongArch64
+MIPSAnalyst.cpp
+MIPSAnalyst.h
+MIPSAsm.cpp
+MIPSAsm.h
+MIPSCodeUtils.cpp
+MIPSCodeUtils.h
+MIPS.cpp
+MIPSDebugInterface.cpp
+MIPSDebugInterface.h
+MIPSDis.cpp
+MIPSDis.h
+MIPSDisVFPU.cpp
+MIPSDisVFPU.h
+MIPS.h
+MIPSInt.cpp
+MIPSInt.h
+MIPSIntVFPU.cpp
+MIPSIntVFPU.h
+MIPSStackWalk.cpp
+MIPSStackWalk.h
+MIPSTables.cpp
+MIPSTables.h
+MIPSTracer.cpp
+MIPSTracer.h
+MIPSVFPUFallbacks.cpp
+MIPSVFPUFallbacks.h
+MIPSVFPUUtils.cpp
+MIPSVFPUUtils.h
+RiscV
+x86
+===
+325:void MIPSState::SingleStep() {
+326:	int cycles = MIPS_SingleStep();
+337:		while (inDelaySlot) {
+340:			SingleStep();
+350:		return MIPSInterpret_RunUntil(globalTicks);
+# exit: 0

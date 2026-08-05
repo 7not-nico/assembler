@@ -1,0 +1,10 @@
+# CMD: bash mgba-repo/scripts/prepare-rom.sh mgba-repo/fixture/carts/mbc1-64k.zip 
+# DATE: 2026-08-05T08:25:43-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+bash: /home/eddyr/assembler/_codex/_templates/instantiator/slugify.sh: No such file or directory
+ERROR slugify failed for /tmp/tmp.rC1ksr0hap/mbc1-64k.gb
+
+# DUR: 32ms
+# DATE: 2026-08-05T08:25:43-06:00
+# exit: 1

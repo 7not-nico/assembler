@@ -1,0 +1,30 @@
+# CMD: bash -c rg\ -n\ \"glslang\"\ ppsspp/CMakeLists.txt\ \|\ head\;\ echo\ ---\;\ ctest\ --test-dir\ build\ -N\ -V\ 2\>\&1\ \|\ tail\ -20 
+# DATE: 2026-08-05T06:53:42-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+291:# Work around for some misfeature of the current glslang build system
+292:include_directories(ext/glslang)
+459:		# ext/glslang disables RTTI by default using the `ENABLE_RTTI` option.
+1134:set(GlslangLibs glslang OGLCompiler OSDependent SPIRV spirv-cross-glsl)
+---
+Debug/PPSSPPUnitTest
+Debug/PPSSPPUnitTest
+MinSizeRel/PPSSPPUnitTest
+MinSizeRel/PPSSPPUnitTest
+RelWithDebInfo/PPSSPPUnitTest
+RelWithDebInfo/PPSSPPUnitTest
+Deployment/PPSSPPUnitTest
+Deployment/PPSSPPUnitTest
+Development/PPSSPPUnitTest
+Development/PPSSPPUnitTest
+
+15: Test command:  "ShaderGenerators"
+15: Working Directory: /home/eddyr/assembler/_codex/ppsspp-repo/build
+  Test #15: shadergen
+
+16: Test command: /usr/bin/bash "runtests" "/home/eddyr/assembler/_codex/ppsspp-repo/build/ext/glslang/localResults" "/home/eddyr/assembler/_codex/ppsspp-repo/build/ext/glslang/StandAlone/glslangValidator" "/home/eddyr/assembler/_codex/ppsspp-repo/build/ext/glslang/StandAlone/spirv-remap"
+16: Working Directory: /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/Test/
+  Test #16: glslang-testsuite
+
+Total Tests: 16
+# exit: 0

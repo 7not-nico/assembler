@@ -1,0 +1,50 @@
+# CMD: cmake --build build -j8 
+# DATE: 2026-08-05T12:26:06-06:00
+# CWD: /home/eddyr/assembler/_codex/melonDS-repo/melonDS
+# --------------------
+[  0%] Built target slirp_autogen_timestamp_deps
+[  6%] Built target teakra
+[  6%] Built target slirp_autogen
+[ 24%] Built target slirp
+[ 24%] Built target net-utils_autogen_timestamp_deps
+[ 24%] Built target net-utils_autogen
+[ 30%] Built target net-utils
+[ 72%] Built target core
+[ 72%] Built target melonDS_autogen_timestamp_deps
+[ 72%] Built target melonDS_autogen
+[ 73%] Building CXX object src/frontend/qt_sdl/CMakeFiles/melonDS.dir/main.cpp.o
+[ 74%] Building CXX object src/frontend/qt_sdl/CMakeFiles/melonDS.dir/Screen.cpp.o
+[ 74%] Building CXX object src/frontend/qt_sdl/CMakeFiles/melonDS.dir/melonDS_autogen/mocs_compilation.cpp.o
+[ 75%] Building CXX object src/frontend/qt_sdl/CMakeFiles/melonDS.dir/EmuInstance.cpp.o
+[ 75%] Building CXX object src/frontend/qt_sdl/CMakeFiles/melonDS.dir/EmuInstanceAudio.cpp.o
+[ 75%] Building CXX object src/frontend/qt_sdl/CMakeFiles/melonDS.dir/Window.cpp.o
+[ 76%] Building CXX object src/frontend/qt_sdl/CMakeFiles/melonDS.dir/EmuInstanceInput.cpp.o
+[ 76%] Building CXX object src/frontend/qt_sdl/CMakeFiles/melonDS.dir/EmuThread.cpp.o
+In file included from /home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/net/../OpenGLSupport.h:26,
+                 from /home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/frontend/qt_sdl/Screen.cpp:29:
+/home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/net/../PlatformOGL.h:11:27: fatal error: \"frontend/glad/glad.h\": No such file or directory
+   11 | #define MELONDS_GL_HEADER "\"frontend/glad/glad.h\""
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [src/frontend/qt_sdl/CMakeFiles/melonDS.dir/build.make:144: src/frontend/qt_sdl/CMakeFiles/melonDS.dir/Screen.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/net/../OpenGLSupport.h:26,
+                 from /home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/frontend/qt_sdl/main.cpp:49:
+/home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/net/../PlatformOGL.h:11:27: fatal error: \"frontend/glad/glad.h\": No such file or directory
+   11 | #define MELONDS_GL_HEADER "\"frontend/glad/glad.h\""
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [src/frontend/qt_sdl/CMakeFiles/melonDS.dir/build.make:130: src/frontend/qt_sdl/CMakeFiles/melonDS.dir/main.cpp.o] Error 1
+In file included from /home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/net/../OpenGLSupport.h:26,
+                 from /home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/net/../GPU_OpenGL.h:22,
+                 from /home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/frontend/qt_sdl/EmuThread.cpp:52:
+/home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/net/../PlatformOGL.h:11:27: fatal error: \"frontend/glad/glad.h\": No such file or directory
+   11 | #define MELONDS_GL_HEADER "\"frontend/glad/glad.h\""
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [src/frontend/qt_sdl/CMakeFiles/melonDS.dir/build.make:214: src/frontend/qt_sdl/CMakeFiles/melonDS.dir/EmuThread.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:343: src/frontend/qt_sdl/CMakeFiles/melonDS.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2
+# DUR: 6836ms
+# DATE: 2026-08-05T12:26:13-06:00
+# exit: 2

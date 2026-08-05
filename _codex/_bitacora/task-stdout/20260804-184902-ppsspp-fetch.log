@@ -1,0 +1,8 @@
+# CMD: bash _codex/_templates/shell/fetch-repo.sh https://github.com/hrydgard/ppsspp.git /home/eddyr/assembler/_codex 
+# DATE: 2026-08-04T18:49:02-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+FETCH  https://github.com/hrydgard/ppsspp.git → /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp (depth 1)
+Cloning into '/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp'...
+DONE   /home/eddyr/assembler/_codex/ppsspp-repo
+# exit: 0

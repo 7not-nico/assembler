@@ -1,0 +1,4 @@
+# CMD: bash -c cmake\ --build\ build\ --target\ PPSSPPUnitTest\ -j\$\(nproc\)\ 2\>\&1\ \|\ tail\ -8 
+# DATE: 2026-08-05T06:52:36-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------

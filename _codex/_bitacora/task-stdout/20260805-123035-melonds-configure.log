@@ -1,0 +1,29 @@
+# CMD: cmake -B build -DBUILD_QT_SDL=ON -DUSE_QT6=OFF -DENABLE_OGLRENDERER=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_FLAGS=-march=native -DCMAKE_CXX_FLAGS=-march=native 
+# DATE: 2026-08-05T12:30:35-06:00
+# CWD: /home/eddyr/assembler/_codex/melonDS-repo/melonDS
+# --------------------
+Enabling GDB stub
+CMake Warning (deprecated) at src/teakra/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (policy) at src/teakra/CMakeLists.txt:22 (set):
+  Policy CMP0218 is not set: The CMAKE_WARN_DEPRECATED and
+  CMAKE_ERROR_DEPRECATED variables are ignored.  Run "cmake --help-policy
+  CMP0218" for policy details.  Use the cmake_policy command to set the
+  policy and suppress this warning.
+This warning is for project developers.  Use -Wno-author or -Wno-policy to
+suppress it.
+
+-- Configuring done (0.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/eddyr/assembler/_codex/melonDS-repo/melonDS/build
+# DUR: 580ms
+# DATE: 2026-08-05T12:30:35-06:00
+# exit: 0

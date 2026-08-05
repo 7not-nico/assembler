@@ -1,0 +1,32 @@
+# CMD: bash -c ls\ -la\ \"/home/eddyr/Downloads/Zuma\ \(USA\).7z\"\;\ echo\ ---\;\ 7z\ l\ \"/home/eddyr/Downloads/Zuma\ \(USA\).7z\" 
+# DATE: 2026-08-05T07:30:05-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+-rw-r--r-- 1 eddyr eddyr 12180609 Aug  5 07:28 /home/eddyr/Downloads/Zuma (USA).7z
+---
+
+7-Zip 26.02 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-06-25
+ 64-bit locale=en_US.UTF-8 Threads:8 OPEN_MAX:524288, ASM
+
+Scanning the drive for archives:
+1 file, 12180609 bytes (12 MiB)
+
+Listing archive: /home/eddyr/Downloads/Zuma (USA).7z
+
+--
+Path = /home/eddyr/Downloads/Zuma (USA).7z
+Type = 7z
+Physical Size = 12180609
+Headers Size = 138
+Method = LZMA2:24
+Solid = -
+Blocks = 1
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+2026-06-27 02:17:50 ....A    127205376     12180471  Zuma (USA).iso
+------------------- ----- ------------ ------------  ------------------------
+2026-06-27 02:17:50          127205376     12180471  1 files
+# DUR: 27ms
+# DATE: 2026-08-05T07:30:05-06:00
+# exit: 0

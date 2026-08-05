@@ -1,0 +1,36 @@
+# CMD: bash -c rg\ -n\ -i\ \"cso\|ciso\"\ ppsspp/Core/FileSystems/\ \|\ head\ -30\;\ echo\ ---\;\ rg\ -rn\ -i\ \"CISO_MAGIC\|CISO_HEADER_SIZE\|0x4349534F\"\ ppsspp/Core/\ \|\ head\ -20 
+# DATE: 2026-08-05T06:37:31-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+ppsspp/Core/FileSystems/ISOFileSystem.cpp:479:	// as PBP or CSO when they were originally the other type.
+ppsspp/Core/FileSystems/DirectoryFileSystem.cpp:918:			if (endsWithNoCase(entry.name, ".cso") || endsWithNoCase(entry.name, ".iso") || endsWithNoCase(entry.name, ".chd")) {  // chd not really necessary, but let's hide them too.
+ppsspp/Core/FileSystems/BlockDevices.h:21:// CISOFileBlockDevice implements compressed iso images, CISO format.
+ppsspp/Core/FileSystems/BlockDevices.h:24:// with CISO images.
+ppsspp/Core/FileSystems/BlockDevices.h:68:class CISOFileBlockDevice : public BlockDevice {
+ppsspp/Core/FileSystems/BlockDevices.h:70:	CISOFileBlockDevice(FileLoader *fileLoader);
+ppsspp/Core/FileSystems/BlockDevices.h:71:	~CISOFileBlockDevice();
+ppsspp/Core/FileSystems/BlockDevices.cpp:248:	// Check for CISO
+ppsspp/Core/FileSystems/BlockDevices.cpp:249:	if (!memcmp(buffer, "CISO", 4)) {
+ppsspp/Core/FileSystems/BlockDevices.cpp:250:		device = new CISOFileBlockDevice(fileLoader);
+ppsspp/Core/FileSystems/BlockDevices.cpp:485:// .CSO format
+ppsspp/Core/FileSystems/BlockDevices.cpp:488:typedef struct ciso_header
+ppsspp/Core/FileSystems/BlockDevices.cpp:508:} CISO_H;
+ppsspp/Core/FileSystems/BlockDevices.cpp:513:static const u32 CSO_READ_BUFFER_SIZE = 256 * 1024;
+ppsspp/Core/FileSystems/BlockDevices.cpp:515:CISOFileBlockDevice::CISOFileBlockDevice(FileLoader *fileLoader)
+ppsspp/Core/FileSystems/BlockDevices.cpp:518:	// CISO format is fairly simple, but most tools do not write the header_size.
+ppsspp/Core/FileSystems/BlockDevices.cpp:519:	// NOTE: CSOv2 isn't actually a thing. It was partially implemented in maxcso but it has never been in active use.
+ppsspp/Core/FileSystems/BlockDevices.cpp:521:	CISO_H hdr;
+ppsspp/Core/FileSystems/BlockDevices.cpp:522:	size_t readSize = fileLoader->ReadAt(0, sizeof(CISO_H), 1, &hdr);
+ppsspp/Core/FileSystems/BlockDevices.cpp:523:	if (readSize != 1 || memcmp(hdr.magic, "CISO", 4) != 0) {
+ppsspp/Core/FileSystems/BlockDevices.cpp:524:		errorString_ = "Invalid CSO!";
+ppsspp/Core/FileSystems/BlockDevices.cpp:528:		errorString_ = "CSO version too high!";
+ppsspp/Core/FileSystems/BlockDevices.cpp:534:		errorString_ = StringFromFormat("CSO block size %i unsupported, must be a power of two", frameSize);
+ppsspp/Core/FileSystems/BlockDevices.cpp:537:		errorString_ = StringFromFormat("CSO block size %i unsupported, must be at least one sector", frameSize);
+ppsspp/Core/FileSystems/BlockDevices.cpp:551:		errorString_ = StringFromFormat("CSO index alignment %i unsupported", indexShift);
+ppsspp/Core/FileSystems/BlockDevices.cpp:557:	VERBOSE_LOG(Log::Loader, "CSO numBlocks=%i numFrames=%i align=%i", numBlocks, numFrames, indexShift);
+ppsspp/Core/FileSystems/BlockDevices.cpp:561:	if (readBufferSize < CSO_READ_BUFFER_SIZE)
+ppsspp/Core/FileSystems/BlockDevices.cpp:562:		readBufferSize = CSO_READ_BUFFER_SIZE;
+ppsspp/Core/FileSystems/BlockDevices.cpp:593:	// Double check that the CSO is not truncated.  In most cases, this will be the exact size.
+ppsspp/Core/FileSystems/BlockDevices.cpp:598:		errorString_ = StringFromFormat("CSO file incomplete: expected %s, but is %s", NiceSizeFormat(expectedFileSize).c_str(), NiceSizeFormat(fileSize).c_str());
+---
+# exit: 0

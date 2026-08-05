@@ -1,0 +1,1432 @@
+# CMD: cmake --build build -j8 
+# DATE: 2026-08-04T20:05:38-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+[  0%] Built target utils
+[  1%] Built target OGLCompiler
+[  1%] Built target GenericCodeGen
+[  1%] Built target OSDependent
+[  2%] Built target xxhash
+[  4%] Built target miniupnpc
+[  4%] Built target snappy
+[  4%] Built target udis86
+[  4%] Built target minimp3
+[  4%] Built target gason
+[  5%] Built target spirv-cross-core
+[  7%] Built target at3_standalone
+[  8%] Built target rcheevos
+[ 12%] Built target lua
+[ 12%] Building CXX object ext/armips/CMakeFiles/armips.dir/Core/ELF/ElfRelocator.cpp.o
+[ 12%] Built target vma
+[ 13%] Built target cityhash
+[ 14%] Built target 7zip
+[ 14%] Building CXX object ext/armips/CMakeFiles/armips.dir/Core/ELF/ElfFile.cpp.o
+[ 15%] Built target sfmt19937
+[ 15%] Built target pugixml
+[ 15%] Building CXX object ext/armips/CMakeFiles/armips.dir/Core/Allocations.cpp.o
+[ 16%] Built target kirk
+[ 16%] Building CXX object ext/armips/CMakeFiles/armips.dir/Core/Assembler.cpp.o
+[ 16%] Building CXX object ext/armips/CMakeFiles/armips.dir/Core/Common.cpp.o
+[ 16%] Built target xbrz
+[ 16%] Building C object ext/zstd-build/CMakeFiles/libzstd_static.dir/__/zstd/lib/compress/zstd_lazy.c.o
+[ 16%] Building CXX object ext/armips/CMakeFiles/armips.dir/Core/Expression.cpp.o
+[ 17%] Building CXX object ext/imgui/CMakeFiles/imgui.dir/imgui.cpp.o
+[ 17%] Building CXX object ext/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o
+[ 18%] Building C object ext/zstd-build/CMakeFiles/libzstd_static.dir/__/zstd/lib/decompress/huf_decompress.c.o
+[ 19%] Built target discord-rpc
+[ 19%] Building C object ext/libchdr-build/CMakeFiles/chdr.dir/__/libchdr/src/libchdr_flac.c.o
+[ 19%] Generating something_that_never_exists
+-- Found Git: /usr/bin/git (found version "2.55.0")
+[ 19%] Built target GitVersion
+[ 20%] Built target cpu_features
+[ 21%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/cmake_pch.hxx.gch
+In file included from /usr/include/c++/16/string:58,
+                 from /usr/include/c++/16/bits/locale_classes.h:43,
+                 from /usr/include/c++/16/bits/ios_base.h:43,
+                 from /usr/include/c++/16/ios:46,
+                 from /usr/include/c++/16/istream:42,
+                 from /usr/include/c++/16/fstream:42,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/armips/ext/filesystem/include/ghc/filesystem.hpp:155,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/armips/ext/filesystem/include/ghc/fs_fwd.hpp:37,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/armips/Util/FileSystem.h:18,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/armips/Core/Types.h:3,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/armips/Core/Expression.h:3,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/armips/Core/Expression.cpp:1:
+In member function ‘void std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_M_dispose() [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’,
+    inlined from ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::~basic_string() [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’ at /usr/include/c++/16/bits/basic_string.h:920:19,
+    inlined from ‘StringLiteral::~StringLiteral()’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/armips/Core/Types.h:84:7,
+    inlined from ‘constexpr void std::_Destroy(_Tp*) [with _Tp = StringLiteral]’ at /usr/include/c++/16/bits/stl_construct.h:166:22,
+    inlined from ‘std::__detail::__variant::_Variant_storage<false, std::monostate, long int, double, StringLiteral, Identifier>::_M_reset()::<lambda(auto:1&&)> mutable [with auto:1 = StringLiteral&]’ at /usr/include/c++/16/variant:509:19,
+    inlined from ‘constexpr _Res std::__invoke_impl(__invoke_other, _Fn&&, _Args&& ...) [with _Res = void; _Fn = __detail::__variant::_Variant_storage<false, monostate, long int, double, StringLiteral, Identifier>::_M_reset()::<lambda(auto:1&&)>; _Args = {StringLiteral&}]’ at /usr/include/c++/16/bits/invoke.h:63:36,
+    inlined from ‘constexpr std::enable_if_t<((bool)is_invocable_r_v<_Res, _Callable, _Args ...>), _Res> std::__invoke_r(_Callable&&, _Args&& ...) [with _Res = void; _Callable = __detail::__variant::_Variant_storage<false, monostate, long int, double, StringLiteral, Identifier>::_M_reset()::<lambda(auto:1&&)>; _Args = {StringLiteral&}]’ at /usr/include/c++/16/bits/invoke.h:113:28,
+    inlined from ‘static constexpr decltype(auto) std::__detail::__variant::__gen_vtable_impl<std::__detail::__variant::_Multi_array<_Result_type (*)(_Visitor, _Variants ...)>, std::integer_sequence<long unsigned int, __indices ...> >::__visit_invoke(_Visitor&&, _Variants ...) [with _Result_type = void; _Visitor = std::__detail::__variant::_Variant_storage<false, std::monostate, long int, double, StringLiteral, Identifier>::_M_reset()::<lambda(auto:1&&)>&&; _Variants = {std::variant<std::monostate, long int, double, StringLiteral, Identifier>&}; long unsigned int ...__indices = {3}]’ at /usr/include/c++/16/variant:1075:40,
+    inlined from ‘constexpr decltype(auto) std::__do_visit(_Visitor&&, _Variants&& ...) [with _Result_type = void; _Visitor = __detail::__variant::_Variant_storage<false, monostate, long int, double, StringLiteral, Identifier>::_M_reset()::<lambda(auto:1&&)>; _Variants = {variant<monostate, long int, double, StringLiteral, Identifier>&}]’ at /usr/include/c++/16/variant:1922:5,
+    inlined from ‘constexpr void std::__detail::__variant::_Variant_storage<false, _Types ...>::_M_reset() [with _Types = {std::monostate, long int, double, StringLiteral, Identifier}]’ at /usr/include/c++/16/variant:507:23,
+    inlined from ‘std::__detail::__variant::_Variant_storage<false, _Types ...>::~_Variant_storage() [with _Types = {std::monostate, long int, double, StringLiteral, Identifier}]’ at /usr/include/c++/16/variant:517:17,
+    inlined from ‘std::__detail::__variant::_Copy_ctor_base<false, std::monostate, long int, double, StringLiteral, Identifier>::~_Copy_ctor_base()’ at /usr/include/c++/16/variant:592:12,
+    inlined from ‘std::__detail::__variant::_Move_ctor_base<false, std::monostate, long int, double, StringLiteral, Identifier>::~_Move_ctor_base()’ at /usr/include/c++/16/variant:629:12,
+    inlined from ‘std::__detail::__variant::_Copy_assign_base<false, std::monostate, long int, double, StringLiteral, Identifier>::~_Copy_assign_base()’ at /usr/include/c++/16/variant:667:12,
+    inlined from ‘std::__detail::__variant::_Move_assign_base<false, std::monostate, long int, double, StringLiteral, Identifier>::~_Move_assign_base()’ at /usr/include/c++/16/variant:719:12,
+    inlined from ‘std::__detail::__variant::_Variant_base<std::monostate, long int, double, StringLiteral, Identifier>::~_Variant_base()’ at /usr/include/c++/16/variant:773:12,
+    inlined from ‘std::variant<_Types>::~variant() [with _Types = {std::monostate, long int, double, StringLiteral, Identifier}]’ at /usr/include/c++/16/variant:1518:28,
+    inlined from ‘ExpressionInternal::~ExpressionInternal()’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/armips/Core/Expression.h:134:2,
+    inlined from ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = ExpressionInternal]’ at /usr/include/c++/16/bits/unique_ptr.h:92:2,
+    inlined from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = ExpressionInternal; _Dp = std::default_delete<ExpressionInternal>]’ at /usr/include/c++/16/bits/unique_ptr.h:408:17,
+    inlined from ‘Expression createConstExpression(int64_t)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/armips/Core/Expression.cpp:877:56:
+/usr/include/c++/16/bits/basic_string.h:298:21: warning: ‘((std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*)<unknown>)[1].std::__cxx11::basic_string<char>::<anonymous>.std::__cxx11::basic_string<char>::<unnamed union>::_M_allocated_capacity’ may be used uninitialized [-Wmaybe-uninitialized]
+  298 |           _M_destroy(_M_allocated_capacity);
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+In member function ‘void std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_M_dispose() [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’,
+    inlined from ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::~basic_string() [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’ at /usr/include/c++/16/bits/basic_string.h:920:19,
+    inlined from ‘Identifier::~Identifier()’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/armips/Core/Types.h:9:7,
+    inlined from ‘constexpr void std::_Destroy(_Tp*) [with _Tp = Identifier]’ at /usr/include/c++/16/bits/stl_construct.h:166:22,
+    inlined from ‘std::__detail::__variant::_Variant_storage<false, std::monostate, long int, double, StringLiteral, Identifier>::_M_reset()::<lambda(auto:1&&)> mutable [with auto:1 = Identifier&]’ at /usr/include/c++/16/variant:509:19,
+    inlined from ‘constexpr _Res std::__invoke_impl(__invoke_other, _Fn&&, _Args&& ...) [with _Res = void; _Fn = __detail::__variant::_Variant_storage<false, monostate, long int, double, StringLiteral, Identifier>::_M_reset()::<lambda(auto:1&&)>; _Args = {Identifier&}]’ at /usr/include/c++/16/bits/invoke.h:63:36,
+    inlined from ‘constexpr std::enable_if_t<((bool)is_invocable_r_v<_Res, _Callable, _Args ...>), _Res> std::__invoke_r(_Callable&&, _Args&& ...) [with _Res = void; _Callable = __detail::__variant::_Variant_storage<false, monostate, long int, double, StringLiteral, Identifier>::_M_reset()::<lambda(auto:1&&)>; _Args = {Identifier&}]’ at /usr/include/c++/16/bits/invoke.h:113:28,
+    inlined from ‘static constexpr decltype(auto) std::__detail::__variant::__gen_vtable_impl<std::__detail::__variant::_Multi_array<_Result_type (*)(_Visitor, _Variants ...)>, std::integer_sequence<long unsigned int, __indices ...> >::__visit_invoke(_Visitor&&, _Variants ...) [with _Result_type = void; _Visitor = std::__detail::__variant::_Variant_storage<false, std::monostate, long int, double, StringLiteral, Identifier>::_M_reset()::<lambda(auto:1&&)>&&; _Variants = {std::variant<std::monostate, long int, double, StringLiteral, Identifier>&}; long unsigned int ...__indices = {4}]’ at /usr/include/c++/16/variant:1075:40,
+    inlined from ‘constexpr decltype(auto) std::__do_visit(_Visitor&&, _Variants&& ...) [with _Result_type = void; _Visitor = __detail::__variant::_Variant_storage<false, monostate, long int, double, StringLiteral, Identifier>::_M_reset()::<lambda(auto:1&&)>; _Variants = {variant<monostate, long int, double, StringLiteral, Identifier>&}]’ at /usr/include/c++/16/variant:1923:5,
+    inlined from ‘constexpr void std::__detail::__variant::_Variant_storage<false, _Types ...>::_M_reset() [with _Types = {std::monostate, long int, double, StringLiteral, Identifier}]’ at /usr/include/c++/16/variant:507:23,
+    inlined from ‘std::__detail::__variant::_Variant_storage<false, _Types ...>::~_Variant_storage() [with _Types = {std::monostate, long int, double, StringLiteral, Identifier}]’ at /usr/include/c++/16/variant:517:17,
+    inlined from ‘std::__detail::__variant::_Copy_ctor_base<false, std::monostate, long int, double, StringLiteral, Identifier>::~_Copy_ctor_base()’ at /usr/include/c++/16/variant:592:12,
+    inlined from ‘std::__detail::__variant::_Move_ctor_base<false, std::monostate, long int, double, StringLiteral, Identifier>::~_Move_ctor_base()’ at /usr/include/c++/16/variant:629:12,
+    inlined from ‘std::__detail::__variant::_Copy_assign_base<false, std::monostate, long int, double, StringLiteral, Identifier>::~_Copy_assign_base()’ at /usr/include/c++/16/variant:667:12,
+    inlined from ‘std::__detail::__variant::_Move_assign_base<false, std::monostate, long int, double, StringLiteral, Identifier>::~_Move_assign_base()’ at /usr/include/c++/16/variant:719:12,
+    inlined from ‘std::__detail::__variant::_Variant_base<std::monostate, long int, double, StringLiteral, Identifier>::~_Variant_base()’ at /usr/include/c++/16/variant:773:12,
+    inlined from ‘std::variant<_Types>::~variant() [with _Types = {std::monostate, long int, double, StringLiteral, Identifier}]’ at /usr/include/c++/16/variant:1518:28,
+    inlined from ‘ExpressionInternal::~ExpressionInternal()’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/armips/Core/Expression.h:134:2,
+    inlined from ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = ExpressionInternal]’ at /usr/include/c++/16/bits/unique_ptr.h:92:2,
+    inlined from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = ExpressionInternal; _Dp = std::default_delete<ExpressionInternal>]’ at /usr/include/c++/16/bits/unique_ptr.h:408:17,
+    inlined from ‘Expression createConstExpression(int64_t)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/armips/Core/Expression.cpp:877:56:
+/usr/include/c++/16/bits/basic_string.h:298:21: warning: ‘((std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*)<unknown>)[1].std::__cxx11::basic_string<char>::<anonymous>.std::__cxx11::basic_string<char>::<unnamed union>::_M_allocated_capacity’ may be used uninitialized [-Wmaybe-uninitialized]
+  298 |           _M_destroy(_M_allocated_capacity);
+      |           ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+[ 22%] Building CXX object ext/armips/CMakeFiles/armips.dir/Core/ExpressionFunctionHandler.cpp.o
+[ 22%] Building C object ext/zstd-build/CMakeFiles/libzstd_static.dir/__/zstd/lib/decompress/zstd_ddict.c.o
+[ 22%] Building CXX object ext/SPIRV-Cross-build/CMakeFiles/spirv-cross-glsl.dir/__/SPIRV-Cross/spirv_glsl.cpp.o
+[ 22%] Building CXX object ext/armips/CMakeFiles/armips.dir/Core/ExpressionFunctions.cpp.o
+[ 22%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/glslang_tab.cpp.o
+MachineIndependent/glslang_tab.cpp: In function ‘int yyparse(glslang::TParseContext*)’:
+MachineIndependent/glslang_tab.cpp:4963:9: warning: variable ‘yynerrs’ set but not used [-Wunused-but-set-variable=]
+[ 22%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/attribute.cpp.o
+[ 22%] Building CXX object ext/armips/CMakeFiles/armips.dir/Core/FileManager.cpp.o
+[ 22%] Building C object ext/zstd-build/CMakeFiles/libzstd_static.dir/__/zstd/lib/decompress/zstd_decompress.c.o
+[ 22%] Building CXX object ext/armips/CMakeFiles/armips.dir/Core/Misc.cpp.o
+[ 22%] Building CXX object ext/armips/CMakeFiles/armips.dir/Core/SymbolData.cpp.o
+[ 22%] Building CXX object ext/armips/CMakeFiles/armips.dir/Core/SymbolTable.cpp.o
+[ 22%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/Constant.cpp.o
+[ 22%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/iomapper.cpp.o
+[ 22%] Building CXX object ext/armips/CMakeFiles/armips.dir/Core/Types.cpp.o
+[ 22%] Linking C static library ../../lib/libchdr.a
+[ 23%] Built target chdr
+[ 23%] Building C object ext/zstd-build/CMakeFiles/libzstd_static.dir/__/zstd/lib/decompress/zstd_decompress_block.c.o
+[ 23%] Building CXX object ext/armips/CMakeFiles/armips.dir/Parser/DirectivesParser.cpp.o
+[ 23%] Building CXX object ext/armips/CMakeFiles/armips.dir/Parser/ExpressionParser.cpp.o
+In file included from /usr/include/c++/16/memory:80,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/armips/Parser/DirectivesParser.h:3,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/armips/Parser/DirectivesParser.cpp:1:
+In function ‘std::__detail::__unique_ptr_t<_Tp> std::make_unique(_Args&& ...) [with _Tp = CDirectiveConditional; _Args = {ConditionType&}]’,
+    inlined from ‘std::unique_ptr<CAssemblerCommand> parseDirectiveConditional(Parser&, int)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/armips/Parser/DirectivesParser.cpp:314:49:
+/usr/include/c++/16/bits/unique_ptr.h:1105:30: warning: ‘type’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1105 |     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/armips/Parser/DirectivesParser.cpp: In function ‘std::unique_ptr<CAssemblerCommand> parseDirectiveConditional(Parser&, int)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/armips/Parser/DirectivesParser.cpp:197:23: note: ‘type’ was declared here
+  197 |         ConditionType type;
+      |                       ^~~~
+[ 23%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/InfoSink.cpp.o
+[ 23%] Building C object ext/zstd-build/CMakeFiles/libzstd_static.dir/__/zstd/lib/dictBuilder/cover.c.o
+[ 23%] Building CXX object ext/armips/CMakeFiles/armips.dir/Parser/Parser.cpp.o
+[ 23%] Building C object ext/zstd-build/CMakeFiles/libzstd_static.dir/__/zstd/lib/dictBuilder/divsufsort.c.o
+[ 23%] Building C object ext/zstd-build/CMakeFiles/libzstd_static.dir/__/zstd/lib/dictBuilder/fastcover.c.o
+[ 23%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/Initialize.cpp.o
+[ 23%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/IntermTraverse.cpp.o
+[ 24%] Building CXX object ext/armips/CMakeFiles/armips.dir/Parser/Tokenizer.cpp.o
+[ 24%] Building C object ext/zstd-build/CMakeFiles/libzstd_static.dir/__/zstd/lib/dictBuilder/zdict.c.o
+[ 24%] Linking CXX static library ../../lib/libimgui.a
+[ 24%] Built target imgui
+[ 24%] Building CXX object ext/armips/CMakeFiles/armips.dir/Util/ByteArray.cpp.o
+[ 24%] Building CXX object ext/armips/CMakeFiles/armips.dir/Util/CRC.cpp.o
+[ 24%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/Intermediate.cpp.o
+[ 24%] Building ASM object ext/zstd-build/CMakeFiles/libzstd_static.dir/__/zstd/lib/decompress/huf_decompress_amd64.S.o
+[ 24%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/ParseContextBase.cpp.o
+[ 24%] Building CXX object ext/armips/CMakeFiles/armips.dir/Util/EncodingTable.cpp.o
+[ 25%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/ParseHelper.cpp.o
+[ 25%] Linking C static library ../../lib/liblibzstd_static.a
+[ 27%] Built target libzstd_static
+[ 27%] Building CXX object ext/armips/CMakeFiles/armips.dir/Util/FileClasses.cpp.o
+[ 27%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/PoolAlloc.cpp.o
+[ 27%] Building CXX object ext/armips/CMakeFiles/armips.dir/Util/FileSystem.cpp.o
+[ 27%] Building CXX object ext/armips/CMakeFiles/armips.dir/Util/Util.cpp.o
+[ 27%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/RemoveTree.cpp.o
+[ 27%] Building CXX object ext/basis_universal/CMakeFiles/basis_universal.dir/basisu_transcoder.cpp.o
+[ 27%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/Scan.cpp.o
+[ 27%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/VertexDecoderArm.cpp.o
+[ 27%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/VertexDecoderArm64.cpp.o
+[ 27%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/VertexDecoderX86.cpp.o
+[ 27%] Building CXX object GPU/CMakeFiles/GPU.dir/Software/DrawPixelX86.cpp.o
+[ 27%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/ShaderLang.cpp.o
+[ 27%] Building CXX object GPU/CMakeFiles/GPU.dir/Software/SamplerX86.cpp.o
+[ 27%] Linking CXX static library ../../lib/libarmips.a
+[ 31%] Built target armips
+[ 31%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/SpirvIntrinsics.cpp.o
+[ 31%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/SymbolTable.cpp.o
+[ 31%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/VertexDecoderRiscV.cpp.o
+[ 31%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/Versions.cpp.o
+[ 31%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/VertexDecoderLoongArch64.cpp.o
+[ 31%] Building CXX object GPU/CMakeFiles/GPU.dir/GLES/StencilBufferGLES.cpp.o
+[ 31%] Linking CXX static library ../../lib/libspirv-cross-glsl.a
+[ 31%] Built target spirv-cross-glsl
+[ 31%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/intermOut.cpp.o
+[ 32%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/limits.cpp.o
+[ 33%] Building CXX object GPU/CMakeFiles/GPU.dir/GLES/GPU_GLES.cpp.o
+[ 33%] Building CXX object ext/SPIRV-Cross-build/CMakeFiles/spirv-cross-cpp.dir/__/SPIRV-Cross/spirv_cpp.cpp.o
+[ 33%] Building CXX object GPU/CMakeFiles/GPU.dir/GLES/FragmentTestCacheGLES.cpp.o
+[ 34%] Building CXX object ext/SPIRV-Cross-build/CMakeFiles/spirv-cross-msl.dir/__/SPIRV-Cross/spirv_msl.cpp.o
+[ 34%] Building CXX object GPU/CMakeFiles/GPU.dir/GLES/FramebufferManagerGLES.cpp.o
+[ 34%] Building CXX object GPU/CMakeFiles/GPU.dir/GLES/ShaderManagerGLES.cpp.o
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/basis_universal/basisu_transcoder.cpp: In function ‘bool basist::transcode_uastc_to_bc7(const unpacked_uastc_block&, bc7_optimization_results&)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/basis_universal/basisu_transcoder.cpp:13217:70: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+13217 |                                         dst_blk.m_low->m_c[bc7_comp] = (uint8_t)l;
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/basis_universal/basisu_transcoder.h:36,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/basis_universal/basisu_transcoder.cpp:16:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/basis_universal/basisu_transcoder_uastc.h:9:25: note: at offset 4 into destination object ‘basist::color_quad_u8::m_c’ of size 4
+    9 |                 uint8_t m_c[4];
+      |                         ^~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/basis_universal/basisu_transcoder.cpp:13218:71: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+13218 |                                         dst_blk.m_high->m_c[bc7_comp] = (uint8_t)h;
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/basis_universal/basisu_transcoder_uastc.h:9:25: note: at offset 4 into destination object ‘basist::color_quad_u8::m_c’ of size 4
+    9 |                 uint8_t m_c[4];
+      |                         ^~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/basis_universal/basisu_transcoder.cpp:12970:47: warning: ‘best_pbits[0]’ may be used uninitialized [-Wmaybe-uninitialized]
+12970 |                         dst_blk.m_pbits[0][0] = best_pbits[0];
+      |                         ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/basis_universal/basisu_transcoder.cpp:12957:34: note: ‘best_pbits[0]’ was declared here
+12957 |                         uint32_t best_pbits[2];
+      |                                  ^~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/basis_universal/basisu_transcoder.cpp:12971:47: warning: ‘best_pbits[1]’ may be used uninitialized [-Wmaybe-uninitialized]
+12971 |                         dst_blk.m_pbits[0][1] = best_pbits[1];
+      |                         ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/basis_universal/basisu_transcoder.cpp:12957:34: note: ‘best_pbits[1]’ was declared here
+12957 |                         uint32_t best_pbits[2];
+      |                                  ^~~~~~~~~~
+[ 34%] Building CXX object ext/SPIRV-Cross-build/CMakeFiles/spirv-cross-hlsl.dir/__/SPIRV-Cross/spirv_hlsl.cpp.o
+[ 34%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/linkValidate.cpp.o
+[ 34%] Linking CXX static library ../../lib/libspirv-cross-cpp.a
+[ 34%] Built target spirv-cross-cpp
+[ 34%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/parseConst.cpp.o
+In file included from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/Include/intermediate.h:57,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/SymbolTable.h:70,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/pch.h:44,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/build/ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/cmake_pch.hxx:5,
+                 from <command-line>:
+In member function ‘void glslang::TType::shallowCopy(const glslang::TType&)’,
+    inlined from ‘glslang::TVariable::TVariable(const glslang::TString*, const glslang::TType&, bool)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/SymbolTable.h:165:27,
+    inlined from ‘void glslang::TParseContext::addQualifierToExisting(const glslang::TSourceLoc&, glslang::TQualifier, const glslang::TString&)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp:9177:81:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/Include/Types.h:1783:17: warning: ‘blockNameType.glslang::TType::sampler’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1783 |         sampler = copyOf.sampler;
+      |         ~~~~~~~~^~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp: In member function ‘void glslang::TParseContext::addQualifierToExisting(const glslang::TSourceLoc&, glslang::TQualifier, const glslang::TString&)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp:9176:15: note: ‘blockNameType’ declared here
+ 9176 |         TType blockNameType(EbtReference, blockType, identifier);
+      |               ^~~~~~~~~~~~~
+In member function ‘void glslang::TType::shallowCopy(const glslang::TType&)’,
+    inlined from ‘glslang::TVariable::TVariable(const glslang::TString*, const glslang::TType&, bool)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/SymbolTable.h:165:27,
+    inlined from ‘void glslang::TParseContext::addQualifierToExisting(const glslang::TSourceLoc&, glslang::TQualifier, const glslang::TString&)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp:9177:81:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/Include/Types.h:1797:24: warning: ‘blockNameType.glslang::TType::typeParameters’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1797 |         typeParameters = copyOf.typeParameters;
+      |         ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp: In member function ‘void glslang::TParseContext::addQualifierToExisting(const glslang::TSourceLoc&, glslang::TQualifier, const glslang::TString&)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp:9176:15: note: ‘blockNameType.glslang::TType::typeParameters’ was declared here
+ 9176 |         TType blockNameType(EbtReference, blockType, identifier);
+      |               ^~~~~~~~~~~~~
+In member function ‘void glslang::TType::shallowCopy(const glslang::TType&)’,
+    inlined from ‘glslang::TVariable::TVariable(const glslang::TString*, const glslang::TType&, bool)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/SymbolTable.h:165:27,
+    inlined from ‘void glslang::TParseContext::addQualifierToExisting(const glslang::TSourceLoc&, glslang::TQualifier, const glslang::TString&)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp:9177:81:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/Include/Types.h:1801:17: warning: ‘blockNameType.glslang::TType::coopmat’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1801 |         coopmat = copyOf.isCoopMat();
+      |         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp: In member function ‘void glslang::TParseContext::addQualifierToExisting(const glslang::TSourceLoc&, glslang::TQualifier, const glslang::TString&)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp:9176:15: note: ‘blockNameType.glslang::TType::coopmat’ was declared here
+ 9176 |         TType blockNameType(EbtReference, blockType, identifier);
+      |               ^~~~~~~~~~~~~
+[ 34%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/reflection.cpp.o
+In member function ‘void glslang::TType::shallowCopy(const glslang::TType&)’,
+    inlined from ‘glslang::TVariable::TVariable(const glslang::TString*, const glslang::TType&, bool)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/SymbolTable.h:165:27,
+    inlined from ‘void glslang::TParseContext::declareBlock(const glslang::TSourceLoc&, glslang::TTypeList&, const glslang::TString*, glslang::TArraySizes*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp:8711:79:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/Include/Types.h:1783:17: warning: ‘blockNameType.glslang::TType::sampler’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1783 |         sampler = copyOf.sampler;
+      |         ~~~~~~~~^~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp: In member function ‘void glslang::TParseContext::declareBlock(const glslang::TSourceLoc&, glslang::TTypeList&, const glslang::TString*, glslang::TArraySizes*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp:8710:15: note: ‘blockNameType’ declared here
+ 8710 |         TType blockNameType(EbtReference, blockType, *blockName);
+      |               ^~~~~~~~~~~~~
+In member function ‘void glslang::TType::shallowCopy(const glslang::TType&)’,
+    inlined from ‘glslang::TVariable::TVariable(const glslang::TString*, const glslang::TType&, bool)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/SymbolTable.h:165:27,
+    inlined from ‘void glslang::TParseContext::declareBlock(const glslang::TSourceLoc&, glslang::TTypeList&, const glslang::TString*, glslang::TArraySizes*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp:8711:79:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/Include/Types.h:1797:24: warning: ‘blockNameType.glslang::TType::typeParameters’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1797 |         typeParameters = copyOf.typeParameters;
+      |         ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp: In member function ‘void glslang::TParseContext::declareBlock(const glslang::TSourceLoc&, glslang::TTypeList&, const glslang::TString*, glslang::TArraySizes*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp:8710:15: note: ‘blockNameType.glslang::TType::typeParameters’ was declared here
+ 8710 |         TType blockNameType(EbtReference, blockType, *blockName);
+      |               ^~~~~~~~~~~~~
+In member function ‘void glslang::TType::shallowCopy(const glslang::TType&)’,
+    inlined from ‘glslang::TVariable::TVariable(const glslang::TString*, const glslang::TType&, bool)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/SymbolTable.h:165:27,
+    inlined from ‘void glslang::TParseContext::declareBlock(const glslang::TSourceLoc&, glslang::TTypeList&, const glslang::TString*, glslang::TArraySizes*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp:8711:79:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/Include/Types.h:1801:17: warning: ‘blockNameType.glslang::TType::coopmat’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1801 |         coopmat = copyOf.isCoopMat();
+      |         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp: In member function ‘void glslang::TParseContext::declareBlock(const glslang::TSourceLoc&, glslang::TTypeList&, const glslang::TString*, glslang::TArraySizes*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/ParseHelper.cpp:8710:15: note: ‘blockNameType.glslang::TType::coopmat’ was declared here
+ 8710 |         TType blockNameType(EbtReference, blockType, *blockName);
+      |               ^~~~~~~~~~~~~
+[ 34%] Building CXX object GPU/CMakeFiles/GPU.dir/GLES/StateMappingGLES.cpp.o
+[ 34%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/preprocessor/Pp.cpp.o
+[ 34%] Building CXX object GPU/CMakeFiles/GPU.dir/GLES/TextureCacheGLES.cpp.o
+[ 35%] Linking CXX static library ../../lib/libbasis_universal.a
+[ 35%] Built target basis_universal
+[ 35%] Building CXX object GPU/CMakeFiles/GPU.dir/GLES/DrawEngineGLES.cpp.o
+[ 35%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/preprocessor/PpAtom.cpp.o
+[ 35%] Building CXX object GPU/CMakeFiles/GPU.dir/Vulkan/DebugVisVulkan.cpp.o
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/linkValidate.cpp: In member function ‘int glslang::TIntermediate::addUsedLocation(const glslang::TQualifier&, const glslang::TType&, bool&)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/linkValidate.cpp:1689:36: warning: ‘setRT’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1689 |         collision = checkLocationRT(setRT, qualifier.layoutLocation);
+      |                     ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/linkValidate.cpp:1633:9: note: ‘setRT’ was declared here
+ 1633 |     int setRT;
+      |         ^~~~~
+In file included from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/Pp.cpp:90:
+In member function ‘virtual void glslang::TPpContext::TokenizableIncludeFile::notifyActivated()’,
+    inlined from ‘void glslang::TPpContext::pushInput(tInput*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.h:235:28,
+    inlined from ‘glslang::MacroExpandResult glslang::TPpContext::MacroExpand(glslang::TPpToken*, bool, bool)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/Pp.cpp:1339:14:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.h:630:25: warning: array subscript ‘glslang::TPpContext::TokenizableIncludeFile[0]’ is partly outside array bounds of ‘unsigned char [104]’ [-Warray-bounds=]
+  630 |             prevScanner = pp->parseContext.getScanner();
+      |             ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/Pp.cpp: In member function ‘glslang::MacroExpandResult glslang::TPpContext::MacroExpand(glslang::TPpToken*, bool, bool)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/Pp.cpp:1230:43: note: object of size 104 allocated by ‘operator new’
+ 1230 |     tMacroInput *in = new tMacroInput(this);
+      |                                           ^
+[ 35%] Building CXX object GPU/CMakeFiles/GPU.dir/Vulkan/DrawEngineVulkan.cpp.o
+[ 35%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/preprocessor/PpContext.cpp.o
+[ 35%] Building CXX object GPU/CMakeFiles/GPU.dir/Vulkan/FramebufferManagerVulkan.cpp.o
+In member function ‘virtual void glslang::TPpContext::TokenizableIncludeFile::notifyActivated()’,
+    inlined from ‘void glslang::TPpContext::pushInput(tInput*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.h:235:28,
+    inlined from ‘glslang::TPpContext::TokenStream* glslang::TPpContext::PrescanMacroArg(TokenStream&, glslang::TPpToken*, bool)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/Pp.cpp:1052:14:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.h:630:25: warning: array subscript ‘glslang::TPpContext::TokenizableIncludeFile[0]’ is partly outside array bounds of ‘unsigned char [24]’ [-Warray-bounds=]
+  630 |             prevScanner = pp->parseContext.getScanner();
+      |             ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/Pp.cpp: In member function ‘glslang::TPpContext::TokenStream* glslang::TPpContext::PrescanMacroArg(TokenStream&, glslang::TPpToken*, bool)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/Pp.cpp:1052:36: note: object of size 24 allocated by ‘operator new’
+ 1052 |     pushInput(new tMarkerInput(this));
+      |                                    ^
+In member function ‘virtual void glslang::TPpContext::TokenizableIncludeFile::notifyActivated()’,
+    inlined from ‘void glslang::TPpContext::pushInput(tInput*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.h:235:28,
+    inlined from ‘glslang::TPpContext::TokenStream* glslang::TPpContext::PrescanMacroArg(TokenStream&, glslang::TPpToken*, bool)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/Pp.cpp:1052:14:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.h:632:29: warning: array subscript ‘glslang::TPpContext::TokenizableIncludeFile[0]’ is partly outside array bounds of ‘unsigned char [24]’ [-Warray-bounds=]
+  632 |             pp->push_include(includedFile_);
+      |             ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/Pp.cpp: In member function ‘glslang::TPpContext::TokenStream* glslang::TPpContext::PrescanMacroArg(TokenStream&, glslang::TPpToken*, bool)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/Pp.cpp:1052:36: note: object of size 24 allocated by ‘operator new’
+ 1052 |     pushInput(new tMarkerInput(this));
+      |                                    ^
+In file included from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.cpp:83:
+In member function ‘virtual void glslang::TPpContext::TokenizableIncludeFile::notifyActivated()’,
+    inlined from ‘void glslang::TPpContext::pushInput(tInput*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.h:235:28,
+    inlined from ‘void glslang::TPpContext::setInput(glslang::TInputScanner&, bool)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.cpp:114:14:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.h:630:25: warning: array subscript ‘glslang::TPpContext::TokenizableIncludeFile[0]’ is partly outside array bounds of ‘unsigned char [32]’ [-Warray-bounds=]
+  630 |             prevScanner = pp->parseContext.getScanner();
+      |             ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.cpp: In member function ‘void glslang::TPpContext::setInput(glslang::TInputScanner&, bool)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.cpp:114:43: note: object of size 32 allocated by ‘operator new’
+  114 |     pushInput(new tStringInput(this, input));
+      |                                           ^
+In member function ‘virtual void glslang::TPpContext::TokenizableIncludeFile::notifyActivated()’,
+    inlined from ‘void glslang::TPpContext::pushInput(tInput*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.h:235:28,
+    inlined from ‘void glslang::TPpContext::setInput(glslang::TInputScanner&, bool)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.cpp:114:14:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.h:632:29: warning: array subscript ‘glslang::TPpContext::TokenizableIncludeFile[0]’ is partly outside array bounds of ‘unsigned char [32]’ [-Warray-bounds=]
+  632 |             pp->push_include(includedFile_);
+      |             ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.cpp: In member function ‘void glslang::TPpContext::setInput(glslang::TInputScanner&, bool)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.cpp:114:43: note: object of size 32 allocated by ‘operator new’
+  114 |     pushInput(new tStringInput(this, input));
+      |                                           ^
+[ 35%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/preprocessor/PpScanner.cpp.o
+[ 36%] Building CXX object GPU/CMakeFiles/GPU.dir/Vulkan/GPU_Vulkan.cpp.o
+[ 36%] Building CXX object GPU/CMakeFiles/GPU.dir/Vulkan/PipelineManagerVulkan.cpp.o
+[ 36%] Building CXX object GPU/CMakeFiles/GPU.dir/Vulkan/ShaderManagerVulkan.cpp.o
+[ 36%] Building CXX object GPU/CMakeFiles/GPU.dir/Vulkan/StateMappingVulkan.cpp.o
+[ 36%] Building CXX object GPU/CMakeFiles/GPU.dir/Vulkan/TextureCacheVulkan.cpp.o
+[ 36%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/preprocessor/PpTokens.cpp.o
+[ 36%] Building CXX object GPU/CMakeFiles/GPU.dir/Vulkan/VulkanUtil.cpp.o
+In file included from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpTokens.cpp:97:
+In member function ‘virtual void glslang::TPpContext::TokenizableIncludeFile::notifyActivated()’,
+    inlined from ‘void glslang::TPpContext::pushInput(tInput*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.h:235:28,
+    inlined from ‘void glslang::TPpContext::pushTokenStreamInput(TokenStream&, bool)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpTokens.cpp:200:14:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.h:630:25: warning: array subscript ‘glslang::TPpContext::TokenizableIncludeFile[0]’ is partly outside array bounds of ‘unsigned char [40]’ [-Warray-bounds=]
+  630 |             prevScanner = pp->parseContext.getScanner();
+      |             ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpTokens.cpp: In member function ‘void glslang::TPpContext::pushTokenStreamInput(TokenStream&, bool)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpTokens.cpp:200:52: note: object of size 40 allocated by ‘operator new’
+  200 |     pushInput(new tTokenInput(this, &ts, prepasting));
+      |                                                    ^
+In member function ‘virtual void glslang::TPpContext::TokenizableIncludeFile::notifyActivated()’,
+    inlined from ‘void glslang::TPpContext::pushInput(tInput*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.h:235:28,
+    inlined from ‘void glslang::TPpContext::pushTokenStreamInput(TokenStream&, bool)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpTokens.cpp:200:14:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpContext.h:632:29: warning: array subscript ‘glslang::TPpContext::TokenizableIncludeFile[0]’ is partly outside array bounds of ‘unsigned char [40]’ [-Warray-bounds=]
+  632 |             pp->push_include(includedFile_);
+      |             ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpTokens.cpp: In member function ‘void glslang::TPpContext::pushTokenStreamInput(TokenStream&, bool)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/glslang/MachineIndependent/preprocessor/PpTokens.cpp:200:52: note: object of size 40 allocated by ‘operator new’
+  200 |     pushInput(new tTokenInput(this, &ts, prepasting));
+      |                                                    ^
+[ 36%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/MachineIndependent/propagateNoContraction.cpp.o
+[ 37%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/HLSL/hlslAttributes.cpp.o
+[ 37%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/HLSL/hlslParseHelper.cpp.o
+[ 37%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/HLSL/hlslScanContext.cpp.o
+[ 37%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/HLSL/hlslOpMap.cpp.o
+[ 37%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/Draw2D.cpp.o
+[ 37%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/HLSL/hlslTokenStream.cpp.o
+[ 37%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/DepthBufferCommon.cpp.o
+[ 37%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/DepthRaster.cpp.o
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Vulkan/TextureCacheVulkan.cpp: In member function ‘virtual void TextureCacheVulkan::BuildTexture(TexCacheEntry*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Vulkan/TextureCacheVulkan.cpp:855:67: warning: ‘bufferOffset’ may be used uninitialized [-Wmaybe-uninitialized]
+  855 |                                 entry->vkTex->CopyBufferToMipLevel(cmdInit, &copyBatch, i, mipWidth, mipHeight, 0, texBuf, bufferOffset, pixelStride);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Vulkan/TextureCacheVulkan.cpp:797:26: note: ‘bufferOffset’ was declared here
+  797 |                 uint32_t bufferOffset;
+      |                          ^~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Vulkan/TextureCacheVulkan.cpp:855:67: warning: ‘texBuf’ may be used uninitialized [-Wmaybe-uninitialized]
+  855 |                                 entry->vkTex->CopyBufferToMipLevel(cmdInit, &copyBatch, i, mipWidth, mipHeight, 0, texBuf, bufferOffset, pixelStride);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Vulkan/TextureCacheVulkan.cpp:798:26: note: ‘texBuf’ was declared here
+  798 |                 VkBuffer texBuf;
+      |                          ^~~~~~
+[ 37%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/HLSL/hlslGrammar.cpp.o
+[ 37%] Linking CXX static library ../../lib/libspirv-cross-hlsl.a
+[ 37%] Built target spirv-cross-hlsl
+[ 38%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/TextureShaderCommon.cpp.o
+[ 38%] Building CXX object ext/glslang/glslang/CMakeFiles/MachineIndependent.dir/HLSL/hlslParseables.cpp.o
+[ 38%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/DepalettizeShaderCommon.cpp.o
+[ 38%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/FragmentShaderGenerator.cpp.o
+[ 38%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/VertexShaderGenerator.cpp.o
+[ 38%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/FramebufferManagerCommon.cpp.o
+[ 38%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/GPUDebugInterface.cpp.o
+[ 38%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/GPUStateUtils.cpp.o
+[ 38%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/DrawEngineCommon.cpp.o
+[ 38%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/PresentationCommon.cpp.o
+[ 38%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/ReinterpretFramebuffer.cpp.o
+[ 39%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/ShaderId.cpp.o
+[ 39%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/ShaderUniforms.cpp.o
+[ 39%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/ShaderCommon.cpp.o
+[ 39%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/SplineCommon.cpp.o
+[ 39%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/StencilCommon.cpp.o
+[ 39%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/SoftwareTransformCommon.cpp.o
+[ 39%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/VertexDecoderCommon.cpp.o
+[ 39%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/VertexDecoderHandwritten.cpp.o
+[ 39%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/TransformCommon.cpp.o
+[ 40%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/IndexGenerator.cpp.o
+[ 40%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/TextureDecoder.cpp.o
+[ 40%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/TextureCacheCommon.cpp.o
+In file included from /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/immintrin.h:31,
+                 from /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/x86intrin.h:32,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Common/CommonFuncs.h:75,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Common/Data/Text/StringWriter.h:6,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp:26:
+In function ‘__m128 _mm_loadu_ps(const float*)’,
+    inlined from ‘__m128 Vec3ByMatrix43Internal(__m128, __m128, __m128, const float*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Math3D.h:909:28,
+    inlined from ‘void Vec3ByMatrix43(float*, const float*, const float*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Math3D.h:945:37,
+    inlined from ‘static void VertexDecoder::Step_PosS8Skin(const VertexDecoder*, const u8*, u8*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp:846:16:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xmmintrin.h:982:23: warning: array subscript ‘__m128_u[2]’ is partly outside array bounds of ‘float [12]’ [-Warray-bounds=]
+  982 |   return *(__m128_u *)__P;
+      |                       ^~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp: In static member function ‘static void VertexDecoder::Step_PosS8Skin(const VertexDecoder*, const u8*, u8*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp:52:26: note: at offset 36 into object ‘skinMatrix’ of size 48
+   52 | alignas(16) static float skinMatrix[12];
+      |                          ^~~~~~~~~~
+In function ‘__m128 _mm_loadu_ps(const float*)’,
+    inlined from ‘__m128 Vec3ByMatrix43Internal(__m128, __m128, __m128, const float*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Math3D.h:909:28,
+    inlined from ‘void Vec3ByMatrix43(float*, const float*, const float*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Math3D.h:945:37,
+    inlined from ‘static void VertexDecoder::Step_PosS16Skin(const VertexDecoder*, const u8*, u8*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp:853:16:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xmmintrin.h:982:23: warning: array subscript ‘__m128_u[2]’ is partly outside array bounds of ‘float [12]’ [-Warray-bounds=]
+  982 |   return *(__m128_u *)__P;
+      |                       ^~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp: In static member function ‘static void VertexDecoder::Step_PosS16Skin(const VertexDecoder*, const u8*, u8*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp:52:26: note: at offset 36 into object ‘skinMatrix’ of size 48
+   52 | alignas(16) static float skinMatrix[12];
+      |                          ^~~~~~~~~~
+In function ‘__m128 _mm_loadu_ps(const float*)’,
+    inlined from ‘__m128 Vec3ByMatrix43Internal(__m128, __m128, __m128, const float*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Math3D.h:909:28,
+    inlined from ‘void Vec3ByMatrix43(float*, const float*, const float*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Math3D.h:945:37,
+    inlined from ‘static void VertexDecoder::Step_PosFloatSkin(const VertexDecoder*, const u8*, u8*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp:860:16:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xmmintrin.h:982:23: warning: array subscript ‘__m128_u[2]’ is partly outside array bounds of ‘float [12]’ [-Warray-bounds=]
+  982 |   return *(__m128_u *)__P;
+      |                       ^~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp: In static member function ‘static void VertexDecoder::Step_PosFloatSkin(const VertexDecoder*, const u8*, u8*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp:52:26: note: at offset 36 into object ‘skinMatrix’ of size 48
+   52 | alignas(16) static float skinMatrix[12];
+      |                          ^~~~~~~~~~
+In function ‘__m128 _mm_loadu_ps(const float*)’,
+    inlined from ‘__m128 Vec3ByMatrix43Internal(__m128, __m128, __m128, const float*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Math3D.h:909:28,
+    inlined from ‘void Vec3ByMatrix43(float*, const float*, const float*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Math3D.h:945:37,
+    inlined from ‘static void VertexDecoder::Step_PosS8MorphSkin(const VertexDecoder*, const u8*, u8*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp:967:16:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xmmintrin.h:982:23: warning: array subscript ‘__m128_u[2]’ is partly outside array bounds of ‘float [12]’ [-Warray-bounds=]
+  982 |   return *(__m128_u *)__P;
+      |                       ^~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp: In static member function ‘static void VertexDecoder::Step_PosS8MorphSkin(const VertexDecoder*, const u8*, u8*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp:52:26: note: at offset 36 into object ‘skinMatrix’ of size 48
+   52 | alignas(16) static float skinMatrix[12];
+      |                          ^~~~~~~~~~
+In function ‘__m128 _mm_loadu_ps(const float*)’,
+    inlined from ‘__m128 Vec3ByMatrix43Internal(__m128, __m128, __m128, const float*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Math3D.h:909:28,
+    inlined from ‘void Vec3ByMatrix43(float*, const float*, const float*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Math3D.h:945:37,
+    inlined from ‘static void VertexDecoder::Step_PosS16MorphSkin(const VertexDecoder*, const u8*, u8*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp:981:16:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xmmintrin.h:982:23: warning: array subscript ‘__m128_u[2]’ is partly outside array bounds of ‘float [12]’ [-Warray-bounds=]
+  982 |   return *(__m128_u *)__P;
+      |                       ^~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp: In static member function ‘static void VertexDecoder::Step_PosS16MorphSkin(const VertexDecoder*, const u8*, u8*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp:52:26: note: at offset 36 into object ‘skinMatrix’ of size 48
+   52 | alignas(16) static float skinMatrix[12];
+      |                          ^~~~~~~~~~
+In function ‘__m128 _mm_loadu_ps(const float*)’,
+    inlined from ‘__m128 Vec3ByMatrix43Internal(__m128, __m128, __m128, const float*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Math3D.h:909:28,
+    inlined from ‘void Vec3ByMatrix43(float*, const float*, const float*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Math3D.h:945:37,
+    inlined from ‘static void VertexDecoder::Step_PosFloatMorphSkin(const VertexDecoder*, const u8*, u8*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp:994:16:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xmmintrin.h:982:23: warning: array subscript ‘__m128_u[2]’ is partly outside array bounds of ‘float [12]’ [-Warray-bounds=]
+  982 |   return *(__m128_u *)__P;
+      |                       ^~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp: In static member function ‘static void VertexDecoder::Step_PosFloatMorphSkin(const VertexDecoder*, const u8*, u8*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Common/VertexDecoderCommon.cpp:52:26: note: at offset 36 into object ‘skinMatrix’ of size 48
+   52 | alignas(16) static float skinMatrix[12];
+      |                          ^~~~~~~~~~
+[ 40%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/TextureScalerCommon.cpp.o
+[ 40%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/PostShader.cpp.o
+[ 40%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/TextureReplacer.cpp.o
+[ 40%] Building CXX object GPU/CMakeFiles/GPU.dir/Common/ReplacedTexture.cpp.o
+[ 40%] Building CXX object GPU/CMakeFiles/GPU.dir/Debugger/Breakpoints.cpp.o
+[ 40%] Building CXX object GPU/CMakeFiles/GPU.dir/Debugger/Debugger.cpp.o
+[ 40%] Building CXX object GPU/CMakeFiles/GPU.dir/Debugger/GECommandTable.cpp.o
+[ 41%] Building CXX object GPU/CMakeFiles/GPU.dir/Debugger/Playback.cpp.o
+[ 41%] Building CXX object GPU/CMakeFiles/GPU.dir/Debugger/Record.cpp.o
+[ 41%] Building CXX object GPU/CMakeFiles/GPU.dir/Debugger/State.cpp.o
+[ 41%] Building CXX object GPU/CMakeFiles/GPU.dir/Debugger/Stepping.cpp.o
+[ 41%] Building CXX object GPU/CMakeFiles/GPU.dir/GeConstants.cpp.o
+[ 41%] Building CXX object GPU/CMakeFiles/GPU.dir/GeDisasm.cpp.o
+[ 41%] Building CXX object GPU/CMakeFiles/GPU.dir/GPU.cpp.o
+[ 41%] Building CXX object GPU/CMakeFiles/GPU.dir/GPUCommon.cpp.o
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Debugger/Record.cpp: In member function ‘Path GPURecord::Recorder::WriteRecording()’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Debugger/Record.cpp:186:16: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 9 equals destination size [-Wstringop-truncation]
+  186 |         strncpy(header.gameID, g_paramSFO.GetDiscID().c_str(), sizeof(header.gameID));
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 41%] Building CXX object GPU/CMakeFiles/GPU.dir/GPUCommonHW.cpp.o
+[ 42%] Building CXX object GPU/CMakeFiles/GPU.dir/GPUState.cpp.o
+[ 42%] Building CXX object GPU/CMakeFiles/GPU.dir/Math3D.cpp.o
+[ 42%] Building CXX object GPU/CMakeFiles/GPU.dir/Software/BinManager.cpp.o
+[ 42%] Building CXX object GPU/CMakeFiles/GPU.dir/Software/Clipper.cpp.o
+[ 42%] Building CXX object GPU/CMakeFiles/GPU.dir/Software/DrawPixel.cpp.o
+[ 42%] Linking CXX static library ../../../lib/libMachineIndependent.a
+[ 42%] Built target MachineIndependent
+[ 42%] Building CXX object GPU/CMakeFiles/GPU.dir/Software/FuncId.cpp.o
+[ 42%] Building CXX object ext/glslang/glslang/CMakeFiles/glslang.dir/CInterface/glslang_c_interface.cpp.o
+[ 42%] Linking CXX static library ../../lib/libspirv-cross-msl.a
+[ 42%] Built target spirv-cross-msl
+[ 42%] Building CXX object ext/glslang/SPIRV/CMakeFiles/SPIRV.dir/GlslangToSpv.cpp.o
+[ 42%] Building CXX object ext/glslang/SPIRV/CMakeFiles/SPIRV.dir/InReadableOrder.cpp.o
+[ 43%] Building CXX object ext/glslang/SPIRV/CMakeFiles/SPIRV.dir/Logger.cpp.o
+[ 43%] Linking CXX static library ../../../lib/libglslang.a
+[ 43%] Built target glslang
+[ 43%] Building CXX object GPU/CMakeFiles/GPU.dir/Software/Lighting.cpp.o
+[ 43%] Building CXX object ext/glslang/SPIRV/CMakeFiles/SPIRV.dir/SpvBuilder.cpp.o
+[ 43%] Building CXX object ext/glslang/SPIRV/CMakeFiles/SPIRV.dir/SpvPostProcess.cpp.o
+[ 43%] Building CXX object GPU/CMakeFiles/GPU.dir/Software/Rasterizer.cpp.o
+[ 43%] Building CXX object GPU/CMakeFiles/GPU.dir/Software/RasterizerRectangle.cpp.o
+[ 43%] Building CXX object ext/glslang/SPIRV/CMakeFiles/SPIRV.dir/doc.cpp.o
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/SPIRV/SpvBuilder.cpp: In member function ‘spv::Id spv::Builder::makeDebugFunction(spv::Function*, spv::Id, spv::Id)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/glslang/SPIRV/SpvBuilder.cpp:2097:41: warning: unused parameter ‘function’ [-Wunused-parameter]
+ 2097 | Id Builder::makeDebugFunction(Function* function, Id nameId, Id funcTypeId) {
+      |                               ~~~~~~~~~~^~~~~~~~
+[ 43%] Building CXX object ext/glslang/SPIRV/CMakeFiles/SPIRV.dir/SpvTools.cpp.o
+[ 43%] Building CXX object GPU/CMakeFiles/GPU.dir/Software/RasterizerRegCache.cpp.o
+[ 43%] Building CXX object ext/glslang/SPIRV/CMakeFiles/SPIRV.dir/disassemble.cpp.o
+[ 43%] Building CXX object ext/glslang/SPIRV/CMakeFiles/SPIRV.dir/CInterface/spirv_c_interface.cpp.o
+In file included from /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/xmmintrin.h:1364,
+                 from /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/immintrin.h:31,
+                 from /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/x86intrin.h:32,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Common/CommonFuncs.h:75,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Common/Common.h:31,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp:21:
+In function ‘__m128i _mm_and_si128(__m128i, __m128i)’,
+    inlined from ‘void Rasterizer::DrawTriangleSlice(const VertexData&, const VertexData&, const VertexData&, int, int, int, int, const RasterizerState&) [with bool clearMode = false; bool useSSE4 = false]’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp:1149:40:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/emmintrin.h:1318:21: warning: ‘sec_color[1].Math3D::Vec3<int>::<unnamed>.Math3D::Vec3<int>::._anon_135::ivec’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1318 |   return (__m128i) ((__v2du)__A & (__v2du)__B);
+      |                     ^~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp: In function ‘void Rasterizer::DrawTriangleSlice(const VertexData&, const VertexData&, const VertexData&, int, int, int, int, const RasterizerState&) [with bool clearMode = false; bool useSSE4 = false]’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp:1103:43: note: ‘sec_color[1].Math3D::Vec3<int>::<unnamed>.Math3D::Vec3<int>::._anon_135::ivec’ was declared here
+ 1103 |                                 Vec3<int> sec_color[4];
+      |                                           ^~~~~~~~~
+In function ‘__m128i _mm_and_si128(__m128i, __m128i)’,
+    inlined from ‘void Rasterizer::DrawTriangleSlice(const VertexData&, const VertexData&, const VertexData&, int, int, int, int, const RasterizerState&) [with bool clearMode = false; bool useSSE4 = false]’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp:1149:40:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/emmintrin.h:1318:21: warning: ‘sec_color[2].Math3D::Vec3<int>::<unnamed>.Math3D::Vec3<int>::._anon_135::ivec’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1318 |   return (__m128i) ((__v2du)__A & (__v2du)__B);
+      |                     ^~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp: In function ‘void Rasterizer::DrawTriangleSlice(const VertexData&, const VertexData&, const VertexData&, int, int, int, int, const RasterizerState&) [with bool clearMode = false; bool useSSE4 = false]’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp:1103:43: note: ‘sec_color[2].Math3D::Vec3<int>::<unnamed>.Math3D::Vec3<int>::._anon_135::ivec’ was declared here
+ 1103 |                                 Vec3<int> sec_color[4];
+      |                                           ^~~~~~~~~
+In function ‘__m128i _mm_and_si128(__m128i, __m128i)’,
+    inlined from ‘void Rasterizer::DrawTriangleSlice(const VertexData&, const VertexData&, const VertexData&, int, int, int, int, const RasterizerState&) [with bool clearMode = false; bool useSSE4 = false]’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp:1149:40:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/emmintrin.h:1318:21: warning: ‘sec_color[3].Math3D::Vec3<int>::<unnamed>.Math3D::Vec3<int>::._anon_135::ivec’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1318 |   return (__m128i) ((__v2du)__A & (__v2du)__B);
+      |                     ^~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp: In function ‘void Rasterizer::DrawTriangleSlice(const VertexData&, const VertexData&, const VertexData&, int, int, int, int, const RasterizerState&) [with bool clearMode = false; bool useSSE4 = false]’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp:1103:43: note: ‘sec_color[3].Math3D::Vec3<int>::<unnamed>.Math3D::Vec3<int>::._anon_135::ivec’ was declared here
+ 1103 |                                 Vec3<int> sec_color[4];
+      |                                           ^~~~~~~~~
+[ 44%] Building CXX object GPU/CMakeFiles/GPU.dir/Software/Sampler.cpp.o
+In function ‘__m128i _mm_and_si128(__m128i, __m128i)’,
+    inlined from ‘void Rasterizer::DrawTriangleSlice(const VertexData&, const VertexData&, const VertexData&, int, int, int, int, const RasterizerState&) [with bool clearMode = false; bool useSSE4 = true]’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp:1149:40:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/emmintrin.h:1318:21: warning: ‘sec_color[1].Math3D::Vec3<int>::<unnamed>.Math3D::Vec3<int>::._anon_135::ivec’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1318 |   return (__m128i) ((__v2du)__A & (__v2du)__B);
+      |                     ^~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp: In function ‘void Rasterizer::DrawTriangleSlice(const VertexData&, const VertexData&, const VertexData&, int, int, int, int, const RasterizerState&) [with bool clearMode = false; bool useSSE4 = true]’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp:1103:43: note: ‘sec_color[1].Math3D::Vec3<int>::<unnamed>.Math3D::Vec3<int>::._anon_135::ivec’ was declared here
+ 1103 |                                 Vec3<int> sec_color[4];
+      |                                           ^~~~~~~~~
+In function ‘__m128i _mm_and_si128(__m128i, __m128i)’,
+    inlined from ‘void Rasterizer::DrawTriangleSlice(const VertexData&, const VertexData&, const VertexData&, int, int, int, int, const RasterizerState&) [with bool clearMode = false; bool useSSE4 = true]’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp:1149:40:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/emmintrin.h:1318:21: warning: ‘sec_color[2].Math3D::Vec3<int>::<unnamed>.Math3D::Vec3<int>::._anon_135::ivec’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1318 |   return (__m128i) ((__v2du)__A & (__v2du)__B);
+      |                     ^~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp: In function ‘void Rasterizer::DrawTriangleSlice(const VertexData&, const VertexData&, const VertexData&, int, int, int, int, const RasterizerState&) [with bool clearMode = false; bool useSSE4 = true]’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp:1103:43: note: ‘sec_color[2].Math3D::Vec3<int>::<unnamed>.Math3D::Vec3<int>::._anon_135::ivec’ was declared here
+ 1103 |                                 Vec3<int> sec_color[4];
+      |                                           ^~~~~~~~~
+In function ‘__m128i _mm_and_si128(__m128i, __m128i)’,
+    inlined from ‘void Rasterizer::DrawTriangleSlice(const VertexData&, const VertexData&, const VertexData&, int, int, int, int, const RasterizerState&) [with bool clearMode = false; bool useSSE4 = true]’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp:1149:40:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/emmintrin.h:1318:21: warning: ‘sec_color[3].Math3D::Vec3<int>::<unnamed>.Math3D::Vec3<int>::._anon_135::ivec’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1318 |   return (__m128i) ((__v2du)__A & (__v2du)__B);
+      |                     ^~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp: In function ‘void Rasterizer::DrawTriangleSlice(const VertexData&, const VertexData&, const VertexData&, int, int, int, int, const RasterizerState&) [with bool clearMode = false; bool useSSE4 = true]’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.cpp:1103:43: note: ‘sec_color[3].Math3D::Vec3<int>::<unnamed>.Math3D::Vec3<int>::._anon_135::ivec’ was declared here
+ 1103 |                                 Vec3<int> sec_color[4];
+      |                                           ^~~~~~~~~
+[ 44%] Building CXX object GPU/CMakeFiles/GPU.dir/Software/SoftGpu.cpp.o
+[ 44%] Building CXX object GPU/CMakeFiles/GPU.dir/Software/TransformUnit.cpp.o
+In file included from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/DrawPixel.h:27,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Rasterizer.h:21,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/BinManager.h:22,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Sampler.cpp:27:
+In constructor ‘Math3D::Vec4<T>::Vec4(const Math3D::Vec3<T>&, const T&) [with T = int]’,
+    inlined from ‘Rasterizer::Vec4IntResult Sampler::GetTextureFunctionOutput(Rasterizer::Vec4IntArg, Rasterizer::Vec4IntArg, const SamplerID&)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Sampler.cpp:595:49:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Math3D.h:583:83: warning: ‘out_a’ may be used uninitialized [-Wmaybe-uninitialized]
+  583 |         Vec4(const Vec3<T>& _xyz, const T& _w) : x(_xyz.x), y(_xyz.y), z(_xyz.z), w(_w) {}
+      |                                                                                   ^~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Sampler.cpp: In function ‘Rasterizer::Vec4IntResult Sampler::GetTextureFunctionOutput(Rasterizer::Vec4IntArg, Rasterizer::Vec4IntArg, const SamplerID&)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/GPU/Software/Sampler.cpp:484:13: note: ‘out_a’ was declared here
+  484 |         int out_a;
+      |             ^~~~~
+[ 44%] Built target GPU
+[ 44%] Linking CXX static library ../../../lib/libSPIRV.a
+[ 44%] Built target SPIRV
+[ 44%] Building CXX object Common/CMakeFiles/Common.dir/CPUDetect.cpp.o
+[ 44%] Building CXX object Common/CMakeFiles/Common.dir/ABI.cpp.o
+[ 45%] Building CXX object Common/CMakeFiles/Common.dir/x64Analyzer.cpp.o
+[ 45%] Building CXX object Common/CMakeFiles/Common.dir/x64Emitter.cpp.o
+[ 45%] Building CXX object Common/CMakeFiles/Common.dir/ArmCPUDetect.cpp.o
+[ 45%] Building CXX object Common/CMakeFiles/Common.dir/Arm64Emitter.cpp.o
+[ 45%] Building CXX object Common/CMakeFiles/Common.dir/ArmEmitter.cpp.o
+[ 45%] Building CXX object Common/CMakeFiles/Common.dir/Thunk.cpp.o
+[ 45%] Building CXX object Common/CMakeFiles/Common.dir/RiscVCPUDetect.cpp.o
+[ 45%] Building CXX object Common/CMakeFiles/Common.dir/RiscVEmitter.cpp.o
+[ 45%] Building CXX object Common/CMakeFiles/Common.dir/LoongArchCPUDetect.cpp.o
+[ 45%] Building CXX object Common/CMakeFiles/Common.dir/LoongArch64Emitter.cpp.o
+[ 45%] Building CXX object Common/CMakeFiles/Common.dir/VR/OpenXRLoader.cpp.o
+[ 46%] Building CXX object Common/CMakeFiles/Common.dir/VR/PPSSPPVR.cpp.o
+[ 46%] Building CXX object Common/CMakeFiles/Common.dir/VR/VRBase.cpp.o
+[ 46%] Building CXX object Common/CMakeFiles/Common.dir/VR/VRFramebuffer.cpp.o
+[ 46%] Building CXX object Common/CMakeFiles/Common.dir/VR/VRInput.cpp.o
+[ 46%] Building CXX object Common/CMakeFiles/Common.dir/VR/VRMath.cpp.o
+[ 46%] Building CXX object Common/CMakeFiles/Common.dir/VR/VRRenderer.cpp.o
+[ 46%] Building CXX object Common/CMakeFiles/Common.dir/Serialize/Serializer.cpp.o
+[ 46%] Building CXX object Common/CMakeFiles/Common.dir/Crypto/md5.cpp.o
+[ 46%] Building CXX object Common/CMakeFiles/Common.dir/Crypto/sha1.cpp.o
+[ 47%] Building CXX object Common/CMakeFiles/Common.dir/Crypto/sha256.cpp.o
+[ 47%] Building CXX object Common/CMakeFiles/Common.dir/Data/Color/RGBAUtil.cpp.o
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Common/Serialize/Serializer.cpp: In member function ‘PointerWrapSection PointerWrap::Section(const char*, int, int)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Common/Serialize/Serializer.cpp:67:16: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 16 equals destination size [-Wstringop-truncation]
+   67 |         strncpy(marker, title, sizeof(marker));
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 47%] Building CXX object Common/CMakeFiles/Common.dir/Data/Convert/ColorConv.cpp.o
+[ 47%] Building CXX object Common/CMakeFiles/Common.dir/Data/Convert/SmallDataConvert.cpp.o
+[ 47%] Building CXX object Common/CMakeFiles/Common.dir/Data/Encoding/Base64.cpp.o
+[ 47%] Building CXX object Common/CMakeFiles/Common.dir/Data/Encoding/Compression.cpp.o
+[ 47%] Building CXX object Common/CMakeFiles/Common.dir/Data/Encoding/Utf8.cpp.o
+[ 47%] Building CXX object Common/CMakeFiles/Common.dir/Data/Format/RIFF.cpp.o
+[ 47%] Building CXX object Common/CMakeFiles/Common.dir/Data/Format/IniFile.cpp.o
+[ 47%] Building CXX object Common/CMakeFiles/Common.dir/Data/Format/JSONReader.cpp.o
+[ 48%] Building CXX object Common/CMakeFiles/Common.dir/Data/Format/JSONWriter.cpp.o
+[ 48%] Building CXX object Common/CMakeFiles/Common.dir/Data/Format/DDSLoad.cpp.o
+[ 48%] Building CXX object Common/CMakeFiles/Common.dir/Data/Format/PNGLoad.cpp.o
+[ 48%] Building CXX object Common/CMakeFiles/Common.dir/Data/Format/ZIMLoad.cpp.o
+[ 48%] Building CXX object Common/CMakeFiles/Common.dir/Data/Format/ZIMSave.cpp.o
+[ 48%] Building CXX object Common/CMakeFiles/Common.dir/Data/Hash/Hash.cpp.o
+[ 48%] Building CXX object Common/CMakeFiles/Common.dir/Data/Text/I18n.cpp.o
+[ 48%] Building CXX object Common/CMakeFiles/Common.dir/Data/Text/Parsers.cpp.o
+[ 48%] Building CXX object Common/CMakeFiles/Common.dir/Data/Text/WrapText.cpp.o
+[ 49%] Building CXX object Common/CMakeFiles/Common.dir/File/VFS/VFS.cpp.o
+[ 49%] Building CXX object Common/CMakeFiles/Common.dir/File/VFS/ZipFileReader.cpp.o
+[ 49%] Building CXX object Common/CMakeFiles/Common.dir/File/VFS/SevenZipFileReader.cpp.o
+[ 49%] Building CXX object Common/CMakeFiles/Common.dir/File/VFS/DirectoryReader.cpp.o
+[ 49%] Building CXX object Common/CMakeFiles/Common.dir/File/AndroidStorage.cpp.o
+[ 49%] Building CXX object Common/CMakeFiles/Common.dir/File/AndroidContentURI.cpp.o
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Common/File/VFS/ZipFileReader.cpp: In member function ‘bool ZipFileReader::GetZipListings(const std::string&, std::set<std::__cxx11::basic_string<char> >&, std::set<std::__cxx11::basic_string<char> >&)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Common/File/VFS/ZipFileReader.cpp:264:41: warning: ‘int zip_get_num_files(zip_t*)’ is deprecated: use 'zip_get_num_entries' instead [-Wdeprecated-declarations]
+  264 |         int numFiles = zip_get_num_files(zip_file_);
+      |                        ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Common/File/VFS/ZipFileReader.cpp:8:
+/usr/include/zip.h:394:68: note: declared here
+  394 | ZIP_DEPRECATED("use 'zip_get_num_entries' instead") ZIP_EXTERN int zip_get_num_files(zip_t *_Nonnull);
+      |                                                                    ^~~~~~~~~~~~~~~~~
+[ 49%] Building CXX object Common/CMakeFiles/Common.dir/File/DiskFree.cpp.o
+[ 49%] Building CXX object Common/CMakeFiles/Common.dir/File/Path.cpp.o
+[ 49%] Building CXX object Common/CMakeFiles/Common.dir/File/PathBrowser.cpp.o
+[ 49%] Building CXX object Common/CMakeFiles/Common.dir/File/FileUtil.cpp.o
+[ 50%] Building CXX object Common/CMakeFiles/Common.dir/File/DirListing.cpp.o
+[ 50%] Building CXX object Common/CMakeFiles/Common.dir/File/FileDescriptor.cpp.o
+[ 50%] Building CXX object Common/CMakeFiles/Common.dir/GPU/GPUBackendCommon.cpp.o
+[ 50%] Building CXX object Common/CMakeFiles/Common.dir/GPU/thin3d.cpp.o
+[ 50%] Building CXX object Common/CMakeFiles/Common.dir/GPU/Shader.cpp.o
+[ 50%] Building CXX object Common/CMakeFiles/Common.dir/GPU/ShaderWriter.cpp.o
+[ 50%] Building CXX object Common/CMakeFiles/Common.dir/GPU/ShaderTranslation.cpp.o
+In file included from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Common/File/FileUtil.cpp:47:
+In member function ‘void File::IOFile::Clear()’,
+    inlined from ‘void File::IOFile::SetHandle(FILE*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Common/File/FileUtil.cpp:1335:7:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Common/File/FileUtil.h:219:30: warning: argument 1 null where non-null expected [-Wnonnull]
+  219 |                 std::clearerr(m_file);
+      |                 ~~~~~~~~~~~~~^~~~~~~~
+In file included from /usr/include/c++/16/cstdio:47,
+                 from /usr/include/c++/16/ext/string_conversions.h:47,
+                 from /usr/include/c++/16/bits/basic_string.h:4499,
+                 from /usr/include/c++/16/string:58,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/android/jni/app-android.h:5,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Common/File/FileUtil.cpp:36:
+/usr/include/stdio.h: In member function ‘void File::IOFile::SetHandle(FILE*)’:
+/usr/include/stdio.h:854:13: note: in a call to function ‘void clearerr(FILE*)’ declared ‘nonnull’
+  854 | extern void clearerr (FILE *__stream) __THROW __nonnull ((1));
+      |             ^~~~~~~~
+[ 50%] Building CXX object Common/CMakeFiles/Common.dir/GPU/OpenGL/GLDebugLog.cpp.o
+[ 50%] Building CXX object Common/CMakeFiles/Common.dir/GPU/OpenGL/GLSLProgram.cpp.o
+[ 51%] Building C object Common/CMakeFiles/Common.dir/GPU/OpenGL/gl3stub.c.o
+[ 51%] Building CXX object Common/CMakeFiles/Common.dir/GPU/OpenGL/GLFeatures.cpp.o
+[ 51%] Building CXX object Common/CMakeFiles/Common.dir/GPU/OpenGL/GLFrameData.cpp.o
+[ 51%] Building CXX object Common/CMakeFiles/Common.dir/GPU/OpenGL/thin3d_gl.cpp.o
+[ 51%] Building CXX object Common/CMakeFiles/Common.dir/GPU/OpenGL/GLMemory.cpp.o
+[ 51%] Building CXX object Common/CMakeFiles/Common.dir/GPU/OpenGL/GLRenderManager.cpp.o
+[ 51%] Building CXX object Common/CMakeFiles/Common.dir/GPU/OpenGL/GLQueueRunner.cpp.o
+[ 51%] Building CXX object Common/CMakeFiles/Common.dir/GPU/OpenGL/GLProfiler.cpp.o
+[ 51%] Building CXX object Common/CMakeFiles/Common.dir/GPU/OpenGL/DataFormatGL.cpp.o
+[ 51%] Building CXX object Common/CMakeFiles/Common.dir/GPU/OpenGL/OpenGLGraphicsContext.cpp.o
+[ 52%] Building CXX object Common/CMakeFiles/Common.dir/GPU/Vulkan/VulkanBarrier.cpp.o
+[ 52%] Building CXX object Common/CMakeFiles/Common.dir/GPU/Vulkan/VulkanDebug.cpp.o
+[ 52%] Building CXX object Common/CMakeFiles/Common.dir/GPU/Vulkan/VulkanContext.cpp.o
+[ 52%] Building CXX object Common/CMakeFiles/Common.dir/GPU/Vulkan/VulkanDescSet.cpp.o
+[ 52%] Building CXX object Common/CMakeFiles/Common.dir/GPU/Vulkan/VulkanFramebuffer.cpp.o
+[ 52%] Building CXX object Common/CMakeFiles/Common.dir/GPU/Vulkan/VulkanImage.cpp.o
+[ 52%] Building CXX object Common/CMakeFiles/Common.dir/GPU/Vulkan/VulkanLoader.cpp.o
+[ 52%] Building CXX object Common/CMakeFiles/Common.dir/GPU/Vulkan/VulkanMemory.cpp.o
+[ 52%] Building CXX object Common/CMakeFiles/Common.dir/GPU/Vulkan/VulkanProfiler.cpp.o
+[ 53%] Building CXX object Common/CMakeFiles/Common.dir/GPU/Vulkan/thin3d_vulkan.cpp.o
+[ 53%] Building CXX object Common/CMakeFiles/Common.dir/GPU/Vulkan/VulkanRenderManager.cpp.o
+[ 53%] Building CXX object Common/CMakeFiles/Common.dir/GPU/Vulkan/VulkanQueueRunner.cpp.o
+[ 53%] Building CXX object Common/CMakeFiles/Common.dir/GPU/Vulkan/VulkanFrameData.cpp.o
+[ 53%] Building CXX object Common/CMakeFiles/Common.dir/GPU/Vulkan/VulkanGraphicsContext.cpp.o
+[ 53%] Building CXX object Common/CMakeFiles/Common.dir/Input/GestureDetector.cpp.o
+[ 53%] Building CXX object Common/CMakeFiles/Common.dir/Input/InputState.cpp.o
+[ 53%] Building CXX object Common/CMakeFiles/Common.dir/Math/curves.cpp.o
+[ 53%] Building CXX object Common/CMakeFiles/Common.dir/Math/expression_parser.cpp.o
+[ 53%] Building CXX object Common/CMakeFiles/Common.dir/Math/lin/matrix4x4.cpp.o
+[ 54%] Building CXX object Common/CMakeFiles/Common.dir/Math/lin/vec3.cpp.o
+[ 54%] Building CXX object Common/CMakeFiles/Common.dir/Math/math_util.cpp.o
+[ 54%] Building CXX object Common/CMakeFiles/Common.dir/Math/Statistics.cpp.o
+[ 54%] Building CXX object Common/CMakeFiles/Common.dir/Net/HTTPClient.cpp.o
+[ 54%] Building CXX object Common/CMakeFiles/Common.dir/Net/HTTPHeaders.cpp.o
+[ 54%] Building CXX object Common/CMakeFiles/Common.dir/Net/HTTPNaettRequest.cpp.o
+[ 54%] Building CXX object Common/CMakeFiles/Common.dir/Net/HTTPRequest.cpp.o
+[ 54%] Building CXX object Common/CMakeFiles/Common.dir/Net/HTTPServer.cpp.o
+[ 54%] Building CXX object Common/CMakeFiles/Common.dir/Net/NetBuffer.cpp.o
+[ 55%] Building CXX object Common/CMakeFiles/Common.dir/Net/Resolve.cpp.o
+[ 55%] Building CXX object Common/CMakeFiles/Common.dir/Net/Sinks.cpp.o
+[ 55%] Building CXX object Common/CMakeFiles/Common.dir/Net/URL.cpp.o
+[ 55%] Building CXX object Common/CMakeFiles/Common.dir/Net/WebsocketServer.cpp.o
+[ 55%] Building CXX object Common/CMakeFiles/Common.dir/Profiler/Profiler.cpp.o
+[ 55%] Building CXX object Common/CMakeFiles/Common.dir/Render/AtlasGen.cpp.o
+[ 55%] Building CXX object Common/CMakeFiles/Common.dir/Render/TextureAtlas.cpp.o
+[ 55%] Building CXX object Common/CMakeFiles/Common.dir/Render/DrawBuffer.cpp.o
+[ 55%] Building CXX object Common/CMakeFiles/Common.dir/Render/ManagedTexture.cpp.o
+[ 55%] Building CXX object Common/CMakeFiles/Common.dir/Render/Text/draw_text.cpp.o
+[ 56%] Building CXX object Common/CMakeFiles/Common.dir/Render/Text/draw_text_android.cpp.o
+[ 56%] Building CXX object Common/CMakeFiles/Common.dir/Render/Text/draw_text_win.cpp.o
+[ 56%] Building CXX object Common/CMakeFiles/Common.dir/Render/Text/draw_text_uwp.cpp.o
+[ 56%] Building CXX object Common/CMakeFiles/Common.dir/System/Display.cpp.o
+[ 56%] Building CXX object Common/CMakeFiles/Common.dir/System/Request.cpp.o
+[ 56%] Building CXX object Common/CMakeFiles/Common.dir/System/OSD.cpp.o
+[ 56%] Building CXX object Common/CMakeFiles/Common.dir/Thread/ParallelLoop.cpp.o
+[ 56%] Building CXX object Common/CMakeFiles/Common.dir/Thread/ThreadUtil.cpp.o
+[ 56%] Building CXX object Common/CMakeFiles/Common.dir/Thread/ThreadManager.cpp.o
+[ 57%] Building CXX object Common/CMakeFiles/Common.dir/UI/AsyncImageFileView.cpp.o
+[ 57%] Building CXX object Common/CMakeFiles/Common.dir/UI/Root.cpp.o
+[ 57%] Building CXX object Common/CMakeFiles/Common.dir/UI/Screen.cpp.o
+[ 57%] Building CXX object Common/CMakeFiles/Common.dir/UI/UI.cpp.o
+[ 57%] Building CXX object Common/CMakeFiles/Common.dir/UI/Context.cpp.o
+[ 57%] Building CXX object Common/CMakeFiles/Common.dir/UI/IconCache.cpp.o
+[ 57%] Building CXX object Common/CMakeFiles/Common.dir/UI/UIScreen.cpp.o
+[ 57%] Building CXX object Common/CMakeFiles/Common.dir/UI/Notice.cpp.o
+[ 57%] Building CXX object Common/CMakeFiles/Common.dir/UI/Tween.cpp.o
+[ 57%] Building CXX object Common/CMakeFiles/Common.dir/UI/View.cpp.o
+[ 58%] Building CXX object Common/CMakeFiles/Common.dir/UI/ViewGroup.cpp.o
+[ 58%] Building CXX object Common/CMakeFiles/Common.dir/UI/ScrollView.cpp.o
+[ 58%] Building CXX object Common/CMakeFiles/Common.dir/UI/TabHolder.cpp.o
+[ 58%] Building CXX object Common/CMakeFiles/Common.dir/UI/PopupScreens.cpp.o
+[ 58%] Building CXX object Common/CMakeFiles/Common.dir/Buffer.cpp.o
+[ 58%] Building CXX object Common/CMakeFiles/Common.dir/FakeCPUDetect.cpp.o
+[ 58%] Building CXX object Common/CMakeFiles/Common.dir/ExceptionHandlerSetup.cpp.o
+[ 58%] Building CXX object Common/CMakeFiles/Common.dir/GhidraClient.cpp.o
+[ 58%] Building CXX object Common/CMakeFiles/Common.dir/Log.cpp.o
+[ 59%] Building CXX object Common/CMakeFiles/Common.dir/Log/ConsoleListener.cpp.o
+[ 59%] Building CXX object Common/CMakeFiles/Common.dir/Log/LogManager.cpp.o
+[ 59%] Building CXX object Common/CMakeFiles/Common.dir/LogReporting.cpp.o
+[ 59%] Building CXX object Common/CMakeFiles/Common.dir/MemArenaAndroid.cpp.o
+[ 59%] Building CXX object Common/CMakeFiles/Common.dir/MemArenaDarwin.cpp.o
+[ 59%] Building CXX object Common/CMakeFiles/Common.dir/MemArenaPosix.cpp.o
+[ 59%] Building CXX object Common/CMakeFiles/Common.dir/MemArenaWin32.cpp.o
+[ 59%] Building CXX object Common/CMakeFiles/Common.dir/MemArenaHorizon.cpp.o
+[ 59%] Building CXX object Common/CMakeFiles/Common.dir/MemoryUtil.cpp.o
+[ 59%] Building CXX object Common/CMakeFiles/Common.dir/MemoryUtilHorizon.cpp.o
+[ 60%] Building CXX object Common/CMakeFiles/Common.dir/OSVersion.cpp.o
+[ 60%] Building CXX object Common/CMakeFiles/Common.dir/StringUtils.cpp.o
+[ 60%] Building CXX object Common/CMakeFiles/Common.dir/SysError.cpp.o
+[ 60%] Building CXX object Common/CMakeFiles/Common.dir/TimeUtil.cpp.o
+[ 60%] Building CXX object Common/CMakeFiles/Common.dir/__/ext/jpge/jpgd.cpp.o
+[ 60%] Building CXX object Common/CMakeFiles/Common.dir/__/ext/jpge/jpge.cpp.o
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/jpge/jpgd.cpp: In function ‘unsigned char* jpgd::decompress_jpeg_image_from_stream(jpeg_decoder_stream*, int*, int*, int*, int, uint32_t)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/jpge/jpgd.cpp:3202:38: warning: ‘pScan_line’ may be used uninitialized [-Wmaybe-uninitialized]
+ 3202 |                         const uint8* pScan_line;
+      |                                      ^~~~~~~~~~
+[ 60%] Linking CXX static library ../lib/libCommon.a
+[ 60%] Built target Common
+[ 61%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/IR/IRAnalysis.cpp.o
+[ 61%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/IR/IRCompALU.cpp.o
+[ 61%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/IR/IRCompBranch.cpp.o
+[ 61%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/IR/IRCompFPU.cpp.o
+[ 61%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/IR/IRCompVFPU.cpp.o
+[ 61%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/IR/IRFrontend.cpp.o
+[ 61%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/IR/IRInst.cpp.o
+[ 61%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/IR/IRCompLoadStore.cpp.o
+[ 61%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/IR/IRInterpreter.cpp.o
+[ 61%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/IR/IRJit.cpp.o
+[ 61%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/IR/IRNativeCommon.cpp.o
+[ 61%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/IR/IRPassSimplify.cpp.o
+[ 62%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/IR/IRRegCache.cpp.o
+[ 62%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM/ArmAsm.cpp.o
+[ 62%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM/ArmCompALU.cpp.o
+[ 62%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM/ArmCompBranch.cpp.o
+[ 62%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM/ArmCompFPU.cpp.o
+[ 62%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM/ArmCompLoadStore.cpp.o
+[ 62%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM/ArmCompVFPU.cpp.o
+[ 62%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM/ArmCompReplace.cpp.o
+[ 62%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM/ArmJit.cpp.o
+[ 63%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM/ArmRegCache.cpp.o
+[ 63%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM/ArmRegCacheFPU.cpp.o
+[ 63%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64Asm.cpp.o
+[ 63%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64CompALU.cpp.o
+[ 63%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64CompBranch.cpp.o
+[ 63%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64CompFPU.cpp.o
+[ 63%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64CompLoadStore.cpp.o
+[ 63%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64CompVFPU.cpp.o
+[ 63%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64CompReplace.cpp.o
+[ 63%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64Jit.cpp.o
+[ 64%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64RegCache.cpp.o
+[ 64%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64RegCacheFPU.cpp.o
+[ 64%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64IRAsm.cpp.o
+[ 64%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64IRCompALU.cpp.o
+[ 64%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64IRCompBranch.cpp.o
+[ 64%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64IRCompFPU.cpp.o
+[ 64%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64IRCompLoadStore.cpp.o
+[ 64%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64IRCompSystem.cpp.o
+[ 64%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64IRCompVec.cpp.o
+[ 65%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64IRJit.cpp.o
+[ 65%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/ARM64/Arm64IRRegCache.cpp.o
+[ 65%] Building CXX object Core/CMakeFiles/Core.dir/Util/DisArm64.cpp.o
+[ 65%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/Asm.cpp.o
+[ 65%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/CompALU.cpp.o
+[ 65%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/CompFPU.cpp.o
+[ 65%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/CompBranch.cpp.o
+[ 65%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/CompLoadStore.cpp.o
+[ 65%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/CompVFPU.cpp.o
+[ 65%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/CompReplace.cpp.o
+[ 66%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/Jit.cpp.o
+[ 66%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/JitSafeMem.cpp.o
+[ 66%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/RegCache.cpp.o
+[ 66%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/RegCacheFPU.cpp.o
+[ 66%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/X64IRAsm.cpp.o
+[ 66%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/X64IRCompALU.cpp.o
+[ 66%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/X64IRCompBranch.cpp.o
+[ 66%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/X64IRCompFPU.cpp.o
+[ 66%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/X64IRCompLoadStore.cpp.o
+[ 67%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/X64IRCompSystem.cpp.o
+[ 67%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/X64IRCompVec.cpp.o
+[ 67%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/X64IRJit.cpp.o
+[ 67%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/x86/X64IRRegCache.cpp.o
+[ 67%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/RiscV/RiscVAsm.cpp.o
+[ 67%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/RiscV/RiscVCompALU.cpp.o
+[ 67%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/RiscV/RiscVCompBranch.cpp.o
+[ 67%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/RiscV/RiscVCompFPU.cpp.o
+[ 67%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/RiscV/RiscVCompLoadStore.cpp.o
+[ 67%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/RiscV/RiscVCompSystem.cpp.o
+[ 68%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/RiscV/RiscVCompVec.cpp.o
+[ 68%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/RiscV/RiscVJit.cpp.o
+[ 68%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/RiscV/RiscVRegCache.cpp.o
+[ 68%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/LoongArch64/LoongArch64Asm.cpp.o
+[ 68%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/LoongArch64/LoongArch64CompALU.cpp.o
+[ 68%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/LoongArch64/LoongArch64CompBranch.cpp.o
+[ 68%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/LoongArch64/LoongArch64CompFPU.cpp.o
+[ 68%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/LoongArch64/LoongArch64CompLoadStore.cpp.o
+[ 68%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/LoongArch64/LoongArch64CompSystem.cpp.o
+[ 69%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/LoongArch64/LoongArch64CompVec.cpp.o
+[ 69%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/LoongArch64/LoongArch64Jit.cpp.o
+[ 69%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/LoongArch64/LoongArch64RegCache.cpp.o
+[ 69%] Building CXX object Core/CMakeFiles/Core.dir/AVIDump.cpp.o
+[ 69%] Building CXX object Core/CMakeFiles/Core.dir/WaveFile.cpp.o
+[ 69%] Building CXX object Core/CMakeFiles/Core.dir/CmdLine.cpp.o
+[ 69%] Building CXX object Core/CMakeFiles/Core.dir/Config.cpp.o
+[ 69%] Building CXX object Core/CMakeFiles/Core.dir/ConfigSettings.cpp.o
+[ 69%] Building CXX object Core/CMakeFiles/Core.dir/ControlMapper.cpp.o
+[ 69%] Building CXX object Core/CMakeFiles/Core.dir/Core.cpp.o
+[ 70%] Building CXX object Core/CMakeFiles/Core.dir/Compatibility.cpp.o
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/AVIDump.cpp: In function ‘void PreparePacket(AVPacket*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/AVIDump.cpp:187:23: warning: ‘void av_init_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+  187 |         av_init_packet(pkt);
+      |         ~~~~~~~~~~~~~~^~~~~
+In file included from /usr/include/libavcodec/avcodec.h:44,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/AVIDump.cpp:18:
+/usr/include/libavcodec/packet.h:719:6: note: declared here
+  719 | void av_init_packet(AVPacket *pkt);
+      |      ^~~~~~~~~~~~~~
+[ 70%] Building CXX object Core/CMakeFiles/Core.dir/CoreTiming.cpp.o
+[ 70%] Building CXX object Core/CMakeFiles/Core.dir/CwCheat.cpp.o
+[ 70%] Building CXX object Core/CMakeFiles/Core.dir/FrameTiming.cpp.o
+[ 70%] Building CXX object Core/CMakeFiles/Core.dir/HDRemaster.cpp.o
+[ 70%] Building CXX object Core/CMakeFiles/Core.dir/Instance.cpp.o
+[ 70%] Building CXX object Core/CMakeFiles/Core.dir/KeyMap.cpp.o
+[ 70%] Building CXX object Core/CMakeFiles/Core.dir/KeyMapDefaults.cpp.o
+[ 70%] Building CXX object Core/CMakeFiles/Core.dir/LuaContext.cpp.o
+[ 71%] Building CXX object Core/CMakeFiles/Core.dir/RetroAchievements.cpp.o
+[ 71%] Building CXX object Core/CMakeFiles/Core.dir/TiltEventProcessor.cpp.o
+[ 71%] Building CXX object Core/CMakeFiles/Core.dir/WebServer.cpp.o
+[ 71%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/Breakpoints.cpp.o
+[ 71%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/MemBlockInfo.cpp.o
+[ 71%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/SymbolMap.cpp.o
+[ 71%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/DisassemblyManager.cpp.o
+[ 71%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket.cpp.o
+[ 71%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/BreakpointSubscriber.cpp.o
+[ 71%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/CPUCoreSubscriber.cpp.o
+[ 72%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/DisasmSubscriber.cpp.o
+[ 72%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/GameBroadcaster.cpp.o
+[ 72%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/GameSubscriber.cpp.o
+[ 72%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/ClientConfigSubscriber.cpp.o
+[ 72%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/GPUBufferSubscriber.cpp.o
+[ 72%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/GPURecordSubscriber.cpp.o
+[ 72%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/GPUStatsSubscriber.cpp.o
+[ 72%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/HLESubscriber.cpp.o
+[ 72%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/InputBroadcaster.cpp.o
+[ 73%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/InputSubscriber.cpp.o
+[ 73%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/LogBroadcaster.cpp.o
+In lambda function,
+    inlined from ‘static constexpr void StreamBufferToDataURI(DebuggerRequest&, const GPUDebugBuffer&, bool, bool, int)::<lambda(png_structp, png_bytep, png_size_t)>::_FUN(png_structp, png_bytep, png_size_t)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Debugger/WebSocket/GPUBufferSubscriber.cpp:131:2:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Debugger/WebSocket/GPUBufferSubscriber.cpp:110:50: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  110 |                         ctx->buf[ctx->bufSize++] = data[0];
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Debugger/WebSocket/GPUBufferSubscriber.cpp: In static member function ‘static constexpr void StreamBufferToDataURI(DebuggerRequest&, const GPUDebugBuffer&, bool, bool, int)::<lambda(png_structp, png_bytep, png_size_t)>::_FUN(png_structp, png_bytep, png_size_t)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Debugger/WebSocket/GPUBufferSubscriber.cpp:98:25: note: at offset 6 into destination object ‘StreamBufferToDataURI(DebuggerRequest&, const GPUDebugBuffer&, bool, bool, int)::Context::buf’ of size 3
+   98 |                 uint8_t buf[3];
+      |                         ^~~
+[ 73%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/MemoryInfoSubscriber.cpp.o
+[ 73%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/MemorySubscriber.cpp.o
+[ 73%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/ReplaySubscriber.cpp.o
+[ 73%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/SteppingBroadcaster.cpp.o
+[ 73%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/SteppingSubscriber.cpp.o
+[ 73%] Building CXX object Core/CMakeFiles/Core.dir/Debugger/WebSocket/WebSocketUtils.cpp.o
+[ 73%] Building CXX object Core/CMakeFiles/Core.dir/Dialog/PSPDialog.cpp.o
+[ 73%] Building CXX object Core/CMakeFiles/Core.dir/Dialog/PSPGamedataInstallDialog.cpp.o
+[ 74%] Building CXX object Core/CMakeFiles/Core.dir/Dialog/PSPMsgDialog.cpp.o
+[ 74%] Building CXX object Core/CMakeFiles/Core.dir/Dialog/PSPNetconfDialog.cpp.o
+[ 74%] Building CXX object Core/CMakeFiles/Core.dir/Dialog/PSPNpSigninDialog.cpp.o
+[ 74%] Building CXX object Core/CMakeFiles/Core.dir/Dialog/PSPOskDialog.cpp.o
+[ 74%] Building CXX object Core/CMakeFiles/Core.dir/Dialog/PSPOskConstants.cpp.o
+[ 74%] Building CXX object Core/CMakeFiles/Core.dir/Dialog/PSPPlaceholderDialog.cpp.o
+[ 74%] Building CXX object Core/CMakeFiles/Core.dir/Dialog/PSPSaveDialog.cpp.o
+[ 74%] Building CXX object Core/CMakeFiles/Core.dir/Dialog/PSPScreenshotDialog.cpp.o
+[ 74%] Building CXX object Core/CMakeFiles/Core.dir/Dialog/SavedataParam.cpp.o
+[ 75%] Building CXX object Core/CMakeFiles/Core.dir/ELF/ElfReader.cpp.o
+[ 75%] Building CXX object Core/CMakeFiles/Core.dir/ELF/PBPReader.cpp.o
+[ 75%] Building CXX object Core/CMakeFiles/Core.dir/ELF/PrxDecrypter.cpp.o
+[ 75%] Building CXX object Core/CMakeFiles/Core.dir/ELF/ParamSFO.cpp.o
+[ 75%] Building CXX object Core/CMakeFiles/Core.dir/EmuThread.cpp.o
+[ 75%] Building CXX object Core/CMakeFiles/Core.dir/FileSystems/tlzrc.cpp.o
+[ 75%] Building CXX object Core/CMakeFiles/Core.dir/FileSystems/BlobFileSystem.cpp.o
+[ 75%] Building CXX object Core/CMakeFiles/Core.dir/FileSystems/BlockDevices.cpp.o
+[ 75%] Building CXX object Core/CMakeFiles/Core.dir/FileSystems/DirectoryFileSystem.cpp.o
+[ 75%] Building CXX object Core/CMakeFiles/Core.dir/FileSystems/FileSystem.cpp.o
+[ 76%] Building CXX object Core/CMakeFiles/Core.dir/FileSystems/ISOFileSystem.cpp.o
+[ 76%] Building CXX object Core/CMakeFiles/Core.dir/FileSystems/MetaFileSystem.cpp.o
+[ 76%] Building CXX object Core/CMakeFiles/Core.dir/FileSystems/VirtualDiscFileSystem.cpp.o
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Dialog/SavedataParam.cpp: In member function ‘bool SavedataParam::LoadSFO(SceUtilitySavedataParam*, const std::string&)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Dialog/SavedataParam.cpp:842:24: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 128 equals destination size [-Wstringop-truncation]
+  842 |                 strncpy(param->sfoParam.title, sfoFile->GetValueString("TITLE").c_str(), 128);
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Dialog/SavedataParam.cpp:843:24: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 128 equals destination size [-Wstringop-truncation]
+  843 |                 strncpy(param->sfoParam.savedataTitle, sfoFile->GetValueString("SAVEDATA_TITLE").c_str(), 128);
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Dialog/SavedataParam.cpp:844:24: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 1024 equals destination size [-Wstringop-truncation]
+  844 |                 strncpy(param->sfoParam.detail, sfoFile->GetValueString("SAVEDATA_DETAIL").c_str(), 1024);
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 76%] Building CXX object Core/CMakeFiles/Core.dir/Font/PGF.cpp.o
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Dialog/SavedataParam.cpp: In member function ‘int SavedataParam::Save(SceUtilitySavedataParam*, const std::string&, bool)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Dialog/SavedataParam.cpp:580:24: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 20 equals destination size [-Wstringop-truncation]
+  580 |                 strncpy(param->saveName, saveDirName.c_str(), 20);
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 76%] Building CXX object Core/CMakeFiles/Core.dir/HLE/HLE.cpp.o
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Dialog/SavedataParam.cpp: In member function ‘int SavedataParam::LoadSaveData(SceUtilitySavedataParam*, const std::string&, const std::string&, bool)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Dialog/SavedataParam.cpp:697:16: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 20 equals destination size [-Wstringop-truncation]
+  697 |         strncpy(param->saveName, saveDirName.c_str(), 20);
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Dialog/SavedataParam.cpp: In member function ‘int SavedataParam::GetSizes(SceUtilitySavedataParam*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Dialog/SavedataParam.cpp:1120:24: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 8 equals destination size [-Wstringop-truncation]
+ 1120 |                 strncpy(param->msFree->freeSpaceStr, spaceTxt.c_str(), sizeof(param->msFree->freeSpaceStr));
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Dialog/SavedataParam.cpp:1143:32: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 8 equals destination size [-Wstringop-truncation]
+ 1143 |                         strncpy(param->msData->info.usedSpaceStr, spaceTxt.c_str(), sizeof(param->msData->info.usedSpaceStr));
+      |                         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Dialog/SavedataParam.cpp:1147:32: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 8 equals destination size [-Wstringop-truncation]
+ 1147 |                         strncpy(param->msData->info.usedSpace32Str, spaceTxt.c_str(), sizeof(param->msData->info.usedSpace32Str));
+      |                         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Dialog/SavedataParam.cpp:1187:24: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 8 equals destination size [-Wstringop-truncation]
+ 1187 |                 strncpy(param->utilityData->usedSpaceStr, spaceTxt.c_str(), sizeof(param->utilityData->usedSpaceStr));
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Dialog/SavedataParam.cpp:1193:24: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 8 equals destination size [-Wstringop-truncation]
+ 1193 |                 strncpy(param->utilityData->usedSpace32Str, spaceTxt32.c_str(), sizeof(param->utilityData->usedSpace32Str));
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 76%] Building CXX object Core/CMakeFiles/Core.dir/HLE/ReplaceTables.cpp.o
+[ 76%] Building CXX object Core/CMakeFiles/Core.dir/HLE/HLEHelperThread.cpp.o
+[ 76%] Building CXX object Core/CMakeFiles/Core.dir/HLE/HLETables.cpp.o
+[ 76%] Building CXX object Core/CMakeFiles/Core.dir/HLE/KUBridge.cpp.o
+[ 77%] Building CXX object Core/CMakeFiles/Core.dir/HLE/Plugins.cpp.o
+[ 77%] Building CXX object Core/CMakeFiles/Core.dir/HLE/__sceAudio.cpp.o
+[ 77%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceAdler.cpp.o
+[ 77%] Building CXX object Core/CMakeFiles/Core.dir/HLE/AtracCtx.cpp.o
+[ 77%] Building CXX object Core/CMakeFiles/Core.dir/HLE/AtracCtx2.cpp.o
+[ 77%] Building CXX object Core/CMakeFiles/Core.dir/HLE/NetInetConstants.cpp.o
+[ 77%] Building CXX object Core/CMakeFiles/Core.dir/HLE/SocketManager.cpp.o
+[ 77%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceAtrac.cpp.o
+[ 77%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceAudio.cpp.o
+[ 77%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceAudiocodec.cpp.o
+[ 78%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceAudioRouting.cpp.o
+[ 78%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceCcc.cpp.o
+[ 78%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceChnnlsv.cpp.o
+[ 78%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceCtrl.cpp.o
+[ 78%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceDeflt.cpp.o
+[ 78%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceDisplay.cpp.o
+[ 78%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceDmac.cpp.o
+[ 78%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceG729.cpp.o
+[ 78%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceGameUpdate.cpp.o
+[ 79%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceGe.cpp.o
+[ 79%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceFont.cpp.o
+[ 79%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceHeap.cpp.o
+[ 79%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceHprm.cpp.o
+[ 79%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceHttp.cpp.o
+[ 79%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceImpose.cpp.o
+[ 79%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceIo.cpp.o
+[ 79%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceJpeg.cpp.o
+[ 79%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceKernel.cpp.o
+[ 79%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceKernelAlarm.cpp.o
+[ 80%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceKernelEventFlag.cpp.o
+[ 80%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceKernelHeap.cpp.o
+[ 80%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceKernelInterrupt.cpp.o
+[ 80%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceKernelMbx.cpp.o
+In member function ‘void Font::Init(const u8*, size_t, const FontRegistryEntry&)’,
+    inlined from ‘Font::Font(const std::vector<unsigned char>&, const FontRegistryEntry&)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceFont.cpp:162:7,
+    inlined from ‘void __LoadInternalFonts()’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceFont.cpp:897:50:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceFont.cpp:248:24: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 64 equals destination size [-Wstringop-truncation]
+  248 |                 strncpy(style_.fontName, entry.fontName, sizeof(style_.fontName));
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceFont.cpp:249:24: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 64 equals destination size [-Wstringop-truncation]
+  249 |                 strncpy(style_.fontFileName, entry.fileName, sizeof(style_.fontFileName));
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In member function ‘void Font::Init(const u8*, size_t, const FontRegistryEntry&)’,
+    inlined from ‘Font::Font(const std::vector<unsigned char>&, const FontRegistryEntry&)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceFont.cpp:162:7,
+    inlined from ‘void __LoadInternalFonts()’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceFont.cpp:925:50:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceFont.cpp:248:24: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 64 equals destination size [-Wstringop-truncation]
+  248 |                 strncpy(style_.fontName, entry.fontName, sizeof(style_.fontName));
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceFont.cpp:249:24: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 64 equals destination size [-Wstringop-truncation]
+  249 |                 strncpy(style_.fontFileName, entry.fileName, sizeof(style_.fontFileName));
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 80%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceKernelMemory.cpp.o
+[ 80%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceKernelModule.cpp.o
+[ 80%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceKernelMsgPipe.cpp.o
+[ 80%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceKernelMutex.cpp.o
+[ 80%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceKernelSemaphore.cpp.o
+In function ‘u32 sysclib_strcat(u32, u32)’,
+    inlined from ‘void WrapU_UU() [with u32 (* func)(u32, u32) = sysclib_strcat]’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceKernelInterrupt.cpp:1018:1:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceKernelInterrupt.cpp:681:23: warning: ‘char* strcat(char*, const char*)’ accessing 1 or more bytes at offsets [0, 4294967295] and [0, 4294967295] may overlap 1 byte at offset [0, 9223372036854775807] [-Wrestrict]
+  681 |                 strcat((char *)Memory::GetPointerWriteUnchecked(dst), (const char *)Memory::GetPointerUnchecked(src));
+      |                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 81%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceKernelThread.cpp.o
+[ 81%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceKernelTime.cpp.o
+[ 81%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceKernelVTimer.cpp.o
+[ 81%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceMpeg.cpp.o
+[ 81%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceNet.cpp.o
+[ 81%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceNet_lib.cpp.o
+[ 81%] Building CXX object Core/CMakeFiles/Core.dir/HLE/NetAdhocCommon.cpp.o
+[ 81%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceNetAdhoc.cpp.o
+[ 81%] Building C object Core/CMakeFiles/Core.dir/__/ext/aemu_postoffice/client/postoffice.c.o
+[ 81%] Building C object Core/CMakeFiles/Core.dir/__/ext/aemu_postoffice/client/postoffice_mem_stdc.c.o
+[ 82%] Building CXX object Core/CMakeFiles/Core.dir/__/ext/aemu_postoffice/client/mutex_impl_cpp.cpp.o
+[ 82%] Building CXX object Core/CMakeFiles/Core.dir/__/ext/aemu_postoffice/client/delay_impl_cpp.cpp.o
+[ 82%] Building CXX object Core/CMakeFiles/Core.dir/__/ext/aemu_postoffice/client/log_impl_ppsspp.cpp.o
+[ 82%] Building C object Core/CMakeFiles/Core.dir/__/ext/aemu_postoffice/client/sock_impl_linux.c.o
+[ 82%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceNetAdhocMatching.cpp.o
+[ 82%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceNetInet.cpp.o
+[ 82%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceNetApctl.cpp.o
+[ 82%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceNetResolver.cpp.o
+[ 82%] Building CXX object Core/CMakeFiles/Core.dir/HLE/proAdhoc.cpp.o
+[ 83%] Building CXX object Core/CMakeFiles/Core.dir/HLE/proAdhocServer.cpp.o
+[ 83%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceOpenPSID.cpp.o
+[ 83%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceP3da.cpp.o
+[ 83%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceMt19937.cpp.o
+[ 83%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceMd5.cpp.o
+In function ‘int NetAdhocctl_Create(const char*)’,
+    inlined from ‘int NetAdhocctl_Create(const char*)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceNetAdhoc.cpp:3641:5:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceNetAdhoc.cpp:3661:48: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 8 equals destination size [-Wstringop-truncation]
+ 3661 |                                         strncpy((char *)parameter.group_name.data, groupName, sizeof(parameter.group_name.data));
+      |                                         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/proAdhocServer.cpp: In function ‘void game_product_relink(SceNetAdhocctlProductCode*, char*, char*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/proAdhocServer.cpp:1263:75: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 9 equals destination size [-Wstringop-truncation]
+ 1263 |         if(strncmp(product->data, from, PRODUCT_CODE_LENGTH) == 0) strncpy(product->data, to, PRODUCT_CODE_LENGTH);
+      |                                                                    ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/proAdhocServer.cpp: In function ‘void game_product_override(SceNetAdhocctlProductCode*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/proAdhocServer.cpp:1333:40: warning: ‘char* strncpy(char*, const char*, size_t)’ output may be truncated copying 9 bytes from a string of length 9 [-Wstringop-truncation]
+ 1333 |                                 strncpy(product->data, link.id_to, PRODUCT_CODE_LENGTH);
+      |                                 ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/proAdhocServer.cpp: In function ‘int server_loop(int)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/proAdhocServer.cpp:2043:64: warning: ‘char* strncpy(char*, const char*, size_t)’ output may be truncated copying 63 bytes from a string of length 63 [-Wstringop-truncation]
+ 2043 |                                                         strncpy(message, packet->message, sizeof(message) - 1);
+      |                                                         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 83%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceAac.cpp.o
+[ 83%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceMp4.cpp.o
+[ 83%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceMp3.cpp.o
+[ 83%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceParseHttp.cpp.o
+[ 83%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceParseUri.cpp.o
+[ 84%] Building CXX object Core/CMakeFiles/Core.dir/HLE/scePower.cpp.o
+[ 84%] Building CXX object Core/CMakeFiles/Core.dir/HLE/scePsmf.cpp.o
+[ 84%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceReg.cpp.o
+[ 84%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceRtc.cpp.o
+[ 84%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceSas.cpp.o
+[ 84%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceSfmt19937.cpp.o
+[ 84%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceSha256.cpp.o
+[ 84%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceSircs.cpp.o
+[ 84%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceSsl.cpp.o
+[ 85%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceUmd.cpp.o
+[ 85%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceUsb.cpp.o
+[ 85%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceUsbAcc.cpp.o
+[ 85%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceUsbCam.cpp.o
+[ 85%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceUsbGps.cpp.o
+[ 85%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceUsbMic.cpp.o
+[ 85%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceUtility.cpp.o
+[ 85%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceVaudio.cpp.o
+[ 85%] Building CXX object Core/CMakeFiles/Core.dir/HLE/scePspNpDrm_user.cpp.o
+[ 85%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceNp.cpp.o
+[ 86%] Building CXX object Core/CMakeFiles/Core.dir/HLE/sceNp2.cpp.o
+[ 86%] Building CXX object Core/CMakeFiles/Core.dir/HLE/scePauth.cpp.o
+[ 86%] Building CXX object Core/CMakeFiles/Core.dir/HW/SimpleAudioDec.cpp.o
+[ 86%] Building CXX object Core/CMakeFiles/Core.dir/HW/Atrac3Standalone.cpp.o
+[ 86%] Building CXX object Core/CMakeFiles/Core.dir/HW/AsyncIOManager.cpp.o
+[ 86%] Building CXX object Core/CMakeFiles/Core.dir/HW/BufferQueue.cpp.o
+[ 86%] Building CXX object Core/CMakeFiles/Core.dir/HW/Camera.cpp.o
+In function ‘int sceNpGetUserProfile(u32)’,
+    inlined from ‘void WrapI_U() [with int (* func)(u32) = sceNpGetUserProfile]’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceNp.cpp:306:1:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceNp.cpp:282:16: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 16 equals destination size [-Wstringop-truncation]
+  282 |         strncpy(profile->userId.handle.data, npOnlineId.c_str(), sizeof(profile->userId.handle.data));
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceNp.cpp:282:16: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 16 equals destination size [-Wstringop-truncation]
+In function ‘int sceNpGetOnlineId(u32)’,
+    inlined from ‘void WrapI_U() [with int (* func)(u32) = sceNpGetOnlineId]’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceNp.cpp:306:1:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceNp.cpp:201:16: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 16 equals destination size [-Wstringop-truncation]
+  201 |         strncpy(id->data, npOnlineId.c_str(), sizeof(id->data));
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HW/SimpleAudioDec.cpp: In member function ‘virtual bool FFmpegAudioDecoder::Decode(const uint8_t*, int, int*, int, int16_t*, int*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HW/SimpleAudioDec.cpp:313:23: warning: ‘void av_init_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+  313 |         av_init_packet(&packet);
+      |         ~~~~~~~~~~~~~~^~~~~~~~~
+In file included from /usr/include/libavcodec/codec_par.h:33,
+                 from /usr/include/libavformat/avformat.h:312,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HW/SimpleAudioDec.cpp:34:
+/usr/include/libavcodec/packet.h:719:6: note: declared here
+  719 | void av_init_packet(AVPacket *pkt);
+      |      ^~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceNp.cpp: In function ‘int NpGetNpId(SceNpId*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HLE/sceNp.cpp:209:16: warning: ‘char* strncpy(char*, const char*, size_t)’ specified bound 16 equals destination size [-Wstringop-truncation]
+  209 |         strncpy(npid->handle.data, npOnlineId.c_str(), sizeof(npid->handle.data));
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 86%] Building CXX object Core/CMakeFiles/Core.dir/HW/Display.cpp.o
+[ 86%] Building CXX object Core/CMakeFiles/Core.dir/HW/GranularMixer.cpp.o
+[ 87%] Building CXX object Core/CMakeFiles/Core.dir/HW/MediaEngine.cpp.o
+[ 87%] Building CXX object Core/CMakeFiles/Core.dir/HW/MpegDemux.cpp.o
+[ 87%] Building CXX object Core/CMakeFiles/Core.dir/HW/MemoryStick.cpp.o
+[ 87%] Building CXX object Core/CMakeFiles/Core.dir/HW/SasAudio.cpp.o
+[ 87%] Building CXX object Core/CMakeFiles/Core.dir/HW/SasReverb.cpp.o
+[ 87%] Building CXX object Core/CMakeFiles/Core.dir/HW/StereoResampler.cpp.o
+[ 87%] Building CXX object Core/CMakeFiles/Core.dir/Loaders.cpp.o
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HW/MediaEngine.cpp: In member function ‘bool MediaEngine::stepVideo(int, bool)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HW/MediaEngine.cpp:688:23: warning: ‘void av_init_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+  688 |         av_init_packet(&packet);
+      |         ~~~~~~~~~~~~~~^~~~~~~~~
+In file included from /usr/include/libavcodec/avcodec.h:44,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/HW/MediaEngine.cpp:36:
+/usr/include/libavcodec/packet.h:719:6: note: declared here
+  719 | void av_init_packet(AVPacket *pkt);
+      |      ^~~~~~~~~~~~~~
+[ 87%] Building CXX object Core/CMakeFiles/Core.dir/FileLoaders/CachingFileLoader.cpp.o
+[ 87%] Building CXX object Core/CMakeFiles/Core.dir/FileLoaders/DiskCachingFileLoader.cpp.o
+[ 87%] Building CXX object Core/CMakeFiles/Core.dir/FileLoaders/HTTPFileLoader.cpp.o
+[ 88%] Building CXX object Core/CMakeFiles/Core.dir/FileLoaders/LocalFileLoader.cpp.o
+[ 88%] Building CXX object Core/CMakeFiles/Core.dir/FileLoaders/RamCachingFileLoader.cpp.o
+[ 88%] Building CXX object Core/CMakeFiles/Core.dir/FileLoaders/RetryingFileLoader.cpp.o
+[ 88%] Building CXX object Core/CMakeFiles/Core.dir/FileLoaders/ZipFileLoader.cpp.o
+[ 88%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/MIPS.cpp.o
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Loaders.cpp: In function ‘void DetectZipFileContents(zip_t*, ZipFileInfo*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Loaders.cpp:475:41: warning: ‘int zip_get_num_files(zip_t*)’ is deprecated: use 'zip_get_num_entries' instead [-Wdeprecated-declarations]
+  475 |         int numFiles = zip_get_num_files(z);
+      |                        ~~~~~~~~~~~~~~~~~^~~
+In file included from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Common/File/VFS/ZipFileReader.h:4,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Loaders.h:25,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/FileLoaders/CachingFileLoader.h:25,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Loaders.cpp:24:
+/usr/include/zip.h:394:68: note: declared here
+  394 | ZIP_DEPRECATED("use 'zip_get_num_entries' instead") ZIP_EXTERN int zip_get_num_files(zip_t *_Nonnull);
+      |                                                                    ^~~~~~~~~~~~~~~~~
+[ 88%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/MIPSAnalyst.cpp.o
+[ 88%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/MIPSCodeUtils.cpp.o
+[ 88%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/MIPSDebugInterface.cpp.o
+[ 88%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/MIPSDis.cpp.o
+[ 89%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/MIPSDisVFPU.cpp.o
+[ 89%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/MIPSInt.cpp.o
+[ 89%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/MIPSIntVFPU.cpp.o
+[ 89%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/MIPSStackWalk.cpp.o
+[ 89%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/MIPSTables.cpp.o
+[ 89%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/MIPSVFPUUtils.cpp.o
+[ 89%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/MIPSVFPUFallbacks.cpp.o
+[ 89%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/MIPSAsm.cpp.o
+[ 89%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/MIPSTracer.cpp.o
+[ 89%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/JitCommon/JitCommon.cpp.o
+[ 90%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/JitCommon/JitBlockCache.cpp.o
+[ 90%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/JitCommon/JitState.cpp.o
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/MIPS/MIPSVFPUUtils.cpp: In function ‘void WriteMatrix(const float*, MatrixSize, int)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/MIPS/MIPSVFPUUtils.cpp:333:53: warning: ‘row’ may be used uninitialized [-Wmaybe-uninitialized]
+  333 |                                                 int index = ((col + j) & 3) * 4 + ((row + i) & 3);
+      |                                                     ^~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/MIPS/MIPSVFPUUtils.cpp:289:13: note: ‘row’ was declared here
+  289 |         int row;
+      |             ^~~
+[ 90%] Building CXX object Core/CMakeFiles/Core.dir/MIPS/fake/FakeJit.cpp.o
+[ 90%] Building CXX object Core/CMakeFiles/Core.dir/MemFault.cpp.o
+[ 90%] Building CXX object Core/CMakeFiles/Core.dir/MemMap.cpp.o
+[ 90%] Building CXX object Core/CMakeFiles/Core.dir/MemMapFunctions.cpp.o
+[ 90%] Building CXX object Core/CMakeFiles/Core.dir/PSPLoaders.cpp.o
+[ 90%] Building CXX object Core/CMakeFiles/Core.dir/Reporting.cpp.o
+[ 90%] Building CXX object Core/CMakeFiles/Core.dir/Replay.cpp.o
+[ 91%] Building CXX object Core/CMakeFiles/Core.dir/SaveState.cpp.o
+[ 91%] Building CXX object Core/CMakeFiles/Core.dir/SaveStateRewind.cpp.o
+[ 91%] Building CXX object Core/CMakeFiles/Core.dir/Screenshot.cpp.o
+[ 91%] Building CXX object Core/CMakeFiles/Core.dir/System.cpp.o
+[ 91%] Building CXX object Core/CMakeFiles/Core.dir/Util/AtracTrack.cpp.o
+[ 91%] Building CXX object Core/CMakeFiles/Core.dir/Util/AudioFormat.cpp.o
+[ 91%] Building CXX object Core/CMakeFiles/Core.dir/Util/GameManager.cpp.o
+[ 91%] Building CXX object Core/CMakeFiles/Core.dir/Util/MemStick.cpp.o
+[ 91%] Building CXX object Core/CMakeFiles/Core.dir/Util/GameDB.cpp.o
+[ 91%] Building CXX object Core/CMakeFiles/Core.dir/Util/PathUtil.cpp.o
+[ 92%] Building CXX object Core/CMakeFiles/Core.dir/Util/PortManager.cpp.o
+[ 92%] Building CXX object Core/CMakeFiles/Core.dir/Util/BlockAllocator.cpp.o
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Util/GameManager.cpp: In function ‘bool ZipCanExtractWithoutOverwrite(zip*, const Path&, int, int)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Util/GameManager.cpp:180:41: warning: ‘int zip_get_num_files(zip_t*)’ is deprecated: use 'zip_get_num_entries' instead [-Wdeprecated-declarations]
+  180 |         int numFiles = zip_get_num_files(z);
+      |                        ~~~~~~~~~~~~~~~~~^~~
+In file included from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Util/GameManager.cpp:28:
+/usr/include/zip.h:394:68: note: declared here
+  394 | ZIP_DEPRECATED("use 'zip_get_num_entries' instead") ZIP_EXTERN int zip_get_num_files(zip_t *_Nonnull);
+      |                                                                    ^~~~~~~~~~~~~~~~~
+[ 92%] Building CXX object Core/CMakeFiles/Core.dir/Util/PPGeDraw.cpp.o
+[ 92%] Building CXX object Core/CMakeFiles/Core.dir/Util/RecentFiles.cpp.o
+[ 92%] Building CXX object Core/CMakeFiles/Core.dir/Util/VideoPlayer.cpp.o
+[ 92%] Building CXX object Core/CMakeFiles/Core.dir/__/ext/disarm.cpp.o
+[ 92%] Building CXX object Core/CMakeFiles/Core.dir/__/ext/riscv-disas.cpp.o
+[ 92%] Building CXX object Core/CMakeFiles/Core.dir/__/ext/loongarch-disasm.cpp.o
+[ 92%] Building CXX object Core/CMakeFiles/Core.dir/__/git-version.cpp.o
+In file included from /usr/include/c++/16/bits/stl_tempbuf.h:61,
+                 from /usr/include/c++/16/bits/stl_algo.h:69,
+                 from /usr/include/c++/16/algorithm:63,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Util/GameManager.cpp:20:
+In function ‘constexpr void std::_Destroy(_Tp*) [with _Tp = mutex]’,
+    inlined from ‘static void std::allocator_traits<std::allocator<void> >::destroy(allocator_type&, _Up*) [with _Up = std::mutex]’ at /usr/include/c++/16/bits/alloc_traits.h:859:17,
+    inlined from ‘void std::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_M_dispose() [with _Tp = std::mutex; _Alloc = std::allocator<void>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’ at /usr/include/c++/16/bits/shared_ptr_base.h:682:35,
+    inlined from ‘void std::_Sp_counted_base<_Lp>::_M_release() [with __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’ at /usr/include/c++/16/bits/shared_ptr_base.h:423:18,
+    inlined from ‘void std::_Sp_counted_base<_Lp>::_M_release() [with __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’ at /usr/include/c++/16/bits/shared_ptr_base.h:392:5,
+    inlined from ‘std::__shared_count<_Lp>::~__shared_count() [with __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’ at /usr/include/c++/16/bits/shared_ptr_base.h:1136:21,
+    inlined from ‘std::__shared_ptr<_Tp, _Lp>::~__shared_ptr() [with _Tp = BlockDevice; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’ at /usr/include/c++/16/bits/shared_ptr_base.h:1610:7,
+    inlined from ‘std::shared_ptr<BlockDevice>::~shared_ptr()’ at /usr/include/c++/16/bits/shared_ptr.h:175:11,
+    inlined from ‘std::string GameManager::GetISOGameID(FileLoader*) const’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Util/GameManager.cpp:563:1:
+/usr/include/c++/16/bits/stl_construct.h:166:7: warning: array subscript ‘std::mutex[0]’ is partly outside array bounds of ‘unsigned char [24]’ [-Warray-bounds=]
+  166 |       __pointer->~_Tp();
+      |       ^~~~~~~~~
+In file included from /usr/include/c++/16/bits/shared_ptr.h:53,
+                 from /usr/include/c++/16/memory:82,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Common/Data/Format/IniFile.h:8,
+                 from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Util/GameManager.cpp:37:
+In constructor ‘std::__shared_count<_Lp>::__shared_count(_Ptr) [with _Ptr = BlockDevice*; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’,
+    inlined from ‘std::__shared_count<_Lp>::__shared_count(_Ptr, std::false_type) [with _Ptr = BlockDevice*; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’ at /usr/include/c++/16/bits/shared_ptr_base.h:992:22,
+    inlined from ‘std::__shared_ptr<_Tp, _Lp>::__shared_ptr(_Yp*) [with _Yp = BlockDevice; <template-parameter-2-2> = void; _Tp = BlockDevice; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’ at /usr/include/c++/16/bits/shared_ptr_base.h:1555:17,
+    inlined from ‘std::shared_ptr<_Tp>::shared_ptr(_Yp*) [with _Yp = BlockDevice; <template-parameter-2-2> = void; _Tp = BlockDevice]’ at /usr/include/c++/16/bits/shared_ptr.h:213:46,
+    inlined from ‘std::string GameManager::GetISOGameID(FileLoader*) const’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/Core/Util/GameManager.cpp:539:76:
+/usr/include/c++/16/bits/shared_ptr_base.h:981:23: note: at offset 16 into object of size 24 allocated by ‘operator new’
+  981 |               _M_pi = new _Sp_counted_ptr<_Ptr, _Lp>(__p);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 93%] Linking CXX static library ../lib/libCore.a
+[ 93%] Built target Core
+[ 93%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/ImDebugger/ImGe.cpp.o
+[ 93%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/ImDebugger/ImDebugger.cpp.o
+[ 93%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/AudioCommon.cpp.o
+[ 93%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/ImDebugger/ImConsole.cpp.o
+[ 93%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/ImDebugger/ImDisasmView.cpp.o
+[ 93%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/ImDebugger/ImMemView.cpp.o
+[ 93%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/ImDebugger/ImStructViewer.cpp.o
+[ 94%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/ImDebugger/ImJitViewer.cpp.o
+[ 94%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/DiscordIntegration.cpp.o
+[ 94%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/NativeApp.cpp.o
+[ 94%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/AdhocServerScreen.cpp.o
+[ 94%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/BackgroundAudio.cpp.o
+[ 94%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/Background.cpp.o
+[ 94%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/ChatScreen.cpp.o
+[ 94%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/BaseScreens.cpp.o
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp: In function ‘void DrawGPRs(ImConfig&, ImControl&, const MIPSDebugInterface*, const ImSnapshotState&)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:223:59: warning: ‘%s’ directive output may be truncated writing up to 9 bytes into a region of size between 7 and 70 [-Wformat-truncation=]
+  223 |                         snprintf(buffer, bufferSize, "[%s]%s%s", moduleName, kernel, uncached);
+      |                                                           ^~
+In function ‘void DescribeGPRValue(u32, char*, size_t)’,
+    inlined from ‘DrawGPRs(ImConfig&, ImControl&, const MIPSDebugInterface*, const ImSnapshotState&)::<lambda(int, const char*, int, int)>’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:292:20,
+    inlined from ‘void DrawGPRs(ImConfig&, ImControl&, const MIPSDebugInterface*, const ImSnapshotState&)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:300:11:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:223:33: note: ‘snprintf’ output between 3 and 86 bytes into a destination of size 72
+  223 |                         snprintf(buffer, bufferSize, "[%s]%s%s", moduleName, kernel, uncached);
+      |                         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp: In function ‘void DrawGPRs(ImConfig&, ImControl&, const MIPSDebugInterface*, const ImSnapshotState&)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:223:59: warning: ‘%s’ directive output may be truncated writing up to 9 bytes into a region of size between 7 and 70 [-Wformat-truncation=]
+  223 |                         snprintf(buffer, bufferSize, "[%s]%s%s", moduleName, kernel, uncached);
+      |                                                           ^~
+In function ‘void DescribeGPRValue(u32, char*, size_t)’,
+    inlined from ‘DrawGPRs(ImConfig&, ImControl&, const MIPSDebugInterface*, const ImSnapshotState&)::<lambda(int, const char*, int, int)>’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:292:20,
+    inlined from ‘void DrawGPRs(ImConfig&, ImControl&, const MIPSDebugInterface*, const ImSnapshotState&)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:303:10:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:223:33: note: ‘snprintf’ output between 3 and 86 bytes into a destination of size 72
+  223 |                         snprintf(buffer, bufferSize, "[%s]%s%s", moduleName, kernel, uncached);
+      |                         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp: In function ‘void DrawGPRs(ImConfig&, ImControl&, const MIPSDebugInterface*, const ImSnapshotState&)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:223:59: warning: ‘%s’ directive output may be truncated writing up to 9 bytes into a region of size between 7 and 70 [-Wformat-truncation=]
+  223 |                         snprintf(buffer, bufferSize, "[%s]%s%s", moduleName, kernel, uncached);
+      |                                                           ^~
+In function ‘void DescribeGPRValue(u32, char*, size_t)’,
+    inlined from ‘DrawGPRs(ImConfig&, ImControl&, const MIPSDebugInterface*, const ImSnapshotState&)::<lambda(int, const char*, int, int)>’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:292:20,
+    inlined from ‘void DrawGPRs(ImConfig&, ImControl&, const MIPSDebugInterface*, const ImSnapshotState&)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:305:10:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:223:33: note: ‘snprintf’ output between 3 and 86 bytes into a destination of size 72
+  223 |                         snprintf(buffer, bufferSize, "[%s]%s%s", moduleName, kernel, uncached);
+      |                         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp: In function ‘void DrawGPRs(ImConfig&, ImControl&, const MIPSDebugInterface*, const ImSnapshotState&)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:223:59: warning: ‘%s’ directive output may be truncated writing up to 9 bytes into a region of size between 7 and 70 [-Wformat-truncation=]
+  223 |                         snprintf(buffer, bufferSize, "[%s]%s%s", moduleName, kernel, uncached);
+      |                                                           ^~
+In function ‘void DescribeGPRValue(u32, char*, size_t)’,
+    inlined from ‘DrawGPRs(ImConfig&, ImControl&, const MIPSDebugInterface*, const ImSnapshotState&)::<lambda(int, const char*, int, int)>’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:292:20,
+    inlined from ‘void DrawGPRs(ImConfig&, ImControl&, const MIPSDebugInterface*, const ImSnapshotState&)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:307:10:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:223:33: note: ‘snprintf’ output between 3 and 86 bytes into a destination of size 72
+  223 |                         snprintf(buffer, bufferSize, "[%s]%s%s", moduleName, kernel, uncached);
+      |                         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp: In function ‘void DrawGPRs(ImConfig&, ImControl&, const MIPSDebugInterface*, const ImSnapshotState&)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:223:59: warning: ‘%s’ directive output may be truncated writing up to 9 bytes into a region of size between 7 and 70 [-Wformat-truncation=]
+  223 |                         snprintf(buffer, bufferSize, "[%s]%s%s", moduleName, kernel, uncached);
+      |                                                           ^~
+In function ‘void DescribeGPRValue(u32, char*, size_t)’,
+    inlined from ‘DrawGPRs(ImConfig&, ImControl&, const MIPSDebugInterface*, const ImSnapshotState&)::<lambda(int, const char*, int, int)>’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:292:20,
+    inlined from ‘void DrawGPRs(ImConfig&, ImControl&, const MIPSDebugInterface*, const ImSnapshotState&)’ at /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:309:10:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/ImDebugger/ImDebugger.cpp:223:33: note: ‘snprintf’ output between 3 and 86 bytes into a destination of size 72
+  223 |                         snprintf(buffer, bufferSize, "[%s]%s%s", moduleName, kernel, uncached);
+      |                         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 94%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/DebugOverlay.cpp.o
+[ 95%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/DevScreens.cpp.o
+[ 95%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/DisplayLayoutScreen.cpp.o
+[ 95%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/EmuScreen.cpp.o
+[ 95%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/GameInfoCache.cpp.o
+[ 95%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/IAPScreen.cpp.o
+[ 95%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/MainScreen.cpp.o
+[ 95%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/GameBrowser.cpp.o
+[ 95%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/MiscScreens.cpp.o
+[ 95%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/MiscViews.cpp.o
+[ 95%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/PauseScreen.cpp.o
+[ 96%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/SimpleDialogScreen.cpp.o
+[ 96%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/TabbedDialogScreen.cpp.o
+[ 96%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/GameScreen.cpp.o
+[ 96%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/GameSettingsScreen.cpp.o
+[ 96%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/DeveloperToolsScreen.cpp.o
+[ 96%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/DriverManagerScreen.cpp.o
+[ 96%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/GPUDriverTestScreen.cpp.o
+[ 96%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/TiltAnalogSettingsScreen.cpp.o
+[ 96%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/TouchControlLayoutScreen.cpp.o
+[ 97%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/TouchControlVisibilityScreen.cpp.o
+[ 97%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/GamepadEmu.cpp.o
+[ 97%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/JoystickHistoryView.cpp.o
+[ 97%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/LoadStateConfirmScreen.cpp.o
+[ 97%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/OnScreenDisplay.cpp.o
+[ 97%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/ControlMappingScreen.cpp.o
+[ 97%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/RemoteISOScreen.cpp.o
+[ 97%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/ReportScreen.cpp.o
+[ 97%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/SavedataScreen.cpp.o
+[ 97%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/SystemInfoScreen.cpp.o
+[ 98%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/Store.cpp.o
+[ 98%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/UploadScreen.cpp.o
+[ 98%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/CwCheatScreen.cpp.o
+[ 98%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/InstallZipScreen.cpp.o
+[ 98%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/JitCompareScreen.cpp.o
+[ 98%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/MemStickScreen.cpp.o
+[ 98%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/ProfilerDraw.cpp.o
+[ 98%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/CustomButtonMappingScreen.cpp.o
+[ 98%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/Theme.cpp.o
+[100%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/UIAtlas.cpp.o
+[100%] Building CXX object UI/CMakeFiles/ppsspp_ui.dir/RetroAchievementScreens.cpp.o
+In file included from /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/UI/UIAtlas.cpp:23:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/nanosvg/src/nanosvg.h: In function ‘void nsvg__parseTransform(float*, const char*)’:
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/nanosvg/src/nanosvg.h:1656:15: warning: ‘t[0]’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1656 |         float t[6];
+      |               ^
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/nanosvg/src/nanosvg.h:1656:15: warning: ‘t[1]’ may be used uninitialized [-Wmaybe-uninitialized]
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/nanosvg/src/nanosvg.h:1656:15: warning: ‘t[2]’ may be used uninitialized [-Wmaybe-uninitialized]
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/nanosvg/src/nanosvg.h:1656:15: warning: ‘t[3]’ may be used uninitialized [-Wmaybe-uninitialized]
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/nanosvg/src/nanosvg.h:1656:15: warning: ‘t[4]’ may be used uninitialized [-Wmaybe-uninitialized]
+/home/eddyr/assembler/_codex/ppsspp-repo/ppsspp/ext/nanosvg/src/nanosvg.h:1656:15: warning: ‘t[5]’ may be used uninitialized [-Wmaybe-uninitialized]
+[100%] Linking CXX static library ../lib/libppsspp_ui.a
+[100%] Built target ppsspp_ui
+[100%] Building CXX object CMakeFiles/PPSSPPSDL.dir/SDL/SDLJoystick.cpp.o
+[100%] Building CXX object CMakeFiles/PPSSPPSDL.dir/SDL/SDLMain.cpp.o
+[100%] Building CXX object CMakeFiles/PPSSPPSDL.dir/SDL/SDLGLGraphicsContext.cpp.o
+[100%] Building CXX object CMakeFiles/PPSSPPSDL.dir/Common/Render/Text/draw_text_sdl.cpp.o
+[100%] Linking CXX executable PPSSPPSDL
+/usr/bin/ld: lib/liblua.a(loslib.c.o): in function `os_tmpname':
+loslib.c:(.text+0x40a): warning: the use of `tmpnam' is dangerous, better use `mkstemp'
+[100%] Built target PPSSPPSDL
+# exit: 0

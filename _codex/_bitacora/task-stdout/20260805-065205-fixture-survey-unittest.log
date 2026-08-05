@@ -1,0 +1,34 @@
+# CMD: bash -c ls\ ppsspp/unittest/\ \|\ head\ -30\;\ echo\ ---\;\ rg\ -n\ \"UNITTEST\"\ build/CMakeCache.txt\ build-quiet/CMakeCache.txt\ 2\>/dev/null\;\ echo\ ---\;\ ctest\ --test-dir\ build\ -N\ 2\>\&1\ \|\ tail\ -5 
+# DATE: 2026-08-05T06:52:05-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+JitHarness.cpp
+JitHarness.h
+TestArm64Emitter.cpp
+TestArmEmitter.cpp
+TestIRPassSimplify.cpp
+TestLoongArch64Emitter.cpp
+TestLzrc.cpp
+TestRiscVEmitter.cpp
+TestShaderGenerators.cpp
+TestSoftwareGPUJit.cpp
+TestTextureReplacer.cpp
+TestThreadManager.cpp
+TestVertexJit.cpp
+TestVertexJit.h
+TestVFS.cpp
+TestX64Emitter.cpp
+TestZipSlip.cpp
+UnitTest.cpp
+UnitTest.h
+UnitTests.vcxproj
+UnitTests.vcxproj.filters
+---
+build-quiet/CMakeCache.txt:650:UNITTEST:BOOL=OFF
+build/CMakeCache.txt:650:UNITTEST:BOOL=OFF
+---
+Test project /home/eddyr/assembler/_codex/ppsspp-repo/build
+  Test #1: glslang-testsuite
+
+Total Tests: 1
+# exit: 0

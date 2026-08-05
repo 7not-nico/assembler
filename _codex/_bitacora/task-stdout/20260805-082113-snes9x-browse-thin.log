@@ -1,0 +1,22 @@
+# CMD: bash snes9x-repo/scripts/browse-romsfun.sh super\ mario\ world 25 super-nintendo 
+# DATE: 2026-08-05T08:21:13-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+SEARCH https://romsfun.com/roms/super-nintendo/?s=super%2Bmario%2Bworld
+GAME https://romsfun.com/roms/super-nintendo/super-mario-world-the-definitive-edition.html | Super Mario World: The Definitive Edition
+GAME https://romsfun.com/roms/super-nintendo/super-mario-world-bowsers-return-redux.html | Super Mario World (Bowser’s Return Redux)
+GAME https://romsfun.com/roms/super-nintendo/new-super-mario-world-3-peachs-double-trouble.html | New Super Mario World 3: Peach’s Double Trouble
+GAME https://romsfun.com/roms/super-nintendo/super-mario-world-mario-100s-challenge.html | Super Mario World – Mario 100s Challenge
+GAME https://romsfun.com/roms/super-nintendo/super-mario-world-30th-anniversary-edition.html | Super Mario World (30th Anniversary Edition)
+GAME https://romsfun.com/roms/super-nintendo/new-super-mario-world.html | A New Super Mario World
+GAME https://romsfun.com/roms/super-nintendo/super-mario-world.html | SUPER MARIO WORLD
+GAME https://romsfun.com/roms/super-nintendo/super-mario-world-2-yoshis-island-2.html | Super Mario World 2: Yoshi's Island
+GAME https://romsfun.com/roms/super-nintendo/super-mario-world-piranha-island.html | Super Mario World: Piranha Island
+GAME https://romsfun.com/roms/super-nintendo/a-very-super-mario-world.html | A Very Super Mario World
+OPEN https://romsfun.com/roms/super-nintendo/super-mario-world-the-definitive-edition.html
+DL https://romsfun.com/download/super-mario-world-the-definitive-edition-310582
+VARIANTS:
+1 https://romsfun.com/download/super-mario-world-the-definitive-edition-310582/1 | Super Mario World - The Definitive Edition v1.2
+# DUR: 1649ms
+# DATE: 2026-08-05T08:21:15-06:00
+# exit: 0

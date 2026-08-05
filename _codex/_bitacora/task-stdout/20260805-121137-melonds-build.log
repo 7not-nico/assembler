@@ -1,0 +1,14 @@
+# CMD: cmake --build build -j8 
+# DATE: 2026-08-05T12:11:37-06:00
+# CWD: /home/eddyr/assembler/_codex/melonDS-repo/melonDS
+# --------------------
+243560<tracer>: "/home/eddyr/assembler/_codex/melonDS-repo/melonDS/cmake" ["cmake", "--build", "build", "-j8"] fd [] with [] = -13 (EACCES: Permission denied)
+[?1049l[?25hBacktrace (most recent call last):
+
+The application panicked (crashed).
+  called `Result::unwrap()` on an `Err` value: EACCES
+in crates/tracexec-core/src/pty.rs:647
+thread: tokio-runtime-worker
+# DUR: 26ms
+# DATE: 2026-08-05T12:11:37-06:00
+# exit: 1

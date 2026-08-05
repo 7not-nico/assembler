@@ -1,0 +1,61 @@
+# CMD: cmake --build build -j8 
+# DATE: 2026-08-05T12:47:22-06:00
+# CWD: /home/eddyr/assembler/_codex/melonDS-repo/melonDS
+# --------------------
+[  0%] Built target slirp_autogen_timestamp_deps
+[  1%] Building CXX object src/teakra/src/CMakeFiles/teakra.dir/disassembler.cpp.o
+[  1%] Building CXX object src/teakra/src/CMakeFiles/teakra.dir/btdmp.cpp.o
+[  3%] Building CXX object src/teakra/src/CMakeFiles/teakra.dir/ahbm.cpp.o
+[  3%] Building CXX object src/teakra/src/CMakeFiles/teakra.dir/dma.cpp.o
+[  3%] Building CXX object src/teakra/src/CMakeFiles/teakra.dir/apbp.cpp.o
+[  4%] Building CXX object src/teakra/src/CMakeFiles/teakra.dir/memory_interface.cpp.o
+[  4%] Building CXX object src/teakra/src/CMakeFiles/teakra.dir/timer.cpp.o
+[  4%] Automatic MOC and UIC for target slirp
+[  4%] Built target slirp_autogen
+[  4%] Building CXX object src/teakra/src/CMakeFiles/teakra.dir/mmio.cpp.o
+[  5%] Building CXX object src/teakra/src/CMakeFiles/teakra.dir/parser.cpp.o
+[  5%] Building CXX object net/libslirp/CMakeFiles/slirp.dir/slirp_autogen/mocs_compilation.cpp.o
+[  6%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/arp_table.c.o
+[  6%] Building CXX object src/teakra/src/CMakeFiles/teakra.dir/processor.cpp.o
+[  7%] Building CXX object src/teakra/src/CMakeFiles/teakra.dir/teakra.cpp.o
+[  7%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/bootp.c.o
+[  8%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/cksum.c.o
+[  8%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/dhcpv6.c.o
+[  9%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/dnssearch.c.o
+[  9%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/if.c.o
+[ 10%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/ip6_icmp.c.o
+[ 10%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/ip6_input.c.o
+[ 11%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/ip6_output.c.o
+[ 11%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/ip_icmp.c.o
+[ 12%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/ip_input.c.o
+[ 12%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/ip_output.c.o
+[ 13%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/mbuf.c.o
+[ 13%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/misc.c.o
+[ 14%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/ncsi.c.o
+[ 14%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/ndp_table.c.o
+[ 15%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/sbuf.c.o
+[ 15%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/slirp.c.o
+[ 16%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/socket.c.o
+[ 16%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/state.c.o
+[ 17%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/stream.c.o
+[ 17%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/tcp_input.c.o
+[ 18%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/tcp_output.c.o
+[ 18%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/tcp_subr.c.o
+[ 19%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/tcp_timer.c.o
+[ 19%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/tftp.c.o
+[ 20%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/udp6.c.o
+[ 20%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/udp.c.o
+[ 21%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/util.c.o
+[ 21%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/version.c.o
+[ 22%] Building C object net/libslirp/CMakeFiles/slirp.dir/src/vmstate.c.o
+[ 22%] Building C object net/libslirp/CMakeFiles/slirp.dir/glib/glib.c.o
+[ 23%] Linking CXX static library libslirp.a
+[ 24%] Built target slirp
+[ 24%] Built target net-utils_autogen_timestamp_deps
+[ 24%] Automatic MOC and UIC for target net-utils
+[ 24%] Built target net-utils_autogen
+[ 25%] Building CXX object net/CMakeFiles/net-utils.dir/Net_PCap.cpp.o
+[ 25%] Building CXX object net/CMakeFiles/net-utils.dir/Net.cpp.o
+[ 26%] Building CXX object net/CMakeFiles/net-utils.dir/Net_Slirp.cpp.o
+[ 26%] Building CXX object net/CMakeFiles/net-utils.dir/net-utils_autogen/mocs_compilation.cpp.o
+[ 26%] Building CXX object net/CMakeFiles/net-utils.dir/PacketDispatcher.cpp.o

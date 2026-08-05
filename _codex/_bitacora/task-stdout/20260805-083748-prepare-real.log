@@ -1,0 +1,8 @@
+# CMD: bash mgba-repo/scripts/prepare-rom.sh /home/eddyr/assembler/.opencode/.playwright-mcp/kirby-s-dream-land-2-usa-europe-sgb-enhanced.zip 
+# DATE: 2026-08-05T08:37:48-06:00
+# CWD: /home/eddyr/assembler/_codex
+# --------------------
+ROM  /home/eddyr/assembler/_codex/mgba-repo/roms/kirby-s-dream-land-2-usa-europe-sgb-enhanced.gb
+# DUR: 38ms
+# DATE: 2026-08-05T08:37:48-06:00
+# exit: 0

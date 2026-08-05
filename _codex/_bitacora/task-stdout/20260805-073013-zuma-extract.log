@@ -1,0 +1,12 @@
+# CMD: bash -c rm\ -rf\ /tmp/opencode/zuma\ \&\&\ mkdir\ -p\ /tmp/opencode/zuma\ \&\&\ 7z\ x\ \"/home/eddyr/Downloads/Zuma\ \(USA\).7z\"\ -o/tmp/opencode/zuma\ -y\ \>/dev/null\ \&\&\ ls\ -la\ /tmp/opencode/zuma/\ \&\&\ file\ /tmp/opencode/zuma/\*.iso 
+# DATE: 2026-08-05T07:30:13-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+total 124224
+drwxr-xr-x 2 eddyr eddyr        60 Aug  5 07:30 .
+drwxr-xr-x 3 eddyr eddyr        80 Aug  5 07:30 ..
+-rw-r--r-- 1 eddyr eddyr 127205376 Jun 27 02:17 Zuma (USA).iso
+/tmp/opencode/zuma/Zuma (USA).iso: ISO 9660 CD-ROM filesystem data ''
+# DUR: 396ms
+# DATE: 2026-08-05T07:30:13-06:00
+# exit: 0

@@ -1,0 +1,6 @@
+# CMD: cmake --build build -j8 
+# DATE: 2026-08-05T12:10:27-06:00
+# CWD: /home/eddyr/assembler/_codex/melonDS-repo/melonDS
+# --------------------
+[  1%] Building CXX object src/teakra/src/CMakeFiles/teakra.dir/processor.cpp.o
+[  2%] Building CXX object src/teakra/src/CMakeFiles/teakra.dir/disassembler.cpp.o

@@ -1,0 +1,151 @@
+# CMD: cmake --build build -j8 
+# DATE: 2026-08-05T12:47:47-06:00
+# CWD: /home/eddyr/assembler/_codex/melonDS-repo/melonDS
+# --------------------
+[  0%] Built target slirp_autogen_timestamp_deps
+[  0%] Building CXX object src/teakra/src/CMakeFiles/teakra.dir/mmio.cpp.o
+[  0%] Building CXX object src/teakra/src/CMakeFiles/teakra.dir/disassembler.cpp.o
+[  0%] Building CXX object src/teakra/src/CMakeFiles/teakra.dir/processor.cpp.o
+[  0%] Built target slirp_autogen
+[ 18%] Built target slirp
+[ 18%] Built target net-utils_autogen_timestamp_deps
+[ 18%] Built target net-utils_autogen
+[ 18%] Building CXX object net/CMakeFiles/net-utils.dir/net-utils_autogen/mocs_compilation.cpp.o
+[ 19%] Building CXX object net/CMakeFiles/net-utils.dir/Net_PCap.cpp.o
+[ 19%] Building CXX object net/CMakeFiles/net-utils.dir/Net.cpp.o
+[ 20%] Building CXX object net/CMakeFiles/net-utils.dir/PacketDispatcher.cpp.o
+[ 20%] Building CXX object net/CMakeFiles/net-utils.dir/Net_Slirp.cpp.o
+[ 21%] Building CXX object net/CMakeFiles/net-utils.dir/LocalMP.cpp.o
+[ 21%] Building CXX object net/CMakeFiles/net-utils.dir/LAN.cpp.o
+[ 22%] Building CXX object net/CMakeFiles/net-utils.dir/Netplay.cpp.o
+[ 22%] Building CXX object net/CMakeFiles/net-utils.dir/MPInterface.cpp.o
+[ 23%] Linking CXX static library libnet-utils.a
+[ 24%] Built target net-utils
+[ 24%] Linking CXX static library libteakra.a
+[ 30%] Built target teakra
+[ 30%] Building CXX object src/CMakeFiles/core.dir/ARMInterpreter.cpp.o
+[ 30%] Building CXX object src/CMakeFiles/core.dir/ARCodeFile.cpp.o
+[ 31%] Building CXX object src/CMakeFiles/core.dir/ARDatabaseDAT.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/core.dir/ARM.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/core.dir/ARMInterpreter_ALU.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/core.dir/ARMInterpreter_Branch.cpp.o
+[ 34%] Building CXX object src/CMakeFiles/core.dir/ARMInterpreter_LoadStore.cpp.o
+[ 34%] Building CXX object src/CMakeFiles/core.dir/AREngine.cpp.o
+[ 34%] Building CXX object src/CMakeFiles/core.dir/CP15.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/core.dir/CRC32.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/core.dir/DMA.cpp.o
+[ 36%] Building CXX object src/CMakeFiles/core.dir/DMA_Timings.cpp.o
+[ 36%] Building CXX object src/CMakeFiles/core.dir/DSi.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/core.dir/DSi_AES.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/core.dir/DSi_Camera.cpp.o
+[ 38%] Building CXX object src/CMakeFiles/core.dir/DSi_DSP.cpp.o
+[ 38%] Building CXX object src/CMakeFiles/core.dir/DSi_I2C.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/core.dir/DSi_I2S.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/core.dir/DSi_NAND.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/core.dir/DSi_NDMA.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/core.dir/DSi_NWifi.cpp.o
+[ 41%] Building CXX object src/CMakeFiles/core.dir/DSi_SD.cpp.o
+[ 41%] Building CXX object src/CMakeFiles/core.dir/DSi_SPI_TSC.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/core.dir/FATIO.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/core.dir/FATStorage.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/core.dir/GBACart.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/core.dir/GBACartMotionPak.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/core.dir/GPU.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/core.dir/GPU_Soft.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/core.dir/GPU2D.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/core.dir/GPU2D_Soft.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/core.dir/GPU3D.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/core.dir/GPU3D_Soft.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/core.dir/GPU3D_Texcache.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/core.dir/Mic.cpp.o
+[ 48%] Building CXX object src/CMakeFiles/core.dir/NDS.cpp.o
+[ 48%] Building CXX object src/CMakeFiles/core.dir/NDSCart.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/core.dir/ROMList.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/core.dir/FreeBIOS.cpp.o
+[ 51%] Building CXX object src/CMakeFiles/core.dir/RTC.cpp.o
+[ 51%] Building CXX object src/CMakeFiles/core.dir/Savestate.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/core.dir/SPI.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/core.dir/SPI_Firmware.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/core.dir/SPU.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/core.dir/Utils.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/core.dir/Wifi.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/core.dir/WifiAP.cpp.o
+[ 55%] Building CXX object src/CMakeFiles/core.dir/DSP_HLE/UcodeBase.cpp.o
+[ 55%] Building CXX object src/CMakeFiles/core.dir/DSP_HLE/AACUcode.cpp.o
+[ 56%] Building CXX object src/CMakeFiles/core.dir/DSP_HLE/G711Ucode.cpp.o
+[ 56%] Building CXX object src/CMakeFiles/core.dir/DSP_HLE/GraphicsUcode.cpp.o
+[ 57%] Building CXX object src/CMakeFiles/core.dir/NDSCart/CartCommon.cpp.o
+[ 57%] Building CXX object src/CMakeFiles/core.dir/NDSCart/CartRetail.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/core.dir/NDSCart/CartRetailNAND.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/core.dir/NDSCart/CartRetailIR.cpp.o
+[ 59%] Building CXX object src/CMakeFiles/core.dir/NDSCart/CartRetailBT.cpp.o
+[ 59%] Building CXX object src/CMakeFiles/core.dir/NDSCart/CartSD.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/core.dir/NDSCart/CartHomebrew.cpp.o
+[ 60%] Building C object src/CMakeFiles/core.dir/fatfs/ffsystem.c.o
+[ 60%] Building CXX object src/CMakeFiles/core.dir/NDSCart/CartR4.cpp.o
+[ 61%] Building C object src/CMakeFiles/core.dir/fatfs/ff.c.o
+[ 62%] Building C object src/CMakeFiles/core.dir/fatfs/ffunicode.c.o
+[ 62%] Building C object src/CMakeFiles/core.dir/sha1/sha1.c.o
+[ 63%] Building C object src/CMakeFiles/core.dir/tiny-AES-c/aes.c.o
+[ 63%] Building C object src/CMakeFiles/core.dir/xxhash/xxhash.c.o
+[ 64%] Building C object src/CMakeFiles/core.dir/blip-buf/blip_buf.c.o
+[ 64%] Building CXX object src/CMakeFiles/core.dir/debug/GdbStub.cpp.o
+[ 65%] Building CXX object src/CMakeFiles/core.dir/debug/GdbProto.cpp.o
+[ 65%] Building CXX object src/CMakeFiles/core.dir/debug/GdbCmds.cpp.o
+[ 66%] Building CXX object src/CMakeFiles/core.dir/ARM_InstrInfo.cpp.o
+[ 66%] Building CXX object src/CMakeFiles/core.dir/ARMJIT.cpp.o
+[ 67%] Building CXX object src/CMakeFiles/core.dir/ARMJIT_Memory.cpp.o
+[ 67%] Building CXX object src/CMakeFiles/core.dir/ARMJIT_Global.cpp.o
+[ 68%] Building CXX object src/CMakeFiles/core.dir/dolphin/CommonFuncs.cpp.o
+[ 68%] Building CXX object src/CMakeFiles/core.dir/dolphin/x64ABI.cpp.o
+[ 69%] Building CXX object src/CMakeFiles/core.dir/dolphin/x64CPUDetect.cpp.o
+[ 69%] Building CXX object src/CMakeFiles/core.dir/dolphin/x64Emitter.cpp.o
+[ 70%] Building CXX object src/CMakeFiles/core.dir/ARMJIT_x64/ARMJIT_Compiler.cpp.o
+[ 70%] Building CXX object src/CMakeFiles/core.dir/ARMJIT_x64/ARMJIT_ALU.cpp.o
+[ 71%] Building CXX object src/CMakeFiles/core.dir/ARMJIT_x64/ARMJIT_LoadStore.cpp.o
+[ 71%] Building CXX object src/CMakeFiles/core.dir/ARMJIT_x64/ARMJIT_Branch.cpp.o
+[ 72%] Building ASM object src/CMakeFiles/core.dir/ARMJIT_x64/ARMJIT_Linkage.S.o
+[ 72%] Linking CXX static library libcore.a
+[ 72%] Built target core
+[ 72%] Built target melonDS_autogen_timestamp_deps
+[ 72%] Automatic MOC and UIC for target melonDS
+[ 72%] Built target melonDS_autogen
+[ 72%] Automatic RCC for ../../../res/melon.qrc
+[ 73%] Automatic RCC for InputConfig/resources/ds.qrc
+[ 72%] Automatic RCC for PowerManagement/resources/battery.qrc
+[ 73%] Building CXX object src/frontend/qt_sdl/CMakeFiles/melonDS.dir/Window.cpp.o
+[ 73%] Building CXX object src/frontend/qt_sdl/CMakeFiles/melonDS.dir/main.cpp.o
+[ 74%] Building CXX object src/frontend/qt_sdl/CMakeFiles/melonDS.dir/Screen.cpp.o
+[ 75%] Building CXX object src/frontend/qt_sdl/CMakeFiles/melonDS.dir/EmuInstance.cpp.o
+[ 75%] Building CXX object src/frontend/qt_sdl/CMakeFiles/melonDS.dir/EmuInstanceAudio.cpp.o
+[ 76%] Building CXX object src/frontend/qt_sdl/CMakeFiles/melonDS.dir/melonDS_autogen/mocs_compilation.cpp.o
+[ 77%] Building CXX object src/frontend/qt_sdl/CMakeFiles/melonDS.dir/EmuInstanceInput.cpp.o
+[ 77%] Building CXX object src/frontend/qt_sdl/CMakeFiles/melonDS.dir/EmuThread.cpp.o
+In file included from /home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/OpenGLSupport.h:26,
+                 from /home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/frontend/qt_sdl/Screen.cpp:29:
+/home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/PlatformOGL.h:11:27: fatal error: \"frontend/glad/glad.h\": No such file or directory
+   11 | #define MELONDS_GL_HEADER "\"frontend/glad/glad.h\""
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [src/frontend/qt_sdl/CMakeFiles/melonDS.dir/build.make:144: src/frontend/qt_sdl/CMakeFiles/melonDS.dir/Screen.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/OpenGLSupport.h:26,
+                 from /home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/frontend/qt_sdl/main.cpp:49:
+/home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/PlatformOGL.h:11:27: fatal error: \"frontend/glad/glad.h\": No such file or directory
+   11 | #define MELONDS_GL_HEADER "\"frontend/glad/glad.h\""
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [src/frontend/qt_sdl/CMakeFiles/melonDS.dir/build.make:130: src/frontend/qt_sdl/CMakeFiles/melonDS.dir/main.cpp.o] Error 1
+In file included from /home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/OpenGLSupport.h:26,
+                 from /home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/GPU_OpenGL.h:22,
+                 from /home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/frontend/qt_sdl/EmuThread.cpp:52:
+/home/eddyr/assembler/_codex/melonDS-repo/melonDS/src/PlatformOGL.h:11:27: fatal error: \"frontend/glad/glad.h\": No such file or directory
+   11 | #define MELONDS_GL_HEADER "\"frontend/glad/glad.h\""
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [src/frontend/qt_sdl/CMakeFiles/melonDS.dir/build.make:214: src/frontend/qt_sdl/CMakeFiles/melonDS.dir/EmuThread.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:343: src/frontend/qt_sdl/CMakeFiles/melonDS.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2
+# DUR: 63010ms
+# DATE: 2026-08-05T12:48:50-06:00
+# exit: 2

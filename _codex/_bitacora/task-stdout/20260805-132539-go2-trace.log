@@ -1,0 +1,9 @@
+# CMD: "echo" "t"
+# DATE: 2026-08-05T13:25:39-06:00
+# CWD: /home/eddyr/assembler/_codex/_templates/_shared
+# --------------------
+t
+295925<tracer>: "/usr/bin/echo" ["echo", "t"] fd [] with []
+# DUR: 5ms
+# DATE: 2026-08-05T13:25:39-06:00
+# exit: 0

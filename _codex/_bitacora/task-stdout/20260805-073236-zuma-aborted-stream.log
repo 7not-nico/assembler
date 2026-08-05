@@ -1,0 +1,26 @@
+# CMD: bash -c wc\ -l\ /tmp/tmp.vPDOkluNHL\ /tmp/tmp.rjqEEAmeSx\;\ echo\ ---\;\ tail\ -15\ /tmp/tmp.vPDOkluNHL 
+# DATE: 2026-08-05T07:32:36-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+  304 /tmp/tmp.vPDOkluNHL
+    0 /tmp/tmp.rjqEEAmeSx
+  304 total
+---
+endSample: 1662975 loopStart: 4096 loopEnd: 1662975
+dataOff: 168 curFileOff: 168 streamOff: 168 streamDataByte: 130904
+fileDataEnd: 604296 decodePos: 4096 numSkipFrames: 2 channels: 2
+31:53:932 user_main    I[sceKernel]: HLE/sceKernelThread.cpp:1936 337=sceKernelCreateThread(ThreadAutoSave, 088ef6e8, 0000006f, 196608, 00000000, 00000000)
+31:54:181 ThreadAutoSa I[sceKernel]: HLE/sceKernelThread.cpp:2125 sceKernelExitDeleteThread(0)
+31:54:181 AtracThread  E[Atrac]: HLE/sceAtrac.cpp:527 SCE_KERNEL_ERROR_SCE_ERROR_ATRAC_BAD_ATRACID=sceAtracGetRemainFrame(-1, 09f9fa58[00000033])
+31:54:198 AtracThread  I[Atrac]: HLE/AtracCtx2.cpp:1009 Atrac: sampleSize: 744 buffer: 089a7200 bufferByte: 131072 firstValidSample: 4096
+endSample: 833535 loopStart: 4096 loopEnd: 833535
+dataOff: 168 curFileOff: 168 streamOff: 168 streamDataByte: 130904
+fileDataEnd: 302976 decodePos: 4096 numSkipFrames: 2 channels: 2
+31:55:683 AtracThread  E[Atrac]: HLE/sceAtrac.cpp:527 SCE_KERNEL_ERROR_SCE_ERROR_ATRAC_BAD_ATRACID=sceAtracGetRemainFrame(-1, 09f9fa58[0000008d])
+31:55:683 AtracThread  I[Atrac]: HLE/AtracCtx2.cpp:1009 Atrac: sampleSize: 744 buffer: 089a7200 bufferByte: 131072 firstValidSample: 4096
+endSample: 9957375 loopStart: 4096 loopEnd: 9957375
+dataOff: 168 curFileOff: 168 streamOff: 168 streamDataByte: 130904
+fileDataEnd: 3617496 decodePos: 4096 numSkipFrames: 2 channels: 2
+# DUR: 5ms
+# DATE: 2026-08-05T07:32:36-06:00
+# exit: 0

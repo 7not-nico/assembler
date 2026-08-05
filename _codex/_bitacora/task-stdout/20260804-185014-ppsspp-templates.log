@@ -1,0 +1,27 @@
+# CMD: bash _codex/_templates/shell/copy-templates.sh /home/eddyr/assembler/_codex/ppsspp-repo/template 
+# DATE: 2026-08-04T18:50:14-06:00
+# CWD: /home/eddyr/assembler
+# --------------------
+COPY   /home/eddyr/assembler/_knowledge/_templates → /home/eddyr/assembler/_codex/ppsspp-repo/template
+COPY   /home/eddyr/assembler/_codex/_templates/pattern-template.md → /home/eddyr/assembler/_codex/ppsspp-repo/template/pattern-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/atomic-script-template.sh → /home/eddyr/assembler/_codex/ppsspp-repo/template/atomic-script-template.sh
+COPY   /home/eddyr/assembler/_codex/_templates/precedence-chain.md → /home/eddyr/assembler/_codex/ppsspp-repo/template/precedence-chain.md
+COPY   /home/eddyr/assembler/_codex/_templates/invariant-template.md → /home/eddyr/assembler/_codex/ppsspp-repo/template/invariant-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/guideline-template.md → /home/eddyr/assembler/_codex/ppsspp-repo/template/guideline-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/study-template.md → /home/eddyr/assembler/_codex/ppsspp-repo/template/study-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/fixture-template.md → /home/eddyr/assembler/_codex/ppsspp-repo/template/fixture-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/backup-template.md → /home/eddyr/assembler/_codex/ppsspp-repo/template/backup-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/dive-agents-template.md → /home/eddyr/assembler/_codex/ppsspp-repo/template/dive-agents-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/dive-naming-conventions-template.md → /home/eddyr/assembler/_codex/ppsspp-repo/template/dive-naming-conventions-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/precept-verify-qalc-template.md → /home/eddyr/assembler/_codex/ppsspp-repo/template/precept-verify-qalc-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/precept-record-metrics-template.md → /home/eddyr/assembler/_codex/ppsspp-repo/template/precept-record-metrics-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/precept-run-fixtures-template.md → /home/eddyr/assembler/_codex/ppsspp-repo/template/precept-run-fixtures-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/precept-atomic-documents-template.md → /home/eddyr/assembler/_codex/ppsspp-repo/template/precept-atomic-documents-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/precept-use-ripgrep-template.md → /home/eddyr/assembler/_codex/ppsspp-repo/template/precept-use-ripgrep-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/precept-use-shared-browser-template.md → /home/eddyr/assembler/_codex/ppsspp-repo/template/precept-use-shared-browser-template.md
+COPY   /home/eddyr/assembler/_codex/_templates/shell/start-browser.sh → /home/eddyr/assembler/_codex/ppsspp-repo/template/start-browser.sh
+COPY   /home/eddyr/assembler/_codex/_templates/shell/start-browser-headless.sh → /home/eddyr/assembler/_codex/ppsspp-repo/template/start-browser-headless.sh
+COPY   /home/eddyr/assembler/_codex/_templates/shell/run-logged.sh → /home/eddyr/assembler/_codex/ppsspp-repo/template/run-logged.sh
+COPY   /home/eddyr/assembler/_codex/_templates/shell/slugify.sh → /home/eddyr/assembler/_codex/ppsspp-repo/template/slugify.sh
+DONE   /home/eddyr/assembler/_codex/ppsspp-repo/template
+# exit: 0

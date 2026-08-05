@@ -1,0 +1,9 @@
+# CMD: bash -c ls\ -la\ build/ext/glslang/StandAlone/glslangValidator\ build/ext/glslang/StandAlone/spirv-remap\ 2\>\&1\;\ echo\ ---\;\ ls\ build/ext/glslang/localResults\ 2\>\&1\ \|\ head\ -3 
+# DATE: 2026-08-05T06:54:54-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+ls: cannot access 'build/ext/glslang/StandAlone/glslangValidator': No such file or directory
+ls: cannot access 'build/ext/glslang/StandAlone/spirv-remap': No such file or directory
+---
+ls: cannot access 'build/ext/glslang/localResults': No such file or directory
+# exit: 0

@@ -1,0 +1,8 @@
+# CMD: bash -c rg\ -n\ \"GeList\|Enqueue\|stall\|draw\|Vertex\|ListID\|idle\"\ Core/HLE/sceGe.cpp\ \|\ head\ -14\;\ echo\ ===\;\ rg\ -n\ \"u32\ sceGe\|int\ sceGe\|__GeInit\|__GeDoState\"\ Core/HLE/sceGe.cpp\ \|\ head\ -14 
+# DATE: 2026-08-05T06:18:46-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+rg: Core/HLE/sceGe.cpp: IO error for operation on Core/HLE/sceGe.cpp: No such file or directory (os error 2)
+===
+rg: Core/HLE/sceGe.cpp: IO error for operation on Core/HLE/sceGe.cpp: No such file or directory (os error 2)
+# exit: 0

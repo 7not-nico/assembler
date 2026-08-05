@@ -1,0 +1,32 @@
+# CMD: bash -c rg\ -n\ \"ULUS\|ULES\|UCUS\|Loading\ disc\|Booted\|PPGe\|Ge\|drawWaitingThreads\|__GeInit\|main\\.elf\|EBOOT\|ATRAC\|sceeDLS\|I\\\[Loader\\\]\|I\\\[HLE\\\]\"\ /tmp/tmp.vPDOkluNHL\ \|\ rg\ -v\ \"Vulkan\|extension\"\ \|\ head\ -30 
+# DATE: 2026-08-05T07:32:54-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo
+# --------------------
+94:31:23:050 Core/System.cpp:623 I[Loader]: Starting loader thread...
+97:31:23:050 Core/System.cpp:378 I[Loader]: NPUG30039 : Zuma
+102:31:23:052 Core/PSPLoaders.cpp:308 I[Loader]: Loading disc0:/PSP_GAME/SYSDIR/EBOOT.BIN...
+114:31:23:078 Util/PPGeDraw.cpp:315 I[sceGe]: PPGe drawing library initialized. DL: 08000400 Data: 08010400 Atlas: 08020d00 (2097152) Args: 08020400
+117:31:23:078 ELF/PrxDecrypter.cpp:716 I[Loader]: Decrypting tag D91613F0
+118:31:23:078 ELF/PrxDecrypter.cpp:770 I[Loader]: Decrypting tag D91613F0
+119:31:23:078 ELF/PrxDecrypter.cpp:825 I[Loader]: Decrypting tag D91613F0
+125:31:23:093 HLE/sceKernelModule.cpp:1361 I[Loader]: Module simple: 00000000 08934c70 08934c88
+126:31:23:103 HLE/ReplaceTables.cpp:1804 I[HLE]: Replaced memcpy_jak at 088fe564 with hash 0ffa5db8396d4274
+127:31:23:103 HLE/ReplaceTables.cpp:1804 I[HLE]: Replaced memmove at 088fe5a4 with hash 3c421a9265f37ebc
+128:31:23:103 HLE/ReplaceTables.cpp:1804 I[HLE]: Replaced memset_jak at 088fe868 with hash eabb9c1b4f83d2b4
+129:31:23:103 HLE/sceKernelModule.cpp:1478 I[Loader]: Exporting ent 0 named simple, 2 funcs, 4 vars, resident 08934ff0
+130:31:23:103 HLE/sceKernelModule.cpp:1836 I[Loader]: Module entry: 088f3f0c (simple 0101)
+133:31:23:103 root         I[Loader]: Core/System.cpp:590 Starting graphics...
+172:31:23:149 user_main    D[sceModule]: HLE/sceKernelModule.cpp:2438 00000112=sceKernelGetModuleIdByAddress(088f3f0c): 00000112
+177:31:23:173 idle0        N[Boot]: UI/EmuScreen.cpp:393 Booted roms/zuma-usa.iso...
+211:31:31:509 user_main    I[Printf]: HLE/sceIo.cpp:1206 stdout: GetLeaderboard: 0
+213:31:31:509 user_main    I[Printf]: HLE/sceIo.cpp:1206 stdout: GetLeaderboard: 0
+214:31:31:509 user_main    I[Printf]: HLE/sceIo.cpp:1206 stdout: GetLeaderboard: 1
+216:31:31:509 user_main    I[Printf]: HLE/sceIo.cpp:1206 stdout: GetLeaderboard: 1
+218:31:31:877 AtracThread  E[Atrac]: HLE/sceAtrac.cpp:527 SCE_KERNEL_ERROR_SCE_ERROR_ATRAC_BAD_ATRACID=sceAtracGetRemainFrame(0, 09f9fa58[ffffffff])
+226:31:32:227 AtracThread  E[Atrac]: HLE/sceAtrac.cpp:527 SCE_KERNEL_ERROR_SCE_ERROR_ATRAC_BAD_ATRACID=sceAtracGetRemainFrame(-1, 09f9fa58[000000a5])
+288:31:40:351 AtracThread  E[Atrac]: HLE/sceAtrac.cpp:527 SCE_KERNEL_ERROR_SCE_ERROR_ATRAC_BAD_ATRACID=sceAtracGetRemainFrame(-1, 09f9fa58[0000005b])
+295:31:54:181 AtracThread  E[Atrac]: HLE/sceAtrac.cpp:527 SCE_KERNEL_ERROR_SCE_ERROR_ATRAC_BAD_ATRACID=sceAtracGetRemainFrame(-1, 09f9fa58[00000033])
+300:31:55:683 AtracThread  E[Atrac]: HLE/sceAtrac.cpp:527 SCE_KERNEL_ERROR_SCE_ERROR_ATRAC_BAD_ATRACID=sceAtracGetRemainFrame(-1, 09f9fa58[0000008d])
+# DUR: 4ms
+# DATE: 2026-08-05T07:32:54-06:00
+# exit: 0

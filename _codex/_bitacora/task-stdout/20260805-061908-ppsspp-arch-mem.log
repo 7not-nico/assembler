@@ -1,0 +1,46 @@
+# CMD: bash -c sed\ -n\ \"75\,110p\"\ Core/MemMap.h\;\ echo\ ===\;\ rg\ -n\ \"MemoryMap_Setup\|userMemory\|kernelMemory\|SetMemory\"\ Core/MemMap.cpp\ \|\ head\ -10 
+# DATE: 2026-08-05T06:19:08-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp
+# --------------------
+enum {
+	// This may be adjusted by remaster games.
+	RAM_NORMAL_SIZE = 0x02000000,
+	// Used if the PSP model is PSP-2000 (Slim).
+	RAM_DOUBLE_SIZE = RAM_NORMAL_SIZE * 2,
+
+	VRAM_SIZE       = 0x00200000,
+
+	SCRATCHPAD_SIZE = 0x00004000,
+
+#ifdef MASKED_PSP_MEMORY
+	// This wraparound should work for PSP too.
+	MEMVIEW32_MASK  = 0x3FFFFFFF,
+#endif
+};
+
+enum {
+	MV_MIRROR_PREVIOUS = 1,
+	MV_IS_PRIMARY_RAM = 0x100,
+	MV_IS_EXTRA1_RAM = 0x200,
+	MV_IS_EXTRA2_RAM = 0x400,
+	MV_KERNEL = 0x800,  // Can be skipped on platforms where memory is tight.
+	MV_NULL_PAGE = 0x1000,
+};
+
+struct MemoryView {
+	u8 **out_ptr;
+	u32 virtual_address;
+	u32 size;
+	u32 flags;
+};
+
+enum class MemMapSetupFlags {
+	Default = 0,
+	AllocNullPage = 1,
+};
+===
+205:bool MemoryMap_Setup(MemMapSetupFlags flags) {
+247:		ERROR_LOG(Log::MemMap, "MemoryMap_Setup: Hit a wrong path, should not be needed on this platform.");
+258:		ERROR_LOG(Log::MemMap, "MemoryMap_Setup: Failed finding a memory base.");
+319:	if (!MemoryMap_Setup(flags)) {
+# exit: 0

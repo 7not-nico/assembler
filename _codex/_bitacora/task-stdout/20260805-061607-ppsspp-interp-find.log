@@ -1,0 +1,44 @@
+# CMD: bash -c rg\ -rn\ \"MIPSInterpret\"\ Core/MIPS/\ \|\ head\ -8\;\ echo\ ===\;\ rg\ -n\ \"MIPSInterpret_RunUntil\|MIPSInterpret\"\ Core/MIPS/MIPS.cpp\ Core/MIPS/MIPSTables.cpp\ Core/MIPS/IR/\*.cpp\ 2\>/dev/null\ \|\ head\ -8\;\ echo\ ===\;\ ls\ Core/MIPS/IR/ 
+# DATE: 2026-08-05T06:16:07-06:00
+# CWD: /home/eddyr/assembler/_codex/ppsspp-repo/ppsspp
+# --------------------
+Core/MIPS/MIPSTables.h:typedef void (CDECL *nFunc)(MIPSOpcode opcode);
+Core/MIPS/MIPSTables.h:void n(MIPSOpcode op); //only for those rare ones
+Core/MIPS/MIPSTables.h:int n_RunUntil(u64 globalTicks);
+Core/MIPS/MIPSTables.h:nFunc MIPSGetInterpretFunc(MIPSOpcode op);
+Core/MIPS/x86/CompBranch.cpp:	nFunc func = MIPSGetInterpretFunc(op);
+Core/MIPS/MIPSTables.cpp:	nFunc interpret;
+Core/MIPS/MIPSTables.cpp:void n(MIPSOpcode op) {
+Core/MIPS/MIPSTables.cpp:int n_RunUntil(u64 globalTicks) {
+===
+Core/MIPS/MIPSTables.cpp:74:	MIPSInterpretFunc interpret;
+Core/MIPS/MIPSTables.cpp:961:void MIPSInterpret(MIPSOpcode op) {
+Core/MIPS/MIPSTables.cpp:1046:int MIPSInterpret_RunUntil(u64 globalTicks) {
+Core/MIPS/MIPSTables.cpp:1086:MIPSInterpretFunc MIPSGetInterpretFunc(MIPSOpcode op)
+Core/MIPS/MIPS.cpp:350:		return MIPSInterpret_RunUntil(globalTicks);
+Core/MIPS/IR/IRInterpreter.cpp:1219:			MIPSInterpret(op);
+Core/MIPS/IR/IRNativeCommon.cpp:140:void IRNativeBackend::NotifyMIPSInterpret(const char *name) {
+Core/MIPS/IR/IRNativeCommon.cpp:152:	MIPSInterpret(op);
+===
+IRAnalysis.cpp
+IRAnalysis.h
+IRCompALU.cpp
+IRCompBranch.cpp
+IRCompFPU.cpp
+IRCompLoadStore.cpp
+IRCompVFPU.cpp
+IRFrontend.cpp
+IRFrontend.h
+IRInst.cpp
+IRInst.h
+IRInterpreter.cpp
+IRInterpreter.h
+IRJit.cpp
+IRJit.h
+IRNativeCommon.cpp
+IRNativeCommon.h
+IRPassSimplify.cpp
+IRPassSimplify.h
+IRRegCache.cpp
+IRRegCache.h
+# exit: 0
