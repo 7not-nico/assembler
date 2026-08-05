@@ -7,15 +7,14 @@
 # connectOverCDP. Extensions and cookies live in the original profile — no
 # copies, no separate instances.
 # Idempotent: if the browser (or its port) is already up, exits 0.
+# Discovery + readiness primitives live in deps/browser.sh.
 set -uo pipefail
 
-CHROME="$(ls -d ~/.cache/ms-playwright/chromium-*/chrome-linux64/chrome 2>/dev/null | sort -V | tail -1)"
-[ -z "$CHROME" ] && { echo "ERROR chromium not found under ~/.cache/ms-playwright" >&2; exit 1; }
-PROFILE="$(ls -dt ~/.cache/ms-playwright-mcp/mcp-chrome-* 2>/dev/null | head -1)"
-[ -z "$PROFILE" ] && { echo "ERROR MCP profile not found under ~/.cache/ms-playwright-mcp" >&2; exit 1; }
+. "$(cd "$(dirname "$0")" && pwd)/deps/browser.sh"
+
 PORT="${1:-9222}"
 
-if curl -s "http://127.0.0.1:$PORT/json/version" >/dev/null 2>&1; then
+if port_up "$PORT"; then
   echo "ALREADY browser on port $PORT"
   exit 0
 fi
@@ -37,12 +36,4 @@ nohup "$CHROME" \
   --user-data-dir="$PROFILE" \
   about:blank >/tmp/opencode/shared-browser.log 2>&1 &
 
-for i in $(seq 1 30); do
-  if curl -s "http://127.0.0.1:$PORT/json/version" >/dev/null 2>&1; then
-    echo "UP   port=$PORT profile=$PROFILE"
-    exit 0
-  fi
-  sleep 1
-done
-echo "ERROR browser did not open port $PORT — see /tmp/opencode/shared-browser.log" >&2
-exit 1
+wait_port "$PORT" "browser" "/tmp/opencode/shared-browser.log"

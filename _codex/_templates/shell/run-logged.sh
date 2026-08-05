@@ -4,38 +4,19 @@
 # Writes {timestamp}-{name}.log into _codex/_bitacora/task-stdout/ with a
 # # CMD: header showing the exact command; output streams live to the
 # terminal and the file. Location-aware: resolves the _codex root whether
-# the script lives at _templates/ or _templates/shell/.
+# the script lives at _templates/ or _templates/shell/. Log framing lives
+# in deps/logger.sh.
 set -uo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+. "$SCRIPT_DIR/deps/logger.sh"
 
 NAME="${1:?name required}"
 shift
 if [ "${1:-}" = "--" ]; then shift; fi
 if [ "$#" -eq 0 ]; then echo "command required" >&2; exit 1; fi
 
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-case "$SCRIPT_DIR" in
-  */_templates/shell) CODEX="$(cd "$SCRIPT_DIR/../.." && pwd)" ;;
-  */_templates) CODEX="$(cd "$SCRIPT_DIR/.." && pwd)" ;;
-  *) echo "ERROR run-logged.sh must live under _codex/_templates[/shell]" >&2; exit 1 ;;
-esac
+log_open "$NAME" "$@"
 
-STDOUT_DIR="$CODEX/_bitacora/task-stdout"
-mkdir -p "$STDOUT_DIR"
-LOG="$STDOUT_DIR/$(date +%Y%m%d-%H%M%S)-$NAME.log"
-CMD="$(printf '%q ' "$@")"
-
-{
-  echo "# CMD: $CMD"
-  echo "# DATE: $(date -Is)"
-  echo "# CWD: $(pwd)"
-  echo "# --------------------"
-} | tee "$LOG"
-
-START="$(date +%s%N)"
 "$@" 2>&1 | tee -a "$LOG"
-STATUS="${PIPESTATUS[0]}"
-DUR="$(($(($(date +%s%N) - START)) / 1000000))ms"
-echo "# DUR: $DUR" | tee -a "$LOG"
-echo "# DATE: $(date -Is)" | tee -a "$LOG"
-echo "# exit: $STATUS" | tee -a "$LOG"
-exit "$STATUS"
+log_close "${PIPESTATUS[0]}"

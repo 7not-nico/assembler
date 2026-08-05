@@ -43,5 +43,10 @@ for f in "${SHELL_FILES[@]}"; do
     echo "COPY   $CODEX_TEMPLATES/shell/$f → $TARGET/$f"
   fi
 done
+# shell deps ride along — the copies source deps/{logger,browser,paths}.sh
+if [ -d "$CODEX_TEMPLATES/shell/deps" ]; then
+  cp -a "$CODEX_TEMPLATES/shell/deps" "$TARGET/deps"
+  echo "COPY   $CODEX_TEMPLATES/shell/deps → $TARGET/deps"
+fi
 
 echo "DONE   $TARGET"
