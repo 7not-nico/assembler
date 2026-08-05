@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 # slugify.sh — convert a filename to a lowercase dash-slug
 # Usage: bash slugify.sh {filename}
-# Spaces, parentheses, brackets, and punctuation → dashes; dashes collapse;
-# leading/trailing dashes strip; single trailing extension preserved.
-set -euo pipefail
+# Thin shim over the shared _shared/bin/slugify Go binary; the walk-up
+# locates the binary whether this file lives at _templates/shell/ or in a
+# dive copy (ancestor discovery).
+set -uo pipefail
 
-NAME="${1:?filename required}"
-
-BASE="${NAME%.*}"
-EXT="${NAME##*.}"
-if [ "$BASE" = "$NAME" ]; then EXT=""; fi
-
-SLUG="$(echo "$BASE" | tr '[:upper:]' '[:lower:]' \
-  | tr -c '[:alnum:]' '-' \
-  | sed -E 's/-+/-/g; s/^-+//; s/-+$//')"
-
-if [ -n "$EXT" ]; then echo "$SLUG.$EXT"; else echo "$SLUG"; fi
+BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
+d="$BASE_DIR"
+while [ "$d" != "/" ]; do
+  if [ -x "$d/_shared/bin/slugify" ]; then
+    exec "$d/_shared/bin/slugify" "$@"
+  fi
+  d="$(dirname "$d")"
+done
+echo "ERROR _shared/bin/slugify not found above $BASE_DIR" >&2
+exit 1

@@ -20,14 +20,13 @@ done
 
 [ -f "$FILE" ] || { echo "ERROR no such file: $FILE" >&2; exit 1; }
 
+# shared deps — archive primitives (archive_kind, image_in_archive, image_size_in_archive)
+. "$(dirname "$0")/deps/archive.sh"
+
 FT="$(file -b "$FILE")"
-EXTRACTOR=""
-case "$FT" in
-  *Zip*|*zip*) EXTRACTOR="unzip" ;;
-  *7-zip*|*7z*) EXTRACTOR="7z" ;;
-  *tar*) EXTRACTOR="tar" ;;
-  *RAR*|*rar*) EXTRACTOR="7z" ;;
-  *)
+KIND="$(archive_kind "$FILE")"
+case "$KIND" in
+  bare)
     # bare image pass-through — the archive case excludes these
     case "$FT" in
       *ISO*|*filesystem*) ;;
@@ -42,21 +41,12 @@ case "$FT" in
     ;;
 esac
 
-PAT="$(printf '\.(%s)$' "${EXTS// /|}")"
-case "$EXTRACTOR" in
-  unzip) IMAGE="$(unzip -Z1 "$FILE" | grep -E "$PAT" | head -1)"
-         SIZE="$(unzip -l "$FILE" | awk -v n="$IMAGE" 'index($0,n) && $0 ~ /\.(sfc|smc|iso|cso)$/ {print $1; exit}')" ;;
-  7z)    IMAGE="$(7z l -slt "$FILE" | awk '/Path = /{p=$3} /^Path = /{p=$3} p ~ /\.(sfc|smc|iso|cso)$/ && !/\.txt/ {print p; exit}')"
-         SIZE="$(7z l -slt "$FILE" | awk -v n="$IMAGE" 'prev ~ /Path = / && $0 == "Size = " {s=$3} $0 ~ ("Path = " n) {print s; exit}')" ;;
-  tar)   IMAGE="$(tar -tf "$FILE" | grep -E "$PAT" | head -1)"
-         SIZE="$(tar -tvf "$FILE" | awk -v n="$IMAGE" 'index($0,n) {print $3; exit}')" ;;
-esac
-
-if [ -z "${IMAGE:-}" ]; then
+IMAGE="$(image_in_archive "$FILE" "$EXTS")"
+if [ -z "$IMAGE" ]; then
   echo "ERROR no image inside archive (expected .${EXTS// /|.})" >&2
   exit 1
 fi
-SIZE="$(echo "$SIZE" | tr -cd '0-9')"
+SIZE="$(image_size_in_archive "$FILE" "$IMAGE" | tr -cd '0-9')"
 
 echo "OK   $IMAGE ($SIZE B)"
 echo "IMAGE=$IMAGE"
