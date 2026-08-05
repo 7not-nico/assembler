@@ -27,7 +27,9 @@ function schemaValue(key: string): string {
   return out.trim()
 }
 
-export const SCHEMA_MCP_TIMEOUT = Number(schemaValue("SCHEMA_MCP_TIMEOUT")) || 180
+// constants come from the schema only — a missing schema fails loudly, no fallback
+export const SCHEMA_MCP_TIMEOUT = Number(schemaValue("SCHEMA_MCP_TIMEOUT"))
+export const SCHEMA_MCP_MAX_BUFFER = Number(schemaValue("SCHEMA_MCP_MAX_BUFFER"))
 
 export interface EnablerOutcome {
   ok: boolean
@@ -41,7 +43,7 @@ export function runEnabler(args: string[], timeoutSec = SCHEMA_MCP_TIMEOUT): Ena
     const stdout = execFileSync("bash", [ENABLER_PATH, ...args], {
       encoding: "utf8",
       timeout: timeoutSec * 1000,
-      maxBuffer: 32 * 1024 * 1024,
+      maxBuffer: SCHEMA_MCP_MAX_BUFFER,
       stdio: ["ignore", "pipe", "pipe"],
     })
     return { ok: true, exit: 0, stdout: stdout.trim(), stderr: "" }

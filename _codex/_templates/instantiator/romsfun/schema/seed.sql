@@ -27,4 +27,5 @@ INSERT OR IGNORE INTO shell_values (key, value, description) VALUES
   ('FETCH_SELECTOR', 'a[href*="token="]', 'fetch-download default download anchor selector'),
 
   -- MCP servers
-  ('MCP_TIMEOUT', '180', 'MCP server tool-call timeout in seconds');
+  ('MCP_TIMEOUT', '180', 'MCP server tool-call timeout in seconds'),
+  ('MCP_MAX_BUFFER', '33554432', 'MCP server tool-output buffer in bytes (32 MB)');
