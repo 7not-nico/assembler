@@ -1,20 +1,11 @@
 #!/usr/bin/env python3
 # purity: io
 # ring: 4 (LOCAL-WRITE) — writes records under _codex/_bitacora/
-# depends-on: stdlib only (pathlib, dataclasses, subprocess, time, typing)
-# bitacora-py — the bitacora flow as one typed binary.
-# Usage: bitacora-py {todo|run|report} ...
-#   bitacora-py todo   {topic} ["{desc}"]           — open a task-todo record
-#   bitacora-py run    {name} [--trace] -- {cmd...} — frame a command's output
-#   bitacora-py report {topic} ["{desc}"]           — open a task-report record
-# Walks up from its own location to the _codex root (canonical + dive copies
-# resolve). Framing: # CMD:/# DATE:/# CWD: header, live tee, # DUR:/# DATE:/
-# # exit: tail. No-clobber per topic. Exit: framed command's status on run;
-# 0 on record open; 1 on errors; 2 on usage.
-# Purity split: the pure core (codex_root, body/frame builders, Record)
-# composes the io edge (record write, subprocess frame). Atomic unit: one
-# subcommand per invocation. Structure: ROOT memoized once; Record owns its
-# path; lazy no-clobber; tuple commands; one clock read per invocation.
+# depends-on: r0_record.py, stdlib (subprocess, time, typing)
+# r4_bitacora.py — the bitacora flow's io edge. Composes the pure core
+# (r0_record.py): Record identities, body builders, frame blocks. Memoized
+# _codex root; lazy no-clobber; tuple commands; single clock read per
+# invocation. Atomic unit: one subcommand per invocation.
 
 from __future__ import annotations
 
@@ -22,24 +13,14 @@ import os
 import subprocess
 import sys
 import time
-from dataclasses import dataclass
 from pathlib import Path
 from typing import NoReturn
+
+from r0_record import Record, codex_root, frame_header, frame_tail, report_body, todo_body, usage_text
 
 Cmd = tuple[str, ...]
 
 _ROOT: Path | None = None
-
-
-def codex_root(start: Path) -> Path:
-    """Walk up from start to the _codex ancestor. Pure: path math only."""
-    d = start.resolve()
-    while True:
-        if d.name == "_codex":
-            return d
-        if d.parent == d:
-            raise ValueError(f"no _codex ancestor above {start}")
-        d = d.parent
 
 
 def root() -> Path:
@@ -48,65 +29,6 @@ def root() -> Path:
     if _ROOT is None:
         _ROOT = codex_root(Path(__file__).parent)
     return _ROOT
-
-
-@dataclass(frozen=True)
-class Record:
-    """A record identity: subdir + topic. Owns its own path derivation."""
-
-    subdir: str
-    topic: str
-    ts: str
-
-    def path(self, base: Path) -> Path:
-        return base / "_bitacora" / self.subdir / f"{self.ts}-{self.topic}.md"
-
-
-def todo_body(topic: str, desc: str, date: str) -> str:
-    """The task-todo record body. Pure: string composition only."""
-    return (
-        f"# {topic} — todo\n\n"
-        f"**Date:** {date}\n"
-        f"**Project:** {desc}\n\n"
-        f"## Tasks\n\n"
-    )
-
-
-def report_body(ts: str, topic: str, desc: str, date: str) -> str:
-    """The task-report record body. Pure: string composition only."""
-    return (
-        f"# {ts} — {topic} close-out\n\n"
-        f"**Date:** {date}\n"
-        f"**Project:** {desc}\n\n"
-        "## What happened\n\n"
-        "## Decisions\n\n"
-        "## Verification\n\n"
-        "## Open edges\n\n"
-        "## Todo state\n\n"
-    )
-
-
-def frame_header(cmd: Cmd, cwd: str, date: str) -> str:
-    """The # CMD:/# DATE:/# CWD: header block. Pure."""
-    quoted = " ".join(f'"{c}"' for c in cmd)
-    return (
-        f"# CMD: {quoted}\n"
-        f"# DATE: {date}\n"
-        f"# CWD: {cwd}\n"
-        "# --------------------\n"
-    )
-
-
-def frame_tail(dur_ms: int, status: int, date: str) -> str:
-    """The # DUR:/# DATE:/# exit: tail block. Pure."""
-    return (
-        f"# DUR: {dur_ms}ms\n"
-        f"# DATE: {date}\n"
-        f"# exit: {status}\n"
-    )
-
-
-# ── io edge — writes, subprocess, dispatch ──
 
 
 def record_write(rec: Record, body: str) -> Path:
@@ -154,13 +76,7 @@ def cmd_run(name: str, trace: bool, cmd: Cmd) -> int:
 
 
 def usage() -> NoReturn:
-    print(
-        "usage: bitacora-py {todo|run|report} ...\n"
-        "  bitacora-py todo   {topic} [\"{desc}\"]\n"
-        "  bitacora-py run    {name} [--trace] -- {cmd...}\n"
-        "  bitacora-py report {topic} [\"{desc}\"]",
-        file=sys.stderr,
-    )
+    print(usage_text(), file=sys.stderr)
     sys.exit(2)
 
 

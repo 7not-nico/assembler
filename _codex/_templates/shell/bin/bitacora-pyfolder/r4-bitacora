@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+# purity: io
+# ring: 4 (LOCAL-WRITE) — writes records under _codex/_bitacora/
+# depends-on: r4_bitacora.py, r0_record.py
+# r4-bitacora — the bitacora flow entry. Ring-prefixed executable: opens
+# todo/report records and frames command output under _codex/_bitacora/.
+# Thin entry: resolves this dir, imports the io edge, runs main. The pure
+# core (r0_record.py) composes the io edge (r4_bitacora.py); this file
+# carries no logic beyond invocation.
+
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+
+from r4_bitacora import main
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))
