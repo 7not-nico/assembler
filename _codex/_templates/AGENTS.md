@@ -79,7 +79,7 @@ r3  go + rust   _shared/ — codexroot, portup, slugify Go binaries
                 _rustlib/ — tpl-ann ANN worker
 ```
 
-Directory roles (r0 language, canonical home): `shell/` bash tools; `script/` ruby/ts tasks + schema; `instantiator/` canonical shared code for projects; `wrapper/` thin interfaces (workflow) + `wrapper/one-off/` (bootstrap); `_shared/` Go primitives; `morphism/` morphism docs + `morphism/composition/`.
+Directory roles (r0 language, canonical home): `shell/` bash tools; `script/` ruby/ts tasks + schema; `instantiator/` canonical shared code for projects; `wrapper/` thin interfaces (workflow) + `wrapper/one-off/` (bootstrap) + `wrapper/enabler/` (alias-citing shims to shared binaries); `_shared/` Go primitives; `morphism/` morphism docs + `morphism/composition/`.
 
 A task starts at r0 (bash). It moves one ring outward when the current ring does not suffice — r1 for schema scripts, r2 for OpenCode extension, r3 for high-performance binaries. Ring r3 terminates the chain; no ring beyond it exists.
 

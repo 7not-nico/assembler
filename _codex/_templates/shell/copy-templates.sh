@@ -50,5 +50,10 @@ if [ -d "$CODEX_TEMPLATES/_shared" ]; then
   cp -a "$CODEX_TEMPLATES/_shared" "$TARGET/_shared"
   echo "COPY   $CODEX_TEMPLATES/_shared → $TARGET/_shared"
 fi
+# enablers ride along — dives cite the shared binaries by alias
+if [ -d "$CODEX_TEMPLATES/wrapper/enabler" ]; then
+  cp -a "$CODEX_TEMPLATES/wrapper/enabler" "$TARGET/enabler"
+  echo "COPY   $CODEX_TEMPLATES/wrapper/enabler → $TARGET/enabler"
+fi
 
 echo "DONE   $TARGET"
