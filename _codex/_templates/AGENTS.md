@@ -21,6 +21,11 @@ shell/scaffold-knowledge.sh {name} "{domain}" [--with-skills]
 shell/copy-skills.sh {dest-docs} {skill}...
     copies each .opencode/skills/{skill}/SKILL.md → {dest}/{skill}.md (flattened)
 
+shell/bitacora-todo.sh {topic} ["{desc}"] / shell/bitacora-report.sh {topic} ["{desc}"]
+    open the record: todo first, report after completion; no-clobber per topic;
+    deps/record.sh owns the lifecycle (record_open)
+    wrappers: wrapper/bitacora-todo.sh, wrapper/bitacora-report.sh
+
 script/push-registry.rb
     registers templates (Layer:/Purpose:) and reports (error/finding counts)
     into script/schema/templates.db
@@ -111,7 +116,7 @@ Every session on the codex project writes `_codex/_bitacora/task-report/{YYYYMMD
 - codex dive precepts: precept-verify-qalc-template.md, precept-record-metrics-template.md, precept-run-fixtures-template.md, precept-atomic-documents-template.md, precept-use-ripgrep-template.md, precept-use-shared-browser-template.md
 - conventions: naming-conventions, write-report, browse-playwright, anchor-workflow
 - infrastructure: schema-template.sql, push-script-template.rb
-- tooling: shell/run-logged.sh, shell/slugify.sh, shell/start-browser.sh, shell/start-browser-headless.sh, shell/copy-templates.sh, shell/copy-skills.sh, shell/scaffold-knowledge.sh, shell/fetch-repo.sh; one-off wrappers under wrapper/one-off/
+- tooling: shell/run-logged.sh, shell/slugify.sh, shell/start-browser.sh, shell/start-browser-headless.sh, shell/copy-templates.sh, shell/copy-skills.sh, shell/scaffold-knowledge.sh, shell/fetch-repo.sh, shell/bitacora-todo.sh, shell/bitacora-report.sh; one-off wrappers under wrapper/one-off/
 
 ## Delegation
 
