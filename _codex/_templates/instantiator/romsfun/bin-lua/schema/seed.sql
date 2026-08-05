@@ -1,6 +1,6 @@
--- SHELL.SCHEMA — Seed: hardcoded values for the codex toolchain
--- The ONLY home for hardcoded values. Cited by .sh files; wrapped in
--- wrapper/; cited by the MCP server. No tool hardcodes a value elsewhere.
+-- ROMSFUN.LUA.SCHEMA — Seed: romsfun Lua project constants
+-- The ONLY home for hardcoded values in the romsfun Lua project. Cited by
+-- schema.lua (the typed citation). No tool hardcodes a value elsewhere.
 
 INSERT OR IGNORE INTO shell_values (key, value, description) VALUES
   -- browsers
@@ -25,10 +25,6 @@ INSERT OR IGNORE INTO shell_values (key, value, description) VALUES
 
   -- fetch-download
   ('FETCH_SELECTOR', 'a[href*="token="]', 'fetch-download default download anchor selector'),
-
-  -- MCP servers
-  ('MCP_TIMEOUT', '180', 'MCP server tool-call timeout in seconds'),
-  ('MCP_MAX_BUFFER', '33554432', 'MCP server tool-output buffer in bytes (32 MB)'),
 
   -- trace evidence patterns (the single home — cited by all ports)
   ('TRACE_PATTERNS', 'Booted|Loading disc|NP[A-Z0-9]{4}[0-9]{5}|memcpy_jak|memmove_jak|memset_jak|stdout:|ATRAC3|MpegAtrac|PPGe|GeInit|GBA DMA|GBA BIOS|GBA Serial I/O|SDL Events', 'trace-evidence regex patterns, | separated');
