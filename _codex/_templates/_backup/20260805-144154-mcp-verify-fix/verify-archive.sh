@@ -3,15 +3,14 @@
 # Usage: bash verify-archive.sh {file} [--image-ext {ext,ext...}]
 # Shared code instantiated projects use to verify a downloaded game archive:
 # `file` type detection (zip/7z/tar/rar), listing via the matching extractor,
-# exactly-one image expected (multi-console default; --image-ext overrides),
-# size sanity, and an optional title probe when a probe tool exists beside
-# this code. Bare ROM images pass through when `file` identifies a console
-# ROM image. Result lines: OK=, IMAGE=, SIZE=, TITLE=.
+# exactly-one image expected (.sfc/.smc/.iso/.cso by default; --image-ext
+# overrides), size sanity, and an optional title probe when a probe tool
+# exists beside this code. Result lines: OK=, IMAGE=, SIZE=, TITLE=.
 set -uo pipefail
 
 FILE="${1:?file required}"
 shift
-EXTS="sfc smc iso cso gba gb gbc nds dsi nes gen n64 bin"
+EXTS="sfc smc iso cso"
 while [ "$#" -gt 0 ]; do
   case "$1" in
     --image-ext) EXTS="${2:-}"; shift 2 ;;
@@ -28,9 +27,9 @@ FT="$(file -b "$FILE")"
 KIND="$(archive_kind "$FILE")"
 case "$KIND" in
   bare)
-    # bare image pass-through — accept any console ROM image `file` names
+    # bare image pass-through — the archive case excludes these
     case "$FT" in
-      *ROM\ image*|*ISO*|*filesystem*|*Game\ Boy*) ;;
+      *ISO*|*filesystem*) ;;
       *) echo "ERROR unrecognized archive type: $FT" >&2; exit 1 ;;
     esac
     IMAGE="$FILE"

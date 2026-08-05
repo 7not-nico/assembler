@@ -47,11 +47,10 @@ image_in_archive() {
 }
 
 image_size_in_archive() {
-	local archive="$1" image="$2" ext
-	ext="${image##*.}"
+	local archive="$1" image="$2"
 	case "$(archive_kind "$archive")" in
 	zip)
-		unzip -l "$archive" | awk -v n="$image" -v e="$ext" 'index($0,n) && $0 ~ ("\\." e "$") {print $1; exit}'
+		unzip -l "$archive" | awk -v n="$image" 'index($0,n) && $0 ~ /\.(sfc|smc|iso|cso)$/ {print $1; exit}'
 		;;
 	7z | rar)
 		7z l -slt "$archive" | awk -v n="$image" '/^Size = /{size=$3} /^Path = /{path=$3} path == n {print size; exit}'
