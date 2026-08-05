@@ -70,3 +70,4 @@ _trove/**/*.pdf
 
 # node_modules stay out everywhere (after substrate un-ignore)
 **/node_modules/
+**/__pycache__/
