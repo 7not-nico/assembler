@@ -1,6 +1,6 @@
 // exports: WRAPPERS_DIR, runScript
 // purity: io
-// The MCP wrapper resolves _codex from its own location (mcp/mcp-instantiator
+// The MCP wrapper resolves _codex from its own location (mcp/mcp-romsfun
 // → _templates → _codex), then execs the shared wrapper scripts under
 // _templates/wrapper/. Each wrapper resolves _codex itself and delegates to
 // the canonical instantiator implementation; keyed result lines pass through.
@@ -10,7 +10,7 @@ import { fileURLToPath } from "node:url"
 
 const HERE = dirname(fileURLToPath(import.meta.url))
 
-// _codex/_templates/wrapper (three levels up from mcp/mcp-instantiator/)
+// _codex/_templates/wrapper (three levels up from mcp/mcp-romsfun/)
 export const WRAPPERS_DIR = join(HERE, "..", "..", "..", "wrapper")
 
 export interface ScriptOutcome {

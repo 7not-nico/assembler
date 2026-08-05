@@ -74,7 +74,7 @@ r0  bash        shell/ — bitacora-run, run-logged, slugify, start-browser*,
                 copy-*, fetch-repo, scaffold-knowledge; deps/{paths,browser,logger}.sh
 r1  ruby+python script/ — push-registry.rb (schema-backed tasks)
 r2  typescript  script/ — semantic-*.ts, bench.ts, stress.ts, deps/paths.ts
-                mcp/ — mcp-instantiator (MCP server over the wrappers)
+                mcp/ — mcp-romsfun (MCP server over the wrappers)
 r3  go + rust   _shared/ — codexroot, portup, slugify Go binaries
                 _rustlib/ — tpl-ann ANN worker
 ```

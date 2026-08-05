@@ -5,7 +5,7 @@
 
 ## The MCP server
 
-`mcp/mcp-instantiator/` — MCP wrapper exposing the 8 instantiator flows as agent tools. Registered in `opencode.json` as `mcp-instantiator` (local, `bun run index.ts`). Every tool delegates: MCP → `wrapper/{tool}.sh` (resolves `_codex`) → `instantiator/{tool}.sh` (canonical). Keyed result lines pass through; failures surface as `ERROR` text + non-zero exit.
+`mcp/mcp-romsfun/` — MCP wrapper exposing the 8 romsfun flows as agent tools. Registered in `opencode.json` as `mcp-romsfun` (local, `bun run index.ts`). Every tool delegates: MCP → `wrapper/{tool}.sh` (resolves `_codex`) → `instantiator/romsfun/{tool}.sh` (canonical). Keyed result lines pass through; failures surface as `ERROR` text + non-zero exit.
 
 ## The 8 tools
 

@@ -1,4 +1,4 @@
-// mcp-instantiator — MCP wrapper exposing the codex instantiator flows as
+// mcp-romsfun — MCP wrapper exposing the codex romsfun flows as
 // agent tools. One tool per shared instantiator implementation:
 //   inst_acquire → wrapper/acquire-game.sh   (IMAGE=/SIZE=/STATUS=)
 //   inst_stop     → wrapper/stop-process.sh   (STOPPED=)
@@ -17,7 +17,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { z } from "zod"
 import { runScript } from "./_lib/inst-query.ts"
 
-const server = new McpServer({ name: "mcp-instantiator", version: "1.0.0" })
+const server = new McpServer({ name: "mcp-romsfun", version: "1.0.0" })
 
 function runAndReturn(script: string, args: string[], tool: string): { content: { type: "text"; text: string }[] } {
   const outcome = runScript(script, args)
@@ -54,13 +54,14 @@ server.registerTool(
     description: "Download a file via the shared browser (CDP 9222): open URL, click the first direct-download anchor (default a[href*='token=']), save with a slugified name. Result line: SAVEDPATH=.",
     inputSchema: {
       url: z.string().describe("URL of the file to download"),
-      timeout: z.number().int().positive().optional().default(90).describe("Fetch timeout in seconds"),
-      out: z.string().optional().describe("Output directory (default $ASSEMBLER/.opencode/.playwright-mcp/)"),
-      selector: z.string().optional().describe("CSS selector for the download anchor (default a[href*='token='])"),
+      timeout: z.number().int().positive().optional().describe("Fetch timeout in seconds (shell default applies when absent)"),
+      out: z.string().optional().describe("Output directory (shell default applies when absent)"),
+      selector: z.string().optional().describe("CSS selector for the download anchor (shell default applies when absent)"),
     },
   },
   async ({ url, timeout, out, selector }) => {
-    const args = [url, String(timeout)]
+    const args = [url]
+    if (timeout !== undefined) args.push("--timeout", String(timeout))
     if (out) args.push("--out", out)
     if (selector) args.push("--selector", selector)
     return runAndReturn("fetch-download.sh", args, "inst_fetch")
@@ -73,12 +74,15 @@ server.registerTool(
     description: "Browse the romsfun catalog for a game on a console section and list its download variants. Machine lines: SEARCH, GAME <url> | <title>, OPEN, DL, VARIANTS: N <url> | <name>.",
     inputSchema: {
       game: z.string().describe("Game name or slug to search romsfun for"),
-      timeout: z.number().int().positive().optional().default(90).describe("Browse timeout in seconds"),
+      timeout: z.number().int().positive().optional().describe("Browse timeout in seconds (shell default applies when absent)"),
       console: z.string().describe("romsfun console section slug — required, validated by browse-romsfun.sh (e.g. super-nintendo, game-boy-advance, nintendo-ds, playstation-portable)"),
     },
   },
-  async ({ game, timeout, console }) =>
-    runAndReturn("browse-romsfun.sh", [game, "--timeout", String(timeout), console], "inst_browse"),
+  async ({ game, timeout, console }) => {
+    const args = [game, console]
+    if (timeout !== undefined) args.push("--timeout", String(timeout))
+    return runAndReturn("browse-romsfun.sh", args, "inst_browse")
+  },
 )
 
 server.registerTool(
@@ -143,7 +147,7 @@ server.registerTool(
     inputSchema: {
       trace_file: z.string().describe("Path to the trace/launch log"),
       patterns_file: z.string().optional().describe("File with one regex per line (defaults apply when absent)"),
-      head: z.number().int().positive().optional().default(20).describe("Max evidence lines to print"),
+      head: z.number().int().positive().optional().describe("Max evidence lines to print (shell default applies when absent)"),
     },
   },
   async ({ trace_file, patterns_file, head }) => {
@@ -160,6 +164,6 @@ async function main(): Promise<void> {
 }
 
 main().catch((err) => {
-  console.error("mcp-instantiator fatal:", err)
+  console.error("mcp-romsfun fatal:", err)
   process.exit(1)
 })
