@@ -74,7 +74,7 @@ server.registerTool(
     inputSchema: {
       game: z.string().describe("Game name or slug to search romsfun for"),
       timeout: z.number().int().positive().optional().default(90).describe("Browse timeout in seconds"),
-      console: z.string().optional().default("super-nintendo").describe("romsfun console section slug, e.g. super-nintendo, playstation-portable, game-boy, game-boy-advance"),
+      console: z.string().describe("romsfun console section slug — required, validated by browse-romsfun.sh (e.g. super-nintendo, game-boy-advance, nintendo-ds, playstation-portable)"),
     },
   },
   async ({ game, timeout, console }) =>

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # browse-romsfun.sh — instantiator code: discover a game's download variants
-# Usage: bash browse-romsfun.sh {game-name-or-slug} {console} [--timeout {seconds}]
+# Usage: bash browse-romsfun.sh {game-name-or-slug} [--timeout {seconds}] [{console}]
 # Shared code instantiated projects use to browse the romsfun catalog. Uses
 # the SHARED browser (CDP 9222, start-browser.sh). Searches the given console
-# section (required — validated against the valid console list), opens the
+# section (default super-nintendo; e.g. playstation-portable), opens the
 # first matching game page, follows Download ROM, and lists the variant
 # table. Machine lines for the orchestrator:
 #   GAME <url> | <title>        — each matching game
@@ -14,9 +14,7 @@ set -uo pipefail
 QUERY="${1:?game-name-or-slug required}"
 shift
 TIMEOUT="45"
-CONSOLE=""
-# valid romsfun console sections — the browse tool accepts only these
-VALID_CONSOLES="super-nintendo nintendo-64 nintendo-ds game-boy game-boy-advance game-boy-color nes sega-genesis sega-saturn playstation playstation-portable playstation-2"
+CONSOLE="super-nintendo"
 while [ "$#" -gt 0 ]; do
 	case "$1" in
 	--timeout)
@@ -33,19 +31,6 @@ while [ "$#" -gt 0 ]; do
 		;;
 	esac
 done
-
-# console is required and must be valid — never a silent SNES default
-if [ -z "$CONSOLE" ]; then
-	echo "ERROR console required: one of ${VALID_CONSOLES// /, }" >&2
-	exit 1
-fi
-case " $VALID_CONSOLES " in
-*" $CONSOLE "*) ;;
-*)
-	echo "ERROR invalid console '$CONSOLE' — valid: ${VALID_CONSOLES// /, }" >&2
-	exit 1
-	;;
-esac
 # shared deps — browser readiness (paths + CDP check + playwright-core)
 . "$(dirname "$0")/deps/browser.sh"
 
