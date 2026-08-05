@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
 # launch-emulator.sh — instantiator code: detach-launch an emulator and health-check
-# Usage: bash launch-emulator.sh {binary} {rom} [--log {path}] [--env KEY=VALUE...] [--emu-arg {arg}...]
+# Usage: bash launch-emulator.sh {binary} {rom} [--log {path}] [--env KEY=VALUE...]
 # Shared code instantiated projects use to boot an emulator detached (setsid
 # + nohup — new session, survives script exit) and verify the process lives
 # after a grace period. --env passes extra env vars (e.g. SDL_VIDEODRIVER=x11)
-# before the binary; --emu-arg passes emulator flags before the ROM (e.g.
-# -l 127 for mGBA's log-level). Result lines: LAUNCH=, RUN=pid=..., or FAIL.
+# before the binary. Result lines: LAUNCH=, RUN=pid=..., or FAIL with the log.
 set -uo pipefail
 
 BIN="${1:?binary path required}"
@@ -13,12 +12,10 @@ ROM="${2:?rom path required}"
 shift 2
 LOG="/tmp/opencode/emulator-launch.log"
 ENVS=()
-EMUARGS=()
 while [ "$#" -gt 0 ]; do
   case "$1" in
     --log) LOG="${2:-$LOG}"; shift 2 ;;
     --env) ENVS+=("$2"); shift 2 ;;
-    --emu-arg) EMUARGS+=("$2"); shift 2 ;;
     *) shift ;;
   esac
 done
@@ -29,7 +26,7 @@ done
 mkdir -p /tmp/opencode
 file "$ROM"
 echo "LAUNCH $BIN $ROM"
-setsid nohup env "${ENVS[@]}" "$BIN" "${EMUARGS[@]}" "$ROM" >"$LOG" 2>&1 </dev/null &
+setsid nohup env "${ENVS[@]}" "$BIN" "$ROM" >"$LOG" 2>&1 </dev/null &
 PID=$!
 disown "$PID" 2>/dev/null || true
 sleep 2

@@ -30,3 +30,19 @@ Process was alive (16s elapsed) — the game was running; the empty log is norma
 - [ ] Decide: SILENT status vs. patterns vs. doc-only
 - [ ] Apply the chosen fix to trace-evidence.sh
 - [ ] Re-test mmz2 launch + trace
+
+## UPDATE 2026-08-05 — mGBA HAS a log level; the fix is real
+
+mGBA's `--help` exposes `-l, --log-level N` (a bitmask). `-l 127` (0x7F = ALL) emits rich boot evidence to stdout:
+
+```
+SDL Events: Joystick attached
+GBA DMA: Starting DMA 3 0x03007D94 -> 0x03000000 (8500:1F80)
+GBA BIOS: SWI: 0B r0: 080ECF10 r1: 03000000 ...
+GBA Serial I/O: GPIO write: Unhandled SIOMULTI0
+```
+
+Level enum (mgba/include/mgba/core/log.h): FATAL 0x01, ERROR 0x02, WARN 0x04, INFO 0x08, DEBUG 0x10, STUB 0x20, GAME_ERROR 0x40, ALL 0x7F.
+
+**The "SILENT status" option is superseded** — the fix is: enable the log, then mine it.
+Fix path: (1) launch-emulator.sh gains `--emu-arg` passthrough; (2) trace-evidence.sh defaults gain GBA categories (GBA DMA, GBA BIOS, GBA Serial I/O, SDL Events); (3) mGBA launches pass `-l 127`.

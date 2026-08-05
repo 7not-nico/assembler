@@ -31,10 +31,6 @@ DEFAULTS=(
   'stdout:'
   'ATRAC3|MpegAtrac'
   'PPGe|GeInit'
-  'GBA DMA'
-  'GBA BIOS'
-  'GBA Serial I/O'
-  'SDL Events'
 )
 
 if [ -n "$PATFILE" ]; then
