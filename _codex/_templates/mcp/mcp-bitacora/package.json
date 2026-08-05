@@ -1,0 +1,10 @@
+{
+  "name": "mcp-bitacora",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP server exposing the bitacora flow (todo, run, report) as agent tools via the shared enabler",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.16.0",
+    "zod": "^4.0.0"
+  }
+}
