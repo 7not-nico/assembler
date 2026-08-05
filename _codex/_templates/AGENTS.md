@@ -50,12 +50,33 @@ script/schema/templates-vector.db    embeddings — (entity_id, field, vector, c
 
 ## Precedence chain — obligatory
 
+`_templates/` runs its own chain. Shared primitives precede deps; deps precede tools; tools precede wrappers; the MCP server wraps the wrappers; pattern docs derive from the toolchain's proven structures:
+
 ```text
-format/ → precept/ → procedure/ → research/ → concept/ → note/ → bitacora/
-→ glossary/ → schema/ → script/ → reference/ → fixtures/ → practice/
+_shared/ → deps/ → shell/ + script/ + instantiator/ → wrapper/ → mcp/ → pattern/
 ```
 
-Scaffolds create this chain. The `_templates/` project is the chain's source, not a member
+Each step depends on the ones before it. A tool task advances through the chain in order: resolve primitives, source deps, implement canonical logic, expose via wrapper, register in MCP when the tool earns it, document the morphism in pattern/ when the structure proves reusable.
+
+Scaffolds emit the 13-layer knowledge chain (`format/ → precept/ → procedure/ → research/ → concept/ → note/ → bitacora/ → glossary/ → schema/ → script/ → reference/ → fixtures/ → practice/`). The `_templates/` project is that chain's source, not a member.
+
+## Rings — ordinal (language + structure)
+
+Rings follow `RING.LANGUAGE.TOPOLOGY` (r0 bash → r1 ruby+python → r2 typescript → r3 go+rust). The ring selects the language; a task rests at the innermost ring that suffices:
+
+```text
+r0  bash        shell/ — bitacora-run, run-logged, slugify, start-browser*,
+                copy-*, fetch-repo, scaffold-knowledge; deps/{paths,browser,logger}.sh
+r1  ruby+python script/ — push-registry.rb (schema-backed tasks)
+r2  typescript  script/ — semantic-*.ts, bench.ts, stress.ts, deps/paths.ts
+                mcp/ — mcp-instantiator (MCP server over the wrappers)
+r3  go + rust   _shared/ — codexroot, portup, slugify Go binaries
+                _rustlib/ — tpl-ann ANN worker
+```
+
+Directory roles (r0 language, canonical home): `shell/` bash tools; `script/` ruby/ts tasks + schema; `instantiator/` canonical shared code for projects; `wrapper/` thin interfaces (workflow) + `wrapper/one-off/` (bootstrap); `_shared/` Go primitives; `pattern/` morphism docs + `pattern/composition/`.
+
+A task starts at r0 (bash). It moves one ring outward when the current ring does not suffice — r1 for schema scripts, r2 for OpenCode extension, r3 for high-performance binaries. Ring r3 terminates the chain; no ring beyond it exists.
 
 ## Layer semantics (governing rule)
 
