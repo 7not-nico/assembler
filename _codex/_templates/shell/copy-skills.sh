@@ -6,7 +6,10 @@ set -euo pipefail
 
 DEST="${1:?dest-docs-dir required}"
 shift
-SKILLS_ROOT="$(cd "$(dirname "$0")/../../../.opencode/skills" && pwd)"
+# shellcheck source=deps/paths.sh
+. "$(cd "$(dirname "$0")" && pwd)/deps/paths.sh"
+root_vars "$(cd "$(dirname "$0")" && pwd)"
+SKILLS_ROOT="$ASSEMBLER/.opencode/skills"
 
 mkdir -p "$DEST"
 for skill in "$@"; do

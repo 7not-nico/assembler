@@ -32,7 +32,7 @@ This project dives the {repo} codebase — {one-sentence domain}. The dive {comp
 - `pattern/` holds code morphisms. Each carries structure, verification, and a session instance.
 - `procedure/` holds numbered step chains — one per code morphism. Procedures compose with patterns.
 - `_bitacora/` stores the shared record under `_codex/`. Every file carries the `{YYYYMMDD}-{HHMMSS}-` prefix.
-- `template/` holds the layer templates + precedences — the source of forms for new layer files; propagates via `script/copy-templates.sh`.
+- `template/` holds the layer templates + precedences — the source of forms for new layer files; propagates via `shell/copy-templates.sh`.
 
 ## Tooling — codex instantiation
 
@@ -108,7 +108,7 @@ The authoritative list of every edited code line. Diff anchor: `backup/{repo}-sr
 
 ## Records
 
-Every session writes timestamped files into `_codex/_bitacora/`. The todo precedes work; the report follows completion; every command output flows through `scripts/codex.sh run-bitacora {name} [--trace] -- {command}` into `_bitacora/task-stdout/`. Reports carry metrics — build, tests, acquisitions, fixtures. Knowledge gained lands in its layer: invariant (state fact) → precept (rule) → concept (knowledge) → procedure (steps) → pattern (morphism) → study (architecture) → fixture (proof). Templates for the dive layers live in `_codex/_templates/` and propagate via `script/copy-templates.sh`.
+Every session writes timestamped files into `_codex/_bitacora/`. The todo precedes work; the report follows completion; every command output flows through `scripts/codex.sh run-bitacora {name} [--trace] -- {command}` into `_bitacora/task-stdout/`. Reports carry metrics — build, tests, acquisitions, fixtures. Knowledge gained lands in its layer: invariant (state fact) → precept (rule) → concept (knowledge) → procedure (steps) → pattern (morphism) → study (architecture) → fixture (proof). Templates for the dive layers live in `_codex/_templates/` and propagate via `shell/copy-templates.sh`.
 
 ## Delegation
 

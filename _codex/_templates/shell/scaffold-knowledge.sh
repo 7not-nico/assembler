@@ -14,9 +14,11 @@ for arg in "${@:3}"; do
     --with-skills) WITH_SKILLS=1 ;;
   esac
 done
-ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
-TEMPLATES="$ROOT/_templates"
-KNOWLEDGE_ROOT="$(cd "$ROOT/.." && pwd)/_knowledge"
+# shellcheck source=deps/paths.sh
+. "$(cd "$(dirname "$0")" && pwd)/deps/paths.sh"
+root_vars "$(cd "$(dirname "$0")" && pwd)"
+ROOT="$CODEX"
+KNOWLEDGE_ROOT="$ASSEMBLER/_knowledge"
 DEST="$KNOWLEDGE_ROOT/$NAME"
 
 if [ -d "$DEST" ]; then

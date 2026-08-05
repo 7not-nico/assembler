@@ -6,19 +6,19 @@
 
 ## Role
 
-- Project scaffolding — `script/scaffold-knowledge.sh` creates the 13-layer chain
+- Project scaffolding — `shell/scaffold-knowledge.sh` creates the 13-layer chain
 - Template definitions — per-layer boilerplate, naming conventions, anchored skills
 - Registry and semantic search — templates and reports stay queryable by meaning
-- Improvement loop — `report/` records every session's errors and findings
+- Improvement loop — `_codex/_bitacora/` records every session's errors and findings
 
 ## Toolchain
 
 ```text
-script/scaffold-knowledge.sh {name} "{domain}" [--with-skills]
+shell/scaffold-knowledge.sh {name} "{domain}" [--with-skills]
     creates _knowledge/{name}/ — 13-layer chain, AGENTS.md, schema, push script
     --with-skills copies 16 anchored skills into docs/
 
-script/copy-skills.sh {dest-docs} {skill}...
+shell/copy-skills.sh {dest-docs} {skill}...
     copies each .opencode/skills/{skill}/SKILL.md → {dest}/{skill}.md (flattened)
 
 script/push-registry.rb
@@ -77,20 +77,20 @@ reference/  CITATIONS from the site — verbatim quotes, claim mapping
 
 ## Session reports — improvement loop (obligatory)
 
-Every session on a bootstrapped project writes `report/{YYYYMMDD}-{HHMMSS}.md` per `report/report-template.md`: what was done, decisions, errors found, findings, open edges, todo state. Errors and findings feed template fixes; `templates.db` records per-session counts
+Every session on the codex project writes `_codex/_bitacora/task-report/{YYYYMMDD}-{HHMMSS}-{topic}.md`: what was done, decisions, errors found, findings, open edges, todo state. Errors and findings feed template fixes; `templates.db` records per-session counts
 
 ## Template inventory
 
 `*template.md` files sit at the root — one per layer plus infrastructure:
 
-- bootstrap: AGENTS.template.md, script/scaffold-knowledge.sh, script/copy-skills.sh
+- bootstrap: AGENTS.template.md, shell/scaffold-knowledge.sh, shell/copy-skills.sh
 - layers: format, precept, procedure, research, concept, note, bitacora, glossary, schema, reference, fixtures, practice
 - codex dive layers: pattern-template.md, atomic-script-template.sh, precedence-chain.md, invariant-template.md, guideline-template.md, study-template.md, fixture-template.md, backup-template.md, dive-agents-template.md, dive-naming-conventions-template.md
 - codex dive pattern instances: pattern/ (wrapper-delegation, shared-deps-binary, atomic-tool-contract, location-aware-walk-up, bitacora-log-framing, mcp-tool-server, keyed-line-handoff, process-launch-health, browser-cdp-probe, dive-copy-carrier, walk-up-shim) + pattern/composition/ (shared-binary-composition, slugify-composition)
 - codex dive precepts: precept-verify-qalc-template.md, precept-record-metrics-template.md, precept-run-fixtures-template.md, precept-atomic-documents-template.md, precept-use-ripgrep-template.md, precept-use-shared-browser-template.md
 - conventions: naming-conventions, write-report, browse-playwright, anchor-workflow
-- infrastructure: schema-template.sql, push-script-template.rb, report-template.md
-- tooling: shell/run-logged.sh, shell/slugify.sh, shell/start-browser.sh, shell/start-browser-headless.sh (copied into dives by script/copy-templates.sh)
+- infrastructure: schema-template.sql, push-script-template.rb
+- tooling: shell/run-logged.sh, shell/slugify.sh, shell/start-browser.sh, shell/start-browser-headless.sh, shell/copy-templates.sh (copied into dives by shell/copy-templates.sh)
 
 ## Delegation
 

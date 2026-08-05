@@ -10,14 +10,11 @@
 set -euo pipefail
 
 TARGET="${1:?target-dir required}"
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-case "$SCRIPT_DIR" in
-  */_templates/shell|*/_templates/script) CODEX_TEMPLATES="$(cd "$SCRIPT_DIR/.." && pwd)" ;;
-  */_templates) CODEX_TEMPLATES="$SCRIPT_DIR" ;;
-  *) echo "ERROR copy-templates.sh must live under _codex/_templates[/shell|/script]" >&2; exit 1 ;;
-esac
+# shellcheck source=deps/paths.sh
+. "$(cd "$(dirname "$0")" && pwd)/deps/paths.sh"
+root_vars "$(cd "$(dirname "$0")" && pwd)"
+CODEX_TEMPLATES="$TEMPLATES"
 KNOWLEDGE_SOURCE="$(cd "$CODEX_TEMPLATES/../../_knowledge/_templates" && pwd)"
-
 mkdir -p "$TARGET"
 cp -a "$KNOWLEDGE_SOURCE/." "$TARGET/"
 echo "COPY   $KNOWLEDGE_SOURCE → $TARGET"
