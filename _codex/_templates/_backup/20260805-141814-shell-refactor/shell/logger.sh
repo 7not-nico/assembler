@@ -18,14 +18,21 @@ log_open() {
   local stdout_dir="$CODEX/_bitacora/task-stdout"
   mkdir -p "$stdout_dir"
   LOG="$stdout_dir/$(date +%Y%m%d-%H%M%S)-$name.log"
-  printf '# CMD: %s\n# DATE: %s\n# CWD: %s\n# --------------------\n' \
-    "$(printf '%q ' "$@")" "$(date -Is)" "$(pwd)" | tee "$LOG"
+  CMD="$(printf '%q ' "$@")"
+  {
+    echo "# CMD: $CMD"
+    echo "# DATE: $(date -Is)"
+    echo "# CWD: $(pwd)"
+    echo "# --------------------"
+  } | tee "$LOG"
   START="$(date +%s%N)"
 }
 
 log_close() {
   local status="$1"
-  printf '# DUR: %dms\n# DATE: %s\n# exit: %s\n' \
-    "$((($(date +%s%N) - START) / 1000000))" "$(date -Is)" "$status" | tee -a "$LOG"
+  DUR="$(($(($(date +%s%N) - START)) / 1000000))ms"
+  echo "# DUR: $DUR" | tee -a "$LOG"
+  echo "# DATE: $(date -Is)" | tee -a "$LOG"
+  echo "# exit: $status" | tee -a "$LOG"
   exit "$status"
 }

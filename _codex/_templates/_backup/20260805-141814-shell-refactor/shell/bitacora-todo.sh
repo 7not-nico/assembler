@@ -13,11 +13,19 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 . "$SCRIPT_DIR/deps/record.sh"
 
 TOPIC="${1:?topic required}"
+PROJECT_DESC="${2:-$TOPIC}"
 
 # work — one task only: open + write the todo record
 record_open task-todo "$TOPIC" || exit $?
 
-{ printf '# %s — todo\n\n**Date:** %s\n**Project:** %s\n\n## Tasks\n\n' \
-    "$TOPIC" "$(date +%Y-%m-%d)" "${2:-$TOPIC}"; } > "$RECORD"
+{
+  echo "# $TOPIC — todo"
+  echo
+  echo "**Date:** $(date +%Y-%m-%d)"
+  echo "**Project:** $PROJECT_DESC"
+  echo
+  echo "## Tasks"
+  echo
+} > "$RECORD"
 
 echo "TODO=$RECORD"

@@ -17,10 +17,15 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 NAME="${1:?name required}"
 shift
 TRACE=""
-[ "${1:-}" = "--trace" ] && { TRACE=1; shift; }
-[ "${1:-}" = "--" ] && shift
-[ "$#" -gt 0 ] || { echo "command required" >&2; exit 1; }
+if [ "${1:-}" = "--trace" ]; then TRACE=1; shift; fi
+if [ "${1:-}" = "--" ]; then shift; fi
+if [ "$#" -eq 0 ]; then echo "command required" >&2; exit 1; fi
 
 log_open "$NAME" "$@"
-if [ -n "$TRACE" ]; then tracexec log -- "$@" 2>&1 | tee -a "$LOG"; else "$@" 2>&1 | tee -a "$LOG"; fi
+
+if [ -n "$TRACE" ]; then
+  tracexec log -- "$@" 2>&1 | tee -a "$LOG"
+else
+  "$@" 2>&1 | tee -a "$LOG"
+fi
 log_close "${PIPESTATUS[0]}"

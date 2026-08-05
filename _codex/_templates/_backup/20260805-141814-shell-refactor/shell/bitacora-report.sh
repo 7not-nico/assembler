@@ -14,11 +14,27 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 . "$SCRIPT_DIR/deps/record.sh"
 
 TOPIC="${1:?topic required}"
+PROJECT_DESC="${2:-$TOPIC}"
 
 # work — one task only: open + write the report record
 record_open task-report "$TOPIC" || exit $?
 
-{ printf '# %s — %s close-out\n\n**Date:** %s\n**Project:** %s\n\n## What happened\n\n## Decisions\n\n## Verification\n\n## Open edges\n\n## Todo state\n\n' \
-    "$(basename "$RECORD" .md)" "$TOPIC" "$(date +%Y-%m-%d)" "${2:-$TOPIC}"; } > "$RECORD"
+{
+  echo "# $(basename "$RECORD" .md) — $TOPIC close-out"
+  echo
+  echo "**Date:** $(date +%Y-%m-%d)"
+  echo "**Project:** $PROJECT_DESC"
+  echo
+  echo "## What happened"
+  echo
+  echo "## Decisions"
+  echo
+  echo "## Verification"
+  echo
+  echo "## Open edges"
+  echo
+  echo "## Todo state"
+  echo
+} > "$RECORD"
 
 echo "REPORT=$RECORD"
