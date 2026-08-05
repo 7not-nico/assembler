@@ -56,6 +56,7 @@ _depot/draw/
 # build artifacts inside tracked _folders stay out
 **/_rustlib/target/
 **/_golib/ann
+**/_shared/bin/
 
 # binary DBs inside tracked _folders stay out (substrate un-ignore re-includes _templates/**)
 _knowledge/_templates/schema/*.db

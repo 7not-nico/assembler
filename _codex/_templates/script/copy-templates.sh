@@ -48,5 +48,10 @@ if [ -d "$CODEX_TEMPLATES/shell/deps" ]; then
   cp -a "$CODEX_TEMPLATES/shell/deps" "$TARGET/deps"
   echo "COPY   $CODEX_TEMPLATES/shell/deps → $TARGET/deps"
 fi
+# _shared rides along — deps exec the _shared/bin Go binaries
+if [ -d "$CODEX_TEMPLATES/_shared" ]; then
+  cp -a "$CODEX_TEMPLATES/_shared" "$TARGET/_shared"
+  echo "COPY   $CODEX_TEMPLATES/_shared → $TARGET/_shared"
+fi
 
 echo "DONE   $TARGET"

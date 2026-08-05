@@ -14,7 +14,7 @@ set -uo pipefail
 log_open() {
   local name="$1"
   shift
-  resolve_codex "$SCRIPT_DIR"
+  codex_root "$SCRIPT_DIR"
   local stdout_dir="$CODEX/_bitacora/task-stdout"
   mkdir -p "$stdout_dir"
   LOG="$stdout_dir/$(date +%Y%m%d-%H%M%S)-$name.log"
