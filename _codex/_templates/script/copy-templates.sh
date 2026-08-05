@@ -5,16 +5,16 @@
 # (the 13-layer chain), then the codex-specific templates from
 # _codex/_templates/ (pattern, atomic-script, precedence-chain, tooling).
 # Location-aware: resolves the _codex root whether the script lives at
-# _templates/ or _templates/shell/ (template files at root, shells in shell/).
-# Adds/overwrites template files; leaves existing non-template files untouched.
+# _templates/, _templates/shell/, or _templates/script/ (template files at
+# root, shells in shell/, scripts in script/).
 set -euo pipefail
 
 TARGET="${1:?target-dir required}"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 case "$SCRIPT_DIR" in
-  */_templates/shell) CODEX_TEMPLATES="$(cd "$SCRIPT_DIR/.." && pwd)" ;;
+  */_templates/shell|*/_templates/script) CODEX_TEMPLATES="$(cd "$SCRIPT_DIR/.." && pwd)" ;;
   */_templates) CODEX_TEMPLATES="$SCRIPT_DIR" ;;
-  *) echo "ERROR copy-templates.sh must live under _codex/_templates[/shell]" >&2; exit 1 ;;
+  *) echo "ERROR copy-templates.sh must live under _codex/_templates[/shell|/script]" >&2; exit 1 ;;
 esac
 KNOWLEDGE_SOURCE="$(cd "$CODEX_TEMPLATES/../../_knowledge/_templates" && pwd)"
 
@@ -38,9 +38,9 @@ for f in "${CODEX_FILES[@]}"; do
   fi
 done
 for f in "${SHELL_FILES[@]}"; do
-  if [ -f "$SCRIPT_DIR/$f" ]; then
-    cp -a "$SCRIPT_DIR/$f" "$TARGET/$f"
-    echo "COPY   $SCRIPT_DIR/$f → $TARGET/$f"
+  if [ -f "$CODEX_TEMPLATES/shell/$f" ]; then
+    cp -a "$CODEX_TEMPLATES/shell/$f" "$TARGET/$f"
+    echo "COPY   $CODEX_TEMPLATES/shell/$f → $TARGET/$f"
   fi
 done
 
