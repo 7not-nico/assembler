@@ -1,9 +1,11 @@
-// exports: ENABLER_PATH, runEnabler
+// exports: ENABLER_PATH, SCHEMA_MCP_TIMEOUT, runEnabler
 // purity: io
 // The MCP bitacora server resolves _codex from its own location
 // (mcp/mcp-bitacora → _templates → _codex), then execs the shared enabler
 // under wrapper/enabler/bitacora.sh — the alias-citing shim over the
 // _shared/bin/bitacora Go binary. Keyed result lines pass through.
+// Constants come from the schema (instantiator/romsfun/schema/seed.sql) via
+// lookup.sh — never hardcoded here.
 import { execFileSync } from "node:child_process"
 import { dirname, join } from "node:path"
 import { fileURLToPath } from "node:url"
@@ -13,6 +15,20 @@ const HERE = dirname(fileURLToPath(import.meta.url))
 // _codex/_templates/wrapper/enabler/bitacora.sh (three levels up)
 export const ENABLER_PATH = join(HERE, "..", "..", "..", "wrapper", "enabler", "bitacora.sh")
 
+// _codex/_templates/instantiator/romsfun/schema/lookup.sh (five levels up)
+const SCHEMA_LOOKUP = join(HERE, "..", "..", "..", "instantiator", "romsfun", "schema", "lookup.sh")
+
+// cite the schema once at load: source lookup.sh, read the SCHEMA_* var
+function schemaValue(key: string): string {
+  const out = execFileSync("bash", ["-c", `. "${SCHEMA_LOOKUP}"; printf '%s' "\$${key}"`], {
+    encoding: "utf8",
+    stdio: ["ignore", "pipe", "pipe"],
+  })
+  return out.trim()
+}
+
+export const SCHEMA_MCP_TIMEOUT = Number(schemaValue("SCHEMA_MCP_TIMEOUT")) || 180
+
 export interface EnablerOutcome {
   ok: boolean
   exit: number
@@ -20,7 +36,7 @@ export interface EnablerOutcome {
   stderr: string
 }
 
-export function runEnabler(args: string[], timeoutSec = 180): EnablerOutcome {
+export function runEnabler(args: string[], timeoutSec = SCHEMA_MCP_TIMEOUT): EnablerOutcome {
   try {
     const stdout = execFileSync("bash", [ENABLER_PATH, ...args], {
       encoding: "utf8",

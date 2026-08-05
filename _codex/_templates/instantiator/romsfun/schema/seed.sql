@@ -24,4 +24,7 @@ INSERT OR IGNORE INTO shell_values (key, value, description) VALUES
   ('LAUNCH_LOG', '/tmp/opencode/emulator-launch.log', 'launch-emulator default log path'),
 
   -- fetch-download
-  ('FETCH_SELECTOR', 'a[href*="token="]', 'fetch-download default download anchor selector');
+  ('FETCH_SELECTOR', 'a[href*="token="]', 'fetch-download default download anchor selector'),
+
+  -- MCP servers
+  ('MCP_TIMEOUT', '180', 'MCP server tool-call timeout in seconds');
