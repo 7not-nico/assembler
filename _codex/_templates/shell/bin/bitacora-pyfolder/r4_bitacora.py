@@ -46,6 +46,9 @@ def record_write(rec: Record, body: str) -> Path:
 
 def cmd_run(name: str, trace: bool, cmd: Cmd) -> int:
     """Frame a command: header, run, tail. io: subprocess + log write."""
+    if not cmd:
+        print("command required", file=sys.stderr)
+        return 2
     base = root()
     stdout_dir = base / "_bitacora" / "task-stdout"
     stdout_dir.mkdir(parents=True, exist_ok=True)
