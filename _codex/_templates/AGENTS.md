@@ -23,11 +23,11 @@ shell/copy-skills.sh {dest-docs} {skill}...
 
 script/push-registry.rb
     registers templates (Layer:/Purpose:) and reports (error/finding counts)
-    into schema/templates.db
+    into script/schema/templates.db
 
 script/semantic-embed.ts [--force]
     embeds template purpose+content and report content into
-    schema/templates-vector.db (bun:sqlite, reuses ../../../.opencode/_lib/embed.ts)
+    script/schema/templates-vector.db (bun:sqlite, reuses ../../../.opencode/_lib/embed.ts)
 
 script/semantic-search.ts --query TEXT [--k N] [--field purpose|content] [--alpha 0.55] [--ts]
     hybrid semantic + keyword search; Go binary worker default (3.8× faster),
@@ -42,10 +42,10 @@ _golib/ann.go — Go ANN worker, binary transport over stdin/stdout
 ## Databases
 
 ```text
-schema/templates.db           registry — templates (id, layer, purpose, file_path, kind),
-                              reports (id, project, errors, findings)
-schema/templates-vector.db    embeddings — (entity_id, field, vector, content_hash,
-                              model_version, source_file, source_mtime, updated)
+script/schema/templates.db           registry — templates (id, layer, purpose, file_path, kind),
+                                      reports (id, project, errors, findings)
+script/schema/templates-vector.db    embeddings — (entity_id, field, vector, content_hash,
+                                      model_version, source_file, source_mtime, updated)
 ```
 
 ## Precedence chain — obligatory
@@ -90,7 +90,7 @@ Every session on the codex project writes `_codex/_bitacora/task-report/{YYYYMMD
 - codex dive precepts: precept-verify-qalc-template.md, precept-record-metrics-template.md, precept-run-fixtures-template.md, precept-atomic-documents-template.md, precept-use-ripgrep-template.md, precept-use-shared-browser-template.md
 - conventions: naming-conventions, write-report, browse-playwright, anchor-workflow
 - infrastructure: schema-template.sql, push-script-template.rb
-- tooling: shell/run-logged.sh, shell/slugify.sh, shell/start-browser.sh, shell/start-browser-headless.sh, shell/copy-templates.sh (copied into dives by shell/copy-templates.sh)
+- tooling: shell/run-logged.sh, shell/slugify.sh, shell/start-browser.sh, shell/start-browser-headless.sh, shell/copy-templates.sh, shell/copy-skills.sh, shell/scaffold-knowledge.sh, shell/fetch-repo.sh; one-off wrappers under wrapper/one-off/
 
 ## Delegation
 
