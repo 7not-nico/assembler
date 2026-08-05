@@ -6,9 +6,7 @@ import { Database } from "bun:sqlite"
 import { vector } from "../../../.opencode/_lib/embed.ts"
 import * as path from "node:path"
 import * as fs from "node:fs"
-
-const ROOT = path.resolve(import.meta.dir, "..")
-const DB_PATH = path.join(ROOT, "schema", "templates-vector.db")
+import { DB_PATH } from "./deps/paths.ts"
 
 // ANN backend: default Go binary transport (3.8× faster at scale); --ts forces in-process
 // TS; falls back to TS on Go errors.

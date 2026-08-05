@@ -6,9 +6,8 @@ import { Database } from "bun:sqlite"
 import { vector } from "../../../.opencode/_lib/embed.ts"
 import { hit } from "../../../.opencode/_lib/score.ts"
 import * as path from "node:path"
+import { DB_PATH } from "./deps/paths.ts"
 
-const ROOT = path.resolve(import.meta.dir, "..")
-const DB_PATH = path.join(ROOT, "schema", "templates-vector.db")
 const N = parseInt(process.argv.find(a => a.startsWith("--queries="))?.split("=")[1] || "30", 10)
 const FIELD = process.argv.find(a => a.startsWith("--field="))?.split("=")[1] || "content"
 

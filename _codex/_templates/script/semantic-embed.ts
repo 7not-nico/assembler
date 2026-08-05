@@ -7,12 +7,10 @@ import { vector } from "../../../.opencode/_lib/embed.ts"
 import { createHash } from "node:crypto"
 import * as fs from "node:fs"
 import * as path from "node:path"
+import { ROOT, DB_PATH, REG_PATH } from "./deps/paths.ts"
 
-const ROOT = path.resolve(import.meta.dir, "..")
 const MODEL = "Xenova/bge-small-en-v1.5"
 const DIM = 384
-const DB_PATH = path.join(ROOT, "schema", "templates-vector.db")
-const REG_PATH = path.join(ROOT, "schema", "templates.db")
 const FORCE = process.argv.includes("--force")
 
 const db = new Database(DB_PATH)

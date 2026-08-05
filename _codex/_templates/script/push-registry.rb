@@ -6,7 +6,7 @@ require 'sqlite3'
 require 'json'
 require 'pathname'
 
-DB_PATH = File.join(__dir__, '..', 'schema', 'templates.db')
+DB_PATH = File.join(__dir__, 'schema', 'templates.db')
 TPL_DIR = File.join(__dir__, '..')
 db      = SQLite3::Database.new(DB_PATH)
 
@@ -38,7 +38,7 @@ begin
 rescue SQLite3::SQLException; end
 
 # Ensure schema exists (additive — ALTER for new columns on existing DB)
-schema = File.read(File.join(__dir__, '..', 'schema', 'templates.sql'))
+schema = File.read(File.join(__dir__, 'schema', 'templates.sql'))
 db.execute_batch(schema)
 
 # Chain position lookup — layer name → chain order (1..13); infra = nil

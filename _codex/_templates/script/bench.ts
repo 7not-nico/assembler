@@ -6,10 +6,8 @@ import { Database } from "bun:sqlite"
 import { vector } from "../../../.opencode/_lib/embed.ts"
 import * as path from "node:path"
 import * as fs from "node:fs"
+import { DB_PATH, BIN } from "./deps/paths.ts"
 
-const ROOT = path.resolve(import.meta.dir, "..")
-const DB_PATH = path.join(ROOT, "schema", "templates-vector.db")
-const BIN = path.join(ROOT, "_rustlib", "target", "release", "tpl-ann")
 const FIELD = process.argv.find(a => a.startsWith("--field="))?.split("=")[1] || "content"
 
 const SUITE: [string, string[]][] = [
