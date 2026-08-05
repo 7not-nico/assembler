@@ -28,7 +28,7 @@ status: active
 
 ## Enforced by
 
-{links to precept/pattern/procedure files that keep the system inside the invariant's allowed states}
+{links to precept/morphism/procedure files that keep the system inside the invariant's allowed states}
 
 ## Instance
 

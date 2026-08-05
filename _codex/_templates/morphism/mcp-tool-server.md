@@ -1,7 +1,7 @@
 ---
 id: PATTERN.MCP.TOOL.SERVER
 title: MCP Tool Server — Protocol Layer Wraps Canonical Tools
-layer: pattern/
+layer: morphism/
 purpose: "An MCP server wraps a CLI tool suite: protocol in TypeScript, tool logic in the canonical shell layer, _lib execs shared wrappers."
 naming: mcp-tool-server.md
 tags: [pattern, morphism, mcp, server, tools]
@@ -9,9 +9,9 @@ status: active
 ---
 # MCP-TOOL-SERVER.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `mcp-tool-server.md` — code morphism, reusable structure.
-**Composes with:** `pattern/wrapper-delegation.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/wrapper-delegation.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

@@ -1,7 +1,7 @@
 ---
 id: PATTERN.COMPOSITION.BITACORA.FLOW
 title: Bitacora Flow Composition — Record, Frame, Port, Wrap
-layer: pattern/composition/
+layer: morphism/composition/
 purpose: "How the bitacora flow composes: record-lifecycle opens, stream-tee-frame frames, purity-port-pipeline proves+ports, wrapper-delegation exposes."
 naming: bitacora-flow-composition.md
 tags: [pattern, composition, morphism, bitacora, flow, record, frame]
@@ -9,9 +9,9 @@ status: active
 ---
 # BITACORA-FLOW-COMPOSITION.md
 
-**Layer:** pattern/composition/
+**Layer:** morphism/composition/
 **Naming:** `bitacora-flow-composition.md` — code morphism, reusable structure.
-**Composes with:** `pattern/composition/shared-binary-composition.md` (base form); derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/composition/shared-binary-composition.md` (base form); derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

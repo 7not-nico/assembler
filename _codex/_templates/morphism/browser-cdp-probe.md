@@ -1,7 +1,7 @@
 ---
 id: PATTERN.BROWSER.CDP.PROBE
 title: Browser CDP Probe — One Instance, Port Probe, Connect
-layer: pattern/
+layer: morphism/
 purpose: "A shared persistent Chromium runs one instance per profile on a CDP port; tools probe the port first, guard the profile lock, then connect over CDP."
 naming: browser-cdp-probe.md
 tags: [pattern, morphism, browser, cdp, probe, chromium]
@@ -9,9 +9,9 @@ status: active
 ---
 # BROWSER-CDP-PROBE.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `browser-cdp-probe.md` — code morphism, reusable structure.
-**Composes with:** `pattern/shared-deps-binary.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/shared-deps-binary.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

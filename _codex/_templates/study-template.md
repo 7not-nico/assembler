@@ -12,7 +12,7 @@ status: active
 **Layer:** study/
 **Naming:** `{domain}-architecture.md` or `{topic}.md` — how the codebase and its extensions work.
 **Concern:** {the one atomic concern this file covers}.
-**Composes with:** `backup/` (pre-edit restore point referenced), `concept/{concept}.md`, `pattern/{morphism}.md`, `procedure/{action}-{domain}.md`.
+**Composes with:** `backup/` (pre-edit restore point referenced), `concept/{concept}.md`, `morphism/{morphism}.md`, `procedure/{action}-{domain}.md`.
 
 ## Grounding
 

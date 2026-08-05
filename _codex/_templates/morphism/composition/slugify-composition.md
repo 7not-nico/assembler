@@ -1,7 +1,7 @@
 ---
 id: PATTERN.COMPOSITION.SLUGIFY
 title: Slugify Composition — Byte-Wise ASCII Dash Slug
-layer: pattern/composition/
+layer: morphism/composition/
 purpose: "How the slugify binary composes: byte-wise ASCII walk, dash collapse, single trailing extension preserved, three implementations collapsed into one."
 naming: slugify-composition.md
 tags: [pattern, composition, morphism, binary, slugify]
@@ -9,9 +9,9 @@ status: active
 ---
 # SLUGIFY-COMPOSITION.md
 
-**Layer:** pattern/composition/
+**Layer:** morphism/composition/
 **Naming:** `slugify-composition.md` — code morphism, reusable structure.
-**Composes with:** `pattern/composition/shared-binary-composition.md` (base form); derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/composition/shared-binary-composition.md` (base form); derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

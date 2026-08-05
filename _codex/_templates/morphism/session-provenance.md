@@ -1,7 +1,7 @@
 ---
 id: PATTERN.SESSION.PROVENANCE
 title: Session Provenance — Run-Local ID, Rich Header, Trace-Opt-In
-layer: pattern/
+layer: morphism/
 purpose: "A logged run carries a run-local session id plus the full provenance header — ENV, TOOLS, PID, GIT, BRANCH — and trace opts in only when asked."
 naming: session-provenance.md
 tags: [pattern, morphism, provenance, session, bitacora, header]
@@ -9,9 +9,9 @@ status: active
 ---
 # SESSION-PROVENANCE.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `session-provenance.md` — code morphism, reusable structure.
-**Composes with:** `pattern/bitacora-log-framing.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/bitacora-log-framing.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

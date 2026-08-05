@@ -16,7 +16,7 @@ status: active
 ## Chain — obligatory
 
 ```text
-mcp/ → invariant/ → scripts/ → _bitacora/ → precept/ → backup/ → study/ → concept/ → fixture/ → pattern/ → procedure/
+mcp/ → invariant/ → scripts/ → _bitacora/ → precept/ → backup/ → study/ → concept/ → fixture/ → morphism/ → procedure/
 ```
 
 Each layer precedes the next; a task advances through the chain in order. The chain is the same for every code-dive project in `_codex/`.
@@ -29,7 +29,7 @@ Rings follow an ordinal order. Layers inside rings follow the chain order. Rings
 ring 0  foundation             invariant/ → scripts/
 ring 1  record + governance    _bitacora/ → precept/
 ring 2  safety + understanding backup/ → study/ → concept/
-ring 3  proof + structure + steps  fixture/ → pattern/ → procedure/
+ring 3  proof + structure + steps  fixture/ → morphism/ → procedure/
 ```
 
 ## Layer roles
@@ -43,7 +43,7 @@ ring 3  proof + structure + steps  fixture/ → pattern/ → procedure/
 - `study/` — architecture documents. How the codebase and its extensions work. Precedes the concept and the morphism.
 - `concept/` — one-concept-per-file knowledge grounded in `study/`. Distills the architecture into named ideas before proof.
 - `fixture/` — atomic regression harnesses. Prove components before integration; rerun after changes. Precedes the morphism.
-- `pattern/` — code morphisms. Reusable structures derived from study + fixture proof.
+- `morphism/` — code morphisms. Reusable structures derived from study + fixture proof.
 - `procedure/` — numbered step chains. Atomic per workflow. The morphism informs the steps.
 
 ## Rationale

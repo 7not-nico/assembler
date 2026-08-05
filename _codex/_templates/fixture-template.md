@@ -11,7 +11,7 @@ status: active
 
 **Layer:** fixture/
 **Naming:** `{action}-{domain}-test.{ext}` — atomic regression harness.
-**Composes with:** `study/{domain}-architecture.md`, `pattern/{morphism}.md`; rerun after any change in its domain.
+**Composes with:** `study/{domain}-architecture.md`, `morphism/{morphism}.md`; rerun after any change in its domain.
 
 ## Header contract
 

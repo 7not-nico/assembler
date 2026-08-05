@@ -58,10 +58,10 @@ script/schema/templates-vector.db    embeddings — (entity_id, field, vector, c
 `_templates/` runs its own chain. Shared primitives precede deps; deps precede tools; tools precede wrappers; the MCP server wraps the wrappers; pattern docs derive from the toolchain's proven structures:
 
 ```text
-_shared/ → deps/ → shell/ + script/ + instantiator/ → wrapper/ → mcp/ → pattern/
+_shared/ → deps/ → shell/ + script/ + instantiator/ → wrapper/ → mcp/ → morphism/
 ```
 
-Each step depends on the ones before it. A tool task advances through the chain in order: resolve primitives, source deps, implement canonical logic, expose via wrapper, register in MCP when the tool earns it, document the morphism in pattern/ when the structure proves reusable.
+Each step depends on the ones before it. A tool task advances through the chain in order: resolve primitives, source deps, implement canonical logic, expose via wrapper, register in MCP when the tool earns it, document the morphism in morphism/ when the structure proves reusable.
 
 Scaffolds emit the 13-layer knowledge chain (`format/ → precept/ → procedure/ → research/ → concept/ → note/ → bitacora/ → glossary/ → schema/ → script/ → reference/ → fixtures/ → practice/`). The `_templates/` project is that chain's source, not a member.
 
@@ -79,7 +79,7 @@ r3  go + rust   _shared/ — codexroot, portup, slugify Go binaries
                 _rustlib/ — tpl-ann ANN worker
 ```
 
-Directory roles (r0 language, canonical home): `shell/` bash tools; `script/` ruby/ts tasks + schema; `instantiator/` canonical shared code for projects; `wrapper/` thin interfaces (workflow) + `wrapper/one-off/` (bootstrap); `_shared/` Go primitives; `pattern/` morphism docs + `pattern/composition/`.
+Directory roles (r0 language, canonical home): `shell/` bash tools; `script/` ruby/ts tasks + schema; `instantiator/` canonical shared code for projects; `wrapper/` thin interfaces (workflow) + `wrapper/one-off/` (bootstrap); `_shared/` Go primitives; `morphism/` morphism docs + `morphism/composition/`.
 
 A task starts at r0 (bash). It moves one ring outward when the current ring does not suffice — r1 for schema scripts, r2 for OpenCode extension, r3 for high-performance binaries. Ring r3 terminates the chain; no ring beyond it exists.
 
@@ -112,7 +112,7 @@ Every session on the codex project writes `_codex/_bitacora/task-report/{YYYYMMD
 - bootstrap: AGENTS.template.md, shell/scaffold-knowledge.sh, shell/copy-skills.sh
 - layers: format, precept, procedure, research, concept, note, bitacora, glossary, schema, reference, fixtures, practice
 - codex dive layers: pattern-template.md, atomic-script-template.sh, precedence-chain.md, invariant-template.md, guideline-template.md, study-template.md, fixture-template.md, backup-template.md, dive-agents-template.md, dive-naming-conventions-template.md
-- codex dive pattern instances: pattern/ (wrapper-delegation, shared-deps-binary, atomic-tool-contract, location-aware-walk-up, bitacora-log-framing, mcp-tool-server, keyed-line-handoff, process-launch-health, browser-cdp-probe, dive-copy-carrier, walk-up-shim, stream-tee-frame, record-lifecycle, internal-shared-package, purity-port-pipeline, ring-prefixed-module) + pattern/composition/ (shared-binary-composition, slugify-composition, bitacora-flow-composition)
+- codex dive pattern instances: morphism/ (wrapper-delegation, shared-deps-binary, atomic-tool-contract, location-aware-walk-up, bitacora-log-framing, mcp-tool-server, keyed-line-handoff, process-launch-health, browser-cdp-probe, dive-copy-carrier, walk-up-shim, stream-tee-frame, record-lifecycle, internal-shared-package, purity-port-pipeline, ring-prefixed-module, record-kind-taxonomy, close-report-handoff, record-find-search) + morphism/composition/ (shared-binary-composition, slugify-composition, bitacora-flow-composition)
 - codex dive precepts: precept-verify-qalc-template.md, precept-record-metrics-template.md, precept-run-fixtures-template.md, precept-atomic-documents-template.md, precept-use-ripgrep-template.md, precept-use-shared-browser-template.md
 - conventions: naming-conventions, write-report, browse-playwright, anchor-workflow
 - infrastructure: schema-template.sql, push-script-template.rb

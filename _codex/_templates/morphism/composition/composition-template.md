@@ -1,7 +1,7 @@
 ---
 id: TEMPLATE.COMPOSITION
 title: Composition Template — Shared Binary Form
-layer: pattern/composition/
+layer: morphism/composition/
 purpose: "Atomic composition template: the shared-binary composition chain, declaration contract, and a session instance."
 naming: action-domain.md
 tags: [template, composition, morphism, binary]
@@ -9,9 +9,9 @@ status: active
 ---
 # {ACTION}-{DOMAIN}.md
 
-**Layer:** pattern/composition/
+**Layer:** morphism/composition/
 **Naming:** `action-domain.md` — code morphism, reusable structure.
-**Composes with:** `pattern/shared-deps-binary.md` (base form); derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/shared-deps-binary.md` (base form); derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

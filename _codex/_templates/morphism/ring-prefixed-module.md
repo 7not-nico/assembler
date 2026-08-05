@@ -1,7 +1,7 @@
 ---
 id: PATTERN.RING.PREFIXED.MODULE
 title: Ring-Prefixed Module — Purity and Ring in the Name
-layer: pattern/
+layer: morphism/
 purpose: "A flow splits into ring-prefixed modules — r0_ pure core, r4_ io edge, r4- executable — the ring and purity read from the filename itself."
 naming: ring-prefixed-module.md
 tags: [pattern, morphism, ring, purity, module, naming]
@@ -9,9 +9,9 @@ status: active
 ---
 # RING-PREFIXED-MODULE.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `ring-prefixed-module.md` — code morphism, reusable structure.
-**Composes with:** `pattern/purity-port-pipeline.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/purity-port-pipeline.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

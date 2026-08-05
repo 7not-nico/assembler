@@ -1,7 +1,7 @@
 ---
 id: PATTERN.INPUT.FINGERPRINT
 title: Input Fingerprint — Prove What a Run Consumed
-layer: pattern/
+layer: morphism/
 purpose: "A logged run fingerprints its declared inputs (--in f1,f2) as per-file sha256 — the record proves exactly what the run consumed."
 naming: input-fingerprint.md
 tags: [pattern, morphism, fingerprint, sha256, inputs, provenance]
@@ -9,9 +9,9 @@ status: active
 ---
 # INPUT-FINGERPRINT.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `input-fingerprint.md` — code morphism, reusable structure.
-**Composes with:** `pattern/session-provenance.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/session-provenance.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

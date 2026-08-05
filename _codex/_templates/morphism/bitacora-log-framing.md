@@ -1,7 +1,7 @@
 ---
 id: PATTERN.BITACORA.LOG.FRAMING
 title: Bitacora Log Framing — Header, Live Stream, Exit Tail
-layer: pattern/
+layer: morphism/
 purpose: "A command runs through a log frame that writes a provenance header, streams output live, and appends duration + exit tail."
 naming: bitacora-log-framing.md
 tags: [pattern, morphism, bitacora, logging]
@@ -9,9 +9,9 @@ status: active
 ---
 # BITACORA-LOG-FRAMING.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `bitacora-log-framing.md` — code morphism, reusable structure.
-**Composes with:** `pattern/atomic-tool-contract.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/atomic-tool-contract.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

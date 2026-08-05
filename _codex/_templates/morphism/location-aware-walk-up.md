@@ -1,7 +1,7 @@
 ---
 id: PATTERN.LOCATION.AWARE.WALKUP
 title: Location-Aware Walk-Up — Resolve from Own Location
-layer: pattern/
+layer: morphism/
 purpose: "A script resolves the shared root by walking up to a named ancestor from its own location."
 naming: location-aware-walk-up.md
 tags: [pattern, morphism, resolution, walk-up]
@@ -9,9 +9,9 @@ status: active
 ---
 # LOCATION-AWARE-WALK-UP.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `location-aware-walk-up.md` — code morphism, reusable structure.
-**Composes with:** `pattern/shared-deps-binary.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/shared-deps-binary.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

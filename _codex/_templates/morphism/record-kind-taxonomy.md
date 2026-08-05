@@ -1,7 +1,7 @@
 ---
 id: PATTERN.RECORD.KIND.TAXONOMY
 title: Record Kind Taxonomy — Six Kinds, One Naming Rule
-layer: pattern/
+layer: morphism/
 purpose: "A bitacora classifies records into kinds — todo, report, audit, plan, survey, reference — one naming rule per kind, seven folders in the record root."
 naming: record-kind-taxonomy.md
 tags: [pattern, morphism, record, kind, taxonomy, bitacora]
@@ -9,9 +9,9 @@ status: active
 ---
 # RECORD-KIND-TAXONOMY.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `record-kind-taxonomy.md` — code morphism, reusable structure.
-**Composes with:** `pattern/record-lifecycle.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/record-lifecycle.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

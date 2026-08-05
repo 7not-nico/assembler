@@ -1,7 +1,7 @@
 ---
 id: PATTERN.DIVE.COPY.CARRIER
 title: Dive Copy Carrier — Tooling Rides into Every Dive
-layer: pattern/
+layer: morphism/
 purpose: "copy-templates.sh carries the tool chain (shell files, deps/, _shared/) into a dive copy, so copied tooling resolves exactly like the canonical tree."
 naming: dive-copy-carrier.md
 tags: [pattern, morphism, copy, dive, carrier]
@@ -9,9 +9,9 @@ status: active
 ---
 # DIVE-COPY-CARRIER.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `dive-copy-carrier.md` — code morphism, reusable structure.
-**Composes with:** `pattern/location-aware-walk-up.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/location-aware-walk-up.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

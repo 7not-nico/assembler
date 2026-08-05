@@ -70,7 +70,7 @@ Every `{layer}/` file carries exactly these blocks — nothing more, nothing les
 
 ## Enforced by
 
-{links to precept/pattern/procedure files that keep the system inside the invariant's allowed states}
+{links to precept/morphism/procedure files that keep the system inside the invariant's allowed states}
 
 ## Instance
 
@@ -82,7 +82,7 @@ Every `{layer}/` file carries exactly these blocks — nothing more, nothing les
 {numbered rules governing what files in this layer may and may not contain — especially what they must not restate from other layers}
 
 Example (invariant layer):
-1. A file keeps steps, structure, and rules in their owning layers — procedure/pattern/precept hold them. Repetition collides with those layers.
+1. A file keeps steps, structure, and rules in their owning layers — procedure/morphism/precept hold them. Repetition collides with those layers.
 2. A file always cites its enforcing layers — the Enforced by block is mandatory.
 3. Every file carries exactly one predicate — atomicity per `MAX.ATOMIC.CONCERN`.
 4. A candidate that describes conduct classifies as a precept. The test: does it assert a state fact, or command an action?

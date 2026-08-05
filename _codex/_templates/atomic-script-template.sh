@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # {action}-{subject}.sh — ONE task, line-protocol out, non-zero on failure
 # Usage: bash {action}-{subject}.sh {arg} [--timeout {seconds}]
-# Atomic unit contract (pattern/atomic-composition):
+# Atomic unit contract (morphism/atomic-composition):
 #   - one responsibility per script
 #   - args in, keyed result line out (KEY=value), stderr diagnostics
 #   - non-zero exit on any failure

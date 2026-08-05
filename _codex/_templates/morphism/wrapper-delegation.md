@@ -1,7 +1,7 @@
 ---
 id: PATTERN.WRAPPER.DELEGATION
 title: Wrapper Delegation — Thin Entry, Canonical Delegate
-layer: pattern/
+layer: morphism/
 purpose: "Thin entry points resolve the shared root from own location and delegate to one canonical implementation."
 naming: wrapper-delegation.md
 tags: [pattern, morphism, wrapper, delegation]
@@ -9,7 +9,7 @@ status: active
 ---
 # WRAPPER-DELEGATION.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `wrapper-delegation.md` — code morphism, reusable structure.
 **Composes with:** `procedure/wrapper-delegation.md`; derived from `study/` + `fixture/` proof.
 

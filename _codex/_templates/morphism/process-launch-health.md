@@ -1,7 +1,7 @@
 ---
 id: PATTERN.PROCESS.LAUNCH.HEALTH
 title: Process Launch Health — Detach, Grace, Verify
-layer: pattern/
+layer: morphism/
 purpose: "A long-running process detaches via setsid + nohup, then a grace period and kill -0 verify it lives; the result reports RUN=pid or FAIL."
 naming: process-launch-health.md
 tags: [pattern, morphism, launch, process, health]
@@ -9,9 +9,9 @@ status: active
 ---
 # PROCESS-LAUNCH-HEALTH.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `process-launch-health.md` — code morphism, reusable structure.
-**Composes with:** `pattern/atomic-tool-contract.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/atomic-tool-contract.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

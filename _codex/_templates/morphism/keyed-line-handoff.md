@@ -1,7 +1,7 @@
 ---
 id: PATTERN.KEYED.LINE.HANDOFF
 title: Keyed-Line Handoff — Machine Lines Carry Stage Facts
-layer: pattern/
+layer: morphism/
 purpose: "Pipeline stages hand off through keyed machine lines on stdout; each line carries one key=value fact for the next stage."
 naming: keyed-line-handoff.md
 tags: [pattern, morphism, keyed-line, pipeline]
@@ -9,9 +9,9 @@ status: active
 ---
 # KEYED-LINE-HANDOFF.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `keyed-line-handoff.md` — code morphism, reusable structure.
-**Composes with:** `pattern/atomic-tool-contract.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/atomic-tool-contract.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

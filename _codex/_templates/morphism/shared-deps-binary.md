@@ -1,7 +1,7 @@
 ---
 id: PATTERN.SHARED.DEPS.BINARY
 title: Shared Deps Binary — One Compiled Primitive, Many Rings
-layer: pattern/
+layer: morphism/
 purpose: "Code shared across rings compiles into parametrized Go binaries under _shared/, executed by each ring's deps layer."
 naming: shared-deps-binary.md
 tags: [pattern, morphism, shared, deps, go]
@@ -9,9 +9,9 @@ status: active
 ---
 # SHARED-DEPS-BINARY.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `shared-deps-binary.md` — code morphism, reusable structure.
-**Composes with:** `pattern/wrapper-delegation.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/wrapper-delegation.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

@@ -1,7 +1,7 @@
 ---
 id: PATTERN.RECORD.FIND.SEARCH
 title: Record Find Search — Regex Across Kinds, Status Attached
-layer: pattern/
+layer: morphism/
 purpose: "A find tool scans record names and contents across all kinds by regex, attaching each hit's status — the record set is searchable as one corpus."
 naming: record-find-search.md
 tags: [pattern, morphism, find, search, regex, record, bitacora]
@@ -9,9 +9,9 @@ status: active
 ---
 # RECORD-FIND-SEARCH.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `record-find-search.md` — code morphism, reusable structure.
-**Composes with:** `pattern/record-kind-taxonomy.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/record-kind-taxonomy.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

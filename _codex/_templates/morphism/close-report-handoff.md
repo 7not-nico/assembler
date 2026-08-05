@@ -1,7 +1,7 @@
 ---
 id: PATTERN.CLOSE.REPORT.HANDOFF
 title: Close-Report Handoff — Complete the Todo, Scaffold the Report
-layer: pattern/
+layer: morphism/
 purpose: "Closing a todo completes every pending item, stamps the status, and scaffolds the report in one atomic handoff — done state flows into the close-out."
 naming: close-report-handoff.md
 tags: [pattern, morphism, close, report, handoff, todo, bitacora]
@@ -9,9 +9,9 @@ status: active
 ---
 # CLOSE-REPORT-HANDOFF.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `close-report-handoff.md` — code morphism, reusable structure.
-**Composes with:** `pattern/record-lifecycle.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/record-lifecycle.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

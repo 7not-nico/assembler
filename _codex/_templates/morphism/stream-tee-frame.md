@@ -1,7 +1,7 @@
 ---
 id: PATTERN.STREAM.TEE.FRAME
 title: Stream-Tee Frame — Live Output, One Handle, No Buffer
-layer: pattern/
+layer: morphism/
 purpose: "A command frame streams output live to terminal and log through one handle via io.MultiWriter — no buffering, no reopen, mirroring bash tee."
 naming: stream-tee-frame.md
 tags: [pattern, morphism, streaming, tee, framing, go]
@@ -9,9 +9,9 @@ status: active
 ---
 # STREAM-TEE-FRAME.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `stream-tee-frame.md` — code morphism, reusable structure.
-**Composes with:** `pattern/bitacora-log-framing.md` (the frame it streams); derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/bitacora-log-framing.md` (the frame it streams); derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

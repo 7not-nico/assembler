@@ -29,7 +29,7 @@ This project dives the {repo} codebase — {one-sentence domain}. The dive {comp
 - `study/` holds architecture documents — one concern per file, each grounded with file:line anchors.
 - `concept/` holds one-concept-per-file knowledge grounded in `study/`.
 - `fixture/` holds atomic regression harnesses + source-registered test suites. Rerun after any change in their domain.
-- `pattern/` holds code morphisms. Each carries structure, verification, and a session instance.
+- `morphism/` holds code morphisms. Each carries structure, verification, and a session instance.
 - `procedure/` holds numbered step chains — one per code morphism. Procedures compose with patterns.
 - `_bitacora/` stores the shared record under `_codex/`. Every file carries the `{YYYYMMDD}-{HHMMSS}-` prefix.
 - `template/` holds the layer templates + precedences — the source of forms for new layer files; propagates via `shell/copy-templates.sh`.
@@ -68,7 +68,7 @@ Every quantitative claim in the dive's records passes qalc verification before r
 
 The dive's layers compose in a fixed order. Each layer precedes the next; a task advances through the chain.
 
-`mcp/` → `invariant/` → `scripts/` → `_bitacora/` → `precept/` → `backup/` → `study/` → `concept/` → `fixture/` → `pattern/` → `procedure/`
+`mcp/` → `invariant/` → `scripts/` → `_bitacora/` → `precept/` → `backup/` → `study/` → `concept/` → `fixture/` → `morphism/` → `procedure/`
 
 Rings follow an ordinal order. Layers inside rings follow the chain order. Rings proceed in sequence: ring 0, ring 1, ring 2, ring 3. Each ring's layers run in chain order before the next ring starts. A task crosses a ring boundary after the ring's layers hold in order:
 
@@ -76,7 +76,7 @@ Rings follow an ordinal order. Layers inside rings follow the chain order. Rings
 ring 0  foundation             invariant/ → scripts/
 ring 1  record + governance    _bitacora/ → precept/
 ring 2  safety + understanding backup/ → study/ → concept/
-ring 3  proof + structure + steps  fixture/ → pattern/ → procedure/
+ring 3  proof + structure + steps  fixture/ → morphism/ → procedure/
 ```
 
 MCP precedes all — the connected servers (browser, acquire, patlib) form the tooling substrate that exists before any dive layer is used. Invariants follow — the state facts the dive must preserve exist before any work. Scripts then execute the work under those invariants. Bitacora then opens the record: the todo plans the work before it starts. Precepts then govern. Backup precedes study — restore points exist before any architecture work on the source. Study, concept, and fixture precede pattern: understand the architecture, distill the named ideas, prove the components, then derive the morphism. Pattern precedes procedure: the structure informs the steps.
@@ -92,7 +92,7 @@ MCP precedes all — the connected servers (browser, acquire, patlib) form the t
 - `study/` — architecture documents. Precedes the concept and the morphism.
 - `concept/` — one-concept-per-file knowledge grounded in `study/`.
 - `fixture/` — atomic regression harnesses. Precedes the morphism.
-- `pattern/` — code morphisms. Derived from study + fixture proof.
+- `morphism/` — code morphisms. Derived from study + fixture proof.
 - `procedure/` — numbered step chains. The morphism informs the steps.
 - per-dive layers (`roms/`, etc.) — test assets and project-specific pickers.
 

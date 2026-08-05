@@ -1,7 +1,7 @@
 ---
 id: PATTERN.ATOMIC.TOOL.CONTRACT
 title: Atomic Tool Contract — One Responsibility, One Keyed Line
-layer: pattern/
+layer: morphism/
 purpose: "An atomic tool fulfills one responsibility, prints one keyed result line, exits non-zero on failure, runs cwd-independent."
 naming: atomic-tool-contract.md
 tags: [pattern, morphism, atomic, tool, contract]
@@ -9,9 +9,9 @@ status: active
 ---
 # ATOMIC-TOOL-CONTRACT.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `atomic-tool-contract.md` — code morphism, reusable structure.
-**Composes with:** `pattern/keyed-line-handoff.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/keyed-line-handoff.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

@@ -24,7 +24,7 @@ backup/     {repo}-src/ + {repo}-binary-{YYYYMMDD}-{HHMMSS} + study-monoliths/
 study/      {domain}-{concern}.md           e.g. gb-cpu-sm83.md
 concept/    {concept}.md                    e.g. event-driven-timing.md
 fixture/    {action}-{domain}-test.{ext}    e.g. probe-headers-test.sh
-pattern/    {morphism}.md                   e.g. browser-acquisition-pipeline.md
+morphism/    {morphism}.md                   e.g. browser-acquisition-pipeline.md
 procedure/  {action}-{domain}.md            e.g. acquire-gb-rom.md
 template/   *-template.md                   (see template naming below)
 _bitacora/  {YYYYMMDD}-{HHMMSS}-{topic}.md  e.g. 20260802-063915-codex-templates-improve.md

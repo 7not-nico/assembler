@@ -1,7 +1,7 @@
 ---
 id: PATTERN.PURITY.PORT.PIPELINE
 title: Purity-Split Port — Python Proof, Go Production
-layer: pattern/
+layer: morphism/
 purpose: "A flow proves in typed python (pure core + io edge), then ports to Go once sound — the same split carries over, structures map directly."
 naming: purity-port-pipeline.md
 tags: [pattern, morphism, purity, port, python, go]
@@ -9,9 +9,9 @@ status: active
 ---
 # PURITY-PORT-PIPELINE.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `purity-port-pipeline.md` — code morphism, reusable structure.
-**Composes with:** `pattern/shared-binary-composition.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/shared-binary-composition.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

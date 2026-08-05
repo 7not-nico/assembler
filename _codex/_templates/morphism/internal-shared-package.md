@@ -1,7 +1,7 @@
 ---
 id: PATTERN.INTERNAL.SHARED.PACKAGE
 title: Internal Shared Package — One Home for Cross-Binary Logic
-layer: pattern/
+layer: morphism/
 purpose: "Go binaries in one module share duplicated logic through an internal/ package — one home, thin cmd mains, both compile from the same source."
 naming: internal-shared-package.md
 tags: [pattern, morphism, go, internal, package, shared]
@@ -9,9 +9,9 @@ status: active
 ---
 # INTERNAL-SHARED-PACKAGE.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `internal-shared-package.md` — code morphism, reusable structure.
-**Composes with:** `pattern/shared-deps-binary.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/shared-deps-binary.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

@@ -1,7 +1,7 @@
 ---
 id: PATTERN.COMPOSITION.SHARED.BINARY
 title: Shared Binary Composition — One Module, One cmd, Gitignored Bin
-layer: pattern/composition/
+layer: morphism/composition/
 purpose: "A shared primitive composes as a single-main Go binary: declare, implement, build, ignore, consume, verify."
 naming: shared-binary-composition.md
 tags: [pattern, composition, morphism, binary, go]
@@ -9,9 +9,9 @@ status: active
 ---
 # SHARED-BINARY-COMPOSITION.md
 
-**Layer:** pattern/composition/
+**Layer:** morphism/composition/
 **Naming:** `shared-binary-composition.md` — code morphism, reusable structure.
-**Composes with:** `pattern/shared-deps-binary.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/shared-deps-binary.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

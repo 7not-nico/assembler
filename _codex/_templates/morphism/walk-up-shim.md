@@ -1,7 +1,7 @@
 ---
 id: PATTERN.WALKUP.SHIM
 title: Walk-Up Shim — Legacy Call Site, Shared Binary
-layer: pattern/
+layer: morphism/
 purpose: "A thin shim resolves _shared/bin by walk-up and execs the Go binary, so established call sites keep their path while the algorithm moves to the shared layer."
 naming: walk-up-shim.md
 tags: [pattern, morphism, shim, walk-up, shared, binary]
@@ -9,9 +9,9 @@ status: active
 ---
 # WALK-UP-SHIM.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `walk-up-shim.md` — code morphism, reusable structure.
-**Composes with:** `pattern/location-aware-walk-up.md` + `pattern/shared-binary-composition.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/location-aware-walk-up.md` + `morphism/shared-binary-composition.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

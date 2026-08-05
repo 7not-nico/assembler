@@ -1,7 +1,7 @@
 ---
 id: PATTERN.RECORD.LIFECYCLE
 title: Record Lifecycle — Todo, Log, Report, One Topic
-layer: pattern/
+layer: morphism/
 purpose: "A task's record opens as todo, grows with command logs, closes as report — timestamped names, no-clobber per topic, one lifecycle."
 naming: record-lifecycle.md
 tags: [pattern, morphism, record, lifecycle, bitacora, no-clobber]
@@ -9,9 +9,9 @@ status: active
 ---
 # RECORD-LIFECYCLE.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `record-lifecycle.md` — code morphism, reusable structure.
-**Composes with:** `pattern/atomic-tool-contract.md`; derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/atomic-tool-contract.md`; derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

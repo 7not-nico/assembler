@@ -1,7 +1,7 @@
 ---
 id: TEMPLATE.PATTERN
 title: Pattern Template — Code Morphism Form
-layer: pattern/
+layer: morphism/
 purpose: "Atomic code-morphism template: structure, verification, and a session instance."
 naming: action-domain.md
 tags: [template, pattern, morphism]
@@ -9,9 +9,9 @@ status: active
 ---
 # {ACTION}-{DOMAIN}.md
 
-**Layer:** pattern/
+**Layer:** morphism/
 **Naming:** `action-domain.md` — code morphism, reusable structure.
-**Composes with:** `pattern/composition/composition-template.md` (composition sub-layer); derived from `study/` + `fixture/` proof.
+**Composes with:** `morphism/composition/composition-template.md` (composition sub-layer); derived from `study/` + `fixture/` proof.
 
 ## Morphism
 
