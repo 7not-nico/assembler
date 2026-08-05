@@ -11,16 +11,19 @@
 #   N <url> | <name>            — numbered variant of the first match
 set -uo pipefail
 
+# shell/schema — the only home for hardcoded values; cite it, never hardcode
+. "$(cd "$(dirname "$0")" && pwd)/schema/lookup.sh"
+
 QUERY="${1:?game-name-or-slug required}"
 shift
-TIMEOUT="45"
+TIMEOUT="$SCHEMA_TIMEOUT_BROWSE"
 CONSOLE=""
-# valid romsfun console sections — the browse tool accepts only these
-VALID_CONSOLES="super-nintendo nintendo-64 nintendo-ds game-boy game-boy-advance game-boy-color nes sega-genesis sega-saturn playstation playstation-portable playstation-2"
+# valid romsfun console sections — from the schema, cited not duplicated
+VALID_CONSOLES="$SCHEMA_CONSOLE_VALID"
 while [ "$#" -gt 0 ]; do
 	case "$1" in
 	--timeout)
-		TIMEOUT="${2:-45}"
+		TIMEOUT="${2:-$SCHEMA_TIMEOUT_BROWSE}"
 		shift 2
 		;;
 	--*)

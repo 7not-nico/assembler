@@ -11,8 +11,10 @@
 set -uo pipefail
 
 . "$(cd "$(dirname "$0")" && pwd)/deps/browser.sh"
+# shell/schema — the only home for hardcoded values; cite it, never hardcode
+. "$(cd "$(dirname "$0")" && pwd)/../instantiator/schema/lookup.sh"
 
-PORT="${1:-9222}"
+PORT="${1:-$SCHEMA_CDP_PORT_HEADED}"
 
 if port_up "$PORT"; then
   echo "ALREADY browser on port $PORT"

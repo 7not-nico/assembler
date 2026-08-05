@@ -9,20 +9,22 @@
 set -uo pipefail
 
 . "$(cd "$(dirname "$0")" && pwd)/deps/browser.sh"
+# shell/schema — the only home for hardcoded values; cite it, never hardcode
+. "$(cd "$(dirname "$0")" && pwd)/../instantiator/schema/lookup.sh"
 
-PORT="${1:-9223}"
+PORT="${1:-$SCHEMA_CDP_PORT_HEADLESS}"
 
 if port_up "$PORT"; then
   echo "ALREADY headless browser on port $PORT"
   exit 0
 fi
 
-# profile lock: the headed shared browser (9222) holds the original profile —
+# profile lock: the headed shared browser holds the original profile —
 # one instance per profile. Stop it first or the launch aborts (SingletonLock).
 if [ -e "$PROFILE/SingletonLock" ]; then
-  if port_up 9222; then
-    echo "LOCK  headed browser holds the profile on 9222 — stop it first:" >&2
-    echo "      pkill -f 'remote-debugging-port=9222'" >&2
+  if port_up "$SCHEMA_CDP_PORT_HEADED"; then
+    echo "LOCK  headed browser holds the profile on $SCHEMA_CDP_PORT_HEADED — stop it first:" >&2
+    echo "      pkill -f 'remote-debugging-port=$SCHEMA_CDP_PORT_HEADED'" >&2
     exit 1
   fi
   rm -f "$PROFILE/SingletonLock" "$PROFILE/SingletonSocket" "$PROFILE/SingletonCookie"

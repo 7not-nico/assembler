@@ -9,9 +9,12 @@
 # ROM image. Result lines: OK=, IMAGE=, SIZE=, TITLE=.
 set -uo pipefail
 
+# shell/schema — the only home for hardcoded values; cite it, never hardcode
+. "$(cd "$(dirname "$0")" && pwd)/schema/lookup.sh"
+
 FILE="${1:?file required}"
 shift
-EXTS="sfc smc iso cso gba gb gbc nds dsi nes gen n64 bin"
+EXTS="$SCHEMA_IMAGE_EXTS"
 while [ "$#" -gt 0 ]; do
   case "$1" in
     --image-ext) EXTS="${2:-}"; shift 2 ;;

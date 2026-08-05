@@ -8,11 +8,14 @@
 # SAVEDPATH={path} as the last line. Cwd-independent.
 set -uo pipefail
 
+# shell/schema — the only home for hardcoded values; cite it, never hardcode
+. "$(cd "$(dirname "$0")" && pwd)/schema/lookup.sh"
+
 URL="${1:?url required}"
-TIMEOUT="${2:-60}"
+TIMEOUT="${2:-$SCHEMA_TIMEOUT_FETCH}"
 shift 2 2>/dev/null || shift 1
 OUT=""
-SEL='a[href*="token="]'
+SEL="$SCHEMA_FETCH_SELECTOR"
 while [ "$#" -gt 0 ]; do
 	case "$1" in
 	--out)

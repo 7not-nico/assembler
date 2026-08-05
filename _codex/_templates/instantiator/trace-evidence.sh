@@ -9,10 +9,13 @@
 # and the line count. Result lines: LINES=, EVIDENCE=, TRACE=.
 set -uo pipefail
 
+# shell/schema — the only home for hardcoded values; cite it, never hardcode
+. "$(cd "$(dirname "$0")" && pwd)/schema/lookup.sh"
+
 TRACE="${1:?trace file required}"
 shift
 PATFILE=""
-HEADN=20
+HEADN="$SCHEMA_TRACE_HEAD"
 while [ "$#" -gt 0 ]; do
   case "$1" in
     --patterns) PATFILE="${2:-}"; shift 2 ;;

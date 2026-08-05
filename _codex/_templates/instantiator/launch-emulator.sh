@@ -8,10 +8,13 @@
 # -l 127 for mGBA's log-level). Result lines: LAUNCH=, RUN=pid=..., or FAIL.
 set -uo pipefail
 
+# shell/schema — the only home for hardcoded values; cite it, never hardcode
+. "$(cd "$(dirname "$0")" && pwd)/schema/lookup.sh"
+
 BIN="${1:?binary path required}"
 ROM="${2:?rom path required}"
 shift 2
-LOG="/tmp/opencode/emulator-launch.log"
+LOG="$SCHEMA_LAUNCH_LOG"
 ENVS=()
 EMUARGS=()
 while [ "$#" -gt 0 ]; do
