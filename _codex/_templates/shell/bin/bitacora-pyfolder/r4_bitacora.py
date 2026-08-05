@@ -63,12 +63,18 @@ def cmd_run(name: str, trace: bool, cmd: Cmd) -> int:
     argv = ("tracexec", "log", "--", *cmd) if trace else cmd
     start = time.monotonic()
     try:
-        proc = subprocess.run(argv, stdin=None)
+        proc = subprocess.run(argv, capture_output=True, text=True)
     except FileNotFoundError:
         print(f"ERROR command not found: {cmd[0]}", file=sys.stderr)
         status = 127
     else:
         status = proc.returncode
+        with log_path.open("a") as fh:
+            fh.write(proc.stdout)
+            fh.write(proc.stderr)
+        print(proc.stdout, end="")
+        if proc.stderr:
+            print(proc.stderr, end="", file=sys.stderr)
     dur_ms = int((time.monotonic() - start) * 1000)
 
     tail = frame_tail(dur_ms, status, time.strftime("%Y-%m-%dT%H:%M:%S%z", time.localtime()))
