@@ -20,29 +20,37 @@ local seed = {}
 
 -- Lua patterns are not PCRE: match key + value up to the closing quote
 for line in io.lines(schema_file) do
-  local key, value = line:match("^%s*%('([A-Z0-9_]+)', '([^']*)',")
-  if key then seed[key] = value end
+	local key, value = line:match("^%s*%('([A-Z0-9_]+)', '([^']*)',")
+	if key then
+		seed[key] = value
+	end
 end
 
 function M.value(key)
-  local v = seed[key]
-  if v == nil then
-    error("schema miss: " .. key .. " not in " .. schema_file, 2)
-  end
-  return v
+	local v = seed[key]
+	if v == nil then
+		error("schema miss: " .. key .. " not in " .. schema_file, 2)
+	end
+	return v
 end
 
 -- typed domain constants
 M.VALID_CONSOLES = {}
-for c in M.value("CONSOLE_VALID"):gmatch("%S+") do M.VALID_CONSOLES[c] = true end
+for c in M.value("CONSOLE_VALID"):gmatch("%S+") do
+	M.VALID_CONSOLES[c] = true
+end
 M.IMAGE_EXTS = {}
-for e in M.value("IMAGE_EXTS"):gmatch("%S+") do M.IMAGE_EXTS[e] = true end
+for e in M.value("IMAGE_EXTS"):gmatch("%S+") do
+	M.IMAGE_EXTS[e] = true
+end
 M.TIMEOUT_BROWSE = tonumber(M.value("TIMEOUT_BROWSE"))
 M.TIMEOUT_FETCH = tonumber(M.value("TIMEOUT_FETCH"))
 M.TRACE_HEAD = tonumber(M.value("TRACE_HEAD"))
 M.LAUNCH_LOG = M.value("LAUNCH_LOG")
 M.FETCH_SELECTOR = M.value("FETCH_SELECTOR")
 M.TRACE_PATTERNS = {}
-for p in M.value("TRACE_PATTERNS"):gmatch("[^|]+") do M.TRACE_PATTERNS[#M.TRACE_PATTERNS + 1] = p end
+for p in M.value("TRACE_PATTERNS"):gmatch("[^|]+") do
+	M.TRACE_PATTERNS[#M.TRACE_PATTERNS + 1] = p
+end
 
 return M
