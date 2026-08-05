@@ -15,7 +15,7 @@ A programming-language question starts — dispatch to the per-language referenc
 - Match the language to its file — `ref/bash.md`, `ref/ruby.md`, `ref/go.md`, `ref/rust.md`, `ref/typescript.md`.
 - Read the file before code.
 - Apply the role test per `SPEC.LANGUAGE.ROLE.MAP` — schema SQL selects ruby; speed/binary/kernel selects rust or go; command/process sequencing selects bash; OpenCode extension selects typescript.
-- Apply the ring test per `SPEC.LANGUAGE.RING.TOPOLOGY` — start r0 (bash); escalate one ring outward when it does not suffice; r3 terminates the chain.
+- Apply the ring test per `RING.LANGUAGE.TOPOLOGY` — start r0 (bash); escalate one ring outward when it does not suffice; r3 terminates the chain.
 - Follow the file's style and naming per `SPEC.CODE.ELEMENT.NAME`.
 
 ## Gotchas

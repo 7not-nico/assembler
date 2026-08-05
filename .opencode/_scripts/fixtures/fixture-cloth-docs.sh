@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# exports: main
+# purity: io
+# depends-on: _sandbox/cloth-config
+# ring: 2 (LOCAL-READ) — probes local cloth-config repo structure
 # fixture-cloth-docs.sh — advanced: docs-vs-code conformance for cloth-config
 # Verifies the DOCUMENTED API (from Context7/gitbook, see report) against the
 # ACTUAL source in the clone. Three conformance checks:

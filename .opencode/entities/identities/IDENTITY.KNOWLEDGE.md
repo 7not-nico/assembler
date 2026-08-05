@@ -3,14 +3,14 @@
 ---
 id: IDENTITY.KNOWLEDGE
 title: Knowledge — Domain Corpus Container
-source: SPEC.DIRECTORY.RING.TOPOLOGY
+source: RING.DIRECTORY.TOPOLOGY
 group: composition
 ring: R1
 naming: _knowledge/{project}/
 tags: knowledge,domain,container,identity,corpus
-related: [IDENTITY.BITACORA, IDENTITY.CODEX, SPEC.DIRECTORY.RING.TOPOLOGY]
+related: [IDENTITY.BITACORA, IDENTITY.CODEX, RING.DIRECTORY.TOPOLOGY]
 reference:
-  - title: SPEC.DIRECTORY.RING.TOPOLOGY — ring placement
+  - title: RING.DIRECTORY.TOPOLOGY — ring placement
     url: https://opencode.ai/docs
   - title: PROT.KNOWLEDGE.DIRECTORY.SCHEMA — knowledge directory protocol
     url: https://opencode.ai/docs

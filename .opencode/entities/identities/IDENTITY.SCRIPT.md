@@ -12,7 +12,7 @@ related: [IDENTITY.RULE, IDENTITY.CLI, IDENTITY.IPC, IDENTITY.MCP, IDENTITY.PLUG
 reference:
   - title: SPEC.KNOWLEDGE.CLASSIFICATION.TOPOLOGY — groups, layers
     url: https://opencode.ai/docs
-  - title: SPEC.CODE.RING.TOPOLOGY — ring-based script classification
+  - title: RING.SCRIPT.TOPOLOGY — ring-based script classification
     url: https://opencode.ai/docs
   - title: MAX.RUBY.ONLY — Ruby-only runtime convention
     url: https://opencode.ai/docs

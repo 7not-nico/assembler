@@ -3,14 +3,14 @@
 ---
 id: IDENTITY.CODEX
 title: Codex — Codebase Exploration Container
-source: SPEC.DIRECTORY.RING.TOPOLOGY
+source: RING.DIRECTORY.TOPOLOGY
 group: composition
 ring: R1
 naming: _codex/{repo}-repo/{repo}/
 tags: code-dives,domain,container,identity,exploration
-related: [IDENTITY.KNOWLEDGE, IDENTITY.BITACORA, SPEC.DIRECTORY.RING.TOPOLOGY]
+related: [IDENTITY.KNOWLEDGE, IDENTITY.BITACORA, RING.DIRECTORY.TOPOLOGY]
 reference:
-  - title: SPEC.DIRECTORY.RING.TOPOLOGY — ring placement
+  - title: RING.DIRECTORY.TOPOLOGY — ring placement
     url: https://opencode.ai/docs
   - title: _codex/AGENTS.md — dive project instructions
     url: https://opencode.ai/docs

@@ -73,9 +73,9 @@ The entry IS the registration — no separate manifest, DB table, or registratio
 
 ### Step 3: Runtime auto-discovers the server
 
-On next session start, opencode reads `opencode.json`, launches `mcp-ludoteca` as a subprocess, and calls `initialize` per `PROT.MCP.TRANSPORT`. The server's `listTools` response returns `ludoteca_search` and `ludoteca_get`.
+On next session start, opencode reads `opencode.json`, launches `mcp-ludoteca` as a subprocess, and lists tools per `PROT.MCP.TRANSPORT`. The protocol is stateless — no `initialize` handshake; requests carry protocol version and capabilities in `_meta`. The server's `listTools` response returns `ludoteca_search` and `ludoteca_get`.
 
-Discovery flow: `opencode.json` → MCP subprocess → `initialize` handshake → `listTools` → tools available to LLM.
+Discovery flow: `opencode.json` → MCP subprocess → `listTools` → tools available to LLM.
 
 ### Step 4: LLM calls the tool
 

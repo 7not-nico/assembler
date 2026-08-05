@@ -1,4 +1,4 @@
-// exports: Root, Database, Store, Bin
+// exports: Root, Database, Store, Bin, GoSearch
 // purity: io
 // depends-on: fs, path
 
@@ -18,3 +18,4 @@ export const Root = root('.opencode')
 export const Database = join(Root, ".opencode", "patlib.db")
 export const Store = join(Root, ".opencode", "patlib-vector.db")
 export const Bin = join(Root, ".opencode", "_rustlib", "target", "release", "assemble")
+export const GoSearch = join(Root, ".opencode", "_scripts", "_golib", "bin", "patlib-search")

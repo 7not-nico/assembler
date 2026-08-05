@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# exports: main
+# purity: io
+# depends-on: .opencode/entities
+# ring: 2 (LOCAL-READ) — audits rule prose against communication rules
 # fixture-communication-rules.sh — audits rule prose against communication rules
 # Contract: KEY=value lines; last line carries RESULT=pass|fail:count
 # Style: bash, atomic units (MAX.ATOMIC.CONCERN)

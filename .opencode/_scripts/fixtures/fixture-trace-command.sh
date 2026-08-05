@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# exports: main
+# purity: io
+# depends-on: tracexec, bitacora-log.sh
+# ring: 4 (LOCAL-WRITE) — exercises the trace-enriched wrapper
 # fixture-trace-command.sh — exercises bitacora-log.sh --trace (enriched stream)
 # Shape: KEY=value contract; asserts the --trace run records the exec-tree
 # enriched stdout in the log: provenance header + tracexec exec lines + the

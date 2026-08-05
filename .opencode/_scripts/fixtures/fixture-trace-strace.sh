@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# exports: main
+# purity: io
+# depends-on: tracexec, bitacora-log.sh
+# ring: 4 (LOCAL-WRITE) — exercises the trace-enriched wrapper
 # fixture-trace-strace.sh — runs trace-strace.sh against the buggy fixture
 # Shape: KEY=value contract; asserts syscall-level signal: per-process exits
 # expose masked failures (127 command-not-found, 2 ls error) despite exit 0.

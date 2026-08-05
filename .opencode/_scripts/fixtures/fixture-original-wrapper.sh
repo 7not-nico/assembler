@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# exports: main
+# purity: io
+# depends-on: bitacora-log.sh
+# ring: 4 (LOCAL-WRITE) — exercises the original stdout wrapper
 # fixture-original-wrapper.sh — exercises bitacora-log.sh (trace-free default)
 # Shape: KEY=value contract; asserts the default wrapper emits the full
 # provenance header (15 metadata keys) with ZERO trace lines (no EXEC/PROGS/

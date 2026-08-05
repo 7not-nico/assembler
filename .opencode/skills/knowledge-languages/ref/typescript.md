@@ -2,7 +2,7 @@
 
 **Role** — TypeScript extends the OpenCode runtime: IPC tools, plugins, MCP servers under `.opencode/tools/`; shared `_lib/` modules; Bun runtime. `SPEC.LANGUAGE.ROLE.MAP` governs.
 
-**Ring** — r2. `SPEC.LANGUAGE.RING.TOPOLOGY` governs.
+**Ring** — r2. `RING.LANGUAGE.TOPOLOGY` governs.
 
 **Style**
 

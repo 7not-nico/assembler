@@ -16,7 +16,7 @@
 - existing tables and rows persist
 - runs as a git repository at `github.com/7not-nico/assembler`
 - `.gitignore` excludes runtime artifacts and binary media
-- `_atelier/` holds plain project folders per `SPEC.DIRECTORY.RING.TOPOLOGY`
+- `_atelier/` holds plain project folders per `RING.DIRECTORY.TOPOLOGY`
 - query flags live in `.opencode/_bitacora/task-reference/query-patlib.md`; schema in `entity-schema.md`
 - flow docs live in `.opencode/_scripts/dataflow/semantic-engine.md`
 
@@ -40,8 +40,8 @@
 - archived toolchain and plugins sit in `_disabled/`
 - `opencode.json` registers active servers only
 - tools declare `// @toolclass` per `SPEC.TOOL.CLASSIFICATION.AUTOMATON`
-- language choice follows `SPEC.LANGUAGE.ROLE.MAP` + `SPEC.LANGUAGE.RING.TOPOLOGY`
-- `_scripts/` rings follow `SPEC.CODE.RING.TOPOLOGY`
+- language choice follows `SPEC.LANGUAGE.ROLE.MAP` + `RING.LANGUAGE.TOPOLOGY`
+- `_scripts/` rings follow `RING.SCRIPT.TOPOLOGY`
 
 ### Semantic engine
 
@@ -62,10 +62,6 @@
 - ID segments follow `SPEC.ENTITY.SEGMENT.COUNT`
 - routing follows `SPEC.ENTITY.ROUTING.TABLE`
 - segment semantics follow `SPEC.ENTITY.DISCERNIBILITY.SEGMENT`
-- `.opencode/entities/patterns/` — `{PREFIX}.{DOMAIN}.{ASPECT}.md` — 3-segment uppercase dotted ID; pattern morphism entities; frontmatter with `morphism:`
-- `.opencode/entities/terms/` — `{PREFIX}.{DOMAIN}.{SUBJECT}.md` — 3-segment uppercase dotted ID; terms; backmatter
-- `.opencode/commands/` — `yamls/{verb}-{domain}.yaml` — verb-domain YAML registry
-- `.opencode/entities/maxims/` — `{PREFIX}.{DOMAIN}.{SUBJECT}.ASPECT.md` — 4-segment uppercase dotted ID; maxims; frontmatter
 
 ## Delegation
 

@@ -2,12 +2,12 @@
 
 **Role** — Ruby processes script tasks tied to a schema: `.opencode/_scripts/` and `script/` folders; it reads and writes through `.sql` definitions and sqlite3 databases. `SPEC.LANGUAGE.ROLE.MAP` governs.
 
-**Ring** — r1. `SPEC.LANGUAGE.RING.TOPOLOGY` governs.
+**Ring** — r1. `RING.LANGUAGE.TOPOLOGY` governs.
 
 **Style**
 
 - Compose pure functions; keep side effects light.
-- House fixtures under `.opencode/_scripts/fixtures`.
+- House bash fixtures under `.opencode/_scripts/fixtures`; ruby fixtures sit archived in `.opencode/_scripts/.archive/fixtures/`.
 
 **Format** — format before new work:
 
@@ -26,4 +26,4 @@
 
 **Select** — the task manipulates schema-backed data through SQL.
 
-**Escalate** — r1 moves to r2 (typescript) when the task needs the OpenCode runtime. `SPEC.LANGUAGE.RING.TOPOLOGY` governs.
+**Escalate** — r1 moves to r2 (typescript) when the task needs the OpenCode runtime. `RING.LANGUAGE.TOPOLOGY` governs.

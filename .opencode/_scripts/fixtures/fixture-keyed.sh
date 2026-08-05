@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# exports: main
+# purity: pure
+# depends-on: none
+# ring: 0 (PURE) — stdout contract emitter for the wrapper
 # fixture-keyed.sh — emits a machine contract per structure-stdout
 # Probes: OUT_LINES/OUT_BYTES, keyed-line extraction, IN hashing
 KEY=${1:-default}

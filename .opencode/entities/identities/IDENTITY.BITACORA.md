@@ -3,14 +3,14 @@
 ---
 id: IDENTITY.BITACORA
 title: Bitacora — Record Container Entity
-source: SPEC.DIRECTORY.RING.TOPOLOGY
+source: RING.DIRECTORY.TOPOLOGY
 group: composition
 ring: R2
 naming: '{?}-{concrete noun} subfolders'
 tags: bitacora,record,container,identity,infrastructure
-related: [IDENTITY.SPECIFICATION, SPEC.DIRECTORY.RING.TOPOLOGY, SPEC.NAMING.WORD.CLASS]
+related: [IDENTITY.SPECIFICATION, RING.DIRECTORY.TOPOLOGY, SPEC.NAMING.WORD.CLASS]
 reference:
-  - title: SPEC.DIRECTORY.RING.TOPOLOGY — ring placement and naming
+  - title: RING.DIRECTORY.TOPOLOGY — ring placement and naming
     url: https://opencode.ai/docs
   - title: SPEC.NAMING.WORD.CLASS — instantiator vs aggregator
     url: https://opencode.ai/docs

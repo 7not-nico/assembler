@@ -6,6 +6,7 @@
 - Scripting: bash + perl only — ruby scripts and `_rb/` modules sit archived in `.archive/`
 - Bash forms binary imperative shells; command scripts wrap launch and pipeline boundaries per `RUL.CODE.BASH.SHELLS`
 - Perl carries text transforms — format conversion, inline-bold strip, embed diagnostics
+- Perl pure modules sit in `_pl/` — ring 0 (PURE), no I/O, contract headers per `RING.SCRIPT.TOPOLOGY`
 - Go uses the standard library only; the build runs via `go build -o bin/assembler-cli ./cmd/assembler-cli` in `_golib/`
 - Rust uses edition 2024; the build runs via `cargo build --release` in `_rs/` or `_bin/`
 
@@ -36,10 +37,13 @@ Bash and perl lead the scripting layer. Bash forms binary imperative shells at t
 | `strip-inline-bold.pl` | Strips inline bold from bullet bodies |
 | `embed-diagnose.pl` | Diagnoses embedding stages |
 | `migrate-skill-metadata.sh` | Migrates skill metadata (write — backup first) |
+| `sync-cli-entities.sh` | Syncs `.opencode/entities/cli/*.md` into the patlib.db cli table (ring 6 DB-WRITE, `--dry` flag) |
+| `parse-cli-backmatter.pl` | Emits SQL upsert for one CLI entity file (ring 2 LOCAL-READ; requires `_pl/backmatter.pl`) |
+| `_pl/backmatter.pl` | Pure backmatter transform — backmatter → SQL parts (ring 0 PURE, no I/O) |
 | `fixtures/*.sh` | Test fixtures — exercise launchers, wrappers, audits, survey workflows; emit KEY=value contract lines with `RESULT=pass\|fail:count` |
 ```
 
-Fixtures run bash-first — shell scripts own audit and wrapper logic. The legacy ruby fixture (`fixture-ruby-test.rb`) remains under `fixtures/`
+Fixtures run bash-first — shell scripts own audit and wrapper logic. Every fixture carries a contract header (`# exports:`, `# purity:`, `# depends-on:`, `# ring: N`) per `PROT.LIB.CONTRACT` + `RING.SCRIPT.TOPOLOGY`. Ring classes: 0 (PURE) stdout emitters, 2 (LOCAL-READ) source/entity/CLI probes, 4 (LOCAL-WRITE) wrapper exercisers. Non-fitting fixtures (ruby-based, stale archived-ruby calls, non-fixtures) sit in `.archive/fixtures/`
 
 ## Go (analysis engine)
 
@@ -92,8 +96,8 @@ Known gap — `r0_frontmatter` skips the encyclopedic backmatter format (cogniti
 
 - The `r*.rb` ring scripts (r0-r6) and the audit wrappers sit in `.archive/`
 - The `_rb/` lambda modules (16 files) sit in `.archive/_rb/`
-- The patlib sync (`r6-patlib-sync.rb`) reconciled entity files → root `.opencode/patlib.db`; the bash/perl replacement stands pending
-- Remaining ruby lives in: `survey/` (65 workflows), `knowledge/` (44 reference docs), `spec/` (6 test specs), `fixtures/fixture-ruby-test.rb`, `template/rN-script-template.rb`
+- The patlib sync (`r6-patlib-sync.rb`) reconciled entity files → root `.opencode/patlib.db`; the bash/perl replacement covers the cli table (`sync-cli-entities.sh` + `parse-cli-backmatter.pl` + `_pl/backmatter.pl`), other tables pending
+- Remaining ruby lives in: `survey/` (65 workflows), `knowledge/` (44 reference docs), `spec/` (6 test specs), `template/rN-script-template.rb`; the ruby fixture `fixture-ruby-test.rb` sits archived in `.archive/fixtures/`
 - The `rs audit {type}` command replaces the archived audit wrappers — one path for every type
 
 ## Directories
@@ -101,13 +105,14 @@ Known gap — `r0_frontmatter` skips the encyclopedic backmatter format (cogniti
 ```text
 | Path | Content |
 |------|---------|
-| `.archive/` | Archived ruby — ring scripts, `_rb/` modules, old templates |
+| `.archive/` | Archived ruby — ring scripts, `_rb/` modules, old templates, non-fitting fixtures (`.archive/fixtures/`) |
 | `_golib/` | Go module — analysis engine (lib packages + `cmd/assembler-cli`) |
+| `_pl/` | Perl pure modules — ring 0 (PURE), contract headers, require-loaded by io entries |
 | `_rs/` | Rust library (15 modules, legacy) |
 | `_bin/` | Rust CLI crate (legacy) |
 | `schema/` | Stores the SQLite DB + seed files |
 | `survey/` | 26 state analysis workflows (ruby-legacy, pending bash/perl conversion) |
-| `fixtures/` | Bash-first test fixtures (launchers, wrappers, audits) |
+| `fixtures/` | Bash-first test fixtures — 27 live, each with purity/ring contract header (`# exports:`, `# purity:`, `# depends-on:`, `# ring: N`); ring classes 0 (PURE) / 2 (LOCAL-READ) / 4 (LOCAL-WRITE) |
 | `spec/` | Ruby test specs (legacy) |
 | `report/`, `report/conclusions/`, `report/errors/`, `report/walkthroughs/` | Stores script output |
 | `docs/` | Stores reference docs for modules, entity types, violations |

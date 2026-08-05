@@ -35,7 +35,7 @@ Measured on local NVMe with Bun 1.3.14. Relative ratios stable across hardware; 
 |-------|-----------|-------------|---------------------------|
 | CLI | 25-30ms per invocation | same as cold | Only on heavy ops (>100ms lib work) |
 | IPC | ~0ms (in-process) | ~0ms beyond lib | N/A — always warm |
-| MCP | ~60ms handshake | 1-6ms | Full — server stays alive per session |
+| MCP | ~60ms process startup | 1-6ms | Full — server stays alive per session |
 | Plugin | ~0ms (in-process) | ~0ms beyond lib | N/A — always warm |
 | Script | ~50ms Ruby init | 1-5ms per script | Amortized over batched audits via `r0-run-parallel.rb` |
 
@@ -49,7 +49,7 @@ Implications:
 ## Rationale
 
 - Layer choice depends on call pattern beyond I/O direction — a read operation may prefer MCP for repeated calls; CLI suits a single ad-hoc query
-- The performance table grounds the choice in measured latency rather than intuition — CLI startup dominates light ops, MCP handshake cost amortizes over repeated calls, Plugin has zero startup cost
+- The performance table grounds the choice in measured latency rather than intuition — CLI startup dominates light ops, MCP process startup amortizes over repeated calls, Plugin has zero startup cost
 
 ## Gotchas
 

@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# exports: main
+# purity: io
+# depends-on: tracexec, bitacora-log.sh
+# ring: 4 (LOCAL-WRITE) — exercises the trace-enriched wrapper
 # fixture-trace-useful.sh — runs trace-useful.sh against the buggy fixture
 # Shape: KEY=value contract; asserts the useful-log metrics: real exec tree
 # visible, PATH-scan ENOENT burst collapsed, exit status preserved.

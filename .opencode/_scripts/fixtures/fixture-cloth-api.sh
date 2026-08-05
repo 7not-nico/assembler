@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# exports: main
+# purity: io
+# depends-on: _sandbox/cloth-config
+# ring: 2 (LOCAL-READ) — probes local cloth-config repo structure
 # fixture-cloth-api.sh — probes the cloth-config ConfigEntryBuilder API surface
 # Shape: KEY=value contract; code-level metrics on the builder→entry factory
 # layer. Counts builder-returning methods, loader entry points, and builder

@@ -27,7 +27,7 @@ Every tool and plugin has an I/O automaton model. Tools declare via `// @toolcla
     - **Subproject MCP tools may use RECG or TRNS** — subprojects own their data domain and may expose controlled write operations (download, register) via MCP when paired with a fallback CLI tool.
     - **Plugin tools use GENR** (write-only per `PROT.PLUGIN.WRITE`).
     - **CLI and Custom IPC tools accept all four classes**.
-    - **Script tools use RECG** (read-only per `SPEC.CODE.RING.TOPOLOGY`) — atomic audits inspect state and report.
+    - **Script tools use RECG** (read-only per `RING.SCRIPT.TOPOLOGY`) — atomic audits inspect state and report.
    Choose deployment per audience and scope per `PROT.TOOL.MODEL`; the I/O model remains constant.
 9. **Use `audit-tool` to enforce classification coverage** — run after creating or editing any tool or plugin file.
 10. **Generate a manifest from annotations** — `.opencode/manifests/tools.md` may be generated from `// @toolclass` and `// @pluginclass` annotations for documentation.

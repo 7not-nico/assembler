@@ -2,7 +2,7 @@
 
 **Role** — Go serves systems and high-performance logic: goroutine-parallel workers, binary-transport services; parallel work and compile speed favor it. `SPEC.LANGUAGE.ROLE.MAP` governs.
 
-**Ring** — r3, the terminus ring, with rust. `SPEC.LANGUAGE.RING.TOPOLOGY` governs.
+**Ring** — r3, the terminus ring, with rust. `RING.LANGUAGE.TOPOLOGY` governs.
 
 **Style**
 
@@ -24,4 +24,4 @@
 
 **Select** — the task needs parallel work or compile speed; binary protocols run at scale.
 
-**Escalate** — r3 terminates the chain. `SPEC.LANGUAGE.RING.TOPOLOGY` governs.
+**Escalate** — r3 terminates the chain. `RING.LANGUAGE.TOPOLOGY` governs.

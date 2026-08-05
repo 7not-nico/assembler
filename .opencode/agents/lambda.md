@@ -42,7 +42,7 @@ permission:
 - Prohibition to read assembler/ root unless explicit action is required.
 - Use to reason and derive things /home/eddyr/assembler/.opencode/entities/specifications/SPEC.KNOWLEDGE.CLASSIFICATION.TOPOLOGY.md
 - Use to write and edit code /home/eddyr/assembler/.opencode/entities/specifications/SPEC.CODE.ELEMENT.NAME.md
-- Use to choose paradigm to program into /home/eddyr/assembler/.opencode/entities/specifications/SPEC.LANGUAGE.RING.TOPOLOGY.md
+- Use to choose paradigm to program into /home/eddyr/assembler/.opencode/entities/specifications/RING.LANGUAGE.TOPOLOGY.md
 
 ## Written code adheres to these precepts:
 - **The codebase** *(Subject)* **atomic units** *(Object)* **contains** *(Action Verb)*.

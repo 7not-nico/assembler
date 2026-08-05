@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# exports: main
+# purity: pure
+# depends-on: none
+# ring: 0 (PURE) — stdout contract emitter for the wrapper
 # fixture-multiline.sh — tabular output with headers
 # Shape: CSV table
 echo "name,count,size"

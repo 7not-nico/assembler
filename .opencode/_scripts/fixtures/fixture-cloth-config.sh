@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# exports: main
+# purity: io
+# depends-on: _sandbox/cloth-config
+# ring: 2 (LOCAL-READ) — probes local cloth-config repo structure
 # fixture-cloth-config.sh — probes the _sandbox/cloth-config repo structure
 # Shape: KEY=value contract; Java API-surface metrics for the multi-loader
 # Gradle project (common/fabric/forge). Graceful SKIP when the gitignored

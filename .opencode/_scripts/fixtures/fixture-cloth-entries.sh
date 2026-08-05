@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# exports: main
+# purity: io
+# depends-on: _sandbox/cloth-config
+# ring: 2 (LOCAL-READ) — probes local cloth-config repo structure
 # fixture-cloth-entries.sh — probes the cloth-config GUI entry layer
 # Shape: KEY=value contract; metrics on gui/entries (the rendered config
 # rows): concrete vs abstract entry classes, list-entry subtypes, slider

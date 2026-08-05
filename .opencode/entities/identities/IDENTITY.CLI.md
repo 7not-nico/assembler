@@ -1,4 +1,6 @@
-**CLI** — a human-facing tool invocation layer. TypeScript static-typed tools with `// @toolclass` annotations run via Bun `bun run`. Shebang entry point. Console output to stdout. Subproject default. Fallback tier when MCP or plugin unavailable. Prefix naming signals I/O direction: `read-*`, `write-*`, `audit-*`.
+**CLI** — a human-facing tool invocation layer. command line tools with `// @toolclass` annotations run via Bun `bun run`. Shebang entry point. Console output to stdout. Subproject default. Fallback tier when MCP or plugin unavailable. Prefix naming signals I/O direction: `read-*`, `write-*`, `audit-*`.
+
+Other cli may co exist as part of the system.
 
 ---
 id: IDENTITY.CLI

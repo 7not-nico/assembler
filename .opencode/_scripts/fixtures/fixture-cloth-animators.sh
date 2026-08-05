@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# exports: main
+# purity: io
+# depends-on: _sandbox/cloth-config
+# ring: 2 (LOCAL-READ) — probes local cloth-config repo structure
 # fixture-cloth-animators.sh — probes the cloth-config animator API layer
 # Shape: KEY=value contract; code-level metrics on the animation/value
 # provider hierarchy (api/animator). Graceful SKIP when _sandbox/ absent.

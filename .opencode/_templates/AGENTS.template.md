@@ -53,6 +53,7 @@ status: active
 - {TOOL} provides {ROLE}.
 - {TOOL} provides {ROLE}.
 - {TOOL} provides {ROLE}.
+- {WRAPPER-DIR} holds wrappers — the interface this project invokes; projects call wrappers, never implementations.
 
 ## Conventions
 
@@ -69,9 +70,10 @@ status: active
 - {TODO-FILE} holds persistent task lists and begins BEFORE tasks start.
 - Status updates (`- [ ]` / `- [x]`) mark progress during tasks.
 - {REPORT-FILE} holds the factual record at completion: what was done, decisions, open edges, todo state summary.
-- Every command pipes through {LOG-WRAPPER} {NAME} -- {COMMAND} → {STDOUT-DIR}/{TIMESTAMP}-{NAME}.log.
+- Every command pipes through {LOG-WRAPPER} {NAME} [--trace] -- {COMMAND} → {STDOUT-DIR}/{TIMESTAMP}-{NAME}.log.
 - The wrapper writes provenance headers only (trace-free).
 - {TRACE-COMMAND} enriches stdout of commands with the exec tree when exec-level detail matters.
+- {LOG-TAIL} appends duration, completion timestamp, and exit status to each log.
 
 ## Knowledge
 

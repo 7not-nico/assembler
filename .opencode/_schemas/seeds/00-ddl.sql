@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS reference_roles (
 );
 
 CREATE TABLE IF NOT EXISTS entity_references (
-  entity_type TEXT NOT NULL CHECK(entity_type IN ('term', 'pattern')),
+  entity_type TEXT NOT NULL CHECK(entity_type IN ('term', 'pattern', 'person')),
   entity_id   TEXT NOT NULL,
   source_id   INTEGER NOT NULL REFERENCES ref_sources(id),
   position    INTEGER NOT NULL DEFAULT 0,

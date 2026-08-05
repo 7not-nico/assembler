@@ -2,7 +2,7 @@
 
 **Role** — Rust powers core logic where speed and safety bind: ANN backends, binary transports, computational kernels; `_rustlib/target/release/assemble` (score | hit | unit over JSON stdin/stdout). `SPEC.LANGUAGE.ROLE.MAP` governs.
 
-**Ring** — r3, the terminus ring. `SPEC.LANGUAGE.RING.TOPOLOGY` governs.
+**Ring** — r3, the terminus ring. `RING.LANGUAGE.TOPOLOGY` governs.
 
 **Style**
 
@@ -24,4 +24,4 @@
 
 **Select** — the task needs raw speed, binary transport, or a computational kernel.
 
-**Escalate** — r3 terminates the chain. `SPEC.LANGUAGE.RING.TOPOLOGY` governs.
+**Escalate** — r3 terminates the chain. `RING.LANGUAGE.TOPOLOGY` governs.

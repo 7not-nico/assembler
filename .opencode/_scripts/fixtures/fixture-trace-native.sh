@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# exports: main
+# purity: io
+# depends-on: tracexec, bitacora-log.sh
+# ring: 4 (LOCAL-WRITE) — exercises the trace-enriched wrapper
 # fixture-trace-native.sh — runs trace-native.sh (native tracexec flags)
 # Shape: KEY=value contract; asserts the native frontend surfaces the exec
 # tree with decoded errno, interpreter, cwd, env/fd diffs — no python parsing.

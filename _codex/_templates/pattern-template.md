@@ -11,7 +11,7 @@ status: active
 
 **Layer:** pattern/
 **Naming:** `action-domain.md` — code morphism, reusable structure.
-**Composes with:** `procedure/{ACTION}-{DOMAIN}.md` (same domain); derived from `study/` + `fixture/` proof.
+**Composes with:** `pattern/composition/composition-template.md` (composition sub-layer); derived from `study/` + `fixture/` proof.
 
 ## Morphism
 

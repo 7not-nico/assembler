@@ -9,7 +9,7 @@ group: architectonic
 ring: R0
 naming: '{root-folder}/AGENTS.md'
 tags: agent,agents,delegation,environment,project,identity,convention
-related: [RUL.PROJECT.DELEGATION, RUL.AGENTS.STATE, SPEC.AGENTS.SELF.CONTAINED, SPEC.KNOWLEDGE.CLASSIFICATION.TOPOLOGY, SPEC.DIRECTORY.RING.TOPOLOGY, IDENTITY.BITACORA, IDENTITY.MCP, IDENTITY.IPC]
+related: [RUL.PROJECT.DELEGATION, RUL.AGENTS.STATE, SPEC.AGENTS.SELF.CONTAINED, SPEC.KNOWLEDGE.CLASSIFICATION.TOPOLOGY, RING.DIRECTORY.TOPOLOGY, IDENTITY.BITACORA, IDENTITY.MCP, IDENTITY.IPC]
 reference:
   - title: SPEC.AGENTS.SELF.CONTAINED — AGENTS.md describes only its own domain
     url: https://opencode.ai/docs
@@ -19,6 +19,6 @@ reference:
     url: https://opencode.ai/docs
   - title: SPEC.KNOWLEDGE.CLASSIFICATION.TOPOLOGY — Architectonic Ring 0 Agent
     url: https://opencode.ai/docs
-  - title: SPEC.DIRECTORY.RING.TOPOLOGY — R0 root, R1 domains, R2 infrastructure, R3 projects
+  - title: RING.DIRECTORY.TOPOLOGY — R0 root, R1 domains, R2 infrastructure, R3 projects
     url: https://opencode.ai/docs
 ---

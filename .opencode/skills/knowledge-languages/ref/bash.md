@@ -2,7 +2,7 @@
 
 **Role** — Bash forms binary imperative shells: tool wrappers, orchestrators, automated flows. It clones repos, pipes logs, moves files, sequences commands. `SPEC.LANGUAGE.ROLE.MAP` governs.
 
-**Ring** — r0 sits innermost and holds the design base. `SPEC.LANGUAGE.RING.TOPOLOGY` governs.
+**Ring** — r0 sits innermost and holds the design base. `RING.LANGUAGE.TOPOLOGY` governs.
 
 **Style**
 
@@ -31,4 +31,4 @@
 
 **Select** — the task sequences commands, files, and processes.
 
-**Escalate** — r0 moves to r1 (ruby) when bash lacks logic that models data. `SPEC.LANGUAGE.RING.TOPOLOGY` governs.
+**Escalate** — r0 moves to r1 (ruby) when bash lacks logic that models data. `RING.LANGUAGE.TOPOLOGY` governs.

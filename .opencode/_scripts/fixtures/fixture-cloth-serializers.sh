@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# exports: main
+# purity: io
+# depends-on: _sandbox/cloth-config
+# ring: 2 (LOCAL-READ) — probes local cloth-config repo structure
 # fixture-cloth-serializers.sh — probes the cloth-config autoconfig serializers
 # Shape: KEY=value contract; counts serializer implementations + supported
 # formats (Gson, Jankson, Toml4j, Yaml, Partitioning). Graceful SKIP absent.
