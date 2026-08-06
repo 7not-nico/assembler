@@ -7,7 +7,7 @@
 set -uo pipefail
 
 DEPS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SHARED_BIN="$(cd "$DEPS_DIR/../../_shared/bin" && pwd)"
+SHARED_BIN="$(cd "$DEPS_DIR/../../../_shared/bin" && pwd)"
 CODEX="$("$SHARED_BIN/codexroot" "$DEPS_DIR")" || exit $?
 SHELL_DIR="$(cd "$DEPS_DIR/.." && pwd)"
 ASSEMBLER="$(cd "$CODEX/.." && pwd)"
