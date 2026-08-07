@@ -28,6 +28,7 @@ Pandoc = [
 RefBase = "https://docs.python.org/3/reference"
 RefIndex = "index.html"
 RefTmp = Project / "tmp"
+RefSchema = Project / "schema" / "pages.sql"
 RefOut = Launcher / "PythonRef.epub"
 RefTitle = "The Python Language Reference"
 RefAuthor = "Python Software Foundation"

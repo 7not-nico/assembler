@@ -5,7 +5,7 @@ import urllib.request
 import zipfile
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from deps.extract import slug
+from deps.prepare import slug
 from schema import const
 
 HEAD = {"User-Agent": "epub-maker/0.1 (+https://github.com/7not-nico/assembler)"}

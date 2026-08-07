@@ -1,46 +1,11 @@
-"""Pure extraction functions — deterministic, no side effects."""
+"""Extract — content container extraction, pure."""
 
 import re
 
-LINK = re.compile(r'href="([^"]+\.html)"')
 MAIN = re.compile(r"<main>(.*?)</main>", re.S)
-H1 = re.compile(r"<h1")
-H1TEXT = re.compile(r"<h1>(.*?)</h1>", re.S)
-SPACE = re.compile(r"\s+")
 DIV = re.compile(r"<(/?)div\b", re.I)
 SECTION = re.compile(r"<section\b", re.I)
 CLOSE = re.compile(r"</section>", re.I)
-HEADERLINK = re.compile(r'<a class="headerlink"[^>]*>.*?</a>', re.S)
-
-
-def links(html):
-    """Return the sorted unique page hrefs from sidebar markup."""
-    found = [match.removeprefix("./") for match in LINK.findall(html)]
-    keep = [
-        page
-        for page in found
-        if not page.startswith(("http", "#", "../", "/", "print"))
-        and page != "index.html"
-    ]
-    return sorted(set(keep))
-
-
-def ordered_links(html):
-    """Return the unique page hrefs in first-appearance order from index markup."""
-    seen = []
-    for match in LINK.findall(html):
-        page = match.removeprefix("./")
-        if page.startswith(("http", "#", "../", "/", "print")):
-            continue
-        if page == "index.html" or page in seen:
-            continue
-        seen.append(page)
-    return seen
-
-
-def slug(path):
-    """Return the file-safe key for a page path."""
-    return path.replace("/", "_")
 
 
 def section(html):
@@ -98,35 +63,6 @@ def unwrap(html):
     return html[gt + 1 : i - len("</section>")]
 
 
-def clean(html):
-    """Remove headerlink anchors (the pilcrow) from headings."""
-    return HEADERLINK.sub("", html)
-
-
 def flatten(html):
     """Strip every <section> wrapper so headings sit flat for pandoc's TOC."""
     return re.sub(r"</?section[^>]*>", "", html, flags=re.I)
-
-
-def title(html):
-    """Return the first h1 heading text, tags stripped."""
-    m = H1TEXT.search(html)
-    if m is None:
-        return ""
-    return re.sub(r"<[^>]+>", "", m.group(1)).strip()
-
-
-def slugify(name):
-    """Slug a heading text: drop the leading number, lowercase, dashes."""
-    text = re.sub(r"^\d+\.\s*", "", name).strip().lower()
-    return re.sub(r"[^a-z0-9]+", "-", text).strip("-")
-
-
-def probe(text):
-    """Return a compact content fingerprint for dedupe."""
-    return SPACE.sub(" ", text).strip()[:200]
-
-
-def chapters(html):
-    """Count the h1 headings in the book document."""
-    return len(H1.findall(html))

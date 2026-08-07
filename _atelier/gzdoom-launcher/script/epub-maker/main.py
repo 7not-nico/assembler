@@ -4,7 +4,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-from deps import extract, fetch
+from deps import count, discover, extract, fetch, prepare
 from schema import const
 
 
@@ -14,15 +14,15 @@ def main(argv):
     with tempfile.TemporaryDirectory() as tmp:
         work = Path(tmp)
         print("== fetch print.html ==")
-        book = work / f"{extract.slug(const.PrintPath)}.html"
-        toc = work / f"{extract.slug(const.TocPath)}.html"
+        book = work / f"{prepare.slug(const.PrintPath)}.html"
+        toc = work / f"{prepare.slug(const.TocPath)}.html"
         fetch.grab(const.PrintPath, base, work, timeout=const.PrintTimeout)
         fetch.grab(const.TocPath, base, work, timeout=const.PrintTimeout)
         if not book.is_file() or not toc.is_file():
             print("fetch failed — site unreachable", file=sys.stderr)
             return 1
         print("== enumerate book pages ==")
-        pages = extract.links(toc.read_text())
+        pages = discover.links(toc.read_text())
         print(f"book pages: {len(pages)}")
         print("== fetch all pages in parallel ==")
         page_dir = work / "page"
@@ -33,11 +33,11 @@ def main(argv):
         merged = 0
         body = []
         for page in pages:
-            path = page_dir / f"{extract.slug(page)}.html"
+            path = page_dir / f"{prepare.slug(page)}.html"
             if not path.is_file():
                 continue
             main = extract.mains(path.read_text())
-            mark = extract.probe(main)
+            mark = count.probe(main)
             if mark and mark not in content:
                 body.append(main)
                 merged += 1
@@ -52,7 +52,7 @@ def main(argv):
         size = const.Out.stat().st_size if const.Out.exists() else 0
         print(f"EPUB={const.Out}")
         print(f"PAGES={len(pages)}")
-        print(f"CHAPTERS={extract.chapters(content)}")
+        print(f"CHAPTERS={count.chapters(content)}")
         print(f"FETCHED={fetched}")
         print(f"FAILED={len(pages) - fetched}")
         print(f"MERGED={merged}")

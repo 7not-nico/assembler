@@ -1,9 +1,10 @@
-"""Ref — Python reference epub: stage chapters, unify, convert, verify."""
+"""Ref — Python reference epub: stage chapters, schema, unify, convert, verify."""
 
+import hashlib
 import shutil
 import sys
 
-from deps import extract, fetch
+from deps import count, discover, emit, extract, fetch, prepare
 from schema import const
 
 
@@ -16,28 +17,43 @@ def main(argv):
     tmp.mkdir()
     print("== fetch index ==")
     fetch.grab(const.RefIndex, base, tmp, timeout=const.PrintTimeout)
-    idx = tmp / f"{extract.slug(const.RefIndex)}.html"
+    idx = tmp / f"{prepare.slug(const.RefIndex)}.html"
     if not idx.is_file():
         print("fetch failed — reference unreachable", file=sys.stderr)
         return 1
     print("== enumerate chapters ==")
-    pages = extract.ordered_links(idx.read_text())
+    pages = discover.ordered_links(idx.read_text())
     print(f"chapters: {len(pages)}")
     print("== fetch + stage each chapter ==")
-    chapter_files = []
+    staged = []
     for n, page in enumerate(pages, start=1):
         if not fetch.grab(page, base, tmp, timeout=const.PrintTimeout):
             continue
-        raw = tmp / f"{extract.slug(page)}.html"
-        body = extract.clean(extract.flatten(extract.mains(raw.read_text())))
-        name = f"{n:02d}-{extract.slugify(extract.title(body))}.html"
+        raw = tmp / f"{prepare.slug(page)}.html"
+        body = prepare.clean(extract.flatten(extract.mains(raw.read_text())))
+        name = f"{n:02d}-{prepare.slugify(prepare.title(body))}.html"
         target = tmp / name
         target.write_text(body)
-        chapter_files.append(target)
+        staged.append((page, target))
         print(f"staged {name}")
-    if not chapter_files:
+    if not staged:
         print("fetch failed — no chapters staged", file=sys.stderr)
         return 1
+    print("== schema: pages.sql ==")
+    rows = [
+        (
+            page,
+            target.name,
+            prepare.title(target.read_text()),
+            n,
+            target.stat().st_size,
+            hashlib.sha256(target.read_bytes()).hexdigest(),
+        )
+        for n, (page, target) in enumerate(staged, start=1)
+    ]
+    const.RefSchema.write_text(emit.emit(rows))
+    print(f"wrote {const.RefSchema} ({len(rows)} rows)")
+    chapter_files = [target for _, target in staged]
     print("== unify chapters ==")
     unified = tmp / "unified.html"
     unified.write_text("".join(p.read_text() for p in sorted(chapter_files)))
@@ -48,7 +64,7 @@ def main(argv):
     size = const.RefOut.stat().st_size if const.RefOut.exists() else 0
     print(f"EPUB={const.RefOut}")
     print(f"CHAPTERS={len(chapter_files)}")
-    print(f"H1={extract.chapters(unified.read_text())}")
+    print(f"H1={count.chapters(unified.read_text())}")
     print(f"FAILED={len(pages) - len(chapter_files)}")
     print(f"BYTES={size}")
     return 0 if ok else 1
