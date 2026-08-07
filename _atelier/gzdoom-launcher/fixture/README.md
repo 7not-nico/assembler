@@ -35,6 +35,9 @@ scan-mods-test.py      proves scan_mods() collects .pk3/.zip/.rar archives
 command-build-test.py  proves the gzdoom command line: /opt/gzdoom/gzdoom
                        preference, -iwad, -file per selection, -savedir;
                        --dry-run prints the exact line
+menu-multi-test.py     proves the multi-select parsing: 'all' returns the
+                       full numbered order, comma picks, empty -> none,
+                       invalid tokens skipped, case-insensitive 'ALL'
 ```
 
 ### script/wad-downloader + schema — bash (offline sample inputs)

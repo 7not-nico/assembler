@@ -10,7 +10,7 @@ from pathlib import Path
 root = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(root))
 
-import launcher  # noqa: E402
+import launcher
 
 
 def check(name, cond):
@@ -25,7 +25,11 @@ def run():
     listed = launcher.scan_mods()
     names = [p.name for p in listed]
     check("sorted", names == sorted(names))
-    archives = [p for p in launcher.mod.iterdir() if p.is_file() and p.suffix.lower() in launcher.EXT]
+    archives = [
+        p
+        for p in launcher.mod.iterdir()
+        if p.is_file() and p.suffix.lower() in launcher.EXT
+    ]
     dirs = [p for p in launcher.mod.iterdir() if p.is_dir()]
     check("every archive listed", all(p.name in names for p in archives))
     check("every dir listed", all(p.name in names for p in dirs))
