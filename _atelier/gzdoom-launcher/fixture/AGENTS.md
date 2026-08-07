@@ -14,8 +14,8 @@ live layout or generated samples and fails loudly on regression.
 
 ## Structure
 
-- `run.sh` — the aggregate gate; builds samples, runs all 7 fixtures, exit 0 only when every fixture passes
-- `scan-iwad-test.py` / `scan-map-test.py` / `scan-mods-test.py` / `command-build-test.py` — launcher.py behavior fixtures (uv run python)
+- `run.sh` — the aggregate gate; builds samples, runs all 8 fixtures, exit 0 only when every fixture passes
+- `scan-iwad-test.py` / `scan-map-test.py` / `scan-mods-test.py` / `command-build-test.py` / `menu-multi-test.py` — launcher.py behavior fixtures (uv run python)
 - `extract-wads-test.sh` / `probe-header-test.sh` / `append-upsert-test.sh` — bash fixtures over the wad-downloader + schema tooling
 - `sample/build.sh` — regenerates the 4 offline sample zips (pwad, iwad, uppercase .WAD, no-wad); idempotent
 

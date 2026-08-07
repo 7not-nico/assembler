@@ -3,8 +3,8 @@
 
 import sys
 
-from deps import const
-from deps.io import (
+from deps.build import command, folder_label, parse_picks
+from deps.launch import (
     binary,
     menu,
     menu_multi,
@@ -13,7 +13,7 @@ from deps.io import (
     scan_map,
     scan_mods,
 )
-from deps.pure import command, folder_label, parse_picks
+from schema import const
 
 GAME = const.GAME
 LEVEL = const.LEVEL

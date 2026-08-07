@@ -1,6 +1,6 @@
 """Pure ring — deterministic logic, no I/O, no local imports."""
 
-from deps import const
+from schema import const
 
 
 def folder_label(p):

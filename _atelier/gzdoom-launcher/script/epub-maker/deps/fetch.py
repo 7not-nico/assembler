@@ -33,8 +33,10 @@ def parallel(pages, base, dest, workers=const.Parallel):
         return sum(1 for future in as_completed(futures) if future.result())
 
 
-def convert(src, out):
+def convert(src, out, flags=None):
     """Run pandoc over the book html into the epub."""
+    if flags is None:
+        flags = const.Pandoc
     argv = [
         "pandoc",
         str(src),
@@ -44,7 +46,7 @@ def convert(src, out):
         "epub3",
         "-o",
         str(out),
-        *const.Pandoc,
+        *flags,
     ]
     subprocess.run(argv, check=False)
 

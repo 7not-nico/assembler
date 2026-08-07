@@ -23,3 +23,20 @@ Pandoc = [
     "--toc",
     "--toc-depth=2",
 ]
+
+# Python language reference epub (ref.py)
+RefBase = "https://docs.python.org/3/reference"
+RefIndex = "index.html"
+RefTmp = Project / "tmp"
+RefOut = Launcher / "PythonRef.epub"
+RefTitle = "The Python Language Reference"
+RefAuthor = "Python Software Foundation"
+RefPandoc = [
+    "--metadata",
+    f"title={RefTitle}",
+    "--metadata",
+    f"author={RefAuthor}",
+    "--toc",
+    "--toc-depth=2",
+    "--epub-chapter-level=1",
+]

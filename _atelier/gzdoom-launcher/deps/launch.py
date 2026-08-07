@@ -5,8 +5,8 @@ import subprocess
 import sys
 from pathlib import Path
 
-from deps import const
-from deps.pure import command, folder_label, parse_picks
+from deps.build import command, folder_label, parse_picks
+from schema import const
 
 binary = const.BINARY_DEFAULT
 if not Path(binary).is_file():

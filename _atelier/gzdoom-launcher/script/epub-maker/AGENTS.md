@@ -13,8 +13,9 @@ This project builds the ZDoom docs ebook. It fetches the staging site pages, mer
 ## Structure
 
 - `main.py` — orchestrator; the state machine; tempdir work area; derives book/toc paths via `extract.slug()` (matching `grab()`'s `{slug}.html` write pattern)
-- `deps/fetch.py` — io ring: `grab` (urllib, UA header, tries=2), `parallel` (16 workers), `convert` (pandoc), `verify` (zipfile testzip + mimetype)
-- `deps/extract.py` — pure ring: `links`, `slug`, `mains`, `probe`, `chapters`
+- `ref.py` — Python language reference orchestrator: fetch index → enumerate 10 chapters → parallel fetch → merge `<div role="main">` bodies in order → pandoc convert → verify; writes `PythonRef.epub` at launcher root (186 KB, 10 chapters, 1.2 MB xhtml)
+- `deps/fetch.py` — io ring: `grab` (urllib, UA header, tries=2), `parallel` (16 workers), `convert` (pandoc, flags param), `verify` (zipfile testzip + mimetype)
+- `deps/extract.py` — pure ring: `links`, `slug`, `section` (balanced role="main" divs), `mains` (<main> or role="main"), `probe`, `chapters`
 - `schema/const.py` — constants: `Base`, `Out`, `PrintPath`, `TocPath`, `Timeout=12`, `PrintTimeout=60`, `Parallel=16`, `Pandoc` flags
 - `fixture/run_tests.py` — 8 tests over `fixture/sample/` (print.html, toc.html, Hidden.html); all pass
 - `README.md` — state machine documentation; `qalc.md` — epub size statistics

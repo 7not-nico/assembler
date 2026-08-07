@@ -6,18 +6,21 @@ Purity-split port of `launcher.py` per `PATTERN.PURITY.PORT.PIPELINE`: a pure co
 
 ```text
 deps/
-├── const.py      constants: root paths (wad/map/mod/save), GAME/LEVEL name tables,
-│                 EXT set, binary default — no I/O at import
-├── pure.py       pure ring — deterministic, no side effects, no imports from io
-└── io.py         io ring — filesystem reads, stdin/stdout, subprocess; imports pure
+├── build.py       pure ring — deterministic, no side effects, no imports from io
+└── launch.py      io ring — filesystem reads, stdin/stdout, subprocess; imports build
+schema/
+└── const.py       constants: root paths (wad/map/mod/save), GAME/LEVEL name tables,
+                   EXT set, binary default — no I/O at import
 ```
+
+deps/ file names are action verbs in singular form (epub-maker precedent: `fetch.py`, `extract.py`); constants live in `schema/const.py`, never in deps/.
 
 `launcher.py` becomes a thin entry: imports from `deps`, keeps `if __name__ == "__main__"`, and re-exports the public functions so existing fixtures and call sites keep working unchanged.
 
 ## Ring assignment — function by function
 
 ```text
-pure (pure.py)                       io (io.py)
+build.py (pure)                      launch.py (io)
 ─────────────────────                ─────────────────────
 folder_label(p)                      binary discovery (is_file / shutil.which)
 command(binary, path, maps, mods)    scan()          — wad/ glob
@@ -31,9 +34,9 @@ parse_picks(raw, n)                  scan_map()      — map/ + temp dirs glob
 ## Boundary rules
 
 ```text
-io.py imports pure.py; pure.py imports nothing local
+launch.py imports build.py; build.py imports nothing local
 pure functions never touch sys/os/files/subprocess; io owns every side effect
-const.py is shared, side-effect-free; launcher.py re-exports the io surface
+schema/const.py is shared, side-effect-free; launcher.py re-exports the io surface
 ```
 
 - `parse_picks(raw, n)` extracts the tokenization from `menu_multi` (comma split, digit/range guard, empty → none) so the selection logic is pure and fixture-testable without stdin
