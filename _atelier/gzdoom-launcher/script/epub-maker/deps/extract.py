@@ -103,6 +103,11 @@ def clean(html):
     return HEADERLINK.sub("", html)
 
 
+def flatten(html):
+    """Strip every <section> wrapper so headings sit flat for pandoc's TOC."""
+    return re.sub(r"</?section[^>]*>", "", html, flags=re.I)
+
+
 def title(html):
     """Return the first h1 heading text, tags stripped."""
     m = H1TEXT.search(html)

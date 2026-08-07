@@ -29,7 +29,7 @@ def main(argv):
         if not fetch.grab(page, base, tmp, timeout=const.PrintTimeout):
             continue
         raw = tmp / f"{extract.slug(page)}.html"
-        body = extract.clean(extract.unwrap(extract.mains(raw.read_text())))
+        body = extract.clean(extract.flatten(extract.mains(raw.read_text())))
         name = f"{n:02d}-{extract.slugify(extract.title(body))}.html"
         target = tmp / name
         target.write_text(body)
