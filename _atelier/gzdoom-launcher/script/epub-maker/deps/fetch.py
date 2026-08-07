@@ -1,9 +1,9 @@
 """IO operations — network, filesystem, subprocess. The impurity ring."""
 
+import asyncio
 import subprocess
 import urllib.request
 import zipfile
-from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from deps.prepare import slug
 from schema import const
@@ -11,7 +11,7 @@ from schema import const
 HEAD = {"User-Agent": "epub-maker/0.1 (+https://github.com/7not-nico/assembler)"}
 
 
-def grab(page, base, dest, timeout=const.Timeout, tries=2):
+def grab(page, base, dest, timeout, tries):
     """Download one page into dest; return True on success."""
     url = f"{base}/{page}"
     for _ in range(tries):
@@ -26,17 +26,43 @@ def grab(page, base, dest, timeout=const.Timeout, tries=2):
     return False
 
 
-def parallel(pages, base, dest, workers=const.Parallel):
-    """Fetch pages concurrently; return the count of successes."""
-    with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = [pool.submit(grab, page, base, dest) for page in pages]
-        return sum(1 for future in as_completed(futures) if future.result())
+class Fetch:
+    """Awaitable download unit — runs grab off-loop, resolves to bool."""
+
+    def __init__(self, page, base, dest, timeout, tries):
+        self.page = page
+        self.base = base
+        self.dest = dest
+        self.timeout = timeout
+        self.tries = tries
+
+    def __await__(self):
+        return asyncio.to_thread(
+            grab, self.page, self.base, self.dest, self.timeout, self.tries
+        ).__await__()
 
 
-def convert(src, out, flags=None):
+async def collect(pages, base, dest, workers):
+    """Await all page fetches concurrently; return the count of successes."""
+    sem = asyncio.Semaphore(workers)
+
+    async def one(fetch):
+        async with sem:
+            return await fetch
+
+    results = await asyncio.gather(
+        *(one(Fetch(page, base, dest, const.Timeout, const.Tries)) for page in pages)
+    )
+    return sum(results)
+
+
+def parallel(pages, base, dest, workers):
+    """Fetch pages concurrently via the async collect; sync bridge."""
+    return asyncio.run(collect(pages, base, dest, workers))
+
+
+def convert(src, out, flags):
     """Run pandoc over the book html into the epub."""
-    if flags is None:
-        flags = const.Pandoc
     argv = [
         "pandoc",
         str(src),

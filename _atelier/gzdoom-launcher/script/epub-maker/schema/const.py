@@ -11,6 +11,7 @@ TocPath = "ZScript.html"
 Timeout = 12
 Connect = 8
 PrintTimeout = 60
+Tries = 2
 Parallel = 16
 ProbeLen = 200
 Title = "ZDoom Docs — ZScript"
@@ -39,5 +40,25 @@ RefPandoc = [
     f"author={RefAuthor}",
     "--toc",
     "--toc-depth=2",
+    "--epub-chapter-level=1",
+]
+
+# Python library reference epub (libref.py)
+LibBase = "https://docs.python.org/3/library"
+LibIndex = "index.html"
+LibTmp = Project / "tmp-lib"
+LibSkeleton = Project / "tmp-lib" / "skeleton"
+LibSchema = Project / "schema" / "lib-pages.sql"
+LibSections = Project / "schema" / "lib-sections.sql"
+LibOut = Launcher / "PythonLibRef.epub"
+LibTitle = "The Python Standard Library"
+LibAuthor = "Python Software Foundation"
+LibPandoc = [
+    "--metadata",
+    f"title={LibTitle}",
+    "--metadata",
+    f"author={LibAuthor}",
+    "--toc",
+    "--toc-depth=4",
     "--epub-chapter-level=1",
 ]

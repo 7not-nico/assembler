@@ -16,7 +16,7 @@ def main(argv):
         shutil.rmtree(tmp)
     tmp.mkdir()
     print("== fetch index ==")
-    fetch.grab(const.RefIndex, base, tmp, timeout=const.PrintTimeout)
+    fetch.grab(const.RefIndex, base, tmp, timeout=const.PrintTimeout, tries=const.Tries)
     idx = tmp / f"{prepare.slug(const.RefIndex)}.html"
     if not idx.is_file():
         print("fetch failed — reference unreachable", file=sys.stderr)
@@ -27,7 +27,9 @@ def main(argv):
     print("== fetch + stage each chapter ==")
     staged = []
     for n, page in enumerate(pages, start=1):
-        if not fetch.grab(page, base, tmp, timeout=const.PrintTimeout):
+        if not fetch.grab(
+            page, base, tmp, timeout=const.PrintTimeout, tries=const.Tries
+        ):
             continue
         raw = tmp / f"{prepare.slug(page)}.html"
         body = prepare.clean(extract.flatten(extract.mains(raw.read_text())))

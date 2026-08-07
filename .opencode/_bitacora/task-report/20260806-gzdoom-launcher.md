@@ -242,3 +242,42 @@
 
 - Live reader check of `PythonRef.epub` (chapter order + subdivided nav) remains the final user-side verification.
 
+
+## Addendum — awaitables + folding skeleton + domain derivation (2026-08-07T10:40)
+
+### What was done
+
+64. **Awaitable objects** in `deps/fetch.py` (user rule): `class Fetch` with `__await__` → `asyncio.to_thread(grab, …)`, `async collect` (Semaphore-bounded gather), `parallel` = sync bridge (`asyncio.run`); ThreadPoolExecutor removed. **No default arguments** (user rule): every signature declares bare parameters; call sites pass all args from `schema/const.py` (Tries=2 added). Fixture stubs `grab` to prove awaits resolve; `it.close()` clears the `to_thread` never-awaited RuntimeWarning.
+65. **Phantom-time finding**: `/usr/bin/time` missing on the host — all earlier pandoc "stalls"/exit-127 failures were the missing wrapper, not pandoc. Direct multi-input conversion of 263 staged pages → `full.epub` (2,810,789 B) in ~50 s; the single-unified-19MB-HTML approach blows up RSS (6.2 GB, killed).
+66. **Folding skeleton taxonomy** (user): three tiers — main headings (h1), heading (h2), sub headings (h3); each body folds on the previous (spans to the next same-or-higher heading); h4+ folds into the h3 body; each heading → atomic file in `tmp-lib/skeleton/`. Rebuilt: PAGES=263, SECTIONS=1801 (273 h1, 806 h2, 722 h3). Fixture extended to 29 checks.
+67. **Domain tier** (user: "a previous tier for h1, maybe domain"): domains derive from the library index toctree. Pattern rule (`deps/discover.entries`): a category is a domain when a member follows the lib pattern — lowercase name — definition (`LIB = ^[a-z][a-z0-9_.]*\s+[—\-]\s+`); Built-in (functions, constants, types, exceptions) and Modules command-line interface (CLI) join by explicit rule; residual entries (Introduction, Thread Safety Guarantees, Removed Modules, Security Considerations) fold into the domain nearest their ordinal position — nothing drops, unmapped=0. Final: **32 domains, 263 pages, 1801 sections, 1833 atomic files**. Verified `0001-d0-built-in.html` = Introduction + 4 built-in h1s; Text Processing Services folds Thread Safety Guarantees first.
+68. `deps/split.py` `sections()` = folded heading extraction (HEADING regex `<h([1-3])`, TAGS strip); `deps/emit.py` gains `sections` (section_sources DDL: order_no/page/file/level/title/size_bytes/sha256); fixture `sample/index.html` added (toctree with anchor + Built-in merge + lib titles); fixture now **34/34**.
+69. Both AGENTS.md updated: epub-maker (libref.py pipeline, discover.entries/domains, split folding, lib constants, 34 tests, `--skeleton` runtime) and launcher (epub-maker section covering ref.py + libref.py four-tier skeleton).
+
+### Decisions
+
+- The unified epub joins **domain files only** (level 0) — each fold chain contributes once; the 1801 section files serve measurement + manifest (`lib-sections.sql`), not the epub body.
+- `slug("index.html")` returns "index.html" — `grab` writes `index.html.html`; the libref index read follows that pattern.
+- Domain selection lives in `libref.py` assembly (pattern OR kept titles); `discover` stays pure (catalog + pattern detection).
+
+### Open edges
+
+- Epub phase pending: multi-input pandoc over the 32 domain files (`--toc --toc-depth=4 --split-level=1`, metadata title/author), then `fetch.verify` + `7z t`.
+- Live reader check of `PythonLibRef.epub` (domain order + nav depth) remains final user-side verification.
+
+## Addendum — 39-domain model + full-tree TOC (2026-08-07T11:35)
+
+### What was done
+
+70. **39-domain model per `heading-format/libdomain.md`** (user: authoritative spec — "domains begin with #, each domain begins on each #"): every toctree-l1 entry is a domain; no merge, no pattern filter, no residual fold. Built-in Functions, Built-in Constants, Built-in Types, Built-in Exceptions stand separate; Introduction, Thread Safety Guarantees, Modules CLI, Superseded, Removed, Security each a domain. `discover.entries()` returns every l1 entry as `(title, page, kids, lib)`; `domains()` = all entries. `libref.py` assembly: `members` = all catalog entries, bucket = `.html` children only (landing page tracked in `assigned`); domain file = `<h1>{title}</h1>` + `strip_h1(landing body)` — landing h2s are the anchor members (`## Truth Value Testing`), NOT demoted — + `demote(child pages)` (`## string — Common string operations`). Manifest row `page` = l1 href; section loop covers `[page] + kids` so anchors get rows. Rebuilt: **PAGES=263, DOMAINS=39, SECTIONS=1801, H1=273, unmapped=0**, 1840 sql rows.
+71. **`strip_h1` anchor-prefix fix** (`deps/split.py`): landing bodies start with whitespace + `<span id="…"></span>` before the h1, so the `^<h1>` anchor missed and domain files carried duplicate h1s. New `LEAD` regex tolerates the prefix; fixture check "strip h1 anchor prefix" added → **38/38**.
+72. **No silent folds** (user: "we cannot have silent folds"): `LibPandoc` `--toc-depth=2` → `--toc-depth=4` so all four fold tiers appear in the TOC. Rebuilt epub: FAILED=0, BYTES=2,396,804, `7z t` Everything is Ok, 47 files; TOC = 1 title + 39 domains + 266 members + 819 h3 + 743 h4 = **1868 navPoints** (was 306 at depth ≤2).
+
+### Decisions
+
+- The landing page body is NOT demoted — its h2s ARE the anchor members at `##`; only `.html` child pages demote one level.
+- `_needorder-map/` and `.backup/` untracked dirs left unstaged — not part of this work.
+
+### Open edges
+
+- Live reader check of `PythonLibRef.epub` (domain order + four-tier nav) remains final user-side verification.

@@ -16,8 +16,12 @@ def main(argv):
         print("== fetch print.html ==")
         book = work / f"{prepare.slug(const.PrintPath)}.html"
         toc = work / f"{prepare.slug(const.TocPath)}.html"
-        fetch.grab(const.PrintPath, base, work, timeout=const.PrintTimeout)
-        fetch.grab(const.TocPath, base, work, timeout=const.PrintTimeout)
+        fetch.grab(
+            const.PrintPath, base, work, timeout=const.PrintTimeout, tries=const.Tries
+        )
+        fetch.grab(
+            const.TocPath, base, work, timeout=const.PrintTimeout, tries=const.Tries
+        )
         if not book.is_file() or not toc.is_file():
             print("fetch failed — site unreachable", file=sys.stderr)
             return 1
@@ -27,7 +31,7 @@ def main(argv):
         print("== fetch all pages in parallel ==")
         page_dir = work / "page"
         page_dir.mkdir()
-        fetched = fetch.parallel(pages, base, page_dir)
+        fetched = fetch.parallel(pages, base, page_dir, workers=const.Parallel)
         print("== merge pages not in print.html ==")
         content = book.read_text()
         merged = 0
@@ -46,7 +50,7 @@ def main(argv):
         final = work / "final.html"
         final.write_text(content)
         print("== convert with pandoc ==")
-        fetch.convert(final, const.Out)
+        fetch.convert(final, const.Out, flags=const.Pandoc)
         print("== verify epub ==")
         ok = fetch.verify(const.Out)
         size = const.Out.stat().st_size if const.Out.exists() else 0
