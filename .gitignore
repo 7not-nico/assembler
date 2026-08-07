@@ -53,6 +53,19 @@ _depot/draw/
 !/_*/_scripts/**
 !/_*/.gitkeep
 
+# _atelier/gzdoom-launcher — atelier project source tracked; binaries + runtime stay out
+!/_atelier/gzdoom-launcher/
+!/_atelier/gzdoom-launcher/**
+/_atelier/gzdoom-launcher/**/.venv/
+/_atelier/gzdoom-launcher/**/__pycache__/
+/_atelier/gzdoom-launcher/wad/
+/_atelier/gzdoom-launcher/map/
+/_atelier/gzdoom-launcher/mod/
+/_atelier/gzdoom-launcher/save/
+/_atelier/gzdoom-launcher/BrutalDoomPlatinum/
+/_atelier/gzdoom-launcher/ZScript.epub
+/_atelier/gzdoom-launcher/schema/wads.db
+
 # build artifacts inside tracked _folders stay out
 **/_rustlib/target/
 **/_golib/ann
@@ -71,3 +84,6 @@ _trove/**/*.pdf
 # node_modules stay out everywhere (after substrate un-ignore)
 **/node_modules/
 **/__pycache__/
+
+# python venvs (uv-managed)
+**/.venv/

@@ -1,0 +1,14 @@
+# Top Rated picks (doomworld /idgames ?top — 100 WADs, >=25 votes)
+# One idgames path per line; source: page snapshot 2026-08-07T05-49-17.
+levels/doom2/g-i/hoover.zip
+levels/doom/a-c/class_ep.zip
+levels/doom/d-f/f_ep2.zip
+levels/doom/m-o/nos4dead.zip
+levels/doom/a-c/crusades.zip
+levels/doom2/p-r/remain1.zip
+levels/doom2/Ports/d-f/epic.zip
+levels/doom/a-c/b2b.zip
+levels/doom/Ports/m-o/monument.zip
+levels/doom2/a-c/boh666.zip
+levels/doom2/s-u/sid.zip
+levels/doom/g-i/invade2.zip
