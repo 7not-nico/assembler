@@ -13,9 +13,13 @@ This project builds the ZDoom docs ebook. It fetches the staging site pages, mer
 ## Structure
 
 - `main.py` — orchestrator; the state machine; tempdir work area; derives book/toc paths via `extract.slug()` (matching `grab()`'s `{slug}.html` write pattern)
-- `ref.py` — Python language reference orchestrator: fetch index → enumerate chapters (ordered) → fetch each into `tmp/` as a descriptive `{NN}-{slug}.html` → unify into `tmp/unified.html` → pandoc convert → verify; writes `PythonRef.epub` at launcher root (200 KB, 10 chapters + subsection TOC); `tmp/` is git-ignored staging
+- `ref.py` — Python language reference orchestrator: fetch index → enumerate chapters (ordered) → fetch each into `tmp/` as a descriptive `{NN}-{slug}.html` → schema step (emit `schema/pages.sql` skeleton) → unify into `tmp/unified.html` → pandoc convert → verify; writes `PythonRef.epub` at launcher root (202 KB, 10 chapters, subdivided 76-entry TOC); `tmp/` and `schema/pages.sql` are git-ignored artifacts
 - `deps/fetch.py` — io ring: `grab` (urllib, UA header, tries=2), `parallel` (16 workers), `convert` (pandoc, flags param), `verify` (zipfile testzip + mimetype)
-- `deps/extract.py` — pure ring: `links`, `ordered_links`, `slug`, `section` (balanced role="main" divs), `mains` (<main> or role="main"), `unwrap` (outer <section>), `clean` (¶ headerlinks), `title`, `slugify`, `probe`, `chapters`
+- `deps/discover.py` — pure: `links`, `ordered_links` (page enumeration; ordered preserves the index's document order)
+- `deps/extract.py` — pure: `mains`, `section` (balanced role="main" divs), `unwrap`, `flatten` (container extraction)
+- `deps/prepare.py` — pure: `clean` (¶ headerlinks), `title`, `slug`, `slugify` (content prep + naming)
+- `deps/count.py` — pure: `probe`, `chapters` (structure measurement)
+- `deps/emit.py` — pure: `emit` (page_sources DDL + INSERT OR IGNORE seed for the schema step)
 - `schema/const.py` — constants: `Base`, `Out`, `PrintPath`, `TocPath`, `Timeout=12`, `PrintTimeout=60`, `Parallel=16`, `Pandoc` flags
 - `fixture/run_tests.py` — 8 tests over `fixture/sample/` (print.html, toc.html, Hidden.html); all pass
 - `README.md` — state machine documentation; `qalc.md` — epub size statistics
