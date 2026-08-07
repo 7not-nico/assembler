@@ -13,16 +13,19 @@ This project launches GZDoom with local IWADs, map packs, and mods. The launcher
 ## Structure
 
 - `launcher.py` — Python 3 launcher (ruff-formatted, lint-clean); IWAD menu, map multi-select, mod multi-select; flags `--list`, `--iwad=NAME`, `--dry-run`; executable
+- `fixture/` — regression layer: `run.sh` (aggregate gate), sample builder (`sample/build.sh`), 4 Python fixtures (scan-iwad, scan-map, scan-mods, command-build) + 3 bash fixtures (extract-wads, probe-header, append-upsert); the `fixture` gate sits between lint and smoke
 - `pyproject.toml` — uv project metadata; `requires-python >=3.14`; `[tool.ruff]` target py314, line-length 88; no build-system (script runs unpackaged)
 - `.venv/` — uv virtualenv (CPython 3.14.6); `uv run launcher.py` executes the script
 - `wad/` — IWAD candidates: doom.wad, doom2.wad, tnt.wad, plutonia.wad (standalone games), extras.wad, id1.wad, id1-res.wad, id1-tex.wad, id1-mus.wad, id1-weap.wad, id24res.wad (re-release assets); sha256-identical to Heroic originals
 - `wad/custom/` — non-official custom WADs (community, user-made, modded levels); `scan()` globs `wad/*.wad` non-recursively, so custom WADs never surface as IWAD candidates; load them via `-file` like map packs
 - `map/` — PWAD map packs (load via `-file` on an IWAD): nerve.wad, masterlevels.wad, sigil.wad, sigil2.wad, iddm1.wad
+- `map/temp/` — superseded single temporal dir; replaced by the game-split `map/doom1-tmp/` + `map/doom2-tmp/` (see below)
+- `map/doom1-tmp/` — temporal Doom 1 WADs (disposable test maps, meant to be deleted); `map/doom2-tmp/` — temporal Doom 2 WADs; fetched via `script/wad-downloader/scripts/fetch-temp.sh <doom1|doom2> <zip>`, which downloads a zip and flattens its `.wad` files into the game dir; `scan_map()` globs both `doom1-tmp/*.wad` + `doom2-tmp/*.wad` so temp wads appear in the map menu for `-file` testing; `rm map/{doom1,doom2}-tmp/*.wad` clears them
 - `mod/` — loadable mods (gzdoom loads `.zip`/`.pk3` as archives): BrutalDoomPlatinum-main.zip (rebuilt from the clone), D3ForDTX_v5.3.pk3, relighting v4.0165b.pk3, Doom3Textures_v5.3_hotfix2/ (extracted tree)
 - `save/` — savegame directory: doom.id.doom1.ultimate
 - `BrutalDoomPlatinum/` — source tree; shallow clone (depth 1, commit 423b7167); repo root is the pk3 structure; `mod/BrutalDoomPlatinum-main.zip` derives from it
 - `script/epub-maker/` — ZDoom docs epub pipeline; `uv` project, ruff clean; `main.py` orchestrates fetch → enumerate → parallel → merge → pandoc convert → zipfile verify; `deps/fetch.py` io ring (grab/parallel/convert/verify), `deps/extract.py` pure ring (links/slug/mains/probe/chapters), `schema/const.py` constants, `fixture/run_tests.py` (8 tests); writes `ZScript.epub` at launcher root (215 KB, 125 pages, 251 h1 chapters); pandoc duplicate-identifier warnings are expected
-- `script/wad-downloader/` — idgames WAD downloader; bash-first, atomic scripts in `scripts/` (`fetch-index.sh` read, `fetch-wad.sh` write, `download.sh` orchestrator); `curl -sL` follows Apache 301 trailing-slash redirects; `7z t` gates every zip; downloads stage into `wad/custom/`; Python+uv httpx-retries path documented as fallback in its `AGENTS.md`
+- `script/wad-downloader/` — idgames WAD downloader; bash-first, atomic scripts in `scripts/` (`fetch-index.sh` read, `fetch-wad.sh` write, `fetch-temp.sh` temporal stage, `download.sh` orchestrator); `curl -sL` follows Apache 301 trailing-slash redirects; `7z t` gates every zip; downloads stage into `wad/custom/`; Python+uv httpx-retries path documented as fallback in its `AGENTS.md`
 
 ## Runtime
 

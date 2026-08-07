@@ -17,11 +17,11 @@ trap 'rm -rf "$Work"' EXIT
 }
 
 Wad=""
-for f in "$Work"/*.wad; do
-    if [ -f "$f" ]; then
-        Wad="$f"
-        break
-    fi
+for f in "$Work"/*; do
+    [ -f "$f" ] || continue
+    case "$(basename "$f")" in
+        *.wad|*.WAD|*.Wad) Wad="$f"; break ;;
+    esac
 done
 
 [ -n "$Wad" ] || {

@@ -40,8 +40,15 @@ def scan():
 
 
 def scan_map():
-    """Return the sorted map packs from the map/ folder."""
-    return sorted(p for p in map.glob("*.wad") if p.is_file())
+    """Return the sorted map packs from the map/ folder, incl. temporal doom1-tmp/ and doom2-tmp/ wads."""
+    base = sorted(p for p in map.glob("*.wad") if p.is_file())
+    temps = [
+        p
+        for d in ("doom1-tmp", "doom2-tmp")
+        for p in (map / d).glob("*")
+        if p.is_file() and p.name.lower().endswith(".wad")
+    ]
+    return sorted([*base, *temps])
 
 
 def scan_mods():
