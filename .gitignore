@@ -79,6 +79,13 @@ _depot/draw/
 **/_golib/ann
 **/_shared/bin/
 
+# _codex/snes9x-repo — crystal launcher source tracked; dive contents + binary stay out
+!/_codex/snes9x-repo/
+!/_codex/snes9x-repo/AGENTS.md
+!/_codex/snes9x-repo/scripts/
+!/_codex/snes9x-repo/scripts/snes9x-launcher.cr
+/_codex/snes9x-repo/scripts/snes9x-launcher
+
 # binary DBs inside tracked _folders stay out (substrate un-ignore re-includes _templates/**)
 _knowledge/_templates/schema/*.db
 _knowledge/_templates/schema/*.db-shm
